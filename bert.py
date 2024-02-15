@@ -1,5 +1,3 @@
-# coding=utf-8
-
 import logging
 import os
 import sys
@@ -38,7 +36,6 @@ def main(args):
     trainer = Trainer(
         config=config,
         training_dataset=training_dataset,
-        valid_dataset=test_dataset,
         test_dataset=test_dataset,
     ).initialize()
 
