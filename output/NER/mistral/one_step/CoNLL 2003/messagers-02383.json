@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As well as its activities in Asia , Dutch retail group Ahold has a strong presence in Europe , in the U.S. and the company recently announced a joint venture agreement in Brazil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Dutch retail group Ahold |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Dutch retail group Ahold |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As well as its activities in Asia , Dutch retail group Ahold has a strong presence in Europe , in the U.S. and the company recently announced a joint venture agreement in Brazil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Asia |\n| Europe |\n| U.S. |\n| Brazil |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Asia |\n| Europe |\n| U.S. |\n| Brazil |\n\nThese are the entities in the paragraph that clearly refer to locations: Asia, Europe, U.S., and Brazil."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As well as its activities in Asia , Dutch retail group Ahold has a strong presence in Europe , in the U.S. and the company recently announced a joint venture agreement in Brazil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Dutch retail group Ahold |\n\nThis is the only organization mentioned in the paragraph. The phrase \"in Asia\" and \"in Europe, in the U.S., and\" are descriptive and do not represent organizations. The \"joint venture agreement in Brazil\" is an action taken by the organization, not a separate entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Dutch retail group Ahold |\n\nThis is still the only organization mentioned in the paragraph. The phrases \"in Asia,\" \"in Europe,\" \"in the U.S.,\" and \"recently announced\" do not refer to organizations. The \"joint venture agreement in Brazil\" is an action taken by Dutch retail group Ahold."}
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 11 Our preliminary investigation on the photovoltaic properties of PCDSeBT in typical BHJ devices with [6,6]-phenyl C 71 -butyric acid methyl ester ( PC71BM ) shows a highly respectrable PCE of 4.12% on account of the high J SC and V OC .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| PCDSeBT      |\n| [6,6]-phenyl C 71 -butyric acid methyl ester (PC71BM) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| PCDSeBT      |\n| [6,6]-phenyl C 71 -butyric acid methyl ester (PC71BM) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 11 Our preliminary investigation on the photovoltaic properties of PCDSeBT in typical BHJ devices with [6,6]-phenyl C 71 -butyric acid methyl ester ( PC71BM ) shows a highly respectrable PCE of 4.12% on account of the high J SC and V OC .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| photovoltaic properties of PCDSeBT |\n| typical BHJ devices |\n| [6,6]-phenyl C 71 -butyric acid methyl ester (PC71BM) |\n| PCE |\n| high J SC |\n| high V OC |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| photovoltaic properties of PCDSeBT |\n| PCE |\n| high J SC |\n| high V OC |\n\nExplanation:\n\n* \"Our preliminary investigation\" and \"shows\" are not material properties.\n* \"on account of\" is a preposition and does not refer to a material property.\n* \"highly respectrable\" is an adjective modifying PCE and does not need to be included as it is a subjective description of the property value.\n* \"in typical BHJ devices\" is a location description and does not refer to a material property.\n* \"[6,6]-phenyl C 71 -butyric acid methyl ester (PC71BM)\" is a material name, but it is not a property name as it is not describing a specific property of the material."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 11 Our preliminary investigation on the photovoltaic properties of PCDSeBT in typical BHJ devices with [6,6]-phenyl C 71 -butyric acid methyl ester ( PC71BM ) shows a highly respectrable PCE of 4.12% on account of the high J SC and V OC .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| PCE (Power Conversion Efficiency) |\n| 4.12% |\n| J SC (Short Circuit Current Density) |\n| V OC (Open Circuit Voltage) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| PCE (Power Conversion Efficiency) |\n| 4.12% |\n| J SC (Short Circuit Current Density) |\n| V OC (Open Circuit Voltage) |\n\nNote: The entities \"PCDSeBT\" and \"[6,6]-phenyl C 71 -butyric acid methyl ester (PC71BM)\" are not properties, but rather materials mentioned in the context of the property values. Therefore, they are not included in the table."
+    }
+  ]
+}

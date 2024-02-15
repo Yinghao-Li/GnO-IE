@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: On Monday and Tuesday , students from the institute and the university launched protests against what they said was unfair handling by police of a brawl between some of their colleagues and restaurant owners in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. students\n2. institute students\n3. university students\n4. police\n5. restaurant owners."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. students\n2. police\n3. restaurant owners."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| students |\n| police |\n| restaurant owners |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: On Monday and Tuesday , students from the institute and the university launched protests against what they said was unfair handling by police of a brawl between some of their colleagues and restaurant owners in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Institute: This is likely a educational institution where the students belong.\n2. University: This is another educational institution.\n3. October: This is a month and not a location, but it is mentioned in relation to the event that took place, so it could be considered contextual information.\n\nTherefore, the location entities in the paragraph are:\n\n1. Institute\n2. University"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Institute\n2. University\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Institute |\n| University |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: On Monday and Tuesday , students from the institute and the university launched protests against what they said was unfair handling by police of a brawl between some of their colleagues and restaurant owners in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Institute: The institute is an organization represented by the students who launched the protests.\n2. University: The university is another organization represented by the students who launched the protests.\n3. Police: The police is an organization mentioned in the context of the unfair handling of the brawl."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Institute: An organization represented by the students who launched the protests.\n2. University: Another organization represented by the students who launched the protests.\n3. Police: An organization mentioned in the context of the unfair handling of the brawl."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Institute |\n| University |\n| Police |"}
+  ]
+}

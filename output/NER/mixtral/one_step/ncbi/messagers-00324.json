@@ -1,0 +1,8 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The majority ( 81 % ) of the breast - ovarian cancer families were due to BRCA1 , with most others ( 14 % ) due to BRCA2 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease   |\n| ---       |\n| breast-ovarian cancer |\n| BRCA1       |\n| BRCA2       |\n\nExplanation:\n\n1. \"breast-ovarian cancer\": Although it is not a specific disease name, it is a common term used to describe a group of cancers, so I included it as a disease entity.\n2. \"BRCA1\" and \"BRCA2\": Both are genes associated with an increased risk of breast, ovarian, and other cancers. They are valid disease entities as they are related to hereditary breast and ovarian cancer syndrome."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease   |\n| ---       |\n| BRCA1       |\n| BRCA2       |\n\nExplanation:\n\n1. \"breast-ovarian cancer\" is not a specific disease but a group of cancers, so I have removed it from the list.\n2. \"BRCA1\" and \"BRCA2\" are genes associated with an increased risk of breast, ovarian, and other cancers, making them valid disease entities."}
+  ]
+}

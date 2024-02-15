@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Chelsea 2 ( Zola 12 , Vialli 55 ) Everton 2 ( Branch 17 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Chelsea - this is a football club, not a person.\n2. 2 - this is a number, not a person.\n3. Zola - this is a person, a football player.\n4. 12 - this is a number, not a person.\n5. Vialli - this is a person, a football manager.\n6. Everton - this is a football club, not a person.\n7. 2 - this is a number, not a person.\n8. Branch - this is a person, a football player.\n\nSo, the \"Person\" entities in the paragraph are:\n- Zola\n- Vialli\n- Branch"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "- Zola\n- Vialli\n- Branch"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Zola |\n| Vialli |\n| Branch |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Chelsea 2 ( Zola 12 , Vialli 55 ) Everton 2 ( Branch 17 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "There are no specific \"Location\" entities in the given paragraph. The paragraph is about the scores of a football match between Chelsea and Everton, with the details of the goals scored by each team and the time of scoring. There is no mention of any specific locations in this paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "There are no irrelevant or other types of entities in the given paragraph. The paragraph does not contain any entities that clearly refer to a location."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Since there are no location entities in the given paragraph, a markdown table with a column for location would be empty."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Chelsea 2 ( Zola 12 , Vialli 55 ) Everton 2 ( Branch 17 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Chelsea\n2. Everton\n\nThese are the only two \"Organization\" entities mentioned in the paragraph. They are both soccer clubs participating in a match."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Chelsea\n2. Everton\n\nThese are the relevant \"Organization\" entities in the paragraph. The other mentioned elements (Zola 12, Vialli 55, Branch 17) are related to players and their goal scores, not the organizations themselves."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization     |\n|-----------------|\n| Chelsea         |\n| Everton         |"}
+  ]
+}

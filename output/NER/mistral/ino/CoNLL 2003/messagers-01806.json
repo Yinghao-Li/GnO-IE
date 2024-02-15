@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: As many as 1 million dog bites are recorded in the United States every year and half of them are provoked by humans , a veterinarian told fellow animal doctors on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Many people (approximately 1 million)\n2. Veterinarian\n3. Fellow animal doctors (implied)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Veterinarian\n2. Fellow animal doctors (implied)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Veterinarian |\n| Fellow animal doctors (implied) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: As many as 1 million dog bites are recorded in the United States every year and half of them are provoked by humans , a veterinarian told fellow animal doctors on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. United States\n\nThe paragraph mentions that the dog bites are recorded in the United States. Therefore, the United States is the location entity in this context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The only location entity in the paragraph is:\n\n1. United States"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| United States |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: As many as 1 million dog bites are recorded in the United States every year and half of them are provoked by humans , a veterinarian told fellow animal doctors on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. United States\n2. Veterinarian\n3. Fellow animal doctors (implied organization of veterinarians or animal healthcare professionals)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Veterinarian's professional organization (if \"fellow animal doctors\" is assumed to be a formal organization)\n2. United States (as a country can't be considered an organization, but it can be considered a jurisdiction where organizations exist)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Veterinarian's professional organization (if \"fellow animal doctors\" is assumed to be a formal organization) |\n| United States |"}
+  ]
+}

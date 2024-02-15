@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Overall response rate ( ORR ) to GEM - P in the entire cohort was 80 % ( complete response ( CR ) 37 % , partial response 44 % ) with 14 / 15 CR confirmed as a metabolic CR on PET and ORR of 85 % in the 20 second - line patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| GEM-P induced diseases (not explicitly stated, but implied) |\n| Complete response (CR) |\n| Partial response |\n| Metabolic CR (confirmed on PET) |\n| Second-line patients |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| GEM-P induced diseases (not explicitly stated, but implied) |\n| Complete response (CR) |\n| Metabolic CR (confirmed on PET) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Overall response rate ( ORR ) to GEM - P in the entire cohort was 80 % ( complete response ( CR ) 37 % , partial response 44 % ) with 14 / 15 CR confirmed as a metabolic CR on PET and ORR of 85 % in the 20 second - line patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| GEM-P |\n\nIn the given paragraph, \"GEM-P\" is the only chemical entity mentioned. The other terms mentioned, such as \"ORR,\" \"CR,\" \"partial response,\" and \"PET,\" are not chemicals but rather terms used to describe the response to the treatment with GEM-P."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| GEM-P |\n\nIn the given paragraph, only \"GEM-P\" is a clear chemical entity mentioned. The other terms such as \"ORR,\" \"CR,\" \"partial response,\" and \"PET\" are not chemicals but rather terms used to describe the response to the treatment with GEM-P."}
+  ]
+}

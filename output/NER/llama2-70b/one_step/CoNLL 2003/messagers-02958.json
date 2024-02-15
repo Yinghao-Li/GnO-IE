@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Derby 16 5 7 4 19 19 22\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Derby |\n| 16 |\n| 5 |\n| 7 |\n| 4 |\n| 19 |\n| 19 |\n| 22 |\n\nIn the given paragraph, the following are the entities that can be identified as \"Person\":\n\n1. Derby (mentioned twice)\n2. 16 (mentioned twice)\n3. 5 (mentioned once)\n4. 7 (mentioned once)\n5. 4 (mentioned once)\n6. 19 (mentioned twice)\n7. 22 (mentioned once)\n\nPlease note that the numbers in the paragraph are being treated as entities because they are presented as standalone values, without any other context or units. If the paragraph contained additional information about the numbers, such as \"Derby scored 16 goals in 5 games,\" then the numbers would not be considered entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the entities that clearly refer to a \"Person\":\n\n| Person |\n| --- |\n| Derby |\n| 19 |\n| 22 |\n\nThe following entities do not clearly refer to a \"Person\" and have been removed from the table:\n\n* 16 (mentioned twice)\n* 5 (mentioned once)\n* 7 (mentioned once)\n* 4 (mentioned once)\n\nThese numbers are not clearly referring to a person, and without additional context, it's difficult to determine whether they refer to a person or not."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Derby 16 5 7 4 19 19 22\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Derby |\n| 16 |\n| 5 |\n| 7 |\n| 4 |\n| 19 |\n| 19 |\n| 22 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities that clearly refer to \"Location\" in the given paragraph:\n\n| Location |\n| --- |\n| Derby |\n| 16 |\n| 7 |\n| 4 |\n| 19 |\n| 22 |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Derby 16 5 7 4 19 19 22\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Derby |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid \"Organization\" entities:\n\n| Organization |\n| --- |\n| Derby |\n\nI removed the numbers from the table as they do not clearly refer to organizations."}
+  ]
+}

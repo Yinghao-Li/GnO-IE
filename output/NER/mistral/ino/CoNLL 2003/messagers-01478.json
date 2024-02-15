@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The Indonesian government has condemned the inclusion of Ramos Horta in the award , and Foreign Minister Ali Alatas said on Friday that Indonesia would not be represented officially at the ceremony in the Norwegian capital .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indonesian government\n2. Ramos Horta\n3. Foreign Minister Ali Alatas."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Ramos Horta\n2. Foreign Minister Ali Alatas."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Ramos Horta |\n| Foreign Minister Ali Alatas |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The Indonesian government has condemned the inclusion of Ramos Horta in the award , and Foreign Minister Ali Alatas said on Friday that Indonesia would not be represented officially at the ceremony in the Norwegian capital .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indonesian government: This is a political entity that governs the country of Indonesia.\n2. Norwegian capital: This refers to Oslo, the capital city of Norway."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Norwegian capital (Oslo)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Norwegian capital (Oslo) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The Indonesian government has condemned the inclusion of Ramos Horta in the award , and Foreign Minister Ali Alatas said on Friday that Indonesia would not be represented officially at the ceremony in the Norwegian capital .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indonesian government\n2. Foreign Minister Ali Alatas\n3. Norwegian capital (implicit: Norwegian government, possibly the Nobel Committee)\n\nThese entities are organizations."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Indonesian government\n2. Foreign Ministry (implicit: represented by Foreign Minister Ali Alatas)\n3. Norwegian government (implicit: possibly the Nobel Committee)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Indonesian government |\n| Foreign Ministry (represented by Foreign Minister Ali Alatas) |\n| Norwegian government |"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: CLEVELAND AT DETROIT\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Cleveland\n2. Detroit\n3. (Implied) The Cleveland team or individuals\n4. (Implied) The Detroit team or individuals."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Cleveland\n2. Detroit\n3. (Implied) The Cleveland team\n4. (Implied) The Detroit team."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Cleveland |\n| Detroit |\n| (Implied) The Cleveland team |\n| (Implied) The Detroit team |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: CLEVELAND AT DETROIT\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Cleveland: This is an unambiguous location mentioned at the beginning of the paragraph.\n2. Detroit: This is another unambiguous location mentioned later in the paragraph.\n\nSo, the location entities in the paragraph are \"Cleveland\" and \"Detroit\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n\n1. Cleveland\n2. Detroit"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Cleveland |\n| Detroit |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: CLEVELAND AT DETROIT\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Cleveland\n2. Detroit\n3. (Implied) National Football League (NFL) or National Basketball Association (NBA) (as the paragraph does not provide enough context, it can be assumed that the organizations mentioned are sports teams from these leagues)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Cleveland\n2. Detroit\n3. National Football League (NFL) or National Basketball Association (NBA) (if relevant to the context)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Cleveland |\n| Detroit |\n| National Football League (NFL) |\n| National Basketball Association (NBA) |\n\n(If the context of the paragraph is specifically about football or basketball in Cleveland and Detroit, then only NFL or NBA should be included)"}
+  ]
+}

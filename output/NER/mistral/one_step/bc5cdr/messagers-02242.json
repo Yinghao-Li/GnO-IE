@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This case is a good example of electrolyte imbalance causing acute life - threatening cardiac events .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| electrolyte imbalance |\n| acute life-threatening cardiac events |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| electrolyte imbalance |\n| acute life-threatening cardiac events |\n\n(Note: In this context, \"events\" refers to the occurrence of the disease or condition, so it is considered part of the disease entity \"acute life-threatening cardiac events\".)"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This case is a good example of electrolyte imbalance causing acute life - threatening cardiac events .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| electrolytes |\n\nThe paragraph does not contain any specific mention of particular electrolytes or other chemicals. Therefore, the table only includes the general term \"electrolytes\" as the identified chemical entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| electrolytes |\n\nThe paragraph only mentions \"electrolytes\" as a chemical entity that is relevant to the context. Other words such as \"imbalance,\" \"acute,\" \"life-threatening,\" and \"cardiac events\" do not clearly refer to specific chemicals and are not included in the table."}
+  ]
+}

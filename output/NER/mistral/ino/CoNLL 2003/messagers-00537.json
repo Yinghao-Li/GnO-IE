@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: ST LOUIS AT CHICAGO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. ST. LOUIS\n2. CHICAGO\n3. Let's (implied person or speaker)\n4. think\n5. step by step."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Let's (speaker)\n2. ST. LOUIS\n3. CHICAGO."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| ST. LOUIS |\n| CHICAGO |\n| Let's (speaker) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: ST LOUIS AT CHICAGO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. ST. LOUIS: This is an unambiguous location entity, referring to the city of St. Louis.\n2. CHICAGO: This is also an unambiguous location entity, referring to the city of Chicago.\n\nSo, the location entities in the paragraph are ST. LOUIS and CHICAGO."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. ST. LOUIS\n2. CHICAGO\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| ST. LOUIS |\n| CHICAGO |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: ST LOUIS AT CHICAGO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. ST. LOUIS: This is the name of a city in the United States, specifically in the state of Missouri. It can be considered an organization in the sense of a political or administrative entity.\n2. CHICAGO: This is the name of another city in the United States, located in the state of Illinois. Like St. Louis, it can be considered an organizational entity as a political or administrative body.\n\nTherefore, the organizations mentioned in the paragraph are the cities of St. Louis and Chicago."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The organizations mentioned in the paragraph are:\n\n1. St. Louis (city)\n2. Chicago (city)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| St. Louis (city) |\n| Chicago (city) |"}
+  ]
+}

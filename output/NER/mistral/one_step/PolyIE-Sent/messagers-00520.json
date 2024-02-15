@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In these two cases , AFM height images showed similar surface morphology with fairly small phase separation , and the root-mean-square ( rms ) values for the blend films from DCB and from TCB are 0.242 and 0.306 nm , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| AFM height images (of blend films from DCB and TCB) |\n| rms values (for blend films from DCB and TCB) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| AFM height images of blend films from DCB and TCB |\n| rms values for blend films from DCB and TCB |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In these two cases , AFM height images showed similar surface morphology with fairly small phase separation , and the root-mean-square ( rms ) values for the blend films from DCB and from TCB are 0.242 and 0.306 nm , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| AFM height images |\n| surface morphology |\n| fairly small phase separation |\n| root-mean-square (rms) values |\n| blend films |\n| rms values for the blend films from DCB |\n| rms values for the blend films from TCB |\n| 0.242 nm |\n| 0.306 nm |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| AFM height images |\n| surface morphology |\n| phase separation |\n| root-mean-square (rms) values |\n| rms values for the blend films |\n| 0.242 nm |\n| 0.306 nm |\n\nExplanation:\n\n* \"In these two cases\" and \"respectively\" are not material properties and have been removed.\n* \"AFM height images showed\" and \"from DCB and from TCB\" are descriptive phrases and have been removed.\n* \"similar surface morphology with fairly small phase separation\" has been split into two properties: \"surface morphology\" and \"phase separation\"."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In these two cases , AFM height images showed similar surface morphology with fairly small phase separation , and the root-mean-square ( rms ) values for the blend films from DCB and from TCB are 0.242 and 0.306 nm , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| fairly small phase separation |\n| 0.242 nm (rms values for the blend films from DCB) |\n| 0.306 nm (rms values for the blend films from TCB) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 0.242 nm (rms values for the blend films from DCB) |\n| 0.306 nm (rms values for the blend films from TCB) |"
+    }
+  ]
+}

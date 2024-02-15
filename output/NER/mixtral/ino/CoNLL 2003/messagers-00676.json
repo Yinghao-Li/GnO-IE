@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Werder Bremen 1 ( Bode 85th ) 1860 Munich 1 ( Bormirow 8th ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Werder Bremen - This is a sports team, but in the context of this paragraph, it is being treated as a single entity, much like a person.\n2. Bode - This is a person, specifically a player on the Werder Bremen team who scored a goal in the 85th minute.\n3. 1860 Munich - This is another sports team, but it is also being treated as a single entity in this paragraph.\n4. Bormirow - This is a person, specifically a player on the 1860 Munich team who scored a goal in the 8th minute.\n\nTherefore, the \"Person\" entities in this paragraph are Bode and Bormirow."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Werder Bremen - Not a person\n2. Bode - A person\n3. 186"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Bode |\n| Bormirow |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Werder Bremen 1 ( Bode 85th ) 1860 Munich 1 ( Bormirow 8th ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Werder Bremen - This is a sports team located in Bremen, Germany.\n2. Bremen - This is the city where the sports team Werder Bremen is located.\n3. 1860 Munich - This is a sports team located in Munich, Germany.\n4. Munich - This is the city where the sports team 1860 Munich is located.\n\nSo the \"Location\" entities in the paragraph are Bremen and Munich."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Bremen\n2. Munich\n\nThese are the entities that clearly refer to a location. The other entities, Werder Bremen and 1860 Munich, are sports teams and not locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Bremen |\n| Munich |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Werder Bremen 1 ( Bode 85th ) 1860 Munich 1 ( Bormirow 8th ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Werder Bremen\n2. 1860 Munich\n\nThese are the only two organizations mentioned in the paragraph. They are both football (soccer) clubs participating in a match, with each club associated with a different city in Germany."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Werder Bremen\n2. 1860 Munich\n\nThese are the only two entities in the paragraph that refer to organizations, specifically football clubs. The other entities, such as Bode and Bormirow, refer to individual players, and the numbers 85th and 8th refer to the minutes in which the goals were scored."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Werder Bremen |\n| 1860 Munich |"}
+  ]
+}

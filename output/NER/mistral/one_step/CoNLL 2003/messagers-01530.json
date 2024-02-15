@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The institute was shut for nearly two years after the 1988 uprising .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| the institute |\n| the uprising (implicit, could not be identified with certainty as a specific person) |\n| the 1988 uprising |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| the institute |\n| the 1988 uprising |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The institute was shut for nearly two years after the 1988 uprising .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| the institute |\n| 1988 |\n| (implied: the location of the institute that experienced the uprising) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| the institute |\n| (implied: the location of the institute where the uprising took place) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The institute was shut for nearly two years after the 1988 uprising .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The institute |\n\nThe paragraph does not mention any other organization in it. It only mentions \"the institute\" in relation to the event of the 1988 uprising that caused the institute to be shut for two years."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The institute |\n\nThe paragraph only mentions \"the institute\" as an organization in relation to the event of the 1988 uprising that caused the institute to be shut for two years. There are no other entities mentioned in the paragraph that clearly refer to organizations."}
+  ]
+}

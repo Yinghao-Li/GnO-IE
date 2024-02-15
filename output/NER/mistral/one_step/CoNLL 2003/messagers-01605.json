@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Trade was slow in the Panhandle area Friday , USDA said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| USDA |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| USDA |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Trade was slow in the Panhandle area Friday , USDA said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Panhandle area |\n| USDA (United States Department of Agriculture) |\n\nNote: Since the paragraph mentions \"the Panhandle area\" being the location where trade was slow, and USDA is the entity that reported this information, both entities are considered valid locations in this context."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Panhandle area |\n\nNote: USDA is an organization and not a location, so it should not be included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Trade was slow in the Panhandle area Friday , USDA said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| USDA |\n\nIn this paragraph, the only identifiable organization is the United States Department of Agriculture (USDA), which was mentioned as the source of the information about the slow trade in the Panhandle area."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| USDA |\n\nIn this paragraph, the only entity that clearly refers to an organization is the United States Department of Agriculture (USDA), which was mentioned as the source of the information. Other entities such as \"Friday\" and \"Panhandle area\" do not refer to organizations."}
+  ]
+}

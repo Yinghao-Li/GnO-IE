@@ -1,0 +1,8 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We identified four germline mutations in three breast cancer families and in one breast - ovarian cancer family . among these were one frameshift mutation , one nonsense mutation , one novel splice site mutation , and one missense mutation .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| breast cancer |\n| breast cancer |\n| breast - ovarian cancer |\n\nExplanation:\n\n* \"breast cancer\" is mentioned twice\n* \"breast - ovarian cancer\" is mentioned once\n\nThese are the only disease entities mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| breast cancer |\n| breast cancer |\n| breast - ovarian cancer |\n\nExplanation:\n\n* \"germline mutations\" and \"mutation\" are not diseases, so they are removed.\n* \"breast cancer\" is mentioned twice\n* \"breast - ovarian cancer\" is mentioned once\n\nThese are the only disease entities mentioned in the paragraph."}
+  ]
+}

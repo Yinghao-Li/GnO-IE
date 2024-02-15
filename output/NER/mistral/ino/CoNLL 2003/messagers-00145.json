@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Blinker missed his club 's last two games after FIFA slapped a worldwide ban on him for appearing to sign contracts for both Wednesday and Udinese while he was playing for Feyenoord .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Blinker\n\nThe paragraph mentions \"Blinker\" as the person who missed his club's last two games due to a FIFA ban. Therefore, Blinker is the identified \"Person\" entity in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Blinker\n\nBlinker is the only clearly identified person entity in the paragraph. All other entities mentioned in the paragraph (FIFA, Feyenoord, Wednesday, and Udinese) are organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Blinker |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Blinker missed his club 's last two games after FIFA slapped a worldwide ban on him for appearing to sign contracts for both Wednesday and Udinese while he was playing for Feyenoord .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Feyenoord (Club where Blinker was playing before the ban)\n2. FIFA (Organization that slapped the ban on Blinker)\n3. Wednesday (One of the clubs Blinker was attempting to sign a contract with during the ban)\n4. Udinese (The other club Blinker was attempting to sign a contract with during the ban)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Feyenoord (Club)\n2. FIFA (Organization, but it doesn't refer to a specific location)\n3. Wednesday (Club)\n4. Udinese (Club)\n\nSo, the location entities in the paragraph are Feyenoord, Wednesday, and Udinese."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Feyenoord |\n| Wednesday |\n| Udinese |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Blinker missed his club 's last two games after FIFA slapped a worldwide ban on him for appearing to sign contracts for both Wednesday and Udinese while he was playing for Feyenoord .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. FIFA: The international governing body of football.\n2. Blinker: A specific person.\n3. Blinker's club: The football club that Blinker plays for, but it's not explicitly stated in the text. We cannot determine the name of the club based on the given information."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. FIFA: The international governing body of football."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FIFA |"}
+  ]
+}

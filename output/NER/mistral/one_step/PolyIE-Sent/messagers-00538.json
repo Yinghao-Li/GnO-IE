@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In the Janssen group , a copolymer containing terthiophene was reported , which shows an increase in planarity packing and high mobility characteristics , and a diketopyrrolopyrrole derivative showed a PCE of 4.7% and a high hole mobility ( 0.04 cm^2 V -1 S^-1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| copolymer containing terthiophene |\n| diketopyrrolopyrrole derivative |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| copolymer containing terthiophene |\n| diketopyrrolopyrrole derivative |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In the Janssen group , a copolymer containing terthiophene was reported , which shows an increase in planarity packing and high mobility characteristics , and a diketopyrrolopyrrole derivative showed a PCE of 4.7% and a high hole mobility ( 0.04 cm^2 V -1 S^-1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| copolymer containing terthiophene |\n| shows an increase in planarity packing |\n| high mobility characteristics |\n| PCE (Power Conversion Efficiency) |\n| diketopyrrolopyrrole derivative |\n| shows a PCE of 4.7% |\n| high hole mobility |\n| hole mobility (0.04 cm^2 V^-1 S^-1) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| copolymer containing terthiophene - increase in planarity packing, high mobility characteristics |\n| diketopyrrolopyrrole derivative - PCE (Power Conversion Efficiency): 4.7%, high hole mobility: 0.04 cm^2 V^-1 S^-1 |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In the Janssen group , a copolymer containing terthiophene was reported , which shows an increase in planarity packing and high mobility characteristics , and a diketopyrrolopyrrole derivative showed a PCE of 4.7% and a high hole mobility ( 0.04 cm^2 V -1 S^-1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| copolymer containing terthiophene |\n| shows an increase in planarity packing and high mobility characteristics |\n| PCE of 4.7% |\n| diketopyrrolopyrrole derivative |\n| high hole mobility (0.04 cm^2 V^-1 S^-1) |\n\nThe first two property values are described as \"an increase in planarity packing and high mobility characteristics\" for the copolymer containing terthiophene. I assumed that \"planarity packing\" and \"high mobility\" are two separate properties, so I presented them as two different property values. If you consider them as a single property, you can merge them into one property value.\n\nSimilarly, \"PCE of 4.7%\" and \"high hole mobility (0.04 cm^2 V^-1 S^-1)\" are two separate property values for different entities (copolymer containing terthiophene and diketopyrrolopyrrole derivative, respectively)."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| PCE of 4.7% |\n| high hole mobility (0.04 cm^2 V^-1 S^-1) |\n\nThe first property value \"an increase in planarity packing and high mobility characteristics\" for the copolymer containing terthiophene does not clearly refer to a material property value, as it describes the behavior or effect of the material rather than a specific value. Similarly, \"diketopyrrolopyrrole derivative\" is a material entity, not a property value."
+    }
+  ]
+}

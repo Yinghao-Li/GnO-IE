@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: A 45 - year - old male patient who was on treatment with multiple second - line anti - tuberculous drugs including linezolid and ethambutol for extensively drug - resistant tuberculosis (XDR - TB) presented to us with painless progressive loss of vision in both eyes .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nIn the given paragraph, the disease entity mentioned is \"extensively drug-resistant tuberculosis (XDR-TB)\".\n\nStep 2: Identify the \"Chemical\" entity.\nIn the given paragraph, the chemical entity mentioned is \"linezolid\".\n\nSo, the identified entities are:\n- Disease: extensively drug-resistant tuberculosis (XDR-TB)\n- Chemical: linezolid"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the entity \"45-year-old male patient\" does not clearly refer to a disease or a chemical. Therefore, it will be removed.\n\nThe remaining identified entities are:\n- Disease: extensively drug-resistant tuberculosis (XDR-TB)\n- Chemical: linezolid"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity                                      | Entity Type |\n|---------------------------------------------|-------------|\n| extensively drug-resistant tuberculosis (XDR-TB) | Disease     |\n| linezolid                                   | Chemical    |"}
+]

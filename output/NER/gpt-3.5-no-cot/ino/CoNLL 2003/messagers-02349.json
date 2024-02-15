@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The city - state met U.S. opposition two years ago in its bid to host the meeting , expected to gather 4,000 officials from 160 countries from December 9 to 13 ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Person\" entities are as follows:\n\n| Person |\n|--------|\n| U.S. opposition |\n| officials |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Person\" entities in the given paragraph are as follows:\n\n| Person |\n|--------|\n| officials |"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person      |\n|-------------|\n| officials   |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The city - state met U.S. opposition two years ago in its bid to host the meeting , expected to gather 4,000 officials from 160 countries from December 9 to 13 ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entities are:\n\n1. city-state: This is a location entity, although the specific city-state is not mentioned in the paragraph.\n2. countries: The paragraph mentions that the meeting is expected to gather officials from 160 countries."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Location\" entities are:\n\n1. city-state: This is a location entity, although the specific city-state is not mentioned in the paragraph.\n2. countries: The paragraph mentions that the meeting is expected to gather officials from 160 countries."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location    |\n|-------------|\n| city-state  |\n| countries   |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The city - state met U.S. opposition two years ago in its bid to host the meeting , expected to gather 4,000 officials from 160 countries from December 9 to 13 ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Organization\" entity is:\n\n1. U.S. opposition"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Apologies for the confusion. Upon reviewing the paragraph again, there are no specific \"Organization\" entities mentioned. The term \"U.S. opposition\" does not refer to a specific organization but rather to a general opposition from the United States. Therefore, there are no relevant \"Organization\" entities in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n|--------------|\n| U.S. opposition |"}
+  ]
+}

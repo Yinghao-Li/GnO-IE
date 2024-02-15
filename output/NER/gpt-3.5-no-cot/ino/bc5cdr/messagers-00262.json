@@ -1,0 +1,20 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: In the third patient , the MPO - ANCA titre increased to 204 U / ml and she developed a higher fever , oral ulcers and polyarthralgia , but the symptoms resolved 2 weeks after stopping PTU therapy , and the MPO - ANCA titre decreased to 20 . 7 U / ml by 4 months after discontinuing PTU ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Disease\" entities are:\n\n1. MPO-ANCA titre\n2. Fever\n3. Oral ulcers\n4. Polyarthralgia"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Disease\" entities are:\n\n1. Fever\n2. Oral ulcers\n3. Polyarthralgia"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease       |\n|---------------|\n| Fever         |\n| Oral ulcers   |\n| Polyarthralgia |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: In the third patient , the MPO - ANCA titre increased to 204 U / ml and she developed a higher fever , oral ulcers and polyarthralgia , but the symptoms resolved 2 weeks after stopping PTU therapy , and the MPO - ANCA titre decreased to 20 . 7 U / ml by 4 months after discontinuing PTU ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Chemical\" entities are:\n\n1. MPO - ANCA\n2. PTU (Propylthiouracil)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Chemical\" entities are:\n\n1. MPO - ANCA\n2. PTU (Propylthiouracil)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n|----------|\n| MPO - ANCA |\n| PTU (Propylthiouracil) |"}
+  ]
+}

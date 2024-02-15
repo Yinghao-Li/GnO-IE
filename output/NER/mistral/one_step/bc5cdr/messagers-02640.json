@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CIN developed 4 . 5 - times more frequently in patients with cancer who had undergone recent chemotherapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| CIN (Cervical Intraepithelial Neoplasia) |\n| cancer |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Cervical Intraepithelial Neoplasia (CIN) |\n| cancer |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CIN developed 4 . 5 - times more frequently in patients with cancer who had undergone recent chemotherapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 4.5-times | (This is a multiplicative term and not a specific chemical entity. It is included for completeness but is not a valid chemical entity.) |\n| chemotherapy | (This is a treatment modality that involves the use of chemicals to destroy or inhibit the growth of cells. It is a valid chemical entity in this context.) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| chemotherapy |\n\n(Note: The multiplicative term \"4.5-times\" is not a valid chemical entity and can be disregarded.)"}
+  ]
+}

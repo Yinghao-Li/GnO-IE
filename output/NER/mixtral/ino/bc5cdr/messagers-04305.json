@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: We describe a 47 - year - old woman with an acute myocardial infarction after administration of sumatriptan 6 mg subcutaneously for cluster headache .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. \"acute myocardial infarction\" is a disease entity.\n2. \"cluster headache\" is also a disease entity.\n\nSo, the disease entities in the paragraph are \"acute myocardial infarction\" and \"cluster headache\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Acute myocardial infarction\n2. Cluster headache\n\nThese are the entities that clearly refer to diseases in the paragraph. The other entities such as \"47-year-old woman\" and \"sumatriptan 6 mg subcutaneously\" are not disease entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| acute myocardial infarction |\n| cluster headache |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: We describe a 47 - year - old woman with an acute myocardial infarction after administration of sumatriptan 6 mg subcutaneously for cluster headache .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Acute myocardial infarction: This is a medical condition and not a chemical entity.\n2. Administration: This is a process and not a chemical entity.\n3. Sumatriptan: This is a chemical entity. It is a medication used to treat migraines and cluster headaches.\n4. 6 mg: This is a quantity and not a chemical entity.\n5. Subcutaneously: This is a route of administration and not a chemical entity.\n6. Cluster headache: This is a medical condition and not a chemical entity.\n\nTherefore, the only chemical entity in the paragraph is \"sumatriptan.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "* Sumatriptan"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| sumatriptan |"}
+  ]
+}

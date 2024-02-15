@@ -1,0 +1,80 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph.\n\nParagraph: Gel permeation chromatography ( GPC ) was used to determine the molecular weight using polystyrene as the standard and 1,2,3-trichlorobenzene as the eluent ( Table 1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Gel permeation chromatography (GPC)\n2. Polystyrene\n3. 1,2,3-trichlorobenzene\n\nThese are the material names mentioned in the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Name."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Polystyrene\n2. 1,2,3-trichlorobenzene\n\nThese are the entities in the paragraph that clearly refer to Material Names. The other entities, such as \"Gel permeation chromatography\" (GPC), are methods or techniques used to determine the molecular weight of materials."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| Polystyrene |\n| 1,2,3-trichlorobenzene |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph.\n\nParagraph: Gel permeation chromatography ( GPC ) was used to determine the molecular weight using polystyrene as the standard and 1,2,3-trichlorobenzene as the eluent ( Table 1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Gel permeation chromatography (GPC)\n2. Molecular weight\n3. Polystyrene\n4. Standard\n5. 1,2,3-trichlorobenzene\n6. Eluent\n7. Table 1.\n\nThese are the identified \"Property Name\" entities in the paragraph. GPC, molecular weight, polystyrene, standard, 1,2,3-trichlorobenzene, and eluent are all properties or substances mentioned in the text. Table 1 is a data table referred to in the text."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Molecular weight\n2. Polystyrene (as a material used for standard)\n3. 1,2,3-trichlorobenzene (as an eluent)\n\nThese are the entities that clearly refer to material properties in the paragraph. Gel permeation chromatography (GPC) is a technique used to determine molecular weight, so it is not a material property itself but rather a method or process used to measure material properties. Table 1 is a data table and not a material property."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Molecular weight |\n| Polystyrene (as a standard) |\n| 1,2,3-trichlorobenzene (as an eluent) |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph.\n\nParagraph: Gel permeation chromatography ( GPC ) was used to determine the molecular weight using polystyrene as the standard and 1,2,3-trichlorobenzene as the eluent ( Table 1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Gel permeation chromatography (GPC)\n2. Molecular weight\n3. Polystyrene\n4. Standard\n5. 1,2,3-trichlorobenzene\n6. Eluent\n7. Table 1.\n\nIn this paragraph, \"Gel permeation chromatography (GPC)\", \"molecular weight\", \"polystyrene\", \"standard\", \"1,2,3-trichlorobenzene\", and \"eluent\" are all property values. \"Table 1\" is a container or set that holds information, but it doesn't have a specific property value mentioned in the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Value of Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. molecular weight\n2. polystyrene (as a standard, its molecular weight is implied but not explicitly stated)\n3. eluent (implied to have a property value, but the specific value is not mentioned)\n\nSo, the relevant property value entities in the paragraph are:\n\n1. molecular weight\n2. polystyrene (implied)\n3. eluent (implied)"
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| molecular weight |\n| (implied) polystyrene |\n| (implied) eluent |"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The BILO stores are located in Malysia 's capital Kuala Lumpur and in the country 's second city Johor Bahru .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Malaysians |\n| People from Kuala Lumpur |\n| People from Johor Bahru |\n\nNote: Since the paragraph does not mention any specific names of persons, only the entities representing groups of people can be identified. In this case, \"Malaysians\" refers to the people of Malaysia, and \"people from Kuala Lumpur\" and \"people from Johor Bahru\" refer to the residents of those cities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| People from Kuala Lumpur |\n| People from Johor Bahru |\n\nNote: In the original paragraph, \"Malaysians\" is a group of people, but it is not explicitly clear that it refers to specific individuals, so it is not included in the table. The entities \"BILO\" and \"people of Malaysia\" are also not included as they do not refer to specific individuals."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The BILO stores are located in Malysia 's capital Kuala Lumpur and in the country 's second city Johor Bahru .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Kuala Lumpur, Malaysia |\n| Johor Bahru, Malaysia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Kuala Lumpur, Malaysia |\n| Johor Bahru, Malaysia |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The BILO stores are located in Malysia 's capital Kuala Lumpur and in the country 's second city Johor Bahru .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| BILO |\n\nIn this paragraph, \"BILO\" is the only identified organization mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| BILO |\n\nIn this paragraph, \"BILO\" is the only organization mentioned that is clearly identified. \"Malaysia\" and \"Kuala Lumpur\" are not organizations, but rather countries and cities. \"Capital\" and \"second city\" are descriptive terms and do not refer to organizations."}
+  ]
+}

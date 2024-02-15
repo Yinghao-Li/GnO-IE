@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: High doses caused an apparent central excitation , most clearly seen as clonic convulsions , superimposed on general depression .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Central excitation leading to clonic convulsions |\n| General depression |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Central excitation leading to clonic convulsions |\n| (General depression was mentioned but it's not clear if it's a disease in this context, as it could be described as a symptom or reaction to the central excitation) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: High doses caused an apparent central excitation , most clearly seen as clonic convulsions , superimposed on general depression .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| High doses |\n\nNote: No specific chemical entities were mentioned in the paragraph. The paragraph only described the effects of an unspecified substance at high doses."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| High doses |\n\nNote: The only entity that clearly refers to a chemical in the paragraph is \"High doses\", as it implies the presence of a substance that caused the observed effects."}
+  ]
+}

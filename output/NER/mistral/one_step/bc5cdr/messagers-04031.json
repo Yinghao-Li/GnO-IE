@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In conclusion , antitumor activity , cardiotoxicity , and nephrotoxicity were studied simultaneously in the same LOU / M / WSL rat .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| Antitumor activity |\n| Cardiotoxicity |\n| Nephrotoxicity |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| Antitumor activity (not a disease, but a type of activity) |\n| Cardiotoxicity |\n| Nephrotoxicity |\n\nCorrected table:\n\n| Disease |\n|---------|\n| Cardiotoxicity |\n| Nephrotoxicity |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In conclusion , antitumor activity , cardiotoxicity , and nephrotoxicity were studied simultaneously in the same LOU / M / WSL rat .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| LOU / M / WSL rat |\n\nIn this paragraph, the only identified chemical entity is the LOU / M / WSL rat, which is a specific strain of rat used for the studies mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| LOU / M / WSL rat |\n\nIn the given paragraph, the only clear chemical entity mentioned is the LOU / M / WSL rat, which is a specific strain of rat. The other entities mentioned, \"antitumor activity,\" \"cardiotoxicity,\" and \"nephrotoxicity,\" are not chemicals but rather biological effects or properties."}
+  ]
+}

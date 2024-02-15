@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Manchester United won 2-0 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Manchester United.\n\nThis is the proper noun entity mentioned in the paragraph, representing the football club."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Manchester United.\n\nThis is the only entity in the paragraph that refers to a person or group of people (the football team)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Manchester United |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Manchester United won 2-0 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Manchester United: This is a football club located in Manchester, England. It is the specific entity being referred to in the paragraph, but it is mentioned without an explicit \"at\" or \"in\" location indicator. However, based on the context of the paragraph and common knowledge, it is understood that Manchester United is a location where a football match took place.\n\nTherefore, the location entities in the paragraph are:\n1. Manchester\n2. Manchester United (implicitly)\n\nSo, the paragraph could be paraphrased as \"A football match was won by Manchester United in Manchester, resulting in a 2-0 score.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Manchester\n\nSo, the paragraph could be paraphrased as \"A football match was won in Manchester, resulting in a 2-0 score.\""},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Manchester |\n\nSo, the paragraph could be paraphrased as \"A football match was won in Manchester, resulting in a 2-0 score.\""}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Manchester United won 2-0 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Manchester United.\n\nThis is the clear organization entity mentioned in the paragraph. Manchester United is a professional football club based in Manchester, England."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Manchester United.\n\nManchester United is the only organization entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Manchester United |"}
+  ]
+}

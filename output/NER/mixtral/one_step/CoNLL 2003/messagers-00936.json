@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Many of these citizens were Jews murdered during the war , when Nazi German invaders killed most of Poland 's 3.5 million Jews .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Nazi German |\n| Poland 's 3.5 million Jews |\n| Jews |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Nazi German |\n| Jews |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Many of these citizens were Jews murdered during the war , when Nazi German invaders killed most of Poland 's 3.5 million Jews .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Poland       |\n| Nazi Germany |\n\nExplanation:\n\n* Poland: Mentioned as the location where most of the 3.5 million Jews were killed.\n* Nazi Germany: Mentioned as the nationality of the invaders who murdered many of the citizens, which implies that they came from Nazi Germany."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Poland       |\n\nExplanation:\n\n* Poland: Mentioned as the location where most of the 3.5 million Jews were killed.\n* Nazi Germany: Although this is a valid location, it is not clearly referred to as a location in the paragraph, but rather as the nationality of the invaders."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Many of these citizens were Jews murdered during the war , when Nazi German invaders killed most of Poland 's 3.5 million Jews .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Nazi German |\n\nIn the given paragraph, the only organization mentioned is \"Nazi German.\" It is referred to as the entity responsible for the invasion and murder of many of Poland's Jewish citizens during the war."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Nazi German |\n\nIn the given paragraph, the only organization mentioned is \"Nazi German.\" It is referred to as the entity responsible for the invasion and murder of many of Poland's Jewish citizens during the war. The other entities, such as \"citizens,\" \"Jews,\" and \"Poland,\" do not clearly refer to organizations and are not included in the table."}
+  ]
+}

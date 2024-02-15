@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An armed forces spokesman was not available for comment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| armed forces spokesman |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| armed forces spokesman |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An armed forces spokesman was not available for comment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| not available |\n| for comment |\n| An armed forces spokesman |\n\nExplanation:\n\nThe paragraph does not contain any explicit location mention, but it does imply a location context with the phrase \"An armed forces spokesman\". Therefore, we include \"An armed forces\" as a location entity. The phrase \"not available for comment\" implies a location where the spokesperson is not present or unable to be reached, so we include \"not available\" as a location entity as well. The location \"for comment\" refers to the location where the comment is being requested or expected, such as a press conference or media briefing."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| An armed forces |\n| not available |\n| for comment |\n\nExplanation:\n\nThe phrase \"An armed forces spokesman\" refers to a specific location, which is the organization or institution where the spokesman is employed. The phrase \"not available\" does not clearly refer to a location, but rather a state or condition. The phrase \"for comment\" refers to a location where the comment is being requested or expected, such as a press conference or media briefing. Therefore, we keep \"An armed forces\" and \"for comment\" as location entities, and remove \"not available\" as it does not clearly refer to a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An armed forces spokesman was not available for comment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Armed forces |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Armed forces |"}
+  ]
+}

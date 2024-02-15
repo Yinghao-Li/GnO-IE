@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Week to Date 3,500 Sm Pd Lst Wk 800 Sm Pd Lst Yr N / A\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Week to Date |\n| 3,500 Sm Pd |\n| Lst |\n| Wk |\n| 800 Sm Pd |\n| Lst |\n| Yr |\n\nNote: The above entities are not actual people, but rather abbreviations or acronyms used in the paragraph. Therefore, they are not considered valid \"Person\" entities according to standard NLP definitions. If the context of the paragraph suggests that these abbreviations or acronyms represent specific people, then they should be included as separate entries in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| 3,500 Sm Pd |\n| 800 Sm Pd |\n\nNote: \"Week to Date\", \"Lst\", \"Wk\", and \"Yr\" are not valid \"Person\" entities as they do not refer to specific people."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Week to Date 3,500 Sm Pd Lst Wk 800 Sm Pd Lst Yr N / A\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Week to Date |\n| Week 8 |\n| Last Week |\n| Year to Date |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Week to Date |\n| Week 8 |\n| Last Week |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Week to Date 3,500 Sm Pd Lst Wk 800 Sm Pd Lst Yr N / A\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| N/A |\n\nThe paragraph does not contain any identifiable organizations. It only includes abbreviations and acronyms that do not represent organizations in the context provided."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| N/A |\n\nThe paragraph does not contain any identifiable organizations. It only includes abbreviations and acronyms that do not clearly refer to organizations."}
+  ]
+}

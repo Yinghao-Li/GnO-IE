@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 7 - Paul Wright ( Kilmarnock ) , Ally McCoist ( Rangers )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person     |\n|------------|\n| Paul Wright |\n| Ally McCoist |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person     |\n|------------|\n| Paul Wright |\n| Ally McCoist |\n\nThese are the only two entities in the paragraph that clearly refer to \"Person\". The parenthetical expressions \"Kilmarnock\" and \"Rangers\" are likely the names of sports teams associated with each individual, but they are not \"Person\" entities themselves."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 7 - Paul Wright ( Kilmarnock ) , Ally McCoist ( Rangers )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Kilmarnock |\n| Rangers |\n\nExplanation:\n\n* \"Kilmarnock\" is mentioned as the hometown of Paul Wright.\n* \"Rangers\" is mentioned as the team that Ally McCoist played for. Both are valid location entities and are presented in the same words as in the original paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Kilmarnock |\n| Rangers |\n\nExplanation:\n\n* \"Kilmarnock\" is mentioned as the hometown of Paul Wright, which clearly refers to a location.\n* \"Rangers\" is mentioned as the team that Ally McCoist played for. In this context, it is assumed to be a sports team's name and not a location. However, since the paragraph does not provide enough information to clearly determine whether \"Rangers\" refers to a location or not, it is included in the table as a valid location entity."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 7 - Paul Wright ( Kilmarnock ) , Ally McCoist ( Rangers )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Kilmarnock |\n| Rangers |\n\nThe two \"Organization\" entities in the paragraph are \"Kilmarnock\" and \"Rangers\". They are the names of two football clubs."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Kilmarnock |\n| Rangers |\n\nThe two \"Organization\" entities in the paragraph are \"Kilmarnock\" and \"Rangers\". They are the names of two football clubs. The other words in the paragraph do not clearly refer to an \"Organization\"."}
+  ]
+}

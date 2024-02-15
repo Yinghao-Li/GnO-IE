@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: U.N. evacuates staff from Central African Republic .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. U.N. - This is an abbreviation for the United Nations, which is an Organization.\n2. Central African Republic - This is a Location.\n\nSo, the identified entities in the paragraph are:\n\n- Organization: United Nations\n- Location: Central African Republic"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Based on the given criteria, let's remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. U.N. - This is an abbreviation for the United Nations, which is an Organization. So, it can be kept.\n2. Central African Republic - This is a Location. So, it can be kept.\n\nTherefore, the identified entities in the paragraph are:\n\n- Organization: United Nations\n- Location: Central African Republic"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity                  | Entity Type   |\n|-------------------------|---------------|\n| United Nations (U.N.)   | Organization  |\n| Central African Republic| Location      |"}
+]

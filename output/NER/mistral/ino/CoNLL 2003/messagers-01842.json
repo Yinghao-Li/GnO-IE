@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Representatives of the U.N. missions of Ghana , the Ivory Coast , Mauritania and Niger have scheduled a meeting with Security Council president Paolo Fulci of Italy to hand in the nominations in writing , the envoys said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Representatives of the U.N. missions of Ghana, the Ivory Coast, Mauritania and Niger.\n2. Security Council president Paolo Fulci of Italy."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Representatives of the U.N. missions: Unnamed individuals representing the missions of Ghana, the Ivory Coast, Mauritania and Niger.\n2. Security Council president Paolo Fulci."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Representatives of the U.N. missions: representatives of the missions of Ghana, the Ivory Coast, Mauritania and Niger |\n| Security Council president Paolo Fulci |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Representatives of the U.N. missions of Ghana , the Ivory Coast , Mauritania and Niger have scheduled a meeting with Security Council president Paolo Fulci of Italy to hand in the nominations in writing , the envoys said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. U.N. (United Nations) - an international organization; it is not a physical location but an organization with many locations.\n2. Ghana - a country in West Africa.\n3. Ivory Coast (Côte d'Ivoire) - a country in West Africa.\n4. Mauritania - a country in Northwest Africa.\n5. Niger - a country in West Africa.\n6. Security Council - a body of the United Nations. It is a deliberative assembly where the 15 members of the United Nations Security Council discuss and make decisions on international security issues.\n\nSo, the \"Location\" entities in the paragraph are:\n\n1. Ghana\n2. Ivory Coast (Côte d'Ivoire)\n3. Mauritania\n4. Niger\n5. Security Council (a body of the United Nations)\n\nThese entities represent the places where the entities mentioned in the paragraph are located or where the events in the paragraph are taking place."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The relevant location entities in the paragraph are:\n\n1. Ghana\n2. Ivory Coast (Côte d'Ivoire)\n3. Mauritania\n4. Security Council (a body of the United Nations located in New York City, USA)\n\nThese entities represent the physical places where the entities mentioned in the paragraph are located or where the events in the paragraph are taking place."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ghana |\n| Ivory Coast (Côte d'Ivoire) |\n| Mauritania |\n| Security Council (a body of the United Nations) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Representatives of the U.N. missions of Ghana , the Ivory Coast , Mauritania and Niger have scheduled a meeting with Security Council president Paolo Fulci of Italy to hand in the nominations in writing , the envoys said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. United Nations (U.N.)\n2. Missions of Ghana, Ivory Coast, Mauritania, and Niger (Represented by their respective envoys)\n3. Security Council\n4. Italy (Represented by Paolo Fulci)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. United Nations (U.N.)\n2. Security Council."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Nations (U.N.) |\n| Security Council |"}
+  ]
+}

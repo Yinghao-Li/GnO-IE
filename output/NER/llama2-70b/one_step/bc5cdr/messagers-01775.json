@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Long - term lithium therapy leading to hyperparathyroidism : a case report .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hyperparathyroidism |\n| Lithium therapy |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hyperparathyroidism |\n\nThe entity \"lithium therapy\" is not a disease, but a treatment, therefore it should not be included in the list of diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Long - term lithium therapy leading to hyperparathyroidism : a case report .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Lithium |\n| Parathyroidism |\n\nNote: \"Parathyroidism\" is not a chemical entity, but it is a medical condition related to the parathyroid glands, which produce parathyroid hormone (PTH). I included it in the table as it is mentioned in the paragraph and is relevant to the topic of the case report."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Lithium |\n\nThe paragraph only mentions \"Lithium\" as a chemical entity. \"Parathyroidism\" is a medical condition and not a chemical entity."}
+  ]
+}

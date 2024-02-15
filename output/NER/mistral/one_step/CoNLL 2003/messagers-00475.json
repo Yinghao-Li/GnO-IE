@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FRIDAY , DECEMBER 6\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| I (implied) |\n\nThe paragraph does not contain any explicitly mentioned persons other than the implied \"I\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| I (implied) |\n\nThe paragraph does not contain any other entities that clearly refer to a person other than the implied \"I\"."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FRIDAY , DECEMBER 6\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| FRIDAY |\n| DECEMBER 6 |\n\nNote: The paragraph does not contain any other identifiable location entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| DECEMBER 6 (specific date) |\n\nNote: \"FRIDAY\" is not a clear location entity as it refers to a day of the week. Therefore, it was removed from the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FRIDAY , DECEMBER 6\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FRIDAY |\n\nThis paragraph does not contain any other identifiable organizations. The word \"Let's\" is not considered an organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FRIDAY |\n\nThis paragraph does not contain any other identifiable organizations that clearly refer to an organization as defined by Merriam-Webster as \"an incorporated legal entity having a distinct legal personality and powers, and capable of acting in its own name.\" The word \"Let's\" is not considered an organization."}
+  ]
+}

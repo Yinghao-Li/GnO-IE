@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thai Resource 264 31/12 Ras Tanura / Red Sea W46.50 Mobil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Mobil |\n\nIn the given paragraph, \"Mobil\" is the only identifiable person entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Mobil |\n\nIn the given paragraph, \"Mobil\" is the only identifiable person entity that refers clearly to a company or organization."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thai Resource 264 31/12 Ras Tanura / Red Sea W46.50 Mobil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ras Tanura |\n| Red Sea |\n| W46.50 |\n| /31/12 |\n| Thai Resource 264 |\n\nExplanation:\n\n1. Ras Tanura: It is a specific location mentioned in the text.\n2. Red Sea: It is a body of water mentioned in the text.\n3. W46.50: It is a specific location or coordinate mentioned in the text.\n4. /31/12: It is a date mentioned in the text.\n5. Thai Resource 264: It is a specific resource or facility mentioned in the text."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ras Tanura |\n| Red Sea |\n| W46.50 |\n\nExplanation:\n\n1. Ras Tanura: It is a specific location mentioned in the text.\n2. Red Sea: It is a body of water mentioned in the text, which can be considered a location.\n3. W46.50: It is a specific location or coordinate mentioned in the text.\n\nThe \"/31/12\" is not a location, it is a date. Therefore, it should not be included in the table.\n\nThe \"Thai Resource 264\" is not a location, it is a resource or facility. Therefore, it should not be included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thai Resource 264 31/12 Ras Tanura / Red Sea W46.50 Mobil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Thai Resource 264 |\n| Mobil |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Thai Resource 264 |\n| Mobil |"}
+  ]
+}

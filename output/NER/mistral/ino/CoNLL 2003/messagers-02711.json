@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Sun Jun ( China ) beat Allan Budi Kusuma ( Indonesia ) 15-9 15-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Sun Jun\n2. China (This is not a person, but it can be considered as the nationality or origin of Sun Jun)\n3. Allan Budi Kusuma\n4. Indonesia (This is not a person, but it can be considered as the nationality or origin of Allan Budi Kusuma)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Sun Jun\n2. Allan Budi Kusuma"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Sun Jun |\n| Allan Budi Kusuma |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Sun Jun ( China ) beat Allan Budi Kusuma ( Indonesia ) 15-9 15-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Sun Jun: This is a proper name, but it does not directly indicate a location. However, we know that Sun Jun is from China.\n2. China: This is an entity representing a country, which is the location of Sun Jun.\n3. Indonesia: This is an entity representing a country, which is the location of Allan Budi Kusuma.\n\nSo, the location entities in the paragraph are \"China\" and \"Indonesia\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n\n1. China\n2. Indonesia"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| China |\n| Indonesia |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Sun Jun ( China ) beat Allan Budi Kusuma ( Indonesia ) 15-9 15-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China - This is a country and can be considered an organization in the context of international sports competitions.\n2. Indonesia - This is another country and can also be considered an organization in the context of international sports competitions.\n\nSo, the organization entities in the paragraph are China and Indonesia."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The organization entities in the paragraph are:\n\n1. China\n2. Indonesia"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| China |\n| Indonesia |"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: One of two roads leading to the University of Yangon from the institute had been closed by authorities .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. University of Yangon\n2. Authorities (implied person or organization responsible for closing the road)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Authorities"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Authorities |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: One of two roads leading to the University of Yangon from the institute had been closed by authorities .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. University of Yangon\n2. Institute (Assuming it is a specific institution with a known location)\n3. The two roads (Not explicitly named, but assuming they have specific locations)\n\nSo, the location entities in the paragraph are:\n\n1. University of Yangon\n2. Institute\n3. The two roads (with unspecified names, but assumed to have specific locations)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. University of Yangon\n2. Institute (assuming it is a specific location)\n3. The two roads (assuming they have specific locations)\n\nSo, the relevant location entities in the paragraph are:\n\n1. University of Yangon\n2. The two roads (with unspecified names, but assumed to have specific locations)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| University of Yangon |\n| The two roads |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: One of two roads leading to the University of Yangon from the institute had been closed by authorities .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. University of Yangon\n2. Authorities (implied organization responsible for closing the roads)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Authorities (organization responsible for closing the roads)\n\n(Note: University of Yangon is not directly an organization in this context, but rather a location. However, if the University is considered an organization in your specific context, then it should be included in the list.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Authorities |"}
+  ]
+}

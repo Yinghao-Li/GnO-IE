@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We hypothesize that when this man developed type 2 diabetes , chronic polyuria due to nephrogenic diabetes insipidus was sufficient to precipitate hyperosmolar dehydration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| type 2 diabetes |\n| chronic polyuria |\n| nephrogenic diabetes insipidus |\n| hyperosmolar dehydration |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| type 2 diabetes |\n| nephrogenic diabetes insipidus |\n| hyperosmolar dehydration |\n\n(Note: \"chronic polyuria\" is a symptom of nephrogenic diabetes insipidus, so it is not listed separately as a disease entity in this context.)"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We hypothesize that when this man developed type 2 diabetes , chronic polyuria due to nephrogenic diabetes insipidus was sufficient to precipitate hyperosmolar dehydration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| glucose (implied in \"type 2 diabetes\") |\n| water |\n| sodium and other electrolytes (implied in \"hyperosmolar dehydration\") |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| glucose |\n| sodium and other electrolytes (implied in \"hyperosmolar dehydration\") |"}
+  ]
+}

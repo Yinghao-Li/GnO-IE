@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A health authority spokeswoman said 78 people suspected of having the disease , including 64 confirmed cases , were still being treated .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| health authority spokeswoman |\n\nThe only \"Person\" entity in the paragraph is \"health authority spokeswoman\". The other mentions, \"78 people\" and \"64 confirmed cases\", refer to groups of people and not to specific individuals."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| health authority spokeswoman |\n\nThe only clear \"Person\" entity in the paragraph is \"health authority spokeswoman\". The other mentions, \"78 people\" and \"64 confirmed cases\", do not refer to specific individuals and thus do not meet the criteria for being considered \"Person\" entities."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A health authority spokeswoman said 78 people suspected of having the disease , including 64 confirmed cases , were still being treated .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| a health authority |\n\nThe only location entity in the paragraph is \"a health authority\". The other mentions (e.g. \"the disease\") are not location entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| a health authority |\n\nThere are no other clear location entities in the paragraph. The other mentions (e.g. \"the disease\") do not refer to locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A health authority spokeswoman said 78 people suspected of having the disease , including 64 confirmed cases , were still being treated .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| health authority |\n\nThe paragraph mentions one organization, which is \"health authority\". This is inferred from the job title of the spokeswoman who is representing the views of this organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| health authority |\n\nThe word \"health authority\" is the only clear organization mentioned in the paragraph. The other entities such as \"people\" and \"disease\" do not refer to organizations."}
+  ]
+}

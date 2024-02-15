@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Earlier on Friday some of the students , who were held briefly by police during the protests earlier this week , said they were still dissatisfied with the military government .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| the students |\n| police |\n| the military government |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| the students |\n| police |\n| the military government |\n\nNote: I assumed that \"police\" and \"the military government\" refer to groups of people and thus are \"Person\" entities. If they are meant to refer to organizations or institutions, then they would not be \"Person\" entities."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Earlier on Friday some of the students , who were held briefly by police during the protests earlier this week , said they were still dissatisfied with the military government .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| police station or location where students were held |\n\nNote: The location is not explicitly mentioned in the text, but it can be inferred that the students were held at a police station or location during the protests."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| police station or location where students were held |\n\nNote: The only location entity in the text is the police station or location where the students were held. The military government is not a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Earlier on Friday some of the students , who were held briefly by police during the protests earlier this week , said they were still dissatisfied with the military government .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| police |\n| military government |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| police |\n| military government |\n\nThe entity \"police\" is a clearly defined organization, and \"military government\" is also a specific type of organization."}
+  ]
+}

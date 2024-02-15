@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Because ideal lipid targets were not reached (low - density lipoprotein (LDL) cholesterol less than 130 mg / dl , high - density lipoprotein (HDL) cholesterol greater than 35 mg / dl , or total cholesterol / HDL cholesterol less than 4 . 5 mg / dl) with diet plus a single drug , gemfibrozil (1 . 2 g / day) - lovastatin (primarily 20 or 40 mg) treatment was given .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity in the paragraph.\n\nIn the given paragraph, the disease entity mentioned is \"low-density lipoprotein (LDL) cholesterol.\"\n\nStep 2: Identify the \"Chemical\" entity in the paragraph.\n\nIn the given paragraph, the chemical entity mentioned is \"gemfibrozil.\""},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the entities that clearly refer to either \"Disease\" or \"Chemical\" are:\n\n- Disease: low-density lipoprotein (LDL) cholesterol\n- Chemical: gemfibrozil"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity                                      | Entity Type |\n|---------------------------------------------|-------------|\n| low-density lipoprotein (LDL) cholesterol   | Disease     |\n| gemfibrozil                                 | Chemical    |"}
+]

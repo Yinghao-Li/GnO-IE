@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: \" Uneximbank has inherited a mountain and whether or not they climb out and over it remains to be seen , \" said one metals source .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. \"Uneximbank\" - Organization\n2. \"mountain\" - Location\n3. \"metals source\" - Person\n\nSo, the identified entities in the paragraph are:\n\n- Organization: Uneximbank\n- Location: mountain\n- Person: metals source"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. \"Uneximbank\" - Organization\n2. \"mountain\" - Location\n3. \"metals source\" - Person\n\nSo, the identified entities in the paragraph are:\n\n- Organization: Uneximbank\n- Location: mountain\n- Person: metals source"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity        | Entity Type   |\n| ------------- | ------------- |\n| Uneximbank    | organization  |\n| mountain      | location      |\n| metals source | person        |"}
+]

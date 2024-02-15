@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Fourteen of 39 dialysis patients ( 36 % ) became hypercalcemic after switching to calcium carbonate as their principal phosphate binder .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hypercalcemia |\n| Phosphate binder |\n\nExplanation:\n\n* Hypercalcemia is a disease characterized by an abnormally high level of calcium in the blood.\n* Phosphate binder is not a disease, but rather a medication used to treat hyperphosphatemia (high levels of phosphate in the blood), which is a common complication of kidney disease, including end-stage renal disease (ESRD) requiring dialysis. Calcium carbonate is one such phosphate binder.\n\nTherefore, the only disease mentioned in the paragraph is hypercalcemia."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hypercalcemia |\n\nExplanation:\n\n* Hypercalcemia is a disease characterized by an abnormally high level of calcium in the blood.\n\nThe mention of \"phosphate binder\" does not clearly refer to a disease, but rather a medication used to treat a medical condition (hyperphosphatemia). Therefore, it is not included in the list of diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Fourteen of 39 dialysis patients ( 36 % ) became hypercalcemic after switching to calcium carbonate as their principal phosphate binder .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Calcium carbonate |\n| Phosphate |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid chemical entities in the paragraph:\n\n| Chemical |\n| --- |\n| Calcium carbonate |\n| Phosphate |"}
+  ]
+}

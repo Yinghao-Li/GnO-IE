@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Simvastatin plasma concentration increased 30 times in this patient and statin induced muscle toxicity is related to the concentration of the statin in blood .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the \"['Disease', 'Chemical']\" entities in the paragraph:\n\n1. Simvastatin - Chemical\n2. statin induced muscle toxicity - Disease\n\nSo, the identified entities are:\n\n- Chemical: Simvastatin\n- Disease: statin induced muscle toxicity"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to \"['Disease', 'Chemical']\" from the paragraph:\n\n1. Simvastatin - Chemical\n2. statin induced muscle toxicity - Disease\n\nSo, the identified entities are:\n\n- Chemical: Simvastatin\n- Disease: statin induced muscle toxicity"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity                      | Entity Type |\n|-----------------------------|-------------|\n| Simvastatin                 | Chemical    |\n| statin induced muscle toxicity | Disease    |"}
+]

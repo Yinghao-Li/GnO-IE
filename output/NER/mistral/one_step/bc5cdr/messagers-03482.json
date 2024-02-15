@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There were dose - dependent increases in FEV1 and FEF25 - 75 ( p less than 0 . 001 ) , and pretreatment with HDS did not displace the DRC to the right .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| FEV1 |\n| FEF25-75 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| FEV1 |\n| FEF25-75 |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There were dose - dependent increases in FEV1 and FEF25 - 75 ( p less than 0 . 001 ) , and pretreatment with HDS did not displace the DRC to the right .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| HDS |\n| FEV1 |\n| FEF25-75 |\n\nIn this paragraph, \"HDS\" is the only clear chemical entity mentioned. \"FEV1\" and \"FEF25-75\" are not chemicals but rather measurements of lung function (Forced Expiratory Volume in 1 second and Forced Expiratory Flow between 25% and 75% of the FEV1, respectively)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| HDS |\n\nIn this paragraph, only \"HDS\" is a clear chemical entity mentioned. \"FEV1\" and \"FEF25-75\" are not chemicals but rather measurements of lung function."}
+  ]
+}

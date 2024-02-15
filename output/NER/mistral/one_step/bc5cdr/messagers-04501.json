@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After 12 wk , the inulin clearance was higher in rhIGF - I - treated rats , 0 . 48 + / - 0 . 08 versus 0 . 24 + / - 0 . 06 mL / min / 100 g of body weight in untreated PAN nephropathy animals , p < 0 . 05 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| PAN nephropathy  |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| PAN nephropathy  |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After 12 wk , the inulin clearance was higher in rhIGF - I - treated rats , 0 . 48 + / - 0 . 08 versus 0 . 24 + / - 0 . 06 mL / min / 100 g of body weight in untreated PAN nephropathy animals , p < 0 . 05 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| inulin |\n| IGF-I |\n| rhIGF-I (recombinant human IGF-I) |\n| body weight |\n\nThe paragraph mentions \"inulin clearance,\" \"IGF-I,\" and \"recombinant human IGF-I\" as chemical entities. \"Body weight\" is not a chemical but is included for completeness as it is a measured property in the study."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| inulin |\n| IGF-I (Insulin-like growth factor-I) |\n| recombinant human IGF-I (recombinant human insulin-like growth factor-I) |\n\nThe paragraph mentions \"inulin clearance,\" \"IGF-I,\" and \"recombinant human IGF-I\" as chemical entities. \"Body weight\" is not a chemical, but a measured property. I have added the full names of IGF-I and recombinant human IGF-I for clarity."}
+  ]
+}

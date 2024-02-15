@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Kohl had wanted to meet Belo during the chancellor 's official visit to Indonesia last month , but the bishop was too busy in East Timor to come to Jakarta .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Kohl |\n| Belo |\n\nExplanation:\nThe paragraph mentions two people: Kohl and Belo. Therefore, we create a table with one column \"Person\" and add the names of the mentioned individuals as rows."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Kohl |\n| Belo |\n\nExplanation:\nThe paragraph only mentions two entities that clearly refer to persons: Kohl and Belo. Therefore, we create a table with one column \"Person\" and add the names of the mentioned individuals as rows. We do not include \"the chancellor\" or \"during the chancellor's official visit to Indonesia last month\" or \"too busy in East Timor to come to Jakarta\" as they do not refer to specific persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Kohl had wanted to meet Belo during the chancellor 's official visit to Indonesia last month , but the bishop was too busy in East Timor to come to Jakarta .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Indonesia |\n| Jakarta |\n| East Timor |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Indonesia |\n| Jakarta |\n| East Timor |\n\nThese are the only entities in the paragraph that clearly refer to locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Kohl had wanted to meet Belo during the chancellor 's official visit to Indonesia last month , but the bishop was too busy in East Timor to come to Jakarta .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Kohl |\n| Indonesia |\n| Jakarta |\n| chancellor (of Indonesia) |\n| Belo |\n| East Timor |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Indonesia |\n| Jakarta |\n| chancellor (of Indonesia) |\n| East Timor |\n| Kohl (assumed to be a person of an organization, but without further context it's not clear which one) |\n| Belo (assumed to be a person of an organization, but without further context it's not clear which one, could be Bishop of Dili Diocese in East Timor) |"}
+  ]
+}

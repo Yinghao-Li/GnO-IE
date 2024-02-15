@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PLO says Arafat , Netanyahu could meet Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Arafat |\n| Netanyahu |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Arafat |\n| Netanyahu |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PLO says Arafat , Netanyahu could meet Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| PLO |\n| Arafat |\n| Netanyahu |\n| Saturday |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Saturday |\n\nThe entities that do not clearly refer to \"Location\" are:\n\n* PLO\n* Arafat\n* Netanyahu"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PLO says Arafat , Netanyahu could meet Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| PLO |\n| Netanyahu |\n\nNote: In this paragraph, \"PLO\" refers to the Palestine Liberation Organization, which is a political and military organization that represents the Palestinian people. \"Netanyahu\" refers to the Israeli Prime Minister Benjamin Netanyahu, who is not an organization, but a person. Therefore, only \"PLO\" is a valid \"Organization\" entity in this paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| PLO |"}
+  ]
+}

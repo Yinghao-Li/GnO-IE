@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Pretreatment of rats with sodium salicylate , ED50 103 mg / kg ( 60 - 174 ) , and phenylbutazone , 59 mg / kg ( 50 - 70 ) converted the non - convulsant dose of pilocarpine , 200 mg / kg , to a convulsant one .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| pilocarpine |\n| sodium salicylate |\n| phenylbutazone |\n\nNote: The entities identified in the paragraph are not actually diseases, but rather chemical substances that can induce convulsions in rats. The paragraph describes a study that investigated the effect of pre-treating rats with these substances on the convulsant effects of pilocarpine."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| pilocarpine |\n\nThe other two entities mentioned in the paragraph, \"sodium salicylate\" and \"phenylbutazone\", are not clearly referring to diseases, but rather to chemical substances used in the study. Therefore, they are not included in the list of valid entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Pretreatment of rats with sodium salicylate , ED50 103 mg / kg ( 60 - 174 ) , and phenylbutazone , 59 mg / kg ( 50 - 70 ) converted the non - convulsant dose of pilocarpine , 200 mg / kg , to a convulsant one .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Sodium salicylate |\n| Pilocarpine |\n| Phenylbutazone |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the valid chemical entities:\n\n| Chemical |\n| --- |\n| Sodium salicylate |\n| Pilocarpine |\n| Phenylbutazone |"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" All of us who have been victimised by terrorists ... need to stand together against terrorists .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| us |\n| terrorists |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities that clearly refer to \"Person\":\n\n| Person |\n| --- |\n| us |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" All of us who have been victimised by terrorists ... need to stand together against terrorists .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| All |\n|  |\n| victimised |\n|  |\n| stand |\n| together |\n| against |\n| terrorists |\n\nThe locations in the given paragraph are:\n\n* All\n* victimised\n* stand\n* together\n* against\n\nThese are the locations where the action of the sentence is taking place."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities that clearly refer to \"Location\":\n\n| Location |\n| --- |\n| All |\n| together |\n| against |\n\nThe locations in the given paragraph are:\n\n* All\n* together\n* against\n\nI removed \"victimised\" and \"stand\" as they do not clearly refer to locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" All of us who have been victimised by terrorists ... need to stand together against terrorists .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| All of us |\n| terrorists |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities that clearly refer to \"Organization\":\n\n| Organization |\n| --- |\n| terrorists |\n\nThe word \"us\" in the sentence does not refer to an organization, so it has been removed from the table."}
+  ]
+}

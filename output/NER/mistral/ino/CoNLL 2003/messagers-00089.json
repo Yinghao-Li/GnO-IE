@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Syria 1 0 0 1 1 2 0\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Syria: This is a country entity.\n\nTherefore, the \"Person\" entities in the paragraph are none as it only contains a country entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "There are no entities in the paragraph that clearly refer to a person. The paragraph only contains a country entity, Syria."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Syria  |\n\nNote: Since there is no person entity in the paragraph, the table is empty except for the column header."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Syria 1 0 0 1 1 2 0\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Syria: This is an explicit mention of a country, so it is a \"Location\" entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Syria"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Syria |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Syria 1 0 0 1 1 2 0\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Syria: This is a country and can be considered an organization in the political sense, as it refers to the government and people of the nation of Syria."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Syria: This is the only organization entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Syria |"}
+  ]
+}

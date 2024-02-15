@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Gaulieder , formerly a member of Prime Minister Vladimir Meciar 's ruling Movement for a Democratic Slovakia , was stripped of his parliamentary mandate on Wednesday after leaving the party last month in protest over what he said was a lack of democracy in the country .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Gaulieder |\n| Vladimir Meciar |\n| Prime Minister (implied) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Gaulieder |\n| Vladimir Meciar |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Gaulieder , formerly a member of Prime Minister Vladimir Meciar 's ruling Movement for a Democratic Slovakia , was stripped of his parliamentary mandate on Wednesday after leaving the party last month in protest over what he said was a lack of democracy in the country .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Slovakia |\n| Country |\n\nThe paragraph does not contain any specific location mentioned apart from the country name \"Slovakia\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Slovakia |\n| Country |\n\nThe paragraph only refers to \"Slovakia\" as a location. Other entities mentioned, such as \"Gaulieder\" and \"Prime Minister Vladimir Meciar\" and \"Movement for a Democratic Slovakia\" do not clearly refer to a specific location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Gaulieder , formerly a member of Prime Minister Vladimir Meciar 's ruling Movement for a Democratic Slovakia , was stripped of his parliamentary mandate on Wednesday after leaving the party last month in protest over what he said was a lack of democracy in the country .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Movement for a Democratic Slovakia |\n| Prime Minister Vladimir Meciar's ruling Movement for a Democratic Slovakia |\n| Gaulieder (assumed to be a person, but mentioned in relation to an organization) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Movement for a Democratic Slovakia |\n| Prime Minister Vladimir Meciar's ruling Movement for a Democratic Slovakia |"}
+  ]
+}

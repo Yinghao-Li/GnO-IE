@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: These rats are also highly susceptible to develop papillary necrosis with analgesic administration .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's break down the paragraph and identify the \"Disease\" and \"Chemical\" entities.\n\n1. \"These rats\" - This is not a named entity.\n\n2. \"papillary necrosis\" - This is a disease entity.\n\n3. \"analgesic administration\" - This is a chemical entity.\n\nSo, the identified \"Disease\" entity is \"papillary necrosis\" and the identified \"Chemical\" entity is \"analgesic administration\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to \"Disease\" or \"Chemical\".\n\n1. \"These rats\" - This does not refer to a \"Disease\" or \"Chemical\" entity.\n\n2. \"papillary necrosis\" - This is a \"Disease\" entity.\n\n3. \"analgesic administration\" - This is a \"Chemical\" entity.\n\nSo, the identified \"Disease\" entity is \"papillary necrosis\" and the identified \"Chemical\" entity is \"analgesic administration\"."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity                 | Entity Type |\n|------------------------|-------------|\n| papillary necrosis     | Disease     |\n| analgesic administration | Chemical    |"}
+]

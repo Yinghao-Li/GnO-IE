@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In 1 patient with atopic dermatitis , telangiectatic and papular rosacea insidiously appeared after 5 months of treatment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| atopic dermatitis |\n| telangiectatic and papular rosacea |\n\nIn this paragraph, the two \"Disease\" entities are:\n\n1. atopic dermatitis\n2. telangiectatic and papular rosacea"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| atopic dermatitis |\n| telangiectatic and papular rosacea |\n\nIn this paragraph, the two \"Disease\" entities are:\n\n1. atopic dermatitis\n2. telangiectatic and papular rosacea\n\nThe term \"treatment\" is not a disease, but it is included in the original paragraph as a part of the context."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In 1 patient with atopic dermatitis , telangiectatic and papular rosacea insidiously appeared after 5 months of treatment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| atopic dermatitis |\n\nNote: Although \"atopic dermatitis\" is often considered a skin condition and not a chemical, it is sometimes referred to as a \"chemical imbalance\" in the skin. For the sake of this exercise, I have included it as a chemical entity. If you strictly interpret a \"chemical\" as a substance with a chemical formula, then there would be no chemical entities in this paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n\nThere are no chemical entities in this paragraph, as none of the terms explicitly refer to a specific chemical substance with a chemical formula. \"Atopic dermatitis\" is a skin condition, not a chemical."}
+  ]
+}

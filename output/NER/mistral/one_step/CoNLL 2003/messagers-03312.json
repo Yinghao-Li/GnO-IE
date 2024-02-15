@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Vancouver 105 SAN ANTONIO 89\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Vancouver |\n| SAN ANTONIO |\n\nThese are the only entities that can be identified as persons in the given paragraph. The numbers are not considered as persons."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Vancouver |\n| SAN ANTONIO |\n\nThese are the only entities in the paragraph that can be identified as referring to specific persons or organizations, and therefore, are considered valid \"Person\" entities."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Vancouver 105 SAN ANTONIO 89\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Vancouver |\n| 105 SAN ANTONIO |\n| 89 |\n\nNote: It is assumed that \"105 SAN ANTONIO\" is a single location, possibly a street address or a building name. If it refers to two different locations, please provide more context for accurate identification."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Vancouver |\n| 105 SAN ANTONIO |\n\nNote: \"Let's think step by step.\" and \"105 SAN ANTONIO 89\" were removed as they do not clearly refer to a location. The remaining \"Vancouver\" and \"105 SAN ANTONIO\" are the valid location entities in the paragraph."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Vancouver 105 SAN ANTONIO 89\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Vancouver |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Vancouver |"}
+  ]
+}

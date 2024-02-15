@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acetaminophen ( APAP ) produces proximal tubular necrosis in Fischer 344 ( F344 ) rats .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| proximal tubular necrosis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| proximal tubular necrosis |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acetaminophen ( APAP ) produces proximal tubular necrosis in Fischer 344 ( F344 ) rats .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Acetaminophen (APAP) |\n| Fischer 344 (F344) |\n\nNote: Fischer 344 is not a chemical entity, but it is often referred to as a strain of rats used in research. However, since the paragraph specifically mentions \"Fischer 344 rats,\" I have included it in the table for completeness."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Acetaminophen (APAP) |\n\nNote: \"Fischer 344 (F344)\" is not a chemical entity, but a strain of rats. Therefore, it should not be included in the table."}
+  ]
+}

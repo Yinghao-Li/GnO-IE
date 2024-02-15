@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared with PzNDTDTBT / PzNDTDTBO , PSCs based on PzNDTTPD shows higher V oc , which corresponds to the deepest HOMO energy level of PzNDTTPD ( see Table 2 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PzNDTDTBT |\n| PzNDTDTBO |\n| PSCs |\n| PzNDTTPD |\n\nExplanation:\n\n* PzNDTDTBT and PzNDTDTBO are mentioned as materials in the first part of the sentence.\n* PSCs (which stands for \"Perovskite Solar Cells\") is also mentioned as a material.\n* PzNDTTPD is mentioned as a material in the second part of the sentence.\n\nAll of these are identified as \"Material Name\" entities."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PzNDTDTBT |\n| PzNDTDTBO |\n| PzNDTTPD |\n\nExplanation:\n\n* PzNDTDTBT and PzNDTDTBO are mentioned as materials in the first part of the sentence.\n* PzNDTTPD is mentioned as a material in the second part of the sentence.\n\nPSCs is not included as it is an abbreviation for \"Perovskite Solar Cells\" and it is not clear if it refers to a specific material or a type of material."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared with PzNDTDTBT / PzNDTDTBO , PSCs based on PzNDTTPD shows higher V oc , which corresponds to the deepest HOMO energy level of PzNDTTPD ( see Table 2 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| PzNDTDTBT |\n| PzNDTDTBO |\n| PSCs |\n| PzNDTTPD |\n| V oc |\n| HOMO energy level |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| V oc |\n| HOMO energy level |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared with PzNDTDTBT / PzNDTDTBO , PSCs based on PzNDTTPD shows higher V oc , which corresponds to the deepest HOMO energy level of PzNDTTPD ( see Table 2 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| higher V oc |\n| deepest HOMO energy level of PzNDTTPD |\n\nExplanation:\n\nThe \"Property Value\" entities in the paragraph are \"higher V oc\" and \"deepest HOMO energy level of PzNDTTPD\". These entities represent the properties being compared or discussed in the context of the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| higher V oc |\n| deepest HOMO energy level of PzNDTTPD |\n\nExplanation:\n\nThe only entities in the paragraph that clearly refer to \"Value of material property\" are \"higher V oc\" and \"deepest HOMO energy level of PzNDTTPD\". Therefore, these are the entities that have been included in the table. The term \"PzNDTTPD\" is a material, but it is not a value of a material property, so it has not been included in the table."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Tobramycin was given to a total daily dose of 300 mg / m2 and carbenicillin was given at a dose of 5 gm every four hours .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| None (The paragraph does not mention any specific diseases) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| None (The paragraph does not mention any specific diseases) |\n\nThe paragraph only mentions medications (tobramycin and carbenicillin) and their dosages, but it does not mention any diseases or conditions."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Tobramycin was given to a total daily dose of 300 mg / m2 and carbenicillin was given at a dose of 5 gm every four hours .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| tobramycin |\n| carbenicillin |\n\nExplanation:\nThe paragraph mentions two specific antibiotics, tobramycin and carbenicillin. These are the chemical entities that need to be identified. The units of measurement (mg/m2 for tobramycin and gm for carbenicillin) are not considered part of the chemical entity and should be ignored when identifying the chemical entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| tobramycin |\n| carbenicillin |\n\nExplanation:\nThe paragraph mentions the specific antibiotics, tobramycin and carbenicillin, which are the only entities that can be identified as chemicals in the paragraph. The units of measurement (mg/m2 for tobramycin and gm for carbenicillin) are not considered part of the chemical entity and should be ignored when identifying the chemical entities."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Three people were killed on Friday in a gun battle between rival groups of anti-guerrilla militiamen on the streets of this southeastern Turkish city , police said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| three people |\n| rival groups of anti-guerrilla militiamen |\n| police |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| three people |\n| rival groups of anti-guerrilla militiamen |\n| police |\n\nExplanation:\n\n\"Three people\" clearly refers to individuals, so it is a valid \"Person\" entity.\n\n\"Rival groups of anti-guerrilla militiamen\" refers to groups of people, but it is not clear how many individuals are in each group or if they are all named individuals, so it is included as a single \"Person\" entity to be on the safe side.\n\n\"Police\" refers to a group of law enforcement officers, but it can be considered a single entity for the purpose of this exercise since it refers to a specific group of people."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Three people were killed on Friday in a gun battle between rival groups of anti-guerrilla militiamen on the streets of this southeastern Turkish city , police said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| this southeastern Turkish city |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| this southeastern Turkish city |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Three people were killed on Friday in a gun battle between rival groups of anti-guerrilla militiamen on the streets of this southeastern Turkish city , police said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| anti-guerrilla militiamen |\n| police |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| anti-guerrilla militiamen |\n| police |"}
+  ]
+}

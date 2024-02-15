@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FRANKFURT 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Frankurt |\n\nNote: The paragraph does not contain any proper names of persons, only the name of a city."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Frankfurter (implied: organizer or location of the event) |\n\nNote: The paragraph does not contain any explicit mentions of persons, only an implied reference to the organizer or location of the event based on the context."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FRANKFURT 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| FRANKFURT |\n| 1996-12-06 |\n\nNote: The date \"1996-12-06\" is not a standard location entity and is included for completeness, but it is not a location in the sense of a city, country, or geographical feature."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| FRANKFURT |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FRANKFURT 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FRANKFURT |\n\nIn the given paragraph, \"FRANKFURT\" is the only identifiable organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FRANKFURT |\n\nIn the given paragraph, \"FRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANKFRANK\" does not clearly refer to an organization. Therefore, it should not be included in the table."}
+  ]
+}

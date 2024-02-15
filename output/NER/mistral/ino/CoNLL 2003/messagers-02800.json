@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: LONDON 1996-12-07\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. London\n2. 1996-12-07 (This is not a person, but I assume you meant to include a specific person associated with this date in the paragraph.)\n3. (Name of the person) if mentioned in the paragraph. (Currently, the paragraph does not contain any explicit mention of a person.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. (Name of the person) (if mentioned in the paragraph)\n\n(Since the paragraph does not contain any explicit mention of a person, there is no person entity to keep.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| (Name of the person) (if mentioned in the paragraph) |\n\n(Since the paragraph does not contain any explicit mention of a person, the table is empty.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: LONDON 1996-12-07\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. London: This is an unambiguous location mentioned at the beginning of the paragraph. It is the site of the event being described."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. London"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| London |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: LONDON 1996-12-07\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. LONDON: City and capital city of the United Kingdom.\n2. 1996-12-07: Date.\n3. United Kingdom: Sovereign state located off the northwestern coast of Europe.\n\nNo specific organizations are mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "No organizations are mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Kingdom |\n\nNote: Since no specific organizations were mentioned in the paragraph, only the country \"United Kingdom\" can be considered as a potential organization entity. However, it is important to note that a country is not typically considered an organization in the strict sense, but rather a political entity."}
+  ]
+}

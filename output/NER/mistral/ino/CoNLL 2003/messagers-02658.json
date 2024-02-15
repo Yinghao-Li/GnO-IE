@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 1. Alexis Blanc ( France ) 238.36 points\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Alexis Blanc\n\nThis is a clear mention of a person. Alexis Blanc is a French person."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Alexis Blanc"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Alexis Blanc |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 1. Alexis Blanc ( France ) 238.36 points\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France - This is an explicit location mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. France"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| France |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 1. Alexis Blanc ( France ) 238.36 points\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France (Country) - This is an organization often referred to as a country or a nation.\n\nIn the given paragraph, \"France\" is mentioned as the nationality of Alexis Blanc."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Paragraph: 1. France (Organization - Country) - A country or a nation.\n\nIn the given paragraph, \"France\" is the only organization entity mentioned."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| France (Country) |\n\nIn the given paragraph, \"France\" is the only organization entity mentioned, and it is identified as a country."}
+  ]
+}

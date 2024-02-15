@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Senegal 's President Abdou Diouf said on Friday he was proposing his foreign minister Moustapha Niasse for the post of United Nations secretary-general .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Abdou Diouf (Senegal's President)\n2. Moustapha Niasse (Senegal's foreign minister)\n3. United Nations (organization)\n4. Secretary-general (position within the United Nations)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Abdou Diouf (Senegal's President)\n2. Moustapha Niasse (Senegal's foreign minister)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Abdou Diouf (Senegal's President) |\n| Moustapha Niasse (Senegal's foreign minister) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Senegal 's President Abdou Diouf said on Friday he was proposing his foreign minister Moustapha Niasse for the post of United Nations secretary-general .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Senegal\n\nThe country where the President Abdou Diouf is from and where the foreign minister Moustapha Niasse serves."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Senegal"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Senegal |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Senegal 's President Abdou Diouf said on Friday he was proposing his foreign minister Moustapha Niasse for the post of United Nations secretary-general .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Senegal\n2. President Abdou Diouf (can be considered as a person but also an \"Organization\" as the President of a country)\n3. United Nations\n4. Secretary-general (position within the United Nations organization)\n5. Moustapha Niasse (person)\n6. Foreign minister (position within the Senegal government organization)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. United Nations\n2. Senegal (as a country can be considered as an organization in a broader sense)\n3. United Nations secretary-general (position within the United Nations organization)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Nations |\n| Senegal (as a country) |\n| United Nations secretary-general |"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Entire social infrastructures in the icy Far North where Norilsk is based depend on the company , and Moscow has said it has no finances to resettle hundreds of thousands of people -- an expenditure which could far outstrip Norilsk 's debts .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Moscow\n2. Norilsk (implied as Norilsk Nickel or Norilsk company)\n3. Hundreds of thousands of people. (This is a group entity, but it can be broken down into individual persons.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Hundreds of thousands of people.\n\n(Note: In this context, \"hundreds of thousands of people\" refers to individuals, so it is the only clearly identified person entity in the paragraph.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| hundreds of thousands of people |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Entire social infrastructures in the icy Far North where Norilsk is based depend on the company , and Moscow has said it has no finances to resettle hundreds of thousands of people -- an expenditure which could far outstrip Norilsk 's debts .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Far North: This is a location referring to the northernmost regions, likely implying a large area with specific climatic conditions.\n2. Norilsk: This is a specific location, a city in Russia, known for being the site of a large industrial complex.\n3. Moscow: This is a specific location, the capital city of Russia."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Far North\n2. Norilsk\n3. Moscow"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Far North |\n| Norilsk |\n| Moscow |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Entire social infrastructures in the icy Far North where Norilsk is based depend on the company , and Moscow has said it has no finances to resettle hundreds of thousands of people -- an expenditure which could far outstrip Norilsk 's debts .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Moscow\n2. Norilsk (implied as Norilsk Nickel or Norilsk company)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Norilsk (Norilsk Nickel or Norilsk company)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Norilsk (Norilsk Nickel or Norilsk company) |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report a case of hypersensitivity myocarditis secondary to administration of carbamazepine .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Hypersensitivity myocarditis |\n| Administration of carbamazepine |\n\nExplanation:\nThe paragraph reports a case of \"hypersensitivity myocarditis\" that occurred \"secondary to administration of carbamazepine\". Therefore, both \"hypersensitivity myocarditis\" and \"administration of carbamazepine\" are valid disease entities. However, since \"administration of carbamazepine\" is not technically a disease but rather a cause of the disease, it is included for completeness and clarity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Hypersensitivity myocarditis |\n\nExplanation:\nThe paragraph only mentions one clear disease entity, which is \"hypersensitivity myocarditis\". \"Administration of carbamazepine\" is not a disease, but rather a cause of the disease. Therefore, it should not be included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report a case of hypersensitivity myocarditis secondary to administration of carbamazepine .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| carbamazepine |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| carbamazepine |"}
+  ]
+}

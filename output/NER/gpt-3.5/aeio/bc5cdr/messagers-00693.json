@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Intracerebroventricular injection of ethacrynic acid (50 % convulsive dose ; 50 micrograms / mouse) accelerated the synthesis / turnover of 5 - hydroxytryptamine (5 - HT) but suppressed the synthesis of gamma - aminobutyric acid and acetylcholine in mouse brain .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nThere is no mention of a specific disease in the paragraph, so there is no \"Disease\" entity to identify.\n\nStep 2: Identify the \"Chemical\" entity.\nThe following chemicals are mentioned in the paragraph:\n- Ethacrynic acid\n\nTherefore, the identified \"Chemical\" entity is \"Ethacrynic acid\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Intracerebroventricular injection of ethacrynic acid (50 % convulsive dose ; 50 micrograms / mouse) accelerated the synthesis / turnover of 5 - hydroxytryptamine (5 - HT) but suppressed the synthesis of gamma - aminobutyric acid and acetylcholine in mouse brain .\n\nThe identified \"Chemical\" entity is \"Ethacrynic acid\"."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity           | Entity Type |\n|------------------|-------------|\n| Ethacrynic acid  | Chemical    |"}
+]

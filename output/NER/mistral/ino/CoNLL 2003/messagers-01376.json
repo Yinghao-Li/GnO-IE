@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" The banks are already preparing for the December 10 tax payment , \" said Budapest Bank 's Sandor Tolonics . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Budapest Bank\n2. Sandor Tolonics (He is a person working for Budapest Bank, specifically identified as the speaker in the paragraph.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Sandor Tolonics"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Sandor Tolonics |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" The banks are already preparing for the December 10 tax payment , \" said Budapest Bank 's Sandor Tolonics . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Budapest Bank\n\nThis is a specific financial institution located in Budapest, Hungary. Therefore, it can be identified as a \"Location\" entity, representing the place where Sandor Tolonics works and where Budapest Bank is headquartered."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Budapest, Hungary (implied by Budapest Bank)\n\nSince Budapest Bank is the only location mentioned in the paragraph, and it is located in Budapest, Hungary, the only relevant location entity is Budapest, Hungary."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Budapest, Hungary |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" The banks are already preparing for the December 10 tax payment , \" said Budapest Bank 's Sandor Tolonics . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Budapest Bank\n\nThis is an organization identified in the paragraph. Budapest Bank is mentioned as the employer of Sandor Tolonics."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Budapest Bank\n\nThis is the only organization explicitly mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Budapest Bank |"}
+  ]
+}

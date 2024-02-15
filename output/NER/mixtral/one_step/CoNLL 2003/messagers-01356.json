@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bomb explodes outside home of expelled Slovak MP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| expelled Slovak MP |\n\nIn the paragraph, the \"Person\" entity is \"expelled Slovak MP\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| expelled Slovak MP |\n\nThe only clear \"Person\" entity in the paragraph is \"expelled Slovak MP\". The phrase \"home\" is not a person, and while it is associated with the MP, it is not the MP itself. Therefore, it should not be included as a \"Person\" entity."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bomb explodes outside home of expelled Slovak MP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| outside home |\n\nThe location entity in the paragraph is \"outside home\". It is mentioned as the location where the bomb exploded."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| outside home |\n\nThe only location entity in the paragraph is \"outside home\". The phrase \"of expelled Slovak MP\" is not a location entity, it provides additional context about the home."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bomb explodes outside home of expelled Slovak MP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Slovak |\n\nNote: I'm assuming \"Slovak\" is being used as an adjective to describe the MP, but I have included it as an organization since it is also a country and could potentially be relevant in a different context. If \"Slovak\" is referring to a specific MP or group within Slovakia, additional context would be needed to accurately identify the organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Slovak |\n\nNote: In this paragraph, there are no clear organization entities mentioned other than \"Slovak\" which could potentially be referring to a political party or group within Slovakia. Without further context, it is difficult to determine if \"Slovak\" is being used as an organization or a nationality/adjective."}
+  ]
+}

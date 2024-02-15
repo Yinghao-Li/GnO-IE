@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Postponed : Albion v Forfar , Huntly v Clyde (both now play on\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. \"Albion\" - Organization\n2. \"Forfar\" - Location\n3. \"Huntly\" - Location\n4. \"Clyde\" - Organization\n\nThere are no person entities mentioned in the paragraph."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. \"Albion\" - Organization\n2. \"Forfar\" - Location\n3. \"Huntly\" - Location\n4. \"Clyde\" - Organization\n\nAll the identified entities clearly refer to either a location or an organization."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity  | Entity Type    |\n|---------|----------------|\n| Forfar  | Location       |\n| Huntly  | Location       |\n| Albion  | Organization   |\n| Clyde   | Organization   |"}
+]

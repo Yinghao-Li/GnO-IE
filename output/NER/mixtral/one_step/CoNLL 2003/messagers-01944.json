@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Relations between Chancellor of the Exchequer Kenneth Clarke and Prime Minister John Major are good despite media reports of a rift over European policy , a spokesman for Major 's office said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Chancellor of the Exchequer Kenneth Clarke |\n| Prime Minister John Major |\n| a spokesman for Major's office |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Chancellor of the Exchequer Kenneth Clarke |\n| Prime Minister John Major |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Relations between Chancellor of the Exchequer Kenneth Clarke and Prime Minister John Major are good despite media reports of a rift over European policy , a spokesman for Major 's office said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Major's office |\n\nThe only location entity mentioned in the paragraph is \"Major's office.\" It is the office of Prime Minister John Major, where the spokesman for the Prime Minister made the statement regarding the relationship between John Major and Kenneth Clarke."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Major's office |\n\nThere is only one location entity in the paragraph, which is \"Major's office.\" The other entities, such as \"Chancellor of the Exchequer Kenneth Clarke\" and \"Prime Minister John Major,\" are names of people and not location entities."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Relations between Chancellor of the Exchequer Kenneth Clarke and Prime Minister John Major are good despite media reports of a rift over European policy , a spokesman for Major 's office said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Chancellor of the Exchequer |\n| Major's office |\n| European policy (debatable as it refers to a topic rather than an organization, but included for comprehensiveness) |\n\nPlease note that \"Chancellor of the Exchequer\" is a government position in the United Kingdom, and \"Major's office\" likely refers to the office of the Prime Minister at the time, John Major. However, I have included them as \"Organization\" entities as requested, for the sake of consistency with the instructions."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Major's office |"}
+  ]
+}

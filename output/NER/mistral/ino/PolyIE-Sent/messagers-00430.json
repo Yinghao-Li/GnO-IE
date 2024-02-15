@@ -1,0 +1,80 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph.\n\nParagraph: It is also noteworthy that , the short circuit current of the devices increased with an increase in the number of perylene units in the polymer , except for the case of PFDTBT_20Per.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Perylene units\n2. Polymer (implied material, but not explicitly stated)\n3. Devices\n4. Short circuit current\n5. PFDTBT_20Per (implicitly a material, as it is a specific case mentioned in the text)"
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Name."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Perylene units\n2. Polymer\n3. PFDTBT_20Per"
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| Perylene units |\n| Polymer |\n| PFDTBT_20Per |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph.\n\nParagraph: It is also noteworthy that , the short circuit current of the devices increased with an increase in the number of perylene units in the polymer , except for the case of PFDTBT_20Per.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. short circuit current of the devices\n2. number of perylene units\n3. polymer (implied property: contains perylene units)\n4. PFDTBT_20Per (implied property: has a specific number of perylene units)"
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. short circuit current\n2. number of perylene units (property of the polymer)\n3. PFDTBT_20Per (implied property: has a specific number of perylene units)\n4. polymer (implied property: material containing perylene units)"
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| short circuit current |\n| number of perylene units (in the polymer) |\n| PFDTBT_20Per (implied property: has a specific number of perylene units) |\n| polymer (implied property: material containing perylene units) |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph.\n\nParagraph: It is also noteworthy that , the short circuit current of the devices increased with an increase in the number of perylene units in the polymer , except for the case of PFDTBT_20Per.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. short circuit current of the devices\n2. number of perylene units in the polymer\n3. PFDTBT_20Per (a specific type of polymer)\n\nThese are the entities that can be considered as \"Property Values\" in the given paragraph as they represent measurable or quantifiable characteristics of the devices and the polymer."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Value of Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. short circuit current\n2. number of perylene units\n\nThese are the entities that directly refer to the values of material properties mentioned in the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| short circuit current |\n| number of perylene units |"
+    }
+  ]
+}

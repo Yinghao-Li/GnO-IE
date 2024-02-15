@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Hooded protesters threw burning bottles and other objects at police in Pamplona after the protest organised by Herri Batasuna , the political wing of Basque separatist group ETA .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hooded protesters\n2. Police\n3. Herri Batasuna\n4. Basque separatist group ETA (ETA is an organization, but it can be considered as the group that Herri Batasuna is the political wing of)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Hooded protesters\n2. Police\n3. Herri Batasuna\n\n(ETA is an organization and not considered a person in this context)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Hooded protesters |\n| Police |\n| Herri Batasuna |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Hooded protesters threw burning bottles and other objects at police in Pamplona after the protest organised by Herri Batasuna , the political wing of Basque separatist group ETA .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Pamplona: This is the location where the incident took place. It is a city in Spain.\n2. Herri Batasuna: While not a physical location, Herri Batasuna is a political organization based in the Basque Country in Spain."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Pamplona: This is the location where the incident took place. It is a city in Spain."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Pamplona |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Hooded protesters threw burning bottles and other objects at police in Pamplona after the protest organised by Herri Batasuna , the political wing of Basque separatist group ETA .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Herri Batasuna\n2. Basque separatist group ETA (ETA is not explicitly mentioned as an organization in the paragraph, but it is identified as the group that Herri Batasuna is the political wing of)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Herri Batasuna\n2. ETA (ETA is an organization even though it is mentioned as the group that Herri Batasuna is the political wing of)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Herri Batasuna |\n| ETA |"}
+  ]
+}

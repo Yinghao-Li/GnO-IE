@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Ramos Horta has been a vocal leader of the opposition to Jakarta 's rule in the territory .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Ramos Horta |\n| Jakarta |\n\nNote: Although \"Jakarta\" is a place, it is mentioned in the context of being a leader, so I included it as a \"Person\" entity. If it's required to only list actual people, then the table would only contain \"Ramos Horta\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Ramos Horta |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Ramos Horta has been a vocal leader of the opposition to Jakarta 's rule in the territory .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Jakarta    |\n| the territory |\n\nIn the paragraph, \"Jakarta\" and \"the territory\" are mentioned as locations. Jakarta is a city in Indonesia, and \"the territory\" presumably refers to a specific region or place that is being ruled by Jakarta in the context of the passage."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Jakarta    |\n\nIn the paragraph, \"Jakarta\" is the only clear location mentioned. The phrase \"the territory\" is not specific enough to be considered a valid location entity, as it does not clearly refer to a specific geographic location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Ramos Horta has been a vocal leader of the opposition to Jakarta 's rule in the territory .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Jakarta |\n\nExplanation:\n\nIn the given paragraph, \"Jakarta\" is the Organization entity as it is referred to as the ruling power over the territory."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Jakarta |\n\nExplanation:\n\nIn the given paragraph, \"Jakarta\" is the only Organization entity as it is referred to as the ruling power over the territory. The other term \"the opposition\" is a role or position, not an organization."}
+  ]
+}

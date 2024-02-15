@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The risk of clinically important idiopathic liver disease was similar for persons prescribed TMP - SMZ ( 5 . 2 / 100 , 000 ) and those prescribed trimethoprim alone ( 3 . 8 / 100 , 000 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| idiopathic liver disease |\n| trimethoprim alone |\n| TMP - SMZ |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities that clearly refer to \"Disease\" in the given paragraph:\n\n| Disease |\n| --- |\n| idiopathic liver disease |\n\nThe other entities mentioned in the paragraph, \"TMP - SMZ\" and \"trimethoprim alone\", are not clearly referring to diseases, but rather to medications or drug combinations. Therefore, they are not included in the list of valid entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The risk of clinically important idiopathic liver disease was similar for persons prescribed TMP - SMZ ( 5 . 2 / 100 , 000 ) and those prescribed trimethoprim alone ( 3 . 8 / 100 , 000 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| TMP |\n| SMZ |\n| trimethoprim |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities that refer to chemicals in the paragraph:\n\n| Chemical |\n| --- |\n| TMP |\n| SMZ |\n| trimethoprim |\n\nNote that \"persons\" and \"clinically important idiopathic liver disease\" are not chemical entities, so they have been removed from the list."}
+  ]
+}

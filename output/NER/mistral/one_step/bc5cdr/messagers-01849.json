@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Hypotheses of heroin - related rhabdomyolysis and stroke in heroin abusers are discussed .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| rhabdomyolysis |\n| stroke (in heroin abusers) |\n| heroin-related |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| rhabdomyolysis |\n| stroke |\n| (heroin-related) |\n\nNote: I assumed \"heroin-related\" is referring to the cause or condition related to heroin use, which is why it is included in parentheses. If it is not considered a disease, it can be removed from the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Hypotheses of heroin - related rhabdomyolysis and stroke in heroin abusers are discussed .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| heroin |\n\nThe paragraph only mentions one chemical entity, which is \"heroin\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| heroin |\n\nThe paragraph only mentions the chemical entity \"heroin\". Other entities such as \"rhabdomyolysis\" and \"stroke\" are not chemical entities, but rather medical conditions or diseases that can be associated with the use of heroin."}
+  ]
+}

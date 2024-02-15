@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Van Boxmeer said Poland 's top five brewers , which produce about 55 percent of the country 's beer , could all raise market share as some of the numerous small brewers fall to competition from the large brewers with foreign investors .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step:\n\n1. Location: Poland\n2. Organization: top five brewers\n3. Organization: large brewers\n4. Organization: foreign investors\n\nPlease note that there are no specific person entities mentioned in this paragraph."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\":\n\n1. Location: Poland\n2. Organization: top five brewers\n3. Organization: large brewers\n\nPlease note that the entity \"foreign investors\" does not clearly refer to any of the specified categories, so it has been removed."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity | Entity Type |\n|--------|-------------|\n| Poland | location    |\n| top five brewers | organization |\n| large brewers | organization |\n\nPlease note that there are no specific person entities mentioned in this paragraph."}
+]

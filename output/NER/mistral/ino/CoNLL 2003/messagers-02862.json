@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" I 'm sure there are a few people in England who 'd be delighted to have David Campese in their club 's jersey , \" he said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. I (speaker)\n2. there (implicit)\n3. a few people (quantity of persons)\n4. in England (location)\n5. who (implicit question indicator)\n6. 'd be delighted (state of mind or emotion of the people)\n7. to have (action)\n8. David Campese (named person)\n9. in their club 's (belonging to the people)\n10. jersey (type of clothing)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. I\n2. a few people\n3. David Campese"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| I     |\n| a few people |\n| David Campese |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" I 'm sure there are a few people in England who 'd be delighted to have David Campese in their club 's jersey , \" he said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. England\n\nThe entity \"England\" is a country and can be identified as a location."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Location: England."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| England |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" I 'm sure there are a few people in England who 'd be delighted to have David Campese in their club 's jersey , \" he said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. England: A country in Europe, not an organization per se, but relevant as it is mentioned in relation to the potential location of the club.\n2. David Campese: A person, not an organization.\n3. Club: An organization, typically a sports team.\n\nSo, the organization entities in the paragraph are \"club.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Paragraph: \" I 'm sure there are a few clubs in England who 'd be delighted to have David Campese in their jersey .\""},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| clubs |\n\nThis table represents the organization entity mentioned in the paragraph, which is \"clubs.\""}
+  ]
+}

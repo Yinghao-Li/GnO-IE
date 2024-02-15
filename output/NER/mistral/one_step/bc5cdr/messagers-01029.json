@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: For specific groups of drugs , the risks were 1 . 56 ( 1 . 05 - 2 . 30 ) for aspirin , 1 . 03 ( 0 . 60 - 1 . 76 ) for pyrazolones , 0 . 80 ( 0 . 39 - 1 . 63 ) for paracetamol , and 0 . 94 ( 0 . 57 - 1 . 56 ) for nonaspirin NSAIDs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| None identified in the paragraph |\n\nThe paragraph only mentions specific groups of drugs and their respective risks, it does not mention any diseases."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| None identified in the paragraph |\n\nThe paragraph only mentions specific groups of drugs and their respective risks, it does not mention any diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: For specific groups of drugs , the risks were 1 . 56 ( 1 . 05 - 2 . 30 ) for aspirin , 1 . 03 ( 0 . 60 - 1 . 76 ) for pyrazolones , 0 . 80 ( 0 . 39 - 1 . 63 ) for paracetamol , and 0 . 94 ( 0 . 57 - 1 . 56 ) for nonaspirin NSAIDs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| aspirin |\n| pyrazolones |\n| paracetamol |\n| nonaspirin NSAIDs |\n\nThese are the precise entities mentioned in the paragraph. \"Drugs\" is a general term and not a specific chemical entity, so it was not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| aspirin |\n| pyrazolones |\n| paracetamol |\n| nonaspirin NSAIDs |\n\nThese are the entities mentioned in the paragraph that can be clearly identified as chemical compounds. \"Risks\" and the numbers in parentheses are not chemical entities and were excluded from the table."}
+  ]
+}

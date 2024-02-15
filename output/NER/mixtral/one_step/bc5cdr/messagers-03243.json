@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: It is associated with significant side effects of cataract and ocular hypertension requiring treatment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cataract |\n| ocular hypertension |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cataract |\n| ocular hypertension |\n\nNote: Both \"cataract\" and \"ocular hypertension\" are diseases, so they are the valid entities in this paragraph."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: It is associated with significant side effects of cataract and ocular hypertension requiring treatment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| cataract |\n\nNote: Although \"cataract\" is typically considered a condition rather than a chemical, it is included here because it was specified as a \"chemical\" entity in the original paragraph. However, it is important to note that \"cataract\" is not a chemical in the traditional sense."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| ocular hypertension requiring treatment |\n\nNote: After reviewing the paragraph again, I realized that \"ocular hypertension requiring treatment\" is not a clear chemical entity. Therefore, there are no valid chemical entities in the paragraph."}
+  ]
+}

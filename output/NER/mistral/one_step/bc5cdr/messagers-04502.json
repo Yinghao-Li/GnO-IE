@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The improvement in GFR was not associated with enhanced glomerular hypertrophy or increased segmental glomerulosclerosis , tubulointerstitial injury , or renal cortical malondialdehyde content .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| glomerulosclerosis |\n| tubulointerstitial injury |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| glomerulosclerosis |\n| tubulointerstitial injury |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The improvement in GFR was not associated with enhanced glomerular hypertrophy or increased segmental glomerulosclerosis , tubulointerstitial injury , or renal cortical malondialdehyde content .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| glomerular filtration rate (GFR) |\n| glomerular hypertrophy |\n| segmental glomerulosclerosis |\n| tubulointerstitial injury |\n| renal cortical malondialdehyde content |\n| malondialdehyde |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| glomerular filtration rate (GFR) |\n| malondialdehyde |\n\nThe other entities mentioned in the paragraph do not refer to chemicals:\n\n* improvement: not a chemical\n* was not associated with: not a chemical\n* enhanced: not a chemical\n* glomerular hypertrophy: not a chemical per se, but a physiological condition that can be associated with certain chemicals\n* increased: not a chemical\n* segmental glomerulosclerosis: not a chemical, but a pathological condition that can be caused by certain chemicals\n* tubulointerstitial injury: not a chemical, but a pathological condition that can be caused by certain chemicals."}
+  ]
+}

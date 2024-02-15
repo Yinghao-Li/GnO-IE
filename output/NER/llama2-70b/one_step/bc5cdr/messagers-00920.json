@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Fifteen dyskinetic , 12 nondyskinetic patients , and a control group were included .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Dyskinetic |\n| Nondyskinetic |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Dyskinetic |\n\nThe term \"nondyskinetic\" does not clearly refer to a disease, it is a term used to describe patients who do not have dyskinesia, therefore it should not be included in the list of diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Fifteen dyskinetic , 12 nondyskinetic patients , and a control group were included .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| dyskinetic |\n| nondyskinetic |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities that clearly refer to \"Chemical\":\n\n| Chemical |\n| --- |\n| dyskinetic |\n\nI removed \"nondyskinetic\" from the table as it does not clearly refer to a chemical entity."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" President Arafat 's position is clear that such a meeting should come after successful negotiations so that the meeting would have positive results .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| President Arafat |\n\nExplanation:\n\nThe paragraph mentions \"President Arafat,\" which is a person. Therefore, the valid entity is \"President Arafat.\""},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| President Arafat |\n\nExplanation:\n\nThe paragraph mentions \"President Arafat,\" which is a person. Therefore, the valid entity is \"President Arafat.\" The word \"such\" does not clearly refer to a person, so it is not included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" President Arafat 's position is clear that such a meeting should come after successful negotiations so that the meeting would have positive results .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| such a meeting |\n\nNote: The paragraph only contains one location entity, \"such a meeting\". The other mentions of meetings refer to the same event and are therefore not considered separate entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| such a meeting |\n\nNote: The only location entity in the paragraph is \"such a meeting\". The mention of \"President Arafat's position\" does not refer to a physical location and is therefore not included as a location entity."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" President Arafat 's position is clear that such a meeting should come after successful negotiations so that the meeting would have positive results .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| President Arafat |\n\nNote: I'm assuming that \"President Arafat\" is mentioned as an organization because it is the formal title of a person who holds a high-ranking political position. However, if the context suggests that \"President Arafat\" is being referred to as an individual and not in his official capacity, then it would not be considered an organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| President Arafat |\n\nNote: In the original paragraph, there are no other clear references to organizations."}
+  ]
+}

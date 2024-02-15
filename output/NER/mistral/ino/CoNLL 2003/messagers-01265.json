@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: An undetermined number of people are reported to have been abducted and killed outside the town by tribal vigilante groups .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. An undetermined number of people\n\nThese are the entities identified as people in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. An undetermined number of people\n\nThese are the entities that clearly refer to persons in the paragraph. Other entities such as \"tribal vigilante groups\" are not considered persons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| An undetermined number of people |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: An undetermined number of people are reported to have been abducted and killed outside the town by tribal vigilante groups .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Outside the town: This is a location where the incident is said to have occurred."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Outside the town: This is the relevant location entity."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Outside the town |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: An undetermined number of people are reported to have been abducted and killed outside the town by tribal vigilante groups .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Tribal vigilante groups.\n\nThese are the organizations mentioned in the paragraph. The paragraph does not provide enough context to determine if there is any other organization involved. The tribal vigilante groups are reportedly responsible for the abductions and killings outside the town."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Tribal vigilante groups.\n\nThis is the only entity in the paragraph that clearly refers to an organization. The paragraph does not provide enough context to determine if there are any other organizations involved, and the other entities mentioned (people, town) do not qualify as organizations in this context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Tribal vigilante groups |\n\nThis table presents the organization mentioned in the paragraph, \"An undetermined number of people are reported to have been abducted and killed outside the town by tribal vigilante groups.\" The table includes one column labeled \"Organization,\" and the cell in that column contains the exact phrase \"Tribal vigilante groups,\" which is the organization mentioned in the paragraph."}
+  ]
+}

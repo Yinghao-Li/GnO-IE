@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Clinical trials of aminoglycosides in seriously ill patients indicate that the relative risk for developing acute renal failure during therapy ranges from 8 to 10 and that the attributable risk is 70 % to 80 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Aminoglycosides are a type of antibiotic used to treat serious bacterial infections. They are not a disease.\n2. \"Seriously ill patients\" refers to a condition or state of health, not a specific disease.\n3. \"Acute renal failure\" is the disease entity in this paragraph. It is a condition in which the kidneys suddenly stop working properly, causing a buildup of waste products in the blood.\n\nTherefore, the disease entity in the paragraph is \"acute renal failure.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "* Aminoglycosides (not a disease)\n* Seriously ill patients (not a disease)\n* Acute renal failure (disease)\n\nAfter removing irrelevant entities, we only keep the disease entity:\n\n* Acute renal failure"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute renal failure |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Clinical trials of aminoglycosides in seriously ill patients indicate that the relative risk for developing acute renal failure during therapy ranges from 8 to 10 and that the attributable risk is 70 % to 80 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Aminoglycosides: These are a group of antibiotics used to treat various bacterial infections. They are derived from certain types of bacteria and work by binding to the 30S subunit of the bacterial ribosome, which inhibits protein synthesis and ultimately leads to bacterial death.\n\nSo, in the given paragraph, the chemical entity is \"aminoglycosides\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Aminoglycosides: These are a group of antibiotics used to treat various bacterial infections. They are derived from certain types of bacteria and work by binding to the 30S subunit of the bacterial ribosome, which inhibits protein synthesis and ultimately leads to bacterial death.\n\nIn the given paragraph, the relevant chemical entity is \"aminoglycosides\". The other terms such as \"acute renal failure\" and \"therapy\" are medical conditions and procedures, respectively, and not chemical entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Aminoglycosides |"}
+  ]
+}

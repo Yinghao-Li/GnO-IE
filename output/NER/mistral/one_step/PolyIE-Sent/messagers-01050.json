@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 1 To date , solar power conversion efficiencies ( PCE ) of 10.6% and 9.2% have been demonstrated in the cells with tandem and single junction structures , respectively , representing an important advance in the development of PSCs.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| Solar power conversion efficiencies (PCE) |\n| Cells with tandem structures |\n| Cells with single junction structures |\n| PSCs (Perovskite Solar Cells) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| Solar power conversion efficiencies (PCE) of 10.6% and 9.2% |\n| PSCs (Perovskite Solar Cells) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 1 To date , solar power conversion efficiencies ( PCE ) of 10.6% and 9.2% have been demonstrated in the cells with tandem and single junction structures , respectively , representing an important advance in the development of PSCs.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| solar power conversion efficiencies (PCE) |\n| PCE in cells with tandem structures |\n| PCE in cells with single junction structures |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| solar power conversion efficiencies (PCE) |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 1 To date , solar power conversion efficiencies ( PCE ) of 10.6% and 9.2% have been demonstrated in the cells with tandem and single junction structures , respectively , representing an important advance in the development of PSCs.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| solar power conversion efficiencies (PCE) |\n| 10.6%                 |\n| 9.2%                  |\n| cells with tandem structures |\n| cells with single junction structures |\n| important advance          |\n| in the development of PSCs   |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| solar power conversion efficiencies (PCE) |\n| 10.6%                 |\n| 9.2%                  |\n| 10.6% for tandem structures |\n| 9.2% for single junction structures |\n| important advance          |\n| in the development of PSCs   |\n\nExplanation: I kept \"solar power conversion efficiencies (PCE)\" as it is a material property, and I split the values for tandem and single junction structures to make it clear that they are the property values for different types of cells."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Mike Cito , 17 , was expelled from St Pius X High School in Albuquerque after an October game in which he used the sharpened chin strap buckles to injure two opposing players and the referee .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Mike Cito\n2. St Pius X High School (institution where Mike Cito is expelled from)\n3. Albuquerque (location of St Pius X High School)\n4. Two opposing players\n5. Referee."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Mike Cito\n2. Two opposing players\n3. Referee."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Mike Cito |\n| Two opposing players |\n| Referee |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Mike Cito , 17 , was expelled from St Pius X High School in Albuquerque after an October game in which he used the sharpened chin strap buckles to injure two opposing players and the referee .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. St Pius X High School\n2. Albuquerque (implied location of St Pius X High School)\n\nThe paragraph mentions the name of the specific high school where the incident took place, which is St Pius X High School. Albuquerque is not explicitly stated as the location of the high school in the paragraph, but it can be inferred from the fact that the school is located in Albuquerque based on the given information."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. St Pius X High School\n2. Albuquerque"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| St Pius X High School |\n| Albuquerque |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Mike Cito , 17 , was expelled from St Pius X High School in Albuquerque after an October game in which he used the sharpened chin strap buckles to injure two opposing players and the referee .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. St Pius X High School: This is an organization identified in the paragraph as the institution where Mike Cito was a student and from which he was expelled."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "St Pius X High School"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| St Pius X High School |"}
+  ]
+}

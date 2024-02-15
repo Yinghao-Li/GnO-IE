@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Russia said on Friday it expected a constructive relationship with Madeleine Albright , nominated by U.S. President Bill Clinton to be Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Russia\n2. Madeleine Albright\n3. U.S. President Bill Clinton\n\nThese are the entities identified as \"Person\" in the given paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Madeleine Albright\n2. U.S. President Bill Clinton\n\nThese are the entities that clearly refer to persons in the given paragraph. Russia is not a person, it is a country."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Madeleine Albright |\n| U.S. President Bill Clinton |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Russia said on Friday it expected a constructive relationship with Madeleine Albright , nominated by U.S. President Bill Clinton to be Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Russia\n2. Madeleine Albright (Person, but for the purpose of this question, we are looking for locations, so we can consider her \"location\" as being in the role or position of Secretary of State in the United States.)\n3. United States\n4. President Bill Clinton (Person, but for the purpose of this question, we can consider him as being located in the White House or in the United States during his presidency.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Russia\n2. United States (in this context, it refers to the location of the U.S. government, specifically the State Department where Madeleine Albright would be working as Secretary of State)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Russia |\n| United States (U.S. government, specifically the State Department) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Russia said on Friday it expected a constructive relationship with Madeleine Albright , nominated by U.S. President Bill Clinton to be Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Russia\n2. Madeleine Albright\n3. United States\n4. U.S. President Bill Clinton\n5. Secretary of State (position)\n\nRussia and United States are the organizations mentioned in the paragraph. Madeleine Albright is a person, but she is being nominated for a position within an organization (the U.S. government)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Russia\n2. United States\n\nThese are the organizations mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Russia |\n| United States |"}
+  ]
+}

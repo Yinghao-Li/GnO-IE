@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The number - average molecular weight ( M n ) of the polymer is 18.9 kg / mol with a polydispersity index ( PDI ) of 2.04.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| polymer |\n\nExplanation:\n\nThe word \"polymer\" is the only material name mentioned in the paragraph. It is a substance that consists of large molecules made up of repeating subunits. The other terms mentioned in the paragraph, \"average molecular weight\" and \"polydispersity index,\" are properties of materials, not material names themselves."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| polymer |\n\nExplanation:\n\nThe word \"polymer\" is the only material name mentioned in the paragraph. The other terms mentioned in the paragraph, \"average molecular weight\" and \"polydispersity index,\" are properties of materials, not material names themselves. Therefore, they should not be included in the table."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The number - average molecular weight ( M n ) of the polymer is 18.9 kg / mol with a polydispersity index ( PDI ) of 2.04.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| average molecular weight (Mn) |\n| polydispersity index (PDI) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| average molecular weight (Mn) |\n| polydispersity index (PDI) |\n\nThe other term \"18.9 kg / mol\" is a value associated with the property \"average molecular weight (Mn)\", not a property name itself."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The number - average molecular weight ( M n ) of the polymer is 18.9 kg / mol with a polydispersity index ( PDI ) of 2.04.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| average molecular weight (Mn) of 18.9 kg/mol |\n| polydispersity index (PDI) of 2.04 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 18.9 kg / mol |\n| 2.04 |\n\nNote: The two values, 18.9 kg/mol and 2.04, are the only clear \"Value of material property\" entities in the paragraph. The other entities, \"average molecular weight (Mn)\" and \"polydispersity index (PDI)\", are property names rather than property values."
+    }
+  ]
+}

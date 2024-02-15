@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Ye Zhaoying ( China ) beat Meiluawati ( Indonesia ) 11-6 12-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ye Zhaoying\n2. China (This is not a person, but it can be considered a \"location\" or \"entity\" representing the country where Ye Zhaoying is from.)\n3. Meiluawati\n4. Indonesia (Similar to China, Indonesia is a location or entity representing the country where Meiluawati is from.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Ye Zhaoying\n2. Meiluawati"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Ye Zhaoying |\n| Meiluawati |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Ye Zhaoying ( China ) beat Meiluawati ( Indonesia ) 11-6 12-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China: This is a country entity mentioned in the paragraph. It is the location of Ye Zhaoying.\n2. Indonesia: This is another country entity mentioned in the paragraph. It is the location of Meiluawati."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. China\n2. Indonesia"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| China |\n| Indonesia |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Ye Zhaoying ( China ) beat Meiluawati ( Indonesia ) 11-6 12-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China: This is a country and can be considered an organization in the context of international sports competitions.\n2. Indonesia: This is another country and can also be considered an organization in the context of international sports competitions.\n\nTherefore, the organization entities in the paragraph are China and Indonesia."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The organization entities in the paragraph are:\n\n1. China\n2. Indonesia"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| China |\n| Indonesia |"}
+  ]
+}

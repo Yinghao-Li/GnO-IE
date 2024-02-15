@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: On Thursday , the 11th Circuit U.S. Court of Appeals in Atlanta denied his appeal in federal court .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| his |\n\nNote: The identity of the person is not explicitly mentioned in the paragraph, but it is implied by the use of the pronoun \"his\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| his |\n\nNote: The identity of the person is not explicitly mentioned in the paragraph, but it is implied by the use of the pronoun \"his\". The other entities in the paragraph (e.g. \"Thursday\", \"11th Circuit U.S. Court of Appeals in Atlanta\", \"federal court\") do not clearly refer to a person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: On Thursday , the 11th Circuit U.S. Court of Appeals in Atlanta denied his appeal in federal court .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Atlanta      |\n\nExplanation:\n\nThe paragraph mentions \"Atlanta\" as the location where the 11th Circuit U.S. Court of Appeals is situated. Therefore, \"Atlanta\" is the valid location entity in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Atlanta      |\n\nExplanation:\n\nThe paragraph only mentions \"Atlanta\" as the location where the 11th Circuit U.S. Court of Appeals is situated. Therefore, \"Atlanta\" is the only valid location entity in the paragraph. Other entities such as \"Thursday\" and \"11th Circuit U.S. Court of Appeals\" do not clearly refer to a \"Location\" and are not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: On Thursday , the 11th Circuit U.S. Court of Appeals in Atlanta denied his appeal in federal court .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| 11th Circuit U.S. Court of Appeals in Atlanta |\n\nThe only organization mentioned in the paragraph is the \"11th Circuit U.S. Court of Appeals in Atlanta.\""},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| 11th Circuit U.S. Court of Appeals in Atlanta |\n\nThere is only one organization mentioned in the paragraph, which is the \"11th Circuit U.S. Court of Appeals in Atlanta.\" The other entities mentioned, such as \"Thursday\" and \"federal court,\" do not clearly refer to organizations."}
+  ]
+}

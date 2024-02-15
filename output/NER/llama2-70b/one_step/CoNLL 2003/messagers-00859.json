@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Estudiantes - Harper Williams 20 , Chadler Thompson 17 , Juan Aisa 14\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Harper Williams |\n| Chadler Thompson |\n| Juan Aisa |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Harper Williams |\n| Chadler Thompson |\n\nThe entity \"Juan Aisa\" is not clearly a person, it could be a name of a place or a thing, therefore it's not included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Estudiantes - Harper Williams 20 , Chadler Thompson 17 , Juan Aisa 14\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Estudiantes |\n| Harper Williams |\n| Chadler Thompson |\n| Juan Aisa |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Estudiantes |\n\nThe paragraph does not contain any other entities that clearly refer to a location. The only location mentioned is \"Estudiantes\"."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Estudiantes - Harper Williams 20 , Chadler Thompson 17 , Juan Aisa 14\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Estudiantes |\n| Harper Williams |\n| Chadler Thompson |\n| Juan Aisa |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Estudiantes |\n\nThe following entities do not clearly refer to \"Organization\":\n\n* Harper Williams (person)\n* Chadler Thompson (person)\n* Juan Aisa (person)"}
+  ]
+}

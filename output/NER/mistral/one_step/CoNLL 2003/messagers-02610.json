@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Swiss skiers occupied the other two places on the podium , Karin Kuster taking second with 160.55 narrowly ahead of Evelyne Leu with 160.36 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Karin Kuster |\n| Evelyne Leu |\n\nThese are the valid entities identified in the paragraph as \"Person\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Karin Kuster |\n| Evelyne Leu |\n\nThese are the valid entities identified in the paragraph that clearly refer to \"Person\". The entities \"Swiss skiers\" is not a specific person and has been removed."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Swiss skiers occupied the other two places on the podium , Karin Kuster taking second with 160.55 narrowly ahead of Evelyne Leu with 160.36 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Switzerland |\n\nThe paragraph does not provide specific locations for the event or the podium, only the nationality of the skiers. Therefore, the only valid location entity is \"Switzerland\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Switzerland |\n\nThe paragraph only mentions the country \"Switzerland\" in relation to the skiers, so it is the only valid location entity. Other entities such as \"other two places on the podium\" and \"the podium\" do not clearly refer to specific locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Swiss skiers occupied the other two places on the podium , Karin Kuster taking second with 160.55 narrowly ahead of Evelyne Leu with 160.36 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Swiss Skiing Team |\n| Karin Kuster (assuming \"Swiss skier\" refers to a member of the Swiss Skiing Team) |\n| Evelyne Leu (assuming \"Swiss skier\" refers to a member of the Swiss Skiing Team) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Swiss Skiing Team |"}
+  ]
+}

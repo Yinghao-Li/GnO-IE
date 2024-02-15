@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Single dose of DOX was associated with increased cardiac disarrangement , necrosis , and DNA damage ( strand breaks ( SBs ) and oxidized pyrimidines ) and decreased TAP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cardiac disarrangement |\n| necrosis |\n| DNA damage |\n| - strand breaks (SBs) |\n| - oxidized pyrimidines |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cardiac disarrangement |\n| necrosis |\n| DNA damage |\n| - strand breaks (SBs) |\n\nNote: \"increased\" and \"decreased\" are not considered as part of the disease entities in this context, as they describe the degree or extent of the diseases mentioned."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Single dose of DOX was associated with increased cardiac disarrangement , necrosis , and DNA damage ( strand breaks ( SBs ) and oxidized pyrimidines ) and decreased TAP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| DOX |\n\nIn the given paragraph, \"DOX\" is the only chemical entity mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| DOX |\n\nIn the given paragraph, only \"DOX\" is mentioned as a chemical entity. Other entities such as \"cardiac disarrangement\", \"necrosis\", \"DNA damage\", \"strand breaks (SBs)\", \"oxidized pyrimidines\", and \"TAP\" do not clearly refer to chemicals. They are biological effects or processes."}
+  ]
+}

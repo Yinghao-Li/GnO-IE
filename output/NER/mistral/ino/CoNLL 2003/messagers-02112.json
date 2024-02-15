@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The Foreign Ministry said the 10 Europeans and seven Africans took a special flight from the Garamba national park in northern Zaire to the Ugandan capital Kampala where they were being looked after at the Italian embassy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The Foreign Ministry\n2. The 10 Europeans\n3. The 7 Africans\n4. The Garamba national park (not a person, but mentioned in relation to the Europeans and Africans)\n5. Zaire (a country, not a person, but mentioned in relation to the Garamba national park)\n6. Kampala (a city, not a person, but mentioned as the destination of the special flight)\n7. The Ugandan capital (not a person, but mentioned in relation to Kampala)\n8. The Italian embassy (not a person, but mentioned as the place where the Europeans and Africans were being looked after)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. The Foreign Ministry\n2. The 10 Europeans\n3. The 7 Africans\n4. The Europeans and Africans (can be considered as a collective entity referring to the group of people)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The Foreign Ministry |\n| The 10 Europeans |\n| The 7 Africans |\n| The Europeans and Africans (collective) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The Foreign Ministry said the 10 Europeans and seven Africans took a special flight from the Garamba national park in northern Zaire to the Ugandan capital Kampala where they were being looked after at the Italian embassy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Garamba national park (Location in northern Zaire)\n2. northern Zaire (Location)\n3. Kampala (Location, the Ugandan capital)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Garamba national park (Location)\n2. northern Zaire (Location)\n3. Kampala (Location)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Garamba national park |\n| northern Zaire |\n| Kampala |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The Foreign Ministry said the 10 Europeans and seven Africans took a special flight from the Garamba national park in northern Zaire to the Ugandan capital Kampala where they were being looked after at the Italian embassy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Foreign Ministry\n2. Garamba national park (could be considered a location, but since it's a protected area managed by an organization, it can be considered an organization as well)\n3. Zaire\n4. Italian embassy."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Foreign Ministry\n2. Garamba national park (as a national park, it can be considered an organization)\n3. Italian embassy."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Foreign Ministry |\n| Garamba national park |\n| Italian embassy |"}
+  ]
+}

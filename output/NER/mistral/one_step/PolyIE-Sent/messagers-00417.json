@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: To measure the field effect mobility of the charge carriers , OTFT were fabricated on a silicon wafer using a bottom contact geometry ( channel length L = 12 μm , and width , W = 120 μm ) under nitrogen.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| Silicon wafer |\n| Nitrogen |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| Silicon wafer |\n| Nitrogen |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: To measure the field effect mobility of the charge carriers , OTFT were fabricated on a silicon wafer using a bottom contact geometry ( channel length L = 12 μm , and width , W = 120 μm ) under nitrogen.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| field effect mobility of the charge carriers |\n| channel length (L) |\n| 12 μm |\n| width (W) |\n| 120 μm |\n| bottom contact geometry |\n| nitrogen environment |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| field effect mobility of charge carriers |\n| channel length (L) |\n| 12 μm |\n| width (W) |\n| 120 μm |\n| bottom contact geometry |\n\nNote: \"nitrogen environment\" does not clearly refer to a material property, so it has been removed."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: To measure the field effect mobility of the charge carriers , OTFT were fabricated on a silicon wafer using a bottom contact geometry ( channel length L = 12 μm , and width , W = 120 μm ) under nitrogen.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| field effect mobility  |\n| OTFT                  |\n| silicon wafer         |\n| bottom contact geometry|\n| channel length L       |\n| and width W            |\n| nitrogen              |\n| channel length L = 12 μm|\n| width W = 120 μm       |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| field effect mobility  |\n| OTFT                  |\n| channel length L       |\n| width W               |\n| nitrogen concentration |\n\nExplanation:\n\n* \"To measure the field effect mobility of the charge carriers\" refers to the property \"field effect mobility\".\n* \"OTFT were fabricated on a silicon wafer\" refers to the device \"OTFT\".\n* \"using a bottom contact geometry\" is a fabrication method and does not refer to a material property.\n* \"channel length L = 12 μm\" and \"width W = 120 μm\" refer to the material properties \"channel length\" and \"width\" respectively.\n* \"under nitrogen\" refers to the environment in which the fabrication was carried out. \"Nitrogen\" is the material property that describes this environment."
+    }
+  ]
+}

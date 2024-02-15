@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Table 1 , the optimized devices based on P1 showed a PCE of 3.1% with a V oc of 0.97 V , a J sc of 6.7 mA / cm^2 , and an FF = 0.47.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| P1 |\n\nIn this paragraph, the material name is mentioned as \"P1\". It is important to note that the material name is explicitly stated in the text. Other entities mentioned in the paragraph, such as PCE, V oc, J sc, and FF, are not material names but rather properties or characteristics of the material."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| P1 |\n\nIn this paragraph, the material name is explicitly mentioned as \"P1\". Other entities mentioned in the paragraph, such as PCE, V oc, J sc, and FF, are not material names but rather properties or characteristics of the material. Therefore, they should not be included in the table."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Table 1 , the optimized devices based on P1 showed a PCE of 3.1% with a V oc of 0.97 V , a J sc of 6.7 mA / cm^2 , and an FF = 0.47.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| PCE |\n| Voc |\n| Voltage (V) |\n| Jsc |\n| Current density (mA / cm^2) |\n| FF |\n| Efficiency |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| PCE |\n| Voc |\n| Voltage |\n| Jsc |\n| Current density |\n| FF |\n| Figure of merit (efficiency) |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Table 1 , the optimized devices based on P1 showed a PCE of 3.1% with a V oc of 0.97 V , a J sc of 6.7 mA / cm^2 , and an FF = 0.47.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| PCE of 3.1% |\n| Voc of 0.97 V |\n| Jsc of 6.7 mA / cm^2 |\n| FF = 0.47 |\n\nThese are the precise entities identified from the paragraph. \"PCE\" stands for Power Conversion Efficiency, \"Voc\" is Voltage Open Circuit, \"Jsc\" is Short Circuit Current Density, and \"FF\" is Fill Factor."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| PCE of 3.1% |\n| Voc of 0.97 V |\n| Jsc of 6.7 mA / cm^2 |\n\nThese are the entities that clearly refer to the values of material properties. \"PCE\" stands for Power Conversion Efficiency, \"Voc\" is Voltage Open Circuit, and \"Jsc\" is Short Circuit Current Density."
+    }
+  ]
+}

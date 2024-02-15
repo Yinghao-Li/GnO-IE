@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Now the National Weather Service is calling for above-normal temperatures in more than half of the U.S. , \" one futures trader said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. National Weather Service\n2. one futures trader."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. one futures trader."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| one futures trader |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Now the National Weather Service is calling for above-normal temperatures in more than half of the U.S. , \" one futures trader said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The National Weather Service: an organization that provides weather forecasts and warnings for various locations in the United States.\n2. More than half of the U.S.: a geographical region consisting of over half of the 50 states in the country.\n\nSo, the \"Location\" entities in the paragraph are:\n\n1. The National Weather Service\n2. More than half of the U.S."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. More than half of the U.S.\n\nThe National Weather Service is an organization that provides weather forecasts and warnings, but it is not a location itself."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| More than half of the U.S. |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Now the National Weather Service is calling for above-normal temperatures in more than half of the U.S. , \" one futures trader said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. National Weather Service: It is a government organization responsible for providing weather forecasts, warnings, and meteorological data in the United States.\n\nThere is no other clear organization mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "National Weather Service."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| National Weather Service |"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Adverse events: This is a general term for unfavorable or adverse reactions to a medical treatment.\n2. Combined therapy: This refers to the use of two or more medicines together.\n3. Cyclosporin A: This is an immunosuppressive drug. Immunosuppression is a condition where the body's immune system is suppressed, making it less able to fight infections.\n4. Nifedipine: This is a calcium channel blocker, which is a type of medication used to treat high blood pressure and angina (chest pain).\n5. Increase in blood urea nitrogen levels: This is a condition where the level of blood urea nitrogen (BUN) in the blood is higher than normal. BUN is a waste product produced when the body breaks down proteins. High levels of BUN can indicate kidney damage or other health problems.\n6. Gingival hyperplasia: This is a condition where the gums become enlarged or overgrown. It can be a side effect of certain medications, including cyclosporin A."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Increase in blood urea nitrogen levels\n2. Gingival hyperplasia"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Increase in blood urea nitrogen levels |\n| Gingival hyperplasia |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Cyclosporin A: It is an immunosuppressant drug.\n2. Nifedipine: It is a calcium channel blocker, used as an antihypertensive and anti-anginal medication.\n3. Blood urea nitrogen (BUN): It is a waste product in the blood, produced during protein metabolism.\n4. Gingival hyperplasia: It is a condition characterized by excessive growth of gum tissue.\n\nSo, the chemical entities in the paragraph are:\n1. Cyclosporin A\n2. Nifedipine\n3. Blood urea nitrogen (BUN)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Cyclosporin A\n2. Nifedipine\n\nThese are the only entities in the paragraph that can be clearly identified as chemical entities. Blood urea nitrogen (BUN) is a chemical compound, but it is not a drug or a chemical used in therapy, it is just a byproduct in the body."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Cyclosporin A |\n| Nifedipine |"}
+  ]
+}

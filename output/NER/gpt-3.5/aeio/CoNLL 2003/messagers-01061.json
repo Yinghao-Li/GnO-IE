@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Before Gorst 's statement , Major had a one - seat majority in the 651 - seat House of Commons lower house of parliament .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. Before Gorst's statement: \n   - Person: Gorst\n\n2. Major had a one-seat majority in the 651-seat House of Commons lower house of parliament:\n   - Person: Major\n   - Organization: House of Commons\n   - Location: lower house of parliament\n\nSo, the identified entities are:\n- Person: Gorst, Major\n- Organization: House of Commons\n- Location: lower house of parliament"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. Before Gorst's statement: \n   - Person: Gorst\n\n2. Major had a one-seat majority in the 651-seat House of Commons lower house of parliament:\n   - Person: Major\n   - Organization: House of Commons\n\nSo, the identified entities are:\n- Person: Gorst, Major\n- Organization: House of Commons"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity | Entity Type |\n|--------|-------------|\n| Gorst  | person      |\n| Major  | person      |\n| House of Commons | organization |"}
+]

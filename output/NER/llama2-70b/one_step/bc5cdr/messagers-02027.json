@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Immunoblotting and immunohistochemistry revealed decreased expression of Na ( + ) / K ( + ) - ATPase , NHE3 , NBC1 , and AQP1 in the kidney of gentamicin - treated rats .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| gentamicin-induced nephrotoxicity |\n\nNote:\n\n* Gentamicin is a drug that can cause nephrotoxicity, which is damage to the kidneys.\n* The paragraph mentions that the rats were treated with gentamicin, which implies that they have gentamicin-induced nephrotoxicity.\n* Therefore, the disease entity in the paragraph is gentamicin-induced nephrotoxicity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| nephrotoxicity |\n\nNote:\n\n* The paragraph mentions \"gentamicin-induced nephrotoxicity\" which clearly refers to a disease.\n* The other mentioned entities, \"Na ( + ) / K ( + ) - ATPase\", \"NHE3\", \"NBC1\", and \"AQP1\" are proteins and molecules that are not directly related to the disease, but rather are mentioned as being affected by the disease.\n* Therefore, the only valid disease entity in the paragraph is \"nephrotoxicity\"."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Immunoblotting and immunohistochemistry revealed decreased expression of Na ( + ) / K ( + ) - ATPase , NHE3 , NBC1 , and AQP1 in the kidney of gentamicin - treated rats .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Na ( + ) / K ( + ) - ATPase |\n| NHE3 |\n| NBC1 |\n| AQP1 |\n| gentamicin |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid chemical entities in the paragraph:\n\n| Chemical |\n| --- |\n| Na ( + ) / K ( + ) - ATPase |\n| NHE3 |\n| NBC1 |\n| AQP1 |\n\nThe entity \"gentamicin\" is not a chemical entity, it is a drug, so it was removed from the list."}
+  ]
+}

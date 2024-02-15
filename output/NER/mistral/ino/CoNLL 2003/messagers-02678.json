@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 10. Hilde Synnove Lid ( Norway ) 148.20\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hilde Synnove Lid\n\nThis is a clear \"Person\" entity mentioned by name in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Hilde Synnove Lid\n\nThis is the only clear \"Person\" entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Hilde Synnove Lid |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 10. Hilde Synnove Lid ( Norway ) 148.20\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Norway - This is an explicit mention of a country, so it can be identified as a location entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Norway - This is the only location entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Norway |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 10. Hilde Synnove Lid ( Norway ) 148.20\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hilde Synnove Lid: This is a proper noun and can be identified as a person's name. However, if \"Hilde Synnove Lid\" is an organization or a company, then it can be considered an organization entity. Without additional context, it is difficult to determine if it is an organization or a person.\n2. Norway: This is a country and can be identified as a political organization or government entity.\n\nTherefore, based on the given context, there are two potential organization entities in the paragraph: Hilde Synnove Lid (if it is an organization) and Norway (as a government entity)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Based on the given context, there is only one clear organization entity in the paragraph: Norway (as a government entity).\n\nTherefore, the organization entity in the paragraph is:\n\n1. Norway"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Norway |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: One month after starting the antiviral therapy , the patient was admitted to the hospital because he developed rhabdomyolysis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| antiviral therapy |\n| rhabdomyolysis |\n\nNote: I'm assuming that \"antiviral therapy\" is considered a \"Disease\" entity because it is a treatment for a disease and is relevant to the context. If you specifically need only the diseases that are illnesses or conditions, then the table should only contain:\n\n| Disease |\n| --- |\n| rhabdomyolysis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| rhabdomyolysis |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: One month after starting the antiviral therapy , the patient was admitted to the hospital because he developed rhabdomyolysis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antiviral therapy |\n| rhabdomyolysis |\n\nNote: I'm assuming that \"antiviral therapy\" is a chemical treatment, and \"rhabdomyolysis\" is a condition involving muscle damage and the release of muscle contents (including chemicals) into the bloodstream."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antiviral therapy |\n\nNote: After reviewing the paragraph again, I realized that \"antiviral therapy\" is the only chemical entity that is clearly referred to in the text. \"Rhabdomyolysis\" is a medical condition, not a chemical."}
+  ]
+}

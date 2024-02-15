@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Patients ' characteristics were : male / female ratio 20 / 13 ; median age 57 ( 27 - 75 ) years ; median WHO status 1 ( 0 - 2 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| WHO status 1 |\n| WHO status 2 |\n\nThe paragraph does not mention any specific diseases. The \"WHO status\" refers to the World Health Organization's classification of a patient's overall health status, which is not a disease entity. Therefore, the table above contains the two valid entities that can be identified as \"WHO status 1\" and \"WHO status 2\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n|  |\n\nThe paragraph does not mention any specific diseases. The \"WHO status\" refers to the World Health Organization's classification of a patient's overall health status, which is not a disease entity. Therefore, there are no valid entities that clearly refer to \"Disease\" in the given paragraph."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Patients ' characteristics were : male / female ratio 20 / 13 ; median age 57 ( 27 - 75 ) years ; median WHO status 1 ( 0 - 2 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "There are no chemical entities in the given paragraph. The paragraph describes patient characteristics, specifically their gender, age, and WHO status, which are not chemical entities.\n\n| Chemical |\n| --- |\n|  |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Valid entities:\n\n| Chemical |\n| --- |\n|  |\n\nThe paragraph does not contain any chemical entities. The words \"median\" and \"WHO\" do not refer to chemicals, and the numbers mentioned in the paragraph (20, 13, 57, 27, 75, 0, 2) are not chemical entities either."}
+  ]
+}

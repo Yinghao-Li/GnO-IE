@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The president had only two formal , full-blown news conferences last year , one in January and one after he won re-election in November , although he had various other limited sessions with the press .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the president |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the president |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The president had only two formal , full-blown news conferences last year , one in January and one after he won re-election in November , although he had various other limited sessions with the press .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| January |\n| November |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| January |\n| November |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The president had only two formal , full-blown news conferences last year , one in January and one after he won re-election in November , although he had various other limited sessions with the press .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| White House Press Corps (implied) |\n\nThe paragraph mentions the \"press\" multiple times, which can be inferred to be the White House Press Corps. Since no specific organizations are mentioned by name, only the implied White House Press Corps can be identified as an organization in this paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| White House Press Corps |\n\nThe paragraph mentions the \"press\" multiple times, which can be inferred to be the White House Press Corps. Since no other organizations are mentioned by name, only the White House Press Corps can be identified as an organization in this paragraph."}
+  ]
+}

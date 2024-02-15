@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This aggregation - induced absorption is temperature - sensitive in which the absorption decreases with the increase of temperature , resulting from polymer chain segregation at high temperature.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| polymer |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| polymer |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This aggregation - induced absorption is temperature - sensitive in which the absorption decreases with the increase of temperature , resulting from polymer chain segregation at high temperature.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| aggregation - induced absorption |\n| temperature |\n| the absorption |\n| high temperature |\n| polymer chain segregation |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| aggregation - induced absorption |\n| temperature |\n| the absorption |\n| high temperature |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This aggregation - induced absorption is temperature - sensitive in which the absorption decreases with the increase of temperature , resulting from polymer chain segregation at high temperature.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "```diff\n| Property Value            |\n|---------------------------|\n| aggregation-induced       |\n| temperature-sensitive     |\n| the absorption decreases  |\n| high temperature          |\n| polymer chain segregation  |\n```\nNote: I'm assuming that \"aggregation-induced\" and \"temperature-sensitive\" are properties in this context. If not, then there are no valid \"Property Value\" entities in the given paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "```diff\n| Property Value    |\n|------------------|\n| temperature-sensitive     |\n| high temperature          |\n```\nNote: I have removed \"aggregation-induced\" as it is not clear from the context that it refers to a material property. The remaining two entities, \"temperature-sensitive\" and \"high temperature\", clearly refer to the value of a material property."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: DETROIT 14 3 .824 2 1/2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| DETROIT |\n| 14 |\n| 3 |\n| 824 |\n| 2 |\n| 1/2 |\n\nNote: In this paragraph, \"Person\" entities are the names of people, organizations, or places that are mentioned. The numbers and fractions mentioned in the paragraph are not considered \"Person\" entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| DETROIT |\n\nThe only valid \"Person\" entity in the paragraph is \"DETROIT\"."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: DETROIT 14 3 .824 2 1/2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| DETROIT |\n| 14 |\n| 3 |\n| 2 1/2 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the valid entities that clearly refer to \"Location\":\n\n| Location |\n| --- |\n| DETROIT |\n\nI removed the entities \"14\", \"3\", and \"2 1/2\" as they do not clearly refer to locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: DETROIT 14 3 .824 2 1/2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| DETROIT |\n| 14 |\n| 3 |\n| 2 1/2 |\n\nNote: The entities in the paragraph are not explicitly stated as organizations, but they can be interpreted as such based on the context. \"DETROIT\" could refer to the city of Detroit, \"14\" and \"3\" could refer to organizations with those numbers, and \"2 1/2\" could refer to a organization with that name or a fractional part of an organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Valid entities:\n| Organization |\n| --- |\n| DETROIT |\n\nNote: \"14\" and \"3\" are not clearly referring to organizations, they could be interpreted as numbers, so they are not included in the list of valid entities. \"2 1/2\" is also not a clear reference to an organization, it could be a fraction or a measurement, so it is not included either."}
+  ]
+}

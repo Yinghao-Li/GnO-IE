@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ANIMALS : 12 cats suspected to have idiopathic epilepsy that was poorly controlled with phenobarbital or that had unacceptable adverse effects when treated with phenobarbital .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| idiopathic epilepsy |\n| phenobarbital (could be considered a disease in the context of adverse effects) |\n\nIn this paragraph, the two disease entities mentioned are \"idiopathic epilepsy\" and \"phenobarbital.\" Idiopathic epilepsy is a neurological condition characterized by recurrent seizures with no known cause. Phenobarbital is a medication used to treat epilepsy, but in this context, it is mentioned as a disease due to the adverse effects experienced by some cats."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| idiopathic epilepsy |\n\nIn this revised list, the only clear disease entity mentioned in the paragraph is \"idiopathic epilepsy.\" The other term, \"phenobarbital,\" is a medication used to treat epilepsy, but it is not a disease itself. Therefore, it has been removed from the list."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ANIMALS : 12 cats suspected to have idiopathic epilepsy that was poorly controlled with phenobarbital or that had unacceptable adverse effects when treated with phenobarbital .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| phenobarbital |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| phenobarbital |\n\nThe word \"phenobarbital\" is the only clear chemical entity in the paragraph."}
+  ]
+}

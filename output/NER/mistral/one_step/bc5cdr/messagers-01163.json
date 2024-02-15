@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The ratio of aberrant cardiomyocytes in mice treated with DOX preceded by monoHER and those in mice treated with saline ranged from 1 . 6 to 2 . 8 ( mean 2 . 2 , 95 % CI 1 . 2 - 4 . 1 , P = 0 . 019 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Aberrant cardiomyocytes in mice treated with DOX and monoHER |\n| Aberrant cardiomyocytes in mice treated with saline |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Aberrant cardiomyocytes in mice treated with DOX and monoHER |\n| Aberrant cardiomyocytes in mice treated with saline |\n\nNote: \"Aberrant cardiomyocytes\" is the disease entity mentioned in the paragraph. \"DOX\" and \"monoHER\" are not diseases but rather treatments or interventions used in the study."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The ratio of aberrant cardiomyocytes in mice treated with DOX preceded by monoHER and those in mice treated with saline ranged from 1 . 6 to 2 . 8 ( mean 2 . 2 , 95 % CI 1 . 2 - 4 . 1 , P = 0 . 019 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| DOX |\n\nIn the given paragraph, the only chemical entity mentioned is \"DOX\". The other terms mentioned, such as \"aberrant cardiomyocytes\", \"mice\", \"monoHER\", \"saline\", \"mean\", \"95% CI\", \"1.2\", \"4.1\", \"P\", and \"0.019\", are not chemical entities but rather statistical values or descriptors."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| DOX |\n\nIn the given paragraph, only \"DOX\" is a clear chemical entity mention. The other terms mentioned, such as \"aberrant cardiomyocytes\", \"mice\", \"monoHER\", \"saline\", \"mean\", \"95% CI\", \"1.2\", \"4.1\", \"P\", and \"0.019\", do not clearly refer to chemicals."}
+  ]
+}

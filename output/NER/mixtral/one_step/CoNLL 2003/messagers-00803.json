@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Weah was suspended for one match by UEFA , European soccer 's governing body , pending a fuller investigation .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Weah |\n| UEFA (as it is a governing body for European soccer, it can be traced back to people who run the organization) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Weah |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Weah was suspended for one match by UEFA , European soccer 's governing body , pending a fuller investigation .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| UEFA      |\n\nExplanation:\n\n* UEFA: It is the only location entity in the paragraph which stands for Union of European Football Associations, the governing body for football in Europe."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| UEFA      |\n\nExplanation:\n\n* UEFA: It is the only location entity in the paragraph which stands for Union of European Football Associations, the governing body for football in Europe.\n\nThe other entities like 'European soccer's governing body' are not considered as separate location entities as they refer to the same organization as 'UEFA'."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Weah was suspended for one match by UEFA , European soccer 's governing body , pending a fuller investigation .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| UEFA |\n| European soccer's governing body |\n\nIn the given paragraph, there are two organization entities mentioned:\n\n1. UEFA - It stands for Union of European Football Associations, which is the administrative body for association football in Europe.\n2. European soccer's governing body - This refers to the organization responsible for managing and regulating soccer within Europe. In this context, it is another reference to UEFA."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| UEFA |\n\nIn the given paragraph, there is only one clear organization entity mentioned:\n\n1. UEFA - It stands for Union of European Football Associations, which is the administrative body for association football in Europe.\n\nThe other reference, \"European soccer's governing body,\" is not considered a separate organization as it refers to UEFA in this context."}
+  ]
+}

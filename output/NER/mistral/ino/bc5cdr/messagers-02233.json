@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Acute renal failure due to rifampicin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Acute renal failure: This is the primary disease or condition mentioned in the paragraph. It refers to a sudden and often reversible loss of kidney function.\n2. Rifampicin: This is the specific drug that is causing the acute renal failure. It is an antibiotic commonly used to treat tuberculosis and other bacterial infections."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Acute renal failure"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute renal failure |\n| due to rifampicin |\n\nNote: Since \"due to rifampicin\" is describing the cause of \"Acute renal failure,\" it is included as part of the disease entity in this table. If we were to separate it out, we would have two separate disease entities: \"Acute renal failure\" and \"renal failure due to rifampicin,\" but the original paragraph does not make that distinction."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Acute renal failure due to rifampicin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Acute: This is a descriptive term and does not represent a chemical entity.\n2. Renal: This is a descriptive term related to the kidneys and does not represent a chemical entity.\n3. Failure: This is a descriptive term and does not represent a chemical entity.\n4. Due to: This is a preposition and does not represent a chemical entity.\n5. Rifampicin: This is the chemical entity mentioned in the paragraph. It is an antibiotic medication commonly used to treat tuberculosis and other bacterial infections."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Rifampicin: This is the chemical entity mentioned in the paragraph. It is an antibiotic medication."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Rifampicin |"}
+  ]
+}

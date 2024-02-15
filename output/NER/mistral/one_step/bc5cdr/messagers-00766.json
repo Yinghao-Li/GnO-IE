@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A patient taking diphenylhydantoin for 3 weeks developed a generalized skin rash , lymphadenopathy and pure red cell aplasia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| generalized skin rash |\n| lymphadenopathy |\n| pure red cell aplasia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| generalized skin rash |\n| lymphadenopathy |\n| pure red cell aplasia |\n\nThese three entities are clearly diseases based on the context of the paragraph. \"Patient\" is not considered a disease, and \"taking diphenylhydantoin for 3 weeks\" is a description of the patient's condition, not a disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A patient taking diphenylhydantoin for 3 weeks developed a generalized skin rash , lymphadenopathy and pure red cell aplasia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| diphenylhydantoin |\n\nIn this paragraph, the only clearly identified chemical entity mentioned is \"diphenylhydantoin,\" which is the name of the medication the patient was taking."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| diphenylhydantoin |\n\nIn the given paragraph, only \"diphenylhydantoin\" is a chemical entity mentioned explicitly. The other terms, such as \"generalized skin rash,\" \"lymphadenopathy,\" and \"pure red cell aplasia,\" do not refer to chemicals but rather symptoms or conditions."}
+  ]
+}

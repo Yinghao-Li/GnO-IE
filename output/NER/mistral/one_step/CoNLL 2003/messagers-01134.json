@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mesipia 77.5 17/12 Bajaia / Fos W105 Exxon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Mesipia |\n| Bajaia |\n| Fos |\n| Exxon |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Mesipia |\n| Bajaia |\n| Fos |\n\n(Exxon is a corporation and was not identified as a person in the original paragraph.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mesipia 77.5 17/12 Bajaia / Fos W105 Exxon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Mesipia |\n| Bajaia |\n| Fos W105 |\n| Exxon |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Bajaia |\n| Fos W105 |\n| Exxon |\n\nMesipia is not a clear location in this context. It appears to be a proper noun, but without additional context, it is unclear if it refers to a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mesipia 77.5 17/12 Bajaia / Fos W105 Exxon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Mesipia |\n| Bajaia |\n| Fos |\n| Exxon |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Exxon |\n\nThe other entities in the paragraph do not clearly refer to organizations:\n\n* Mesipia: Unclear, could be a person's name or a non-organizational entity\n* 77.5: Not an organization\n* 17/12: Not an organization\n* Bajaia: Unclear, could be a person's name or a non-organizational entity\n* Fos: Unclear, could be a person's name or a non-organizational entity\n* W105: Not an organization."}
+  ]
+}

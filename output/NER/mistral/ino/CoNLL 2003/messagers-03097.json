@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Oldham 0 Queens Park Rangers 2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Oldham: A football club based in Oldham, Greater Manchester, England.\n2. Queens Park Rangers: A professional football club based in Shepherd's Bush, London, England.\n\nSo, the \"Person\" entities in the paragraph are Oldham (as a football club) and Queens Park Rangers (as a football club)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "The only entity that clearly refers to a person in the paragraph is \"Oldham\" (as a football club). \"Queens Park Rangers\" is also a person (as a football club), but since you asked to remove irrelevant entities, I assumed you meant entities that are not directly related to the topic of the paragraph, which in this case is a football match between Oldham and Queens Park Rangers. Therefore, both Oldham and Queens Park Rangers are relevant entities in this context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Oldham (football club) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Oldham 0 Queens Park Rangers 2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Oldham: A town in Greater Manchester, England.\n2. Queens Park Rangers: A professional football club based in Shepherd's Bush, London, England."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Oldham\n2. Shepherd's Bush (implied location of Queens Park Rangers)\n\nOr simply:\n\n1. Oldham\n2. London (as a broader location for Queens Park Rangers)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Oldham |\n| Shepherd's Bush (implicitly: London) |\n\nOr, if using \"London\" instead of \"Shepherd's Bush\":\n\n| Location |\n| --- |\n| Oldham |\n| London |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Oldham 0 Queens Park Rangers 2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Oldham: A football club based in Oldham, Greater Manchester, England.\n2. Queens Park Rangers: A professional football club based in Shepherd's Bush, London, England."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Oldham (football club)\n2. Queens Park Rangers (football club)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Oldham (football club) |\n| Queens Park Rangers (football club) |"}
+  ]
+}

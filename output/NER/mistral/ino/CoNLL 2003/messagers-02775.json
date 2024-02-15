@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 10 - Billy Dodds ( Aberdeen ) , Pierre Van Hooydonk ( Celtic )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Billy Dodds\n2. Aberdeen (assumed to be the team that Billy Dodds played for)\n3. Pierre Van Hooydonk\n4. Celtic (assumed to be the team that Pierre Van Hooydonk played for)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Billy Dodds\n2. Pierre Van Hooydonk"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Billy Dodds |\n| Pierre Van Hooydonk |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 10 - Billy Dodds ( Aberdeen ) , Pierre Van Hooydonk ( Celtic )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Aberdeen\n2. Celtic\n\nThese are the location entities mentioned in the paragraph. The names \"Billy Dodds\" and \"Pierre Van Hooydonk\" are the proper nouns representing the individuals."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Aberdeen\n2. Celtic\n\nThese are the entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Aberdeen |\n| Celtic |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 10 - Billy Dodds ( Aberdeen ) , Pierre Van Hooydonk ( Celtic )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Aberdeen ( football club where Billy Dodds played )\n2. Celtic ( football club where Pierre Van Hooydonk played )"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Aberdeen ( football club )\n2. Celtic ( football club )"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Aberdeen ( football club ) |\n| Celtic ( football club ) |"}
+  ]
+}

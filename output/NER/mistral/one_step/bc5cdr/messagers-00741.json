@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Pooled analysis of the effects of other inotropic drugs shows an excess mortality and there is a possibility that digoxin may increase mortality after myocardial infarction ( MI ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| myocardial infarction (MI) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| myocardial infarction (MI) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Pooled analysis of the effects of other inotropic drugs shows an excess mortality and there is a possibility that digoxin may increase mortality after myocardial infarction ( MI ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| digoxin |\n| inotropic drugs |\n\nInotropic drugs is a class of drugs, but since the paragraph mentions \"pooled analysis of the effects of other inotropic drugs,\" it implies that specific inotropic drugs are being referred to, and digoxin is mentioned by name, so both entities are included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| digoxin |\n| inotropic drugs |\n\nInotropic drugs is a class of drugs, but since the paragraph mentions \"pooled analysis of the effects of other inotropic drugs,\" it implies that specific inotropic drugs, including digoxin, are being referred to. Therefore, both entities are included in the table."}
+  ]
+}

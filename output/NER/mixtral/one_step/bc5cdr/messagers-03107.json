@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The results showed that aconitine resulted in myocardial injury and reduced NRVMs viability dose - dependently .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| myocardial injury |\n\nExplanation:\n\n* Myocardial injury is a disease or condition that affects the heart muscle, specifically the myocardium. It is mentioned in the paragraph as a result of aconitine administration."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| myocardial injury |\n\nExplanation:\n\n* Myocardial injury is the only clear disease entity mentioned in the paragraph. Reduced NRVMs (Neonatal Rat Ventricular Myocytes) viability is not a disease, but rather a reduction in the health or function of the cells. Aconitine is a toxin, not a disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The results showed that aconitine resulted in myocardial injury and reduced NRVMs viability dose - dependently .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| aconitine |\n| NRVMs (This entity could be debated as it's an abbreviation for neonatal rat ventricular myocytes, which are a type of cell, not a chemical. However, I'll include it here for completeness.) |\n\nThe chemical entity identified in the paragraph is \"aconitine.\" NRVMs (neonatal rat ventricular myocytes) could be considered a chemical entity, but it's actually an abbreviation for a type of cell."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| aconitine |\n\nThe only chemical entity in the paragraph is \"aconitine.\" The other term, NRVMs, is an abbreviation for neonatal rat ventricular myocytes, which are a type of cell, not a chemical."}
+  ]
+}

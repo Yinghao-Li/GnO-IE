@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NZ 's Peters says Nat , Lab talks at similar stage .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Peters  |\n| Nat    |\n| Lab    |\n\nExplanation:\nThe paragraph mentions three persons: Peters, Nat, and Lab. Peters is a specific individual named Winston Peters, who is a New Zealand politician. Nat refers to the National Party, and Lab refers to the Labour Party, which are political parties in New Zealand."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Peters  |\n\nExplanation:\nThe paragraph mentions only one clear person entity, which is Winston Peters. Nat and Lab are political parties, not persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NZ 's Peters says Nat , Lab talks at similar stage .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| NZ (New Zealand) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| NZ (New Zealand) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NZ 's Peters says Nat , Lab talks at similar stage .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| New Zealand |\n| Nat |\n| Lab |\n\nExplanation:\n\nIn the given paragraph, \"New Zealand\" is mentioned as a country. \"Nat\" and \"Lab\" are abbreviations for political parties in New Zealand - National Party and Labour Party, respectively. Therefore, they are organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| New Zealand |\n| National Party |\n| Labour Party |\n\nExplanation:\n\nIn the given paragraph, \"New Zealand\" is mentioned as a country. \"Nat\" and \"Lab\" are abbreviations for political parties in New Zealand - National Party and Labour Party, respectively. Therefore, they are organizations. Since the paragraph does not explicitly mention any other organizations, only New Zealand, National Party, and Labour Party are valid entities in this context."}
+  ]
+}

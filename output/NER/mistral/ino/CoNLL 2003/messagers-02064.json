@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Three FBI agents who testified against Rashid during the trial , held at Korydallos prison , said they had ample evidence against Rashid for a bomb planted on a Pan American plane in Brazil in 1982 and a mid-air bomb blast on a TWA airliner approaching Athens in 1986 which killed four U.S. citizens .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Three FBI agents\n2. Rashid\n3. The judges and jury at Korydallos prison (implied, as the trial took place there)\n4. The passengers and crew members of the Pan American plane in Brazil (implied, as there were bombing incidents involving this plane)\n5. The passengers and crew members of the TWA airliner approaching Athens (implied, as there was a bombing incident involving this plane)\n6. The four U.S. citizens who were killed in the TWA mid-air bomb blast."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Three FBI agents\n2. Rashid\n4. The passengers and crew members of the TWA airliner (implied, as they were on the plane during the bombing incident)\n5. The four U.S. citizens (implied, as they were the ones who were killed)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Three FBI agents |\n| Rashid |\n| The passengers and crew members of the TWA airliner approaching Athens |\n| The four U.S. citizens |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Three FBI agents who testified against Rashid during the trial , held at Korydallos prison , said they had ample evidence against Rashid for a bomb planted on a Pan American plane in Brazil in 1982 and a mid-air bomb blast on a TWA airliner approaching Athens in 1986 which killed four U.S. citizens .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Korydallos prison\n2. Brazil (implied location of the Pan American plane incident)\n3. Athens (implied location of the TWA airliner incident)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Korydallos prison\n2. Brazil\n3. Athens"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Korydallos prison |\n| Brazil |\n| Athens |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Three FBI agents who testified against Rashid during the trial , held at Korydallos prison , said they had ample evidence against Rashid for a bomb planted on a Pan American plane in Brazil in 1982 and a mid-air bomb blast on a TWA airliner approaching Athens in 1986 which killed four U.S. citizens .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. FBI (Federal Bureau of Investigation)\n2. Rashid (An individual who is being accused)\n3. Korydallos prison (A specific prison where the trial took place)\n4. Pan American (A specific airline)\n5. Brazil (A country)\n6. TWA (Trans World Airlines)\n7. Athens (A city)\n\nThe FBI agents are the organization that testified against Rashid during the trial."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. FBI (Federal Bureau of Investigation)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FBI (Federal Bureau of Investigation) |"}
+  ]
+}

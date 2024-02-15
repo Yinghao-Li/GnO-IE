@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 42 Bromination of 4a , b with Br 2 gave rise to the monomers 5a,b.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------- |\n| 4a, b |\n| 5a,b |\n| Br 2 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------- |\n| 4a, b |\n| 5a,b |\n| Br 2 (Bromine) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 42 Bromination of 4a , b with Br 2 gave rise to the monomers 5a,b.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| ------------- |\n| 42 (compound) |\n| 4a (compound) |\n| 4b (compound) |\n| Br 2 (reagent) |\n| monomers (compounds) |\n| 5a (compound) |\n| 5b (compound) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| ------------- |\n| 42 (compound) |\n| 4a (compound) |\n| 4b (compound) |\n| Br 2 (reagent) |\n| monomers (compounds) |\n| 5a (compound) |\n| 5b (compound) |\n\nNote: In this context, \"gave rise to\" implies a chemical reaction, and the resulting compounds (monomers 5a,b) are the material properties produced from the reaction of 4a,b with Br2."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 42 Bromination of 4a , b with Br 2 gave rise to the monomers 5a,b.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| -------------- |\n| 42 |\n| 4a, b |\n| Br 2 |\n| monomers 5a,b |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| -------------- |\n| 42 |\n| Br 2 |\n| monomers 5a,b |\n\n[Explanation: In the original paragraph, \"42\" and \"Br 2\" can be considered as the quantities or amounts of reactants used in the reaction, and \"monomers 5a,b\" are the products of the reaction. These entities can be considered as material properties or values.]"
+    }
+  ]
+}

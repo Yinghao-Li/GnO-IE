@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The chance of material heading north , talked earlier this week , may be in jeopardy now since American fuel oil is expected to head transatlantic following outages at two coking units in the U.S .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. American fuel oil\n2. Two coking units (implied are the entities responsible for the outages)\n\nSo, the identified \"Person\" entities in the paragraph are:\n\n1. American fuel oil (could be considered as a corporation or organization)\n2. Two coking units (implied entities, could be corporations or organizations)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "The identified \"Person\" entities in the paragraph are:\n\n1. Two coking units (implied corporations or organizations)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Two coking units |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The chance of material heading north , talked earlier this week , may be in jeopardy now since American fuel oil is expected to head transatlantic following outages at two coking units in the U.S .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. North\n2. Earlier this week (implies a location in the past)\n3. Transatlantic\n4. U.S. (implies multiple locations in the US)\n5. Two coking units (implies locations within the US where the outages occurred)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. North\n2. Transatlantic\n3. U.S.\n\nThese are the entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| North |\n| Transatlantic |\n| U.S. |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The chance of material heading north , talked earlier this week , may be in jeopardy now since American fuel oil is expected to head transatlantic following outages at two coking units in the U.S .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. American (refers to American fuel oil industry or companies within it)\n2. U.S. (United States government or entities within it)\n\nIn this paragraph, there are two organizations identified: American (representing the American fuel oil industry) and the U.S. (representing the United States government or entities within it)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. American (American fuel oil industry)\n\nIn this paragraph, only the American fuel oil industry is identified as an organization. The U.S. is not explicitly identified as an organization in this context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| American (fuel oil industry) |"}
+  ]
+}

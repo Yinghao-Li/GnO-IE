@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" Our countries ' leaders have agreed to meet in March , 1997 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Our countries' leaders |\n\nNote: The paragraph only mentions a plural group of leaders, and does not specify any individual person."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Our countries' leaders |\n\nNote: The paragraph only mentions a plural group of leaders, and does not specify any individual person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" Our countries ' leaders have agreed to meet in March , 1997 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Our countries |\n| March, 1997 |\n\nNote: I have included \"March, 1997\" as a location because it is mentioned as a meeting place for the leaders. However, it is not a traditional location and may not be what you had in mind when asking for location entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Our countries |\n\nNote: I have only included \"Our countries\" as a location entity because it is the only clear location mentioned in the paragraph. The other mention of \"March, 1997\" is not a location, but rather a time."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" Our countries ' leaders have agreed to meet in March , 1997 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| our countries' leaders |\n\nNote: The organization entity in this paragraph is \"our countries' leaders,\" which refers to the leaders of one or more countries."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| our countries' leaders |\n\nNote: The only organization entity in this paragraph is \"our countries' leaders,\" which refers to a group of leaders from one or more countries. The word \"March\" is not an organization entity, as it is a month of the year and not a group or institution."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SATURDAY , DECEMBER 7 SCHEDULE\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| You (implied) |\n\nThe paragraph does not contain any explicitly mentioned persons. It is addressed to the reader in a general sense, so \"You\" is the implied person."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| You (implied) |\n\nThe paragraph only contains an implied \"You\" as the addressee, so it is the only valid person entity."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SATURDAY , DECEMBER 7 SCHEDULE\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| SATURDAY, DECEMBER 7 |\n\nThis is not a location, but rather a date. Therefore, it is not a valid entity for this table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| DECEMBER 7 |\n\nThis is still not a location, but rather a date. Therefore, it is not a valid entity for this table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SATURDAY , DECEMBER 7 SCHEDULE\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SATURDAY |\n| DECEMBER 7 |\n\nThe given paragraph does not contain any explicit mentions of organizations. The first two items are days of the week and months, respectively, and do not constitute organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n\nThe given paragraph does not contain any entities that clearly refer to organizations. All the words in the paragraph are either days of the week or months, which do not constitute organizations."}
+  ]
+}

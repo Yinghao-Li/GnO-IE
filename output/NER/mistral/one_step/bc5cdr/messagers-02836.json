@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: LF lowered ( P < 0 . 01 ) and dose dependently prevented ( P < 0 . 001 ) Dex - induced hypertension .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Dex-induced hypertension |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Dex-induced hypertension |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: LF lowered ( P < 0 . 01 ) and dose dependently prevented ( P < 0 . 001 ) Dex - induced hypertension .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| LF (Low Flow) |\n| Dex (Dexamethasone) |\n| P (Pressure) |\n\nNote: In the given context, it is assumed that \"Dex-induced hypertension\" refers to an increase in pressure (P) caused by Dexamethasone (Dex)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| LF (Low Flow) |\n| Dexamethasone (Dex) |\n\nNote: In the given context, it is assumed that \"Dex-induced hypertension\" refers to an increase in pressure caused by Dexamethasone. Therefore, \"pressure\" (P) is considered an implicit parameter and not explicitly listed as a chemical entity."}
+  ]
+}

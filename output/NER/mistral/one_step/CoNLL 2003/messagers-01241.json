@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" France cannot be involved in the domestic political debate , \" President Jacques Chirac told a news conference at the end of a Franco-African summit in Burkina Faso .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| France |\n| President Jacques Chirac |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| President Jacques Chirac |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" France cannot be involved in the domestic political debate , \" President Jacques Chirac told a news conference at the end of a Franco-African summit in Burkina Faso .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| France |\n| Burkina Faso |\n\nIn this paragraph, the locations mentioned are \"France\" and \"Burkina Faso\". \"Franco-African summit\" is not a valid location entity as it is a compound term describing an event that took place in a specific location, which in this case is Burkina Faso."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| France |\n| Burkina Faso |\n\nIn this paragraph, the only entities that clearly refer to locations are \"France\" and \"Burkina Faso\". \"Franco-African summit\" is not a valid location entity as it is a compound term describing an event that took place in a specific location, which in this case is Burkina Faso. Therefore, only \"France\" and \"Burkina Faso\" should be included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" France cannot be involved in the domestic political debate , \" President Jacques Chirac told a news conference at the end of a Franco-African summit in Burkina Faso .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| France |\n| Franco-African summit |\n| Burkina Faso |\n\nIn this paragraph, \"France\" is an identified organization. The \"Franco-African summit\" and \"Burkina Faso\" are also organizations, as they are specific meetings or countries mentioned in the context of the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| France |\n| Franco-African summit |\n\nIn this paragraph, \"France\" and \"Franco-African summit\" are the only entities that clearly refer to organizations. \"President Jacques Chirac\" and \"Burkina Faso\" are not organizations, but rather a person and a country, respectively."}
+  ]
+}

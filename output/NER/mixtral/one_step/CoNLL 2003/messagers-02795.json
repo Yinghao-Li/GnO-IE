@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 6 - Marcus Gayle ( Wimbledon ) , Gary Speed ( Everton ) , Chris\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person          |\n|----------------|\n| Marcus Gayle    |\n| Gary Speed     |\n| Chris          |\n\nPlease note that the name \"Chris\" is incomplete, and it would be more accurate to identify this entity as \"Chris [Last Name]\" if more context is available."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person          |\n|----------------|\n| Marcus Gayle    |\n| Gary Speed     |\n\nThe name \"Chris\" has been removed as it is not a clear reference to a person without additional context."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 6 - Marcus Gayle ( Wimbledon ) , Gary Speed ( Everton ) , Chris\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Wimbledon |\n| Everton |\n\nExplanation:\n\n* \"Wimbledon\" and \"Everton\" are both sports clubs located in different areas (Wimbledon in London, England and Everton in Liverpool, England). They are mentioned as the teams where Marcus Gayle and Gary Speed played, respectively."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Wimbledon |\n| Everton |\n\nExplanation:\n\n* \"Wimbledon\" and \"Everton\" are both sports clubs located in different areas (Wimbledon in London, England and Everton in Liverpool, England). They are mentioned as the teams where Marcus Gayle and Gary Speed played, respectively.\n* \"Chris\" is not a location and is not mentioned with a clear location reference, so it is not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 6 - Marcus Gayle ( Wimbledon ) , Gary Speed ( Everton ) , Chris\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Wimbledon |\n| Everton |\n\nIn this paragraph, the two \"Organization\" entities are \"Wimbledon\" and \"Everton\". These are football clubs for which Marcus Gayle and Gary Speed played, respectively."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Wimbledon |\n| Everton |\n\nIn this paragraph, the two \"Organization\" entities are \"Wimbledon\" and \"Everton\". The other mention, \"Chris\", is not clearly an organization, so it is not included in the table."}
+  ]
+}

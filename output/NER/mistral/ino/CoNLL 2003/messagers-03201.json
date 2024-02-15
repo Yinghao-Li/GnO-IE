@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: JERUSALEM 1996-12-07\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Jerusalem\n2. 1996-12-07 (This is not a person, but a date)\n3. (No clear person entities in the paragraph)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "(No clear person entities in the paragraph)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| (None) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: JERUSALEM 1996-12-07\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Jerusalem\n\nJerusalem is explicitly mentioned in the paragraph as the location."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Jerusalem"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Jerusalem |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: JERUSALEM 1996-12-07\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. JERUSALEM\n2. 1996-12-07\n3. (Implicit) The Israeli government or authorities of Jerusalem\n4. (Implicit) The Palestinian Authority or Palestinians\n\nThese entities are not explicitly mentioned in the paragraph, but they can be inferred based on the context of the situation mentioned (the location and the time, which is significant in the Israeli-Palestinian conflict)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. (Implicit) The Israeli government or authorities\n2. (Implicit) The Palestinian Authority or Palestinians (as organizations representing their respective communities)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| (Implicit) The Israeli government or authorities |\n| (Implicit) The Palestinian Authority or Palestinians |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Pretreatment of animals with BNPP prior to APAP or PAP administration resulted in marked reduction of APAP ( 900 mg / kg ) nephrotoxicity but not PAP nephrotoxicity .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| APAP nephrotoxicity |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| APAP nephrotoxicity |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Pretreatment of animals with BNPP prior to APAP or PAP administration resulted in marked reduction of APAP ( 900 mg / kg ) nephrotoxicity but not PAP nephrotoxicity .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BNPP (BNPP, not clear if it's an abbreviation or an acronym) |\n| APAP (Acetaminophen, N-acetyl-p-aminophenol) |\n| PAP |\n\nNote: The dosage information (900 mg / kg) for APAP is also considered a part of the chemical entity as it specifies the substance being administered."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BNPP (BNPP) |\n| APAP (N-acetyl-p-aminophenol) |\n\nNote: The dosage information (900 mg / kg) for APAP is not considered a separate chemical entity, but rather a part of the administration information for APAP."}
+  ]
+}

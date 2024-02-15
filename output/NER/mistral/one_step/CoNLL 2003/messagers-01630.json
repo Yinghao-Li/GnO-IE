@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: BALANCE - Hartford , Conn .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Hartford |\n\nIn this paragraph, \"Hartford\" is the only identifiable person entity mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Hartford |\n\nIn this paragraph, \"Hartford\" is the only identifiable person entity mentioned. Other entities such as \"BALANCE\" and \"Conn.\" do not refer to people."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: BALANCE - Hartford , Conn .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Hartford, Conn. |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Hartford, Conn. |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: BALANCE - Hartford , Conn .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| BALANCE |\n| Hartford |\n| Conn. |\n\nExplanation:\n\n1. BALANCE: This is the name of the organization mentioned in the paragraph.\n2. Hartford: This is the name of the city where the organization is located.\n3. Conn.: This is the abbreviation for Connecticut, the state where the organization is located."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| BALANCE |\n\nExplanation:\n\nThe only clear organization mentioned in the paragraph is \"BALANCE\". \"Hartford\" and \"Conn.\" do not refer to organizations, but rather to the location of the organization."}
+  ]
+}

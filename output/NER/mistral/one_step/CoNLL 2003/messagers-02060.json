@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rashid , 46 , was sentenced to 18 years in prison by a Greek court in 1992 after being convicted of premeditated murder in the mid-air bombing of a Pan American airliner in 1982 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Rashid |\n\nThe paragraph mentions only one person named \"Rashid\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Rashid |\n\nThe paragraph mentions only one person named \"Rashid\". Other entities mentioned, such as \"Greek court\", \"1992\", \"Pan American airliner\", and \"1982\", do not refer to persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rashid , 46 , was sentenced to 18 years in prison by a Greek court in 1992 after being convicted of premeditated murder in the mid-air bombing of a Pan American airliner in 1982 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Greece |\n| 1992 (Greek court) |\n| mid-air (in the air) |\n| 1982 (site of the bombing) |\n\nExplanation:\n\n1. Greece: The location of the court where Rashid was sentenced.\n2. 1992 (Greek court): The specific location of the court in the year 1992.\n3. mid-air: The location of the bombing incident in the air.\n4. 1982 (site of the bombing): The specific year where the bombing incident occurred."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Greece (Greek court) |\n| mid-air |\n| 1982 (site of the bombing) |\n\nExplanation:\n\n1. Greece (Greek court): The location of the court where Rashid was sentenced.\n2. mid-air: The location of the bombing incident in the air.\n3. 1982 (site of the bombing): The specific year where the bombing incident occurred.\n\nRashid was sentenced to 18 years in prison by a Greek court in 1992 after being convicted of premeditated murder in mid-air bombing of a Pan American airliner in 1982.\n\nThe entities \"Rashid\" and \"Pan American airliner\" do not refer to locations and have been removed from the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rashid , 46 , was sentenced to 18 years in prison by a Greek court in 1992 after being convicted of premeditated murder in the mid-air bombing of a Pan American airliner in 1982 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Greek court |\n| Pan American |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Greek court |\n| Pan American |"}
+  ]
+}

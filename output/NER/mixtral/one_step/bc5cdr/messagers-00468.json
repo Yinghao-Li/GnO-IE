@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Children with persistent sterile leukocyturia more frequently had serum creatinine levels of 50 % above normal than those children without persistent sterile leukocyturia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| persistent sterile leukocyturia |\n| serum creatinine levels of 50 % above normal |\n\nExplanation:\n\n* \"persistent sterile leukocyturia\" is a medical condition where there is a persistent presence of white blood cells in the urine without any infection.\n* \"serum creatinine levels of 50 % above normal\" indicates a kidney disease or damage, as creatinine is a waste product that's produced by your muscles and removed from your body by your kidneys. Elevated creatinine levels suggest that the kidneys are not functioning properly."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| persistent sterile leukocyturia |\n\nExplanation:\n\n* \"persistent sterile leukocyturia\" is the only clear disease entity in the paragraph.\n* \"serum creatinine levels of 50 % above normal\" is not a disease itself, but an indicator of possible kidney disease or damage. Therefore, it is not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Children with persistent sterile leukocyturia more frequently had serum creatinine levels of 50 % above normal than those children without persistent sterile leukocyturia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| serum creatinine |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| serum creatinine |\n\nNote: I have removed \"50 % above normal\" as it is not a chemical entity but rather a measurement related to the chemical serum creatinine."}
+  ]
+}

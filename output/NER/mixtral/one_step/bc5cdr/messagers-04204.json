@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Venous pain occurred in 68 % of patients and 50 % had redness , pain or swelling related to the injection site , in some cases lasting up to three weeks after anaesthesia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Venous pain |\n| redness |\n| pain or swelling related to the injection site |\n\nNote: I've identified three disease entities in the paragraph. \"Redness\" and \"pain or swelling related to the injection site\" are considered as separate disease entities as they are mentioned independently in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Venous pain |\n| redness |\n| pain |\n| swelling related to the injection site |\n\nNote: I've identified four disease entities in the paragraph. I've separated \"pain\" from \"pain or swelling related to the injection site\" as it is mentioned independently in the paragraph, although it is also part of the compound disease entity."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Venous pain occurred in 68 % of patients and 50 % had redness , pain or swelling related to the injection site , in some cases lasting up to three weeks after anaesthesia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| anaesthesia |\n\nIn the given paragraph, the term \"anaesthesia\" is the only chemical entity. It is a general term that refers to the loss of feeling or sensation as a result of the administration of a drug (an anesthetic)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| anaesthesia |\n\nIn the revised analysis, the term \"anaesthesia\" remains the only chemical entity in the paragraph. It is a medical procedure that involves the administration of anesthetic drugs to block pain or sensation temporarily."}
+  ]
+}

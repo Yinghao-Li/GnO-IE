@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: CHICAGO AT MONTREAL\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Chicago\n2. Montreal\n3. (Implied) Person(s) planning or organizing the event (e.g., sports teams, event organizers, etc.)\n4. (Implied) Travelers or attendees going from Chicago to Montreal for the event."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. (Implied) Person(s) planning or organizing the event.\n2. (Implied) Travelers or attendees going from Chicago to Montreal for the event."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| (Implied) Person(s) planning or organizing the event |\n| (Implied) Travelers or attendees going from Chicago to Montreal for the event |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: CHICAGO AT MONTREAL\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Chicago\n2. Montreal\n\nThese are the two clear \"Location\" entities in the given paragraph. Chicago and Montreal are both specific places or cities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Chicago\n2. Montreal\n\nThese are the only entities in the paragraph that clearly refer to locations. All other information in the paragraph is irrelevant to the identification of locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Chicago |\n| Montreal |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: CHICAGO AT MONTREAL\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. CHICAGO\n2. Montreal (implied organization, as it is a city, but it can also be considered as an event or location, but in this context, it can be considered an organization representing the city)\n\nIn this paragraph, \"CHICAGO\" is the clear organization entity mentioned. Montreal is an implied organization, as it is a city, but it can also be considered as an event or location. However, in this context, it can be considered an organization representing the city."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. CHICAGO\n\nIn this paragraph, only \"CHICAGO\" clearly refers to an organization. Montreal is an implied organization, but it is not explicitly stated as such in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| CHICAGO |"}
+  ]
+}

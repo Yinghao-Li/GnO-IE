@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Zywiec is 31.8-percent owned by Heineken while Carlsberg has the same amount in Okocim .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Heineken |\n| Carlsberg |\n\nExplanation:\nThe paragraph mentions two entities, Heineken and Carlsberg, each owning 31.8-percent of Zywiec and Okocim, respectively. Therefore, these are the valid entities to be identified."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Heineken |\n| Carlsberg |\n\nExplanation:\nThe paragraph only mentions \"Heineken\" and \"Carlsberg\" as the entities owning a percentage of Zywiec and Okocim. Therefore, these are the valid entities to be identified as persons. There are no other entities in the paragraph that clearly refer to persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Zywiec is 31.8-percent owned by Heineken while Carlsberg has the same amount in Okocim .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Zywiec |\n| Okocim |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Zywiec |\n| Okocim |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Zywiec is 31.8-percent owned by Heineken while Carlsberg has the same amount in Okocim .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Heineken |\n| Carlsberg |\n| Zywiec |\n| Okocim |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Heineken |\n| Carlsberg |\n| Zywiec Brewery (if Zywiec is a specific organization, not just a location) |\n| Okocim Brewery (if Okocim is a specific organization, not just a location) |\n\nBased on the original paragraph, it's not clear if \"Zywiec\" and \"Okocim\" are specific organizations or just locations. If they are breweries, then they should be included as organizations. If they are not, then they should be removed. Similarly, if \"Heineken\" and \"Carlsberg\" are specific brands or divisions of larger organizations, then those organizations should be identified instead."}
+  ]
+}

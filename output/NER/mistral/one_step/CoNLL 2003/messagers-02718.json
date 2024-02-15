@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Results on the first day of the World Cup speed skating races here on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| World Cup speed skating racers |\n\nThe paragraph does not mention any specific person, only a group of people participating in the World Cup speed skating races."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| World Cup speed skating racers |\n\nThe paragraph only refers to the racers in the World Cup speed skating event."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Results on the first day of the World Cup speed skating races here on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| World Cup speed skating races |\n| here |\n\nThe location \"here\" is not precise enough to identify a specific place, so it is included as is for completeness but may not be considered a valid location entity. The valid location entity is \"World Cup speed skating races\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| World Cup speed skating races |\n\nThe word \"here\" does not clearly refer to a specific location and can be removed from the table. The valid location entity is \"World Cup speed skating races\"."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Results on the first day of the World Cup speed skating races here on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| World Cup |\n| speed skating |\n\nExplanation:\nThe only organization mentioned in the paragraph is \"World Cup\" and \"speed skating\" is a sporting event, not an organization. Therefore, only \"World Cup\" is identified as an organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| World Cup |\n\nExplanation:\nThe only entity mentioned in the paragraph that clearly refers to an organization is \"World Cup\". \"Speed skating\" is a sporting event and does not refer to an organization. Therefore, only \"World Cup\" is identified as an organization."}
+  ]
+}

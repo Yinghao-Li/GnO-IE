@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: The most common adverse events and median CD4 at time of event were rash ( 15 . 2 % ; CD4 , 285 cells / microL ) and peripheral neuropathy ( 9 . 0 % and 348 cells / microL ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Rash: This is a disease or symptom.\n2. Peripheral neuropathy: This is a disease or condition.\n\nSo, the identified disease entities in the paragraph are rash and peripheral neuropathy."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Rash\n2. Peripheral neuropathy\n\nThese are the disease entities mentioned in the paragraph. All other entities, such as percentages and units of measurement, are irrelevant to the identification of diseases."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Rash |\n| Peripheral neuropathy |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: The most common adverse events and median CD4 at time of event were rash ( 15 . 2 % ; CD4 , 285 cells / microL ) and peripheral neuropathy ( 9 . 0 % and 348 cells / microL ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Rash: This is not a chemical entity, but rather a medical condition or symptom.\n2. CD4: CD4 is a protein, specifically a glycoprotein, found on the surface of T-helper cells in the immune system. It is an essential component of the T-cell receptor complex and plays a crucial role in the immune response.\n3. Cells: Cells are not chemical entities per se, but they are biological entities made up of various chemical components. In this context, the cells referred to are white blood cells, specifically CD4+ T-cells.\n4. MicroL: Micro liter (µL) is a unit of volume measurement in the metric system. It is equivalent to one millionth of a liter.\n5. Percentage: Percentage is a mathematical representation of a fraction of a whole. It is not a chemical entity.\n\nTherefore, the chemical entities in the paragraph are CD4 protein and the cells (specifically CD4+ T-cells)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "CD4 protein.\n\nThis is the only entity in the paragraph that clearly refers to a chemical entity. The other entities mentioned, such as cells, microL, and percentage, are not chemical entities but rather units of measurement or descriptive terms."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| CD4 protein |"}
+  ]
+}

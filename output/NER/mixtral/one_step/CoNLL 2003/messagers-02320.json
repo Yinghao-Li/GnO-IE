@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Both sources said Bre-X and Barrick did not hold talks on Thursday with Mines and Energy Ministry Secretary-General Umar Said , who is coordinating the negotiations over the Busang find in East Kalimantan .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Bre-X |\n| Barrick |\n| Mines and Energy Ministry Secretary-General Umar Said |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Mines and Energy Ministry Secretary-General Umar Said |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Both sources said Bre-X and Barrick did not hold talks on Thursday with Mines and Energy Ministry Secretary-General Umar Said , who is coordinating the negotiations over the Busang find in East Kalimantan .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Busang       |\n| East Kalimantan |\n\nExplanation:\n\n* \"Busang\" is mentioned as the location of the find that is being negotiated over.\n* \"East Kalimantan\" is mentioned as the broader location where the Busang find is situated."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| East Kalimantan |\n\nExplanation:\n\n* \"Busang\" is not a valid location entity as it is mentioned as the name of the find, not a location.\n* \"East Kalimantan\" is a valid location entity as it is a region in Indonesia."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Both sources said Bre-X and Barrick did not hold talks on Thursday with Mines and Energy Ministry Secretary-General Umar Said , who is coordinating the negotiations over the Busang find in East Kalimantan .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Bre-X |\n| Barrick |\n| Mines and Energy Ministry |\n| East Kalimantan |\n\nThe \"Organization\" entities in the paragraph are Bre-X, Barrick, Mines and Energy Ministry, and East Kalimantan."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Bre-X |\n| Barrick |\n| Mines and Energy Ministry |\n\nThe \"Organization\" entities in the paragraph are Bre-X, Barrick, and Mines and Energy Ministry. East Kalimantan is a location and not an organization, so it has been removed from the list."}
+  ]
+}

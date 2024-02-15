@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" I will be happy to give him the award personally on January 20 in Lisbon and I 'm confident that Costa himself will be there beside me on that day to shake his hand . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. I: The speaker or the person making the statement.\n2. him: The person to whom the award is going to be given.\n3. Costa: The person who is expected to be present at the award ceremony."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. I: The speaker\n2. him: The person to be awarded\n3. Costa: The expected person to be present at the award ceremony."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| I (the speaker) |\n| him (the person to be awarded) |\n| Costa (the expected person to be present) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" I will be happy to give him the award personally on January 20 in Lisbon and I 'm confident that Costa himself will be there beside me on that day to shake his hand . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. January 20: This is a specific date, which can be considered a location in the context of the event mentioned in the paragraph.\n2. Lisbon: This is an explicit location mentioned in the paragraph where the event is taking place."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Lisbon"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Lisbon |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" I will be happy to give him the award personally on January 20 in Lisbon and I 'm confident that Costa himself will be there beside me on that day to shake his hand . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. \"I\" - This is a person and not an organization.\n2. \"him\" - This is a person and not an organization.\n3. \"Costa\" - This is a person and not an organization.\n4. \"January 20\" - This is a date and not an organization.\n5. \"Lisbon\" - This is a location and not an organization.\n\nTherefore, there are no organization entities in the given paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "There are no organizations mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| - |\n\nThere are no organizations mentioned in the paragraph."}
+  ]
+}

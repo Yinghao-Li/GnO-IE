@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A widely used chemotherapeutic agent , 5 - fluorouracil ( 5 - FU ) , readily crosses the blood - brain barrier and so could have a direct effect on brain function .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n|"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| 5-fluorouracil (5-FU) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A widely used chemotherapeutic agent , 5 - fluorouracil ( 5 - FU ) , readily crosses the blood - brain barrier and so could have a direct effect on brain function .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 5 - fluorouracil ( 5 - FU ) |\n| blood - brain barrier |\n\nExplanation:\n\n1. 5 - fluorouracil ( 5 - FU ) - This is a chemotherapeutic agent used in cancer treatment.\n2. blood - brain barrier - Although not a chemical, it is a biological barrier that is relevant in the context of drugs and their effects on the brain."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 5 - fluorouracil ( 5 - FU ) |\n\nExplanation:\n\n1. 5 - fluorouracil ( 5 - FU ) - This is the only clear chemical entity in the paragraph. It is a chemotherapeutic agent used in cancer treatment.\n\nThe other entity, \"blood - brain barrier,\" is not a chemical. It is a biological barrier that separates the brain from the bloodstream and plays a role in drug delivery to the brain."}
+  ]
+}

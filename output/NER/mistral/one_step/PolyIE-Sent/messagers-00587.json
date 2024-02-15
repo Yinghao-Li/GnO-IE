@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The devices are structured as As shown in Figure 5a and Table 3 , the device that blended PQCDTB and PC61BM in a 1 : 1 ratio had an open - circuit voltage ( V OC ) of 0.76 V , a short - circuit current ( J SC ) of 4.4 mA cm^-2 , a fill factor ( FF ) of 47.5% and a power conversion efficiency ( PCE ) of 1.6% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PQCDTB |\n| PC61BM |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PQCDTB |\n| PC61BM |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The devices are structured as As shown in Figure 5a and Table 3 , the device that blended PQCDTB and PC61BM in a 1 : 1 ratio had an open - circuit voltage ( V OC ) of 0.76 V , a short - circuit current ( J SC ) of 4.4 mA cm^-2 , a fill factor ( FF ) of 47.5% and a power conversion efficiency ( PCE ) of 1.6% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| open-circuit voltage (V OC) |\n| short-circuit current (J SC) |\n| fill factor (FF) |\n| power conversion efficiency (PCE) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| open-circuit voltage (VOC) |\n| short-circuit current density (J SC) |\n| fill factor |\n| power conversion efficiency (PCE) |\n\nNote: I assumed \"current\" in the original paragraph referred to \"current density\" in the context of semiconductor devices."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The devices are structured as As shown in Figure 5a and Table 3 , the device that blended PQCDTB and PC61BM in a 1 : 1 ratio had an open - circuit voltage ( V OC ) of 0.76 V , a short - circuit current ( J SC ) of 4.4 mA cm^-2 , a fill factor ( FF ) of 47.5% and a power conversion efficiency ( PCE ) of 1.6% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| open-circuit voltage (V OC) of 0.76 V |\n| short-circuit current (J SC) of 4.4 mA cm^-2 |\n| fill factor (FF) of 47.5% |\n| power conversion efficiency (PCE) of 1.6% |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| open-circuit voltage (VOC) of 0.76 V |\n| short-circuit current density (J SC) of 4.4 mA cm^-2 |\n| fill factor (FF) of 47.5% |\n| power conversion efficiency (PCE) of 1.6% |\n\nNote: I assumed \"current\" in the original paragraph referred to \"electric current\" and changed it to \"current density\" to make it clearer that it is a material property."
+    }
+  ]
+}

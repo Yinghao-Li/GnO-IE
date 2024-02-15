@@ -1,0 +1,29 @@
+{
+  "relations": [
+    "nationality",
+    "place of death",
+    "children",
+    "location contains",
+    "place of birth",
+    "place lived",
+    "company"
+  ],
+  "relation2prompt": {
+    "nationality": "Please examine the provided paragraph and extract the nationalities of the people mentioned in the paragraph.",
+    "place of death": "Please identify relationships where \"Location A is the place of death of Individual B\" in the paragraph below.", 
+    "children": "Please identify the \"Person A is a child of Person B\" relationships in the following paragraph.",
+    "location contains": "Please analyze the following paragraph to determine the hierarchical relationship between two geographical locations mentioned. Specifically, identify which location is broader and encompasses the other, more specific location.",
+    "place of birth": "Please analyze the birthplace connections in the following text. Identify the location where the individual was born.",
+    "place lived": "Please analyze the following text to identify any relationships indicating where an individual resided. Focus on phrases that suggest \"Location X is where Individual Y lived or is currently living.\"",
+    "company": "Please identify the 'Individual X is the leader of Organization Y' relationships described in this paragraph."
+  },
+  "relation2columns": {
+    "nationality": ["Person", "Nationality", "Whether the Person has the Nationality"],
+    "place of death": ["Person", "Location", "Whether the Person died in the Loccation"],
+    "children": ["Parent", "Child", "Whether the Parent has the Child"],
+    "location contains": ["Broader Location", "Specific Location", "Whether the Broader Location contains the Specific Location"],
+    "place of birth": ["Person", "Birth Place", "Whether the Person was born in the Birth Place"],
+    "place lived": ["Person", "Location", "Whether the Person has lived in the Location"],
+    "company": ["Person", "Company", "Whether the Person owns or is the leader of the Company"]
+  }
+}

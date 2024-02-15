@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Buza last April said he would blow himself up outside the presidential palace unless he was allowed to speak to Berisha , who was at the time meeting Italian President Oscar Luigi Scalfaro .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Buza\n2. April (not a person, but a month mentioned in relation to Buza)\n3. Berisha\n4. Italian President Oscar Luigi Scalfaro."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Buza\n2. Berisha\n3. Italian President Oscar Luigi Scalfaro."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Buza  |\n| Berisha |\n| Italian President Oscar Luigi Scalfaro |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Buza last April said he would blow himself up outside the presidential palace unless he was allowed to speak to Berisha , who was at the time meeting Italian President Oscar Luigi Scalfaro .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. presidential palace\n\nThe \"presidential palace\" is a location where the president resides and conducts official business. In this context, it is the location where Berisha was meeting with Italian President Oscar Luigi Scalfaro when Buza made his threat."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. presidential palace"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| presidential palace |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Buza last April said he would blow himself up outside the presidential palace unless he was allowed to speak to Berisha , who was at the time meeting Italian President Oscar Luigi Scalfaro .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Presidential palace\n2. Buza (individual, but for the purpose of this question, we can consider Buza as an organization representing himself)\n3. Italian President Oscar Luigi Scalfaro\n4. Berisha (individual, but for the purpose of this question, we can consider Berisha as an organization representing himself)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Presidential palace\n2. Buza (as an organization representing a group or movement)\n3. Italian President Oscar Luigi Scalfaro (as the representative of the Italian presidency)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Presidential palace |\n| Buza (as an organization representing a group or movement) |\n| Italian President Oscar Luigi Scalfaro (as the representative of the Italian presidency) |"}
+  ]
+}

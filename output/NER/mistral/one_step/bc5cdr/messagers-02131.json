@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CONCLUSIONS : Despite a high prevalence of psychiatric disturbance , outcomes for patients transplanted emergently for acetaminophen - induced ALF were comparable to those transplanted for non - acetaminophen - induced ALF and electively for CLD .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| psychiatric disturbance |\n| acetaminophen-induced ALF (Acetaminophen-induced Acute Liver Failure) |\n| non-acetaminophen-induced ALF (Non-acetaminophen-induced Acute Liver Failure) |\n| CLD (Chronic Liver Disease) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| psychiatric disturbance |\n| acetaminophen-induced Acute Liver Failure (ALF) |\n| non-acetaminophen-induced Acute Liver Failure (ALF) |\n| Chronic Liver Disease (CLD) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CONCLUSIONS : Despite a high prevalence of psychiatric disturbance , outcomes for patients transplanted emergently for acetaminophen - induced ALF were comparable to those transplanted for non - acetaminophen - induced ALF and electively for CLD .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| acetaminophen |\n\nThe paragraph does not contain any other chemical entities. It mentions \"acetaminophen-induced ALF\" (Acute Liver Failure) and \"non-acetaminophen-induced ALF\" (Acute Liver Failure not induced by acetaminophen), but ALF itself is not considered a chemical entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| acetaminophen |\n\nThe paragraph mentions \"acetaminophen-induced ALF\" and \"non-acetaminophen-induced ALF\". Both refer to the chemical acetaminophen as the cause of Acute Liver Failure in the respective cases."}
+  ]
+}

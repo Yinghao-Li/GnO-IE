@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Saturday 's women 's World Cup super G race :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Saturday\n2. women\n3. World Cup\n4. super G race\n5. Let's\n6. we (implied)\n7. you (implied)\n8. Saturday (repeated)\n\nEntities of interest: women, World Cup."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. women\n\nEntity of interest: women."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| women  |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Saturday 's women 's World Cup super G race :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Saturday\n2. Women's World Cup\n3. super G race\n\nThe first entity, \"Saturday,\" is a day of the week. It is not a location, but it is important to know as it refers to when the event took place.\n\nThe second entity, \"Women's World Cup,\" is a sports competition. It is not a location, but it is important to know as it is the context for the event mentioned in the paragraph.\n\nThe third entity, \"super G race,\" is a type of skiing event. It is not a location, but it is important to know as it is the specific event being referred to in the paragraph.\n\nTherefore, there are no clear \"Location\" entities in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "There are no clear \"Location\" entities in the paragraph as defined by the given context. All entities mentioned in the paragraph refer to days, sports competitions, or types of events."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| N/A |\n\nThere are no clear \"Location\" entities in the paragraph as defined by the given context. All entities mentioned in the paragraph refer to days, sports competitions, or types of events."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Saturday 's women 's World Cup super G race :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Women's World Cup\n2. International Football Association (FIFA or implicit, as the Women's World Cup is an FIFA event)\n3. Saturday\n\nThese entities are organizations involved in the Women's World Cup super G race mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Women's World Cup\n2. FIFA\n\nThese are the organizations explicitly mentioned in the paragraph that are directly related to the Women's World Cup event."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Women's World Cup |\n| FIFA |"}
+  ]
+}

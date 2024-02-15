@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: These findings are strong support for the adrenaline - hypertension hypothesis in man .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| hypertension |\n\nThe paragraph mentions the \"adrenaline - hypertension hypothesis in man\". Hypertension is a disease, and it is mentioned in the context of the hypothesis, so it is the valid disease entity in this paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| hypertension |\n\nThe paragraph mentions the \"adrenaline - hypertension hypothesis in man\". In this context, hypertension is the only clear disease entity mentioned. The term \"adrenaline\" refers to a hormone and neurotransmitter, not a disease. Therefore, it is not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: These findings are strong support for the adrenaline - hypertension hypothesis in man .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| adrenaline |\n| hypertension |\n\nNote: I've included \"hypertension\" as a chemical entity because it is a medical condition characterized by an abnormally high blood pressure, which can be caused by various chemical substances, including adrenaline."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| adrenaline |"}
+  ]
+}

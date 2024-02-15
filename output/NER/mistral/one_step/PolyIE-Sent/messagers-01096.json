@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Besides the high hole mobility , the blend also presented high electron mobility in range of 4.4 × 10^-4 cm^2 V -1 s^-1 ( see Figure S7 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| high hole mobility blend |\n| high electron mobility |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| high hole mobility blend |\n| high electron mobility |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Besides the high hole mobility , the blend also presented high electron mobility in range of 4.4 × 10^-4 cm^2 V -1 s^-1 ( see Figure S7 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| high hole mobility |\n| high electron mobility |\n| range of 4.4 × 10^-4 cm^2 V^-1 s^-1 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| high hole mobility |\n| high electron mobility |\n| 4.4 × 10^-4 cm^2 V^-1 s^-1 |\n\nNote: \"range of\" was removed since it does not refer to a material property, but rather a way of expressing a measurement range."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Besides the high hole mobility , the blend also presented high electron mobility in range of 4.4 × 10^-4 cm^2 V -1 s^-1 ( see Figure S7 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| -------------- |\n| high hole mobility |\n| 4.4 × 10^-4 cm^2 V^-1 s^-1 |\n| high electron mobility |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| -------------- |\n| 4.4 × 10^-4 cm^2 V^-1 s^-1 (electron mobility) |\n\nNote: In the original paragraph, \"high hole mobility\" and \"high electron mobility\" are both material properties, but I assumed that only the numerical value associated with electron mobility was the property value since it is the one explicitly given in the paragraph. If both hole and electron mobility values are intended to be considered as separate property values, then the table should include both entries."
+    }
+  ]
+}

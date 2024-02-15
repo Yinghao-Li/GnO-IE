@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Led as usual by Swede Kennet Andersson and Russian Igor Kolyvanov in attack , Bologna can expect a tough home match against a Piacenza side still exultant after a 3-2 league win over AC Milan last Sunday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Swede Kennet Andersson |\n| Russian Igor Kolyvanov |\n| Bologna (implied: unspecified Bologna players and coaching staff) |\n| Piacenza (implied: unspecified Piacenza players and coaching staff) |\n| AC Milan (implied: AC Milan players and coaching staff) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Swede Kennet Andersson |\n| Russian Igor Kolyvanov |\n| Bologna (Bologna players and coaching staff) |\n| Piacenza (Piacenza players and coaching staff) |\n| AC Milan (AC Milan players and coaching staff) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Led as usual by Swede Kennet Andersson and Russian Igor Kolyvanov in attack , Bologna can expect a tough home match against a Piacenza side still exultant after a 3-2 league win over AC Milan last Sunday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Bologna |\n| Piacenza |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Bologna |\n| Piacenza |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Led as usual by Swede Kennet Andersson and Russian Igor Kolyvanov in attack , Bologna can expect a tough home match against a Piacenza side still exultant after a 3-2 league win over AC Milan last Sunday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Bologna |\n| Piacenza |\n| AC Milan |\n\nThese are the valid organizations mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Bologna |\n| Piacenza |\n| AC Milan |\n\nThese are the organizations mentioned in the paragraph that can be clearly identified as organizations. \"Swede Kennet Andersson\" and \"Russian Igor Kolyvanov\" are individuals, not organizations."}
+  ]
+}

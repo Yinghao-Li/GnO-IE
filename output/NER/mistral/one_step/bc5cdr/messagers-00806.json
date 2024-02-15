@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In 1 patient with atopic dermatitis , telangiectatic and papular rosacea insidiously appeared after 5 months of treatment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Atopic dermatitis |\n| Rosacea          |\n| Telangiectatic rosacea |\n| Papular rosacea   |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Atopic dermatitis |\n| Rosacea          |\n| Telangiectatic rosacea |\n| Papular rosacea   |\n\nExplanation:\nThe paragraph mentions \"patient with atopic dermatitis\" and \"telangiectatic and papular rosacea\" which clearly refer to diseases. Therefore, these are the valid entities to include in the table. Other words in the paragraph such as \"insidiously appeared\" and \"after 5 months of treatment\" do not refer to diseases and should be ignored."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In 1 patient with atopic dermatitis , telangiectatic and papular rosacea insidiously appeared after 5 months of treatment .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Atopic dermatitis |\n\nThe paragraph does not contain any explicit mention of specific chemicals. It only mentions a medical condition, \"atopic dermatitis,\" which is not a chemical entity. However, if there were any specific chemicals mentioned in the paragraph, they would be included in the table below."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Atopic dermatitis |\n\nThe paragraph does not contain any explicit mention of specific chemical entities. \"Telangiectatic and papular rosacea\" are medical conditions, not chemicals."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Peters left a meeting between NZ First and National negotiators to spend 20 minutes speaking to Labour leader Helen Clark .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Peters  |\n| Helen Clark |\n| NZ First |\n| National negotiators |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Peters |\n| Helen Clark |\n| NZ First (as a political party, can be considered a collective entity, but for the purpose of this exercise, we can assume it refers to the individuals within the party involved in the meeting) |\n| National negotiators (same as above) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Peters left a meeting between NZ First and National negotiators to spend 20 minutes speaking to Labour leader Helen Clark .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| a meeting between NZ First and National negotiators |\n| Peters left this meeting |\n| Peters spoke to Helen Clark |\n| Labour leader Helen Clark's location (implicit) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| a meeting between NZ First and National negotiators |\n| Labour leader Helen Clark's location |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Peters left a meeting between NZ First and National negotiators to spend 20 minutes speaking to Labour leader Helen Clark .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NZ First |\n| National |\n| Labour |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NZ First |\n| National |\n| Labour (Party) |"}
+  ]
+}

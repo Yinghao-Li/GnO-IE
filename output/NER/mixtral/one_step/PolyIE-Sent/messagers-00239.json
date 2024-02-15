@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The absorption peaks and optical band gaps are summarized in Table 1.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| the absorption peaks |\n| optical band gaps |\n\nNote: I've included 'the absorption peaks' and 'optical band gaps' as potential material names, although it's uncommon to refer to them as materials. The paragraph doesn't explicitly mention any specific material names."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| optical band gaps |\n\nNote: In this paragraph, there is only one clear material name reference, which is 'optical band gaps'. The other reference, 'the absorption peaks', does not directly refer to a specific material."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The absorption peaks and optical band gaps are summarized in Table 1.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| absorption peaks |\n| optical band gaps |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| absorption peaks |\n| optical band gaps |\n\nThe paragraph only contains references to material properties, so there is no need to remove any entities."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The absorption peaks and optical band gaps are summarized in Table 1.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "**Property Value**\n\n* Absorption peaks\n* Optical band gaps"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "**Property Value**\n\n* Absorption peaks\n* Optical band gaps\n\n(Note: I have removed the word \"peaks\" from the first entity as it is not a clear reference to the value of a material property.)"
+    }
+  ]
+}

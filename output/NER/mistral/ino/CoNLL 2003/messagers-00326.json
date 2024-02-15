@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Dong Jiong ( China ) beat Thomas Stuer-Lauridsen ( Denmark ) 15-10 15-6\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Dong Jiong\n2. China (This is not a person but can be considered a country entity)\n3. Thomas Stuer-Lauridsen\n4. Denmark (This is not a person but can be considered a country entity)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Dong Jiong\n2. Thomas Stuer-Lauridsen"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Dong Jiong |\n| Thomas Stuer-Lauridsen |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Dong Jiong ( China ) beat Thomas Stuer-Lauridsen ( Denmark ) 15-10 15-6\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China: This is a country entity.\n2. Denmark: This is a country entity.\n\nSo, the location entities in the paragraph are China and Denmark."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n\n1. China\n\nThe other entity mentioned, Thomas Stuer-Lauridsen, is a person and not a location."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| China |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Dong Jiong ( China ) beat Thomas Stuer-Lauridsen ( Denmark ) 15-10 15-6\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China (Country)\n2. Dong Jiong (Person)\n\nIn this paragraph, \"China\" is identified as the nationality or the country of origin for \"Dong Jiong.\" Therefore, it can be considered an organization or entity in this context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. China (Country)\n\nIn this context, \"China\" is the only organization or entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| China (Country) |"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Polish brewer Zywiec 's 1996 profit slump may last into next year due in part to hefty depreciation charges , but recent high investment should help the firm defend its 10-percent market share , the firm 's chief executive said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Polish brewer Zywiec\n2. the firm (Zywiec)\n3. the firm's chief executive (unspecified name)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. the firm's chief executive (unspecified name)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the firm's chief executive (unspecified name) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Polish brewer Zywiec 's 1996 profit slump may last into next year due in part to hefty depreciation charges , but recent high investment should help the firm defend its 10-percent market share , the firm 's chief executive said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Polish brewer Zywiec\n2. 1996 (implied location: Zywiec's financial reports)\n3. part of (implied location: Zywiec's business operations)\n4. next year (implied location: Zywiec's future financial situation)\n5. in part (implied location: Zywiec's business operations)\n6. due to (implied location: reasons for Zywiec's profit slump)\n7. hefty depreciation charges (implied location: Zywiec's financial reports)\n8. but (implied location: contrasting situation)\n9. recent high investment (implied location: Zywiec's business operations)\n10. should help the firm (implied location: Zywiec's future business situation)\n11. defend its 10-percent market share (implied location: Zywiec's position in the Polish beer market)\n12. the firm 's chief executive (implied location: Zywiec's executive team)\n\nSo, the identified location entities are: Polish brewer Zywiec, 1996, part of, next year, in part, due to, hefty depreciation charges, but, recent high investment, should help the firm, defend its 10-percent market share, the firm, and the firm 's chief executive."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Polish brewer Zywiec\n2. 1996 (implied location: Zywiec's financial reports)\n3. part of (implied location: Zywiec's business operations)\n4. next year (implied location: Zywiec's future financial situation)\n5. in part (implied location: Zywiec's business operations)\n6. but (not a location)\n7. recent high investment (implied location: Zywiec's business operations)\n8. should help the firm (not a location)\n9. defend its 10-percent market share (implied location: Polish beer market)\n10. the firm (not a location)\n11. the firm 's chief executive (not a location)\n\nSo, the relevant location entities are: Polish brewer Zywiec, 1996, next year, in part, and Polish beer market."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Polish brewer Zywiec |\n| 1996 (financial reports of Polish brewer Zywiec) |\n| part of (business operations of Polish brewer Zywiec) |\n| next year (future financial situation of Polish brewer Zywiec) |\n| in part (business operations of Polish brewer Zywiec) |\n| Polish beer market |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Polish brewer Zywiec 's 1996 profit slump may last into next year due in part to hefty depreciation charges , but recent high investment should help the firm defend its 10-percent market share , the firm 's chief executive said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Polish brewer Zywiec\n2. The firm (Zywiec)\n3. The firm's chief executive."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Polish brewer Zywiec\n2. The firm (Zywiec)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Polish brewer Zywiec |\n| The firm (Zywiec) |"}
+  ]
+}

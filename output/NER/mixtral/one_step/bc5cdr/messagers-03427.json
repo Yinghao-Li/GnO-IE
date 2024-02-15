@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An 80 year old diabetic male with evidence of peripheral and autonomic neuropathy was admitted with chest pain .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| diabetic |\n| peripheral and autonomic neuropathy |\n| chest pain |\n\nExplanation:\n\n* \"diabetic\" is a medical condition, so it is a disease entity.\n* \"peripheral and autonomic neuropathy\" are also medical conditions, so they are disease entities.\n* \"chest pain\" is a symptom, but it can also be a sign of a disease, so it is a disease entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| diabetic |\n| peripheral and autonomic neuropathy |\n\nExplanation:\n\n* \"diabetic\" is a medical condition, so it is a disease entity.\n* \"peripheral and autonomic neuropathy\" are also medical conditions, so they are disease entities.\n* \"chest pain\" is a symptom, not a disease, so it is not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An 80 year old diabetic male with evidence of peripheral and autonomic neuropathy was admitted with chest pain .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| diabetic |\n\nThe only chemical entity in the paragraph is \"diabetic\". It is a term used to describe a person who has diabetes, a condition characterized by high blood sugar levels."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| diabetic |\n\nThe word \"diabetic\" is the only term in the paragraph that clearly refers to a \"Chemical\" entity. It is a term used to describe a person who has diabetes, a condition characterized by high blood sugar levels. The term \"diabetes\" is sometimes used interchangeably with \"diabetic,\" but in this paragraph, only \"diabetic\" is mentioned."}
+  ]
+}

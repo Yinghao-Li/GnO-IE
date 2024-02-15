@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States Thursday blasted the release from a Greek prison of a Palestinian guerrilla convicted of bombing an airliner and killing a teenager in 1982 , saying the move \" does not make sense . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| United States |\n| Greek prison |\n| Palestinian guerrilla |\n| Convicted of bombing an airliner and killing a teenager in 1982 |\n\nExplanation:\n\n1. United States: The subject of the sentence that performed the action \"blasted\"\n2. Greek prison: The location where the event happened\n3. Palestinian guerrilla: The person who was released from the prison\n4. Convicted of bombing an airliner and killing a teenager in 1982: The specific description of the person who was released."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| United States |\n| Palestinian guerrilla |\n\nExplanation:\n\n1. United States: The subject of the sentence that performed the action \"blasted\"\n2. Palestinian guerrilla: The person mentioned in the paragraph.\n\nThe other entities in the paragraph do not clearly refer to persons:\n\n* Greek prison: It is a location where an event took place.\n* convicted of bombing an airliner and killing a teenager in 1982: It is a description of the action committed by the Palestinian guerrilla, not a person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States Thursday blasted the release from a Greek prison of a Palestinian guerrilla convicted of bombing an airliner and killing a teenager in 1982 , saying the move \" does not make sense . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Greece |\n| United States |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Greece |\n| United States |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States Thursday blasted the release from a Greek prison of a Palestinian guerrilla convicted of bombing an airliner and killing a teenager in 1982 , saying the move \" does not make sense . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The United States |\n| Greece |\n\nIn this paragraph, \"The United States\" and \"Greece\" are the organizations mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The United States |\n\nIn this paragraph, \"The United States\" is the only organization mentioned."}
+  ]
+}

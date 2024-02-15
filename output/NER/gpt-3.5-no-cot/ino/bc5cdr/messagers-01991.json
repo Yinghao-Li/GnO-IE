@@ -1,0 +1,20 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: After adjusting for potential confounders , we found that the risk of HIV seroconversion among participants who were daily smokers of crack cocaine increased over time ( period 1 : hazard ratio [ HR ] 1 . 03 , 95 % confidence interval [ CI ] 0 . 57 - 1 . 85 ; period 2 : HR 1 . 68 , 95 % CI 1 . 01 - 2 . 80 ; and period 3 : HR 2 . 74 , 95 % CI 1 . 06 - 7 . 11 ) ."},
+    {"role": "assistant", "content": "The \"Disease\" entity mentioned in the paragraph is \"HIV\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Apologies for the confusion. Upon reviewing the paragraph again, there are no specific disease entities mentioned. The paragraph discusses the risk of HIV seroconversion among participants who were daily smokers of crack cocaine over different time periods. However, it does not mention any other specific diseases."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| HIV     |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: After adjusting for potential confounders , we found that the risk of HIV seroconversion among participants who were daily smokers of crack cocaine increased over time ( period 1 : hazard ratio [ HR ] 1 . 03 , 95 % confidence interval [ CI ] 0 . 57 - 1 . 85 ; period 2 : HR 1 . 68 , 95 % CI 1 . 01 - 2 . 80 ; and period 3 : HR 2 . 74 , 95 % CI 1 . 06 - 7 . 11 ) ."},
+    {"role": "assistant", "content": "In the given paragraph, the identified \"Chemical\" entities are:\n\n1. crack cocaine"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "In the given paragraph, the relevant \"Chemical\" entity is:\n\n1. crack cocaine"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical        |\n|-----------------|\n| crack cocaine   |"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: A > 15 . 9 % decrease in GLS [ sensitivity , 86 % ; specificity , 75 % ; area under the curve ( AUC ) = 0 . 815 ; P = 0 . 001 ] and a > 0 . 004 ng / mL elevation in cTnT ( sensitivity , 79 % ; specificity , 64 % ; AUC = 0 . 757 ; P = 0 . 005 ) from baseline to the third cycle of chemotherapy predicted later cardiotoxicity ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Disease\" entities are:\n\n1. Cardiotoxicity"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Disease\" entity in the given paragraph is:\n\n1. Cardiotoxicity"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease       |\n|---------------|\n| Cardiotoxicity |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: A > 15 . 9 % decrease in GLS [ sensitivity , 86 % ; specificity , 75 % ; area under the curve ( AUC ) = 0 . 815 ; P = 0 . 001 ] and a > 0 . 004 ng / mL elevation in cTnT ( sensitivity , 79 % ; specificity , 64 % ; AUC = 0 . 757 ; P = 0 . 005 ) from baseline to the third cycle of chemotherapy predicted later cardiotoxicity ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Chemical\" entities are:\n\n1. GLS\n2. cTnT"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "Apologies for the confusion. Upon reviewing the paragraph again, there are no specific chemical entities mentioned. The entities mentioned are related to medical measurements and tests, but they do not refer to specific chemicals."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n|----------|\n| GLS      |\n| cTnT     |"}
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: However , lowering HOMO level would result in larger band gap , and thereby the absorption of resulted polymers would have less overlap with solar spectrum , which are unfavorable for high short circuit current ( J sc ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| HOMO level polymers |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| HOMO level polymers |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: However , lowering HOMO level would result in larger band gap , and thereby the absorption of resulted polymers would have less overlap with solar spectrum , which are unfavorable for high short circuit current ( J sc ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO level |\n| band gap |\n| absorption of resulted polymers |\n| solar spectrum |\n| short circuit current (J sc) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO level |\n| band gap |\n| absorption of resulted polymers |\n\nThese are the only entities in the paragraph that clearly refer to material properties. \"Solar spectrum\" could be considered a property of light, but in this context, it is being used to describe the range of wavelengths that the polymers can absorb, so it is still related to the material properties of the polymers."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: However , lowering HOMO level would result in larger band gap , and thereby the absorption of resulted polymers would have less overlap with solar spectrum , which are unfavorable for high short circuit current ( J sc ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value            |\n|--------------------------|\n| lowering HOMO level       |\n| larger band gap           |\n| absorption of polymers    |\n| less overlap with solar spectrum |\n| unfavorable for high short circuit current (J sc) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value            |\n|--------------------------|\n| larger band gap           |\n| less overlap with solar spectrum |\n| high short circuit current (J sc) |\n\nExplanation:\n\n* \"lowering HOMO level\" is not a property value, but rather a description of an action that can lead to a change in a material property.\n* \"resulted polymers\" is not a property value, but rather a description of the material being referred to.\n* \"unfavorable\" is not a property value, but rather a description of the impact of the change in band gap and overlap with solar spectrum on the material's ability to generate high short circuit current."
+    }
+  ]
+}

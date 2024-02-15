@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: British Prime Minister John Major 's office said on Friday that rebel Conservative MP Sir John Gorst had not \" resigned the whip \" ( quit the parliamentary party ) and the government still had a majority in the 651-seat parliament .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. British Prime Minister John Major\n2. Sir John Gorst (mentioned as a rebel Conservative MP)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. John Major\n2. Sir John Gorst"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| John Major |\n| Sir John Gorst |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: British Prime Minister John Major 's office said on Friday that rebel Conservative MP Sir John Gorst had not \" resigned the whip \" ( quit the parliamentary party ) and the government still had a majority in the 651-seat parliament .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. British Prime Minister John Major's office\n2. Friday (implicit location: the day of the statement)\n3. Parliament (implicit location: where the parliamentary party and the 651-seat parliament are located)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Parliament\n\n(Note: In this context, \"British Prime Minister John Major's office\" is not a location, but rather an entity that can be considered a source or originator of the information.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Parliament |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: British Prime Minister John Major 's office said on Friday that rebel Conservative MP Sir John Gorst had not \" resigned the whip \" ( quit the parliamentary party ) and the government still had a majority in the 651-seat parliament .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. British Prime Minister John Major's office\n2. Conservative Party (implied, as Sir John Gorst is identified as a rebel MP from this party)\n3. Government (implied, as John Major is the British Prime Minister and the paragraph is about the government still having a majority in parliament)\n4. Parliament (mentioned as the place where the parliamentary party and the government's majority exist)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Conservative Party\n2. Government\n3. Parliament"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Conservative Party |\n| Government |\n| Parliament |"}
+  ]
+}

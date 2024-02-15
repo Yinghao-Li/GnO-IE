@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: On Thursday , the 11th Circuit U.S. Court of Appeals in Atlanta denied his appeal in federal court .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The 11th Circuit U.S. Court of Appeals\n2. (Implied: The court is composed of judges, so we could also consider it as \"the judges of the 11th Circuit U.S. Court of Appeals in Atlanta\")\n3. (Implied: The person who filed the appeal)\n\nSo, the identified \"Person\" entities in the paragraph are:\n\n1. The 11th Circuit U.S. Court of Appeals\n2. The person who filed the appeal."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. The person who filed the appeal."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The person who filed the appeal |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: On Thursday , the 11th Circuit U.S. Court of Appeals in Atlanta denied his appeal in federal court .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Thursday: A day of the week.\n2. The 11th Circuit: A specific circuit of the United States Court of Appeals.\n3. U.S. Court of Appeals: A type of United States court.\n4. Atlanta: A city in the United States.\n\nSo, the \"Location\" entities in the paragraph are \"Atlanta\" (city) and \"11th Circuit\" (specific jurisdiction of the court)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The relevant location entities in the paragraph are:\n\n1. Atlanta (city)\n\nThe other entities mentioned in the paragraph, \"Thursday\" (day of the week) and \"U.S. Court of Appeals, 11th Circuit\" (jurisdiction of the court), do not provide specific location information."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Atlanta |\n\nThis table only includes the location entity mentioned in the paragraph, which is \"Atlanta\". The other entities, \"Thursday\" and \"U.S. Court of Appeals, 11th Circuit,\" do not provide specific location information."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: On Thursday , the 11th Circuit U.S. Court of Appeals in Atlanta denied his appeal in federal court .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. 11th Circuit U.S. Court of Appeals\n\nThis is the organization that made the decision in the appeal case."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. 11th Circuit U.S. Court of Appeals\n\nThis is the organization mentioned in the paragraph that is relevant to the context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| 11th Circuit U.S. Court of Appeals |\n\nThis table lists the organization mentioned in the paragraph."}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Increases of MAP occurred after LV administration of 1 , 10 and 50 ng of AVP in WKY and of 10 and 50 ng in SHR .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Identify the potential disease-related entities in the paragraph.\n2. Analyze the context of each entity to determine if it is a disease.\n\nStep 1:\n\n* MAP: Mean arterial pressure\n* LV: Left ventricle\n* AVP: Arginine vasopressin\n* WKY: Wistar-Kyoto rat\n* SHR: Spontaneously hypertensive rat\n\nStep 2:\n\n* MAP: Mean arterial pressure is not a disease.\n* LV: Left ventricle is not a disease.\n* AVP: Arginine vasopressin is not a disease.\n* WKY: Wistar-Kyoto rat is not a disease.\n* SHR: Spontaneously hypertensive rat - Hypertension is a disease.\n\nThe only disease-related entity in the paragraph is \"hypertension\" which is indicated by \"SHR\" (Spontaneously hypertensive rat)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "* Hypertension"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hypertension |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Increases of MAP occurred after LV administration of 1 , 10 and 50 ng of AVP in WKY and of 10 and 50 ng in SHR .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Identify potential chemical entities:\n- MAP: Mean Arterial Pressure\n- LV: Left Ventricle\n- AVP: Arginine Vasopressin\n- WKY: Wistar-Kyoto (a type of rat)\n- SHR: Spontaneously Hypertensive Rat (a type of rat)\n\n2. Determine which of these are chemical substances:\n- AVP (Arginine Vasopressin) is a hormone, which is a type of chemical.\n\nThe other entities listed are abbreviations for procedures, measurements, or types of rats, so they are not chemical substances.\n\nThus, the only chemical entity in the paragraph is \"AVP\" (Arginine Vasopressin)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "[1] AVP (Arginine Vasopressin)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| AVP (Arginine Vasopressin) |"}
+  ]
+}

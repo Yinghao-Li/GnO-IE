@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: STZ causes increased expression of GFAP , CD11b and TNF - a indicating glial activation and neuroinflammation .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Neuroinflammation |\n\nThe given paragraph mentions \"neuroinflammation\" as a result of STZ (Streptozotocin) causing increased expression of GFAP, CD11b, and TNF-a. Therefore, neuroinflammation is the identified disease entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Neuroinflammation |\n\nThe paragraph mentions \"neuroinflammation\" as a result of STZ (Streptozotocin) causing increased expression of GFAP, CD11b, and TNF-a. Neuroinflammation is the identified disease entity. STZ itself is a chemical compound used for causing diabetes in experimental models, but it is not a disease. Therefore, it is not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: STZ causes increased expression of GFAP , CD11b and TNF - a indicating glial activation and neuroinflammation .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| STZ (Sodium taurodeoxycholate or Sodium taurocholate) |\n| GFAP (Glial fibrillary acidic protein) |\n| CD11b (Cluster of differentiation 11b or Mac-1) |\n| TNF-a (Tumor necrosis factor alpha)"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| STZ (Sodium taurodeoxycholate or Sodium taurocholate) |\n| TNF-a (Tumor necrosis factor alpha) |\n\nGFAP (Glial fibrillary acidic protein) and CD11b (Cluster of differentiation 11b or Mac-1) are not chemicals but proteins. Therefore, they are not included in the table."}
+  ]
+}

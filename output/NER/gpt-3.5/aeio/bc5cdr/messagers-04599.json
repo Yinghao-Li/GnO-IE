@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: We performed a phase II trial of paclitaxel 175 mg / m2 over 3 hours on day I followed by folinic acid 300 mg over 1 hour before 5 - fluorouracil 350 mg / m2 on days 1 to 3 every 28 days (TFL) in women with metastatic breast cancer .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nIn the given paragraph, the disease entity mentioned is \"metastatic breast cancer\".\n\nStep 2: Identify the \"Chemical\" entity.\nIn the given paragraph, the chemical entities mentioned are \"paclitaxel\", \"folinic acid\", and \"5-fluorouracil\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the entities that clearly refer to either \"Disease\" or \"Chemical\" are:\n\n- Disease: metastatic breast cancer\n- Chemical: paclitaxel, folinic acid, 5-fluorouracil"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity                | Entity Type |\n|-----------------------|-------------|\n| metastatic breast cancer | Disease     |\n| paclitaxel            | Chemical    |\n| folinic acid          | Chemical    |\n| 5-fluorouracil        | Chemical    |"}
+]

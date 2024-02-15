@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Doctors performed an emergency tracheotomy to help Czech President Vaclav Havel breathe after cancer surgery on his lungs earlier this week , a spokesman said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Doctors |\n| Czech President Vaclav Havel |\n| Spokesman |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Doctors |\n| Czech President Vaclav Havel |\n| Spokesman |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Doctors performed an emergency tracheotomy to help Czech President Vaclav Havel breathe after cancer surgery on his lungs earlier this week , a spokesman said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Czech Republic |\n| (no specific location mentioned in the paragraph) |\n\nThe paragraph does not mention any specific location within Czech Republic where the emergency tracheotomy was performed or where the spokesman made the announcement. Therefore, we can only identify the country as the location entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Czech Republic |\n\nThe paragraph only mentions the country \"Czech Republic\" as a location entity. Therefore, there are no other entities in the paragraph that clearly refer to a specific location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Doctors performed an emergency tracheotomy to help Czech President Vaclav Havel breathe after cancer surgery on his lungs earlier this week , a spokesman said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Doctors |\n| Czech President Vaclav Havel |\n\nExplanation:\n\nThe organizations mentioned in the paragraph are \"Doctors\" who performed the emergency tracheotomy on Czech President Vaclav Havel."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Doctors |\n\nExplanation:\n\nThe only entity in the paragraph that clearly refers to an organization is \"Doctors\". \"Czech President Vaclav Havel\" is a person, not an organization."}
+  ]
+}

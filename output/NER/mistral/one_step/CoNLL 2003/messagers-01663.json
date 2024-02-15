@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As Glenn Lawhon , a rural Florida minister who is the victim 's father , looked on , Mills was pronounced dead at 7:13 a.m. EST ( 1213 GMT ) for the murder of Lester Lawhon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Glenn Lawhon |\n| Mills |\n| the victim |\n| Lester Lawhon |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Glenn Lawhon |\n| Mills |\n| the victim (implies a person) |\n| Lester Lawhon |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As Glenn Lawhon , a rural Florida minister who is the victim 's father , looked on , Mills was pronounced dead at 7:13 a.m. EST ( 1213 GMT ) for the murder of Lester Lawhon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| rural Florida |\n| EST (1213 GMT) |\n\nIn this paragraph, the locations mentioned are \"rural Florida\" and \"EST (1213 GMT)\". EST stands for Eastern Standard Time, which is a time zone. Therefore, it is included as a location in this context."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| rural Florida |\n| EST |\n\nIn this paragraph, the locations mentioned are \"rural Florida\" and \"EST\". \"EST\" stands for Eastern Standard Time, which is a time zone. Therefore, it is included as a location in this context. \"GMT\" is a time standard, not a location, and \"Lester Lawhon\" and \"Glenn Lawhon\" are people, not locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As Glenn Lawhon , a rural Florida minister who is the victim 's father , looked on , Mills was pronounced dead at 7:13 a.m. EST ( 1213 GMT ) for the murder of Lester Lawhon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Glenn Lawhon (rural Florida minister) |\n| EST (Eastern Standard Time)\n| GMT (Greenwich Mean Time) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Eastern Standard Time (EST) |\n| Greenwich Mean Time (GMT) |"}
+  ]
+}

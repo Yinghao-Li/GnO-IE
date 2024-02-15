@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Spain coach Javier Clemente has added uncapped Deportivo Coruna midfielder Armando Alvarez to his squad for the World Cup qualifier against Yugoslavia on December 14 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Javier Clemente - Spain coach\n2. Armando Alvarez - uncapped Deportivo Coruna midfielder."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Javier Clemente - Spain coach\n2. Armando Alvarez - uncapped midfielder (Deportivo Coruna)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Javier Clemente - Spain coach |\n| Armando Alvarez - uncapped midfielder (Deportivo Coruna) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Spain coach Javier Clemente has added uncapped Deportivo Coruna midfielder Armando Alvarez to his squad for the World Cup qualifier against Yugoslavia on December 14 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Spain\n2. Coruna (Deporterivo Coruna)\n3. Yugoslavia.\n\nThese are the location entities mentioned in the paragraph. Spain is the country where Javier Clemente is the coach, and the match is between Spain and Yugoslavia. Deporterivo Coruna is the specific location of the midfielder Armando Alvarez."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Spain\n2. Coruna (Deporterivo Coruna)\n3. Yugoslavia.\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Spain |\n| Coruna (Deporterivo Coruna) |\n| Yugoslavia |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Spain coach Javier Clemente has added uncapped Deportivo Coruna midfielder Armando Alvarez to his squad for the World Cup qualifier against Yugoslavia on December 14 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Spain\n2. Spain coach Javier Clemente (representing the Spanish national football team)\n3. Deportivo Coruna (football club)\n4. Armando Alvarez (individual player, but could also be considered an \"athlete\" entity, but for the purpose of this task, we will focus on the organization he is a part of)\n5. Yugoslavia (national football team)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Spain\n2. Deportivo Coruna\n3. Yugoslavia (national football team)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Spain |\n| Deportivo Coruna |\n| Yugoslavia (national football team) |"}
+  ]
+}

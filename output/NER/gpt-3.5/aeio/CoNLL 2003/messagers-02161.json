@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Colombia shipped 198,226 bags in August after 164,185 in July , El Salvador 160,553 (129,184) , Indonesia 72,218 (78,959) , Ethiopia 69,252 (60,456) and Kenya 63,969 (60,043) .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "In the given paragraph, the identified entities are as follows:\n\n- Location: Colombia, El Salvador, Indonesia, Ethiopia, Kenya\n- Organization: None mentioned\n- Person: None mentioned"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "In the given paragraph, the identified entities that clearly refer to \"['Location', 'Organization', 'Person']\" are as follows:\n\n- Location: Colombia, El Salvador, Indonesia, Ethiopia, Kenya"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity      | Entity Type |\n|-------------|-------------|\n| Colombia    | location    |\n| El Salvador | location    |\n| Indonesia   | location    |\n| Ethiopia    | location    |\n| Kenya       | location    |"}
+]

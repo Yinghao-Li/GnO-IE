@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: The selective blockade of A2 adenosine receptor by DMPX (3 , 7 - dimethyl - 1 - propargylxanthine) significantly enhanced cocaine - induced locomotor activity of animals .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nThere is no mention of any disease in the given paragraph.\n\nStep 2: Identify the \"Chemical\" entity.\nThe chemical entity mentioned in the paragraph is \"DMPX (3,7-dimethyl-1-propargylxanthine)\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "The chemical entity mentioned in the paragraph is \"DMPX (3,7-dimethyl-1-propargylxanthine)\"."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity                                      | Entity Type |\n|---------------------------------------------|-------------|\n| DMPX (3,7-dimethyl-1-propargylxanthine)       | Chemical    |"}
+]

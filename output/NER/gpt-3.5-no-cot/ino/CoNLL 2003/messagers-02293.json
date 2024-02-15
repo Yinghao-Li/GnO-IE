@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: An assessment group made up of the State Council 's Port Office , the Civil Aviation Administration of China , the General Administration of Customs and other authorities had granted the airport permission to handle foreign aircraft , Xinhua said ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Person\" entities are as follows:\n\n| Person |\n|--------|\n| Xinhua |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Based on the revised criteria, the identified \"Person\" entities in the given paragraph are as follows:\n\n| Person |\n|--------|\n| Xinhua |"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Here is the revised table with the valid \"Person\" entities:\n\n| Person  |\n|---------|\n| Xinhua  |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: An assessment group made up of the State Council 's Port Office , the Civil Aviation Administration of China , the General Administration of Customs and other authorities had granted the airport permission to handle foreign aircraft , Xinhua said ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entities are as follows:\n\n| Entity |\n|--------|\n| State Council's Port Office |\n| Civil Aviation Administration of China |\n| General Administration of Customs |\n\nPlease note that \"airport\" is not included as a \"Location\" entity because it is not specified in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Apologies for the confusion. After reviewing the paragraph again, the relevant \"Location\" entities are as follows:\n\n| Entity |\n|--------|\n| State Council's Port Office |\n\nThe other entities mentioned in the paragraph, such as the Civil Aviation Administration of China and the General Administration of Customs, are not specifically identified as locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Certainly! Here are the valid \"Location\" entities presented in a Markdown table:\n\n| Location |\n|----------|\n| State Council's Port Office |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: An assessment group made up of the State Council 's Port Office , the Civil Aviation Administration of China , the General Administration of Customs and other authorities had granted the airport permission to handle foreign aircraft , Xinhua said ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Organization\" entities are:\n\n1. State Council\n2. Port Office\n3. Civil Aviation Administration of China\n4. General Administration of Customs"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Organization\" entities are:\n\n1. State Council\n2. Port Office\n3. Civil Aviation Administration of China\n4. General Administration of Customs"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization                       |\n|------------------------------------|\n| State Council                       |\n| Port Office                         |\n| Civil Aviation Administration of China |\n| General Administration of Customs   |"}
+  ]
+}

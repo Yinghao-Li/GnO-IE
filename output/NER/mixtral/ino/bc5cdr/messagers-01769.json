@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: The present study assessed the combination of radiotherapy ( 60 Gy / 30 fractions / 40 days ) and topotecan ( 0 . 9 mg / m ( 2 ) / day on days 1 - 5 on weeks 1 , 3 and 5 ) in 50 adults with histologically proven and untreated GBM .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The paragraph is discussing a study related to a certain medical condition.\n2. The condition is referred to as \"GBM\" which stands for Glioblastoma multiforme, a type of brain tumor or \"brain cancer.\"\n3. Therefore, the \"Disease\" entities in the paragraph are:\n - Glioblastoma multiforme (GBM)\n - brain tumor or \"brain cancer\" (implied by the mention of GBM)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. The paragraph is discussing a study related to a certain medical condition.\n2. The condition is referred to as \"GBM\" which stands for Glioblastoma multiforme, a type of brain tumor or \"brain cancer.\"\n3. Therefore, the Disease entities in the paragraph are:\n - Glioblastoma multiforme (GBM)\n - brain cancer (implied by the mention of GBM)\n\nIrrelevant entities:\n\n* Radiotherapy\n* Topotecan\n* Adults\n* Histologically proven\n* Untreated\n* 60 Gy / 30 fractions / 40 days\n* 0 . 9 mg / m (2) / day on days 1 - 5 on weeks 1 , 3 and 5"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Glioblastoma multiforme (GBM) |\n| brain cancer |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: The present study assessed the combination of radiotherapy ( 60 Gy / 30 fractions / 40 days ) and topotecan ( 0 . 9 mg / m ( 2 ) / day on days 1 - 5 on weeks 1 , 3 and 5 ) in 50 adults with histologically proven and untreated GBM .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Radiotherapy ( 60 Gy / 30 fractions / 40 days )\n2. Topotecan ( 0.9 mg / m2 / day on days 1 - 5 on weeks 1, 3 and 5 )\n\nThese are the chemical entities mentioned in the paragraph. Radiotherapy is a physical treatment, but it is often classified as a \"chemical\" or \"therapeutic\" agent in medical contexts. Topotecan is a chemotherapeutic drug."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Topotecan (0.9 mg / m2 / day on days 1 - 5 on weeks 1, 3 and 5)\n\nThis is the only entity in the paragraph that clearly refers to a chemical substance. Radiotherapy is a physical treatment, not a chemical entity."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Topotecan (0.9 mg / m2 / day on days 1 - 5 on weeks 1, 3 and 5) |"}
+  ]
+}

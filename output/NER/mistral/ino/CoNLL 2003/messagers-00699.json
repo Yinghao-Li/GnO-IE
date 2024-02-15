@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Forwards - Antonio Folha ( Porto ) , Joao Vieira Pinto ( Benfica ) , Paulo Alves ( Sporting ) , Rui Costa ( Fiorentina , Italy ) , Jorge Cadete ( Celtic Glasgow , Scotland ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Antonio Folha - Person (Footballer, Porto)\n2. Joao Vieira Pinto - Person (Footballer, Benfica)\n3. Paulo Alves - Person (Footballer, Sporting)\n4. Rui Costa - Person (Footballer, Fiorentina, Italy)\n5. Jorge Cadete - Person (Footballer, Celtic Glasgow, Scotland)\n\nThese are all individuals mentioned in the paragraph, and they are identified as footballers with the teams they have previously played for in parentheses."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Antonio Folha - Person\n2. Joao Vieira Pinto - Person\n3. Paulo Alves - Person\n4. Rui Costa - Person\n5. Jorge Cadete - Person\n\nThese are the only entities in the paragraph that clearly refer to people. The irrelevant entities are the football clubs (Porto, Benfica, Sporting, Fiorentina, Italy, and Celtic Glasgow, Scotland)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Antonio Folha |\n| Joao Vieira Pinto |\n| Paulo Alves |\n| Rui Costa |\n| Jorge Cadete |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Forwards - Antonio Folha ( Porto ) , Joao Vieira Pinto ( Benfica ) , Paulo Alves ( Sporting ) , Rui Costa ( Fiorentina , Italy ) , Jorge Cadete ( Celtic Glasgow , Scotland ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Porto - Antonio Folha is from Porto.\n2. Benfica - Joao Vieira Pinto is from Benfica.\n3. Sporting - Paulo Alves is from Sporting.\n4. Fiorentina, Italy - Rui Costa is from Fiorentina in Italy.\n5. Celtic Glasgow, Scotland - Jorge Cadete is from Celtic Glasgow in Scotland."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Porto\n2. Benfica\n3. Italy (for Rui Costa)\n4. Scotland (for Jorge Cadete)\n5. Celtic Glasgow\n6. Fiorentina\n\nThese are the entities that clearly refer to locations in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Porto |\n| Benfica |\n| Italy |\n| Scotland |\n| Celtic Glasgow |\n| Fiorentina |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Forwards - Antonio Folha ( Porto ) , Joao Vieira Pinto ( Benfica ) , Paulo Alves ( Sporting ) , Rui Costa ( Fiorentina , Italy ) , Jorge Cadete ( Celtic Glasgow , Scotland ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Porto - Football club based in Porto, Portugal\n2. Benfica - Football club based in Lisbon, Portugal\n3. Sporting - Football club based in Lisbon, Portugal\n4. Fiorentina - Football club based in Florence, Italy\n5. Italy - Country in Europe\n6. Celtic Glasgow - Football club based in Glasgow, Scotland\n\nThe entities identified in the paragraph are the football clubs and countries mentioned. The given names are the individuals associated with these organizations."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Porto\n2. Benfica\n3. Sporting\n4. Fiorentina\n5. Celtic Glasgow\n\nThese are the organizations mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Porto |\n| Benfica |\n| Sporting |\n| Fiorentina |\n| Celtic Glasgow |"}
+  ]
+}

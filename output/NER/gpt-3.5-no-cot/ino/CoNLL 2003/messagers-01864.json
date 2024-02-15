@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Mussolini , who sits in the Chamber , told La Stampa newspaper last month after quitting AN 's parliamentary party that she was considering joining the neo - fascist Social Movement ( MS - Fiamma ) formed by some of the Duce 's World War Two followers ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Person\" entities are:\n\n| Person |\n|--------|\n| Mussolini |\n| La Stampa |\n| AN |\n| Duce |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Person\" entities are:\n\n| Person |\n|--------|\n| Mussolini |"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person     |\n|------------|\n| Mussolini  |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Mussolini , who sits in the Chamber , told La Stampa newspaper last month after quitting AN 's parliamentary party that she was considering joining the neo - fascist Social Movement ( MS - Fiamma ) formed by some of the Duce 's World War Two followers ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entities are:\n\n1. Chamber (referring to a specific location where Mussolini sits)\n2. La Stampa newspaper (referring to a specific newspaper)\n3. AN's parliamentary party (referring to a political party)\n4. Social Movement (referring to a political movement)\n5. MS-Fiamma (referring to a specific organization)\n6. Duce's World War Two followers (referring to a group of people)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Location\" entities in the given paragraph are:\n\n1. Chamber (referring to a specific location where Mussolini sits)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Here is the Markdown table with the valid \"Location\" entity:\n\n| Location |\n|----------|\n| Chamber  |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Mussolini , who sits in the Chamber , told La Stampa newspaper last month after quitting AN 's parliamentary party that she was considering joining the neo - fascist Social Movement ( MS - Fiamma ) formed by some of the Duce 's World War Two followers ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Organization\" entities are:\n\n1. Chamber\n2. AN (Assuming it refers to a political party or organization)\n3. Social Movement (MS-Fiamma)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Organization\" entities are:\n\n1. AN (Assuming it refers to a political party or organization)\n2. Social Movement (MS-Fiamma)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization       |\n|--------------------|\n| AN                 |\n| Social Movement (MS-Fiamma) |"}
+  ]
+}

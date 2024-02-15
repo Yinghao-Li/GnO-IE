@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Alatas said on Tuesday that on his way back from Oslo , Belo would visit the Vatican to see the Pope , and would also meet German Chancellor Helmut Kohl in Bonn .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Alatas |\n| Belo   |\n| Pope   |\n| Helmut Kohl"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Alatas |\n| Belo   |\n| Pope   |\n| Helmut Kohl"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Alatas said on Tuesday that on his way back from Oslo , Belo would visit the Vatican to see the Pope , and would also meet German Chancellor Helmut Kohl in Bonn .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Oslo |\n| Vatican |\n| Bonn |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Oslo |\n| Vatican |\n| Bonn |\n\nThese are the only entities in the paragraph that clearly refer to locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Alatas said on Tuesday that on his way back from Oslo , Belo would visit the Vatican to see the Pope , and would also meet German Chancellor Helmut Kohl in Bonn .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Vatican |\n| Pope |\n| German Chancellor |\n| Helmut Kohl |\n\nExplanation:\nThe paragraph mentions three organizations or entities that can be identified as such: the Vatican, which is the headquarters of the Roman Catholic Church and the residence of the Pope; the Pope, who is the leader of the Roman Catholic Church; and German Chancellor Helmut Kohl, who was the head of government of Germany at the time."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Vatican |\n| German Chancellor |\n| Helmut Kohl |\n\nExplanation:\nThe paragraph mentions three entities that can be identified as organizations: the Vatican, which is the headquarters of the Roman Catholic Church and an internationally recognized sovereign state; and German Chancellor Helmut Kohl, who was the head of government of Germany at the time. The Pope is a religious leader, but the Vatican City State is the organization he leads. Therefore, only the Vatican and German Chancellor Helmut Kohl are valid entities as organizations in this context."}
+  ]
+}

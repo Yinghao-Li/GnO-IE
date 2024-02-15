@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States has vetoed a second term for the Egyptian but left the door open for another African candidate .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The United States |\n| an Egyptian |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The United States |\n| an Egyptian |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States has vetoed a second term for the Egyptian but left the door open for another African candidate .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| The United States |\n| Africa |\n| Egypt |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| The United States |\n| Africa |\n| Egypt |\n\nThe \"but\" in the paragraph does not refer to a location. The phrase \"left the door open\" is an idiomatic expression that does not refer to a specific location either."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States has vetoed a second term for the Egyptian but left the door open for another African candidate .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The United States |\n| Egypt |\n| African candidate |\n\nExplanation:\nThe paragraph mentions two organizations: \"The United States\" and \"Egypt\". The third entity mentioned, \"another African candidate\", is not an organization but an individual or a group representing a specific continent."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The United States |\n\nExplanation:\nThe paragraph mentions only one organization, \"The United States\". The other entities mentioned, \"Egypt\" and \"another African candidate\", do not clearly refer to organizations."}
+  ]
+}

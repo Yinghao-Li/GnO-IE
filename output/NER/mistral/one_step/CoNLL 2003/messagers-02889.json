@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Sunderland 1 ( Melville 83 ) Wimbledon 3 ( Ekoku 8 , 29 , Holdsworth\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Melville (scored for Sunderland at 83rd minute) |\n| Ekoku (scored for Wimbledon at 8th and 29th minutes) |\n| Holdsworth (mentioned but no action associated) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Melville (scored for Sunderland) |\n| Ekoku (scored for Wimbledon, twice) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Sunderland 1 ( Melville 83 ) Wimbledon 3 ( Ekoku 8 , 29 , Holdsworth\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Sunderland |\n| Wimbledon |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Sunderland |\n| Wimbledon |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Sunderland 1 ( Melville 83 ) Wimbledon 3 ( Ekoku 8 , 29 , Holdsworth\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Sunderland 1 |\n| Wimbledon |\n\nThe paragraph mentions two organizations: Sunderland 1 and Wimbledon. The number and parentheses following each team name are not part of the organization names and should be ignored when identifying the entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Sunderland 1 |\n| Wimbledon |\n\nThe paragraph mentions two organizations: Sunderland 1 and Wimbledon. These are the only entities in the paragraph that clearly refer to organizations. The numbers and parentheses following each team name are not part of the organization names and should be ignored."}
+  ]
+}

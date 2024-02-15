@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The main outcome was 30 - day cardiovascular death or myocardial infarction .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| 30 - day cardiovascular death |\n| myocardial infarction |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| myocardial infarction |\n\nExplanation: The other entity, \"30 - day cardiovascular death\", is not a clear disease entity as it refers to an event (death) and a system (cardiovascular) rather than a specific disease. Myocardial infarction, on the other hand, is a well-defined disease entity."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The main outcome was 30 - day cardiovascular death or myocardial infarction .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| None |\n\nExplanation:\n\nThe paragraph does not contain any chemical entities. The terms \"cardiovascular\" and \"myocardial\" are related to anatomy and physiology, not chemistry."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| None |\n\nExplanation:\n\nThe paragraph does not contain any clear chemical entities. The terms \"cardiovascular\" and \"myocardial\" are related to anatomy and physiology, not chemistry. Therefore, there are no chemical entities to present in a table."}
+  ]
+}

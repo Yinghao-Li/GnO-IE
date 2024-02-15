@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An increase of creatine phosphokinase to > 5 times the upper limit of normal occurred in 0 . 24 % of patients , and no cases of drug - induced myopathy were observed .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| drug-induced myopathy |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| drug-induced myopathy |\n\nThe other entity, \"increase of creatine phosphokinase,\" does not refer to a disease, but rather an elevated level of an enzyme in the blood."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An increase of creatine phosphokinase to > 5 times the upper limit of normal occurred in 0 . 24 % of patients , and no cases of drug - induced myopathy were observed .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| creatine phosphokinase |\n| drug |\n\nIn this paragraph, the two chemical entities mentioned are \"creatine phosphokinase\" and \"drug.\" I have presented them in a Markdown table with one column named \"Chemical.\""},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| creatine phosphokinase |\n\nIn this revised list, I have removed \"drug\" as it does not clearly refer to a specific chemical. The term \"drug\" is a broader category that can include various chemical substances, and without specifying which drug was used in this context, it is not appropriate to list it as a chemical entity. The remaining entity, \"creatine phosphokinase,\" is a specific enzyme and is appropriately listed as a chemical entity."}
+  ]
+}

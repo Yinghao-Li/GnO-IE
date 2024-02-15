@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Goalkeepers - Vitor Baia ( Barcelona , Spain ) , Rui Correia ( Braga ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Vitor Baia |\n| Rui Correia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Vitor Baia |\n| Rui Correia |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Goalkeepers - Vitor Baia ( Barcelona , Spain ) , Rui Correia ( Braga ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Barcelona, Spain |\n| Braga |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Barcelona, Spain |\n\nThe entity \"Braga\" is not a location, it's a team name, so it should be removed."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Goalkeepers - Vitor Baia ( Barcelona , Spain ) , Rui Correia ( Braga ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Barcelona |\n| Braga |\n\nExplanation:\n\n* Barcelona and Braga are organizations, specifically football clubs, mentioned in the paragraph.\n* The names of the organizations are presented in the same words as in the original paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the valid entities that clearly refer to organizations:\n\n| Organization |\n| --- |\n| Barcelona |\n| Braga |\n\nExplanation:\n\n* \"Barcelona\" and \"Braga\" are the only entities in the paragraph that clearly refer to organizations, specifically football clubs.\n* The names of the organizations are presented in the same words as in the original paragraph."}
+  ]
+}

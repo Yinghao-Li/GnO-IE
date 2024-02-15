@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The radio quoted police as saying the blast broke windows and shattered the door of the mosque .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The radio\n2. Police (implied, as they are quoted in the paragraph)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Police"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Police |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The radio quoted police as saying the blast broke windows and shattered the door of the mosque .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Mosque\n\nThis is the location entity in the paragraph. The blast occurred at the mosque."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Mosque\n\nThis is the only location entity in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Mosque |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The radio quoted police as saying the blast broke windows and shattered the door of the mosque .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Police: This is an organization mentioned in the paragraph. They are quoted as providing information about the incident."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Police."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Police |"}
+  ]
+}

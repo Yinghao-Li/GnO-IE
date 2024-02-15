@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 8 The photocurrent response of all of these polymers extends to a wavelength of 1 μm ; however , the external quantum efficiency ( EQE ) of these PSCs in the wavelength range between 650 and 1100 nm is typically less than 10% , which results in low overall PCEs under AM1.5 simulated solar light.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| these polymers |\n| PSCs (Perovskite Solar Cells) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| these polymers |\n| PSCs (Perovskite Solar Cells) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 8 The photocurrent response of all of these polymers extends to a wavelength of 1 μm ; however , the external quantum efficiency ( EQE ) of these PSCs in the wavelength range between 650 and 1100 nm is typically less than 10% , which results in low overall PCEs under AM1.5 simulated solar light.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| wavelength of 1 μm |\n| external quantum efficiency (EQE) |\n| wavelength range between 650 and 1100 nm |\n| overall PCEs under AM1.5 simulated solar light. |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| wavelength of 1 μm |\n| external quantum efficiency (EQE) in the wavelength range between 650 and 1100 nm |\n| overall PCEs under AM1.5 simulated solar light. |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 8 The photocurrent response of all of these polymers extends to a wavelength of 1 μm ; however , the external quantum efficiency ( EQE ) of these PSCs in the wavelength range between 650 and 1100 nm is typically less than 10% , which results in low overall PCEs under AM1.5 simulated solar light.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| wavelength of 1 μm     |\n| wavelength range between 650 and 1100 nm |\n| EQE in the wavelength range between 650 and 1100 nm is typically less than 10% |\n| overall PCEs under AM1.5 simulated solar light |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| wavelength of 1 μm     |\n| EQE in the wavelength range between 650 and 1100 nm |\n| overall PCEs |\n\nNote: \"wavelength range between 650 and 1100 nm\" is considered as a single property value, as it refers to a specific range of wavelengths. \"less than 10%\" is not considered a property value, as it is a quantitative description of the EQE in the given wavelength range. Similarly, \"typically\" and \"results in\" are not considered property values, as they are descriptive words. \"These PSCs\" and \"under AM1.5 simulated solar light\" are not considered property values, as they do not refer to a specific value of a material property."
+    }
+  ]
+}

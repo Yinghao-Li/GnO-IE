@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Two Manchester United soccer fans were wounded by unidentified gunmen on Friday and taken to hospital in the Austrian capital , police said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Two Manchester United soccer fans\n\nThese are the entities identified as people in the paragraph. The paragraph mentions that two individuals are Manchester United soccer fans and they were wounded by unidentified gunmen."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Two Manchester United soccer fans\n\nThese are the entities that clearly refer to persons in the paragraph. The paragraph mentions that two individuals are Manchester United soccer fans and they were wounded. Other entities such as \"unidentified gunmen\" and \"police\" are not considered persons in this context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Two Manchester United soccer fans |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Two Manchester United soccer fans were wounded by unidentified gunmen on Friday and taken to hospital in the Austrian capital , police said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Manchester United: This is a soccer team based in Manchester, England. It is not explicitly stated as a location in the paragraph, but it is mentioned as the affiliation of the wounded individuals.\n2. Friday: This is a day of the week. It does not directly refer to a location, but it can be considered contextual information.\n3. Austrian capital: This is a location. The Austrian capital is the city of Vienna."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Austrian capital: Vienna.\n\nThis is the only location entity mentioned in the paragraph that is explicitly stated. Manchester United is a soccer team and not a location, and \"Friday\" is a day of the week."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Austrian capital (Vienna) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Two Manchester United soccer fans were wounded by unidentified gunmen on Friday and taken to hospital in the Austrian capital , police said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Manchester United\n2. Police (implied, as they are the ones making the statement)\n3. Hospital (in the Austrian capital)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Manchester United\n2. Police\n3. Hospital"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Manchester United |\n| Police |\n| Hospital |"}
+  ]
+}

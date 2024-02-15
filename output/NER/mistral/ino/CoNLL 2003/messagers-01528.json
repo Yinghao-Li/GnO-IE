@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The students also demanded the government announce punishments meted out to policemen who they said had manhandled students involved in a brawl with some restaurant owners near the Yangon institute in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. students\n2. government\n3. policemen\n4. students (specified as those involved in the brawl)\n5. restaurant owners."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. students\n2. policemen\n3. government (can be considered relevant as they are the entity responsible for meting out punishments)\n4. restaurant owners."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| students |\n| policemen |\n| government |\n| restaurant owners |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The students also demanded the government announce punishments meted out to policemen who they said had manhandled students involved in a brawl with some restaurant owners near the Yangon institute in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Yangon institute: This is a specific location where the brawl between students and restaurant owners took place. It is likely a school or educational institution located in Yangon, Myanmar."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Yangon: It is mentioned as the city where the Yangon institute is located and where the brawl took place.\n2. Yangon institute: This is a specific location where the brawl between students and restaurant owners took place. It is likely a school or educational institution in Yangon, Myanmar."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Yangon |\n| Yangon institute |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The students also demanded the government announce punishments meted out to policemen who they said had manhandled students involved in a brawl with some restaurant owners near the Yangon institute in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Government\n2. Students\n3. Policemen\n4. Yangon institute (This could be considered an educational institution or organization.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Government\n2. Students\n3. Yangon institute (Educational institution or organization)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Government |\n| Students |\n| Yangon institute |"}
+  ]
+}

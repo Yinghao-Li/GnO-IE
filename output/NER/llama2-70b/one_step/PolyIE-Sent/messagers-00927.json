@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The optical band gaps of the polymers are in the range of 1.64 - 1.69 eV as estimated from the absorption onset and the detailed results are summarized in Table 1.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| 1.64 eV |\n| 1.69 eV |\n| Table 1 |\n\nThe \"Material Name\" entities in the paragraph are:\n\n* 1.64 eV\n* 1.69 eV\n* Table 1\n\nThese are the three entities that refer to materials or their properties in the paragraph. The first two are the optical band gaps of the polymers, and the third is the table that summarizes the detailed results."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| Table 1 |\n\nThe valid entities that clearly refer to \"Material name\" in the paragraph are:\n\n* Table 1\n\nThe other entities, \"1.64 eV\" and \"1.69 eV\", are not material names, but rather numerical values that refer to the optical band gaps of the polymers. Therefore, they are not included in the table."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The optical band gaps of the polymers are in the range of 1.64 - 1.69 eV as estimated from the absorption onset and the detailed results are summarized in Table 1.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| optical band gaps |\n| absorption onset |\n| detailed results |\n| Table 1 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| optical band gaps |\n| absorption onset |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The optical band gaps of the polymers are in the range of 1.64 - 1.69 eV as estimated from the absorption onset and the detailed results are summarized in Table 1.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 1.64 eV |\n| 1.69 eV |\n\nThe two property values mentioned in the paragraph are:\n\n* 1.64 eV\n* 1.69 eV\n\nThese values represent the range of optical band gaps of the polymers as estimated from the absorption onset."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "Valid entities:\n\n| Property Value |\n| --- |\n| 1.64 eV |\n| 1.69 eV |\n\nInvalid entities:\n\n* \"absorption onset\" (not a material property value)\n* \"detailed results\" (not a material property value)\n* \"Table 1\" (not a material property value)"
+    }
+  ]
+}

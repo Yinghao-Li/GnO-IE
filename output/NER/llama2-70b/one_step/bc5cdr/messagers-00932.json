@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: METHODS : 38 female Wistar rats were injected with gentamicin , 40 mg / kg , twice a day for 9 days , 38 with gentamicin + PDTC , and 28 with 0 . 15 M NaCl solution .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| gentamicin |\n| gentamicin + PDTC |\n| 0 . 15 M NaCl solution |\n\nNo disease entities were found in the given paragraph. The paragraph only mentions drug and solution names, which are not considered diseases."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| gentamicin |\n| PDTC |\n\nThe paragraph does not mention any diseases. The entities mentioned are names of drugs (gentamicin and PDTC) and a solution (0.15 M NaCl solution), which are not considered diseases. Therefore, the table above only includes the drug names as they are the only entities that could potentially be related to diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: METHODS : 38 female Wistar rats were injected with gentamicin , 40 mg / kg , twice a day for 9 days , 38 with gentamicin + PDTC , and 28 with 0 . 15 M NaCl solution .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Gentamicin |\n| PDTC |\n| NaCl |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities that clearly refer to chemicals in the paragraph:\n\n| Chemical |\n| --- |\n| Gentamicin |\n| PDTC |\n\nThe entity \"NaCl\" does not clearly refer to a chemical, as it is a chemical formula for sodium chloride, not a chemical name. Therefore, it has been removed from the list."}
+  ]
+}

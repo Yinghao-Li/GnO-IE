@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The two men were hit in the pelvis and leg .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| The two men |\n\nExplanation:\n\n* \"The two men\" are identified as \"Person\" entities as they are explicitly referred to in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| The two men |\n\nExplanation:\n\n* \"The two men\" are identified as \"Person\" entities as they are explicitly referred to in the paragraph.\n* \"The pelvis\" and \"leg\" are not considered \"Person\" entities as they refer to body parts, not actual people."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The two men were hit in the pelvis and leg .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| pelvis     |\n| leg        |\n\nIn this paragraph, there are two location entities mentioned: \"pelvis\" and \"leg\". These are the locations where the two men were hit."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| pelvis     |\n| leg        |\n\nIn this paragraph, there are two location entities mentioned: \"pelvis\" and \"leg\". These are the only entities that clearly refer to a location. The other entities such as \"two men\" and \"hit\" do not refer to a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The two men were hit in the pelvis and leg .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Since there are no organization entities mentioned in the paragraph, there will be no data to display in the Markdown table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Since there are no organization entities mentioned in the paragraph, I cannot create a Markdown table for this input."}
+  ]
+}

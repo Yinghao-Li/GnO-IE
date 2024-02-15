@@ -1,0 +1,80 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph.\n\nParagraph: Devices prepared using either polymer showed the best performances for a polymer : PC 70 BM blend ratio of 1 : 2.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Polymer - this is the first material mentioned in the paragraph.\n2. PC 70 - this is likely a type of polymer, although it's not explicitly stated in the paragraph. It could also be a specific formulation or grade of polymer.\n3. BM - this is the second material mentioned in the paragraph, although its full name is not provided. It could be a type of polymer or another material.\n\nTherefore, the \"Material Name\" entities in the paragraph are:\n\n* Polymer\n* PC 70\n* BM"
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Name."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Polymer\n2. PC 70\n\nWe can remove \"BM\" from the list because its full name is not provided, and we cannot be certain that it refers to a material name."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| Polymer |\n| PC 70 |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph.\n\nParagraph: Devices prepared using either polymer showed the best performances for a polymer : PC 70 BM blend ratio of 1 : 2.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"Devices\" - These are the objects being prepared using a polymer.\n2. \"polymer\" - This is a material that is being used to prepare the devices. However, it is not specific enough to be considered a Property Name entity.\n3. \"PC 70 BM blend ratio\" - This is a specific composition of materials being used in the preparation of the devices. It is a Property Name entity.\n4. \"1 : 2\" - This is the value of the PC 70 BM blend ratio property.\n\nTherefore, the Property Name entity in the paragraph is \"PC 70 BM blend ratio\"."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"polymer\" - This is a material property, as it refers to the type of material being used in the preparation of the devices.\n2. \"PC 70 BM blend ratio\" - This is also a material property, as it refers to the specific composition of materials being used in the preparation of the devices.\n\nTherefore, the relevant Material Property entities in the paragraph are \"polymer\" and \"PC 70 BM blend ratio\"."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| polymer |\n| PC 70 BM blend ratio |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph.\n\nParagraph: Devices prepared using either polymer showed the best performances for a polymer : PC 70 BM blend ratio of 1 : 2.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Devices\n2. polymer\n3. PC 70 (this could be considered a property value if \"PC\" stands for a specific property and \"70\" is its value)\n4. BM blend ratio of 1 : 2 (this is a property value, where the property is the blend ratio and its value is 1 : 2)\n\nNote: The identification of \"PC 70\" as a property value depends on the context. If \"PC\" is an abbreviation for a specific property and \"70\" is its value, then it would be a property value. Otherwise, it would not be considered a property value."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Value of Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. PC 70 (if \"PC\" stands for a specific property and \"70\" is its value)\n2. BM blend ratio of 1 : 2 (this is a property value, where the property is the blend ratio and its value is 1 : 2)\n\nNote: The identification of \"PC 70\" as a property value depends on the context. If \"PC\" is an abbreviation for a specific property and \"70\" is its value, then it would be a property value. Otherwise, it would not be considered a property value."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| PC 70 (if \"PC\" stands for a specific property and \"70\" is its value) |\n| BM blend ratio of 1 : 2 |"
+    }
+  ]
+}

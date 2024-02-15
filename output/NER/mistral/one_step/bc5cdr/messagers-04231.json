@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Myopathy due to lack of vitamin E and myopathy induced by certain viruses have much in common anatomically and pathologically with the human form .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Myopathy due to lack of vitamin E |\n| Myopathy induced by certain viruses |\n| Human form of myopathy |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Myopathy due to lack of vitamin E |\n| Myopathy induced by certain viruses |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Myopathy due to lack of vitamin E and myopathy induced by certain viruses have much in common anatomically and pathologically with the human form .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Vitamin E |\n\nIn the given paragraph, the only chemical entity mentioned is \"Vitamin E\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Vitamin E |\n\nIn the given paragraph, only \"Vitamin E\" clearly refers to a chemical entity. Other entities such as \"myopathy due to lack of vitamin E\" and \"myopathy induced by certain viruses\" are not chemicals but rather conditions or diseases associated with the chemical entity \"Vitamin E\"."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CATTLE CALVES HOGS\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| You (implied) |\n\nThe paragraph does not contain any explicitly mentioned persons. It only mentions Cattle Calves and Hogs, which are not persons."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| You (implied) |\n\nThe paragraph does not contain any entities that clearly refer to persons. It only mentions \"CATTLE CALVES\" and \"HOGS\", which are not persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CATTLE CALVES HOGS\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| CATTLE CALVES HOGS |\n\nThis paragraph does not contain any specific location entities. It is a list of livestock types."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| CATTLE, CALVES, HOGS |\n\nThese words do not clearly refer to specific locations. They are types of livestock."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CATTLE CALVES HOGS\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| CATTLE |\n| CALVES |\n| HOGS |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| CATTLE |\n| CALVES Association (if CATTLE is a reference to an organization in this context) |\n| HOGS Association (if HOGS is a reference to an organization in this context) |\n\nBased on the given paragraph, it is not clear that CATTLE and HOGS are organizations. However, if they are meant to be organizations in this context, then they should be included in the table with the assumption that they are organizations. If not, then they should be removed from the table."}
+  ]
+}

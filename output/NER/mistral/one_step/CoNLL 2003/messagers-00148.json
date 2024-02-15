@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Blinker was fined 75,000 Swiss francs ( $ 57,600 ) for failing to inform the Engllsh club of his previous commitment to Udinese .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Blinker |\n| English club |\n\nExplanation:\nThe paragraph mentions two persons: Blinker and the English club. Blinker is identified as the person who was fined, and the English club is identified as the club that was not informed by Blinker about his previous commitment."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Blinker |\n\nExplanation:\nThe paragraph mentions only one clear person entity: Blinker. The \"English club\" is not a person, but rather an organization. Therefore, it should not be included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Blinker was fined 75,000 Swiss francs ( $ 57,600 ) for failing to inform the Engllsh club of his previous commitment to Udinese .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| English club |\n| Udinese |\n| Switzerland |\n\nExplanation:\nThe paragraph mentions two locations - the English club and Udinese. These are the valid location entities in the paragraph. Switzerland is also mentioned but it is not a location in this context as it is mentioned in relation to the currency (Swiss francs)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| English club |\n| Udinese |\n\nExplanation:\nThe paragraph mentions two locations - \"English club\" and \"Udinese\" - which clearly refer to specific places. There are no other entities in the paragraph that can be identified as locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Blinker was fined 75,000 Swiss francs ( $ 57,600 ) for failing to inform the Engllsh club of his previous commitment to Udinese .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Udinese |\n| English club |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| English club |\n| Udinese |"}
+  ]
+}

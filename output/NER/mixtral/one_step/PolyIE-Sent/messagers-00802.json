@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: By judicious selection of the donor and the acceptor units , the D-A copolymer architecture enables engineering of the electronic structure including energy levels of the highest occupied molecular orbital ( HOMO ) and the lowest unoccupied molecular orbital ( LUMO ) , the energy band gap , and light harvesting properties as well as charge transport properties.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| D-A copolymer |\n| highest occupied molecular orbital (HOMO) |\n| lowest unoccupied molecular orbital (LUMO) |\n| energy band gap |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| D-A copolymer |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: By judicious selection of the donor and the acceptor units , the D-A copolymer architecture enables engineering of the electronic structure including energy levels of the highest occupied molecular orbital ( HOMO ) and the lowest unoccupied molecular orbital ( LUMO ) , the energy band gap , and light harvesting properties as well as charge transport properties.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| the donor and the acceptor units |\n| the electronic structure |\n| energy levels of the highest occupied molecular orbital ( HOMO ) |\n| energy levels of the lowest unoccupied molecular orbital ( LUMO ) |\n| the energy band gap |\n| light harvesting properties |\n| charge transport properties |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| the electronic structure |\n| energy levels of the highest occupied molecular orbital ( HOMO ) |\n| energy levels of the lowest unoccupied molecular orbital ( LUMO ) |\n| the energy band gap |\n| light harvesting properties |\n| charge transport properties |\n\nNote: The \"donor and the acceptor units\" are not material properties, but rather components of the D-A copolymer. The electronic structure, energy levels, energy band gap, light harvesting properties, and charge transport properties are all material properties."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: By judicious selection of the donor and the acceptor units , the D-A copolymer architecture enables engineering of the electronic structure including energy levels of the highest occupied molecular orbital ( HOMO ) and the lowest unoccupied molecular orbital ( LUMO ) , the energy band gap , and light harvesting properties as well as charge transport properties.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "```diff\n| Property Value               |\n|------------------------------|\n| the highest occupied molecular orbital (HOMO) |\n| the lowest unoccupied molecular orbital (LUMO) |\n| the energy band gap           |\n| light harvesting properties   |\n| charge transport properties   |\n```"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "```diff\n| Property Value               |\n|------------------------------|\n| the energy band gap           |\n```\nThe other entities mentioned in the paragraph, such as \"the highest occupied molecular orbital (HOMO)\", \"the lowest unoccupied molecular orbital (LUMO)\", \"light harvesting properties\", and \"charge transport properties\" are not clearly referring to the value of a material property, but rather the properties themselves. Therefore, they were not included in the table. Only \"the energy band gap\" is a value of a material property."
+    }
+  ]
+}

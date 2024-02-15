@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 2011 5.15 5.15 5.30 5.30 5.60 5.60 5.90 5.90\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| I (implied) |\n\nThe paragraph does not contain any explicit mentions of specific persons. It only contains numbers and times."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| I (implied) |\n\nThe paragraph does not contain any explicit mentions of specific persons. It only contains times."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 2011 5.15 5.15 5.30 5.30 5.60 5.60 5.90 5.90\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| 2011 |\n| 5.15 |\n| 5.30 |\n| 5.60 |\n| 5.90 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| 5.15 |\n| 5.30 (twice) |\n| 5.60 (twice) |\n| 5.90 (twice) |\n| 2011 |\n\nNote: The year \"2011\" is included as it could be considered a location in the context of a timeline or calendar. However, it could also be argued that it is not a location in the strictest sense."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 2011 5.15 5.15 5.30 5.30 5.60 5.60 5.90 5.90\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| None |\n\nThe given paragraph does not contain any mention of organizations. It only contains numbers and dates."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| None |\n\nThe given paragraph does not contain any mention of organizations. It only contains numbers and dates."}
+  ]
+}

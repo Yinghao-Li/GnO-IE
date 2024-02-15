@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Budi Santoso ( Indonesia ) beat Hu Zhilan ( China ) 15-4 15-5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Budi Santoso |\n| Hu Zhilan |\n\nExplanation:\n\n* \"Budi Santoso\" is identified as a person entity, being the name of an individual.\n* \"Hu Zhilan\" is also identified as a person entity, also being the name of an individual.\n* \"Indonesia\" and \"China\" are not person entities, but rather country names, so they are not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Budi Santoso |\n| Hu Zhilan |\n\nExplanation:\n\n* \"Budi Santoso\" and \"Hu Zhilan\" are the only entities in the paragraph that clearly refer to a person.\n* \"Indonesia\" and \"China\" are not person entities, but rather country names, so they are not included in the table.\n* The parentheses around \"Indonesia\" and \"China\" are removed as they are not part of the proper names."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Budi Santoso ( Indonesia ) beat Hu Zhilan ( China ) 15-4 15-5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Indonesia  |\n| China      |\n\nThe two \"Location\" entities found in the paragraph are \"Indonesia\" and \"China\". They are the home countries of the two players mentioned in the text."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Indonesia  |\n| China      |\n\nThe two \"Location\" entities found in the paragraph are \"Indonesia\" and \"China\". They are the home countries of the two players mentioned in the text. The other words in the paragraph do not refer to a \"Location\"."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Budi Santoso ( Indonesia ) beat Hu Zhilan ( China ) 15-4 15-5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Indonesia |\n| China |\n\nIn the given paragraph, the two organization entities are \"Indonesia\" and \"China\". These are the countries of origin for the players Budi Santoso and Hu Zhilan, respectively."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Indonesia |\n| China |\n\nIn the given paragraph, the two organization entities are \"Indonesia\" and \"China\". These are the countries of origin for the players Budi Santoso and Hu Zhilan, respectively. The other words in the paragraph do not clearly refer to an organization."}
+  ]
+}

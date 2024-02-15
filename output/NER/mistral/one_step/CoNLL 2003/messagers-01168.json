@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PaineWebber analyst Marc Cohen said he lowered his rating on Newmont to neutral from attractive today because if Newmont merged with Santa Fe , investors would have to wait until the second half of 1998 to realize earnings accretion .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Marc Cohen |\n| investors |\n| Newmont |\n| Santa Fe |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Marc Cohen |\n| investors |\n\n(Santa Fe is an organization, not a person)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PaineWebber analyst Marc Cohen said he lowered his rating on Newmont to neutral from attractive today because if Newmont merged with Santa Fe , investors would have to wait until the second half of 1998 to realize earnings accretion .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Newmont |\n| Santa Fe |\n\nIn this paragraph, the locations mentioned are Newmont and Santa Fe. These are companies, but since the context is about a potential merger between them and the impact on investors' realization of earnings accretion, it is relevant to identify them as locations for the purpose of this exercise."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Newmont |\n| Santa Fe |\n\nIn the paragraph, the only entities that clearly refer to locations are Newmont and Santa Fe. Other entities such as \"PaineWebber\" and \"investors\" do not refer to specific locations and can be disregarded for this exercise."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PaineWebber analyst Marc Cohen said he lowered his rating on Newmont to neutral from attractive today because if Newmont merged with Santa Fe , investors would have to wait until the second half of 1998 to realize earnings accretion .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| PaineWebber |\n| Newmont |\n| Santa Fe |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| PaineWebber |\n| Newmont |\n| Santa Fe |\n\n(Note: In this context, \"PaineWebber analyst Marc Cohen\" can be considered as a part of the organization \"PaineWebber\", and \"investors\" are not considered an organization in this paragraph.)"}
+  ]
+}

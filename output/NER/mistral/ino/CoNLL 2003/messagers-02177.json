@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: -- Brussels Newsroom 32 2 287 6800\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Brussels Newsroom\n2. 32\n3. 2\n4. 287\n5. 6800\n\nThe first four entities are not persons, they are a newsroom location, a number, a number, and a phone number respectively. The last entity, \"6800\", is also not a person. Therefore, there are no person entities in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "There are no person entities in the paragraph. All identified entities are non-person entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| - |\n\nThere are no person entities in the paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: -- Brussels Newsroom 32 2 287 6800\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Brussels: This is the location mentioned in the paragraph. It is the city where the newsroom is located."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Brussels: This is the location mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Brussels |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: -- Brussels Newsroom 32 2 287 6800\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Brussels Newsroom\n\nThis is the organization mentioned in the paragraph. It is likely a newsroom or media organization based in Brussels. The phone number provided (2 287 6800) is also associated with this organization."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Brussels Newsroom"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Brussels Newsroom |"}
+  ]
+}

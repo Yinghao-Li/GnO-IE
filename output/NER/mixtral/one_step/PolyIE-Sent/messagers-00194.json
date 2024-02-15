@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: When CB was used as the solvent , all the combinations showed a relatively low PCE of 0.87% , 1.97% and 1.92% in the devices with PDTP-BT : PC 70 BM , PDTP - DTBT : PC 70 BM and PDTP-DT2BT : PC 70 BM respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| CB |\n| PDTP-BT |\n| PC |\n| BM |\n| PDTP - DTBT |\n| PDTP-DT2BT |\n| PC 70 BM |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| CB |\n| PDTP-BT |\n| PC |\n| BM |\n| PDTP - DTBT |\n| PDTP-DT2BT |\n\nExplanation:\n\n* CB, PDTP-BT, PC, BM, PDTP - DTBT, and PDTP-DT2BT are all materials used in the devices described in the paragraph.\n* PC 70 BM is not a material name, but rather a ratio of two materials (PC and BM) used in the devices."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: When CB was used as the solvent , all the combinations showed a relatively low PCE of 0.87% , 1.97% and 1.92% in the devices with PDTP-BT : PC 70 BM , PDTP - DTBT : PC 70 BM and PDTP-DT2BT : PC 70 BM respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| CB |\n| PCE |\n| PDTP-BT : PC 70 BM |\n| PDTP - DTBT : PC 70 BM |\n| PDTP-DT2BT : PC 70 BM |\n\nExplanation:\n\n* CB: It is mentioned as a solvent and is considered a \"Property Name\" entity.\n* PCE: It stands for Power Conversion Efficiency and is a property of a device.\n* PDTP-BT : PC 70 BM, PDTP - DTBT : PC 70 BM, and PDTP-DT2BT : PC 70 BM: These are different combinations of materials used in the devices and are considered \"Property Name\" entities."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| PCE |\n\nExplanation:\n\n* CB: It is mentioned as a solvent and not a material property, so it is not included.\n* PCE: It stands for Power Conversion Efficiency and is a property of a material.\n* PDTP-BT : PC 70 BM, PDTP - DTBT : PC 70 BM, and PDTP-DT2BT : PC 70 BM: These are different combinations of materials used in the devices, but they are not material properties, so they are not included."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: When CB was used as the solvent , all the combinations showed a relatively low PCE of 0.87% , 1.97% and 1.92% in the devices with PDTP-BT : PC 70 BM , PDTP - DTBT : PC 70 BM and PDTP-DT2BT : PC 70 BM respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 0.87% |\n| 1.97% |\n| 1.92% |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 0.87% |\n| 1.97% |\n| 1.92% |\n\nThe other entities in the paragraph, such as \"CB,\" \"PDTP-BT : PC 70 BM,\" \"PDTP - DTBT : PC 70 BM,\" and \"PDTP-DT2BT : PC 70 BM,\" do not refer to the value of a material property and are not included in the table."
+    }
+  ]
+}

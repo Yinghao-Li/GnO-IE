@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We evaluated cancer incidence through 2010 / 2011 ( NC / IA ) for 49 , 616 applicators , 53 % of whom reported ever using metolachlor .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Cancer |\n| NC |\n| IA |\n\nExplanation:\n\n* Cancer is a disease mentioned in the paragraph as the incidence of which was evaluated.\n* NC and IA are not diseases, but rather abbreviations for cancer incidence rates (New Cases and Incidence Age-Standardized, respectively). They are not entities that refer to specific diseases, but rather statistical measures related to cancer incidence. Therefore, they are not included in the table as disease entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the valid disease entities:\n\n| Disease |\n| --- |\n| Cancer |\n\nExplanation:\n\n* Cancer is the only disease mentioned in the paragraph.\n* NC and IA are not diseases, but rather statistical measures related to cancer incidence. They are not included in the table as disease entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We evaluated cancer incidence through 2010 / 2011 ( NC / IA ) for 49 , 616 applicators , 53 % of whom reported ever using metolachlor .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Metolachlor |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Metolachlor |"}
+  ]
+}

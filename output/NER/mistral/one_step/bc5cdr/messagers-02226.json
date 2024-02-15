@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Patients become progressively refractory to conventional chemotherapy , and their prognosis is poor .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Progressive refractory to conventional chemotherapy |\n| Poor prognosis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Progressive refractory to conventional chemotherapy |\n| Poor prognosis (implies a condition or state, often a health condition with unfavorable outcome) |\n\nSo the second entity \"poor prognosis\" is valid as it can be considered a disease or health condition with an unfavorable outcome."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Patients become progressively refractory to conventional chemotherapy , and their prognosis is poor .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Conventional chemotherapy |\n\nIn this paragraph, the only chemical entity mentioned is \"conventional chemotherapy,\" which is a treatment consisting of one or more chemical substances used to destroy or inhibit the growth of cells, particularly cancer cells."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Conventional chemotherapy |\n\nIn the given paragraph, \"patients\" and \"their prognosis\" do not refer to chemical entities. The paragraph is discussing the behavior of patients in relation to a chemical treatment (conventional chemotherapy), but the patients and their prognosis are not chemical entities themselves."}
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: It does not make sense , \" Burns told a news briefing .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "In the given paragraph, the identified entities are as follows:\n\n- Person: \"Burns\" (referring to someone's last name)\n- Organization: \"news briefing\" (referring to a specific event or gathering)\n- Location: None mentioned in the paragraph"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "In the given paragraph, the identified entities that clearly refer to \"['Location', 'Organization', 'Person']\" are as follows:\n\n- Person: \"Burns\" (referring to someone's last name)"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here are the valid entities from the paragraph presented as a Markdown table:\n\n| Entity | Entity Type |\n|--------|-------------|\n| Burns  | person      |"}
+]

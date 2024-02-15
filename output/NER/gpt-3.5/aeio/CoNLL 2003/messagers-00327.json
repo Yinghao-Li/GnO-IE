@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Indra Wijaya (Indonesia) beat Ong Ewe Hock (Malaysia) 5 - 15 15 - 11 15 - 11\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's break down the paragraph and identify the entities one by one.\n\n1. Indra Wijaya - Person\n2. Indonesia - Location\n3. Ong Ewe Hock - Person\n4. Malaysia - Location\n\nSo, the identified entities are:\n\n- Person: Indra Wijaya, Ong Ewe Hock\n- Location: Indonesia, Malaysia"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Based on the given options of \"['Location', 'Organization', 'Person']\", we can remove the entity \"Indra Wijaya\" as it does not clearly refer to any of these categories. \n\nThe remaining entities are:\n\n- Person: Ong Ewe Hock\n- Location: Indonesia, Malaysia"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here is the valid entities presented as a Markdown table:\n\n| Entity          | Entity Type |\n|-----------------|-------------|\n| Ong Ewe Hock    | person      |\n| Indonesia       | location    |\n| Malaysia        | location    |"}
+]

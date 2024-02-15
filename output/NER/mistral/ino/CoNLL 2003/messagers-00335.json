@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Wijaya ( Indonesia ) ; Sun Jun ( China ) v Allan Budi Kusuma\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Wijaya (This is a person from Indonesia.)\n2. Sun Jun (This is a person from China.)\n3. Allan Budi Kusuma (This is also a person, but no nationality was specified in the paragraph.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Wijaya (Indonesia)\n2. Sun Jun (China)\n3. Allan Budi Kusuma."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Wijaya (Indonesia) |\n| Sun Jun (China) |\n| Allan Budi Kusuma |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Wijaya ( Indonesia ) ; Sun Jun ( China ) v Allan Budi Kusuma\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Wijaya: This is a proper noun that refers to a specific place or location in Indonesia.\n2. Indonesia: This is a country located in Asia and the location of the first mentioned place, Wijaya.\n3. Sun Jun: This is a proper noun that refers to a person, but it does not directly indicate a location.\n4. China: This is a country located in Asia and the nationality or origin of the second mentioned person, Sun Jun.\n5. Allan Budi Kusuma: This is a proper noun that refers to a person.\n\nTherefore, the location entities in the paragraph are:\n\n1. Wijaya, Indonesia\n2. Indonesia\n\nThese entities represent the specific location and the country where the location is situated, respectively."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n\n1. Wijaya, Indonesia\n2. Indonesia\n\nThese entities represent the specific location and the country where the location is situated, respectively."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Wijaya, Indonesia |\n| Indonesia |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Wijaya ( Indonesia ) ; Sun Jun ( China ) v Allan Budi Kusuma\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Wijaya (Indonesia) - This is most likely a company or organization based in Indonesia, named Wijaya.\n2. Indonesia - This is a country in Asia. It is not an organization, but it is mentioned in relation to Wijaya, which is an organization.\n3. Sun Jun (China) - This is most likely an individual, a person named Sun Jun from China.\n4. Allan Budi Kusuma - This is most likely an individual, a person named Allan Budi Kusuma.\n\nSo, the organizations mentioned in the paragraph are:\n1. Wijaya (Indonesia)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Wijaya (Indonesia) - This is the organization mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Wijaya (Indonesia) |"}
+  ]
+}

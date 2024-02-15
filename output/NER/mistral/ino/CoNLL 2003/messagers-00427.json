@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Third-stringer Kerwin Bell , a 1988 draft choice of the Miami Dolphins , made his NFL debut and was 5-of-5 for 75 yards , including a 20-yard scoring strike to Marvin Harrison in the third period .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Kerwin Bell\n2. Miami Dolphins (as the team that drafted him)\n3. Marvin Harrison."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Kerwin Bell\n2. Marvin Harrison."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Kerwin Bell |\n| Marvin Harrison |\n| Miami Dolphins (as the team that drafted him) |\n\nHowever, since the paragraph only mentions Kerwin Bell and Marvin Harrison as clear person entities, the table could also be simplified as:\n\n| Person |\n|--------|\n| Kerwin Bell |\n| Marvin Harrison |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Third-stringer Kerwin Bell , a 1988 draft choice of the Miami Dolphins , made his NFL debut and was 5-of-5 for 75 yards , including a 20-yard scoring strike to Marvin Harrison in the third period .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Miami Dolphins (NFL team)\n2. Miami (implied location of Miami Dolphins)\n3. NFL (league where the event took place)\n4. Third period (time period during the game)\n\nSo, the location entities in the paragraph are: Miami Dolphins (NFL team), Miami (implied location of Miami Dolphins), and NFL (league where the event took place)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Miami Dolphins (NFL team)\n2. Miami (implied location of Miami Dolphins)\n\nSo, the location entities in the paragraph are: Miami Dolphins (NFL team), Miami (city)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Miami Dolphins (NFL team) |\n| Miami (city) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Third-stringer Kerwin Bell , a 1988 draft choice of the Miami Dolphins , made his NFL debut and was 5-of-5 for 75 yards , including a 20-yard scoring strike to Marvin Harrison in the third period .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Miami Dolphins (NFL team that drafted Kerwin Bell in 1988)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Miami Dolphins (NFL team)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Miami Dolphins |"}
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: I see in him the profile of a secretray - general of the United Nations and I have given my endorsement . \"\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. \"secretray-general\" - This is a position or title, not a specific person or organization, so it does not fall into the categories of \"Location,\" \"Organization,\" or \"Person.\"\n\n2. \"United Nations\" - This is an organization.\n\n3. \"I\" - This is a person.\n\nSo, the identified entities in the paragraph are:\n\n- Organization: United Nations\n- Person: I"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Based on the given categories, the identified entities in the paragraph are:\n\n- Organization: United Nations\n- Person: I"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity           | Entity Type   |\n|------------------|---------------|\n| United Nations   | organization  |\n| I                | person        |"}
+]

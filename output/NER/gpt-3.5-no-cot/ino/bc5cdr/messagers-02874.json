@@ -1,0 +1,20 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: In patients with impaired renal and liver function , and those who need long - term pain control , pethidine may cause excitatory central nervous system ( CNS ) effects through its neurotoxic metabolite , norpethidine , resulting in irritability and seizure attack ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Disease\" entities are as follows:\n\n1. Impaired renal function\n2. Impaired liver function\n3. Seizure attack"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Apologies for the confusion. After reviewing the paragraph again, there are no specific disease entities mentioned. The paragraph discusses the potential side effects of pethidine in patients with impaired renal and liver function, including irritability and seizure attack. However, it does not mention any specific diseases."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease                |\n|------------------------|\n| Impaired renal function |\n| Impaired liver function |\n| Seizure attack          |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: In patients with impaired renal and liver function , and those who need long - term pain control , pethidine may cause excitatory central nervous system ( CNS ) effects through its neurotoxic metabolite , norpethidine , resulting in irritability and seizure attack ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Chemical\" entities are:\n\n| Chemical Entity |\n|-----------------|\n| pethidine       |\n| norpethidine    |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Chemical\" entities are:\n\n| Chemical Entity |\n|-----------------|\n| pethidine       |\n| norpethidine    |"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical       |\n|----------------|\n| pethidine      |\n| norpethidine   |"}
+  ]
+}

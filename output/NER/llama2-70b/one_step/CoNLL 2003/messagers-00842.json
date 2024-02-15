@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Parma 's French midfielder Daniel Bravo and defender Fabio Cannavaro are suspended while Argentine Nestor Sensini is out through injury .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Daniel Bravo |\n| Fabio Cannavaro |\n| Nestor Sensini |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Daniel Bravo |\n| Fabio Cannavaro |\n\nThe entity \"Nestor Sensini\" is not clearly referring to a person, as \"Sensini\" can also refer to a place or a surname, so it's not included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Parma 's French midfielder Daniel Bravo and defender Fabio Cannavaro are suspended while Argentine Nestor Sensini is out through injury .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Parma |\n| France |\n| Argentina |\n| Italy |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities that clearly refer to \"Location\":\n\n| Location |\n| --- |\n| Parma |\n| France |\n| Italy |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Parma 's French midfielder Daniel Bravo and defender Fabio Cannavaro are suspended while Argentine Nestor Sensini is out through injury .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Parma |\n| France |\n| Argentina |\n\nExplanation:\n\n* Parma is an Italian football club, and therefore it is an organization.\n* France and Argentina are countries, and they are not organizations in the context of this paragraph.\n* Daniel Bravo and Fabio Cannavaro are players, and Nestor Sensini is a coach, so they are not organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the valid organizations:\n\n| Organization |\n| --- |\n| Parma |\n\nExplanation:\n\n* Parma is an Italian football club, and therefore it is an organization.\n* France and Argentina are countries, and they are not organizations in the context of this paragraph.\n* Daniel Bravo and Fabio Cannavaro are players, and Nestor Sensini is a coach, so they are not organizations."}
+  ]
+}

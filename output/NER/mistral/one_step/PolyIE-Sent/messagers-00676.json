@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared to P1 and P2 , P3 and P4 exhibit relatively narrow and blue - shifted absorption band in solution and in film.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| P1 |\n| P2 |\n| P3 |\n| P4 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| P3 |\n| P4 |\n\n[Explanation: In the original paragraph, \"P1\" and \"P2\" are mentioned before \"P3\" and \"P4\", so it can be inferred that \"P1\" and \"P2\" are also materials. However, the paragraph only mentions that the absorption band of \"P3\" and \"P4\" is narrow and blue-shifted compared to \"P1\" and \"P2\", so there is no additional descriptive information provided for \"P1\" and \"P2\" that clearly refers to their material properties. Therefore, they are not included in the final table.]"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared to P1 and P2 , P3 and P4 exhibit relatively narrow and blue - shifted absorption band in solution and in film.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Absorption band width (narrow for P3 and P4 compared to P1 and P2) |\n| Color shift (blue-shifted for P3 and P4) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Absorption band width (narrower for P3 and P4 compared to P1 and P2) |\n| Color shift (blue-shifted for P3 and P4) |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared to P1 and P2 , P3 and P4 exhibit relatively narrow and blue - shifted absorption band in solution and in film.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| P1 and P2 |\n| P3 and P4 |\n| relatively narrow |\n| blue-shifted |\n| in solution |\n| in film |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| relatively narrow |\n| blue-shifted |\n| in solution |\n| in film |\n\nNote: \"P1 and P2\" and \"P3 and P4\" are not clear material property values and have been removed."
+    }
+  ]
+}

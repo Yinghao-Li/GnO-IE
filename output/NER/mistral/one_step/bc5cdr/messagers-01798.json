@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report a patient with Graves ' disease who developed ANCA positive carbimazole induced vasculitis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Graves' disease   |\n| ANCA-positive    |\n| carbimazole-induced vasculitis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Graves' disease   |\n| carbimazole-induced vasculitis |\n\nNote: ANCA (Antineutrophil cytoplasmic antibodies) is a type of autoantibody and is not considered a disease itself, but rather a marker for certain diseases, including vasculitis. Therefore, ANCA-positive is included as a descriptor for carbimazole-induced vasculitis."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report a patient with Graves ' disease who developed ANCA positive carbimazole induced vasculitis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Carbimazole |\n\nIn this paragraph, the only identified chemical entity is \"Carbimazole\". The other entities mentioned, \"Graves' disease\" and \"ANCA positive vasculitis\", are not chemicals but rather conditions or diseases."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Carbimazole |\n\nThe entities \"Graves' disease\" and \"ANCA positive vasculitis\" do not refer to chemicals, but rather to medical conditions or diseases. Therefore, they should not be included in the table."}
+  ]
+}

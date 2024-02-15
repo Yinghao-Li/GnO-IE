@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He was responding to questions at a news conference called to discuss next week 's ministerial meeting of the Organisation of the Islamic Conference ( OIC ) in Jakarta .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| He |\n| the person responding to questions |\n| at a news conference |\n| called to discuss next week's ministerial meeting |\n| of the Organisation of the Islamic Conference ( OIC ) |\n| in Jakarta |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| He |\n| the person responding to questions |\n| at a news conference |\n| of the Organisation of the Islamic Conference ( OIC ) |\n| in Jakarta |\n\nNote: \"He\" refers to the person holding the news conference or the person being interviewed, but it is not clear who that person is without additional context. The other entities are clearly referring to organizations or locations."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He was responding to questions at a news conference called to discuss next week 's ministerial meeting of the Organisation of the Islamic Conference ( OIC ) in Jakarta .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Jakarta |\n| next week |\n| (Organisation of the Islamic Conference) in Jakarta |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Jakarta |\n| next week's ministerial meeting of the Organisation of the Islamic Conference in Jakarta |\n\nNote: \"next week\" can be considered a temporal expression, but since the paragraph is specifically discussing a location for an event, it can be considered a location as well. Therefore, it is included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He was responding to questions at a news conference called to discuss next week 's ministerial meeting of the Organisation of the Islamic Conference ( OIC ) in Jakarta .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Organisation of the Islamic Conference (OIC) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Organisation of the Islamic Conference (OIC) |"}
+  ]
+}

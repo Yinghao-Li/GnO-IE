@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This resulted in an increased incidence of seizures , 90 % ( P < . 01 ) , and death , 100 % ( P < or = . 01 ) , compared with group 4 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| seizures |\n| death |\n\nExplanation:\n\n* \"Seizures\" is mentioned as an increased incidence, which implies it is a disease.\n* \"Death\" is also mentioned as an increased incidence, but in this context, it's used to describe the mortality rate, which is related to a disease or health condition. Therefore, it can be considered a disease entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| seizures |\n\nExplanation:\n\n* \"Seizures\" is the only clear disease entity mentioned in the paragraph.\n* \"Death\" is not a disease itself but an outcome or consequence of a disease or health condition. Therefore, it should not be considered a disease entity."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This resulted in an increased incidence of seizures , 90 % ( P < . 01 ) , and death , 100 % ( P < or = . 01 ) , compared with group 4 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| P |\n\nThe only chemical entity found in the paragraph is \"P\". It is a symbol used to represent the probability value in statistical analysis."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| P |\n\nThe only chemical entity found in the paragraph is \"P\". It is a symbol used to represent the probability value in statistical analysis. I have removed the percentage signs as they do not refer to any chemical entities."}
+  ]
+}

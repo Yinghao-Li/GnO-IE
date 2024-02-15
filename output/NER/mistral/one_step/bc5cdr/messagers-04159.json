@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The pathology specimen contained clinically occult invasive carcinoma of the renal pelvis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| invasive carcinoma of the renal pelvis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| invasive carcinoma |\n| of the renal pelvis |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The pathology specimen contained clinically occult invasive carcinoma of the renal pelvis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| carcinoma |\n| renal pelvis |\n\nNote: In this paragraph, there is no explicit mention of any specific chemical compound. The entities identified are the type of pathology (carcinoma) and the location (renal pelvis)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| carcinoma |\n\nNote: In the given paragraph, the only entity that can be considered as a chemical is \"carcinoma,\" which is a type of disease characterized by the uncontrolled growth of cells. The term \"renal pelvis\" refers to a part of the kidney and is not a chemical entity."}
+  ]
+}

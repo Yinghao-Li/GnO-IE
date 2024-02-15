@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acute heart failure was induced by propranolol and volume loading after weaning from cardiopulmonary bypass ; an absence of MR was confirmed by echocardiography .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute heart failure |\n\nExplanation:\n\nThe paragraph mentions \"Acute heart failure\" which is a specific medical condition, and thus it is identified as a disease entity. The other terms such as \"propranolol\", \"volume loading\", \"cardiopulmonary bypass\", and \"echocardiography\" are medical procedures or drugs, and not diseases. Therefore, the only valid disease entity in the paragraph is \"Acute heart failure\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute heart failure |\n\nExplanation:\n\nThe paragraph does not contain any other disease entities that clearly refer to a medical condition. The term \"absence of MR\" is not a disease, but rather a description of a negative finding on an echocardiogram. Therefore, the only valid disease entity in the paragraph is \"Acute heart failure\", which is presented in the table above."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acute heart failure was induced by propranolol and volume loading after weaning from cardiopulmonary bypass ; an absence of MR was confirmed by echocardiography .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| propranolol |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| propranolol |\n\nThe entity \"volume loading\" is not a chemical, but a medical procedure. The other term \"MR\" is not a chemical either, it refers to Mitral Regurgitation, a heart condition. Therefore, the only chemical entity in the paragraph is \"propranolol\"."}
+  ]
+}

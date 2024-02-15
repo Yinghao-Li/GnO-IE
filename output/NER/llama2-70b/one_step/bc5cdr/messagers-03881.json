@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Four types of experimental arrhythmia are used - - with BaCl2 , with chloroform - adrenaline , with strophantine G and with aconitine .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| arrhythmia |\n| arrhythmia |\n| arrhythmia |\n| arrhythmia |\n\nNote: The paragraph mentions four types of experimental arrhythmia, which are all valid entities. Therefore, the table above contains four rows, each with the disease entity \"arrhythmia\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| arrhythmia |\n\nThe paragraph only mentions the term \"arrhythmia\" as a disease, therefore, the table above contains only one row with the disease entity \"arrhythmia\".\n\nThe other terms mentioned in the paragraph, such as \"BaCl2\", \"chloroform\", \"adrenaline\", and \"strophantine G\" are not diseases, but rather chemicals or drugs used to induce arrhythmia in experimental settings. Therefore, they are not included in the table as disease entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Four types of experimental arrhythmia are used - - with BaCl2 , with chloroform - adrenaline , with strophantine G and with aconitine .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BaCl2 |\n| Chloroform |\n| Adrenaline |\n| Strophantine G |\n| Aconitine |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities in the paragraph that clearly refer to chemicals:\n\n| Chemical |\n| --- |\n| BaCl2 |\n| Chloroform |\n| Aconitine |\n\nNote that \"adrenaline\" is not a chemical, but a hormone, so it has been removed from the list."}
+  ]
+}

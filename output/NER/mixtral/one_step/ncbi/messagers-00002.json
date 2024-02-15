@@ -1,0 +1,8 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The risk of cancer , especially lymphoid neoplasias , is substantially elevated in A - T patients and has long been associated with chromosomal instability .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cancer |\n| lymphoid neoplasias |\n| A - T (a rare genetic disorder which can increase the risk of cancer) |\n\nExplanation:\n\n1. \"cancer\" is mentioned as a disease in general.\n2. \"lymphoid neoplasias\" is a type of cancer that affects the lymphatic system.\n3. \"A - T\" is a genetic disorder that increases the risk of cancer, so it is also considered a disease."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cancer |\n| lymphoid neoplasias |\n\nExplanation:\n\n1. \"cancer\" is clearly mentioned as a disease in general.\n2. \"lymphoid neoplasias\" is a type of cancer that affects the lymphatic system, so it is also considered a disease.\n\nThe entity \"A - T\" is not a disease, but a genetic disorder that increases the risk of cancer. It was included in the previous answer because it was mentioned in the context of diseases, but it is not a disease itself."}
+  ]
+}

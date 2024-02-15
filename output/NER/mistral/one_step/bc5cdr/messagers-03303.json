@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acute myocardial ischemic injury was induced in rats by subcutaneous injection of isoproterenol ( 85 mg / kg ) , for two consecutive days .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute myocardial ischemic injury |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute myocardial ischemic injury |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acute myocardial ischemic injury was induced in rats by subcutaneous injection of isoproterenol ( 85 mg / kg ) , for two consecutive days .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| isoproterenol |\n| isoproterenol (85 mg / kg) |\n\nExplanation:\nThe paragraph mentions the use of \"isoproterenol\" for inducing acute myocardial ischemic injury in rats. The chemical is specified as \"isoproterenol\" in the paragraph, so that's the entity to be included in the table. The second entry in the table is included to maintain the exact wording from the paragraph, which includes the dosage information."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| isoproterenol (85 mg / kg) |\n\nExplanation:\nThe paragraph mentions the use of \"isoproterenol\" for inducing acute myocardial ischemic injury in rats, and the dosage information is also provided. Therefore, the only valid entity in the paragraph that clearly refers to a chemical is \"isoproterenol (85 mg / kg)\". All other words in the paragraph, such as \"acute myocardial ischemic injury\", \"rats\", and \"induced\", do not refer to specific chemicals and are not included in the table."}
+  ]
+}

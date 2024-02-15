@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The former minister and his son had been taken from their home close to the presidential palace , which is guarded by loyalist soldiers backed by French troops based in Bangui .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| former minister |\n| son |\n| president |\n\nNote:\n\n* \"former minister\" and \"son\" are both referring to the same person, who is the father of the son.\n* \"president\" is not explicitly mentioned as a person in the paragraph, but it is implied that the presidential palace is the residence of the president, so it is reasonable to infer that the president is a person who is relevant to the context."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| former minister |\n| son |\n\nThe entities \"president\" and \"French troops\" do not clearly refer to a person, so they have been removed from the list."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The former minister and his son had been taken from their home close to the presidential palace , which is guarded by loyalist soldiers backed by French troops based in Bangui .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| home |\n| presidential palace |\n| Bangui |\n| France |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities that clearly refer to \"Location\":\n\n| Location |\n| --- |\n| home |\n| presidential palace |\n| Bangui |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The former minister and his son had been taken from their home close to the presidential palace , which is guarded by loyalist soldiers backed by French troops based in Bangui .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| French troops |\n| loyalist soldiers |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities:\n\n| Organization |\n| --- |\n| French troops |\n\nThe term \"loyalist soldiers\" does not clearly refer to an organization, so it has been removed from the list."}
+  ]
+}

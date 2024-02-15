@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Czech President Vaclav Havel on Friday welcomed the appointment of Madeleine Albright , who is of Czech extraction , as the United States ' first woman Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Czech President Vaclav Havel\n2. Madeleine Albright\n3. United States (implicit, but can be considered a large organization or collective entity)\n\nThese are the named entities in the paragraph that can be classified as \"Person\" entities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Czech President Vaclav Havel\n2. Madeleine Albright"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Czech President Vaclav Havel |\n| Madeleine Albright |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Czech President Vaclav Havel on Friday welcomed the appointment of Madeleine Albright , who is of Czech extraction , as the United States ' first woman Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Czech Republic (implied, as the nationality of President Vaclav Havel)\n2. United States\n\nSo, the location entities in the paragraph are the Czech Republic and the United States."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Czech Republic\n2. United States\n\nSo, the only location entities in the paragraph are the Czech Republic and the United States."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Czech Republic |\n| United States |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Czech President Vaclav Havel on Friday welcomed the appointment of Madeleine Albright , who is of Czech extraction , as the United States ' first woman Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Czech President Vaclav Havel\n2. United States\n3. United States (implicitly, the US government)\n4. Madeleine Albright\n5. Czech extraction (implicitly, Czech people or Czech heritage)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Czech President Vaclav Havel\n2. United States (as a government or political entity)\n3. United States Department of State (implicitly, through the appointment of Madeleine Albright as Secretary of State)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Czech President Vaclav Havel |\n| United States (as a government or political entity) |\n| United States Department of State |"}
+  ]
+}

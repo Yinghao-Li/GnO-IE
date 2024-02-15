@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Peak CE levels were associated with a 45 % ( SD + / - 22 % , 95 % CI = 22 % to 69 % ) decrease in cardiac output ( p < 0 . 05 ) , a 56 % ( SD + / - 23 % , 95 % CI = 32 % to 80 % ) decrease in dP / dt ( max ) ( p < . 006 ) , and a 23 % ( SD + / - 15 % , 95 % CI = 7 % to 49 % ) decrease in SVO ( 2 ) ( p < 0 . 025 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Cardiac output |\n| dP/dt (max) |\n| SVO2 (2) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Cardiac output |\n| dP/dt (max) |\n| SVO2 |\n\nNote: SVO2 stands for SvO2 (mixed venous oxygen saturation)."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Peak CE levels were associated with a 45 % ( SD + / - 22 % , 95 % CI = 22 % to 69 % ) decrease in cardiac output ( p < 0 . 05 ) , a 56 % ( SD + / - 23 % , 95 % CI = 32 % to 80 % ) decrease in dP / dt ( max ) ( p < . 006 ) , and a 23 % ( SD + / - 15 % , 95 % CI = 7 % to 49 % ) decrease in SVO ( 2 ) ( p < 0 . 025 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| CE |\n| cardiac output |\n| dP/dt (max) |\n| SVO (2) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| CE |\n| cardiac output |\n| dP/dt (max) |\n| SVO (2) |\n\nExplanation:\nCE is the only entity in the paragraph that can be clearly identified as a chemical entity, as it is mentioned at the beginning of the paragraph and is not defined in the context as a physical property or a measurement. The other entities mentioned in the paragraph (percentage decreases and their standard deviations, 95% confidence intervals, and p-values) are not chemical entities but rather statistical measures."}
+  ]
+}

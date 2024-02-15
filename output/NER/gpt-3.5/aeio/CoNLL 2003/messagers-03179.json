@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Earlier , former Australia test batsman David Boon scored 118 and all - rounder Shaun Young hit 113 .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. \"David Boon\" is a Person entity.\n2. \"Australia\" is a Location entity.\n3. \"Shaun Young\" is a Person entity.\n\nThere are no Organization entities mentioned in the paragraph."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. \"David Boon\" is a Person entity.\n2. \"Australia\" is a Location entity.\n3. \"Shaun Young\" is a Person entity.\n\nAll the identified entities clearly refer to either a Location or a Person."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity       | Entity Type |\n|--------------|-------------|\n| David Boon   | person      |\n| Australia    | location    |\n| Shaun Young  | person      |"}
+]

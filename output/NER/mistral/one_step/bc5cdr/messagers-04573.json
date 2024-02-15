@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Of the 83 cases of VTE associated with use of combined OCs , 43 were recorded as deep - vein thrombosis , 35 as pulmonary thrombosis , and five as venous thrombosis not otherwise specified .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Venous Thrombosis |\n| Deep-vein Thrombosis |\n| Pulmonary Thrombosis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Deep-vein Thrombosis |\n| Pulmonary Thrombosis |\n| Venous Thrombosis (not otherwise specified) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Of the 83 cases of VTE associated with use of combined OCs , 43 were recorded as deep - vein thrombosis , 35 as pulmonary thrombosis , and five as venous thrombosis not otherwise specified .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Combined OCs |\n\nIn this paragraph, there is one chemical entity mentioned which is \"Combined OCs\" (Combined Oral Contraceptives). The other entities mentioned are not chemical in nature but rather descriptive terms for types of Venous Thromboembolism (VTE) events."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Combined OCs (Combined Oral Contraceptives) |\n\nIn this paragraph, only one chemical entity is mentioned, which is \"Combined OCs\" (Combined Oral Contraceptives). The other entities mentioned are not chemical in nature but rather descriptive terms for types of Venous Thromboembolism (VTE) events."}
+  ]
+}

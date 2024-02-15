@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: According to the equation E LUMO = E HOMO + E g,opt , the LUMO energy level of PSFDTBT was calculated to be -3.43 eV.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PSFDTBT |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PSFDTBT |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: According to the equation E LUMO = E HOMO + E g,opt , the LUMO energy level of PSFDTBT was calculated to be -3.43 eV.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| LUMO energy level |\n| PSFDTBT |\n| E LUMO |\n| E HOMO |\n| E g,opt |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| LUMO energy level of PSFDTBT |\n| E g,opt |\n\nExplanation:\n\n* \"According to the equation\" and \"was calculated to be\" are not material properties.\n* \"The\" before \"equation\" is an article and does not refer to a material property.\n* \"LUMO energy level of PSFDTBT\" and \"E g,opt\" are material properties."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: According to the equation E LUMO = E HOMO + E g,opt , the LUMO energy level of PSFDTBT was calculated to be -3.43 eV.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| E LUMO (energy level of LUMO for PSFDTBT) |\n| -3.43 eV (value of LUMO energy level for PSFDTBT) |\n| E HOMO (energy level of HOMO) |\n| E g,opt (optical gap energy)"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| E LUMO (energy level of LUMO for PSFDTBT) |\n| -3.43 eV (value of LUMO energy level for PSFDTBT) |\n| E HOMO (energy level of HOMO) |\n| E g,opt (optical gap energy) |\n\nNote: In this context, \"PSFDTBT\" refers to a specific material, so it is not considered a property value. The equation itself is not a property value, but rather a relationship between properties."
+    }
+  ]
+}

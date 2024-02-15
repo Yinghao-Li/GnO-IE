@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: More than 290 people have reported symptoms in Lanarkshire county , the worst-hit area , since the outbreak first came to light after people ate tainted meat pies at a pensioners ' lunch .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| more than 290 people |\n| people in Lanarkshire county |\n| the worst-hit area |\n| those who ate tainted meat pies |\n| pensioners |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| more than 290 people |\n| people in Lanarkshire county |\n| pensioners |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: More than 290 people have reported symptoms in Lanarkshire county , the worst-hit area , since the outbreak first came to light after people ate tainted meat pies at a pensioners ' lunch .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Lanarkshire county |\n| the worst-hit area |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Lanarkshire county |\n| the worst-hit area |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: More than 290 people have reported symptoms in Lanarkshire county , the worst-hit area , since the outbreak first came to light after people ate tainted meat pies at a pensioners ' lunch .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Lanarkshire county |\n| pensioners' lunch |\n\nIn this paragraph, \"Lanarkshire county\" is the organization that is mentioned. The \"pensioners' lunch\" is also an organization or event, specifically a luncheon for pensioners."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Lanarkshire county |\n\nIn this paragraph, only \"Lanarkshire county\" clearly refers to an organization. The \"pensioners' lunch\" is an event, not an organization. Therefore, it should not be included in the table."}
+  ]
+}

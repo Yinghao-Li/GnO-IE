@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Bill Jordan , general secretary of the International Confederation of Free Trade Unions ( ICFTU ) , told a news conference the withdrawal of a WTO invitation to ILO director general Michel Hansenne was \" outrageous behaviour on the part of an organisation that wants to command respect in the world \" .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Bill Jordan\n2. International Confederation of Free Trade Unions (ICFTU) (represented by Bill Jordan)\n3. WTO (implied, as the organization that withdrew the invitation)\n4. Michel Hansenne (ILO director general)\n5. ILO (Implied, as the organization represented by Michel Hansenne)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Bill Jordan\n2. Michel Hansenne"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Bill Jordan |\n| Michel Hansenne |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Bill Jordan , general secretary of the International Confederation of Free Trade Unions ( ICFTU ) , told a news conference the withdrawal of a WTO invitation to ILO director general Michel Hansenne was \" outrageous behaviour on the part of an organisation that wants to command respect in the world \" .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. International Confederation of Free Trade Unions (ICFTU) - Organization, Location: International\n2. World Trade Organization (WTO) - Organization, Location: International\n3. news conference - Event, Location: Unspecified (assumed to be at ICFTU or a nearby location)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. ICFTU - Organization, Location: International\n2. news conference - Event, Location: Unspecified (assumed to be at ICFTU or a nearby location)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| ICFTU - International Confederation of Free Trade Unions |\n| news conference - Unspecified (assumed to be at ICFTU or a nearby location) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Bill Jordan , general secretary of the International Confederation of Free Trade Unions ( ICFTU ) , told a news conference the withdrawal of a WTO invitation to ILO director general Michel Hansenne was \" outrageous behaviour on the part of an organisation that wants to command respect in the world \" .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. International Confederation of Free Trade Unions (ICFTU) - This is the organization whose general secretary, Bill Jordan, is mentioned in the paragraph.\n2. World Trade Organization (WTO) - This is the organization that reportedly withdrew an invitation to ILO director general Michel Hansenne."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. International Confederation of Free Trade Unions (ICFTU)\n2. World Trade Organization (WTO)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| International Confederation of Free Trade Unions (ICFTU) |\n| World Trade Organization (WTO) |"}
+  ]
+}

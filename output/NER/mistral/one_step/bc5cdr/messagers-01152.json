@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PURPOSE : Despite its well - known cardiotoxicity , the anthracyclin doxorubicin ( DOX ) continues to be an effective and widely used chemotherapeutic agent .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cardiotoxicity |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cardiotoxicity |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PURPOSE : Despite its well - known cardiotoxicity , the anthracyclin doxorubicin ( DOX ) continues to be an effective and widely used chemotherapeutic agent .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| doxorubicin ( DOX ) |\n| anthracyclin (mentioned but not explicitly stated as a chemical compound, so including it for completeness) |\n\nNote: In the given paragraph, \"anthracyclin\" is mentioned as a class of compounds to which doxorubicin belongs. Since the paragraph specifically mentions \"doxorubicin ( DOX )\" as the chemical entity of interest, I have included both \"doxorubicin\" and \"anthracyclin\" in the table for completeness. However, if the context of the paragraph were to focus on anthracyclins as a class rather than doxorubicin specifically, then \"anthracyclins\" would be the valid chemical entity to include in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| doxorubicin ( DOX ) |\n\nIn the given paragraph, \"anthracyclin\" is mentioned as a class of compounds to which doxorubicin belongs. Since the paragraph specifically mentions \"doxorubicin ( DOX )\" as the chemical entity of interest, it is the only valid chemical entity to include in the table."}
+  ]
+}

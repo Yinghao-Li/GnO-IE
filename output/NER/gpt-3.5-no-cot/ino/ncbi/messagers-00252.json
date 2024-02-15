@@ -1,0 +1,11 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: In addition , we have studied 18 A - T patients , in 15 families , who developed leukemia , lymphoma , preleukemic T - cell proliferation , or Hodgkin lymphoma , mostly in childhood ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Disease\" entities are:\n\n1. Leukemia\n2. Lymphoma\n3. Preleukemic T-cell proliferation\n4. Hodgkin lymphoma"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Disease\" entities in the paragraph are:\n\n1. Leukemia\n2. Lymphoma\n3. Hodgkin lymphoma"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease            |\n|--------------------|\n| Leukemia           |\n| Lymphoma           |\n| Hodgkin lymphoma   |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Over the first 3 weeks after the i . v . administration of free and polymer - bound DOX , all animals showed a transient reduction in body weight .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| There are no disease entities mentioned in the paragraph. |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| There are no disease entities mentioned in the paragraph. |\n\nThe paragraph does not contain any clear references to diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Over the first 3 weeks after the i . v . administration of free and polymer - bound DOX , all animals showed a transient reduction in body weight .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| i. v. |\n| DOX |\n| free and polymer-bound DOX |\n\nExplanation:\n\ni.v.: This stands for intravenous, which is a medical route of administration for substances such as drugs. Although not a chemical itself, it is included as it is a crucial part of the context.\n\nDOX: This is an abbreviation for doxorubicin, a type of chemotherapy drug.\n\nfree and polymer-bound DOX: This refers to doxorubicin that is either unbound (free) or bound to a polymer."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| DOX |\n| free and polymer-bound DOX |\n\nExplanation:\n\nDOX: This is an abbreviation for doxorubicin, a type of chemotherapy drug, which is the only unambiguous chemical entity in the paragraph.\n\nfree and polymer-bound DOX: This refers to doxorubicin that is either unbound (free) or bound to a polymer, which are both chemical-related contexts.\n\nThe other mentioned term, \"i.v.\", is not a chemical, but a medical route of administration."}
+  ]
+}

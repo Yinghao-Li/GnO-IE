@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: TORONTO AT ATLANTA\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Toronto\n2. Atlanta\n\nThese are the only clear \"Person\" entities in the given paragraph as they are both city names. However, without additional context, it's unclear if \"Let's think step by step\" is a command to the reader or if it refers to two people named Let's and Think. If it's the latter, then \"Let's\" would also be a person entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. (If \"Let's\" is a person) Let's\n2. Toronto\n3. Atlanta"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| (If \"Let's\" is a person) Let's |\n| Toronto |\n| Atlanta |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: TORONTO AT ATLANTA\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Toronto\n2. Atlanta"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Toronto\n2. Atlanta"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Toronto |\n| Atlanta |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: TORONTO AT ATLANTA\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Toronto\n2. Atlanta\n\nBoth Toronto and Atlanta are organizations or entities in this context, as they are cities and often referred to as organizations in various contexts such as sports teams, municipal governments, and other entities based in these cities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Toronto (as a city and organizational hub for various entities such as sports teams, municipal government, etc.)\n2. Atlanta (as a city and organizational hub for various entities such as sports teams, municipal government, etc.)\n\nThese entities are relevant as they are the specific organizations being referred to in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Toronto |\n| Atlanta |"}
+  ]
+}

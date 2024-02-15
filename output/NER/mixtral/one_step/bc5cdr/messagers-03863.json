@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Pretreatment of animals with BNPP prior to APAP or PAP administration resulted in marked reduction of APAP ( 900 mg / kg ) nephrotoxicity but not PAP nephrotoxicity .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| APAP ( 900 mg / kg ) nephrotoxicity |\n| PAP nephrotoxicity |\n\nExplanation:\n\nIn the given paragraph, the two diseases identified are \"APAP ( 9"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| APAP nephrotoxicity |\n| PAP nephrotoxicity |\n\nExplanation:\n\nIn the given paragraph, the two diseases identified are \"APAP nephrotoxicity\" and \"PAP nephrotoxicity\". The term \"APAP ( 900 mg / kg ) nephrotoxicity\" is a specific instance of APAP nephrotoxicity, and thus it is not necessary to include the dosage information in the entity."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Pretreatment of animals with BNPP prior to APAP or PAP administration resulted in marked reduction of APAP ( 900 mg / kg ) nephrotoxicity but not PAP nephrotoxicity .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BNPP |\n| APAP |\n| 900 mg / kg of APAP |\n| PAP |\n\nNote: I'm not sure if \"900 mg / kg of APAP\" should be considered as a single chemical entity, but I included it in the table as it was mentioned as a single unit in the original paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BNPP |\n| APAP |\n| PAP |"}
+  ]
+}

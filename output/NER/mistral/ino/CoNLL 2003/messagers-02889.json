@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Sunderland 1 ( Melville 83 ) Wimbledon 3 ( Ekoku 8 , 29 , Holdsworth\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Sunderland\n2. Melville\n3. Wimbledon\n4. Ekoku\n5. Holdsworth\n\nThese are the identified \"Person\" entities in the paragraph. They are the football teams and players mentioned in the text."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Melville (Sunderland player)\n2. Ekoku (Wimbledon player)\n3. Holdsworth (Wimbledon player)\n\nThese are the entities that clearly refer to persons in the paragraph. The teams \"Sunderland\" and \"Wimbledon\" are not considered persons, but rather organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Melville (Sunderland player) |\n| Ekoku (Wimbledon player) |\n| Holdsworth (Wimbledon player) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Sunderland 1 ( Melville 83 ) Wimbledon 3 ( Ekoku 8 , 29 , Holdsworth\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Sunderland\n2. Wimbledon\n\nThese are the location entities mentioned in the paragraph. The paragraph is about a soccer match between Sunderland and Wimbledon."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Sunderland\n2. Wimbledon\n\nThese are the only entities in the paragraph that clearly refer to locations. The other entities mentioned (Melville, Ekoku, Holdsworth) are people and do not refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Sunderland |\n| Wimbledon |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Sunderland 1 ( Melville 83 ) Wimbledon 3 ( Ekoku 8 , 29 , Holdsworth\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Sunderland\n2. Wimbledon\n\nThese are the organizations mentioned in the paragraph. The paragraph is about a soccer (or football) match between Sunderland and Wimbledon. The numbers in parentheses indicate the minutes when each goal was scored."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Sunderland\n2. Wimbledon\n\nThese are the organizations mentioned in the paragraph. The paragraph is about a soccer (or football) match between Sunderland and Wimbledon. The numbers in parentheses do not refer to organizations and can be ignored."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Sunderland |\n| Wimbledon |"}
+  ]
+}

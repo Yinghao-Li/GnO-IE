@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: However , compared to the very strong n - type building blocks PDI ( 1 , Figure 1 ) and NDI ( 2 , Figure 1 ) the imide moiety indeed significantly lowers the HOMO / LUMO.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PDI |\n| NDI |\n\nExplanation:\n\n* PDI and NDI are both types of materials, specifically n-type building blocks. They are mentioned as \"PDI\" and \"NDI\" in the paragraph, so those are the exact words that should be used for the entities."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PDI |\n| NDI |\n\nExplanation:\n\n* The only clear material names mentioned in the paragraph are \"PDI\" and \"NDI\", which are both types of materials, specifically n-type building blocks. The other terms in the paragraph, such as \"imide moiety\", \"HOMO\", and \"LUMO\" are not material names, so they have been removed from the table."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: However , compared to the very strong n - type building blocks PDI ( 1 , Figure 1 ) and NDI ( 2 , Figure 1 ) the imide moiety indeed significantly lowers the HOMO / LUMO.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| n-type |\n| HOMO / LUMO |\n| imide moiety |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO / LUMO |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: However , compared to the very strong n - type building blocks PDI ( 1 , Figure 1 ) and NDI ( 2 , Figure 1 ) the imide moiety indeed significantly lowers the HOMO / LUMO.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "```diff\n| Property Value |\n| --- |\n| very strong n-type building blocks PDI |\n| 1 |\n| imide moiety |\n| HOMO / LUMO |\n| 2 |\n```\nExplanation:\n\n* \"very strong n-type building blocks PDI\" is an entity of Property Value as it refers to a property of a specific material.\n* \"1\" is an entity of Property Value as it is a specific value of a property of a material.\n* \"imide moiety\" is an entity of Property Value as it refers to a property of a specific chemical structure.\n* \"HOMO / LUMO\" is an entity of Property Value as it refers to a property of a material in the context of quantum mechanics.\n* \"2\" is an entity of Property Value as it is a specific value of a property of a material."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "```diff\n| Property Value |\n| --- |\n| very strong n-type building blocks PDI |\n| imide moiety |\n| HOMO / LUMO |\n```\nExplanation:\n\n* \"very strong n-type building blocks PDI\" is an entity of Property Value as it refers to a property of a specific material.\n* \"imide moiety\" is an entity of Property Value as it refers to a property of a specific chemical structure.\n* \"HOMO / LUMO\" is an entity of Property Value as it refers to a property of a material in the context of quantum mechanics.\n\nThe other entities \"1\" and \"2\" were removed as they do not clearly refer to a value of a material property."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: NY RANGERS 6 Toronto 5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. NY Rangers\n\nThis is an entity representing a professional ice hockey team based in New York City. It is a specific team in the National Hockey League (NHL)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. NY Rangers (New York Rangers ice hockey team)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| NY Rangers |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: NY RANGERS 6 Toronto 5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. NY: New York\n2. Rangers: New York Rangers (implicit location is their home arena)\n\nThere is no explicit mention of Toronto's location in the paragraph, but it can be inferred that Toronto is the team that lost to the New York Rangers, so their location is Toronto."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. New York\n2. Toronto (implicit: Toronto, Canada)\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| New York |\n| Toronto |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: NY RANGERS 6 Toronto 5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. NY Rangers: This is the name of a professional ice hockey team based in New York City, New York. It is an organization that is a member of the National Hockey League (NHL) and plays in the Eastern Conference's Metropolitan Division.\n\nTherefore, NY Rangers is the primary organization mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. NY Rangers: This is a professional ice hockey team based in New York City, New York, and a member of the National Hockey League (NHL) in the Eastern Conference's Metropolitan Division."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NY Rangers |"}
+  ]
+}

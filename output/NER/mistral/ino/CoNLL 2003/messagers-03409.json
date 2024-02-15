@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: They boast a nine-point lead over Feyenoord , who have two games in hand , and are 16 points clear of champions Ajax Amsterdam , who have played 18 matches compared to PSV 's 19 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. They: PSV (PSV Eindhoven)\n2. Feyenoord\n3. Ajax Amsterdam."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. PSV\n2. Feyenoord\n3. Ajax Amsterdam."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| PSV   |\n| Feyenoord |\n| Ajax Amsterdam |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: They boast a nine-point lead over Feyenoord , who have two games in hand , and are 16 points clear of champions Ajax Amsterdam , who have played 18 matches compared to PSV 's 19 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. PSV\n2. Feyenoord\n3. Amsterdam (implied location for Ajax)\n\nThe entities identified above are the locations being referred to in the paragraph. In this context, \"PSV\" refers to PSV Eindhoven, \"Feyenoord\" refers to Feyenoord Rotterdam, and \"Amsterdam\" is the location of Ajax Amsterdam."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Eindhoven (implied location for PSV)\n2. Rotterdam (location for Feyenoord)\n3. Amsterdam\n\nThe entities identified above are the locations being referred to in the paragraph. \"Eindhoven\" is the implied location for PSV Eindhoven, \"Rotterdam\" is the location for Feyenoord Rotterdam, and \"Amsterdam\" is the location of Ajax Amsterdam."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Eindhoven (implied location for PSV) |\n| Rotterdam (location for Feyenoord) |\n| Amsterdam |\n\nThe entities identified above are the locations being referred to in the paragraph. \"Eindhoven\" is the implied location for PSV Eindhoven, \"Rotterdam\" is the location for Feyenoord Rotterdam, and \"Amsterdam\" is the location of Ajax Amsterdam."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: They boast a nine-point lead over Feyenoord , who have two games in hand , and are 16 points clear of champions Ajax Amsterdam , who have played 18 matches compared to PSV 's 19 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. PSV (PSV Eindhoven) - The organization that has a nine-point lead over Feyenoord.\n2. Feyenoord - The organization that is 9 points behind PSV and has two games in hand.\n3. Ajax Amsterdam - The organization that is 16 points behind PSV and has played 18 matches."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. PSV (PSV Eindhoven) - The organization.\n2. Feyenoord - The organization.\n3. Ajax Amsterdam - The organization."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| PSV (PSV Eindhoven) |\n| Feyenoord |\n| Ajax Amsterdam |"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FIFA had banned Albania indefinitely after its sports ministry had ordered the suspension of Albanian Football Association general secretary Eduard Dervishi and dissolved the executive committee .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| FIFA   |\n| Albanian Sports Ministry |\n| Albanian Football Association (AFA) |\n| Eduard Dervishi |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| FIFA   |\n| Albanian Sports Ministry |\n| Eduard Dervishi |\n| Albanian Football Association (AFA) - could be considered an organization, but it is mentioned in the context of having an \"executive committee\" which implies people making decisions for the organization. |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FIFA had banned Albania indefinitely after its sports ministry had ordered the suspension of Albanian Football Association general secretary Eduard Dervishi and dissolved the executive committee .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Albania |\n| (no specific location mentioned in the paragraph) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Albania |\n| (no specific location mentioned in the paragraph) |\n\n(Note: In this context, \"no specific location mentioned in the paragraph\" is not a valid location entity, but it is included here for completeness in acknowledging that no other specific location was mentioned in the paragraph.)"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: FIFA had banned Albania indefinitely after its sports ministry had ordered the suspension of Albanian Football Association general secretary Eduard Dervishi and dissolved the executive committee .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FIFA |\n| Albanian Football Association |\n| Albanian sports ministry |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FIFA |\n| Albanian Football Association |\n| Albanian sports ministry (Ministry of Sports) |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Early CY toxicity caused a typical haemorrhagic cystitis in both strains that was completely repaired in about 7 - 10 days .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| haemorrhagic cystitis |\n\nExplanation:\n\n* \"haemorrhagic cystitis\" is a disease that is explicitly mentioned in the paragraph. It is a condition characterized by bleeding from the bladder, and it was caused by early CY toxicity in both strains. The fact that it was \"completely repaired\" does not change the fact that it was still a disease that the animals had to deal with."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| haemorrhagic cystitis |\n\nExplanation:\n\n* \"Early CY toxicity\" is not a disease, but rather a cause of a disease.\n* \"about 7 - 10 days\" is a time period and not a disease.\n* \"both strains\" refers to the subjects of the study and not a disease.\n* \"completely repaired\" is a description of the resolution of the disease, not the disease itself.\n* \"haemorrhagic cystitis\" is the only clear reference to a disease in the paragraph."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Early CY toxicity caused a typical haemorrhagic cystitis in both strains that was completely repaired in about 7 - 10 days .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| CY |\n\nThe only chemical entity found in the given paragraph is \"CY\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| CY |\n\nThe word \"CY\" is the only unambiguous chemical entity in the paragraph. The phrase \"haemorrhagic cystitis\" refers to a medical condition and not a chemical."}
+  ]
+}

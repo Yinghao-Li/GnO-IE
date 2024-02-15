@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Earlier on Friday some of the students , who were held briefly by police during the protests earlier this week , said they were still dissatisfied with the military government .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. some of the students\n2. police\n3. military government."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. some students\n2. police\n3. military government."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| some students |\n| police |\n| military government |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Earlier on Friday some of the students , who were held briefly by police during the protests earlier this week , said they were still dissatisfied with the military government .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Earlier on Friday: This refers to a specific day and time, but it does not mention a location.\n2. some of the students: This refers to a group of people, but it does not mention a specific location where the students are from.\n3. who were held briefly by police during the protests earlier this week: This refers to an event that took place, but it does not mention the location of the protests.\n\nTherefore, there are no explicit \"Location\" entities mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "There are no explicit \"Location\" entities mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| N/A |\n\nThere are no explicit \"Location\" entities mentioned in the paragraph."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Earlier on Friday some of the students , who were held briefly by police during the protests earlier this week , said they were still dissatisfied with the military government .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Military government.\n\nThis is the organization that is being referred to in the paragraph as the entity in power that the students are dissatisfied with."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Military government.\n\nThis is the only organization explicitly mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Military government |"}
+  ]
+}

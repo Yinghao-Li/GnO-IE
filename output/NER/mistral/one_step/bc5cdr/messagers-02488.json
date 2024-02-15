@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Reports that satisfy defined criteria were classified as acute kidney injury , kidney tubular dysfunction and Fanconi syndrome .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Acute kidney injury |\n| Kidney tubular dysfunction |\n| Fanconi syndrome |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Acute kidney injury |\n| Kidney tubular dysfunction |\n| Fanconi syndrome |\n\nThese three entities are clearly diseases as defined in the paragraph."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Reports that satisfy defined criteria were classified as acute kidney injury , kidney tubular dysfunction and Fanconi syndrome .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| acute kidney injury |\n| kidney tubular dysfunction |\n| Fanconi syndrome |\n\nThese entities are not strictly \"chemical\" in nature, but rather medical conditions that can have chemical causes or implications. However, they are commonly used terms in the context of nephrology and kidney function, and are often discussed in relation to specific chemicals or toxins."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Fanconi syndrome |\n\nThe other entities mentioned in the paragraph, \"acute kidney injury\" and \"kidney tubular dysfunction,\" are not specific chemicals, but rather medical conditions that can be caused by various factors, including chemicals or toxins. Therefore, they do not meet the criteria for being included in the table as \"chemical\" entities."}
+  ]
+}

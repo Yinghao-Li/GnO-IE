@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Singapore 's winning campaign to host the World Trade Organisation (WTO) 's first ministerial meeting reflected its ambition to play a key role in shaping global free trade , the lifeblood of its economy , analysts said .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. Singapore - Location\n2. World Trade Organisation (WTO) - Organization\n3. first ministerial meeting - Organization\n4. global free trade - Organization\n5. analysts - Person\n\nSo, the identified entities are:\n\n- Location: Singapore\n- Organization: World Trade Organisation (WTO), first ministerial meeting, global free trade\n- Person: analysts"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. Singapore - Location\n2. World Trade Organisation (WTO) - Organization\n3. analysts - Person\n\nSo, the identified entities are:\n\n- Location: Singapore\n- Organization: World Trade Organisation (WTO)\n- Person: analysts"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity | Entity Type |\n|--------|-------------|\n| Singapore | location |\n| World Trade Organisation (WTO) | organization |\n| analysts | person |"}
+]

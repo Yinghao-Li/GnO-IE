@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The Foreign Ministry said the 10 Europeans and seven Africans took a special flight from the Garamba national park in northern Zaire to the Ugandan capital Kampala where they were being looked after at the Italian embassy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| The Foreign Ministry |\n| 10 Europeans |\n| seven Africans |\n\nThese are the valid entities identified as persons in the paragraph. The \"they\" in the paragraph refers back to the 10 Europeans and seven Africans mentioned earlier in the sentence."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| The Foreign Ministry |\n| 10 Europeans |\n| seven Africans |\n\nThese are the valid entities identified as persons in the paragraph. The pronoun \"they\" in the paragraph refers to the 10 Europeans and seven Africans mentioned earlier in the sentence. The paragraph does not mention any other entities that clearly refer to persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The Foreign Ministry said the 10 Europeans and seven Africans took a special flight from the Garamba national park in northern Zaire to the Ugandan capital Kampala where they were being looked after at the Italian embassy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Garamba national park (in northern Zaire) |\n| Kampala (the Ugandan capital) |\n| Italian embassy (in Kampala) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Garamba national park (in northern Zaire) |\n| Kampala (the Ugandan capital) |\n| Italian embassy |\n\nNote: \"in northern Zaire\" and \"in Kampala\" are considered part of the location description and should be included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The Foreign Ministry said the 10 Europeans and seven Africans took a special flight from the Garamba national park in northern Zaire to the Ugandan capital Kampala where they were being looked after at the Italian embassy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Foreign Ministry |\n| Garamba national park (in Zaire) |\n| Italian embassy (in Kampala, Uganda) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Foreign Ministry |\n| Italian embassy |"}
+  ]
+}

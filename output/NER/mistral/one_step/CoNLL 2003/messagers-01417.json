@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There are 6,000 plastic surgeons there , of which 4,500 have qualified to be members of the SBCP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| 6,000 plastic surgeons |\n| 4,500 qualified plastic surgeons |\n\nThese are the precise entities identified in the paragraph. The first entity is a group of 6,000 plastic surgeons, and the second entity is a subset of 4,500 qualified plastic surgeons among them."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| 4,500 qualified plastic surgeons |\n\nThe first entity mentioned, \"6,000 plastic surgeons,\" is a group, not an individual or a specific set of individuals. Therefore, it does not meet the criteria for a \"Person\" entity. The second entity, \"4,500 qualified plastic surgeons,\" is a specific set of individuals, and thus, it is a valid \"Person\" entity."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There are 6,000 plastic surgeons there , of which 4,500 have qualified to be members of the SBCP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| there |\n\nIn the given paragraph, the location is not explicitly mentioned with a specific name or address. The only location indicator is the word \"there,\" which implies a general location without providing any further details."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| there |\n\nThe paragraph only contains the location indicator \"there,\" which does not provide any clear or specific information about a location. Therefore, there are no other entities in the paragraph that can be identified as referring to a location with certainty."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There are 6,000 plastic surgeons there , of which 4,500 have qualified to be members of the SBCP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| SBCP (Plastic surgeons association) |\n\nIn this paragraph, the organization mentioned is the \"SBCP\" (Plastic surgeons association)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| SBCP (Plastic surgeons association) |\n\nIn this paragraph, the only entity that clearly refers to an organization is the \"SBCP\" (Plastic surgeons association). The number \"6,000\" and \"4,500\" do not refer to organizations, but rather the number of plastic surgeons."}
+  ]
+}

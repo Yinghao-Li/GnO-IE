@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: World number two Rodney Eyles moved within sight of his fifth title of the year on Friday when he hurried in only 40 minutes to the final of the richest squash tournament outside the World Open , the $ 105,000 Mahindra International .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step:\n\n1. Location: None mentioned in the paragraph.\n2. Organization: \n   - World Open\n   - Mahindra International\n3. Person:\n   - Rodney Eyles\n\nSo, the identified entities are:\n- Organization: World Open, Mahindra International\n- Person: Rodney Eyles"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\":\n\n1. Location: None mentioned in the paragraph.\n2. Organization: Mahindra International\n3. Person: Rodney Eyles\n\nSo, the identified entities are:\n- Organization: Mahindra International\n- Person: Rodney Eyles"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity                | Entity Type   |\n|-----------------------|---------------|\n| Mahindra International | organization  |\n| Rodney Eyles          | person        |"}
+]

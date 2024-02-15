@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The pilot survived the crash , but the driver and passengers of the van were killed .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| pilot  |\n| driver |\n| passengers |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| pilot  |\n| driver |\n| passengers |\n\n(Note: In this context, \"passengers\" refers to people who were in the van, so it is considered a valid \"Person\" entity.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The pilot survived the crash , but the driver and passengers of the van were killed .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| (no location mentioned in the paragraph) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| (no location mentioned in the paragraph) |\n\nThe paragraph does not contain any clear references to locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The pilot survived the crash , but the driver and passengers of the van were killed .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| N/A |\n\nThe paragraph does not contain any mention of specific organizations. It only mentions the roles of individuals involved in the crash (pilot, driver, passengers)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| N/A |\n\nThe paragraph does not contain any mention of specific organizations. It only mentions individuals and their roles in a crash event."}
+  ]
+}

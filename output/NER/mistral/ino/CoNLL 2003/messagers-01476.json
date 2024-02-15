@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: It was not immediately known when he would arrive in Oslo .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. He\n\nThis is a pronoun that refers to a person, but we don't have enough information to determine any additional attributes or identifying details about this person."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "He."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| He    |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: It was not immediately known when he would arrive in Oslo .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Oslo\n\nIn this paragraph, the only identifiable location entity is \"Oslo\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Oslo.\n\nThis paragraph contains only one location entity, which is \"Oslo\". All other entities are not relevant to the location context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Oslo |\n\nThis table contains the location entity \"Oslo\" extracted from the paragraph."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: It was not immediately known when he would arrive in Oslo .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Oslo (City)\n\nIn this paragraph, there is only one potential organization entity mentioned, which is the city of Oslo."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Paragraph: It was not immediately known when he would arrive in Oslo (City).\n\nOrganization entities:\n1. Oslo (City) (as a municipal organization)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Oslo (City) |"}
+  ]
+}

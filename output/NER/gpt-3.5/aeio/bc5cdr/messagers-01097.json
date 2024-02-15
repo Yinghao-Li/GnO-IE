@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Adriamycin in the cumulative dose of 25 mg / kg evoked fully developed cardiac toxicity .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's break down the paragraph and identify the entities.\n\n1. Adriamycin - Chemical entity\n2. cardiac toxicity - Disease entity\n\nSo, the identified entities are:\n\n1. Chemical entity: Adriamycin\n2. Disease entity: cardiac toxicity"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Based on the given criteria, the identified entities in the paragraph are:\n\n1. Adriamycin - Chemical entity\n2. cardiac toxicity - Disease entity\n\nSo, the removed entities are:\n\n1. cumulative dose - Not clearly referring to a Disease or Chemical entity\n2. 25 mg / kg - Not clearly referring to a Disease or Chemical entity\n3. fully developed - Not clearly referring to a Disease or Chemical entity"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Here is the valid entities presented as a Markdown table:\n\n| Entity       | Entity Type |\n|--------------|-------------|\n| Adriamycin   | Chemical    |\n| cardiac toxicity | Disease   |"}
+]

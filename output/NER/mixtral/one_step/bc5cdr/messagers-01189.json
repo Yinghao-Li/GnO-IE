@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: BACKGROUND : Drug - induced long QT syndrome is a serious adverse drug reaction .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Drug - induced long QT syndrome |\n\nExplanation:\n\n* \"Drug - induced long QT syndrome\" is identified as a disease entity because it is a specific medical condition mentioned in the paragraph. It is a syndrome characterized by a prolongation of the QT interval on the electrocardiogram, which can lead to serious and potentially life-threatening heart rhythm abnormalities. The phrase \"drug-induced\" indicates that the syndrome is caused by a medication, making it a specific medical condition."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Drug - induced long QT syndrome |\n\nExplanation:\n\n* \"Drug - induced long QT syndrome\" is the only disease entity in the paragraph. The term \"adverse drug reaction\" is not a disease itself, but rather a general term used to describe an unwanted or harmful reaction to a medication. Therefore, it is not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: BACKGROUND : Drug - induced long QT syndrome is a serious adverse drug reaction .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Drug |\n| long QT syndrome (if considered as a specific chemical entity) |\n\nNote: \"Drug\" is a general category of chemical entities, and \"long QT syndrome\" can be considered a chemical entity if it's being referred to as a specific chemical entity causing a prolonged QT interval in the electrocardiogram."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Drug |"}
+  ]
+}

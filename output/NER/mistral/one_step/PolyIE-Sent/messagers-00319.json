@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After purification , gel - permeation chromatography ( GPC ) analysis against PS standard exhibits a number - averaged molecular mass ( M n ) of 83^000 g / mol with a polydispersity ( PDI ) of 2.51.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PS (Polystyrene standard) |\n| gel-permeation chromatography (GPC) product (if specific material is not mentioned, it can be assumed to be the material being analyzed) |\n| purified material (implied, but not explicitly stated) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PS (Polystyrene standard) |\n| purified material (if specific material is not mentioned, it can be assumed to be the material being analyzed) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After purification , gel - permeation chromatography ( GPC ) analysis against PS standard exhibits a number - averaged molecular mass ( M n ) of 83^000 g / mol with a polydispersity ( PDI ) of 2.51.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| molecular mass (Mn) |\n| polydispersity (PDI) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| molecular mass (number-averaged) |\n| polydispersity |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After purification , gel - permeation chromatography ( GPC ) analysis against PS standard exhibits a number - averaged molecular mass ( M n ) of 83^000 g / mol with a polydispersity ( PDI ) of 2.51.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| -------------- |\n| molecular mass (Mn) |\n| 83^000 g / mol |\n| polydispersity (PDI) |\n| 2.51 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| -------------- |\n| molecular mass (Mn) |\n| 83,000 g / mol |\n| polydispersity (PDI) |\n| 2.51 |\n\nNote: I assumed that \"molar mass\" and \"g / mol\" are the same as \"molecular mass\" and kept it as is in the table. If \"molar mass\" is intended to mean something different, please let me know."
+    }
+  ]
+}

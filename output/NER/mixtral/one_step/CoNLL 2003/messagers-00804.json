@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The incident took place in the players ' tunnel after a European Champions ' League match on November 20 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| players |\n\nThe paragraph mentions the involvement of \"players\" in the incident, which is the only identifiable person entity in the text."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| players |\n\nThe word \"players\" is the only identifiable person entity in the text. The term \"European Champions ' League\" refers to a sports competition and not a specific person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The incident took place in the players ' tunnel after a European Champions ' League match on November 20 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location          |\n|------------------|\n| players' tunnel   |\n| European Champions' League match |\n\nHowever, upon closer examination, \"European Champions' League match\" is not a location. Here is the corrected table:\n\n| Location          |\n|------------------|\n| players' tunnel   |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location          |\n|------------------|\n| players' tunnel   |\n\nThe original paragraph only has one clear location entity, which is \"players' tunnel\"."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The incident took place in the players ' tunnel after a European Champions ' League match on November 20 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| European Champions League |\n\nThe \"European Champions' League\" is the only organization mentioned in the paragraph. It is a knockout football tournament organized by UEFA (Union of European Football Associations) for the top football clubs in Europe."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| European Champions League |\n\nThe only organization mentioned in the paragraph is \"European Champions' League\". The other entities mentioned, such as \"players\" and \"tunnel\" do not refer to organizations."}
+  ]
+}

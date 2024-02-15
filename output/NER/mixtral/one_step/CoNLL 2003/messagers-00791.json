@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SOCCER - SPAIN PICK UNCAPPED ARMANDO FOR WORLD CUP CLASH .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| SOCCER |\n| SPAIN |\n| ARMANDO |\n\nNote: I assumed \"ARMANDO\" is the uncappped player picked for the World Cup clash as it is the only person mentioned in the paragraph. SOCCER and SPAIN are mentioned but they are not people, so I included them as they might be relevant in the context."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| ARMANDO |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SOCCER - SPAIN PICK UNCAPPED ARMANDO FOR WORLD CUP CLASH .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| SPAIN      |\n\nExplanation:\nThe only location entity mentioned in the paragraph is \"SPAIN\". It is mentioned in the context of a soccer match, but the name of the location is still clearly identifiable."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| SPAIN      |\n\nExplanation:\nThe only location entity mentioned in the paragraph is \"SPAIN\". The other entities mentioned in the paragraph, such as \"SOCCER\" and \"WORLD CUP CLASH\", do not clearly refer to a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SOCCER - SPAIN PICK UNCAPPED ARMANDO FOR WORLD CUP CLASH .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SOCCER |\n| SPAIN |\n| WORLD CUP |\n\nExplanation:\n\n* \"SOCCER\" is mentioned as the organization responsible for the news article.\n* \"SPAIN\" is mentioned as the organization (national soccer team) that made the decision to pick Armando.\n* \"WORLD CUP\" is mentioned as the organization that is hosting the clash."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SPAIN |\n\nExplanation:\n\n* \"SOCCER\" is not a clear organization and is likely used as a general term for the sport.\n* \"SPAIN\" is mentioned as the organization (national soccer team) that made the decision to pick Armando.\n* \"WORLD CUP\" is not a clear organization and is likely used as a general term for the international soccer tournament."}
+  ]
+}

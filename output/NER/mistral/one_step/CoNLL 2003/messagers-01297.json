@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A meeting with the Pope is also planned , \" Dariusz Rosati told a news conference .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Dariusz Rosati |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Dariusz Rosati |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A meeting with the Pope is also planned , \" Dariusz Rosati told a news conference .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Vatican City (implied, as the Pope resides there) |\n\nNote: The paragraph does not explicitly mention a specific location, but since the person mentioned is having a meeting with the Pope, it can be inferred that the location is Vatican City."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Vatican City |\n\nNote: The only entity in the paragraph that clearly refers to a location is \"Vatican City\", as it is the place where the meeting with the Pope is taking place."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A meeting with the Pope is also planned , \" Dariusz Rosati told a news conference .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Pope |\n| Dariusz Rosati |\n| (Unspecified) news conference |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Pope |\n| Dariusz Rosati |\n| News conference |\n\nNote: In this context, \"news conference\" can be considered an organization or event where news is conferred or announced."}
+  ]
+}

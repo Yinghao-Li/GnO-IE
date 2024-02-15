@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Arsenal 2 ( Adams 45 , Vieira 90 ) Derby 2 ( Sturridge 62 , Powell\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Arsenal: The football team mentioned in the paragraph.\n2. Adams: The specific player from Arsenal who scored a goal at minute 45.\n3. Vieira: The specific player from Arsenal who scored a goal at minute 90.\n4. Derby: The opposing football team mentioned in the paragraph.\n5. Sturridge: The specific player from Derby who scored a goal at minute 62.\n6. Powell: The specific player from Derby who scored a goal (the minute is not mentioned in the paragraph)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Adams (Arsenal)\n2. Vieira (Arsenal)\n3. Sturridge (Derby)\n4. Powell (Derby)\n\nThese are the entities in the paragraph that clearly refer to specific persons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Adams (Arsenal) |\n| Vieira (Arsenal) |\n| Sturridge (Derby) |\n| Powell (Derby) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Arsenal 2 ( Adams 45 , Vieira 90 ) Derby 2 ( Sturridge 62 , Powell\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Arsenal: The team mentioned first in the paragraph.\n2. Arsenal 2: This refers to Arsenal as the home team or the team scoring the goals.\n3. Derby: The team mentioned second in the paragraph.\n\nThere are no explicit \"Location\" entities mentioned in the paragraph. The paragraph only mentions the teams and the goals they scored."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "There are no explicit \"Location\" entities mentioned in the paragraph. The paragraph only mentions the teams (Arsenal and Derby) and the goals they scored."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Arsenal |\n| Derby |\n\nNote:\nThere are no explicit \"Location\" entities mentioned in the paragraph that refer to a physical location such as a stadium or city. The paragraph only mentions the teams (Arsenal and Derby) and the goals they scored."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Arsenal 2 ( Adams 45 , Vieira 90 ) Derby 2 ( Sturridge 62 , Powell\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Arsenal\n2. Derby\n\nThese are the organizations mentioned in the paragraph. The numbers indicate the goals scored by the respective players."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Arsenal\n2. Derby\n\nThese are the organizations mentioned in the paragraph that are relevant to the context of an organization being a sports team."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Arsenal |\n| Derby |"}
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Sodium nitrite in combination with quinacrine hydrochloride appeared to have no additional effect .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "In the given paragraph, the identified \"['Disease', 'Chemical']\" entities are:\n\n1. Disease: No disease entity is mentioned in the paragraph.\n2. Chemical: \n   - Sodium nitrite\n   - Quinacrine hydrochloride"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the identified \"['Disease', 'Chemical']\" entities are:\n\n1. Chemical: \n   - Sodium nitrite\n   - Quinacrine hydrochloride"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity                 | Entity Type |\n|------------------------|-------------|\n| Sodium nitrite         | Chemical    |\n| Quinacrine hydrochloride | Chemical    |"}
+]

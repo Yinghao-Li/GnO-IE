@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rats died from cardiac hypertrophy with severe acute and chronic congestion of the lungs , liver , and other organs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Cardiac hypertrophy |\n| Severe acute and chronic congestion of the lungs |\n| Congestion of the liver |\n| Congestion of other organs |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Cardiac hypertrophy |\n| Severe acute and chronic congestion of the lungs |\n| Congestion of the liver |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rats died from cardiac hypertrophy with severe acute and chronic congestion of the lungs , liver , and other organs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| cardiac hypertrophy |\n| severe acute and chronic congestion |\n| lungs |\n| liver |\n| organs |\n\nNote: \"severe acute and chronic congestion\" is a clinical condition, not a specific chemical entity. However, since the original paragraph mentions it in relation to specific organs, I have included it in the table for completeness."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| cardiac hypertrophy |\n| lungs |\n| liver |\n\nNote: \"severe acute and chronic congestion\" is not a specific chemical entity, but rather a clinical condition. Therefore, it should not be included in the table."}
+  ]
+}

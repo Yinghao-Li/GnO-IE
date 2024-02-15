@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: China 's tourist spot of Guilin in the southern region of Guangxi will open its airport to foreign aircraft , the Xinhua news agency said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China\n2. Guilin\n3. southern region of Guangxi\n4. Xinhua news agency\n5. Friday (not a person, but I included it for completeness as it is mentioned in the paragraph)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Xinhua news agency\n\nThe other entities mentioned in the paragraph do not refer to specific persons. \"China\" and \"Friday\" are countries and days of the week, respectively, and \"Guilin\" and \"southern region of Guangxi\" are locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Xinhua news agency |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: China 's tourist spot of Guilin in the southern region of Guangxi will open its airport to foreign aircraft , the Xinhua news agency said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China\n2. Guilin\n3. southern region\n4. Guangxi\n\nThe entities identified as locations in the paragraph are \"China,\" \"Guilin,\" \"southern region,\" and \"Guangxi.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Guilin\n2. Guangxi\n\nThe entities identified as locations in the paragraph that clearly refer to specific places are \"Guilin\" and \"Guangxi.\" \"China\" is a country and is not considered a location in this context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Guilin |\n| Guangxi |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: China 's tourist spot of Guilin in the southern region of Guangxi will open its airport to foreign aircraft , the Xinhua news agency said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China\n2. Guilin\n3. Southern region of Guangxi\n4. Xinhua news agency."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. China\n2. Xinhua news agency."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| China |\n| Xinhua news agency |"}
+  ]
+}

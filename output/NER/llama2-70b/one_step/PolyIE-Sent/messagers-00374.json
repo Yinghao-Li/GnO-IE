@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The corresponding PCE is 4.12% , about 37% higher than that obtained from a PCDTBT - based reference device.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PCE |\n| PCDTBT |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PCDTBT |\n\nThe entity \"PCE\" is not clearly referring to a material name, it's an abbreviation for \"Photovoltaic Conversion Efficiency\" and it's not a material name, so it's been removed from the list."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The corresponding PCE is 4.12% , about 37% higher than that obtained from a PCDTBT - based reference device.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| PCE |\n| PCDTBT |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| PCE |\n\nThe paragraph only mentions two properties:\n\n* PCE (Photovoltaic Conversion Efficiency)\n* PCDTBT (Poly(3,4-ethylenedioxythiophene) (PEDOT):Polystyrene sulfonate (PSS))\n\nSince PCDTBT is not a material property, it is not included in the list of valid entities."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The corresponding PCE is 4.12% , about 37% higher than that obtained from a PCDTBT - based reference device.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 4.12% |\n| 37% |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here are the valid entities that refer to \"Value of material property\" in the given paragraph:\n\n| Property Value |\n| --- |\n| 4.12% |\n\nThe entity \"37%\" does not refer to a material property value, but rather a relative increase or comparison, so it has been removed from the list."
+    }
+  ]
+}

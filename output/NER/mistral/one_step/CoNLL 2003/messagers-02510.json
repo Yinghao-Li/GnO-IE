@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 12= Barbara Merlin ( Italy ) 42\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Barbara Merlin |\n\n(Note: The country information provided in the paragraph is not considered a person entity and can be disregarded for this task.)"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Barbara Merlin |\n\n(Note: The country information provided in the paragraph does not clearly refer to a person and can be disregarded for this task.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 12= Barbara Merlin ( Italy ) 42\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Italy |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Italy |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 12= Barbara Merlin ( Italy ) 42\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Italy |\n\nNote: The paragraph does not contain any specific mention of an organization named \"Barbara Merlin\". Therefore, it cannot be included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Italy |\n\nNote: The paragraph mentions \"Barbara Merlin ( Italy )\", but \"Barbara Merlin\" does not refer to an organization, it refers to a person. Therefore, only \"Italy\" should be included in the table."}
+  ]
+}

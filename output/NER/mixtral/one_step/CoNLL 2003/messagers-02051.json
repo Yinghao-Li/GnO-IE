@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States Thursday blasted the release from a Greek prison of a Palestinian guerrilla convicted of bombing an airliner and killing a teenager in 1982 , saying the move \" does not make sense . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Palestinian guerrilla |\n| a teenager |\n\nIn this paragraph, the two \"Person\" entities are \"Palestinian guerrilla\" and \"a teenager.\" These entities are mentioned in the context of the bombing incident in 1982."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Palestinian guerrilla |\n\nIn this paragraph, the only clear \"Person\" entity is \"Palestinian guerrilla.\" The phrase \"a teenager\" is not a clear \"Person\" entity because it does not specify a particular individual. Instead, it is a general description of someone's age."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States Thursday blasted the release from a Greek prison of a Palestinian guerrilla convicted of bombing an airliner and killing a teenager in 1982 , saying the move \" does not make sense . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| The United States |\n| Greece |\n| a Greek prison |\n|"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| The United States |\n| a Greek prison |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States Thursday blasted the release from a Greek prison of a Palestinian guerrilla convicted of bombing an airliner and killing a teenager in 1982 , saying the move \" does not make sense . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The United States |\n| Greek prison |\n| a Palestinian guerrilla |\n| an airliner |\n\nNote: I've also included \"a Palestinian guerrilla\" and \"an airliner\" as they are named organizations, but \"bombing an airliner\" and \"killing a teenager\" are actions and not organizations, so they are not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The United States |\n| Greek prison |\n\nNote: I've only included \"The United States\" and \"Greek prison\" as they are the only clear organizations mentioned in the paragraph. The other entities are either actions or individuals and not organizations."}
+  ]
+}

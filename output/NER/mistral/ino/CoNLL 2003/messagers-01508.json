@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: About 200 Burmese students marched briefly from troubled Yangon Institute of Technology in northern Rangoon on Friday towards the University of Yangon six km ( four miles ) away , and returned to their campus , witnesses said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. About 200 Burmese students\n2. Witnesses (implied, as they are the ones who reported the event)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. About 200 Burmese students\n2. Witnesses"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| About 200 Burmese students |\n| Witnesses |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: About 200 Burmese students marched briefly from troubled Yangon Institute of Technology in northern Rangoon on Friday towards the University of Yangon six km ( four miles ) away , and returned to their campus , witnesses said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Troubled Yangon Institute of Technology\n2. northern Rangoon\n3. University of Yangon\n4. six km ( four miles ) away (This is not a location per se, but it describes the distance between Yangon Institute of Technology and University of Yangon)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Yangon Institute of Technology\n2. northern Rangoon\n3. University of Yangon"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Yangon Institute of Technology |\n| northern Rangoon |\n| University of Yangon |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: About 200 Burmese students marched briefly from troubled Yangon Institute of Technology in northern Rangoon on Friday towards the University of Yangon six km ( four miles ) away , and returned to their campus , witnesses said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Burmese students\n2. Yangon Institute of Technology\n3. northern Rangoon\n4. University of Yangon.\n\nThese entities can be considered as organizations in the given context as they represent groups of people with a specific identity or establishment."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Yangon Institute of Technology\n2. University of Yangon.\n\nThese entities are the only clear organization entities mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Yangon Institute of Technology |\n| University of Yangon |"}
+  ]
+}

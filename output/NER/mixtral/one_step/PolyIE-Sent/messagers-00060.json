@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The incorporation of an alkyl side chain can often render a better solubility of a polymer ; however , the long alkyl side chain can exert stronger alkyl-alkyl chain interactions that can give rise to a strong aggregation of polymer chains.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| alkyl side chain |\n| polymer |\n| long alkyl side chain |\n| alkyl-alkyl chain interactions |\n| polymer chains |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| alkyl side chain |\n| polymer |\n| polymer chains |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The incorporation of an alkyl side chain can often render a better solubility of a polymer ; however , the long alkyl side chain can exert stronger alkyl-alkyl chain interactions that can give rise to a strong aggregation of polymer chains.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| better solubility |\n| long alkyl side chain |\n| stronger alkyl-alkyl chain interactions |\n| strong aggregation of polymer chains |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| better solubility |\n| strong aggregation |\n\nExplanation:\n\n* \"alkyl side chain\" is not included as it is a structural feature of a material, not a material property.\n* \"long\" and \"stronger\" are not included as they are qualifiers of the properties, not the properties themselves.\n* \"of a polymer\" is not included as it is a modifier of the property, not the property itself.\n* \"alkyl-alkyl chain interactions\" is not included as it is a mechanism for how the property arises, not a material property itself."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The incorporation of an alkyl side chain can often render a better solubility of a polymer ; however , the long alkyl side chain can exert stronger alkyl-alkyl chain interactions that can give rise to a strong aggregation of polymer chains.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| a better solubility |\n| a long alkyl side chain |\n| stronger alkyl-alkyl chain interactions |\n| a strong aggregation of polymer chains |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| a better solubility |\n| stronger alkyl-alkyl chain interactions |\n| a strong aggregation of polymer chains |\n\nExplanation:\n\n* \"The incorporation of an alkyl side chain\" is not a value of a material property, but rather an action or process.\n* \"the long alkyl side chain\" is not a value of a material property, but rather a characteristic of the polymer.\n* \"give rise to\" is not a value of a material property, but rather a consequence or effect."
+    }
+  ]
+}

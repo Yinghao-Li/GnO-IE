@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Histopathological analysis revealed progressive cardiomyocyte degeneration , hypertrophy / cytomegaly , and extensive vacuolation after two doses .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cardiomyocyte degeneration |\n| hypertrophy / cytomegaly |\n| vacuolation |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cardiomyocyte degeneration |\n| hypertrophy / cytomegaly |\n\nNote: \"hypertrophy / cytomegaly\" is a single disease entity, where hypertrophy is a part of the disease process and cytomegaly is a specific finding within the disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Histopathological analysis revealed progressive cardiomyocyte degeneration , hypertrophy / cytomegaly , and extensive vacuolation after two doses .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| cardiomyocytes |\n\nThe paragraph does not contain any explicit mention of specific chemicals or compounds. The mentioned terms refer to conditions or processes affecting cardiomyocytes (heart muscle cells)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| cardiomyocytes |\n\nThe paragraph primarily describes histopathological changes in cardiomyocytes, which are not chemicals per se, but rather biological entities."}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Postthrombectomy continuous CDT with alteplase was commenced while argatroban was withheld , and complete patency of the SVC and central veins was achieved after three days of therapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Thrombosis (implied by \"postthrombectomy\") |\n| SVC (Superior Vena Cava) occlusion |\n| Central veins occlusion |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Thrombosis (postthrombectomy) |\n| SVC (Superior Vena Cava) occlusion |\n| Central veins occlusion |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Postthrombectomy continuous CDT with alteplase was commenced while argatroban was withheld , and complete patency of the SVC and central veins was achieved after three days of therapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| alteplase |\n| argatroban |\n\nIn the given paragraph, \"alteplase\" and \"argatroban\" are the chemical entities mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| alteplase |\n| argatroban |\n\nIn the given paragraph, only \"alteplase\" and \"argatroban\" are clearly identified as chemical entities. Other entities such as \"CDT\", \"SVC\", and \"central veins\" do not refer to chemicals, but rather to medical procedures, anatomy, and plural nouns, respectively."}
+  ]
+}

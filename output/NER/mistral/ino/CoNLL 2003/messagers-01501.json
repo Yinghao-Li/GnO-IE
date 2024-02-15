@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The witnesses said some of the students were hit with batons while they were herded onto the vehicles and it was believed they were taken to the Insein prison in suburban Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The witnesses\n2. Some of the students\n\nThese are the \"Person\" entities in the paragraph. The witnesses are people who saw the event happen, and some of the students are the individuals who were present and were allegedly hit with batons and taken away."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. The witnesses\n2. Some of the students\n\nThese are the entities in the paragraph that clearly refer to people. The other entities, such as \"vehicles,\" \"Insein prison,\" and \"suburban Rangoon,\" do not refer to people."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The witnesses |\n| Some of the students |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The witnesses said some of the students were hit with batons while they were herded onto the vehicles and it was believed they were taken to the Insein prison in suburban Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. suburban Rangoon: This is a location where Insein prison is believed to be situated. Insein prison is another location mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. suburban Rangoon\n2. Insein prison"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| suburban Rangoon |\n| Insein prison |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The witnesses said some of the students were hit with batons while they were herded onto the vehicles and it was believed they were taken to the Insein prison in suburban Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Witnesses: A group of individuals who have personally observed an event and are providing testimony about it.\n2. Students: A group of individuals who are enrolled in a educational institution.\n3. Insein prison: A specific organization or institution that functions as a place of detention for individuals who have been arrested or convicted of crimes.\n4. Suburban Rangoon: A geographical location, but it can also be considered as a part of the larger organization, the city of Rangoon."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Insein prison: A specific organization or institution that functions as a place of detention for individuals who have been arrested or convicted of crimes."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Insein prison |"}
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Photovoltaic effects of PCDSeBT were investigated in BHJ PSCs with the device structures of the standard configuration glass / ITO / PEDOT : PSS / PCDSeBT : PC71BM / Al.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| PCDSeBT      |\n| PEDOT : PSS  |\n| PC71BM       |\n| Glass        |\n| ITO          |\n| Al           |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| PCDSeBT      |\n| PEDOT : PSS  |\n| PC71BM       |\n| Glass        |\n| ITO          |\n| Al (metal)   |\n\nExplanation:\n- \"Photovoltaic effects\" is a phenomenon, not a material.\n- \"BHJ PSCs\" is a type of device, not a material.\n- \"device structures\" and \"standard configuration\" are descriptions, not materials.\n- \"glass / ITO / PEDOT : PSS\" is a list of layers in the device structure, not materials, but \"ITO\" can be considered a material in this context as it is an inorganic thin film commonly used as a transparent conductive electrode.\n- \"Al\" can be considered a material in this context as it is mentioned as the back contact material."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Photovoltaic effects of PCDSeBT were investigated in BHJ PSCs with the device structures of the standard configuration glass / ITO / PEDOT : PSS / PCDSeBT : PC71BM / Al.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Photovoltaic effects |\n| PCDSeBT |\n| BHJ PSCs |\n| Device structures |\n| Standard configuration |\n| Glass |\n| ITO |\n| PEDOT : PSS |\n| PCDSeBT : PC71BM |\n| PC71BM |\n| Al |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Photovoltaic effects |\n| PCDSeBT |\n| BHJ PSCs (device structures) |\n| Glass |\n| ITO |\n| PEDOT : PSS |\n| PC71BM |\n| Al (electrode) |\n\nNote: \"BHJ PSCs\" is included as a property since it refers to the specific type of device being investigated."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Photovoltaic effects of PCDSeBT were investigated in BHJ PSCs with the device structures of the standard configuration glass / ITO / PEDOT : PSS / PCDSeBT : PC71BM / Al.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Photovoltaic effects of PCDSeBT |\n| BHJ PSCs |\n| Device structures |\n| Standard configuration |\n| Glass |\n| ITO |\n| PEDOT : PSS |\n| PCDSeBT : PC71BM |\n| PC71BM |\n| Al |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Photovoltaic effects of PCDSeBT |\n| BHJ PSCs |\n| Device structures (of standard configuration) |\n| Glass |\n| ITO |\n| PEDOT : PSS |\n| PCDSeBT |\n| PC71BM |\n| Al |\n\nThe entities \"standard configuration\" is removed as it does not clearly refer to a material property value."
+    }
+  ]
+}

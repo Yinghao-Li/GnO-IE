@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: These effects were similar to those induced by diazepam , whereas the partial agonist Ro 16 - 6028 (tert - butyl - (S) - 8 - bromo - 11 , 12 , 13 , 13a - tetrahydro - 9 - oxo - 9H - imidazo [1 , 5 - a] - pyrrolo - [2 , 1 - c] [1 , 4] benzodiazepine - 1 - carboxylate) showed very weak efficacy in these biochemical tests .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity in the paragraph.\n\nThere is no mention of any disease in the paragraph, so there are no \"Disease\" entities to identify.\n\nStep 2: Identify the \"Chemical\" entity in the paragraph.\n\nThe chemical entities mentioned in the paragraph are:\n- diazepam\n- Ro 16-6028 (tert-butyl-(S)-8-bromo-11,12,13,13a-tetrahydro-9-oxo-9H-imidazo[1,5-a]pyrrolo[2,1-c][1,4]benzodiazepine-1-carboxylate)\n\nSo, the identified \"Chemical\" entities in the paragraph are \"diazepam\" and \"Ro 16-6028\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "The chemical entity mentioned in the paragraph is \"diazepam\". The other entity, \"Ro 16-6028 (tert-butyl-(S)-8-bromo-11,12,13,13a-tetrahydro-9-oxo-9H-imidazo[1,5-a]pyrrolo[2,1-c][1,4]benzodiazepine-1-carboxylate)\", does not clearly refer to a chemical and will be removed."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity    | Entity Type |\n|-----------|-------------|\n| diazepam  | Chemical    |"}
+]

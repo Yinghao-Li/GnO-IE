@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Intraoperative bradycardia |\n| Hypotension |\n| (Not mentioned in the paragraph, but often associated with these conditions) Malignant hyperthermia (can be triggered by non-depolarizing muscle relaxants used during surgery, which are sometimes used to manage intraoperative bradycardia and hypotension) |\n\nThe paragraph mentions \"Intraoperative bradycardia and hypotension\" as the conditions of interest. While timolol and pilocarpine are known to cause these conditions, they are not explicitly labeled as diseases in the paragraph. However, malignant hyperthermia is a potential complication that can be triggered by non-depolarizing muscle relaxants used to manage these conditions, so it is included as a related condition that might be of interest."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Intraoperative bradycardia |\n| Hypotension |\n\nThe paragraph mentions \"Intraoperative bradycardia and hypotension\" as the conditions of interest, which are clearly diseases. There is no mention of timolol or pilocarpine as diseases, but rather as potential causes of the mentioned diseases. Therefore, they should not be included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| timolol |\n| pilocarpine |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| timolol |\n| pilocarpine |\n\nThese are the only entities in the paragraph that clearly refer to chemicals."}
+  ]
+}

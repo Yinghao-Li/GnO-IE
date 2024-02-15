@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CONCLUSIONS : These data show that inhibition of NF - kappaB activation attenuates tubulointerstitial nephritis induced by gentamicin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| tubulointerstitial nephritis |\n| gentamicin (although this is technically a drug, it can cause a specific type of nephritis, so it is included here for completeness) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| tubulointerstitial nephritis |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: CONCLUSIONS : These data show that inhibition of NF - kappaB activation attenuates tubulointerstitial nephritis induced by gentamicin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| NF - kappaB |\n| gentamicin |\n\nExplanation:\n\nNF - kappaB: NF-kappaB (nuclear factor kappa-light-chain-enhancer of activated B cells) is a protein complex that controls many genes involved in inflammation and cell survival.\n\ngentamicin: Gentamicin is an antibiotic used to treat several types of bacterial infections."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| gentamicin |\n\nExplanation:\n\nNF - kappaB is a protein complex and not a chemical. Therefore, it is not included in the table. Gentamicin is an antibiotic and is included in the table as a chemical."}
+  ]
+}

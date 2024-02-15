@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Sprague - Dawley male rats ( 200 ~ 250 g ) were subcutaneously injected with gentamicin ( 100 mg / kg per day ) for 7 days , and the expression of tubular transporters was determined by immunoblotting and immunohistochemistry .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Identify the potential disease-related entities in the paragraph.\n2. Analyze the context of each entity to determine if it is referring to a disease.\n\nIn the given paragraph, there are no explicit mentions of any diseases. However, the paragraph describes an experiment involving the administration of gentamicin to rats, which can be associated with a condition called \"gentamicin-induced nephrotoxicity.\"\n\nGentamicin is an antibiotic, and its prolonged use or high doses can lead to kidney damage, known as nephrotoxicity. The paragraph mentions that rats were injected with gentamicin for 7 days, which could potentially lead to this condition.\n\nTherefore, the \"Disease\" entity in the paragraph is:\n\n1. Gentamicin-induced nephrotoxicity"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Gentamicin-induced nephrotoxicity\n\nThis is the only entity in the paragraph that clearly refers to a disease. Gentamicin-induced nephrotoxicity is a condition that can occur as a side effect of gentamicin usage, and the paragraph describes an experiment that could potentially lead to this disease."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|-----------------|\n| Gentamicin-induced nephrotoxicity |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Sprague - Dawley male rats ( 200 ~ 250 g ) were subcutaneously injected with gentamicin ( 100 mg / kg per day ) for 7 days , and the expression of tubular transporters was determined by immunoblotting and immunohistochemistry .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Sprague - Dawley: This is a strain of laboratory rats and not a chemical entity.\n2. male rats: This is a type of animal and not a chemical entity.\n3. 200 ~ 250 g: This is a unit of weight and not a chemical entity.\n4. gentamicin: This is an antibiotic and a chemical entity.\n5. 100 mg / kg per day: This is a dose and not a chemical entity.\n6. 7 days: This is a time period and not a chemical entity.\n7. immunoblotting and immunohistochemistry: These are techniques used in scientific research and not chemical entities.\n\nTherefore, the chemical entities in the paragraph are \"gentamicin\" and \"100 mg / kg per day\" (which refers to the dose of gentamicin)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "* gentamicin (antibiotic)\n* 100 mg / kg per day (dose of gentamicin)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| gentamicin |\n| 100 mg / kg per day |"}
+  ]
+}

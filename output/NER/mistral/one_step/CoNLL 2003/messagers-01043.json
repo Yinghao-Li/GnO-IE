@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The 16-year-old who attended Sale Grammar School in the northern England city of Manchester died less than a day after becoming ill .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The 16-year-old |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The 16-year-old |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The 16-year-old who attended Sale Grammar School in the northern England city of Manchester died less than a day after becoming ill .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| northern England city of Manchester |\n| Sale Grammar School |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| northern England |\n| city of Manchester |\n| Sale Grammar School |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The 16-year-old who attended Sale Grammar School in the northern England city of Manchester died less than a day after becoming ill .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Sale Grammar School |\n| Manchester |\n\nExplanation:\nThe paragraph mentions two organizations: Sale Grammar School and Manchester. These are the entities to be identified."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Sale Grammar School |\n| Manchester (city) |\n\nExplanation:\nThe paragraph mentions two organizations: Sale Grammar School and Manchester. Manchester is a city, but it is also mentioned as the location of Sale Grammar School, so it is included as an organization in this context."}
+  ]
+}

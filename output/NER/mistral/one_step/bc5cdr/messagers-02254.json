@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Treatment was empirically initiated with vancomycin , levofloxacin , and piperacillin / tazobactam .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| N/A (The paragraph does not mention any specific diseases in it.) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| N/A (The paragraph does not mention any specific diseases in it. It only mentions antibiotics used for treatment.) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Treatment was empirically initiated with vancomycin , levofloxacin , and piperacillin / tazobactam .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| vancomycin |\n| levofloxacin |\n| piperacillin |\n| tazobactam |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| vancomycin |\n| levofloxacin |\n| piperacillin/tazobactam |\n\nExplanation:\nThe original paragraph mentions \"vancomycin, levofloxacin, and piperacillin / tazobactam\". Since \"piperacillin/tazobactam\" is a combination antibiotic, it is listed as one entity in the table. The other entities, \"vancomycin\" and \"levofloxacin,\" are clearly chemical entities and are listed accordingly."}
+  ]
+}

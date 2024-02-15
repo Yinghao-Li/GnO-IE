@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PATIENTS AND METHODS : From February , 1998 to September , 2000 we recruited 33 patients with AGC to receive weekly 24 - hour 5 - FU 2 , 600 mg / m ( 2 ) preceded by 2 - hour FA 500 mg / m ( 2 ) for 6 weeks , followed by a 2 - week rest period .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| AGC (Advanced Gastric Cancer) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Advanced Gastric Cancer (AGC) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PATIENTS AND METHODS : From February , 1998 to September , 2000 we recruited 33 patients with AGC to receive weekly 24 - hour 5 - FU 2 , 600 mg / m ( 2 ) preceded by 2 - hour FA 500 mg / m ( 2 ) for 6 weeks , followed by a 2 - week rest period .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 5-FU (5-Fluorouracil) |\n| FA (Follicle-associated antigen) |\n\nIn the given paragraph, \"5-FU\" and \"FA\" are the chemical entities mentioned. \"5-FU\" is a type of chemotherapy drug called 5-Fluorouracil, and \"FA\" is a type of antigen, specifically a follicle-associated antigen."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 5-FU (5-Fluorouracil) |\n\nIn the given paragraph, only \"5-FU\" is a clear chemical entity mentioned. \"FA\" is not a chemical, but a type of antigen. Therefore, only \"5-FU\" should be included in the table."}
+  ]
+}

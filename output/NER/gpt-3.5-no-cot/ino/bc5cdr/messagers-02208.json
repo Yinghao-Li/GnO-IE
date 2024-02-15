@@ -1,0 +1,20 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: RESULTS : Verapamil significantly increased PRL levels in healthy controls ( N . 8 , PRL : 183 % ) , macroprolactinoma ( N . 8 , PRL : 7 % ) , microprolactinoma ( N . 19 , PRL : 21 % ) , macroprolactinemia ( N . 23 , PRL : 126 % ) , but not in pseudoprolactinoma ( N . 8 , PRL : 0 . 8 % ) , and risperidone - induced hyperprolactinemia ( N . 7 , PRL : 3 % ) ."},
+    {"role": "assistant", "content": "The \"Disease\" entities mentioned in the paragraph are:\n\n1. Macroprolactinoma\n2. Microprolactinoma\n3. Macroprolactinemia\n4. Pseudoprolactinoma\n5. Risperidone-induced hyperprolactinemia"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "The relevant \"Disease\" entities mentioned in the paragraph are:\n\n1. Macroprolactinoma\n2. Microprolactinoma\n3. Macroprolactinemia\n4. Pseudoprolactinoma\n5. Risperidone-induced hyperprolactinemia"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease                           |\n|-----------------------------------|\n| Macroprolactinoma                 |\n| Microprolactinoma                 |\n| Macroprolactinemia                |\n| Pseudoprolactinoma                |\n| Risperidone-induced hyperprolactinemia |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: RESULTS : Verapamil significantly increased PRL levels in healthy controls ( N . 8 , PRL : 183 % ) , macroprolactinoma ( N . 8 , PRL : 7 % ) , microprolactinoma ( N . 19 , PRL : 21 % ) , macroprolactinemia ( N . 23 , PRL : 126 % ) , but not in pseudoprolactinoma ( N . 8 , PRL : 0 . 8 % ) , and risperidone - induced hyperprolactinemia ( N . 7 , PRL : 3 % ) ."},
+    {"role": "assistant", "content": "The chemical entities mentioned in the paragraph are:\n\n1. Verapamil\n2. Risperidone"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "The relevant chemical entities mentioned in the paragraph are:\n\n1. Verapamil\n2. Risperidone"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical    |\n|-------------|\n| Verapamil   |\n| Risperidone |"}
+  ]
+}

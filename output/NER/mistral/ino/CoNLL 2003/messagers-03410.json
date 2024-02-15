@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Ajax face AZ Alkmaar away on Sunday and Feyenoord , eliminated from the UEFA Cup after losing 4-2 on aggregate to Tenerife on Tuesday , travel to De Graafschap Doetinchem .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ajax\n2. AZ Alkmaar\n3. Feyenoord\n4. Tenerife\n\nThese are the \"Person\" entities mentioned in the paragraph. \"Ajax\" and \"AZ Alkmaar\" are football teams, and \"Feyenoord\" and \"Tenerife\" are also football teams."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Ajax\n2. AZ Alkmaar\n3. Feyenoord\n\nThese are the entities that clearly refer to persons or teams in the paragraph. \"Ajax\" and \"AZ Alkmaar\" are football teams, and \"Feyenoord\" is a football team."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Ajax   |\n| AZ Alkmaar |\n| Feyenoord |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Ajax face AZ Alkmaar away on Sunday and Feyenoord , eliminated from the UEFA Cup after losing 4-2 on aggregate to Tenerife on Tuesday , travel to De Graafschap Doetinchem .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ajax: A football club based in Amsterdam, Netherlands.\n2. AZ Alkmaar: A football club based in Alkmaar, Netherlands.\n3. Sunday: A day of the week, but not a location.\n4. Feyenoord: A football club based in Rotterdam, Netherlands.\n5. Tenerife: An island in the Canary Islands, Spain.\n6. UEFA Cup: A European football competition, not a location.\n7. De Graafschap Doetinchem: A football club based in Doetinchem, Netherlands."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. AZ Alkmaar: A football club based in Alkmaar, Netherlands.\n2. Doetinchem: A town in the Netherlands.\n3. Tenerife: An island in the Canary Islands, Spain.\n\nThese are the entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| AZ Alkmaar (a football club based in Alkmaar, Netherlands) |\n| Doetinchem (a town in the Netherlands) |\n| Tenerife (an island in the Canary Islands, Spain) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Ajax face AZ Alkmaar away on Sunday and Feyenoord , eliminated from the UEFA Cup after losing 4-2 on aggregate to Tenerife on Tuesday , travel to De Graafschap Doetinchem .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ajax\n2. AZ Alkmaar\n3. Feyenoord\n4. UEFA Cup (technically not an organization, but rather a competition, but it's often referred to as such)\n5. Tenerife\n\nSo, the organizations mentioned in the paragraph are:\n\n1. Ajax\n2. AZ Alkmaar\n3. Feyenoord"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Ajax\n2. AZ Alkmaar\n3. Feyenoord\n\nSo, the organizations mentioned in the paragraph are:\n\n1. Ajax\n2. AZ Alkmaar\n3. Feyenoord"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Ajax |\n| AZ Alkmaar |\n| Feyenoord |"}
+  ]
+}

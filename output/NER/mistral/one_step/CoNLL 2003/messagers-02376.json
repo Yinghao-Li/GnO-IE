@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The NTT official said the timing of the planned split-up was uncertain because more discussions by government officials were required .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| NTT official |\n| government officials |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| NTT official |\n| government officials |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The NTT official said the timing of the planned split-up was uncertain because more discussions by government officials were required .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| NTT (Nippon Telegraph and Telephone Corporation) |\n\nNote:\nThere is no explicit location mentioned in the paragraph, but NTT (Nippon Telegraph and Telephone Corporation) can be considered a company or organization, and it can be considered a location in the sense of where the official is from or where the company is based."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| NTT (Nippon Telegraph and Telephone Corporation) |\n\nNote:\nThe only entity mentioned in the paragraph that can be considered a location is NTT (Nippon Telegraph and Telephone Corporation). The term \"government officials\" does not refer to a specific location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The NTT official said the timing of the planned split-up was uncertain because more discussions by government officials were required .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NTT |\n\nIn this paragraph, \"NTT\" is the only organization mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NTT (NTT official) |\n\nIn this paragraph, \"NTT\" is the organization mentioned, and \"NTT official\" is a person who works for the organization. However, since the task is to identify organizations, we only include \"NTT\" in the table."}
+  ]
+}

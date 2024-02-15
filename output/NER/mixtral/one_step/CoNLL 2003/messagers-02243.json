@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Australian parliamentarian John Langmore has formally resigned from his lower house seat , the office of House of Representatives speaker Bob Halverson said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| John Langmore |\n| Bob Halverson |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| John Langmore |\n| Bob Halverson |\n\nThe entities \"parliamentarian\" and \"speaker\" are roles or titles, not personal names, so they have not been included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Australian parliamentarian John Langmore has formally resigned from his lower house seat , the office of House of Representatives speaker Bob Halverson said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Australian   |\n| lower house  |\n| House of    |\n| Representatives|\n| office of    |\n| speaker Bob Halverson  |\n\nNote: I have included \"office of speaker Bob Halverson\" as a location because it refers to a physical or virtual place where Bob Halverson, the speaker of the House of Representatives, performs his duties."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Australian   |\n| lower house  |\n| House of    |\n| Representatives|\n\nNote: I have removed \"office of speaker Bob Halverson\" as it is not a clear example of a location. It is unclear whether it refers to a physical location or a metaphorical one. The other entities are clearly locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Australian parliamentarian John Langmore has formally resigned from his lower house seat , the office of House of Representatives speaker Bob Halverson said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Australian parliament |\n| House of Representatives |\n| office of House of Representatives speaker Bob Halverson |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| House of Representatives |"}
+  ]
+}

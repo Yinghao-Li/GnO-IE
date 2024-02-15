@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Ronny Wabia scored for Indonesia three minutes later direct from a a corner kick that Korean goalkeeper Kim Byung reached with one hand but failed to keep out .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ronny Wabia\n2. Indonesia\n3. Kim Byung\n4. Korean goalkeeper.\n\nThese are the entities identified as \"Person\" in the given paragraph. Ronny Wabia is the person who scored the goal for Indonesia, and Kim Byung is the Korean goalkeeper who failed to keep the goal out."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Ronny Wabia\n2. Kim Byung.\n\nThese are the entities that clearly refer to persons in the given paragraph. Ronny Wabia is the person who scored the goal, and Kim Byung is the person who failed to keep the goal out. All other entities in the paragraph (Indonesia and Korean goalkeeper) are not persons, but rather descriptions or qualifiers of the persons mentioned."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Ronny Wabia |\n| Kim Byung |\n\nThese are the valid entities identified as persons in the given paragraph, presented in a Markdown table with one column labeled \"Person\". The entities are presented precisely in the same words as in the original paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Ronny Wabia scored for Indonesia three minutes later direct from a a corner kick that Korean goalkeeper Kim Byung reached with one hand but failed to keep out .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indonesia\n2. Korea (implied, as it is mentioned that the goalkeeper is Korean)\n\nThe paragraph does not mention any specific location within these countries."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Indonesia\n\nThe paragraph does not mention any specific location within Indonesia. The only other location mentioned, Korea, is not relevant to the discussion of the location of the event described in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Indonesia |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Ronny Wabia scored for Indonesia three minutes later direct from a a corner kick that Korean goalkeeper Kim Byung reached with one hand but failed to keep out .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indonesia\n2. Korea (implied, as Ronny Wabia is playing for Indonesia and the goalkeeper is from Korea)\n\nThe paragraph mentions \"Indonesia\" explicitly, and \"Korea\" can be inferred from the context as the nationality of the goalkeeper."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Indonesia\n\nThe only explicitly mentioned organization in the paragraph is Indonesia. Korea is an implied organization based on the context, but it is not explicitly stated as such."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Indonesia |"}
+  ]
+}

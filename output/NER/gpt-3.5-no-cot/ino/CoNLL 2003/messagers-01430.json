@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Buenos Aires Quequen Rosario Bahia Blanca"},
+    {"role": "assistant", "content": "Based on the given paragraph, there are no \"Person\" entities mentioned. The entities mentioned are all geographical locations or cities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Based on the given paragraph, there are no entities that clearly refer to a \"Person\". All the entities mentioned are geographical locations or cities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n|        |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Buenos Aires Quequen Rosario Bahia Blanca"},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entities are:\n\n1. Buenos Aires\n2. Quequen\n3. Rosario\n4. Bahia Blanca"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Location\" entities are:\n\n1. Buenos Aires\n2. Rosario\n3. Bahia Blanca"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location       |\n|----------------|\n| Buenos Aires   |\n| Rosario        |\n| Bahia Blanca   |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Buenos Aires Quequen Rosario Bahia Blanca"},
+    {"role": "assistant", "content": "There are no \"Organization\" entities in the given paragraph. The mentioned names are primarily geographical locations and do not refer to any specific organizations."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "I apologize for the confusion. After reevaluating the paragraph, it appears that there are no \"Organization\" entities mentioned. The names mentioned are primarily geographical locations and do not refer to any specific organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n|--------------|\n|              |"}
+  ]
+}

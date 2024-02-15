@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Major azotemia ( serum creatinine greater than 2 . 5 mg / dl or BUN greater than 50 mg / dl ) occurred in only 2 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Major azotemia |\n\nIn this paragraph, \"Major azotemia\" is the disease entity mentioned. It is defined as a condition where the serum creatinine level is greater than 2.5 mg/dl or the blood urea nitrogen (BUN) level is greater than 50 mg/dl."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Major azotemia |\n\nIn this paragraph, \"Major azotemia\" is the only disease entity mentioned. It is defined as a condition where the serum creatinine level is greater than 2.5 mg/dl or the blood urea nitrogen (BUN) level is greater than 50 mg/dl. Other terms in the paragraph, such as \"serum\" and \"dl,\" do not refer to diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Major azotemia ( serum creatinine greater than 2 . 5 mg / dl or BUN greater than 50 mg / dl ) occurred in only 2 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| serum creatinine |\n| mg / dl |\n| BUN (Blood Urea Nitrogen) |\n| mg / dl |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| serum creatinine |\n| mg/dl |\n| BUN (Blood Urea Nitrogen) |\n| mg/dl |\n\nNote: The percent sign (%), which was present in the original paragraph, does not refer to a chemical entity and has been removed."}
+  ]
+}

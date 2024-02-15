@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Indonesia - Ronny Wabia 58 , Widodo Putra 65\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's break down the paragraph and identify the entities one by one.\n\n1. Indonesia - This is a location entity.\n\n2. Ronny Wabia - This is a person entity.\n\n3. Widodo Putra - This is also a person entity.\n\nSo, the identified entities in the paragraph are:\n\n- Location: Indonesia\n- Person: Ronny Wabia, Widodo Putra"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Based on the given paragraph, the entities that clearly refer to either a location, organization, or person are:\n\n- Location: Indonesia\n- Person: Ronny Wabia, Widodo Putra\n\nTherefore, the identified entities in the paragraph are:\n\n- Location: Indonesia\n- Person: Ronny Wabia, Widodo Putra"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here is the valid entities presented as a Markdown table:\n\n| Entity         | Entity Type   |\n|----------------|---------------|\n| Indonesia      | location      |\n| Ronny Wabia    | person        |\n| Widodo Putra   | person        |"}
+]

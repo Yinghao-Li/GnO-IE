@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Witnesses said they had been seized by troops loyal to President Ange-Felix Patasse at dawn on Thursday when they clashed with soldiers staging a mutiny since November 16 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Witnesses |\n| President Ange-Felix Patasse |\n| Troops loyal to President Ange-Felix Patasse |\n| Soldiers |\n| Soldiers staging a mutiny since November 16. |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Witnesses |\n| President Ange-Felix Patasse |\n| Soldiers staging a mutiny since November 16. |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Witnesses said they had been seized by troops loyal to President Ange-Felix Patasse at dawn on Thursday when they clashed with soldiers staging a mutiny since November 16 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Dawn on Thursday |\n| November 16 |\n\nIn this paragraph, the locations mentioned are the time \"dawn on Thursday\" and the date \"November 16\" when the events took place."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Dawn on Thursday |\n| November 16 |\n\nIn this paragraph, the only entities that clearly refer to locations are the time \"dawn on Thursday\" and the date \"November 16\". Other entities such as \"troops loyal to President Ange-Felix Patasse\" and \"soldiers staging a mutiny\" do not refer to specific locations but rather to groups of people."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Witnesses said they had been seized by troops loyal to President Ange-Felix Patasse at dawn on Thursday when they clashed with soldiers staging a mutiny since November 16 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| troops loyal to President Ange-Felix Patasse |\n| soldiers |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| troops loyal to President Ange-Felix Patasse |\n| soldiers (staging a mutiny) |"}
+  ]
+}

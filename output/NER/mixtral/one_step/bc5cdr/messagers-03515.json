@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Isotretinoin is contraindicated in pregnancy because of the many reported congenital abnormalities after maternal use ( including microphthalmos , orbital hypertelorism , and optic nerve hypoplasia ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| congenital abnormalities |\n| microphthalmos |\n| orbital hypertelorism |\n| optic nerve hypoplasia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| congenital abnormalities |\n| microphthalmos |\n| orbital hypertelorism |\n| optic nerve hypoplasia |\n\nNote: I have kept \"congenital abnormalities\" as a disease entity because it is a general term used to describe various birth defects or physical abnormalities that occur during fetal development. However, it is not a specific disease but a category of conditions."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Isotretinoin is contraindicated in pregnancy because of the many reported congenital abnormalities after maternal use ( including microphthalmos , orbital hypertelorism , and optic nerve hypoplasia ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| isotretinoin |\n\nThe only chemical entity in the paragraph is \"isotretinoin.\" It is a medication used to treat severe acne. The other terms mentioned, such as microphthalmos, orbital hypertelorism, and optic nerve hypoplasia, are medical conditions and not chemicals."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| isotretinoin |\n\nThe only word in the paragraph that clearly refers to a \"Chemical\" is \"isotretinoin.\" It is a medication used to treat severe acne. The other terms mentioned, such as microphthalmos, orbital hypertelorism, and optic nerve hypoplasia, are medical conditions and not chemicals."}
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The short circuit currents of the photovoltaic devices fabricated using the polymers as an electron donor , also increased as the perylene content in the copolymers increased , which is consistent with the field - effect mobility results of the polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| polymers (used as an electron donor in photovoltaic devices) |\n| perylene (content in the copolymers) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| polymers (used as an electron donor) |\n| perylene (content in copolymers) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The short circuit currents of the photovoltaic devices fabricated using the polymers as an electron donor , also increased as the perylene content in the copolymers increased , which is consistent with the field - effect mobility results of the polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| short circuit currents of the photovoltaic devices |\n| fabricated using the polymers as an electron donor |\n| increased |\n| as the perylene content in the copolymers increased |\n| consistent with |\n| field-effect mobility results |\n| of the polymers. |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| short circuit currents of photovoltaic devices |\n| fabricated using polymers as electron donors |\n| increased |\n| with the increase of perylene content in copolymers |\n| consistent with |\n| field-effect mobility results |\n| of polymers. |\n\nExplanation:\n\n* \"The\" and \"of\" are articles and prepositions, respectively, and do not refer to material properties.\n* \"Perylene content in the copolymers increased\" refers to a process or change, not a property. However, \"perylene content\" can be considered a material property if we define it as the amount or concentration of perylene in the copolymers.\n* \"Consistent with\" is a preposition and does not refer to a material property. However, the \"field-effect mobility results\" can be considered a material property."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The short circuit currents of the photovoltaic devices fabricated using the polymers as an electron donor , also increased as the perylene content in the copolymers increased , which is consistent with the field - effect mobility results of the polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| short circuit currents of the photovoltaic devices |\n| currents of the photovoltaic devices fabricated using the polymers as an electron donor |\n| perylene content in the copolymers |\n| field-effect mobility results of the polymers |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| short circuit currents of photovoltaic devices fabricated using polymers as an electron donor |\n| perylene content in copolymers |\n| field-effect mobility results of polymers |"
+    }
+  ]
+}

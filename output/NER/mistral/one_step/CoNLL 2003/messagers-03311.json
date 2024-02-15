@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Phoenix 101 SACRAMENTO 95\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Phoenix |\n\nThe paragraph does not contain any other identifiable persons. It only mentions the city names \"Phoenix\" and \"Sacramento\" (SACRAMENTO), but since cities are not considered persons in the context of named entity recognition, they are not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Phoenix |\n\nThe paragraph only mentions the city name \"Phoenix\" as a person, so it is the only entity to be included in the table. Cities are not considered persons in the context of named entity recognition, but in this specific context, the paragraph is asking us to \"think step by step\" in relation to a specific team, Phoenix 101, which implies that \"Phoenix\" refers to the team or organization, and not the city itself. Therefore, it is included as a person in this context."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Phoenix 101 SACRAMENTO 95\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Phoenix |\n| 101 SACRAMENTO |\n| 95 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Phoenix |\n| 101 SACRAMENTO |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Phoenix 101 SACRAMENTO 95\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Phoenix |\n| SACRAMENTO |\n| 101 |\n| Phoenix 101 |\n| SACRAMENTO 95 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Phoenix |\n| SACRAMENTO |\n| Phoenix 101 |\n| SACRAMENTO 95 (assumed to be a military base or a similar organization) |"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: soccer championship semifinal , first leg matches on Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| None |\n\nThere are no \"Person\" entities in the given paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n|  |\n\nThe paragraph does not mention any specific person, therefore there are no valid entities to display."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: soccer championship semifinal , first leg matches on Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |  |\n| --- | --- |\n| Thursday |  |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |  |\n| --- | --- |\n| Thursday |  |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: soccer championship semifinal , first leg matches on Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| soccer championship |\n| first leg matches |\n| Thursday |\n\nExplanation:\n\n* \"soccer championship\" is an organization because it's a tournament, and tournaments are organized by some entity, even if it's not explicitly stated.\n* \"first leg matches\" is not an organization, it's a term used in sports to refer to the first game of a two-game series.\n* \"Thursday\" is not an organization, it's a day of the week."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Valid entities:\n| Organization |\n| --- |\n| soccer championship |\n\nExplanation:\n\n* \"soccer championship\" is an organization because it's a tournament, and tournaments are organized by some entity, even if it's not explicitly stated.\n\nThe other two entities, \"first leg matches\" and \"Thursday\" are not organizations, and therefore, they are removed from the list."}
+  ]
+}

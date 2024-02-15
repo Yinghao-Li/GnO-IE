@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 4 shows the J-V curves of the optimized PSCs based on the three polymers under illumination of AM 1.5 simulated solar light ( 100 mW cm^-2 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| the three polymers |\n\nThe material names in the paragraph are \"the three polymers\" as they are the materials being referred to in the context of the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| the three polymers |\n\nThe only material name in the paragraph is \"the three polymers\" as it is the only clear reference to a material. The other terms in the paragraph, such as \"AM 1.5 simulated solar light\" and \"100 mW cm^-2\" are not material names."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 4 shows the J-V curves of the optimized PSCs based on the three polymers under illumination of AM 1.5 simulated solar light ( 100 mW cm^-2 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| AM 1.5 |\n| simulated solar light |\n| 100 mW cm^-2 |\n\nExplanation:\n\n* AM 1.5 refers to the air mass coefficient that specifies the solar spectrum.\n* Simulated solar light refers to the light source used to illuminate the PSCs (Perovskite Solar Cells).\n* 100 mW cm^-2 is the intensity of the simulated solar light."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| 100 mW cm^-2 |\n\nExplanation:\n\n* AM 1.5 is not a material property, it is a standard for solar simulation.\n* Simulated solar light is not a material property, it is a light source used to illuminate the PSCs.\n* 100 mW cm^-2 is a material property, it is the intensity of the simulated solar light."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 4 shows the J-V curves of the optimized PSCs based on the three polymers under illumination of AM 1.5 simulated solar light ( 100 mW cm^-2 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "* Property Value\n\t1. AM 1.5\n\t2. 100 mW cm^-2"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "* Property Value\n\t1. 100 mW cm^-2"
+    }
+  ]
+}

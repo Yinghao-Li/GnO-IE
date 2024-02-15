@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PSCs based on these polymers : PC71BM blend layers showed good photovoltaic performance with a maximum PCE as high as 9.70% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PC71BM |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PC71BM |\n\nThe entity \"PC71BM\" is the only valid material name in the given paragraph."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PSCs based on these polymers : PC71BM blend layers showed good photovoltaic performance with a maximum PCE as high as 9.70% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| PCE |\n| PC71BM |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| PCE |\n\nThe following entities do not clearly refer to \"Material property\":\n\n* \"photovoltaic performance\" (is a description of the application or behavior of the material)\n* \"blend layers\" (is a description of the material structure or composition)\n* \"PC71BM\" (is a specific material, but not a property)"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PSCs based on these polymers : PC71BM blend layers showed good photovoltaic performance with a maximum PCE as high as 9.70% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 9.70% |\n\nThe Property Value entities in the paragraph are:\n\n* 9.70% (maximum PCE)"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's the updated table with the valid entities that clearly refer to \"Value of material property\":\n\n| Property Value |\n| --- |\n| 9.70% |\n\nThe other entities in the paragraph, \"PC71BM\" and \"PCE\", do not clearly refer to material properties and were removed from the table."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: December 25 , a normal working day in Russia , is the fifth anniversary of Yeltsin 's arrival in the Kremlin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Yeltsin |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Yeltsin |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: December 25 , a normal working day in Russia , is the fifth anniversary of Yeltsin 's arrival in the Kremlin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Russia     |\n| the Kremlin |\n\nExplanation:\n- Russia: A country in Eastern Europe and North Asia.\n- the Kremlin: A fortified complex in the heart of Moscow, Russia, which serves as the official residence of the President of the Russian Federation."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| the Kremlin |\n\nExplanation:\n- the Kremlin: A fortified complex in the heart of Moscow, Russia, which serves as the official residence of the President of the Russian Federation.\n\n\"Russia\" is not included as it is mentioned as a working day, not as a location in this context."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: December 25 , a normal working day in Russia , is the fifth anniversary of Yeltsin 's arrival in the Kremlin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Russia |\n| Kremlin |\n\nExplanation:\n\n* Russia is identified as an \"Organization\" because it is a country and a political entity.\n* Kremlin is identified as an \"Organization\" because it is the official residence and workplace of the President of the Russian Federation, and is a symbol of the government and power in Russia."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Kremlin |\n\nExplanation:\n\n* Kremlin is identified as an \"Organization\" because it is the official residence and workplace of the President of the Russian Federation, and is a symbol of the government and power in Russia.\n* Russia is not included as a valid entity because it is a country, not an organization."}
+  ]
+}

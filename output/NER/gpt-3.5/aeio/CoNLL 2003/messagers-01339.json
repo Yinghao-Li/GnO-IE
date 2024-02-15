@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Russia said on Friday it expected a constructive relationship with Madeleine Albright , nominated by U.S. President Bill Clinton to be Secretary of State .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. Russia - Location\n2. Friday - None\n3. Madeleine Albright - Person\n4. U.S. - Location\n5. Bill Clinton - Person\n6. Secretary of State - None\n\nSo, the identified entities are:\n\n- Location: Russia, U.S.\n- Person: Madeleine Albright, Bill Clinton"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. Russia - Location\n2. Madeleine Albright - Person\n3. U.S. - Location\n4. Bill Clinton - Person\n\nSo, the identified entities that clearly refer to \"['Location', 'Organization', 'Person']\" are:\n\n- Location: Russia, U.S.\n- Person: Madeleine Albright, Bill Clinton"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity             | Entity Type   |\n|--------------------|---------------|\n| Russia             | location      |\n| Madeleine Albright | person        |\n| U.S.               | location      |\n| Bill Clinton       | person        |"}
+]

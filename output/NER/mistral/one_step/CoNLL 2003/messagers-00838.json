@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In-form Napoli should prove too strong for second from bottom Verona despite the absence of their suspended Argentine defender Roberto Ayala .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Napoli  |\n| Verona  |\n| Roberto Ayala |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Napoli  |\n| Roberto Ayala |\n| Verona  |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In-form Napoli should prove too strong for second from bottom Verona despite the absence of their suspended Argentine defender Roberto Ayala .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Napoli |\n| Verona |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Napoli |\n| Verona |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In-form Napoli should prove too strong for second from bottom Verona despite the absence of their suspended Argentine defender Roberto Ayala .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| In-form Napoli |\n| Verona |\n| Argentine (as it is a country, not an organization, it should not be included in the table) |\n| Napoli (could be included instead of In-form Napoli if the organization is being referred to specifically as Napoli throughout the paragraph) |\n\nIn this paragraph, \"In-form Napoli\" and \"Verona\" are the organizations mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| In-form Napoli |\n| Verona |\n\nIn this paragraph, \"In-form Napoli\" and \"Verona\" are the organizations mentioned. Other entities such as \"Argentine\" and \"second from bottom\" do not refer to organizations."}
+  ]
+}

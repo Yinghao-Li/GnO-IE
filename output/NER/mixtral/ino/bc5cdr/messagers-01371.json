@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Administration of parenteral quinine must be done carefully and with good observation because of its pro - arrhythmic effect , especially in older patients who have heart diseases or patients with electrolyte disorder ( hypokalemia ) which frequently occurs due to vomiting and or diarrhea in malaria cases .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Heart diseases\n2. Electrolyte disorder (hypokalemia)\n3. Malaria (although malaria is not explicitly mentioned as a \"disease\" in the paragraph, it is implied as a condition that can lead to electrolyte disorder due to vomiting and diarrhea)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Heart diseases\n2. Electrolyte disorder (hypokalemia)\n\n(Note: Malaria is not included as it is not a disease itself, but a parasitic infection caused by Plasmodium parasites.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease       |\n|---------------|\n| Heart diseases|\n| Electrolyte disorder (hypokalemia) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Administration of parenteral quinine must be done carefully and with good observation because of its pro - arrhythmic effect , especially in older patients who have heart diseases or patients with electrolyte disorder ( hypokalemia ) which frequently occurs due to vomiting and or diarrhea in malaria cases .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Quinine: This is a chemical entity, which is an alkaloid with antimalarial properties. It is often administered parenterally to treat malaria.\n\n2. Pro-arrhythmic effect: This is a chemical property of quinine, which means that it can cause irregular heart rhythms or arrhythmias.\n\n3. Electrolyte disorder (hypokalemia): This is a chemical imbalance that can occur in the body, particularly in malaria cases, due to vomiting and diarrhea. Hypokalemia specifically refers to low potassium levels in the blood.\n\nTherefore, the chemical entities in the paragraph are quinine, pro-arrhythmic effect, and hypokalemia."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Quinine\n2. Pro-arrhythmic effect\n3. Hypokalemia (low potassium levels in the blood)\n\nThese are the chemical entities in the paragraph that clearly refer to chemicals. The other entities such as malaria, heart diseases, vomiting, and diarrhea are medical conditions or symptoms, not chemicals."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Quinine |\n| Pro-arrhythmic effect |\n| Hypokalemia |"}
+  ]
+}

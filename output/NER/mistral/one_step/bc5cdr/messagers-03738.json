@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The other patients undergoing transplantation had an average ejection fraction of 17 % + / - 6 % and a VIP level of 8 . 8 + / - 3 . 9 pg / mg protein .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| None (The paragraph does not mention any specific diseases) |\n\nThe paragraph only mentions statistical data about ejection fraction and VIP level, which are not diseases but rather medical measurements."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| None (The paragraph does not mention any specific diseases) |\n\nThe paragraph only mentions statistical data about ejection fraction and VIP level, which are not diseases but rather medical measurements. Therefore, there are no valid disease entities in the paragraph."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The other patients undergoing transplantation had an average ejection fraction of 17 % + / - 6 % and a VIP level of 8 . 8 + / - 3 . 9 pg / mg protein .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 6 % |\n| 8.8 pg |\n| 3.9 pg |\n| protein |\n\nThese are the chemical entities mentioned in the paragraph, specifically the percentages and the units of measurement for ejection fraction and the units of measurement for VIP level. The term \"pg/mg\" is already a unit of measurement for protein concentration, so no need to add \"protein\" as a separate entry."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 6 % |\n| 3.9 pg |\n| protein |\n\nThe \"pg/mg\" unit of measurement for protein concentration is already included in the \"protein\" entry, so no need to add it as a separate entry. The \"8.8 pg\" is also a part of the \"protein\" entry, as it is the value of the VIP level which is a protein."}
+  ]
+}

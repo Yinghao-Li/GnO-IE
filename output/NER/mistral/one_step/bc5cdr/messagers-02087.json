@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Histology revealed diffuse infiltration of the myocardium by eosinophils and lymphocytes with myocyte damage .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Myocarditis (with diffuse infiltration of the myocardium) |\n| Eosinophilic myocarditis (with infiltration of the myocardium by eosinophils) |\n| Lymphocytic myocarditis (with infiltration of the myocardium by lymphocytes) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Myocarditis (with diffuse infiltration of the myocardium by eosinophils and lymphocytes) |\n| Eosinophilic myocarditis |\n| Lymphocytic myocarditis |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Histology revealed diffuse infiltration of the myocardium by eosinophils and lymphocytes with myocyte damage .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| eosinophils |\n| lymphocytes |\n\nThese are the identifiable chemical entities mentioned in the paragraph. Note that \"myocyte damage\" is not a chemical entity, but rather a description of a condition or process."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| eosinophils |\n| lymphocytes |\n\nThese are the identifiable chemical entities mentioned in the paragraph. Note that \"myocyte damage\" is not a chemical entity, but rather a description of a condition or process. Eosinophils and lymphocytes are types of white blood cells."}
+  ]
+}

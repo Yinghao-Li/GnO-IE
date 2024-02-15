@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: ' ' In January or February , we 'll have some very close contacts with Mexico to add the issue of services and advance on the issue of investments , ' ' Aninat told reporters after signing a free trade deal with Canada .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Aninat. (This is the identified person entity in the paragraph.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Aninat. (This is the identified and relevant person entity in the paragraph.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Aninat |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: ' ' In January or February , we 'll have some very close contacts with Mexico to add the issue of services and advance on the issue of investments , ' ' Aninat told reporters after signing a free trade deal with Canada .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Mexico\n2. (Implied) Canada (location of the free trade deal signing)\n\nThe paragraph does not provide explicit information about the location of the \"very close contacts\" between the US (implied from Aninat being an American diplomat) and Mexico."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Mexico\n\nThe other entities mentioned in the paragraph, \"January or February\" and \"Canada,\" do not refer to locations in the given context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Mexico |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: ' ' In January or February , we 'll have some very close contacts with Mexico to add the issue of services and advance on the issue of investments , ' ' Aninat told reporters after signing a free trade deal with Canada .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Mexico\n2. Aninat (assuming Aninat is a representative or official from a specific organization)\n3. Canada (implicitly, the Canadian government or related organizations)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Mexico\n2. (Aninat's organization, if it is explicitly stated to be a specific organization, otherwise Aninat himself)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Mexico |\n| (Aninat's organization) |\n\n(Note: If Aninat's organization is not explicitly stated in the paragraph, then the table should only contain \"Mexico\")"}
+  ]
+}

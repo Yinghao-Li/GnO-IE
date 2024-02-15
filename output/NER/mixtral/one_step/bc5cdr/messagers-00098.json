@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A history of drug exposure also was taken with special attention on the use of antidepressants , anorexigens , and amphetamines .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| antidepressants |\n| anorexigens |\n\nNote: I've identified \"antidepressants\" and \"anorexigens\" as the disease entities in the paragraph. \"Amphetamines\" are a type of drug, but they are not a disease. Anorexigens are also a type of drug, but they are often used to treat obesity and can have side effects that resemble a disease, so I have included them in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| antidepressants |\n\nNote: I've reviewed the paragraph again and found that \"antidepressants\" is the only clear disease entity in the paragraph. \"Anorexigens\" and \"amphetamines\" are both types of drugs, but they are not diseases. Therefore, I have removed them from the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A history of drug exposure also was taken with special attention on the use of antidepressants , anorexigens , and amphetamines .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antidepressants |\n| anorexigens |\n| amphetamines |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antidepressants |\n| anorexigens |\n| amphetamines |\n\nThe entities \"antidepressants\", \"anorexigens\", and \"amphetamines\" are the only ones that unambiguously refer to chemicals."}
+  ]
+}

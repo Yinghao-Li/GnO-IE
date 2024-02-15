@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Nonopaque crystal deposition causing ureteric obstruction in patients with HIV undergoing indinavir therapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| HIV |\n| ureteric obstruction |\n| indinavir therapy |\n\nExplanation:\n\n* \"HIV\" is explicitly mentioned as a disease in the paragraph.\n* \"ureteric obstruction\" is a medical condition and fits the category of a disease.\n* \"indinavir therapy\" is a treatment for HIV, but it can also cause nonopaque crystal deposition, which can lead to ureteric obstruction. Therefore, it is also included as a disease entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| HIV |\n\nExplanation:\n\n* \"HIV\" is explicitly mentioned as a disease in the paragraph.\n* \"nonopaque crystal deposition,\" \"ureteric obstruction,\" and \"indinavir therapy\" are medical conditions or treatments, but they are not diseases themselves. Therefore, they are not included in the final table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Nonopaque crystal deposition causing ureteric obstruction in patients with HIV undergoing indinavir therapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Nonopaque |\n| crystal deposition |\n| ureteric obstruction |\n| HIV |\n| indinavir |\n\nNote: I included \"Nonopaque\" as a chemical entity since it was specified in the context of crystal deposition. However, it is not typically classified as a chemical."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| indinavir |"}
+  ]
+}

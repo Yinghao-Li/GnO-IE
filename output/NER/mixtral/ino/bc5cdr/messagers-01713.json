@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: The hazard of developing CAD ( 95 % CI ) associated with initial treatment increased by 2 . 4 - fold ( 1 . 3 - 4 . 3 , P = 0 . 004 ) with glibenclamide ; 2 - fold ( 0 . 9 - 4 . 6 , P = 0 . 099 ) with glipizide ; 2 . 9 - fold ( 1 . 6 - 5 . 1 , P = 0 . 000 ) with either , and was unchanged with metformin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. CAD (Coronary Artery Disease) is the only disease entity mentioned in the paragraph.\n\nHere's the reasoning:\n\n- The paragraph discusses the hazard of developing CAD (Coronary Artery Disease) associated with initial treatment using different medications.\n- Other terms mentioned in the paragraph, such as glibenclamide, glipizide, and metformin, are medications and not diseases.\n- Therefore, the only \"Disease\" entity in the paragraph is CAD (Coronary Artery Disease)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Paragraph: The hazard of developing [CAD]( 95 % CI ) associated with initial treatment increased by 2 . 4 - fold ( 1 . 3 - 4 . 3 , P = 0 . 004 ) with glibenclamide ; 2 - fold ( 0 . 9 - 4 . 6 , P = 0 . 099 ) with glipizide ; 2 . 9 - fold ( 1 . 6 - 5 . 1 , P = 0 . 000 ) with either , and was unchanged with metformin.\n\nExplanation:\n\n* The only relevant disease entity in the paragraph is CAD (Coronary Artery Disease), which is clearly a disease.\n* The other entities mentioned in the paragraph, such as glibenclamide, glipizide, and metformin, are medications and not diseases.\n* Therefore, the cleaned paragraph only includes the disease entity CAD."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| CAD (Coronary Artery Disease) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: The hazard of developing CAD ( 95 % CI ) associated with initial treatment increased by 2 . 4 - fold ( 1 . 3 - 4 . 3 , P = 0 . 004 ) with glibenclamide ; 2 - fold ( 0 . 9 - 4 . 6 , P = 0 . 099 ) with glipizide ; 2 . 9 - fold ( 1 . 6 - 5 . 1 , P = 0 . 000 ) with either , and was unchanged with metformin .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Glibenclamide\n2. Glipizide\n3. Metformin\n\nThese are the chemical entities present in the given paragraph. They are all medications used in the treatment of type 2 diabetes."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Glibenclamide\n2. Glipizide\n3. Metformin\n\nThese are the chemical entities present in the given paragraph. They are all medications used in the treatment of type 2 diabetes. Other entities such as CAD, 95 % CI, P, and fold are not chemical entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Glibenclamide |\n| Glipizide |\n| Metformin |"}
+  ]
+}

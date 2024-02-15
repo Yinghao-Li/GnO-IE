@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: China 's State Council , or cabinet , has given a port in the southern province of Hainan permission to open to foreign vessels , the Xinhua news agency said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China's State Council\n2. cabinet (this can be considered as a part of State Council)\n3. Xinhua news agency."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. China's State Council\n2. Xinhua news agency."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| China's State Council |\n| Xinhua news agency |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: China 's State Council , or cabinet , has given a port in the southern province of Hainan permission to open to foreign vessels , the Xinhua news agency said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China\n2. southern province (of which Hainan is a part)\n3. Hainan province\n\nThe entities identified above are considered locations in the given paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Hainan province"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Hainan province |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: China 's State Council , or cabinet , has given a port in the southern province of Hainan permission to open to foreign vessels , the Xinhua news agency said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. China's State Council: This is the executive branch and highest organ of administration in the People's Republic of China. It is the cabinet of China and is responsible for making and implementing policies for the Chinese government.\n2. cabinet: This term is referring to China's State Council.\n3. Xinhua news agency: Xinhua is China's official press agency and news wire service. It is directly under the State Council Information Office of the State Council of the People's Republic of China."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. China's State Council\n2. Xinhua news agency"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| China's State Council |\n| Xinhua news agency |"}
+  ]
+}

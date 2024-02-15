@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The superoxide scavenger tempol ( 30 , 100 , and 300 micromol kg ( - 1 ) , IV ) did not change arterial pressure in control rats but caused a dose - dependent decrease in LNNA rats ( - 18 + / - 8 , - 26 + / - 15 , and - 54 + / - 11 mm Hg ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Control rats |\n| LNNA rats |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| LNNA rats |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The superoxide scavenger tempol ( 30 , 100 , and 300 micromol kg ( - 1 ) , IV ) did not change arterial pressure in control rats but caused a dose - dependent decrease in LNNA rats ( - 18 + / - 8 , - 26 + / - 15 , and - 54 + / - 11 mm Hg ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| tempol |\n| micromol |\n| kg |\n| arterial pressure |\n| mm Hg |\n| LNNA |\n| control rats |\n| - 18 + / - 8 mm Hg |\n| - 26 + / - 15 mm Hg |\n| - 54 + / - 11 mm Hg |\n\nIn this paragraph, \"tempol\" is the chemical entity mentioned. The other entities are not chemicals but rather units of measurement or experimental conditions. However, for completeness, I have included \"mm Hg\" and \"LNNA\" as they are relevant to the chemical entity \"tempol\" and its effect on arterial pressure."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| tempol |\n| micromol |\n| kg |\n| LNNA |\n\nIn this revised table, I have removed \"mm Hg\" as it is a unit of measurement for pressure and not a chemical entity. The other entities, \"tempol\", \"micromol\", \"kg\", and \"LNNA\" are chemical entities mentioned in the paragraph."}
+  ]
+}

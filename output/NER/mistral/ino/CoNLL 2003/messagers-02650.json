@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" But I do remember we had a cobra snake in the basement of our house .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. I\n2. we (collective reference to the speaker and possibly others)\n3. a cobra snake."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. I\n2. we (collective reference to the speaker and possibly others)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| I     |\n| we    |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" But I do remember we had a cobra snake in the basement of our house .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. basement of our house.\n\nThis is the location entity in the paragraph. It refers to the specific area under the house where the cobra snake was found."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. basement.\n\nThis is the only location entity in the paragraph that clearly refers to a specific physical location where the event took place."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| basement |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" But I do remember we had a cobra snake in the basement of our house .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. House (the organization where the cobra snake was found in the basement)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. House (the organization where the cobra snake was found in the basement)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| House |"}
+  ]
+}

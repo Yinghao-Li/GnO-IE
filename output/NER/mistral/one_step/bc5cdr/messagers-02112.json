@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The effectiveness of PTRA on renal function seems to be barely influenced by CM toxicity .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| CM toxicity |\n| Renal function |\n\nIn this paragraph, \"CM toxicity\" and \"renal function\" are the identified disease entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| CM toxicity |\n| (Renal function is not a disease, it's a body function, so it should not be included in the table.) |\n\nIn this paragraph, \"CM toxicity\" is the identified disease entity. \"Renal function\" is a body function and should not be included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The effectiveness of PTRA on renal function seems to be barely influenced by CM toxicity .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| PTRA |\n| CM |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| PTRA (PTRA is an abbreviation, but it is mentioned as a specific substance) |\n| CM (CM is mentioned as an abbreviation, but it is not clear what it stands for, so it could potentially refer to a chemical, but more context is needed) |\n\nBased on the given context, it is not clear whether \"CM\" refers to a specific chemical entity. Therefore, it is included in the table with a caution that more context is needed to confirm its validity as a chemical entity."}
+  ]
+}

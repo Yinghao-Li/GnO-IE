@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: HOUSTON 16 2 .889 -\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Houston\n\nThis is a proper noun and represents a city in Texas, USA. It is an unambiguous \"Person\" entity in the given context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Houston\n\nThis is the only clear \"Person\" entity in the given context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Houston |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: HOUSTON 16 2 .889 -\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Houston: This is an unambiguous location mentioned at the beginning of the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Houston"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Houston |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: HOUSTON 16 2 .889 -\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Houston: City in Texas, USA.\n2. 16: Unclear without additional context. It could be a reference to a specific team, company, or other organization, but without more information, it cannot be definitively identified as an organization.\n3. 2: Unclear without additional context. It could be a reference to a specific team, company, or other organization, but without more information, it cannot be definitively identified as an organization.\n4. .889: Unclear without additional context. It could be a reference to a statistical figure or rating related to an organization, but without more information, it cannot be definitively identified as an organization."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Houston: City in Texas, USA. (not an organization, but included for context)\n2. Unclear: Without additional context, it is unclear if \"16\" and \".889\" refer to organizations. Therefore, they cannot be included in the list of organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Houston |"}
+  ]
+}

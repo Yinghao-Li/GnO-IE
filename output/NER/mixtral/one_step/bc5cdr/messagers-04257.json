@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We wish to draw attention to the possibility of adverse reactions to ACE inhibitors after long - term use and in patients with pre - existing angio - oedema .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| adverse reactions to ACE inhibitors |\n| pre-existing angio-oedema |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| adverse reactions to ACE inhibitors |\n| angio-oedema |\n\nI have removed \"pre-existing\" as it is a modifier describing the angio-oedema, not a separate disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We wish to draw attention to the possibility of adverse reactions to ACE inhibitors after long - term use and in patients with pre - existing angio - oedema .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| ACE inhibitors |\n| angio-oedema |\n\nExplanation:\n\n* ACE inhibitors: A class of medications used for treating hypertension, heart failure, and other cardiovascular diseases. ACE stands for Angiotensin-Converting Enzyme.\n* angio-oedema: A condition characterized by rapid swelling of the dermis, subcutaneous tissue, mucosa, and submucosal tissues."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| ACE inhibitors |\n\nExplanation:\n\n* ACE inhibitors: A class of medications used for treating hypertension, heart failure, and other cardiovascular diseases. ACE stands for Angiotensin-Converting Enzyme.\n\nThe term \"angio-oedema\" is not a chemical entity, but a medical condition. Therefore, it has been removed from the list."}
+  ]
+}

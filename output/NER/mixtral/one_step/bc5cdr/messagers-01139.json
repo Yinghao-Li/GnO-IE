@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As the precordial pain in this patient was considered to have been due to 5 - FU - induced cardiotoxicity , the administration of 5 - FU was abandoned .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| 5 - FU - induced cardiotoxicity |\n\nExplanation:\n\nIn the given paragraph, the disease entity is \"5 - FU - induced cardiotoxicity.\" It is a condition in which the drug 5-FU (5-fluorouracil) causes damage to the heart."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| 5 - FU - induced cardiotoxicity |\n\nExplanation:\n\nIn the given paragraph, the only clear disease entity is \"5 - FU - induced cardiotoxicity.\" The other term, \"precordial pain,\" is a symptom or a complaint rather than a disease. Therefore, it is not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As the precordial pain in this patient was considered to have been due to 5 - FU - induced cardiotoxicity , the administration of 5 - FU was abandoned .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 5 - FU |\n| 5 - FU - induced cardiotoxicity |\n\nExplanation:\n\n* \"5 - FU\" is mentioned twice in the paragraph, and it is a chemical (an abbreviation for a chemotherapeutic drug called Fluorouracil).\n* \"5 - FU - induced cardiotoxicity\" is a chemical-related term, referring to the toxic effect on the heart caused by the administration of the drug 5 - FU."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 5 - FU |\n\nExplanation:\n\n* \"5 - FU\" is the only chemical entity in the paragraph.\n* \"5 - FU - induced cardiotoxicity\" is not a chemical entity, but rather a description of a toxic effect caused by the chemical entity \"5 - FU\"."}
+  ]
+}

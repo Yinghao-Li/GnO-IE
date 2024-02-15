@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rio de Janeiro state university officials discovered students were paying 15,000 reais ( $ 14,563 ) for the special watches , which operated like a telephone pager to receive correct answers , O Globo said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| university officials |\n| students |\n| O Globo (this could be debated as it's a newspaper name, but I'm including it as it's mentioned in a way that implies a person or group of people provided the information in the sentence) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| university officials |\n| students |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rio de Janeiro state university officials discovered students were paying 15,000 reais ( $ 14,563 ) for the special watches , which operated like a telephone pager to receive correct answers , O Globo said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Rio de Janeiro state |\n\nExplanation:\n\n* \"Rio de Janeiro state\" is a location entity as it refers to a political division within Brazil."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Rio de Janeiro state |\n\nExplanation:\n\n* \"Rio de Janeiro state\" is the only location entity in the paragraph as it refers to a political division within Brazil. The other entities mentioned in the paragraph, such as \"15,000 reais\" and \"$ 14,563\" refer to a monetary value, and \"special watches\" and \"telephone pager\" refer to objects, not locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rio de Janeiro state university officials discovered students were paying 15,000 reais ( $ 14,563 ) for the special watches , which operated like a telephone pager to receive correct answers , O Globo said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Rio de Janeiro state university |\n\nThe \"Organization\" entity in the paragraph is \"Rio de Janeiro state university\". It is a educational institution located in the state of Rio de Janeiro, Brazil."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Rio de Janeiro state university |\n\nThe only \"Organization\" entity in the paragraph is \"Rio de Janeiro state university\". The other entities mentioned in the paragraph, such as \"students\" and \"15,000 reais\", do not clearly refer to organizations."}
+  ]
+}

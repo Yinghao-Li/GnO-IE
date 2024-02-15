@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The protest culminated at dawn on Tuesday with several hundred students being detained briefly by police in central Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Several hundred students\n\nThese are the identified \"Person\" entities in the paragraph. The paragraph mentions a group of people who were detained by the police, and the number and type of people are specified as students."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Several hundred students\n\nThese are the identified and relevant \"Person\" entities in the paragraph. The paragraph mentions a group of people who were detained by the police, and the number and type of people are specified as students. All other entities in the paragraph, such as \"dawn on Tuesday\" and \"central Rangoon,\" are not relevant to identifying \"Person\" entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Several hundred students |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The protest culminated at dawn on Tuesday with several hundred students being detained briefly by police in central Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. central Rangoon: This is a location where the event took place. It is specifically mentioning the central part of Rangoon city."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "central Rangoon"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| central Rangoon |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The protest culminated at dawn on Tuesday with several hundred students being detained briefly by police in central Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Protest: This is an event or action, not an organization.\n2. Several hundred students: This is a group of individuals, not an organization.\n3. Police: This is an organization. (Specifically, the law enforcement agency in this context.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Police."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Police |"}
+  ]
+}

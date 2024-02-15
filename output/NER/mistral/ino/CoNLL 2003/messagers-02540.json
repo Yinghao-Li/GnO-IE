@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 8. Ingeborg Helen Marken ( Norway ) 1:49.41\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ingeborg Helen Marken\n\nThis is the named entity mentioned in the paragraph. It is a person, specifically Ingeborg Helen Marken."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Ingeborg Helen Marken\n\nThis is the only clearly identified person entity in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Ingeborg Helen Marken |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 8. Ingeborg Helen Marken ( Norway ) 1:49.41\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Norway\n\nThis is an unambiguous location mention in the paragraph. Ingeborg Helen Marken is from Norway."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Norway"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Norway |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 8. Ingeborg Helen Marken ( Norway ) 1:49.41\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ingeborg Helen Marken\n2. Norway\n\nIn this paragraph, \"Ingeborg Helen Marken\" is a person, and \"Norway\" is an organization or country."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Norway\n\nIn this paragraph, only \"Norway\" can be considered an organization or entity that is directly relevant to the context. \"Ingeborg Helen Marken\" is a person and not an organization."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Norway |"}
+  ]
+}

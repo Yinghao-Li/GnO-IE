@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The negotiations will be held both in Toronto and in Jakarta , \" one source , speaking on condition of anonymity , told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| one source |\n\nThe only \"Person\" entity in the paragraph is \"one source\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| one source |\n\nThe only clear \"Person\" entity in the paragraph is \"one source\". The phrase \"Reuters\" could potentially refer to a group of people, but it is not clearly a person in this context, so it has been removed."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The negotiations will be held both in Toronto and in Jakarta , \" one source , speaking on condition of anonymity , told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Toronto      |\n| Jakarta     |\n\nThe two \"Location\" entities identified are \"Toronto\" and \"Jakarta\". These are the places where the negotiations will be held, as mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Toronto      |\n| Jakarta     |\n\nThe two \"Location\" entities identified are \"Toronto\" and \"Jakarta\". These are the only clear location entities mentioned in the paragraph. The phrase \"one source, speaking on condition of anonymity, told Reuters\" does not refer to a location, so it was not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The negotiations will be held both in Toronto and in Jakarta , \" one source , speaking on condition of anonymity , told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "There are no \"Organization\" entities in the provided paragraph. The paragraph only mentions two locations, \"Toronto\" and \"Jakarta\", and a source who wishes to remain anonymous. There are no organizations mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "There are no \"Organization\" entities in the provided paragraph. The paragraph does not mention any organizations."}
+  ]
+}

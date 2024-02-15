@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bochum 2 ( Stickroth 30th pen , Wosz 89th ) Bayer Leverkusen 2 ( Kirsten 18th , Ramelow 56th ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Bochum 2 (Stickroth) |\n| Bochum 2 (30th pen) |\n| Bochum 2 (Wosz) |\n| Bayer Leverkusen 2 (Kirsten) |\n| Bayer Leverkusen 2 (56th) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Bochum 2 (Stickroth) |\n| Bochum 2 (Wosz) |\n| Bayer Leverkusen 2 (Kirsten) |\n| Bayer Leverkusen 2 (Ramelow) |\n\nExplanation: In the original paragraph, \"Bochum 2 (30th pen)\" and \"Bayer Leverkusen 2 (56th)\" do not clearly refer to persons, but rather to the event of the 30th penalty for Bochum 2 and the 56th event for Bayer Leverkusen. Therefore, they should not be included in the table of persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bochum 2 ( Stickroth 30th pen , Wosz 89th ) Bayer Leverkusen 2 ( Kirsten 18th , Ramelow 56th ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Bochum 2 (Stickroth 30th) |\n| Bayer Leverkusen 2 (Kirsten 18th) |\n| Bayer Leverkusen 2 (Ramelow 56th) |\n\nThese are the precise locations mentioned in the paragraph. The first two entries represent the two different areas on the football pitch where the goals were scored for each team in the given match. The third entry is the location specified for Ramelow's goal for Bayer Leverkusen."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Bochum 2 (Stickroth) |\n| Bayer Leverkusen 2 (Kirsten 18th) |\n| Bayer Leverkusen 2 (Ramelow 56th) |\n\nThese are the entities in the paragraph that clearly refer to locations. The first two entries represent the areas on the football pitch where the goals were scored for each team in the given match. The third entry includes the \"Bayer Leverkusen 2\" part, which refers to the specific location on the field for that team."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bochum 2 ( Stickroth 30th pen , Wosz 89th ) Bayer Leverkusen 2 ( Kirsten 18th , Ramelow 56th ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Bochum |\n| Bayer Leverkusen |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Bochum |\n| Bayer Leverkusen |"}
+  ]
+}

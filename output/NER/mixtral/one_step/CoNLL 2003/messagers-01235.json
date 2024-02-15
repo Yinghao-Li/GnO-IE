@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: I see in him the profile of a secretray-general of the United Nations and I have given my endorsement . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| secretray-general of the United Nations |\n\nNote: I'm assuming that the misspelling of \"secretary\" as \"secretray\" in the original paragraph is a typo. If it's not, then the corrected spelling should be used instead."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| a secretray-general of the United Nations |\n\nNote: The only clear \"Person\" entity in the original paragraph is \"a secretray-general of the United Nations\". The phrase \"I\" could be interpreted as a person, but it is not explicitly mentioned as a person in the paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: I see in him the profile of a secretray-general of the United Nations and I have given my endorsement . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| United Nations |\n\nThe entity \"United Nations\" is the only location mentioned in the paragraph. It is a global organization with headquarters in New York City, but it is recognized by its name and does not require specifying the city or country."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| United Nations |\n\nThe entity \"United Nations\" is the only location mentioned in the paragraph. The other term \"secretray-general\" is a role or position, not a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: I see in him the profile of a secretray-general of the United Nations and I have given my endorsement . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Nations |\n\nExplanation:\n\nIn the given paragraph, the \"Organization\" entity is \"United Nations\". It is mentioned as the organization for which the author can see the profile of a secretary-general in a certain individual."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Nations |\n\nExplanation:\n\nIn the given paragraph, the only clear \"Organization\" entity is \"United Nations\". The term \"secretray-general\" is a role or position, not an organization. Therefore, it is not included in the table."}
+  ]
+}

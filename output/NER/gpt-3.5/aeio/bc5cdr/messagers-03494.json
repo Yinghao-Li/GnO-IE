@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: After pretreatment with 3 mg of cyproheptadine , 2 mg mianserin , or 2 mg chlorpheniramine , only 5 of 105 animals (5 %) died after receiving BSA on day + 7 (p less than 0 . 001) .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nThere is no mention of a specific disease in the paragraph. Therefore, there is no \"Disease\" entity to identify.\n\nStep 2: Identify the \"Chemical\" entity.\nThe following chemicals are mentioned in the paragraph:\n- cyproheptadine\n- mianserin\n- chlorpheniramine\n- BSA (bovine serum albumin)\n\nTherefore, the \"Chemical\" entities in the paragraph are:\n- cyproheptadine\n- mianserin\n- chlorpheniramine\n- BSA (bovine serum albumin)"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "After pretreatment with 3 mg of cyproheptadine, 2 mg mianserin, or 2 mg chlorpheniramine, only 5 of 105 animals (5%) died after receiving BSA on day + 7 (p less than 0.001).\n\nThe entities that clearly refer to \"['Disease', 'Chemical']\" are:\n\n- cyproheptadine\n- mianserin\n- chlorpheniramine"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity           | Entity Type |\n|------------------|-------------|\n| cyproheptadine   | Chemical    |\n| mianserin        | Chemical    |\n| chlorpheniramine | Chemical    |"}
+]

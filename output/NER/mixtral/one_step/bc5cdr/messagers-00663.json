@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Histopathological examination revealed many lipophages in the periorbital fat surrounding the optic nerve in 1 eye , indicative of phagocytosis of previously existing fat cells and suggesting prior fat necrosis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| fat necrosis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| fat necrosis |\n\nThe term \"phagocytosis\" is a process and not a disease. The term \"lipophages\" refers to cells that are involved in the process of phagocytosis, and not a disease. The term \"fat necrosis\" is the only clear disease reference in the paragraph."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Histopathological examination revealed many lipophages in the periorbital fat surrounding the optic nerve in 1 eye , indicative of phagocytosis of previously existing fat cells and suggesting prior fat necrosis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| fat |\n| fat cells |\n\nExplanation:\n\nThe paragraph mentions two chemical entities, \"fat\" and \"fat cells\". These terms are used in the context of lipophages and fat necrosis, indicating that they are being referred to as substances or materials rather than as general concepts. Therefore, it is appropriate to identify them as chemical entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| fat |\n\nExplanation:\n\nUpon closer examination, the term \"fat cells\" can be considered a more specific type of \"fat\" and may not necessarily be a chemical entity in and of itself. Therefore, the valid chemical entity in the paragraph is \"fat\"."}
+  ]
+}

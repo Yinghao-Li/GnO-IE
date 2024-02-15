@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: He was found to have atrial flutter at a ventricular rate of 70 / min which slowed down to 30 - 40 / min when nifedipine (60 mg) in 3 divided doses , during which he was paced at a rate of 70 / min .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nIn the given paragraph, the disease entity mentioned is \"atrial flutter\".\n\nStep 2: Identify the \"Chemical\" entity.\nIn the given paragraph, the chemical entity mentioned is \"nifedipine\".\n\nSo, the identified \"['Disease', 'Chemical']\" entities in the paragraph are:\n- Disease: atrial flutter\n- Chemical: nifedipine"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the entity \"atrial flutter\" clearly refers to the disease entity. However, the entity \"nifedipine\" does not clearly refer to the chemical entity as it is mentioned in the context of a treatment or medication. Therefore, we can remove the entity \"nifedipine\" from the identified entities.\n\nSo, the identified \"['Disease', 'Chemical']\" entity in the paragraph is:\n- Disease: atrial flutter"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity          | Entity Type |\n|-----------------|-------------|\n| atrial flutter  | Disease     |"}
+]

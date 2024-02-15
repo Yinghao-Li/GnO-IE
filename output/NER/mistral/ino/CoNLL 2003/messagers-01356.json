@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Bomb explodes outside home of expelled Slovak MP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Bomb\n2. Home\n3. Expelled Slovak MP\n\nThe \"Person\" entity in this paragraph is \"Expelled Slovak MP\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Expelled Slovak MP.\n\nThis is the only entity in the paragraph that clearly refers to a person. The other entities, \"Bomb\" and \"Home,\" do not refer to specific persons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Expelled Slovak MP |\n\nThis table only includes the entity that refers to a person in the paragraph, which is \"Expelled Slovak MP\". The other entities, \"Bomb\" and \"home,\" are not included as they do not refer to specific persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Bomb explodes outside home of expelled Slovak MP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Home of expelled Slovak MP\n\nThis is the location mentioned in the paragraph. The paragraph does not provide any additional location information, so this is the only identified location entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Home\n\nThis is the only identified location entity in the paragraph. The rest of the entities mentioned in the paragraph (Bomb, outside, of, expelled Slovak MP) do not refer to specific locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Home |\n\nThis table presents the only identified location entity in the paragraph, which is \"Home\" (the home of the expelled Slovak MP)."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Bomb explodes outside home of expelled Slovak MP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Slovakia\n2. Home (implicit: of the expelled MP)\n3. Bomb disposal team (implied: for handling the explosion)\n4. Police (implied: for investigating the incident)\n5. Government (implied: of Slovakia, likely the one that expelled the MP)\n\nThe entities identified above are organizations. The paragraph does not explicitly mention any other organizations."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Government (of Slovakia)\n2. Police\n3. Bomb disposal team\n\nThese are the entities in the paragraph that clearly refer to organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Government (of Slovakia) |\n| Police |\n| Bomb disposal team |"}
+  ]
+}

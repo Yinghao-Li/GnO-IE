@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: -- Singapore Newsroom ( 65-8703305 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Singapore Newsroom\n2. 65-8703305 (This is likely a phone number and not a person, but I'll leave it here for context.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. (Singapore Newsroom)\n\n(Note: In the original paragraph, \"Let's think step by step.\" is not a person entity and can be disregarded.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Singapore Newsroom |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: -- Singapore Newsroom ( 65-8703305 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Singapore: This is the country where the \"Singapore Newsroom\" is located.\n2. 65: This is the country code for international calls to Singapore.\n3. 8703305: This is a phone number, but it can be assumed that it is located in Singapore based on the country code.\n\nTherefore, the location entities in the paragraph are \"Singapore\" and \"65\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entity in the paragraph is \"Singapore\".\n\nThe phone number \"8703305\" is not a location, it is a phone number associated with the \"Singapore Newsroom\" which is located in Singapore."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Singapore |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: -- Singapore Newsroom ( 65-8703305 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Singapore Newsroom\n2. (65-8703305) - This phone number is not an organization per se, but rather a contact detail for Singapore Newsroom."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Singapore Newsroom"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Singapore Newsroom |"}
+  ]
+}

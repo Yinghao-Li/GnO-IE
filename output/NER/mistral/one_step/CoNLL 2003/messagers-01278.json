@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Four skinheads attacked and insulted the rabbi of Bratislava , Baruch Meyers , in the city centre on Friday , but he escaped unharmed , a police spokesman told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| police spokesman |\n| Baruch Meyers |\n| rabbi of Bratislava |\n| Four skinheads |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| police spokesman |\n| Baruch Meyers |\n| Four skinheads |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Four skinheads attacked and insulted the rabbi of Bratislava , Baruch Meyers , in the city centre on Friday , but he escaped unharmed , a police spokesman told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| city centre of Bratislava |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| city centre of Bratislava |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Four skinheads attacked and insulted the rabbi of Bratislava , Baruch Meyers , in the city centre on Friday , but he escaped unharmed , a police spokesman told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Reuters |\n| Police |\n| City centre |\n\nIn this paragraph, \"Reuters\" is the news agency that reported the incident, \"Police\" is the law enforcement agency involved in the incident, and \"city centre\" refers to the location where the incident took place."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Police |\n\nIn this paragraph, \"Police\" is the only organization mentioned. \"Reuters\" is a media outlet that reported the incident, but it is not mentioned as an organization in the paragraph itself. \"City centre\" is a location, not an organization. \"Four skinheads\" and \"rabbi Baruch Meyers\" are individuals, not organizations."}
+  ]
+}

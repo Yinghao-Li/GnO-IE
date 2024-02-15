@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: POLAND GOT MONEY FROM POST-WAR SWISS ACCOUNTS .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| POLAND |\n| POST-WAR SWISS ACCOUNTS (not a person, but included for context) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| POLAND |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: POLAND GOT MONEY FROM POST-WAR SWISS ACCOUNTS .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| POLAND     |\n| SWITZERLAND|\n\nPlease note that the capitalization of the location names follows the original paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| SWITZERLAND|\n\nThe only clear location entity in the paragraph is \"SWITZERLAND\". The mention of \"POLAND\" in the context of \"POLAND GOT MONEY FROM POST-WAR SWISS ACCOUNTS\" is not a location entity, but rather the recipient of money."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: POLAND GOT MONEY FROM POST-WAR SWISS ACCOUNTS .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| POLAND |\n| SWISS ACCOUNTS |\n\nNote: I have capitalized the organization names as per the standard conventions. \"POLAND\" is considered as an organization in this context as it is referred to as a country and is treated as a singular entity. \"SWISS ACCOUNTS\" is also considered as an organization as it refers to a group of bank accounts held by the Swiss government or financial institutions."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SWISS ACCOUNTS |\n\nNote: In the given paragraph, \"POLAND\" does not clearly refer to an \"Organization\" and hence has been removed from the list. \"SWISS ACCOUNTS\" is the only valid organization entity present in the paragraph."}
+  ]
+}

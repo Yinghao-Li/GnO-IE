@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This coincides with the relative HOMO energy levels of the polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| the polymers |\n\nNote: The word \"the\" is included in the entity as it is part of the original phrase."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| the polymers |\n\nNote: In this paragraph, the only clear material name reference is \"the polymers\". The relative HOMO energy levels are not materials themselves, but properties of materials."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This coincides with the relative HOMO energy levels of the polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO energy levels |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO energy levels |\n\nNote: I have assumed that \"HOMO\" refers to a material property, as it is a term commonly used in materials science to refer to the Highest Occupied Molecular Orbital in a material. If \"HOMO\" does not refer to a material property in this context, then there are no valid entities in the paragraph."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This coincides with the relative HOMO energy levels of the polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| HOMO energy levels |\n\nThe \"Property Value\" entity identified in the paragraph is \"HOMO energy levels.\" It is a property value associated with the polymers mentioned in the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| HOMO energy levels |\n\nThe only entity that clearly refers to the \"Value of material property\" in the paragraph is \"HOMO energy levels.\" It is a property value associated with the polymers mentioned in the paragraph. The term \"relative\" was not considered an entity since it is a comparative term and not a value of a material property."
+    }
+  ]
+}

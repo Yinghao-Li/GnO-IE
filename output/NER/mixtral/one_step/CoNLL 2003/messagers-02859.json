@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" I 'd like to come over but there are a lot of things happening at home .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| I |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| I |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" I 'd like to come over but there are a lot of things happening at home .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| home |\n\nExplanation: The word \"home\" is the only location entity mentioned in the paragraph. It is the location where there are a lot of things happening, as mentioned by the speaker."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| home |\n\nExplanation: The word \"home\" is the only location entity mentioned in the paragraph. The phrase \"over\" is a preposition that can indicate location, but it is not a specific location in this context. Therefore, it is not included as a location entity."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" I 'd like to come over but there are a lot of things happening at home .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| home |\n\nNote: The word \"home\" is considered an \"Organization\" entity in this context, as it is being used metaphorically to refer to a household or family as a functioning unit."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| home |\n\nNote: In this paragraph, there is only one organization entity, which is \"home\". The other entities such as \"I\" and \"there\" do not clearly refer to organizations."}
+  ]
+}

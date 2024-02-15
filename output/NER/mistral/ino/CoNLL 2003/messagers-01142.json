@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: In November , New York City said it became the first U.S. municipality to offer bonds for sale in European markets by competitive bidding as it listed taxable bonds on the London Stock Exchange .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. New York City\n\nThe paragraph mentions \"New York City\" as the entity that became the first U.S. municipality to offer bonds for sale in European markets by competitive bidding and listed taxable bonds on the London Stock Exchange. Therefore, New York City is the identified \"Person\" entity in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "New York City"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| New York City |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: In November , New York City said it became the first U.S. municipality to offer bonds for sale in European markets by competitive bidding as it listed taxable bonds on the London Stock Exchange .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. New York City\n2. November (not a location but providing context to the event)\n3. United States (implied, but not explicitly stated, since New York City is the first U.S. municipality mentioned)\n4. European markets\n5. London Stock Exchange"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. New York City\n2. London Stock Exchange"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| New York City |\n| London Stock Exchange |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: In November , New York City said it became the first U.S. municipality to offer bonds for sale in European markets by competitive bidding as it listed taxable bonds on the London Stock Exchange .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. New York City\n\nThis is clearly identified as the organization making the announcement in the paragraph. It is the entity that is issuing the bonds and selling them in European markets through competitive bidding on the London Stock Exchange."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. New York City\n\nThis is the only organization explicitly mentioned in the paragraph. All other entities, such as \"November,\" \"municipality,\" and \"London Stock Exchange,\" are not organizations but rather descriptive terms or locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| New York City |"}
+  ]
+}

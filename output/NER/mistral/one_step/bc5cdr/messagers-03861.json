@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Therefore , the effect of bis ( p - nitrophenyl ) phosphate ( BNPP ) , an acylamidase inhibitor , on APAP and PAP nephrotoxicity and metabolism was determined .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| APAP nephrotoxicity |\n| PAP nephrotoxicity |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| APAP nephrotoxicity |\n| PAP nephrotoxicity |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Therefore , the effect of bis ( p - nitrophenyl ) phosphate ( BNPP ) , an acylamidase inhibitor , on APAP and PAP nephrotoxicity and metabolism was determined .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| bis (p-nitrophenyl) phosphate (BNPP) |\n| acylamidase |\n| APAP (Acetaminophen or Paracetamol) |\n| PAP |\n\nExplanation:\n\n1. \"bis (p-nitrophenyl) phosphate (BNPP)\" is a specific inhibitor of acylamidase.\n2. \"acylamidase\" is an enzyme that is inhibited by BNPP.\n3. \"APAP (Acetaminophen or Paracetamol)\" is a drug that undergoes nephrotoxicity.\n4. \"PAP\" is not explicitly defined in the paragraph, but it can be assumed that it is a metabolite of APAP."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| bis (p-nitrophenyl) phosphate (BNPP) |\n| acylamidase |\n| APAP (Acetaminophen or Paracetamol) |\n\nExplanation:\n\n1. \"Therefore\" and \"the effect of\" are not chemical entities.\n2. \"an acylamidase inhibitor\" describes the function of BNPP, but BNPP itself is the chemical entity.\n3. \"nephrotoxicity and metabolism\" are not chemical entities, but rather processes that involve chemicals.\n4. \"was determined\" is not a chemical entity."}
+  ]
+}

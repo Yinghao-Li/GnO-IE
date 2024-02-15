@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Several minutes after the GTN the patient experienced a sudden drop in blood pressure and heart rate , this was rectified by atropine sulphate and a fluid challenge .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| GTN |\n| Atropine sulphate |\n| Fluid challenge |\n\nNote:\n\n* GTN stands for \"Gastrointestinal Tract Necrosis\"\n* Atropine sulphate is a medication used to treat certain medical conditions, but it is not a disease.\n* Fluid challenge is a medical procedure, not a disease."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Gastrointestinal Tract Necrosis |\n\nNote:\n\n* GTN was the only entity in the paragraph that clearly refers to a disease.\n* Atropine sulphate and fluid challenge are not diseases, but rather a medication and a medical procedure, respectively."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Several minutes after the GTN the patient experienced a sudden drop in blood pressure and heart rate , this was rectified by atropine sulphate and a fluid challenge .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Atropine sulphate |\n\nThe paragraph mentions \"atropine sulphate\" as a chemical entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Atropine sulphate |\n\nThe paragraph only mentions \"atropine sulphate\" as a chemical entity. \"Fluid challenge\" is not a chemical entity, it's a medical procedure, so it should be excluded.\n\nTherefore, the table above presents the valid chemical entity \"Atropine sulphate\" in the same words as in the original paragraph."}
+  ]
+}

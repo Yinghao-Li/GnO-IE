@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" I 've never tried it and why should I ?\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| I |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| I |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" I 've never tried it and why should I ?\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| It | (implicit, assumed to be the context or the specific thing being referred to in the paragraph) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| It | (implicit, assumed to be the context or the specific thing being referred to in the paragraph) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" I 've never tried it and why should I ?\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| I |\n| It | (Unclear without additional context) |\n\nNote: In the given paragraph, \"I\" is a person and \"It\" is ambiguous without additional context. Since the question asked for \"Organization\" entities, neither \"I\" nor \"It\" fit the criteria. However, I have included \"I\" for completeness and clarity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| I |\n\nNote: In the given paragraph, \"I\" is a person and does not clearly refer to an organization. Therefore, it should not be included in the table. Since the paragraph does not contain any clear references to organizations, the table is empty."}
+  ]
+}

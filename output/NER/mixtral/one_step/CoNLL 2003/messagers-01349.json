@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Russian President Boris Yeltsin , who had heart bypass surgery a month ago , plans to return to work on December 25 , the head of the upper chamber of parliament told Interfax news agency on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Russian President Boris Yeltsin |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Russian President Boris Yeltsin |\n\nNote: I have removed \"the head of the upper chamber of parliament\" as it is not clear from the context whether this refers to a specific person or a role/position."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Russian President Boris Yeltsin , who had heart bypass surgery a month ago , plans to return to work on December 25 , the head of the upper chamber of parliament told Interfax news agency on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Russia       |\n\nExplanation:\nThe only location entity mentioned in the paragraph is \"Russia\", which is the country where Russian President Boris Yeltsin is from."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Russia       |\n\nExplanation:\nThe only location entity mentioned in the paragraph is \"Russia\", which is the country where Russian President Boris Yeltsin is from. The other entities such as \"a month ago\" and \"December 25\" do not clearly refer to a location and are not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Russian President Boris Yeltsin , who had heart bypass surgery a month ago , plans to return to work on December 25 , the head of the upper chamber of parliament told Interfax news agency on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| upper chamber of parliament |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| upper chamber of parliament |\n\nThe other entity mentioned in the paragraph, \"Interfax news agency\", is a news organization, but it is not clear whether it is being referred to as an organization in this context. Therefore, I have not included it in the table."}
+  ]
+}

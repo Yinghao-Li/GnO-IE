@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Prevalence of heart disease in asymptomatic chronic cocaine users .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| heart disease |\n| chronic cocaine use |\n| asymptomatic |\n\nExplanation:\n\n1. \"heart disease\" is a specific type of disease that is mentioned in the paragraph.\n2. \"asymptomatic\" refers to the absence of symptoms, but it is often used as a modifier for conditions or diseases, so it is included as a disease entity in this context.\n3. \"chronic cocaine users\" is not a disease per se, but it is mentioned in relation to the prevalence of heart disease, so it is included here as a contextual factor."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| heart disease |\n\nExplanation:\n\n1. \"asymptomatic\" is not a disease, but rather a description of a condition. Therefore, it should not be included in the table.\n2. \"chronic cocaine users\" is not a disease, but rather a group of people with a specific behavior. Therefore, it should not be included in the table.\n3. The paragraph only mentions \"heart disease\" as the specific disease entity."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Prevalence of heart disease in asymptomatic chronic cocaine users .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| chronic cocaine |\n\nThe paragraph does not contain any other explicit chemical entities. However, it mentions \"chronic cocaine\" which is a specific form of the chemical compound cocaine."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| chronic cocaine |\n\nThe paragraph only mentions \"chronic cocaine\" as a potential chemical entity."}
+  ]
+}

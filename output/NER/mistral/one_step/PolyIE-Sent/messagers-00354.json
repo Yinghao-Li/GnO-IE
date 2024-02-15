@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The current-density-voltage ( J-V ) characteristics of the devices under the illumination of simulated AM 1.5G conditions ( 100 mW / cm^2 ) are shown in Figure 4a and the parameters are summarized in Table 2.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| current-density-voltage (J-V) characteristics |\n| devices |\n| simulated AM 1.5G conditions |\n| Figure 4a |\n| Table 2 |\n\nThe \"Material Name\" entities in the paragraph are:\n\n1. current-density-voltage (J-V) characteristics\n2. devices\n3. simulated AM 1.5G conditions\n4. Figure 4a\n5. Table 2"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| current-density-voltage (J-V) characteristics of devices |\n| simulated AM 1.5G conditions |\n| Figure 4a |\n| Table 2 |\n\nThe \"Material Name\" entities in the paragraph are:\n\n1. current-density-voltage (J-V) characteristics of devices\n2. simulated AM 1.5G conditions\n3. Figure 4a\n4. Table 2\n\nThe entities \"devices\" refers to the specific material or substance that the J-V characteristics are being measured for, so it is considered a material name. The other entities are either figures, tables, or conditions under which the measurements were taken."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The current-density-voltage ( J-V ) characteristics of the devices under the illumination of simulated AM 1.5G conditions ( 100 mW / cm^2 ) are shown in Figure 4a and the parameters are summarized in Table 2.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| current-density-voltage (J-V) characteristics |\n| devices under the illumination of simulated AM 1.5G conditions |\n| simulated AM 1.5G conditions |\n| illumination intensity (100 mW / cm^2) |\n| Figure 4a |\n| Table 2 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| current-density-voltage (J-V) characteristics |\n| simulated AM 1.5G conditions |\n| illumination intensity (100 mW / cm^2) |\n\nNote: \"devices\" is not a material property and was removed from the table."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The current-density-voltage ( J-V ) characteristics of the devices under the illumination of simulated AM 1.5G conditions ( 100 mW / cm^2 ) are shown in Figure 4a and the parameters are summarized in Table 2.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| current-density-voltage (J-V) characteristics |\n| devices under illumination of simulated AM 1.5G conditions |\n| simulated AM 1.5G conditions (100 mW / cm^2) |\n| Figure 4a |\n| Table 2 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| current-density-voltage (J-V) characteristics |\n| simulated AM 1.5G conditions (100 mW / cm^2) |\n| Figure 4a |\n| Table 2 (summarizes parameters) |\n\nNote: \"devices under illumination\" does not clearly refer to a material property value, so it was removed."
+    }
+  ]
+}

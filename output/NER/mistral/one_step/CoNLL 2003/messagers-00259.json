@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: J. Murray c Blewett b Warne 24\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| J. Murray |\n| C. Blewett |\n| Warne |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| J. Murray |\n| C. Blewett |\n| Warne |\n\n(Note: The \"b\" symbol does not clearly refer to a person in the given context and can be disregarded.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: J. Murray c Blewett b Warne 24\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| J. Murray's |\n| C Blewett's |\n| Warne (presumably a place name, but without additional context, it's hard to determine if it's a specific location) |\n\nNote: The paragraph does not contain any other identifiable location entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| J. Murray's |\n| C Blewett's |\n| Warne |\n\nNote: \"Let's think step by step.\" is not a location entity."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: J. Murray c Blewett b Warne 24\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| J. Murray |\n| Warne |\n\nNote: The paragraph does not contain any other identifiable organizations. The names \"Blewett\" and \"C\" are likely to be personal names, not organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Warne |\n\nNote: The paragraph only contains one identifiable organization, \"Warne\". The names \"J. Murray\" and \"Blewett\" are likely to be personal names."}
+  ]
+}

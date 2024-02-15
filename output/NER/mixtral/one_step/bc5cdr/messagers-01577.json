@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He then presented to the emergency department feeling quite ill and was found to have a blood urea nitrogen ( BUN ) concentration of of 147 mg / dl , creatinine of 15 . 3 mg / dl and serum potassium of 8 . 7 mEq / l .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| quite ill |\n\nEven though \"quite ill\" is not a specific disease, it is the reason for the patient seeking medical attention, so I included it as a disease entity. The other conditions mentioned in the paragraph are not diseases but rather lab results."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| quite ill |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He then presented to the emergency department feeling quite ill and was found to have a blood urea nitrogen ( BUN ) concentration of of 147 mg / dl , creatinine of 15 . 3 mg / dl and serum potassium of 8 . 7 mEq / l .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| blood urea nitrogen (BUN) |\n| 147 mg / dl (BUN concentration) |\n| creatinine |\n| 15 . 3 mg / dl (creatinine) |\n| serum potassium |\n| 8 . 7 mEq / l (serum potassium) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| blood urea nitrogen (BUN) |\n| creatinine |\n| serum potassium |"}
+  ]
+}

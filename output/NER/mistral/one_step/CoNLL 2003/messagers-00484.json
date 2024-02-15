@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ORLANDO AT LA LAKERS\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Orlando |\n| at Lakers |\n\nNote: \"at Lakers\" is assumed to refer to the Los Angeles Lakers team, so \"Los Angeles Lakers\" would also be a valid entity, but the original paragraph used \"at Lakers\" which is why it is presented that way here."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Orlando |\n| at Lakers |\n\nNote: \"at Lakers\" is assumed to refer to the Los Angeles Lakers team. Therefore, \"Orlando\" is the only clear \"Person\" entity in the paragraph. \"at Lakers\" is included for completeness, but it is not a clear \"Person\" entity as it refers to a team rather than an individual person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ORLANDO AT LA LAKERS\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Orlando |\n| LA Lakers |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Orlando |\n| LA Lakers (as a team location) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ORLANDO AT LA LAKERS\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| ORLANDO |\n| AT |\n| LA LAKERS |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| ORLANDO |\n| LA LAKERS |"}
+  ]
+}

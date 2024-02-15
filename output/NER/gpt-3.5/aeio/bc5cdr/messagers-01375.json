@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: During the follow - up of our patient , penicillamine was interrupted after the appearance of a lichenoid dermatitis , and zinc acetate permitted to continue the successful treatment of the patient without side - effects .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the \"['Disease', 'Chemical']\" entities in the paragraph.\n\n1. Disease entity: lichenoid dermatitis\n2. Chemical entity: penicillamine\n3. Chemical entity: zinc acetate"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to \"['Disease', 'Chemical']\" from the paragraph.\n\n1. Disease entity: lichenoid dermatitis\n2. Chemical entity: penicillamine\n3. Chemical entity: zinc acetate"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity            | Entity Type |\n|-------------------|-------------|\n| lichenoid dermatitis | Disease     |\n| penicillamine     | Chemical    |\n| zinc acetate      | Chemical    |"}
+]

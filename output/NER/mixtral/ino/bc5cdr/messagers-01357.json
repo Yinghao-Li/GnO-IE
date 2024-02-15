@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: The AMI / GI toxicity of celecoxib was similar to that of acetaminophen and seemed to be better than those of rofecoxib and NS - NSAIDs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. AMI (Acute Myocardial Infarction) can be considered a \"Disease\" entity.\n2. GI (Gastrointestinal) toxicity can also be considered a \"Disease\" entity, although it is not a specific disease but a general term for a condition affecting the gastrointestinal tract.\n3. Rofecoxib is a drug, so it is not a \"Disease\" entity.\n4. NS-NSAIDs (Non-Steroidal Anti-Inflammatory Drugs) is a class of drugs, so it is not a \"Disease\" entity.\n\nTherefore, the \"Disease\" entities in the paragraph are:\n\n* AMI (Acute Myocardial Infarction)\n* GI (Gastrointestinal) toxicity"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "* AMI (Acute Myocardial Infarction)\n* GI (Gastrointestinal) toxicity"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| AMI (Acute Myocardial Infarction) |\n| GI (Gastrointestinal) toxicity |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: The AMI / GI toxicity of celecoxib was similar to that of acetaminophen and seemed to be better than those of rofecoxib and NS - NSAIDs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Celecoxib: This is a selective cyclooxygenase-2 (COX-2) inhibitor, a type of nonsteroidal anti-inflammatory drug (NSAID) used to treat pain, inflammation, and fever.\n2. Acetaminophen: Also known as paracetamol, it is a common over-the-counter medication used for relieving pain and reducing fever.\n3. Rofecoxib: This is another selective COX-2 inhibitor, similar to celecoxib, used for treating pain, inflammation, and arthritis.\n4. NS-NSAIDs: This stands for non-selective nonsteroidal anti-inflammatory drugs, which are a class of medications that reduce pain, inflammation, and fever. Examples of NS-NSAIDs include ibuprofen, naproxen, and aspirin.\n\nAll these entities are chemical compounds or classes of chemical compounds used for their therapeutic effects."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Celecoxib\n2. Acetaminophen\n3. Rofecoxib\n4. NS-NSAIDs (non-selective nonsteroidal anti-inflammatory drugs)\n\nThese entities are the only ones that clearly refer to chemical compounds or classes of chemical compounds in the given paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical          |\n|------------------|\n| Celecoxib        |\n| Acetaminophen    |\n| Rofecoxib        |\n| NS-NSAIDs         |"}
+  ]
+}

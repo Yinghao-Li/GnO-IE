@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Synthesis of cholate was reduced by 68 % in EE - treated rats , while that of chenodeoxycholate was increased by 60 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| EE |\n| cholate |\n| chenodeoxycholate |\n\nNote: \"EE\" is not a disease, but it is mentioned in the context of the paragraph as a treatment, so it could be considered a disease entity in this context. \"cholate\" and \"chenodeoxycholate\" are also not diseases, but they are mentioned as substances that are affected by the treatment, so they could also be considered disease entities in this context."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| EE |\n\nEE is the only entity in the paragraph that clearly refers to a disease. \"cholate\" and \"chenodeoxycholate\" are not diseases, but rather substances that are affected by the treatment.\n\nTherefore, the table above presents the valid disease entities in the paragraph, with \"EE\" being the only disease entity."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Synthesis of cholate was reduced by 68 % in EE - treated rats , while that of chenodeoxycholate was increased by 60 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Cholate |\n| Chenodeoxycholate |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Cholate |\n| Chenodeoxycholate |"}
+  ]
+}

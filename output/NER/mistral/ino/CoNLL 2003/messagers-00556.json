@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: INDIANAPOLIS 37 Philadelphia 10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. INDIANAPOLIS: City\n2. Philadelphia: City\n\nThere are no explicit \"Person\" entities mentioned in the paragraph. \"Indianapolis\" and \"Philadelphia\" are cities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "There are no entities in the paragraph that clearly refer to a person. Both \"Indianapolis\" and \"Philadelphia\" are cities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| None   |\n\nThere are no entities in the paragraph that refer to a person. Both \"Indianapolis\" and \"Philadelphia\" are cities."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: INDIANAPOLIS 37 Philadelphia 10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. INDIANAPOLIS: This is an unambiguous location mentioned at the beginning of the paragraph.\n2. PHILADELPHIA: This is another location mentioned in the paragraph.\n\nSo, the location entities in the paragraph are INDIANAPOLIS and PHILADELPHIA."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n\n1. INDIANAPOLIS\n2. PHILADELPHIA"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| INDIANAPOLIS |\n| PHILADELPHIA |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: INDIANAPOLIS 37 Philadelphia 10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. INDIANAPOLIS: City in Indiana, United States.\n2. PHILADELPHIA: City in Pennsylvania, United States.\n\nIn the given paragraph, there are two entities mentioned which are cities. Both cities are organizations in the sense that they have a defined structure, government, and infrastructure to provide services to their citizens."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. INDIANAPOLIS: City government or sports teams based in Indianapolis, Indiana, United States.\n2. PHILADELPHIA: City government or sports teams based in Philadelphia, Pennsylvania, United States.\n\nThe paragraph does not provide any clear indication of specific organizations within these cities, so we can only identify the cities themselves as organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| INDIANAPOLIS: City government or sports teams based in Indianapolis, Indiana, United States. |\n| PHILADELPHIA: City government or sports teams based in Philadelphia, Pennsylvania, United States. |"}
+  ]
+}

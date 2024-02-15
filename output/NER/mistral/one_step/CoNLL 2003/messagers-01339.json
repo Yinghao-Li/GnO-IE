@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Russia said on Friday it expected a constructive relationship with Madeleine Albright , nominated by U.S. President Bill Clinton to be Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Madeleine Albright |\n| Bill Clinton |\n| Russia |\n\nExplanation:\n\n1. Russia is a country, not a person.\n2. The paragraph is about Russia's expectation towards a relationship with Madeleine Albright, so she is the person entity mentioned in the paragraph.\n3. Bill Clinton is also mentioned as the U.S. President who nominated Madeleine Albright, so he is another person entity in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Madeleine Albright |\n| Bill Clinton |\n\nExplanation:\n\n1. Russia is a country and is not a person.\n2. The paragraph mentions \"Russia expected a constructive relationship with Madeleine Albright\" and \"nominated by U.S. President Bill Clinton to be Secretary of State\", so Madeleine Albright and Bill Clinton are the only clear person entities mentioned in the paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Russia said on Friday it expected a constructive relationship with Madeleine Albright , nominated by U.S. President Bill Clinton to be Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| United States |\n| Russia |\n\nThe paragraph is not specifically mentioning any locations within these countries, so we can only identify the countries themselves as locations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Russia |\n| United States |\n\nThe paragraph only mentions the countries as locations, so there are no entities that do not clearly refer to locations that need to be removed."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Russia said on Friday it expected a constructive relationship with Madeleine Albright , nominated by U.S. President Bill Clinton to be Secretary of State .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Russia |\n| United States |\n| U.S. President Bill Clinton |\n| Madeleine Albright |\n| Secretary of State |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Russia |\n| United States |\n| U.S. President Bill Clinton |\n| Madeleine Albright |\n| Secretary of State (position) |"}
+  ]
+}

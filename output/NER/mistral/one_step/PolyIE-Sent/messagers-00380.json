@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bulk heterojunction solar cells were fabricated with configuration of ITO / PEDOT : PSS / polymer : PC71BM / TiO x / Al.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| ITO         |\n| PEDOT : PSS  |\n| polymer     |\n| PC71BM      |\n| TiO x       |\n| Al          |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| ITO         |\n| PEDOT : PSS  |\n| polymer     |\n| PC71BM      |\n| TiO x       |\n\nThese are the entities in the original paragraph that can be identified as material names: ITO, PEDOT : PSS, polymer, PC71BM, and TiO x. Other entities such as \"bulk heterojunction solar cells\", \"configuration\", \"ITO / PEDOT : PSS / polymer : PC71BM / TiO x / Al\" and \"Al\" are not material names, but rather descriptions or context."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bulk heterojunction solar cells were fabricated with configuration of ITO / PEDOT : PSS / polymer : PC71BM / TiO x / Al.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Bulk heterojunction solar cells |\n| ITO |\n| PEDOT : PSS |\n| polymer |\n| PC71BM |\n| TiO x |\n| Al |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Bulk heterojunction solar cells |\n| ITO |\n| PEDOT : PSS |\n| polymer (type of material) |\n| PC71BM |\n| TiO x |\n| Al |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bulk heterojunction solar cells were fabricated with configuration of ITO / PEDOT : PSS / polymer : PC71BM / TiO x / Al.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Bulk heterojunction solar cells |\n| ITO |\n| PEDOT : PSS |\n| polymer |\n| PC71BM |\n| TiO x |\n| Al |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| ITO |\n| PEDOT : PSS |\n| polymer (type: not clear) |\n| PC71BM |\n| TiO x |\n\nNote: \"Bulk heterojunction solar cells\" is not a material property and can be removed. \"TiO x\" is a material with an uncertain oxidation state, so it is included but labeled with a qualifier."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Of these 352 patients , eight patients suffered bilateral abductor paralysis , and two suffered this complication twice .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Bilateral abductor paralysis |\n| Bilateral abductor paralysis (second occurrence) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities:\n\n| Disease |\n| --- |\n| Bilateral abductor paralysis |\n\nThe entity \"Bilateral abductor paralysis\" clearly refers to a disease or medical condition. The entity \"Bilateral abductor paralysis (second occurrence)\" is not a distinct disease entity, but rather a reference to the fact that some patients experienced this condition twice. Therefore, it is not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Of these 352 patients , eight patients suffered bilateral abductor paralysis , and two suffered this complication twice .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| bilateral abductor paralysis |\n| abductor paralysis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| bilateral abductor paralysis |\n\nThe following entities do not clearly refer to \"Chemical\":\n\n* \"abductor paralysis\" (this is a medical condition, not a chemical entity)\n* \"complication\" (this is a general term, not a specific chemical entity)\n\nTherefore, the only valid chemical entity in the given paragraph is \"bilateral abductor paralysis\"."}
+  ]
+}

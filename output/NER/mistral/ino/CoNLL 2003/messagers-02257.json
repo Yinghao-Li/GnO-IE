@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The protests culminated at dawn on Tuesday with several hundred of the student protesters being detained briefly by police near the central Shwe Dagon pagoda in Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Several hundred of the student protesters\n\nThese are the entities identified as \"Person\" in the paragraph. They are specifically identified as \"student protesters.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Several hundred students (from the context, it can be inferred that they are protesters)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Several hundred students (protesters) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The protests culminated at dawn on Tuesday with several hundred of the student protesters being detained briefly by police near the central Shwe Dagon pagoda in Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. central Shwe Dagon pagoda: This is a specific location where the event of the protesters being detained by police took place. It is a pagoda located in Rangoon.\n2. Rangoon: This is the general location where the event took place. It is a city in Myanmar."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. central Shwe Dagon pagoda: This is a specific location where the event took place.\n2. Rangoon: This is the general location where the event took place."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| central Shwe Dagon pagoda |\n| Rangoon |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The protests culminated at dawn on Tuesday with several hundred of the student protesters being detained briefly by police near the central Shwe Dagon pagoda in Rangoon .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Student protesters\n2. Police\n3. Central Shwe Dagon pagoda (This is not an organization per se, but rather a pagoda or religious site. However, it could be considered an organization if we consider the monastic community or the administrative body responsible for its management.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Police"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Police |"}
+  ]
+}

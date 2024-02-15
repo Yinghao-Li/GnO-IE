@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: But the court heard that receipts showed much of the money went to dancers at strip clubs where he was known as a big tipper .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The court\n2. Receipts\n3. Much of the money\n4. He (implied, the subject of the paragraph)\n5. Dancers\n6. Strip clubs\n7. Where he was known as a big tipper."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. He\n2. Dancers."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| He    |\n| Dancers |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: But the court heard that receipts showed much of the money went to dancers at strip clubs where he was known as a big tipper .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. strip clubs\n\nThese are the specific locations where the money was going to, according to the receipts mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. strip clubs"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| strip clubs |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: But the court heard that receipts showed much of the money went to dancers at strip clubs where he was known as a big tipper .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Court: A judicial body established to interpret and apply the law in a fair and impartial manner.\n\nEntities: Court\n\n2. Receipts: Documents that provide evidence of financial transactions.\n\nEntities: Receipts\n\n3. Much of the money: Unspecified amount of funds. No specific organization mentioned.\n\n4. Dancers: Individuals who perform in strip clubs.\n\nEntities: Dancers\n\n5. Strip clubs: Establishments where adult entertainment, typically involving stripping or other sexually-oriented performances, is provided.\n\nEntities: Strip clubs."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Entities:\n1. Court\n2. Strip clubs."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Court |\n| Strip clubs |"}
+  ]
+}

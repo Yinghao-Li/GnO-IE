@@ -1,0 +1,80 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph.\n\nParagraph: In comparison with the device performance of P1 based PSCs , 8 devices based on PSFDTBT exhibited almost identical V oc , but higher J sc and much higher FF.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. P1: This is likely a material, as it is being compared with other devices based on a different material (PSFDTBT).\n2. PSFDTBT: This is also a material, as it is the basis for 8 devices being compared with a device based on P1.\n\nTherefore, the \"Material Name\" entities in the paragraph are \"P1\" and \"PSFDTBT\"."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Name."
+    },
+    {
+      "role": "assistant",
+      "content": "1. P1\n2. PSFDTBT\n\nThese are the two material names mentioned in the paragraph. The other entities like \"devices\", \"Voc\", \"Jsc\", and \"FF\" are not material names, but rather properties or characteristics associated with the materials."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| P1 |\n| PSFDTBT |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph.\n\nParagraph: In comparison with the device performance of P1 based PSCs , 8 devices based on PSFDTBT exhibited almost identical V oc , but higher J sc and much higher FF.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"device performance\" - This is a general property, but it is too broad to be considered a specific property name.\n2. \"P1 based PSCs\" - This is a specific type of device, but it is not a property name.\n3. \"V oc\" - This is a property name, which stands for open-circuit voltage.\n4. \"J sc\" - This is a property name, which stands for short-circuit current density.\n5. \"FF\" - This is a property name, which stands for fill factor.\n\nTherefore, the property names in the paragraph are \"V oc\", \"J sc\", and \"FF\"."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"device performance\" - Not a material property.\n2. \"P1 based PSCs\" - Not a material property.\n3. \"V oc\" - Material property, which stands for open-circuit voltage.\n4. \"J sc\" - Material property, which stands for short-circuit current density.\n5. \"FF\" - Material property, which stands for fill factor.\n\nAfter removing irrelevant entities, the material properties in the paragraph are \"V oc\", \"J sc\", and \"FF\"."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| V oc |\n| J sc |\n| FF |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph.\n\nParagraph: In comparison with the device performance of P1 based PSCs , 8 devices based on PSFDTBT exhibited almost identical V oc , but higher J sc and much higher FF.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"device performance\" is a general property, not specific enough.\n2. \"P1 based PSCs\" is a category, not a property value.\n3. \"8 devices based on PSFDTBT\" is also a category, not a property value.\n4. \"almost identical V oc\" - Here, \"V oc\" is a property, and \"almost identical\" is a property value.\n5. \"higher J sc\" - Here, \"J sc\" is a property, and \"higher\" is a property value.\n6. \"much higher FF\" - Here, \"FF\" is a property, and \"much higher\" is a property value.\n\nTherefore, the \"Property Value\" entities in the paragraph are: \"almost identical\", \"higher\", and \"much higher\". The properties associated with these values are \"V oc\", \"J sc\", and \"FF\", respectively."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Value of Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "* \"almost identical\" (Voc)\n* \"higher\" (Jsc)\n* \"much higher\" (FF)\n\nThese are the entities that clearly refer to the Value of Material Properties."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| almost identical |\n| higher |\n| much higher |"
+    }
+  ]
+}

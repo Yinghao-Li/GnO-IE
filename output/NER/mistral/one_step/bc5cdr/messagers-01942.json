@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We present the case of a 31 - year - old man with bilateral ischemia of the globus pallidus after excessive alcohol and intranasal cocaine use .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Ischemia |\n| Bilateral ischemia of the globus pallidus |\n| Alcohol use |\n| Excessive alcohol use |\n| Intranasal cocaine use |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Ischemia |\n| Bilateral ischemia of the globus pallidus |\n\nThe following entities do not clearly refer to diseases:\n\n* 31-year-old man\n* excessive alcohol use\n* intranasal cocaine use\n\nThese entities can be considered as demographic information or contributing factors to the disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We present the case of a 31 - year - old man with bilateral ischemia of the globus pallidus after excessive alcohol and intranasal cocaine use .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Alcohol |\n| Cocaine |\n\nThe paragraph mentions two chemicals: Alcohol and Cocaine. These are the valid entities from the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Alcohol (excessive) |\n| Cocaine (intranasal) |\n\nThe paragraph mentions \"excessive alcohol\" and \"intranasal cocaine,\" which clearly refer to chemicals. These are the valid entities from the paragraph."}
+  ]
+}

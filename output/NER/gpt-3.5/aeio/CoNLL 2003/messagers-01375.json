@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Hungarian overnight interest rates closed higher on Friday as market liquidity tightened before the December 10 social security contribution payment deadline , dealers said .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. Hungarian - Location\n2. December 10 - Date\n3. social security contribution payment deadline - Organization\n\nThere are no specific person entities mentioned in this paragraph."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. Hungarian - Location\n2. social security contribution payment deadline - Organization\n\nThe entity \"December 10\" is a date and does not clearly refer to any of the specified entity types, so we will remove it."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity | Entity Type |\n|--------|-------------|\n| Hungarian | location |\n| social security contribution payment deadline | organization |"}
+]

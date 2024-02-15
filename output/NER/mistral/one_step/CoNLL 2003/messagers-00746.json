@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 20-1 Fernando Hierro 20-1 Ivan de\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Fernando Hierro |\n| Ivan de |\n\nNote: The paragraph only contains two distinct \"Person\" entities. The numbers before their names in the original paragraph are not relevant to identifying the entities and should be ignored."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Fernando Hierro |\n| Ivan |\n\nNote: In the original paragraph, \"de\" after Ivan is not a clear reference to a person and should be ignored."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 20-1 Fernando Hierro 20-1 Ivan de\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| 20-1 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| 20-1 |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 20-1 Fernando Hierro 20-1 Ivan de\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| None |\n\nThe paragraph does not contain any mention of organizations. It only includes names of individuals, Fernando Hierro and Ivan de, and a number \"20-1\" which is likely a betting odds ratio and not an organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| None |\n\nThe paragraph does not contain any clear mention of organizations. It only includes names of individuals, Fernando Hierro and Ivan de, and a number \"20-1\" which is likely a betting odds ratio and not an organization."}
+  ]
+}

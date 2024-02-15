@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: RESEARCH DESIGN AND METHODS : EndoMT was induced in a mouse pancreatic microvascular endothelial cell line (MMEC) in the presence of advanced glycation end products (AGEs) and in the endothelial lineage - traceble mouse line Tie2 - Cre ; Loxp - EGFP by administration of AGEs , with nonglycated mouse albumin serving as a control .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entities in the paragraph.\n\nThere are no specific diseases mentioned in the paragraph.\n\nStep 2: Identify the \"Chemical\" entities in the paragraph.\n\nThe following chemicals are mentioned in the paragraph:\n\n1. Advanced glycation end products (AGEs)\n2. Mouse albumin\n\nSo, the identified \"Chemical\" entities are \"Advanced glycation end products (AGEs)\" and \"Mouse albumin\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "The identified \"Chemical\" entity in the paragraph is \"Advanced glycation end products (AGEs)\". There are no specific diseases mentioned in the paragraph."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity                                 | Entity Type |\n|----------------------------------------|-------------|\n| Advanced glycation end products (AGEs) | Chemical    |"}
+]

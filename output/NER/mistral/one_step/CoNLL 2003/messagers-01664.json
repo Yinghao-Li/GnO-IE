@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Speaking in Arabic , Mills made a final statement before an anonymous citizen flipped the switch that sent 2000 volts of electricity through his body , said Department of Corrections spokesman Eugene Morris , who was present at the execution .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Mills |\n| Department of Corrections spokesman |\n| Eugene Morris |\n| anonymous citizen |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Mills |\n| Department of Corrections spokesman (Eugene Morris) |\n| anonymous citizen |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Speaking in Arabic , Mills made a final statement before an anonymous citizen flipped the switch that sent 2000 volts of electricity through his body , said Department of Corrections spokesman Eugene Morris , who was present at the execution .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Department of Corrections |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Department of Corrections |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Speaking in Arabic , Mills made a final statement before an anonymous citizen flipped the switch that sent 2000 volts of electricity through his body , said Department of Corrections spokesman Eugene Morris , who was present at the execution .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Department of Corrections |\n| Anonymous citizen |\n\nExplanation:\n\nThe only organization mentioned in the paragraph is the \"Department of Corrections\". The other entity, \"anonymous citizen\", is not an organization."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Department of Corrections |\n\nExplanation:\n\nThe only entity mentioned in the paragraph that can be clearly identified as an organization is the \"Department of Corrections\". The other entity, \"anonymous citizen\", is not an organization but an individual."}
+  ]
+}

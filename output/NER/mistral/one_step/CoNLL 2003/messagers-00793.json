@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Spain coach Javier Clemente has added uncapped Deportivo Coruna midfielder Armando Alvarez to his squad for the World Cup qualifier against Yugoslavia on December 14 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Javier Clemente |\n| Armando Alvarez |\n\nExplanation:\nThe paragraph mentions two persons: \"Spain coach Javier Clemente\" and \"uncapped Deportivo Coruna midfielder Armando Alvarez\". We present them in a Markdown table with one column \"Person\" and the exact names as in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Javier Clemente |\n| Armando Alvarez |\n\nExplanation:\nThe paragraph only mentions two entities that clearly refer to persons: \"Spain coach Javier Clemente\" and \"uncapped Deportivo Coruna midfielder Armando Alvarez\". All other entities such as \"has added\", \"to his squad\", \"for the World Cup qualifier against Yugoslavia on December 14\" do not refer to persons and should be ignored."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Spain coach Javier Clemente has added uncapped Deportivo Coruna midfielder Armando Alvarez to his squad for the World Cup qualifier against Yugoslavia on December 14 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Spain |\n| Yugoslavia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Spain |\n| Yugoslavia |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Spain coach Javier Clemente has added uncapped Deportivo Coruna midfielder Armando Alvarez to his squad for the World Cup qualifier against Yugoslavia on December 14 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Spain |\n| Javier Clemente (Spain coach) |\n| Deportivo Coruna |\n| Yugoslavia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Spain |\n| Deportivo Coruna |\n| Yugoslavia |\n\n(Note: Javier Clemente is an individual, so he was not included in the final table.)"}
+  ]
+}

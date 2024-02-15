@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Only five patients experienced blood disorders , one of whom was exposed to TMP - SMZ ; of seven with erythema multiforme and Stevens - Johnson syndrome , four were exposed to TMP - SMZ .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. \"blood disorders\" is a Disease entity.\n2. \"TMP - SMZ\" is not a Disease entity, it is a drug (Trimethoprim-sulfamethoxazole).\n3. \"erythema multiforme\" is a Disease entity.\n4. \"Stevens - Johnson syndrome\" is a Disease entity.\n\nSo, the Disease entities in the paragraph are: blood disorders, erythema multiforme, and Stevens - Johnson syndrome."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. \"blood disorders\" is a Disease entity.\n2. \"erythema multiforme\" is a Disease entity.\n3. \"Stevens - Johnson syndrome\" is a Disease entity.\n\nAfter removing irrelevant entities, we only keep the entities that clearly refer to Disease:\n\n* blood disorders\n* erythema multiforme\n* Stevens - Johnson syndrome"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| blood disorders |\n| erythema multiforme |\n| Stevens - Johnson syndrome |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Only five patients experienced blood disorders , one of whom was exposed to TMP - SMZ ; of seven with erythema multiforme and Stevens - Johnson syndrome , four were exposed to TMP - SMZ .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. TMP - SMZ: This is a chemical entity. TMP-SMZ is an abbreviation for a combination of two antibiotics, trimethoprim and sulfamethoxazole, which are often used together to treat bacterial infections.\n\nThere are no other chemical entities mentioned in this paragraph. While \"blood disorders\" and \"erythema multiforme and Stevens-Johnson syndrome\" are medical conditions, they are not chemical entities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. TMP - SMZ"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| TMP - SMZ |"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: But Rdainah said Arafat would go to Cairo on Saturday for talks with Mubarak ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Person\" entities are:\n\n1. Rdainah\n2. Arafat\n3. Mubarak"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Person\" entities in the given paragraph are:\n\n1. Arafat\n2. Mubarak"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person   |\n|----------|\n| Arafat   |\n| Mubarak  |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: But Rdainah said Arafat would go to Cairo on Saturday for talks with Mubarak ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entity is:\n\n1. Cairo"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Location\" entity is:\n\n1. Cairo"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n|----------|\n|  Cairo   |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: But Rdainah said Arafat would go to Cairo on Saturday for talks with Mubarak ."},
+    {"role": "assistant", "content": "Based on the given paragraph, there are two \"Organization\" entities mentioned:\n\n1. Cairo - This is a city and can be considered an organization in the context of diplomatic talks and meetings.\n2. Mubarak - This is a surname and could refer to an individual, but without further context, it is not clear if it refers to an organization."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Based on the given paragraph, there is one \"Organization\" entity mentioned:\n\n1. Cairo - This is a city and can be considered an organization in the context of diplomatic talks and meetings."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n|--------------|\n| Cairo        |"}
+  ]
+}

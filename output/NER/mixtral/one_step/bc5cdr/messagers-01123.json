@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The authors report here a depressed patient comorbid with postprandial dyspepsia who developed RLS after mirtazapine had been added to his domperidone therapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| depressed |\n| postprandial dyspepsia |\n| RLS |\n\nHere's the explanation:\n\n* \"depressed\" is a disease state, often referred to as depression.\n* \"postprandial dyspepsia\" is a specific digestive disorder.\n* \"RLS\" is an abbreviation for Restless Legs Syndrome, a neurological disorder."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| postprandial dyspepsia |\n| RLS |\n\nExplanation:\n\n* \"Depressed\" is a state, not a disease. It is a symptom of depression, but in this context, it is not a disease entity.\n* \"postprandial dyspepsia\" and \"RLS\" are both specific medical conditions, and thus, they are the only valid disease entities in this paragraph."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The authors report here a depressed patient comorbid with postprandial dyspepsia who developed RLS after mirtazapine had been added to his domperidone therapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| mirtazapine |\n| domperidone |\n\nThe two chemicals identified are \"mirtazapine\" and \"domperidone\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| mirtazapine |\n| domperidone |\n\nThe two chemicals identified are \"mirtazapine\" and \"domperidone\". The term \"postprandial dyspepsia\" is a medical condition and not a chemical, so it was not included in the table."}
+  ]
+}

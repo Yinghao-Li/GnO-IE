@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acute myocardial ischemic injury was induced in rats by subcutaneous injection of isoproterenol ( 85 mg / kg ) , for two consecutive days .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute myocardial ischemic injury |\n| Myocardial ischemia |\n\nNote: \"Acute myocardial ischemic injury\" and \"myocardial ischemia\" are both valid disease entities in the paragraph. \"Myocardial ischemia\" is a broader term that refers to a reduction in blood flow to the heart muscle, while \"acute myocardial ischemic injury\" specifically refers to a sudden and severe reduction in blood flow that leads to tissue damage."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Myocardial ischemia |\n\nThe entity \"Acute myocardial ischemic injury\" is not clearly a disease, but rather a description of a specific type of injury that can be caused by a disease. Therefore, it is not included in the list of valid disease entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acute myocardial ischemic injury was induced in rats by subcutaneous injection of isoproterenol ( 85 mg / kg ) , for two consecutive days .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Isoproterenol |\n\nIsoproterenol is a chemical entity in the paragraph, specifically mentioned as the substance used to induce acute myocardial ischemic injury in rats."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Isoproterenol |\n\nThe only chemical entity mentioned in the paragraph is \"Isoproterenol\". The other entities mentioned, such as \"rats\" and \"days\", are not chemicals, so they are not included in the table."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The general did not mention these refugees , who are on the outer limit of the strip the planes have been checking .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the general |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the general |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The general did not mention these refugees , who are on the outer limit of the strip the planes have been checking .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| the outer limit of the strip |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| the outer limit of the strip |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The general did not mention these refugees , who are on the outer limit of the strip the planes have been checking .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| the planes |\n| the strip |\n| the refugees |\n\nExplanation:\n\n1. \"the planes\" - This refers to the aircrafts that are conducting checks.\n2. \"the strip\" - This refers to the area or region where the checks are being conducted.\n3. \"the refugees\" - This refers to the group of people who are located on the outskirts of the strip and have not been mentioned by the general."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| the planes |\n| the refugees |\n\nExplanation:\n\n1. \"the planes\" - This is the only entity in the paragraph that clearly refers to an organization, as it refers to a specific group of aircrafts.\n2. \"the strip\" and \"these refugees\" do not refer to organizations, but rather to a location and a group of people, respectively. Therefore, they should not be included in the table."}
+  ]
+}

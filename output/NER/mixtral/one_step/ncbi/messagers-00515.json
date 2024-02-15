@@ -1,0 +1,8 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Patient 1 was found to be a compound heterozygote for two mutations in exon 3 ( G7013T , C7133delta ) which interfere with appropriate synthesis of ACTH and alpha - MSH .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| mutations in exon 3 |\n| interference with appropriate synthesis of ACTH and alpha - MSH |\n\nExplanation:\n\n1. \"mutations in exon 3\" are mentioned as the genetic alterations in the patient, which can be considered as a disease entity.\n2. \"interference with appropriate synthesis of ACTH and alpha - MSH\" implies that the mutations are causing issues with the synthesis of certain hormones, which can also be considered as a disease entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| mutations in exon 3 |\n\nExplanation:\n\n1. \"mutations in exon 3\" are mentioned as the genetic alterations in the patient, which can be considered as a disease entity.\n2. \"interference with appropriate synthesis of ACTH and alpha - MSH\" is a consequence of the mutations, but not a disease itself. Therefore, it is not included in the table."}
+  ]
+}

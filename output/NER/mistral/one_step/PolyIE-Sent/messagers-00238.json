@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The UV - vis absorption spectra of POBDTPD and PEBDTPD polymers in a chlorobenzene solution or in a thin film state are shown in Figure 1a.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n|--------------|\n| POBDTPD polymer |\n| PEBDTPD polymer |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n|--------------|\n| POBDTPD polymer |\n| PEBDTPD polymer |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The UV - vis absorption spectra of POBDTPD and PEBDTPD polymers in a chlorobenzene solution or in a thin film state are shown in Figure 1a.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| UV-vis absorption spectra |\n| POBDTPD and PEBDTPD polymers |\n| Chlorobenzene solution |\n| Thin film state |\n| Figure 1a |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| UV-vis absorption spectra |\n| POBDTPD and PEBDTPD polymers |\n| Thin film state (state of the polymers) |\n| Figure 1a (figure referenced in the text) |\n\nNote: \"Chlorobenzene solution\" was removed as it does not clearly refer to a material property. Instead, it describes the medium in which the measurement was taken."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The UV - vis absorption spectra of POBDTPD and PEBDTPD polymers in a chlorobenzene solution or in a thin film state are shown in Figure 1a.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value               |\n|-----------------------------|\n| UV-vis absorption spectra   |\n| POBDTPD and PEBDTPD polymers |\n| Figure 1a                   |\n| chlorobenzene solution      |\n| thin film state             |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value               |\n|-----------------------------|\n| UV-vis absorption spectra   |\n| POBDTPD and PEBDTPD polymers |\n| Figure 1a - chlorobenzene solution state\n| Figure 1a - thin film state |\n\nNote: I assumed that \"Figure 1a\" refers to a figure showing the UV-vis absorption spectra of the mentioned polymers in different states, so I included it as a property value. If it is not a material property, please disregard it."
+    }
+  ]
+}

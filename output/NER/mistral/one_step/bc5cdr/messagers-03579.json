@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Alfentanil 50 micrograms kg - 1 effectively inhibits the incidence and intensity of suxamethonium - induced muscle fasciculations ; moreover , intragastric pressure remains at its control value .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| suxamethonium-induced muscle fasciculations |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| suxamethonium-induced muscle fasciculations |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Alfentanil 50 micrograms kg - 1 effectively inhibits the incidence and intensity of suxamethonium - induced muscle fasciculations ; moreover , intragastric pressure remains at its control value .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Alfentanil |\n| Suxamethonium |\n\nIn this paragraph, \"Alfentanil\" is explicitly mentioned as a chemical entity. \"Suxamethonium\" is also mentioned as a chemical entity based on context, as it is the cause of muscle fasciculations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Alfentanil |\n| Suxamethonium |\n\nIn this paragraph, \"Alfentanil\" and \"Suxamethonium\" are the only entities that clearly refer to chemicals. Other entities such as \"50 micrograms kg - 1\", \"incidence and intensity of muscle fasciculations\", and \"intragastric pressure\" do not refer to specific chemicals and are not included in the table."}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A group of doctors in Boston warn that the protease inhibitor Viracept may cause an irregular heart beat , known as bradycardia , in people with HIV .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| HIV |\n| Bradycardia |\n| Irregular heart beat |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| HIV |\n| Bradycardia |\n| Irregular heart beat |\n\nExplanation:\nThe paragraph mentions \"HIV\" and \"Bradycardia / Irregular heart beat\" as diseases. \"Group of doctors in Boston\" and \"may cause\" are not diseases and have been removed."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A group of doctors in Boston warn that the protease inhibitor Viracept may cause an irregular heart beat , known as bradycardia , in people with HIV .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Viracept (protease inhibitor) |\n\nIn this paragraph, the only chemical entity mentioned is the protease inhibitor Viracept."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Viracept (protease inhibitor) |\n\nIn this paragraph, the only clearly identified chemical entity mentioned is the protease inhibitor Viracept. Other entities such as \"people with HIV\" and \"irregular heart beat (bradycardia)\" do not refer to chemicals."}
+  ]
+}

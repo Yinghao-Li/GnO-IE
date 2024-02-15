@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Wijaya ( Indonesia ) ; Sun Jun ( China ) v Allan Budi Kusuma\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person     |\n|------------|\n| Wijaya     |\n| Sun Jun    |\n| Allan Budi Kusuma |\n\nThe three \"Person\" entities in the paragraph are \"Wijaya\", \"Sun Jun\", and \"Allan Budi Kusuma\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person     |\n|------------|\n| Wijaya     |\n| Sun Jun    |\n| Allan Budi Kusuma |\n\nThe three \"Person\" entities in the paragraph are \"Wijaya\", \"Sun Jun\", and \"Allan Budi Kusuma\". There are no entities that do not clearly refer to a person in this paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Wijaya ( Indonesia ) ; Sun Jun ( China ) v Allan Budi Kusuma\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Indonesia  |\n| China      |\n\nExplanation:\n\n* \"Indonesia\" is mentioned as the location associated with Wijaya.\n* \"China\" is mentioned as the location associated with Sun Jun."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Indonesia  |\n| China      |\n\nExplanation:\n\n* \"Indonesia\" and \"China\" are the only clear location entities mentioned in the paragraph. They are mentioned as the locations associated with Wijaya and Sun Jun, respectively."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Wijaya ( Indonesia ) ; Sun Jun ( China ) v Allan Budi Kusuma\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Wijaya ( Indonesia ) |\n\nNote: I've assumed that 'Wijaya ( Indonesia )' is an organization since the context is a legal case and it is mentioned before a person's name, which is a common format in legal proceedings. If it turns out to be a person's name, please let me know."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Wijaya ( Indonesia ) |\n\nNote: In this paragraph, there is only one possible organization entity, 'Wijaya ( Indonesia )'. The other entities, 'Sun Jun ( China )' and 'Allan Budi Kusuma', are individuals."}
+  ]
+}

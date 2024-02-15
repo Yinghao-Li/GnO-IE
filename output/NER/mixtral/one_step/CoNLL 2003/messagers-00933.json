@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" In 1970s , Poland received from unclaimed accounts in Switzerland a sum of 460,000 francs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Poland |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Poland |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" In 1970s , Poland received from unclaimed accounts in Switzerland a sum of 460,000 francs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Poland     |\n| Switzerland |\n\nExplanation:\n\n* Poland is mentioned as the country that received the sum of money.\n* Switzerland is mentioned as the country where the unclaimed accounts were located."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Poland     |\n| Switzerland |\n\nExplanation:\n\n* Poland is mentioned as the country that received the sum of money.\n* Switzerland is mentioned as the country where the unclaimed accounts were located.\n\nThe other phrase \"1970s\" is a time period and not a location, so it is not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" In 1970s , Poland received from unclaimed accounts in Switzerland a sum of 460,000 francs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Switzerland |\n| Poland |\n\nNote: I'm assuming that \"Switzerland\" is the organization that held the unclaimed accounts from which the funds were received by \"Poland.\""},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Switzerland |\n| Poland |\n\nNote: In this paragraph, there are only two clear \"Organization\" entities, which are \"Switzerland\" and \"Poland.\" The other entities like \"1970s\" and \"460,000 francs\" do not refer to organizations."}
+  ]
+}

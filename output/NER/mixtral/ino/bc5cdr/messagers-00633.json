@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Levels were significantly greater in patients with acute liver failure due to paracetamol overdose ( median , 28 . 7 U / mL ; range , 12 . 8 - 52 . 7 U / mL , n = 17 ) than those due to non - A to E hepatitis ( median , 12 . 5 U / mL ; range , 6 . 9 - 46 . 0 U / mL , n = 7 , P < 0 . 01 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The first disease mentioned is \"acute liver failure.\"\n2. The second disease mentioned is \"paracetamol overdose,\" which is the cause of the acute liver failure in some patients.\n3. The third disease mentioned is \"non-A to E hepatitis,\" which is the cause of the acute liver failure in other patients.\n\nTherefore, the \"Disease\" entities in the paragraph are:\n\n* Acute liver failure\n* Paracetamol overdose\n* Non-A to E hepatitis"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. The first disease mentioned is \"acute liver failure.\"\n2. The second disease mentioned is \"paracetamol overdose,\" which is the cause of the liver failure in some patients.\n3. The third disease mentioned is \"non-A to E hepatitis,\" which is the cause of the liver failure in other patients.\n\nTherefore, the Disease entities in the paragraph are:\n\n* Acute liver failure\n* Paracetamol overdose (note: this is a cause of the disease, but it is mentioned in the context of a comparison with another cause of the disease, so it is relevant in this case)\n* Non-A to E hepatitis (note: this is a cause of the disease, but it is mentioned in the context of a comparison with another cause of the disease, so it is relevant in this case)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| acute liver failure |\n| paracetamol overdose |\n| non-A to E hepatitis |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Levels were significantly greater in patients with acute liver failure due to paracetamol overdose ( median , 28 . 7 U / mL ; range , 12 . 8 - 52 . 7 U / mL , n = 17 ) than those due to non - A to E hepatitis ( median , 12 . 5 U / mL ; range , 6 . 9 - 46 . 0 U / mL , n = 7 , P < 0 . 01 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Paracetamol: This is a medication and also a chemical compound, commonly used as a pain reliever and fever reducer.\n2. U / mL: This is a unit of measurement for concentration, where U stands for \"units\" and mL stands for milliliter. It is used to express the amount of a substance (in this case, the chemical entity being measured) per unit volume.\n\nTherefore, the \"chemical\" entities in the paragraph are paracetamol and the concentration units U/mL."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "* Paracetamol\n* U / mL"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Paracetamol |\n| U / mL |"}
+  ]
+}

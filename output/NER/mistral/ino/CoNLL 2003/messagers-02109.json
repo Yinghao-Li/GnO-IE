@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Italy evacuates 17 nuns and priests from Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Italy\n2. 17 nuns\n3. Priests\n4. Zaire (Note: Zaire is an old name for the Democratic Republic of the Congo)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. 17 nuns\n2. Priests"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| 17 nuns |\n| Priests |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Italy evacuates 17 nuns and priests from Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Italy\n2. Zaire (Now known as the Democratic Republic of the Congo)\n\nIn this paragraph, \"Italy\" is the entity that is performing the action of evacuating people, while \"Zaire\" is the location where the evacuation is taking place."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Zaire (Now known as the Democratic Republic of the Congo)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Zaire (Now known as the Democratic Republic of the Congo) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Italy evacuates 17 nuns and priests from Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Italy\n2. Zaire (now known as the Democratic Republic of the Congo)\n3. Italy (implicitly, the Italian government or Italian authorities)\n\nThe entities identified in the paragraph are:\n\n1. Italy (as the country evacuating the nuns and priests)\n2. Zaire (as the location where the evacuation took place)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Italy (as the country carrying out the evacuation)\n\nThe only organization explicitly mentioned in the paragraph is Italy. The other entity, Zaire, is a country."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Italy |\n\nThe organization mentioned in the paragraph is \"Italy.\""}
+  ]
+}

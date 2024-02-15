@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Evaluation revealed a hemoglobin of three grams , 3 + Coombs ' test with polyspecific anti - human globulin and monospecific IgG reagents , and a warm reacting autoantibody .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| 3 + Coombs' test |\n| polyspecific anti-human globulin |\n| monospecific IgG reagents |\n| warm reacting autoantibody |\n\nNote: These are not actually diseases, but rather medical tests and components of blood. The paragraph describes the results of blood tests, not diseases."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the entities that clearly refer to diseases:\n\n| Disease |\n| --- |\n| warm reacting autoantibody |\n\nThe other entities mentioned in the paragraph, such as \"3 + Coombs' test\" and \"polyspecific anti-human globulin,\" do not clearly refer to diseases, so they have been excluded from the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Evaluation revealed a hemoglobin of three grams , 3 + Coombs ' test with polyspecific anti - human globulin and monospecific IgG reagents , and a warm reacting autoantibody .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Hemoglobin |\n| Coombs' test |\n| Polyspecific anti-human globulin |\n| Monospecific IgG reagents |\n| Warm reacting autoantibody |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities that clearly refer to \"Chemical\" in the given paragraph, presented as a Markdown table with one column \"Chemical\":\n\n| Chemical |\n| --- |\n| Hemoglobin |\n| Coombs' test |\n| Polyspecific anti-human globulin |\n| Monospecific IgG reagents |\n\nI removed \"Warm reacting autoantibody\" from the list as it does not clearly refer to a chemical entity."}
+  ]
+}

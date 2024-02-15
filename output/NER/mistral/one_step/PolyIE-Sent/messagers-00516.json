@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Figure 4 , solar cells , which were fabricated from PSFDTBT : PC71BM in a ratio of 1 : 3.5 ( w / w ) in DCB solutions and PSFDTBT : PC71BM in a ratio of 1 : 3 ( w / w ) in TCB solutions , both exhibited a broad photoresponse extending from 350 to 700 nm.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PSFDTBT |\n| PC71BM |\n| solar cells (fabricated from PSFDTBT : PC71BM in a ratio of 1 : 3.5 (w / w) in DCB solutions) |\n| solar cells (fabricated from PSFDTBT : PC71BM in a ratio of 1 : 3 (w / w) in TCB solutions) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PSFDTBT |\n| PC71BM |\n| solar cells (fabricated from PSFDTBT and PC71BM with ratios of 1 : 3.5 (w / w) and 1 : 3 (w / w) respectively) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Figure 4 , solar cells , which were fabricated from PSFDTBT : PC71BM in a ratio of 1 : 3.5 ( w / w ) in DCB solutions and PSFDTBT : PC71BM in a ratio of 1 : 3 ( w / w ) in TCB solutions , both exhibited a broad photoresponse extending from 350 to 700 nm.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| solar cells |\n| PSFDTBT : PC71BM (in DCB solutions) |\n| ratio (1 : 3.5 (w / w)) |\n| PSFDTBT : PC71BM (in TCB solutions) |\n| ratio (1 : 3 (w / w)) |\n| photoresponse |\n| extending |\n| from |\n| 350 nm |\n| to |\n| 700 nm"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| solar cells |\n| PSFDTBT : PC71BM (in DCB solutions) - ratio |\n| PSFDTBT : PC71BM (in TCB solutions) - ratio |\n| photoresponse - extending from 350 nm to 700 nm |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Figure 4 , solar cells , which were fabricated from PSFDTBT : PC71BM in a ratio of 1 : 3.5 ( w / w ) in DCB solutions and PSFDTBT : PC71BM in a ratio of 1 : 3 ( w / w ) in TCB solutions , both exhibited a broad photoresponse extending from 350 to 700 nm.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| solar cells |\n| PSFDTBT : PC71BM (in a ratio of 1 : 3.5 (w / w) in DCB solutions) |\n| PSFDTBT : PC71BM (in a ratio of 1 : 3 (w / w) in TCB solutions) |\n| Figure 4 |\n| 350 nm |\n| 700 nm |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| solar cells |\n| PSFDTBT : PC71BM (in a ratio of 1 : 3.5 (w / w) in DCB solutions) |\n| PSFDTBT : PC71BM (in a ratio of 1 : 3 (w / w) in TCB solutions) |\n| 350 nm |\n| 700 nm |\n\nThe entities \"Figure 4\" is not a material property and can be removed."
+    }
+  ]
+}

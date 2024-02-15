@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: J. Adams lbw b Moody 5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| J. Adams |\n| Moody |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| J. Adams |\n| Moody |\n\n(Note: In the given paragraph, \"lbw\" stands for \"leg before wicket,\" which is a cricket term for a type of dismissal, and does not refer to a person. Therefore, it was not included in the table.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: J. Adams lbw b Moody 5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| J. Adams lbw (Leg Before Wicket) |\n| b (bowled) |\n| Moody |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| J. Adams lbw (Leg Before Wicket) at |\n| Moody's bowling |\n\nNote: \"bw\" in \"J. Adams lbw b Moody 5\" stands for \"bowled and hit wicket\", but since \"hit wicket\" refers to the manner of dismissal and not a specific location, it was removed from the table. Instead, \"at Moody's bowling\" was added to indicate the general location of the event."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: J. Adams lbw b Moody 5\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| J. Adams |\n| Moody |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Moody |\n\nIn the given paragraph, \"J. Adams\" is a person and not an organization."}
+  ]
+}

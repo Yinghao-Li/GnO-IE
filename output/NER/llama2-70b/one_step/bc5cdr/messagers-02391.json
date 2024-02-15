@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The most relevant adverse event was peripheral neuropathy , which occurred in 78 % of the patients ( grade II , 38 % ; grade III , 21 % ) and led to treatment discontinuation in 6 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Peripheral neuropathy |\n| Grade II |\n| Grade III |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the entities that clearly refer to diseases:\n\n| Disease |\n| --- |\n| Peripheral neuropathy |\n\nI removed \"Grade II\" and \"Grade III\" since they are not diseases, but rather severity levels or grades used to classify the peripheral neuropathy."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The most relevant adverse event was peripheral neuropathy , which occurred in 78 % of the patients ( grade II , 38 % ; grade III , 21 % ) and led to treatment discontinuation in 6 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| peripheral neuropathy |\n| grade II |\n| grade III |\n\nThe paragraph does not mention any specific chemical substances or drugs. The entities identified are:\n\n* Peripheral neuropathy: A medical condition that affects the peripheral nervous system.\n* Grade II and Grade III: These are levels of severity used to classify the degree of peripheral neuropathy."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the entities that clearly refer to chemicals:\n\n| Chemical |\n| --- |\n| grade II |\n| grade III |\n\nThe paragraph does not mention any specific chemical substances or drugs. The only chemical-related entities mentioned are the levels of severity used to classify peripheral neuropathy, which are grade II and grade III."}
+  ]
+}

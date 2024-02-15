@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Regarding the effects of drug - induced hypotension on coronary blood flow , aortic and coronary sinus metabolic data (pH , pO2 , pCO2) we could confirm that nitroprusside hypotension could be safely used to 30 % mean blood pressure decrease from control , trimetaphan hypotension to 20 % mean blood pressure decrease .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "In the given paragraph, the identified \"['Disease', 'Chemical']\" entities are:\n\n1. Disease: drug-induced hypotension\n2. Chemical: nitroprusside, trimetaphan"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the identified \"['Disease', 'Chemical']\" entities are:\n\n1. Disease: drug-induced hypotension\n2. Chemical: nitroprusside, trimetaphan"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Here are the valid entities from the paragraph presented as a Markdown table:\n\n| Entity        | Entity Type |\n|---------------|-------------|\n| drug-induced hypotension | Disease     |\n| nitroprusside | Chemical    |\n| trimetaphan   | Chemical    |"}
+]

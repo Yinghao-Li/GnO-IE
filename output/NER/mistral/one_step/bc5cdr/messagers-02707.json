@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In experiment set up 1 : Memory deficit was found in Morris water maze test on 14 - 16 days after STZ ( ICV ; 3mg / Kg ) administration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Memory deficit    |\n| Diabetes mellitus (induced by STZ) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Memory deficit    |\n| Diabetes mellitus |\n\n(Note: ICV and 3mg / Kg refer to the method of administration and dosage of STZ, not diseases.)"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In experiment set up 1 : Memory deficit was found in Morris water maze test on 14 - 16 days after STZ ( ICV ; 3mg / Kg ) administration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| STZ (Sodium Tyrosine Sulphate) |\n\nIn this paragraph, the only chemical entity mentioned is STZ (Sodium Tyrosine Sulphate) in the context of its administration (ICV; 3mg / Kg)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| STZ (Sodium Tyrosine Sulphate) |\n\nIn this paragraph, only \"STZ (Sodium Tyrosine Sulphate)\" is mentioned as a chemical entity. The other terms, such as \"experiment set up 1,\" \"Memory deficit,\" \"Morris water maze test,\" \"14-16 days,\" and \"ICV,\" do not refer to chemicals."}
+  ]
+}

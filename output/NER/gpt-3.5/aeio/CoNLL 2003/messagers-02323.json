@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: \" Bre - X is expected to complete the feasibility report by December 16 and submit it to the government before the December 21 deadline , \" the source said .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. \"Bre-X\" - Organization\n2. \"December 16\" - Location (date)\n3. \"December 21\" - Location (date)\n4. \"the government\" - Organization\n\nThere are no person entities in this paragraph."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. \"Bre-X\" - Organization\n2. \"the government\" - Organization\n\nThe remaining entities are not clearly referring to any of the specified types."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity        | Entity Type   |\n| ------------- | ------------- |\n| Bre-X         | organization  |\n| the government| organization  |"}
+]

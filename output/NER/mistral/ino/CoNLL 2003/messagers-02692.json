@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 9. Jani Soininen ( Finland ) 231.5 ( 115 / 116.5 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Jani Soininen\n\nThis is the only clear \"Person\" entity mentioned in the paragraph. Jani Soininen is a Finnish person. The numbers following his name do not represent additional persons, but rather statistics related to him (231.5, 115, and 116.5)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Person: Jani Soininen"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Jani Soininen |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 9. Jani Soininen ( Finland ) 231.5 ( 115 / 116.5 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Identify potential entities: In this paragraph, there is only one potential entity which is a person named Jani Soininen and a country named Finland.\n2. Verify entities: Jani Soininen is a person. Finland is a country.\n3. Identify location entities: In this context, the country Finland is the location entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entity in the paragraph is Finland."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Finland |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 9. Jani Soininen ( Finland ) 231.5 ( 115 / 116.5 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Jani Soininen: This is a proper noun and represents a person. It is not an organization.\n2. Finland: This is a country and can be considered an organization in a political or geographical context.\n\nTherefore, the only organization entity in the paragraph is \"Finland\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The only organization entity in the paragraph is:\n\n* Finland"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Finland |"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As an academic , Albright studied and lectured on Europe 's 20th century problems before becoming U.S. ambassador to the United Nations .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Albright |\n\nIn this paragraph, \"Albright\" is the only clearly identified person entity. The description \"an academic\" provides context about Albright's profession before becoming the U.S. ambassador to the United Nations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Albright |\n\nIn this paragraph, \"Albright\" is the only clearly identified person entity. The description \"an academic\" does not refer to a specific person and is not considered a person entity."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As an academic , Albright studied and lectured on Europe 's 20th century problems before becoming U.S. ambassador to the United Nations .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Europe (20th century) |\n| United Nations |\n\nIn this paragraph, the locations mentioned are Europe in the 20th century and the United Nations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Europe (20th century) |\n| United Nations |\n\nIn the paragraph, the only entities that clearly refer to locations are Europe in the 20th century and the United Nations. Other entities such as \"academic\" and \"U.S.\" do not refer to specific locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As an academic , Albright studied and lectured on Europe 's 20th century problems before becoming U.S. ambassador to the United Nations .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Nations |\n| U.S. |\n\nIn this paragraph, \"United Nations\" is the organization mentioned. \"U.S.\" is also considered an organization in this context, as it refers to the United States of America."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Nations |\n| U.S. (United States of America) |\n\nIn this paragraph, \"United Nations\" and \"United States of America\" are the organizations mentioned. \"U.S.\" alone does not clearly refer to an organization, but when expanded to \"United States of America,\" it becomes an organization."}
+  ]
+}

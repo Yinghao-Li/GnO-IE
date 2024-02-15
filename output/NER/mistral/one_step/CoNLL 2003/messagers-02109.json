@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Italy evacuates 17 nuns and priests from Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Italy  |\n| 17 nuns |\n| 17 priests |\n\nExplanation:\nThe entities identified in the paragraph are \"Italy\" and \"17 nuns and priests\". Since the paragraph states that \"Italy evacuates\" the nuns and priests, it implies that Italy is the one performing the action. The nuns and priests are the entities being evacuated. Therefore, we list \"Italy\" as the person and \"17 nuns and priests\" as a single entity, which we then split into two separate rows in the table for clarity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Italy  |\n\nExplanation:\nThe only clear \"Person\" entity in the paragraph is \"Italy\". \"17 nuns and priests\" is not a person, it is a group of people. Therefore, it should not be included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Italy evacuates 17 nuns and priests from Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Italy |\n| Zaire |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Italy |\n| Zaire |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Italy evacuates 17 nuns and priests from Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Italy |\n| Zaire |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Italy |\n| Zaire |"}
+  ]
+}

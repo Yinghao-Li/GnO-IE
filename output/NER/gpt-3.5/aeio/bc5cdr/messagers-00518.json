@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Heart mitochondria isolated from doxorubicin - treated rats exhibited depressed rates for state 3 respiration (336 + / - 26 versus 425 + / - 53 natom O / min / mg protein) and a lower respiratory control ratio (RCR) (4 . 3 + / - 0 . 6 versus 5 . 8 + / - 0 . 4) compared with cardiac mitochondria isolated from saline - treated rats .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nThere is no mention of a specific disease in the paragraph. Therefore, there is no \"Disease\" entity to identify.\n\nStep 2: Identify the \"Chemical\" entity.\nThe chemical entity mentioned in the paragraph is \"doxorubicin\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Heart mitochondria isolated from doxorubicin-treated rats exhibited depressed rates for state 3 respiration (336 + / - 26 versus 425 + / - 53 natom O / min / mg protein) and a lower respiratory control ratio (RCR) (4 . 3 + / - 0 . 6 versus 5 . 8 + / - 0 . 4) compared with cardiac mitochondria isolated from saline-treated rats ."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity       | Entity Type |\n|--------------|-------------|\n| doxorubicin  | Chemical    |"}
+]

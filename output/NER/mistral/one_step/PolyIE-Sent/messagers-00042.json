@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acetylation of 2 with Zn powder and acetic anhydride performed under basic conditions produced yellowish benzodithiophene-4,5-diyl diacetate ( 3 ) powder in a good yield of 85% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| 2 |\n| benzodithiophene-4,5-diyl diacetate (3) |\n| Zn powder |\n| acetic anhydride |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| benzodithiophene-4,5-diyl diacetate (3) |\n\nThe other entities in the paragraph, \"Acetylation of 2\", \"with Zn powder and acetic anhydride\", \"performed under basic conditions\", \"produced\", \"yellowish\", \"good yield of 85%\", do not clearly refer to material names."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acetylation of 2 with Zn powder and acetic anhydride performed under basic conditions produced yellowish benzodithiophene-4,5-diyl diacetate ( 3 ) powder in a good yield of 85% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| ------------- |\n| 2 |\n| benzodithiophene-4,5-diyl |\n| diyl |\n| diacetate |\n| yellowish |\n| powder |\n| good yield |\n| 85% |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| ------------- |\n| 2 (material) |\n| benzodithiophene-4,5-diyl (compound) |\n| diyl (chemical group) |\n| diacetate (chemical group) |\n| yellowish (color) |\n| powder (physical state) |\n| good yield (percentage) |\n| 85% (percentage) |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acetylation of 2 with Zn powder and acetic anhydride performed under basic conditions produced yellowish benzodithiophene-4,5-diyl diacetate ( 3 ) powder in a good yield of 85% .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| -------------- |\n| 2 (compound)   |\n| yellowish (color) |\n| benzodithiophene-4,5-diyl diacetate (compound 3) |\n| good yield (yield) |\n| 85% (percentage) |\n| Zn powder (compound) |\n| acetic anhydride (reagent) |\n| basic conditions (reaction conditions) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| -------------- |\n| 85% (yield) |\n\nThe other entities in the paragraph do not refer to material properties, but rather to the compounds involved in the reaction and the conditions under which the reaction was carried out."
+    }
+  ]
+}

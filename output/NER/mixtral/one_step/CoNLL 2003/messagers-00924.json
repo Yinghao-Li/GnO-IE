@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The party , led by the vigorously-confident Klaus , took 32 of 81 seats after late November runoff elections to the new upper house of Czech parliament .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Klaus |\n| the party (implicitly referring to a specific group of people, but not identified in the text) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Klaus |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The party , led by the vigorously-confident Klaus , took 32 of 81 seats after late November runoff elections to the new upper house of Czech parliament .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Czech parliament |\n\nThe two location entities in the paragraph are \"Czech\" and \"parliament.\" However, since \"Czech parliament\" is a single location, I have presented it as a single entity in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Czech parliament |\n\nThe only location entity in the paragraph is \"Czech parliament.\" The other possible location entity, \"the new upper house,\" is not explicitly named, so it cannot be included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The party , led by the vigorously-confident Klaus , took 32 of 81 seats after late November runoff elections to the new upper house of Czech parliament .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| the party |\n| Czech parliament |\n\nIn the given paragraph, there are two organization entities:\n\n1. \"the party\" - The text mentions a political party led by Klaus, but it does not specify the name of the party.\n2. \"Czech parliament\" - This is the legislative branch of the Czech Republic."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Czech parliament |\n\nThe only clear organization entity in the paragraph is:\n\n1. \"Czech parliament\" - This is the legislative branch of the Czech Republic.\n\nThe other entity, \"the party,\" is not specific enough to identify a unique organization without more context."}
+  ]
+}

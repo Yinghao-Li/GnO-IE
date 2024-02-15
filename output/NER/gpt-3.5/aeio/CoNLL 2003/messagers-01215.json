@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: The general did not mention these refugees , who are on the outer limit of the strip the planes have been checking .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities in the given paragraph step by step.\n\n1. The general - Person\n2. refugees - Person (assuming they are individuals)\n3. strip - Location\n4. planes - Organization\n\nSo, the identified entities in the paragraph are:\n\n- Person: The general, refugees\n- Location: strip\n- Organization: planes"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\" from the paragraph.\n\n1. The general - Person\n2. refugees - Person\n3. strip - Location\n4. planes - Organization\n\nSo, the identified entities in the paragraph that clearly refer to \"['Location', 'Organization', 'Person']\" are:\n\n- Person: The general, refugees\n- Location: strip\n- Organization: planes"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities from the paragraph presented as a Markdown table:\n\n| Entity | Entity Type |\n|--------|-------------|\n| The general | person |\n| refugees | person |\n| strip | location |\n| planes | organization |"}
+]

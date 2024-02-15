@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As many as 1 million dog bites are recorded in the United States every year and half of them are provoked by humans , a veterinarian told fellow animal doctors on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| a veterinarian |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| a veterinarian |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As many as 1 million dog bites are recorded in the United States every year and half of them are provoked by humans , a veterinarian told fellow animal doctors on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| United States |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| United States |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As many as 1 million dog bites are recorded in the United States every year and half of them are provoked by humans , a veterinarian told fellow animal doctors on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United States |\n| Veterinarian's profession |\n\nThe paragraph does not mention any specific organizations by name. The only entities that can be identified as organizations are \"United States\" and \"Veterinarian's profession\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United States |\n| Veterinarian's profession |\n\nThe paragraph mentions \"United States\" and \"Veterinarian's profession\" as organizations. Other entities such as \"As many as 1 million dog bites are recorded in the United States every year\" and \"a veterinarian told fellow animal doctors on Friday\" do not clearly refer to organizations. The former is a quantifiable fact about the number of dog bites in the US, and the latter is a statement about an action taken by a veterinarian."}
+  ]
+}

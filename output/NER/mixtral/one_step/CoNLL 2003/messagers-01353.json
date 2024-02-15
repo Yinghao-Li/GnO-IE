@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He took over there , and took control of the red button controlling nuclear arms , in December 1991 when Mikhail Gorbachev resigned , marking the end of the Soviet Union .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| He |\n| Mikhail Gorbachev |\n\nExplanation:\n\n* \"He\" is a person, though their identity is not specified in the paragraph.\n* \"Mikhail Gorbachev\" is a named person, who was the former leader of the Soviet Union."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Mikhail Gorbachev |\n\nExplanation:\n\n* \"He\" is not a clear reference to a person, as the identity of the person is not specified in the paragraph.\n* \"Mikhail Gorbachev\" is a named person, who was the former leader of the Soviet Union."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He took over there , and took control of the red button controlling nuclear arms , in December 1991 when Mikhail Gorbachev resigned , marking the end of the Soviet Union .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| there      |\n\nIn the given paragraph, the word \"there\" is the only location entity. It is used to refer to a specific location where the subject took over and controlled the red button. However, the exact location is not explicitly mentioned in the text."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| there      |\n\nIn this paragraph, the word \"there\" is the only location entity. The other entities mentioned, such as \"the red button controlling nuclear arms\" and \"December 1991\" do not clearly refer to a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He took over there , and took control of the red button controlling nuclear arms , in December 1991 when Mikhail Gorbachev resigned , marking the end of the Soviet Union .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| the red button controlling nuclear arms |\n| the Soviet Union |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| the Soviet Union |\n\nThe other entity, \"the red button controlling nuclear arms,\" does not refer to an organization, as it is a physical object and not a group with a distinct identity and structure."}
+  ]
+}

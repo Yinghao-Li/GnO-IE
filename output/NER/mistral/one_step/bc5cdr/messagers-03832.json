@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PPA , 75 mg alone , increased blood pressure ( 31 + / - 14 mm Hg systolic , 20 + / - 5 mm Hg diastolic ) , and propranolol pretreatment antagonized this increase ( 12 + / - 10 mm Hg systolic , 10 + / - 7 mm Hg diastolic ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Increased blood pressure |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Increased blood pressure |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PPA , 75 mg alone , increased blood pressure ( 31 + / - 14 mm Hg systolic , 20 + / - 5 mm Hg diastolic ) , and propranolol pretreatment antagonized this increase ( 12 + / - 10 mm Hg systolic , 10 + / - 7 mm Hg diastolic ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| PPA (Phenylephrine) |\n| Propranolol |\n\nExplanation:\n\nThe paragraph mentions two chemicals: Phenylephrine (PPA) and Propranolol. These are the entities to be identified."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Phenylephrine (PPA) |\n| Propranolol |\n\nExplanation:\n\nThe paragraph specifically mentions \"PPA\" and \"Propranolol\" as chemicals. Other entities such as \"mm Hg\" and \"systolic\" and \"diastolic\" are units of measurement or physiological terms and do not refer to specific chemicals."}
+  ]
+}

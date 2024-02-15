@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Blood urea nitrogen levels increase |\n| Gingival hyperplasia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities that clearly refer to \"Disease\" in the given paragraph, presented as a Markdown table with one column \"Disease\":\n\n| Disease |\n| --- |\n| Gingival hyperplasia |\n\nThe entity \"Blood urea nitrogen levels increase\" does not clearly refer to a disease, but rather a side effect or a laboratory result, and therefore it has been excluded from the list."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Cyclosporin A |\n| Nifedipine |\n| Blood urea nitrogen |\n| Gingival hyperplasia |\n\nNote: \"Blood urea nitrogen\" is not a chemical entity, but rather a physiological measure of the level of urea in the blood. It is not a chemical substance, so it should not be included in the list of chemical entities.\n\nTherefore, the corrected table of chemical entities in the paragraph is:\n\n| Chemical |\n| --- |\n| Cyclosporin A |\n| Nifedipine |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the valid chemical entities:\n\n| Chemical |\n| --- |\n| Cyclosporin A |\n| Nifedipine |"}
+  ]
+}

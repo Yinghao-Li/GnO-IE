@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The hole mobility was estimated to be 0.05 cm^2 V -1 s^-1 , which is 1-2 orders of magnitude higher than that of other effective D-A type low - bandgap photovoltaic polymers ( 2.6 x 10^-4 -3 x 10^-3 cm^2 V -1 s^-1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| D-A type low - bandgap photovoltaic polymers |\n\nThe \"Material Name\" entities in the paragraph are:\n\n1. D-A type low - bandgap photovoltaic polymers\n\nNote: The hyphen in \"D-A\" and the dash in \"low - bandgap\" are part of the material name and should be included in the entity recognition."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, here's the updated table with the valid \"Material Name\" entities:\n\n| Material Name |\n| --- |\n| D-A type low - bandgap photovoltaic polymers |\n\nThe following entities were removed:\n\n* \"hole mobility\" (not a material name)\n* \"2.6 x 10^-4 -3 x 10^-3 cm^2 V -1 s^-1\" (not a material name)\n\nThe remaining entity, \"D-A type low - bandgap photovoltaic polymers\", clearly refers to a material name and is presented in the table."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The hole mobility was estimated to be 0.05 cm^2 V -1 s^-1 , which is 1-2 orders of magnitude higher than that of other effective D-A type low - bandgap photovoltaic polymers ( 2.6 x 10^-4 -3 x 10^-3 cm^2 V -1 s^-1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| hole mobility |\n| bandgap |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| hole mobility |\n| bandgap |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The hole mobility was estimated to be 0.05 cm^2 V -1 s^-1 , which is 1-2 orders of magnitude higher than that of other effective D-A type low - bandgap photovoltaic polymers ( 2.6 x 10^-4 -3 x 10^-3 cm^2 V -1 s^-1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 0.05 cm^2 V -1 s^-1 |\n| 2.6 x 10^-4 cm^2 V -1 s^-1 |\n| 3 x 10^-3 cm^2 V -1 s^-1 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "Valid entities:\n\n| Property Value |\n| --- |\n| 0.05 cm^2 V -1 s^-1 |\n| 2.6 x 10^-4 cm^2 V -1 s^-1 |\n| 3 x 10^-3 cm^2 V -1 s^-1 |\n\nRemoved entities:\n\n* \"1-2 orders of magnitude\" (not a specific value)\n* \"D-A type low - bandgap photovoltaic polymers\" (not a specific value)"
+    }
+  ]
+}

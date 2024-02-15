@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: St. Louis 217,092 75,810\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. St. Louis\n\nThis is a proper noun and can be identified as a person (in this context, a city or a place)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. St. Louis\n\nThis is the only entity in the paragraph that can be clearly identified as a person (in this context, a city or a place). The other numbers do not refer to persons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| St. Louis |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: St. Louis 217,092 75,810\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. St. Louis: This is an unambiguous location entity, referring to the city of St. Louis.\n\n2. 217,092: This is not a location, but rather a number representing the population of St. Louis.\n\n3. 75,810: This is also a number and not a location. It could potentially represent the number of residents in a specific neighborhood or area within St. Louis, but without additional context, it's impossible to determine for certain.\n\nSo, the only clear location entity in the paragraph is \"St. Louis.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The only clear location entity in the paragraph is \"St. Louis.\""},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| St. Louis |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: St. Louis 217,092 75,810\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. St. Louis: This is most likely a city or a metropolitan area. It can be considered an organization in the sense of a political or administrative entity.\n\nTherefore, the organization entities in the paragraph are:\n\n1. St. Louis"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. St. Louis: This is the only organization entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| St. Louis |"}
+  ]
+}

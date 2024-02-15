@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Information technology firm Electronic Data Systems said on Friday it had bagged a contract for the first air traffic control project being funded under the Private Finance Initiative .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. Information technology firm Electronic Data Systems - Organization\n2. Friday - Location (assuming it refers to a specific location)\n3. Private Finance Initiative - Organization\n\nSo, the identified entities are:\n\n- Organization: Electronic Data Systems, Private Finance Initiative\n- Location: Friday"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Based on the given options, let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. Information technology firm Electronic Data Systems - Organization\n2. Friday - Location (assuming it refers to a specific location)\n\nSo, the identified entities are:\n\n- Organization: Electronic Data Systems\n- Location: Friday"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity                   | Entity Type   |\n|--------------------------|---------------|\n| Electronic Data Systems  | Organization  |\n| Friday                   | Location      |"}
+]

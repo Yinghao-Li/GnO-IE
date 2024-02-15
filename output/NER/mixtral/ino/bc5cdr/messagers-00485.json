@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: RESULTS : Of the 246 admitted patients , 34 ( 14 % ) met CK - MB criteria for MI and 38 ( 16 % ) had cTnI elevations .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MI (Myocardial Infarction) is a disease and it is mentioned in the paragraph.\n2. The term \"CK-MB criteria for MI\" refers to a method of diagnosing Myocardial Infarction, so it does not refer to a separate disease.\n3. The term \"cTnI elevations\" refers to an abnormal level of cardiac troponin I, which is a biomarker used to diagnose Myocardial Infarction. It does not refer to a separate disease.\n\nTherefore, the \"Disease\" entities in the paragraph are:\n\n* Myocardial Infarction (MI)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "* Myocardial Infarction (MI)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Myocardial Infarction (MI) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: RESULTS : Of the 246 admitted patients , 34 ( 14 % ) met CK - MB criteria for MI and 38 ( 16 % ) had cTnI elevations .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. CK-MB: This is a chemical entity. CK-MB stands for creatine kinase MB, which is an isoenzyme of creatine kinase. It is often used as a biomarker for myocardial infarction (MI).\n2. MI: Although MI stands for myocardial infarction, which is a medical condition, it is closely related to the chemical entity CK-MB and is often used in the context of measuring CK-MB levels.\n3. cTnI: This is another chemical entity. cTnI stands for cardiac troponin I, which is a protein found in heart muscle cells. It is often used as a biomarker for heart muscle damage, including myocardial infarction.\n\nTherefore, the chemical entities in the paragraph are CK-MB, MI (related to CK-MB), and cTnI."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. CK-MB: This is a chemical entity, as it is a biomarker used to detect myocardial infarction.\n2. cTnI: This is also a chemical entity, as it is a protein found in heart muscle cells and used as a biomarker for heart muscle damage.\n\nTherefore, the relevant chemical entities in the paragraph are CK-MB and cTnI."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| CK-MB |\n| cTnI |"}
+  ]
+}

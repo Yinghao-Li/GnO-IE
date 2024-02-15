@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In this report we present four patients treated with a combination of different psychotropic drugs , in whom asterixis was triggered either by adding carbamazepine ( CBZ ) to a treatment regimen , or by increasing its dosage .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Asterixis |\n| Unspecified condition triggered by adding carbamazepine (CBZ) |\n| Unspecified condition triggered by increasing carbamazepine (CBZ) dosage |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Asterixis |\n| Unspecified condition triggered by adding carbamazepine (CBZ) to a treatment regimen |\n| Unspecified condition triggered by increasing carbamazepine (CBZ) dosage |\n\nExplanation:\n\n* Asterixis is a clear disease entity mentioned in the paragraph.\n* The other entities \"psychotropic drugs\", \"treatment regimen\", and \"carbamazepine (CBZ)\" are not diseases, but rather contextual information. However, the paragraph states that \"asterixis was triggered\" by adding or increasing the dosage of carbamazepine, so we include \"unspecified condition triggered by adding carbamazepine (CBZ)\" and \"unspecified condition triggered by increasing carbamazepine (CBZ)\" as disease entities. These entities represent the conditions or symptoms that were caused by the use of carbamazepine."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In this report we present four patients treated with a combination of different psychotropic drugs , in whom asterixis was triggered either by adding carbamazepine ( CBZ ) to a treatment regimen , or by increasing its dosage .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| carbamazepine ( CBZ ) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| carbamazepine ( CBZ ) |"}
+  ]
+}

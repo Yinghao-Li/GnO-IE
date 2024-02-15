@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: At a dose of 9 mg / kg , resultant penetration of 5 % was higher than in previous reports , more consistent with inflamed meninges .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| inflamed meninges |\n\nIn the given paragraph, the only disease entity mentioned is \"inflamed meninges\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| inflamed meninges |\n\nThe word \"inflamed\" is an adjective that describes the state of the meninges, and \"meninges\" refers to the membranes that cover the brain and spinal cord. Therefore, \"inflamed meninges\" can be considered as a disease entity.\n\nOn the other hand, the term \"9 mg / kg\" refers to a dose of a drug or treatment, and \"5%\" is a percentage of drug penetration, which do not refer to any disease entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: At a dose of 9 mg / kg , resultant penetration of 5 % was higher than in previous reports , more consistent with inflamed meninges .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 9 mg / kg |\n\nNote: I have identified \"9 mg / kg\" as a chemical entity because it refers to a dose or concentration of a chemical substance, which is a type of chemical entity. The specific chemical substance is not mentioned in the text, but the unit of measurement (mg/kg) suggests that it is a chemical."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 9 mg / kg |\n\nNote: I have removed \"5 %\" as it refers to a percentage and not a chemical entity. The only remaining chemical entity is \"9 mg / kg\", which refers to a dose or concentration of a chemical substance."}
+  ]
+}

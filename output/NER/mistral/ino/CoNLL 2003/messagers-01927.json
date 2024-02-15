@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Australia was the only dollar-bloc country in the table to eke out a positive return , albeit a paltry 0.02 percent .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Australia\n\nIn this paragraph, \"Australia\" is the identified \"Person\" entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Australia."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Australia |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Australia was the only dollar-bloc country in the table to eke out a positive return , albeit a paltry 0.02 percent .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Australia (country)\n\nIn this paragraph, the only mentioned location entity is \"Australia.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Australia (country)\n\nIn this paragraph, the only mentioned location entity is \"Australia.\" All other entities, such as \"dollar-bloc country\" and \"table,\" do not refer to specific locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Australia (country) |\n\nIn this table, the only location entity is \"Australia (country)\" as mentioned in the paragraph."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Australia was the only dollar-bloc country in the table to eke out a positive return , albeit a paltry 0.02 percent .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Dollar-bloc: This is a economic and monetary term referring to a group of countries whose currencies are directly linked to the U.S. dollar. The Organization of Dollar Area or Dollar Zone is an example of such an organization.\n\nSo, in the given paragraph, \"dollar-bloc\" is the organization being referred to."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Organization: Dollar-bloc (or Organization of Dollar Area, Dollar Zone)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Dollar-bloc (or Organization of Dollar Area, Dollar Zone) |"}
+  ]
+}

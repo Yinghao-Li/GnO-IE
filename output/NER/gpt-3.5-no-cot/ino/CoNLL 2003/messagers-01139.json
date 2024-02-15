@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: A city official , who declined to be named , explained that Goldman , Sachs , which this summer was demoted to the second tier of the syndicate , proposed the floating rate issue and as a result was promoted to book runner for this offering ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Person\" entities are:\n\n| Person |\n|--------|\n| Goldman |\n| Sachs |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Person\" entities are:\n\n| Person |\n|--------|\n| Goldman |\n| Sachs |"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person  |\n|---------|\n| Goldman |\n| Sachs   |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: A city official , who declined to be named , explained that Goldman , Sachs , which this summer was demoted to the second tier of the syndicate , proposed the floating rate issue and as a result was promoted to book runner for this offering ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entities are as follows:\n\n| Entity |\n|--------|\n|        |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Apologies for the confusion. Upon reviewing the paragraph again, there are no specific \"Location\" entities mentioned."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Apologies for the confusion. Upon reviewing the paragraph again, there are no specific \"Location\" entities mentioned. Therefore, there are no valid entities to present in the table."}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: A city official , who declined to be named , explained that Goldman , Sachs , which this summer was demoted to the second tier of the syndicate , proposed the floating rate issue and as a result was promoted to book runner for this offering ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Organization\" entities are:\n\n1. Goldman Sachs: This is a financial organization.\n2. Syndicate: Although not explicitly mentioned, it can be inferred that \"syndicate\" refers to a group or organization involved in the offering.\n3. Book runner: This is a role or position within an organization involved in the offering."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Organization\" entities in the given paragraph are:\n\n1. Goldman Sachs: This is a financial organization.\n2. Syndicate: Although not explicitly mentioned, it can be inferred that \"syndicate\" refers to a group or organization involved in the offering."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization    |\n|-----------------|\n| Goldman Sachs   |\n| Syndicate       |"}
+  ]
+}

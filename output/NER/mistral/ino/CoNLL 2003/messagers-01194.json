@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: General Baril saw rebel leader Laurent Kabila in Goma last week but the rebels told him the crisis was over because most of the Rwandan refugees have already gone home .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. General Baril\n2. Laurent Kabila\n3. rebels (implies a group of people, but no specific names mentioned)\n4. Rwandan refugees (implies a group of people, but no specific names mentioned)\n\nSo, the identified \"Person\" entities in the paragraph are:\n\n1. General Baril\n2. Laurent Kabila\n3. (implicit) the rebels' leaders or representatives who spoke to General Baril\n4. Rwandan refugees (implies a large group of individuals)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. General Baril\n2. Laurent Kabila\n3. (implicit) the rebels' representatives\n\nSo, the relevant \"Person\" entities in the paragraph are:\n\n1. General Baril\n2. Laurent Kabila\n3. (implicit) the rebels' representatives."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| General Baril |\n| Laurent Kabila |\n| (implicit) the rebels' representatives |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: General Baril saw rebel leader Laurent Kabila in Goma last week but the rebels told him the crisis was over because most of the Rwandan refugees have already gone home .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Goma: This is a specific location mentioned in the paragraph. It is a city in the Democratic Republic of the Congo, near the Rwandan border."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Goma: This is a city in the Democratic Republic of the Congo, near the Rwandan border."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Goma |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: General Baril saw rebel leader Laurent Kabila in Goma last week but the rebels told him the crisis was over because most of the Rwandan refugees have already gone home .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. General Baril: This is a person, not an organization.\n2. Rebel leader Laurent Kabila: This is a person, not an organization. However, we can identify \"Rebels\" as an organization in this context.\n3. Goma: This is a location and not an organization.\n4. Rwandan refugees: This is a group of people, not an organization. However, we can identify \"Rwandans\" as an organization in a broader sense.\n5. Home: This is a location and not an organization.\n\nSo, the organization entities in the paragraph are \"Rebels\" and \"Rwandans\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The organization entities in the paragraph are \"Rebels\" and \"Rwandans\"."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Rebels |\n| Rwandans |"}
+  ]
+}

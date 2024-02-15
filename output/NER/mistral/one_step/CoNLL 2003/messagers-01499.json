@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: They said police and troops used water cannons from fire engines to subdue about 120 university students sitting in at the centre of the junction at about 3 a.m. before they moved in to round them up .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| police |\n| troops |\n| about 120 university students |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| police |\n| troops |\n| about 120 university students |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: They said police and troops used water cannons from fire engines to subdue about 120 university students sitting in at the centre of the junction at about 3 a.m. before they moved in to round them up .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| centre of the junction |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| centre of the junction |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: They said police and troops used water cannons from fire engines to subdue about 120 university students sitting in at the centre of the junction at about 3 a.m. before they moved in to round them up .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| police |\n| troops |\n| fire engines |\n\nExplanation:\nThe paragraph mentions \"police\" and \"troops\" as separate organizations involved in the incident. It also mentions \"fire engines,\" which were used as a tool but can be considered an organization in this context due to the implied presence of a fire department or firefighting unit."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| police |\n| troops |\n\nExplanation:\nIn the given paragraph, \"they\" is not an organization, and \"about 120 university students\" is a group of people, not an organization. \"At about 3 a.m.\" and \"before they moved in to round them up\" are time phrases and not organizations. \"Junction\" is a location and not an organization. Therefore, only \"police\" and \"troops\" are the valid organizations mentioned in the paragraph."}
+  ]
+}

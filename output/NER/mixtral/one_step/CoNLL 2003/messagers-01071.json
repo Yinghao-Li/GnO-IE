@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: -- London Newsroom +44-171-542 7717\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| London Newsroom |\n\nNote: The paragraph only contains one \"Person\" entity, which is \"London Newsroom\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| London Newsroom |\n\nNote: The paragraph only contains one \"Person\" entity, which is \"London Newsroom\". Other possible entities, such as the phone number, do not clearly refer to a person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: -- London Newsroom +44-171-542 7717\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| London |\n\nExplanation:\n\nThe word \"London\" is the only location entity mentioned in the paragraph. It is a proper noun and a well-known city, making it a clear location entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| London |\n\nExplanation:\n\nThe only word in the paragraph is \"London,\" which is a proper noun and a well-known city, making it a clear location entity. The other text in the paragraph, \"+44-171-542 7717,\" does not refer to a location and is not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: -- London Newsroom +44-171-542 7717\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| London Newsroom |\n\nNote: I've found one organization in the paragraph, which is \"London Newsroom\". The other entities like \"+44-171-542 7717\" are not organizations, so they are not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| London Newsroom |\n\nNote: I've found one organization in the paragraph, which is \"London Newsroom\". The other entities like \"+44-171-542 7717\" are not organizations, so they are not included in the table."}
+  ]
+}

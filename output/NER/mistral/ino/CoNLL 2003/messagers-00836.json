@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Good news for Milan is that Udinese 's German striker Oliver Bierhoff is out through injury .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Milan\n2. Udinese\n3. German striker (This is a vague entity, but if we assume \"German striker\" refers to a specific person, then that person would be the entity.)\n4. Oliver Bierhoff."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Milan\n2. Oliver Bierhoff."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Milan  |\n| Oliver Bierhoff |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Good news for Milan is that Udinese 's German striker Oliver Bierhoff is out through injury .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Milan\n\nThe sentence mentions \"Good news for Milan,\" so Milan is the location entity in this context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Milan"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Milan |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Good news for Milan is that Udinese 's German striker Oliver Bierhoff is out through injury .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Udinese\n\nExplanation: Udinese is identified as an organization in this paragraph because it is mentioned as the employer of Oliver Bierhoff."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Udinese.\n\nExplanation: In the given paragraph, only Udinese is identified as a clear organization entity. The other entities mentioned, such as Milan and German, do not refer to organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Udinese |\n\nExplanation: The table presents the organization entity, \"Udinese\", in a clear and concise format."}
+  ]
+}

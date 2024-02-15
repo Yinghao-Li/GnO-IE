@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The students appealed to the government not to close the institute because of their latest demonstration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| the students |\n| the government |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| the students |\n| the government |\n\nExplanation:\n\n* \"the students\" and \"the government\" are clear references to people or groups of people, so they are valid entities.\n* \"institute\" is not a person, so it is not a valid entity."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The students appealed to the government not to close the institute because of their latest demonstration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| the institute |\n\nThe only location entity in the paragraph is \"the institute\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| the institute |\n\nThere is only one location entity in the paragraph, which is \"the institute\". The other entities like \"the government\" and \"their latest demonstration\" do not clearly refer to a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The students appealed to the government not to close the institute because of their latest demonstration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| government |\n| institute |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| government |\n| institute |\n\nThe other entity \"their latest demonstration\" does not refer to an \"Organization\", so it was not included in the table."}
+  ]
+}

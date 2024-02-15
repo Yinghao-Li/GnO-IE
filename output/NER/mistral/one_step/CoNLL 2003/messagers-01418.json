@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Every year , 500 new plastic surgeons graduate in Brazil and medical students from all over the world come to study there .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| 500 new plastic surgeons (who graduate in Brazil) |\n| medical students (who come from all over the world) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| 500 new plastic surgeons (who graduate in Brazil) |\n| medical students |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Every year , 500 new plastic surgeons graduate in Brazil and medical students from all over the world come to study there .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Brazil |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Brazil |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Every year , 500 new plastic surgeons graduate in Brazil and medical students from all over the world come to study there .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Brazil (Country) |\n| Plastic surgeons in Brazil (Profession) |\n| Medical students (Student body) |\n\nExplanation:\n\n1. Brazil: In this context, Brazil is referred to as a country where the event takes place.\n2. Plastic surgeons in Brazil: This refers to the profession of plastic surgeons in Brazil, specifically the 500 new graduates each year.\n3. Medical students: This refers to the student body coming from all over the world to study in Brazil."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Plastic surgeons in Brazil |\n\nExplanation:\n\nThe only clear organization mentioned in the paragraph is \"Plastic surgeons in Brazil,\" as it refers to a specific professional group. The country \"Brazil\" is not an organization in this context. The \"medical students\" are not an organization, but rather a group of individuals."}
+  ]
+}

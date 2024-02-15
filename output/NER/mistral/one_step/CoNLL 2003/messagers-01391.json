@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Yields on U.S. 30-year Treasury bonds were 6.51 percent when stock trading closed in Mexico , unchanged from Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| U.S. |\n| Mexico |\n\nThe paragraph mentions two entities: the United States and Mexico. The entities are described as \"U.S.\" and \"Mexico\" respectively."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Mexico |\n\nThe paragraph mentions only one entity that clearly refers to a person or group of people: Mexico. The reference to \"U.S.\" in the paragraph is not a person, but rather a shorthand for the United States. Therefore, it should not be included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Yields on U.S. 30-year Treasury bonds were 6.51 percent when stock trading closed in Mexico , unchanged from Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Mexico |\n| U.S. (implied) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Mexico |\n| U.S. |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Yields on U.S. 30-year Treasury bonds were 6.51 percent when stock trading closed in Mexico , unchanged from Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| U.S. |\n| Mexico |\n\nExplanation:\nThe paragraph mentions two organizations: the United States (specifically, the U.S. Treasury) and Mexico. The entities are identified based on the context of the paragraph, which refers to \"U.S. 30-year Treasury bonds\" and \"stock trading closed in Mexico.\""},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United States (U.S.) |\n| Mexico |\n\nExplanation:\nThe paragraph mentions two organizations: the United States, specifically the U.S. Treasury Department (implied), and Mexico. The entities are identified based on the context of the paragraph, which refers to \"U.S. 30-year Treasury bonds\" and \"stock trading closed in Mexico.\" The \"30-year Treasury bonds\" are a financial instrument issued by the U.S. Treasury, and \"Mexico\" is an independent country."}
+  ]
+}

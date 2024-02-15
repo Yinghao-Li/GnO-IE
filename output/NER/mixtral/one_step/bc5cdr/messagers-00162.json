@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thus , dronedarone and amiodarone displayed a similar level of antiadrenergic effect and did not impair the resting left ventricular function .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| antiadrenergic effect |\n| resting left ventricular function impairment |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| resting left ventricular function impairment |\n\nNote: I have removed \"antiadrenergic effect\" as it is more likely referring to a pharmacological effect rather than a disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thus , dronedarone and amiodarone displayed a similar level of antiadrenergic effect and did not impair the resting left ventricular function .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| dronedarone |\n| amiodarone |\n\nExplanation:\n\n* Dronedarone is a medication used to treat certain types of irregular heartbeats and is therefore a chemical entity.\n* Amiodarone is also a medication used to treat irregular heartbeats and is therefore a chemical entity.\n* Although \"antiadrenergic\" is a pharmacological term, it is not a specific chemical entity and is not included in the table.\n* \"Resting left ventricular function\" is a medical condition and not a chemical entity, and is not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| dronedarone |\n| amiodarone |\n\nExplanation:\n\n* Dronedarone and amiodarone are both medications used to treat certain types of irregular heartbeats and are therefore chemical entities.\n* The other terms in the paragraph do not refer to specific chemical entities and are not included in the table."}
+  ]
+}

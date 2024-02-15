@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: They last met in Washington after clashes in September that killed 60 Palestinians and 15 Israelis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Palestinians (60 of them) |\n| Israelis (15 of them) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Palestinians (60 of them) |\n| Israelis (15 of them) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: They last met in Washington after clashes in September that killed 60 Palestinians and 15 Israelis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Washington |\n| September (implicit) |\n\nExplanation:\nThe paragraph mentions \"They last met in Washington.\" This indicates that the meeting took place in Washington, D.C. The paragraph also mentions \"clashes in September,\" but it does not explicitly state where these clashes took place. However, since the meeting followed these clashes, it is reasonable to assume that the location of the clashes is the same as the location of the meeting, which is Washington in this case. Therefore, we can identify \"Washington\" as the location entity in the paragraph. The mention of \"September\" is not a location, but rather a time frame, so it is not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Washington |\n\nExplanation:\nThe paragraph mentions \"They last met in Washington.\" This statement clearly refers to a location, specifically Washington, D.C. Therefore, \"Washington\" is the only valid location entity in the paragraph. The mention of \"September\" is not a location, but rather a time frame, so it should not be included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: They last met in Washington after clashes in September that killed 60 Palestinians and 15 Israelis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Palestinians |\n| Israelis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Palestinians |\n| Israelis |"}
+  ]
+}

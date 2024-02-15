@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Adding to the comments by \" Mr Yen \" , as Sakakibara is known for his prominence in the currency market , was BOJ governor Matsushita 's remark ."},
+    {"role": "assistant", "content": "Person Entities:\n- Mr Yen\n- Sakakibara\n- Matsushita"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Person Entities:\n- Mr Yen\n- Sakakibara"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person       |\n|--------------|\n| Mr Yen       |\n| Sakakibara   |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Adding to the comments by \" Mr Yen \" , as Sakakibara is known for his prominence in the currency market , was BOJ governor Matsushita 's remark ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entities are as follows:\n\n| Entity       |\n|--------------|\n| currency market |\n\nPlease note that \"Mr Yen\" and \"BOJ governor Matsushita\" are not considered \"Location\" entities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Apologies for the confusion. Upon reviewing the paragraph again, there are no specific \"Location\" entities mentioned. The term \"currency market\" does not refer to a specific location but rather a general concept. Therefore, there are no relevant \"Location\" entities in the given paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location        |\n|-----------------|\n| currency market |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Adding to the comments by \" Mr Yen \" , as Sakakibara is known for his prominence in the currency market , was BOJ governor Matsushita 's remark ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Organization\" entity is:\n\n1. BOJ (Bank of Japan)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Organization\" entity is:\n\n1. BOJ (Bank of Japan)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization    |\n|-----------------|\n| Bank of Japan (BOJ) |"}
+  ]
+}

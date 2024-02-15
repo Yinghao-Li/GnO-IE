@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Havel had a small malignant tumour removed from his lung on Monday and is recovering in hospital .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Havel\n\nThis is the person mentioned in the paragraph. He is the one who had a small malignant tumor removed from his lung."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Havel\n\nThis is the only entity in the paragraph that clearly refers to a person."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Havel |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Havel had a small malignant tumour removed from his lung on Monday and is recovering in hospital .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Havel had a small malignant tumour removed from his (Location: lung)\n\nSo, the location entity in the paragraph is \"lung\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The only relevant location entity in the paragraph is \"lung\"."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| lung |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Havel had a small malignant tumour removed from his lung on Monday and is recovering in hospital .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hospital: This is the organization involved in the context of the paragraph. The hospital is providing medical services to Havel for his recovery after the tumor removal surgery."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Hospital."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Hospital |"}
+  ]
+}

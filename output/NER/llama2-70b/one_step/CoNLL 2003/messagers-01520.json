@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thousands were killed or imprisoned .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Thousands |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| None |\n\nThe paragraph does not mention any specific persons, therefore there are no valid entities to be identified."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thousands were killed or imprisoned .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Thousands were killed or imprisoned |\n\nThe location entities in the paragraph are:\n\n* Thousands\n* Imprisoned"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid location entities:\n\n| Location |\n| --- |\n| Imprisoned |\n\nThe only location entity in the paragraph is \"Imprisoned\"."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thousands were killed or imprisoned .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Thousands |\n| Imprisoned |\n\nNote: In this paragraph, \"Thousands\" and \"Imprisoned\" are not organizations, but they are the entities that are being affected by the action of the sentence. Therefore, they are not included in the table as \"Organization\" entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid \"Organization\" entities:\n\n| Organization |\n| --- |\n| None |\n\nThe paragraph does not mention any specific organizations. The words \"thousands\" and \"imprisoned\" do not refer to organizations, so they are not included in the table."}
+  ]
+}

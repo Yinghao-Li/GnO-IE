@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The best performance was obtained with the thickness of the active layer of 80-90 nm , the copolymers : PC 70 BM ratio of 1 : 2 ( by weight ) and the Ca / Al used as the cathode.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| active layer with a thickness of 80-90 nm |\n| copolymers with PC 70 BM ratio of 1 : 2 ( by weight ) |\n| Ca / Al used as the cathode |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| active layer with a thickness of 80-90 nm |\n| copolymers with PC 70 BM ratio of 1 : 2 ( by weight ) |\n| Ca / Al |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The best performance was obtained with the thickness of the active layer of 80-90 nm , the copolymers : PC 70 BM ratio of 1 : 2 ( by weight ) and the Ca / Al used as the cathode.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| thickness of the active layer |\n| PC |\n| BM |\n| ratio of PC to BM |\n| by weight |\n| Ca |\n| Al |\n| cathode |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| thickness of the active layer |\n| PC : BM ratio |\n| by weight |\n| Ca |\n| Al |\n\nNote: \"best performance\" is not a material property and was removed. Also, \"the copolymers\" is a compound entity that does not clearly refer to a specific material property, so it was also removed."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The best performance was obtained with the thickness of the active layer of 80-90 nm , the copolymers : PC 70 BM ratio of 1 : 2 ( by weight ) and the Ca / Al used as the cathode.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value        |\n|----------------------|\n| thickness of the active layer: 80-90 nm |\n| PC 70 BM ratio: 1 : 2 ( by weight ) |\n| Ca / Al used as the cathode |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value        |\n|----------------------|\n| thickness of the active layer: 80-90 nm |\n| PC 70 BM ratio: 1 : 2 ( by weight ) |\n\nThese are the only entities in the paragraph that clearly refer to material properties with specific values. The entities \"best performance was obtained\" and \"used as the cathode\" do not provide specific values and are not considered material properties."
+    }
+  ]
+}

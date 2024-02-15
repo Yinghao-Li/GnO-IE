@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Leicester 1 ( Marshall 78 ) Blackburn 1 ( Sutton 34 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Leicester\n2. Marshall (assuming Marshall is a person and scored the goal for Leicester)\n3. Blackburn\n4. Sutton (assuming Sutton is a person and scored the goal for Blackburn)\n\nSo, the identified \"Person\" entities in the paragraph are Leicester, Marshall, Blackburn, and Sutton."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Marshall (assuming Marshall is a person and scored the goal for Leicester)\n2. Sutton (assuming Sutton is a person and scored the goal for Blackburn)\n\nSo, the relevant \"Person\" entities in the paragraph are Marshall and Sutton."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Marshall |\n| Sutton |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Leicester 1 ( Marshall 78 ) Blackburn 1 ( Sutton 34 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Leicester\n2. Blackburn\n\nThese are the two locations mentioned in the paragraph. The paragraph is describing a soccer match between Leicester and Blackburn."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Leicester\n2. Blackburn\n\nThese are the only entities in the paragraph that clearly refer to locations. The paragraph is describing a soccer match between Leicester and Blackburn, so these are the teams' home cities or towns."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Leicester |\n| Blackburn |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Leicester 1 ( Marshall 78 ) Blackburn 1 ( Sutton 34 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Leicester\n2. Blackburn\n\nThese are the two organizations mentioned in the paragraph. The numbers in parentheses indicate the number of goals scored by the specific player for their respective teams."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Leicester\n2. Blackburn\n\nThese are the organizations mentioned in the paragraph. The numbers in parentheses are irrelevant to the identification of organizations and can be ignored."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Leicester |\n| Blackburn |"}
+  ]
+}

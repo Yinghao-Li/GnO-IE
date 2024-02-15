@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Objective response ( > PR ( partial response ) ) rate was 77 . 4 % ( complete response ( CR ) , 20 . 2 % ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Objective response |\n| Partial response (PR) |\n| Complete response (CR) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Objective response |\n| Partial response (PR) |\n| Complete response (CR) |\n\nExplanation:\nThe original paragraph mentions \"Objective response\", \"Partial response (PR)\", and \"Complete response (CR)\". These entities can be considered diseases or conditions in the context of medical treatment response evaluation. Therefore, they are valid entities to include in the table. Other terms like \"percent\" and \"rate\" are not diseases and should be excluded."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Objective response ( > PR ( partial response ) ) rate was 77 . 4 % ( complete response ( CR ) , 20 . 2 % ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| PR ( partial response ) |\n| CR ( complete response ) |\n\nNote: No specific chemicals are mentioned in the paragraph. The entities identified are pharmacological responses to treatments."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| PR ( partial response ) |\n| CR ( complete response ) |\n\nNote: The entities identified are still pharmacological responses to treatments, but they can be considered as surrogate markers for the effects of certain chemicals or drugs on the body."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowling : Doull 8-1-60-0 ( w-3 ) , Kennedy 3-0-24-0 ( w-7 nb-1 ) ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Doull |\n| Kennedy |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Doull |\n| Kennedy |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowling : Doull 8-1-60-0 ( w-3 ) , Kennedy 3-0-24-0 ( w-7 nb-1 ) ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Doull 8-1-60-0 |\n| Kennedy 3-0-24-0 |\n\nThese entities represent bowling scores. The first entity \"Doull 8-1-60-0\" consists of the name \"Doull\" and the score components \"8\", \"1\", \"60\", and \"0\". The second entity \"Kennedy 3-0-24-0\" consists of the name \"Kennedy\" and the score components \"3\", \"0\", \"24\", and \"0\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Doull 8-1-60-0 (lane or bowling alley?) |\n| Kennedy 3-0-24-0 (lane or bowling alley?) |\n\nIt's important to note that the original paragraph does not provide clear evidence that \"Doull 8-1-60-0\" and \"Kennedy 3-0-24-0\" refer to specific locations, such as bowling alleys or lanes. However, based on the context of the paragraph, it is a reasonable assumption that they do."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowling : Doull 8-1-60-0 ( w-3 ) , Kennedy 3-0-24-0 ( w-7 nb-1 ) ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Doull |\n| Kennedy |\n\nThese are the two bowlers mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Doull |\n| Kennedy |\n\nThese are the two entities in the paragraph that can be identified as organizations in the context of a bowling game, specifically the names of the bowlers."}
+  ]
+}

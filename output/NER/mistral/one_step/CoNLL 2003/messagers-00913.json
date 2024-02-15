@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: * The international airport in Timisoara and the domestic airports in Arad , Oradea and Sibiu were closed due to fog .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| The international airport in Timisoara |\n| The domestic airports in Arad, Oradea and Sibiu |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| The international airport in Timisoara |\n| The domestic airports in Arad, Oradea, and Sibiu |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: * The international airport in Timisoara and the domestic airports in Arad , Oradea and Sibiu were closed due to fog .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Timisoara (international airport) |\n| Arad (domestic airport) |\n| Oradea (domestic airport) |\n| Sibiu (domestic airport)"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Timisoara (international airport) |\n| Arad |\n| Oradea |\n| Sibiu |\n\nExplanation: The original paragraph mentions \"international airport in Timisoara\" and \"domestic airports in Arad, Oradea and Sibiu\". Since \"international\" and \"domestic\" are descriptors for the type of airport, they are not considered separate entities. Therefore, only the specific locations of the airports are valid entities in this context."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: * The international airport in Timisoara and the domestic airports in Arad , Oradea and Sibiu were closed due to fog .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| International airport in Timisoara |\n| Domestic airport in Arad |\n| Domestic airport in Oradea |\n| Domestic airport in Sibiu |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| International airport in Timisoara |\n| Domestic airport in Arad |\n| Domestic airport in Oradea |\n| Domestic airport in Sibiu |\n\nThese entities are clearly organizations because they are identified as airports, which are typically established and operated by governments or private entities to provide transportation services for passengers and cargo."}
+  ]
+}

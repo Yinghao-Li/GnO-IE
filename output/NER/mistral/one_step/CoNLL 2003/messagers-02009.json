@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thursday 200 Week Ago Holiday Year Ago 10,900\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| I (implied) |\n\nThe paragraph does not contain any explicit mentions of specific persons. It only contains numerical data and references to time."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| I (implied) |\n\nThe paragraph does not contain any explicit mentions of specific persons. It only contains numerical data and references to time."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thursday 200 Week Ago Holiday Year Ago 10,900\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Thursday (10,900 weeks ago) |\n| Holiday (10,900 weeks ago) |\n| Year Ago (10,900 weeks ago) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Thursday (10,900 weeks ago) |\n| Holiday (location not clear in the context) |\n\nSince the paragraph does not provide enough context to determine the location of the holiday, it cannot be included in the table as a valid location entity."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thursday 200 Week Ago Holiday Year Ago 10,900\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Thursday |\n| Year Ago |\n| Holiday |\n\nThese are the only valid organizations mentioned in the paragraph. \"Thursday\" can be considered an organization of days in a week, \"Year Ago\" is a term used to refer to a specific organization of time, and \"Holiday\" is a type of organization that celebrates or commemorates an event or occasion."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Holiday |\n\nThe only valid organization mentioned in the paragraph is \"Holiday\". \"Thursday\" and \"Year Ago\" are not organizations, but rather a day of the week and a temporal expression, respectively."}
+  ]
+}

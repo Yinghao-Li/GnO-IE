@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: On Tuesday and Wednesday , opposition leader Aung San Suu Kyi was restricted to her home by the military government to prevent her from being drawn into the protests .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Aung San Suu Kyi - opposition leader.\n2. Military government - the entity restricting Aung San Suu Kyi."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Aung San Suu Kyi - opposition leader.\n2. Military government - the entity restricting Aung San Suu Kyi (implied person in control of the restriction)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Aung San Suu Kyi |\n| Military government |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: On Tuesday and Wednesday , opposition leader Aung San Suu Kyi was restricted to her home by the military government to prevent her from being drawn into the protests .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Tuesday and Wednesday: These are not location entities, but rather time entities indicating specific days.\n2. opposition leader Aung San Suu Kyi: This is a person entity, not a location.\n3. home: This is a location entity referring to the residence of Aung San Suu Kyi.\n4. military government: This is a group entity, not a location, but it can be considered a metonymy for the location where the military has power, such as the capital city or the military headquarters."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. home (residence of Aung San Suu Kyi)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| home (residence of Aung San Suu Kyi) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: On Tuesday and Wednesday , opposition leader Aung San Suu Kyi was restricted to her home by the military government to prevent her from being drawn into the protests .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Military government.\n\nThis is the organization that restricted opposition leader Aung San Suu Kyi to her home on Tuesday and Wednesday."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Military government.\n\nThis is the organization mentioned in the paragraph that carried out the action of restricting opposition leader Aung San Suu Kyi to her home."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Military government |\n\nThis table lists the organization mentioned in the paragraph and its exact name as it appears in the original text."}
+  ]
+}

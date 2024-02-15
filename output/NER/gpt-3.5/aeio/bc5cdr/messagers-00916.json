@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: We suggest that trazodone (5 , 10 and 20 mg / kg) , by blocking the 5 - HT 2C receptors , releases the nigrostriatal DAergic neurons from tonic inhibition caused by 5 - HT , and thereby potentiates dexamphetamine stereotypy and antagonizes haloperidol catalepsy .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nThere is no mention of a specific disease in the paragraph, so there are no disease entities to identify.\n\nStep 2: Identify the \"Chemical\" entity.\nThe chemical entity mentioned in the paragraph is \"trazodone\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Paragraph: We suggest that trazodone (5 , 10 and 20 mg / kg) , by blocking the 5 - HT 2C receptors , releases the nigrostriatal DAergic neurons from tonic inhibition caused by 5 - HT, and thereby potentiates dexamphetamine stereotypy and antagonizes haloperidol catalepsy.\n\nEntities: trazodone, 5-HT 2C receptors, 5-HT, dexamphetamine, haloperidol."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity       | Entity Type |\n|--------------|-------------|\n| trazodone    | Chemical    |\n| 5-HT 2C receptors | Chemical    |\n| 5-HT         | Chemical    |\n| dexamphetamine | Chemical    |\n| haloperidol  | Chemical    |"}
+]

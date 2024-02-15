@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: U.S. blasts release of convicted bomber .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. U.S. (country)\n2. (unspecified) U.S. (implied, as the article is about the United States)\n3. (unspecified) Blasts (action)\n4. (unspecified) They (implied, as \"U.S.\" is the assumed subject of the sentence)\n5. Convicted bomber (person)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Convicted bomber (person)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Convicted bomber |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: U.S. blasts release of convicted bomber .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. U.S. (Country)\n\nThe term \"U.S.\" in the paragraph refers to the United States of America, which is a country. Therefore, it can be identified as a location entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Paragraph: U.S.\n\nThe only location entity in the paragraph is \"U.S.\", which refers to the United States of America."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| U.S. |\n\nThe location entity in the paragraph is \"U.S.\", which refers to the United States of America."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: U.S. blasts release of convicted bomber .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. U.S. (United States) - The country entity is the main organization mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. U.S. (United States) - The country, which can be considered an organization in this context due to its governmental and administrative functions."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| U.S. (United States) |"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Hapoel Jerusalem 0 Maccabi Tel Aviv 4\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hapoel Jerusalem\n2. Maccabi Tel Aviv.\n\nThese are the two teams mentioned in the paragraph. Since we are asked to identify \"Person\" entities, we are assuming that the teams are being represented by their names, which are considered as proper nouns and therefore classified as \"Person\" entities in this context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Hapoel Jerusalem\n2. Maccabi Tel Aviv.\n\nThese are the only entities in the paragraph that clearly refer to persons (teams being considered as legal entities in sports context)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Hapoel Jerusalem |\n| Maccabi Tel Aviv |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Hapoel Jerusalem 0 Maccabi Tel Aviv 4\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hapoel Jerusalem\n2. Maccabi Tel Aviv\n\nThese are the two teams mentioned in the paragraph, and they are typically associated with their respective cities. Therefore, these names can be considered as location entities representing the cities where these football clubs are located."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Jerusalem\n2. Tel Aviv\n\nThese are the specific locations mentioned in the paragraph. The team names \"Hapoel Jerusalem\" and \"Maccabi Tel Aviv\" are entities that refer to the locations of the teams, but for the purpose of extracting only the locations, it's more appropriate to extract the city names directly."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Jerusalem |\n| Tel Aviv |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Hapoel Jerusalem 0 Maccabi Tel Aviv 4\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hapoel Jerusalem\n2. Maccabi Tel Aviv\n\nBoth Hapoel Jerusalem and Maccabi Tel Aviv are organizations identified in the paragraph. They are sports clubs, specifically football (soccer) clubs, based in Jerusalem and Tel Aviv, Israel, respectively."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Hapoel Jerusalem\n2. Maccabi Tel Aviv\n\nThese are the only organizations explicitly mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Hapoel Jerusalem |\n| Maccabi Tel Aviv |"}
+  ]
+}

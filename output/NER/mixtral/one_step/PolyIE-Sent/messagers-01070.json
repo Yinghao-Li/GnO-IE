@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared with the absorption spectrum in DCM solution , the one in solid film displayed a red - shift absorption peak at 602 nm and an additional shoulder at 655 nm besides the highenergy peak.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| DCM solution |\n| solid film |\n\nIn this paragraph, the two \"Material Name\" entities are \"DCM solution\" and \"solid film\"."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| DCM solution |\n| solid film |\n\nIn this paragraph, the two \"Material Name\" entities are \"DCM solution\" and \"solid film\". The term \"highenergy peak\" is not a material name, but rather a description of a feature in the absorption spectrum. Therefore, it should not be included in the list of material names."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared with the absorption spectrum in DCM solution , the one in solid film displayed a red - shift absorption peak at 602 nm and an additional shoulder at 655 nm besides the highenergy peak.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| absorption spectrum |\n| DCM solution |\n| absorption peak |\n| solid film |\n| shoulder |\n| highenergy peak |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| absorption spectrum |\n| absorption peak (2x) |\n| shoulder |\n| highenergy peak |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Compared with the absorption spectrum in DCM solution , the one in solid film displayed a red - shift absorption peak at 602 nm and an additional shoulder at 655 nm besides the highenergy peak.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| a red-shift absorption peak at 602 nm |\n| an additional shoulder at 655 nm |\n| the higher-energy peak |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| a red-shift absorption peak at 602 nm |\n| an additional shoulder at 655 nm |"
+    }
+  ]
+}

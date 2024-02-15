@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Transient prolongation of the QT during bladder irrigation prompted the episode of TdP .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "In the given paragraph, the identified \"['Disease', 'Chemical']\" entities are:\n\n1. Disease: TdP (Torsades de Pointes) - It is a type of abnormal heart rhythm that can lead to fainting or sudden cardiac arrest.\n\n2. Chemical: QT - It refers to the QT interval, which is a measure of the time it takes for the heart's electrical system to repolarize and reset itself after each heartbeat. Prolongation of the QT interval can be associated with an increased risk of TdP."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the identified \"['Disease', 'Chemical']\" entities are:\n\n1. Disease: TdP (Torsades de Pointes) - It is a type of abnormal heart rhythm that can lead to fainting or sudden cardiac arrest.\n\n2. Chemical: QT - It refers to the QT interval, which is a measure of the time it takes for the heart's electrical system to repolarize and reset itself after each heartbeat."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity | Entity Type |\n|--------|-------------|\n| TdP    | Disease     |\n| QT     | Chemical    |"}
+]

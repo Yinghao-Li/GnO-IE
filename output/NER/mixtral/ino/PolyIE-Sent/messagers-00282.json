@@ -1,0 +1,80 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph.\n\nParagraph: The electron mobilities were 8.8 × 10^-6 and 1.1 × 10^-5 cm^2 V -1 s^-1 in the POBDTPD : PC 70 BM and PEBDTPD : PC 70 BM blends , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. POBDTPD\n2. PC 7"
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Name."
+    },
+    {
+      "role": "assistant",
+      "content": "1. POBDTPD\n2. PC 70 BM"
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| POBDTPD |\n| PC 70 BM |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph.\n\nParagraph: The electron mobilities were 8.8 × 10^-6 and 1.1 × 10^-5 cm^2 V -1 s^-1 in the POBDTPD : PC 70 BM and PEBDTPD : PC 70 BM blends , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"electron mobilities\"\n2. \"8.8 × 10^-6 cm^2 V -1 s^-1\" (although this is a value, it is being used to describe the property of the \"POBDTPD : PC 70 BM\" blend)\n3. \"1.1 × 10^-5 cm^2 V -1 s^-1\" (although this is a value, it is being used to describe the property of the \"PEBDTPD : PC 70 BM\" blend)\n\nThese entities can be considered \"Property Name\" entities as they refer to the properties of the materials being discussed in the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"electron mobilities\"\n2. \"8.8 × 10^-6 cm^2 V -1 s^-1\" (this value refers to the electron mobility of the \"POBDTPD : PC 70 BM\" blend)\n3. \"1.1 × 10^-5 cm^2 V -1 s^-1\" (this value refers to the electron mobility of the \"PEBDTPD : PC 70 BM\" blend)\n\nThese entities are the ones that clearly refer to Material Properties in the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| electron mobilities |\n| 8.8 × 10^-6 cm^2 V -1 s^-1 |\n| 1.1 × 10^-5 cm^2 V -1 s^-1 |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph.\n\nParagraph: The electron mobilities were 8.8 × 10^-6 and 1.1 × 10^-5 cm^2 V -1 s^-1 in the POBDTPD : PC 70 BM and PEBDTPD : PC 70 BM blends , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. The first \"property value\" entity in the paragraph is \"8.8 × 10^-6 cm^2 V -1 s^-1\", which represents the electron mobility in the POBDTPD : PC 70 BM blend.\n2. The second \"property value\" entity is \"1.1 × 10^-5 cm^2 V -1 s^-1\", which represents the electron mobility in the PEBDTPD : PC 70 BM blend.\n\nTherefore, the \"property value\" entities in the paragraph are \"8.8 × 10^-6 cm^2 V -1 s^-1\" and \"1.1 × 10^-5 cm^2 V -1 s^-1\"."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Value of Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. The value of the electron mobility in the POBDTPD : PC 70 BM blend is \"8.8 × 10^-6 cm^2 V -1 s^-1\".\n2. The value of the electron mobility in the PEBDTPD : PC 70 BM blend is \"1.1 × 10^-5 cm^2 V -1 s^-1\".\n\nTherefore, the relevant and clear \"Value of Material Property\" entities in the paragraph are:\n\n* \"8.8 × 10^-6 cm^2 V -1 s^-1\" (electron mobility of POBDTPD : PC 70 BM)\n* \"1.1 × 10^-5 cm^2 V -1 s^-1\" (electron mobility of PEBDTPD : PC 70 BM)"
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 8.8 × 10^-6 cm^2 V -1 s^-1 |\n| 1.1 × 10^-5 cm^2 V -1 s^-1 |"
+    }
+  ]
+}

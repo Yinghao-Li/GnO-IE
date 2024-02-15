@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The nominees , according to diplomats , are : Kofi Annan of Ghana , the U.N. undersecretary-general for peacekeeping ; Ahmedou Ould Abdallah of Mauritania , the former U.N. special envoy for Burundi ; Amara Essy of the Ivory Coast , its foreign minister and the U.N. General Assembly president in 1994-95 ; and Hamid Algabid of Niger , the secretary-general of the Organisation of the Islamic Conference .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Kofi Annan of Ghana\n2. Ahmedou Ould Abdallah of Mauritania\n3. Amara Essy of the Ivory Coast\n4. Hamid Algabid of Niger"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Kofi Annan\n2. Ahmedou Ould Abdallah\n3. Amara Essy\n4. Hamid Algabid"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Kofi Annan |\n| Ahmedou Ould Abdallah |\n| Amara Essy |\n| Hamid Algabid |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The nominees , according to diplomats , are : Kofi Annan of Ghana , the U.N. undersecretary-general for peacekeeping ; Ahmedou Ould Abdallah of Mauritania , the former U.N. special envoy for Burundi ; Amara Essy of the Ivory Coast , its foreign minister and the U.N. General Assembly president in 1994-95 ; and Hamid Algabid of Niger , the secretary-general of the Organisation of the Islamic Conference .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ghana: Kofi Annan is from Ghana.\n2. Mauritania: Ahmedou Ould Abdallah is from Mauritania.\n3. The Ivory Coast: Amara Essy is from the Ivory Coast.\n4. Niger: Hamid Algabid is from Niger.\n\nThese are the \"Location\" entities in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Ghana\n2. Mauritania\n3. The Ivory Coast\n4. Niger\n\nThese are the relevant \"Location\" entities in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ghana |\n| Mauritania |\n| The Ivory Coast |\n| Niger |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The nominees , according to diplomats , are : Kofi Annan of Ghana , the U.N. undersecretary-general for peacekeeping ; Ahmedou Ould Abdallah of Mauritania , the former U.N. special envoy for Burundi ; Amara Essy of the Ivory Coast , its foreign minister and the U.N. General Assembly president in 1994-95 ; and Hamid Algabid of Niger , the secretary-general of the Organisation of the Islamic Conference .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The first organization mentioned in the paragraph is the \"U.N.\" or United Nations, which is referred to through its two entities:\n   - U.N. undersecretary-general for peacekeeping\n   - U.N. General Assembly\n\n2. The second organization mentioned is the \"Organisation of the Islamic Conference\" (also known as the Organisation of Islamic Cooperation since 2011), which is referred to as \"OIC.\"\n\nSo, the \"Organization\" entities in the paragraph are:\n\n* U.N. (United Nations)\n* Organisation of the Islamic Conference (Organisation of Islamic Cooperation)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "* U.N. (United Nations)\n* Organisation of the Islamic Conference (Organisation of Islamic Cooperation)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization          |\n|----------------------|\n| U.N. (United Nations)|\n| Organisation of the Islamic Conference (Organisation of Islamic Cooperation) |"}
+  ]
+}

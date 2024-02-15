@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" France cannot be involved in the domestic political debate , \" President Jacques Chirac told a news conference at the end of a Franco-African summit in Burkina Faso .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France\n2. President Jacques Chirac."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. President Jacques Chirac."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| President Jacques Chirac |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" France cannot be involved in the domestic political debate , \" President Jacques Chirac told a news conference at the end of a Franco-African summit in Burkina Faso .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France\n2. News conference\n3. End of a Franco-African summit\n4. Burkina Faso"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Burkina Faso\n\nThe other entities mentioned in the paragraph, \"France\" and \"news conference,\" do not refer to specific locations, but rather to the country and the event where the statement was made, respectively."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Burkina Faso |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" France cannot be involved in the domestic political debate , \" President Jacques Chirac told a news conference at the end of a Franco-African summit in Burkina Faso .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France: A country in Europe, a sovereign state and a member of the United Nations.\n2. President Jacques Chirac: A specific individual who served as the President of France from 1995 to 2007.\n3. News conference: An organized event where individuals from the media are invited to ask questions and receive information from a speaker or group of speakers.\n4. Franco-African summit: A meeting between the governments and representatives of France and African countries.\n5. Burkina Faso: A country located in West Africa.\n\nSo, the organization entities in the paragraph are:\n1. France\n2. Franco-African summit\n3. Burkina Faso (as a country)\n4. News conference (as an event)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Franco-African summit (an organization or group consisting of France and African countries)\n\nThe other entities mentioned in the paragraph, such as France, President Jacques Chirac, news conference, and Burkina Faso, are not organizations in this context. They are either individuals, countries, or events."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Franco-African summit |\n\nThe other entities mentioned in the paragraph, such as France, President Jacques Chirac, news conference, and Burkina Faso, are not organizations in this context. Therefore, they should not be included in the table."}
+  ]
+}

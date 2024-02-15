@@ -1,0 +1,29 @@
+{
+  "location": [
+    {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+    {"role": "user", "content": "Please identify the \"Location\" entities mentioned in the following paragraph and list each entity separately with a short explanation.\n\nParagraph: Phoenix 101 SACRAMENTO 95\n\nLet's think step by step."},
+    {"role": "assistant", "content": "In the given paragraph, the following \"Location\" entities are mentioned:\n\n1. Phoenix: Phoenix is a city in the state of Arizona, United States. It is the capital and largest city of Arizona.\n\n2. SACRAMENTO: Sacramento is the capital city of the state of California, United States. It is located in the northern part of the state, along the Sacramento River.\n\n3. 95: It is not clear from the given paragraph what \"95\" refers to. It could potentially be a highway or a route number, but without further context, it is difficult to determine the specific location associated with it."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\""},
+    {"role": "assistant", "content": "In the given paragraph, the following \"Location\" entities are mentioned:\n\n1. Phoenix: Phoenix is a city in the state of Arizona, United States. It is the capital and largest city of Arizona.\n\n2. SACRAMENTO: Sacramento is the capital city of the state of California, United States. It is located in the northern part of the state, along the Sacramento River."},
+    {"role": "user", "content": "Please present the valid \"Location\" entities as a Markdown table with one column \"Location\"."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Phoenix    |\n| SACRAMENTO |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities mentioned in the following paragraph and list each entity separately with a short explanation.\n\nParagraph: Phoenix 101 SACRAMENTO 95\n\nLet's think step by step."},
+    {"role": "assistant", "content": "In the given paragraph, there are no explicit mentions of any \"Organization\" entities. The paragraph consists of two proper nouns, \"Phoenix\" and \"SACRAMENTO,\" which are names of cities rather than organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\""},
+    {"role": "assistant", "content": "In the given paragraph, there are no explicit mentions of any \"Organization\" entities. The paragraph consists of two proper nouns, \"Phoenix\" and \"SACRAMENTO,\" which are names of cities rather than organizations. Therefore, there are no entities to remove as they do not refer to organizations."},
+    {"role": "user", "content": "Please present the valid \"Organization\" entities as a Markdown table with one column \"Organization\"."},
+    {"role": "assistant", "content": "| Organization |\n|--------------|\n| None         |"}
+  ],
+  "person": [
+    {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+    {"role": "user", "content": "Please identify the \"Person\" entities mentioned in the following paragraph and list each entity separately with a short explanation.\n\nParagraph: Phoenix 101 SACRAMENTO 95\n\nLet's think step by step."},
+    {"role": "assistant", "content": "In the given paragraph, there are no explicit mentions of \"Person\" entities. The paragraph consists of the names of two locations, \"Phoenix\" and \"Sacramento,\" and two numbers, \"101\" and \"95.\" Therefore, there are no \"Person\" entities to identify in this paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\""},
+    {"role": "assistant", "content": "In the given paragraph, there are no mentions of \"Person\" entities. The paragraph consists of the names of two locations, \"Phoenix\" and \"Sacramento,\" and two numbers, \"101\" and \"95.\" Therefore, there are no \"Person\" entities to identify or remove in this paragraph."},
+    {"role": "user", "content": "Please present the valid \"Person\" entities as a Markdown table with one column \"Person\"."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n|        |"}
+  ]
+}

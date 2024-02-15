@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Rangers 4 (Ferguson 34 , McCoist 71 74 , Laudrup 83) Hibernian 3 (Wright 21 , Jackson 41 , McGinlay 86) .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "In the given paragraph, the identified entities are:\n\n- Location: None\n- Organization: Rangers, Hibernian\n- Person: Ferguson, McCoist, Laudrup, Wright, Jackson, McGinlay"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "In the given paragraph, the identified entities that clearly refer to either \"Location\", \"Organization\", or \"Person\" are:\n\n- Organization: Rangers, Hibernian\n- Person: Ferguson, McCoist, Laudrup, Wright, Jackson, McGinlay"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity    | Entity Type   |\n|-----------|---------------|\n| Rangers   | organization  |\n| Hibernian | organization  |\n| Ferguson  | person        |\n| McCoist   | person        |\n| Laudrup   | person        |\n| Wright    | person        |\n| Jackson   | person        |\n| McGinlay  | person        |"}
+]

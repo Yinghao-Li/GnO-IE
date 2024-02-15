@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Takuya Takagi scored the winner in the 88th minute , rising to head a Hiroshige Yanagimoto cross towards the Syrian goal which goalkeeper Salem Bitar appeared to have covered but then allowed to slip into the net .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Takuya Takagi |\n| Hiroshige Yanagimoto |\n| Salem Bitar |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Takuya Takagi |\n| Hiroshige Yanagimoto |\n| Salem Bitar |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Takuya Takagi scored the winner in the 88th minute , rising to head a Hiroshige Yanagimoto cross towards the Syrian goal which goalkeeper Salem Bitar appeared to have covered but then allowed to slip into the net .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Hiroshige Yanagimoto crossed towards the Syrian goal |\n| Syrian goal |\n| Salem Bitar appeared to have covered the Syrian goal |\n| net |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Hiroshige Yanagimoto crossed towards the Syrian goal |\n| Syrian goal |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Takuya Takagi scored the winner in the 88th minute , rising to head a Hiroshige Yanagimoto cross towards the Syrian goal which goalkeeper Salem Bitar appeared to have covered but then allowed to slip into the net .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Hiroshige Yanagimoto |\n| Syrian |\n\nIn this paragraph, \"Hiroshige Yanagimoto\" is identified as an organization because he is named as the person who crossed the ball towards the goal. \"Syrian\" is identified as an organization because it is mentioned as the team whose goal was scored against."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Syrian |\n\nIn this paragraph, \"Syrian\" is the only organization mentioned. Takuya Takagi and Hiroshige Yanagimoto are individuals mentioned in the paragraph, and \"goalkeeper Salem Bitar\" is a role or position, not an organization."}
+  ]
+}

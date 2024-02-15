@@ -1,0 +1,20 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Safety was assessed using adverse events , Extrapyramidal Symptom ( EPS ) rating scales , laboratory values , electrocardiograms , vital signs , and weight change ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Disease\" entities are:\n\n1. Extrapyramidal Symptom (EPS) - This is a type of movement disorder that can be a side effect of certain medications.\n2. Weight change - This refers to any significant change in a person's body weight, which can be indicative of various health conditions, including diseases.\n"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Disease\" entities in the paragraph are:\n\n1. Extrapyramidal Symptom (EPS) - This is a type of movement disorder that can be a side effect of certain medications."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease                |\n|------------------------|\n| Extrapyramidal Symptom |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Safety was assessed using adverse events , Extrapyramidal Symptom ( EPS ) rating scales , laboratory values , electrocardiograms , vital signs , and weight change ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Chemical\" entities are:\n\n| Chemical Entities |\n|------------------|\n| laboratory values|\n| electrocardiograms|\n| vital signs      |\n| weight change    |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Chemical\" entities in the given paragraph are:\n\n| Chemical Entities |\n|------------------|\n| laboratory values|\n| electrocardiograms|"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical            |\n|---------------------|\n| laboratory values   |\n| electrocardiograms  |"}
+  ]
+}

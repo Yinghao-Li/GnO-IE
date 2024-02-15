@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: During the 1 hour after administration of the drug the incidence of ventricular fibrillation or sustained ventricular tachycardia among the 204 patients with acute myocardial infarction was low , 1 . 5 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Acute myocardial infarction - This is a disease, specifically a type of heart attack.\n2. Ventricular fibrillation - This is a type of abnormal heart rhythm, which can be considered a disease.\n3. Sustained ventricular tachycardia - This is also a type of abnormal heart rhythm, which can be considered a disease."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Acute myocardial infarction\n2. Ventricular fibrillation\n3. Sustained ventricular tachycardia\n\nThese are the entities that clearly refer to diseases. The other terms mentioned in the paragraph are either symptoms (ventricular fibrillation and sustained ventricular tachycardia are types of abnormal heart rhythms, which can be considered symptoms of an underlying heart condition), or they are related to the study design (e.g. \"the incidence\" is a measure of how often a disease or condition occurs in a population)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute myocardial infarction |\n| Ventricular fibrillation |\n| Sustained ventricular tachycardia |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: During the 1 hour after administration of the drug the incidence of ventricular fibrillation or sustained ventricular tachycardia among the 204 patients with acute myocardial infarction was low , 1 . 5 % .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Drug: This is a chemical entity, as drugs are chemical substances that are used to diagnose, treat, or prevent diseases.\n\nThe other terms in the paragraph, such as \"incidence,\" \"hour,\" \"patients,\" \"acute myocardial infarction,\" \"ventricular fibrillation,\" and \"sustained ventricular tachycardia,\" are medical or statistical terms and do not refer to chemical entities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Drug.\n\nThe paragraph only contains one clear reference to a chemical entity, which is the drug being administered to the patients. Other terms in the paragraph, such as \"incidence,\" \"hour,\" \"patients,\" \"acute myocardial infarction,\" \"ventricular fibrillation,\" and \"sustained ventricular tachycardia,\" do not refer to chemical entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Drug |"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: On Monday and Tuesday , students from the YIT and the university launched street protests against what they called unfair handling by police of a brawl between some of their colleagues and restaurant owners in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Students from the YIT (Yrkeshögskolan IT, presumably a technical college or institute)\n2. Students from the university\n3. Police\n4. Some of their colleagues (implied to be students as well)\n5. Restaurant owners."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Students from the YIT\n2. Students from the university\n3. Police\n4. Some of their colleagues\n5. Restaurant owners.\n\nThese are the entities that clearly refer to people in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Students from the YIT |\n| Students from the university |\n| Police |\n| Some of their colleagues |\n| Restaurant owners |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: On Monday and Tuesday , students from the YIT and the university launched street protests against what they called unfair handling by police of a brawl between some of their colleagues and restaurant owners in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. YIT: This is most likely a reference to a specific institution or university, so it can be identified as a location or organization.\n2. university: This is another institution or educational organization, so it can also be identified as a location or organization.\n3. Monday and Tuesday: These are days of the week and cannot be considered locations, but they provide context for the events described in the paragraph.\n4. October: This is a month and cannot be considered a location, but it provides context for the events described in the paragraph.\n5. street: This is a type of location, specifically a public thoroughfare.\n6. restaurant owners: This is a group of people, but they are associated with a specific type of location, which is a restaurant.\n\nSo, the location entities in the paragraph are: YIT, university, street, and restaurants."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are: YIT, university, and street."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| YIT |\n| university |\n| street |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: On Monday and Tuesday , students from the YIT and the university launched street protests against what they called unfair handling by police of a brawl between some of their colleagues and restaurant owners in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. YIT: This is most likely a short form for \"Yorkshire Institute of Technology\" or a similar name, as it is mentioned before \"students\" in the paragraph and is identified as one of the organizations involved in the protests.\n2. University: This is an organization, specifically an educational institution, where the other students come from. It is not explicitly named, but it can be inferred from the context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. YIT (Yorkshire Institute of Technology)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| YIT (Yorkshire Institute of Technology) |"}
+  ]
+}

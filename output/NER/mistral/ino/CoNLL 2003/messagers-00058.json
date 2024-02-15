@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 6. Jeremie Collomb-Patton ( France ) 23.87\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Jeremie Collomb-Patton\n\nThis is the only clear \"Person\" entity mentioned in the paragraph. The country \"France\" is not considered a person entity in this context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Jeremie Collomb-Patton"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Jeremie Collomb-Patton |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 6. Jeremie Collomb-Patton ( France ) 23.87\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France (Country) - Jeremie Collomb-Patton is from this location."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. France (Country)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| France (Country) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 6. Jeremie Collomb-Patton ( France ) 23.87\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France (Country) - Jeremie Collomb-Patton is from this country.\n2. Jeremie Collomb-Patton (Person) - He is the named individual in the paragraph.\n\nThere is no clear organization mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "There is no organization entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| France (Country) |\n\nNote: Since there is no clear organization mentioned in the paragraph, the table only contains the country entity."}
+  ]
+}

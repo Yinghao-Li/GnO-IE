@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mediterranean oil products were steady to mostly lower on Friday after Elf refinery workers voted to end their nine-day strike .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Elf refinery workers |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Elf refinery workers |\n\nThe phrase \"Elf refinery workers\" unambiguously refers to a group of people, and is the only phrase in the paragraph that does so. Therefore, it is the only valid entity that can be presented in a table as a Person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mediterranean oil products were steady to mostly lower on Friday after Elf refinery workers voted to end their nine-day strike .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Mediterranean |\n\nExplanation:\n\nThe paragraph mentions \"Mediterranean\" in reference to oil products, which implies that the location referred to is the Mediterranean region. Therefore, \"Mediterranean\" is the valid location entity in this paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Mediterranean |\n\nExplanation:\n\nThe paragraph mentions \"Mediterranean\" in reference to oil products, which implies that the location referred to is the Mediterranean region. Therefore, \"Mediterranean\" is the valid location entity in this paragraph. The other entities such as \"Friday\", \"Elf refinery workers\", \"nine-day strike\", and \"oil products\" do not clearly refer to a location and are not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mediterranean oil products were steady to mostly lower on Friday after Elf refinery workers voted to end their nine-day strike .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Elf refinery |\n\nExplanation:\n\nIn the given paragraph, the \"Organization\" entity is \"Elf refinery\". This is because it is a specific organization involved in the context of the paragraph, and the strike was carried out by its workers."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Elf refinery |\n\nExplanation:\n\nIn the given paragraph, the only clear \"Organization\" entity is \"Elf refinery\". The term \"Mediterranean oil products\" refers to a type of product and not an organization. Therefore, it is not included in the table."}
+  ]
+}

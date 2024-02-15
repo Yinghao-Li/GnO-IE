@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: If organisers are forced to run the downhill on Sunday , the super-giant slalom originally scheduled for Sunday would likely be abandoned .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| organizers |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| organizers |\n\nThe word \"organizers\" is the only entity in the paragraph that clearly refers to a \"Person\"."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: If organisers are forced to run the downhill on Sunday , the super-giant slalom originally scheduled for Sunday would likely be abandoned .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| downhill |\n| Sunday |\n\nNote: I'm assuming that \"downhill\" refers to a location where the downhill skiing event is held. If it's not the case, then there would be no location entities in this paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Sunday |\n\nNote: In this paragraph, \"Sunday\" is the only entity that can be considered a location, as it refers to a specific day of the week. \"Downhill\" is a type of skiing event and not a physical location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: If organisers are forced to run the downhill on Sunday , the super-giant slalom originally scheduled for Sunday would likely be abandoned .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| organizers |\n\nIn the given paragraph, the \"Organization\" entities are:\n\n1. organizers - The group or individual(s) responsible for planning and executing the event."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| organizers |\n\nIn the given paragraph, the \"Organization\" entities are:\n\n1. organizers - The group or individual(s) responsible for planning and executing the event.\n\nThe word \"super-giant slalom\" is not an organization, but an event or competition in alpine skiing. Therefore, it is not included in the table."}
+  ]
+}

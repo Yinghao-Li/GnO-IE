@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Spanish police said on Friday they had arrested five people and seized more than 90 petrol bombs during disturbances after a protest in the Basque country against Spain 's constitution .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. Spanish police - Person\n2. Friday - Location\n3. Basque country - Location\n4. Spain - Location\n\nSo, the identified entities are:\n\n- Person: Spanish police\n- Location: Friday, Basque country, Spain"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. Spanish police - Person\n2. Friday - Location\n3. Basque country - Location\n4. Spain - Location\n\nSo, the identified entities are:\n\n- Person: Spanish police\n- Location: Friday, Basque country, Spain"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity           | Entity Type   |\n|------------------|---------------|\n| Spanish police   | person        |\n| Friday           | location      |\n| Basque country   | location      |\n| Spain            | location      |"}
+]

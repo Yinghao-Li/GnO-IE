@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 25 CV was performed under an Ar atmosphere in a solution of TBABF 4 ( 0.10 M ) in acetonitrile at a scan rate of 50 mV / s and room temperature.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| Ar (Argon) gas |\n| TBABF (Tetra-n-butylammonium hexafluorophosphate) |\n| Acetonitrile |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| Ar (Argon) gas |\n| Tetra-n-butylammonium hexafluorophosphate (TBABF) |\n| Acetonitrile |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 25 CV was performed under an Ar atmosphere in a solution of TBABF 4 ( 0.10 M ) in acetonitrile at a scan rate of 50 mV / s and room temperature.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| 25 CV |\n| Ar atmosphere |\n| TBABF 4 (0.10 M) |\n| acetonitrile |\n| scan rate |\n| 50 mV / s |\n| room temperature"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| TBABF 4 (0.10 M) |\n| acetonitrile |\n| scan rate |\n| 50 mV / s |\n\nThe other entities in the paragraph do not clearly refer to material properties:\n\n* 25 CV: This is likely a type of electrochemical technique, not a material property.\n* Ar atmosphere: This is a gas atmosphere used during the experiment, not a material property.\n* room temperature: This is a condition under which the experiment was conducted, not a material property."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 25 CV was performed under an Ar atmosphere in a solution of TBABF 4 ( 0.10 M ) in acetonitrile at a scan rate of 50 mV / s and room temperature.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 25 CV |\n| Ar atmosphere |\n| TBABF 4 (0.10 M) |\n| in acetonitrile |\n| scan rate of 50 mV / s |\n| room temperature |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 25 mV/s (scan rate) |\n| 0.10 M (concentration of TBABF 4) |\n| Ar (gas atmosphere) |\n| acetonitrile (solution) |\n| room temperature |"
+    }
+  ]
+}

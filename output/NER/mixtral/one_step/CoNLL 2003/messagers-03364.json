@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NY RANGERS AT TORONTO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| NY Rangers |\n| Toronto |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| NY Rangers |\n| Toronto |\n\nNote: I assumed that \"NY Rangers\" refers to a sports team, and its members are considered as persons. If \"NY Rangers\" does not refer to a sports team or a group of people, then there would be no valid \"Person\" entities in the paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NY RANGERS AT TORONTO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| NY Rangers |\n| Toronto    |\n\nIn this paragraph, the two location entities are \"NY Rangers\" and \"Toronto\". \"NY Rangers\" is the name of a sports team located in New York, and \"Toronto\" is a city in Canada. These entities are mentioned in the context of a sports event, possibly a hockey game, with the NY Rangers as the visiting team and Toronto as the home team."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Toronto    |\n\nIn this paragraph, the only clear location entity is \"Toronto\". \"NY Rangers\" is the name of a sports team, but it is not a location. \"Toronto\" is a city in Canada and is the only location mentioned in the paragraph."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NY RANGERS AT TORONTO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NY RANGERS |\n| Toronto |\n\nNote: I'm assuming \"Toronto\" refers to the Toronto Maple Leafs, which is a professional ice hockey team based in Toronto, Canada. If \"Toronto\" is being used in a different context, please let me know."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NY RANGERS |\n| Toronto |\n\nNote: The paragraph only contains two organization entities, \"NY RANGERS\" and \"Toronto\". I'm assuming \"Toronto\" refers to the Toronto Maple Leafs, which is a professional ice hockey team based in Toronto, Canada. If \"Toronto\" is being used in a different context, there are no other organization entities in the paragraph."}
+  ]
+}

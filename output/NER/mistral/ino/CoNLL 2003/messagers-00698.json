@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Midfielders - Rui Barros ( Porto ) , Jose Barroso ( Porto ) , Luis Figo ( Barcelona ) , Paulo Bento ( Oviedo , Spain ) , Jose Taira ( Salamanca , Spain ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Rui Barros - Person, he is a midfielder for Porto.\n2. Jose Barroso - Person, he is a midfielder for Porto.\n3. Luis Figo - Person, he is a midfielder (or winger, sometimes) for Barcelona.\n4. Paulo Bento - Person, he is a midfielder who has played for Oviedo in Spain.\n5. Jose Taira - Person, he is a midfielder for Salamanca in Spain."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Rui Barros - Person, midfielder for Porto.\n2. Jose Barroso - Person, midfielder for Porto.\n3. Luis Figo - Person, midfielder or winger for Barcelona.\n4. Paulo Bento - Person, midfielder.\n5. Jose Taira - Person, midfielder for Salamanca."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Rui Barros, midfielder for Porto |\n| Jose Barroso, midfielder for Porto |\n| Luis Figo, midfielder or winger for Barcelona |\n| Paulo Bento, midfielder |\n| Jose Taira, midfielder for Salamanca |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Midfielders - Rui Barros ( Porto ) , Jose Barroso ( Porto ) , Luis Figo ( Barcelona ) , Paulo Bento ( Oviedo , Spain ) , Jose Taira ( Salamanca , Spain ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Porto (located in Portugal)\n2. Oviedo, Spain (specific location in Spain)\n3. Barcelona (located in Spain)\n4. Salamanca, Spain (specific location in Spain)\n\nSo, the location entities in the paragraph are \"Porto (Portugal)\", \"Oviedo, Spain\", and \"Barcelona, Spain\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n\n1. Porto (Portugal)\n2. Oviedo, Spain\n3. Barcelona, Spain\n\nThese entities clearly refer to specific locations. The names of the midfielders do not provide any additional location information that is relevant to the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Porto (Portugal) |\n| Oviedo, Spain |\n| Barcelona, Spain |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Midfielders - Rui Barros ( Porto ) , Jose Barroso ( Porto ) , Luis Figo ( Barcelona ) , Paulo Bento ( Oviedo , Spain ) , Jose Taira ( Salamanca , Spain ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Porto\n2. Barcelona\n3. Oviedo (Spain)\n4. Salamanca (Spain)\n\nThese are the organizations mentioned in the paragraph. The names Rui Barros, Jose Barroso, Luis Figo, Paulo Bento, and Jose Taira are the names of the midfielders who have been associated with these organizations."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Porto\n2. Barcelona\n3. Oviedo (Spain)\n4. Salamanca (Spain)\n\nThese are the entities in the paragraph that clearly refer to organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Porto |\n| Barcelona |\n| Oviedo (Spain) |\n| Salamanca (Spain) |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: C57BL / 6J , chosen as a \" prototypic \" mouse strain , was used to determine behavioral responses to a broad range ( 5 - 500 mg / kg ) of caffeine doses .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| C57BL / 6J |\n| caffeine doses |\n\nNote: The paragraph does not mention any disease entities. The mention of \"behavioral responses\" and \"caffeine doses\" does not imply the presence of a disease. Therefore, the table above contains the entities that are relevant to the context but are not necessarily disease entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| None |\n\nThe paragraph does not mention any disease entities. The mention of \"behavioral responses\" and \"caffeine doses\" does not imply the presence of a disease. Therefore, the table above contains the valid entities that are relevant to the context, which are none."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: C57BL / 6J , chosen as a \" prototypic \" mouse strain , was used to determine behavioral responses to a broad range ( 5 - 500 mg / kg ) of caffeine doses .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| C57BL / 6J |\n| caffeine |\n\nExplanation:\n\n* C57BL / 6J is a mouse strain and not a chemical entity.\n* Caffeine is a chemical entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| caffeine |\n\nExplanation:\n\n* C57BL / 6J is a mouse strain and not a chemical entity.\n* Caffeine is a chemical entity and is listed in the table."}
+  ]
+}

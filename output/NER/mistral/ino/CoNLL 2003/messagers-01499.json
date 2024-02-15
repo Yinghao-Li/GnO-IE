@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: They said police and troops used water cannons from fire engines to subdue about 120 university students sitting in at the centre of the junction at about 3 a.m. before they moved in to round them up .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. They (group of people)\n2. Police (group of people)\n3. Troops (group of people)\n4. University students (group of people)\n\nSo, the identified \"Person\" entities in the paragraph are: Police, Troops, and University students."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Police\n2. Troops\n3. University students\n\nSo, the relevant \"Person\" entities in the paragraph are: Police, Troops, and University students."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Police |\n| Troops |\n| University students |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: They said police and troops used water cannons from fire engines to subdue about 120 university students sitting in at the centre of the junction at about 3 a.m. before they moved in to round them up .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. centre of the junction: This is a location where the university students were sitting in protest.\n2. about 3 a.m.: This is not a location, but a time when the incident occurred.\n3. fire engines: These are vehicles used by the police or troops to deploy water cannons. They are not locations, but rather objects used at a location.\n\nTherefore, the only location entity in the paragraph is \"centre of the junction.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entity in the paragraph is:\n\n1. centre of the junction."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| centre of the junction |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: They said police and troops used water cannons from fire engines to subdue about 120 university students sitting in at the centre of the junction at about 3 a.m. before they moved in to round them up .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Police\n2. Troops\n3. Fire engines (implied is the organization operating the fire engines)\n4. University students\n5. Junction (not an organization, but a location where the organization \"university students\" were gathered)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Police\n2. Troops\n3. (implied) Organization operating the fire engines (if it is clear which organization it is, then include that instead of \"implied organization\")"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Police |\n| Troops |\n| (implied) Organization operating the fire engines |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acute renal insufficiency ( ARI ) after high - dose melphalan was defined by a minimum increase of 0 . 5 mg / dL ( 44 micromol / L ) in the serum creatinine level that is greater than 50 % of baseline immediately after conditioning .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute renal insufficiency (ARI) |\n| High-dose melphalan induced ARI |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Acute renal insufficiency (ARI) |\n| High-dose melphalan induced Acute renal insufficiency |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Acute renal insufficiency ( ARI ) after high - dose melphalan was defined by a minimum increase of 0 . 5 mg / dL ( 44 micromol / L ) in the serum creatinine level that is greater than 50 % of baseline immediately after conditioning .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| melphalan |\n| serum creatinine |\n\nIn the given paragraph, \"melphalan\" is the chemical entity mentioned. \"Serum creatinine\" is also a chemical entity, but it is not a pure compound, rather it is a measurement of a specific substance in the blood. Therefore, it is still considered a valid chemical entity for the purpose of this exercise."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| melphalan |\n| creatinine |\n\nIn the given paragraph, \"acute renal insufficiency ( ARI )\" and \"immediately after conditioning\" do not refer to specific chemicals, but rather describe a medical condition and a time frame, respectively. \"Minimum increase of 0.5 mg / dL ( 44 micromol / L )\" is a measurement of the change in creatinine level, but \"creatinine\" is the actual chemical entity mentioned in the paragraph."}
+  ]
+}

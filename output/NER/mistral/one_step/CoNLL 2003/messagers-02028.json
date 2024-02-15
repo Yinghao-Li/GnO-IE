@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Aaa Aa A Baa\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Aa     |\n| Baa    |\n\nNote: Based on the given paragraph, it is unclear who \"Aaa\" is, so it was not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Aa     |\n| Baa    |\n\nNote: \"Aaa\" was not included in the table as it does not clearly refer to a person. The paragraph does not provide enough context for a definitive identification of \"Aaa\" as a person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Aaa Aa A Baa\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Aaa |\n| Baa |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Aaa |\n| Baa |\n\n(Note: Based on the given paragraph, \"Aaa\" and \"Baa\" are the only entities that can be identified as locations as they are the only clearly identifiable geographical or physical entities mentioned in the paragraph.)"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Aaa Aa A Baa\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Aaa |\n| Baa |\n\nNote: Based on the given paragraph, there are only two potential organizations mentioned: \"Aaa\" and \"Baa\". However, without additional context, it's impossible to determine the exact nature of these organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Aaa |\n| Baa |\n\nNote: Based on the given paragraph, \"Aaa\" and \"Baa\" are the only entities that can be identified as organizations. All other words in the paragraph do not clearly refer to organizations."}
+  ]
+}

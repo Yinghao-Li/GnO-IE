@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The Holter electrocardiogram , which was worn by chance , revealed torsade de pointes with gradually prolonged QT intervals .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Torsade de pointes |\n| Prolonged QT intervals |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Torsade de pointes |\n| Prolonged QT intervals |\n\nExplanation:\nThe entities in the paragraph are \"Holter electrocardiogram,\" \"worn by chance,\" \"revealed,\" \"torsade de pointes,\" \"with,\" \"gradually,\" \"prolonged,\" \"QT intervals.\"\n\nHowever, \"Holter electrocardiogram\" is not a disease, it is a medical device used to monitor heart activity. \"Worn by chance\" and \"with gradually\" are not diseases either. Therefore, only \"torsade de pointes\" and \"prolonged QT intervals\" are valid disease entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The Holter electrocardiogram , which was worn by chance , revealed torsade de pointes with gradually prolonged QT intervals .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| torsade de pointes |\n| QT intervals |\n\nNote: No specific chemicals are mentioned in the paragraph, but \"torsade de pointes\" is a specific electrical condition in the heart, and \"QT intervals\" refer to a part of the electrocardiogram waveform."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| QT intervals |\n\nNote: \"torsade de pointes\" is not a chemical entity, but rather a specific electrical condition in the heart that can be caused by various chemical imbalances or medications. Therefore, it was not included in the table."}
+  ]
+}

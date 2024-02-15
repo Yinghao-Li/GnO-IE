@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" Today he is a mobile , energetic man with lots of colour in his cheeks , \" said Yegor Stroyev who met Yeltsin , 65 , on Friday at a country residence . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Yegor Stroyev\n2. Yeltsin\n\nBoth Yegor Stroyev and Yeltsin are identified as persons in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Yegor Stroyev\n2. Yeltsin\n\nThese are the only entities in the paragraph that clearly refer to persons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Yegor Stroyev |\n| Yeltsin |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" Today he is a mobile , energetic man with lots of colour in his cheeks , \" said Yegor Stroyev who met Yeltsin , 65 , on Friday at a country residence . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. A country residence: This is a location where Yeltsin was met by Yegor Stroyev."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. A country residence: This is a location where the meeting between Yegor Stroyev and Yeltsin took place."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| a country residence |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" Today he is a mobile , energetic man with lots of colour in his cheeks , \" said Yegor Stroyev who met Yeltsin , 65 , on Friday at a country residence . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Yegor Stroyev: This is an individual name, not an organization.\n2. Yeltsin: Boris Yeltsin was a Russian politician who served as the President of Russia from 1991 to 1999. He is an organization in the sense of a political entity.\n\nSo, Boris Yeltsin is the organization entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Boris Yeltsin (Russian political organization)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Boris Yeltsin (Russian political organization) |"}
+  ]
+}

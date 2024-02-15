@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: IFO and Mesna were administrated separately on rabbit ' s lymphocytes in vivo , which were later developed in vitro .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| There are no disease entities mentioned in the paragraph. |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| There are no clear disease entities mentioned in the paragraph. |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: IFO and Mesna were administrated separately on rabbit ' s lymphocytes in vivo , which were later developed in vitro .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| IFO |\n| Mesna |\n\nExplanation:\n\n* IFO: This is likely referring to the anticancer drug Ifosfamide.\n* Mesna: This is short for Mesna, a drug used to prevent ifosfamide-induced hemorrhagic cystitis.\n\nBoth IFO and Mesna are chemical entities used in the medical field, making them valid entities for this task."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| IFO |\n| Mesna |\n\nExplanation:\n\n* IFO: This is likely referring to the anticancer drug Ifosfamide, which is a clear chemical entity.\n* Mesna: This is short for Mesna, a drug used to prevent ifosfamide-induced hemorrhagic cystitis. Mesna is also a chemical entity.\n\nThe other words in the paragraph, such as 'rabbit', 'lymphocytes', 'in vivo', 'in vitro', and 'which' do not refer to chemical entities and have been removed from the table."}
+  ]
+}

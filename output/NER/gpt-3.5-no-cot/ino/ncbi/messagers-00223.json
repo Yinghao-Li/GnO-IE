@@ -1,0 +1,11 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: These results indicate the usefulness of cycloheximide treatment in evaluating the abnormal processing of mRNA due to splice - site mutations , because ( i ) aberrant splicing often generates a premature termination codon , ( ii ) transcripts with premature termination codons can occur at low or undetectable levels due to nonsense - mediated mRNA decay , and ( iii ) the levels of these transcripts can be increased by cycloheximide ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Disease\" entities are as follows:\n\n1. splice-site mutations\n2. aberrant splicing\n3. premature termination codon\n4. nonsense-mediated mRNA decay"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Disease\" entities are as follows:\n\n1. splice-site mutations\n2. aberrant splicing\n3. premature termination codon\n4. nonsense-mediated mRNA decay"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease                      |\n|------------------------------|\n| splice-site mutations        |\n| aberrant splicing            |\n| premature termination codon  |\n| nonsense-mediated mRNA decay |"}
+  ]
+}

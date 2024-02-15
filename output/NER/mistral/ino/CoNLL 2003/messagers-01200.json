@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" We hope that if the front moves forward or stabilises then we will have access ( to the large group of refugees ) with reconnaissance or humanitarian agencies .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. We (collective group of speakers)\n2. the front (military or geographical entity)\n3. then (time marker)\n4. (if the front moves forward or stabilizes) (condition)\n5. we (collective group of speakers)\n6. will have access (action)\n7. to (preposition)\n8. the large group of refugees (group of people)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. we (collective group of speakers)\n2. the large group of refugees (group of people)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| we (collective group of speakers) |\n| the large group of refugees |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" We hope that if the front moves forward or stabilises then we will have access ( to the large group of refugees ) with reconnaissance or humanitarian agencies .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. large group of refugees\n2. with reconnaissance or humanitarian agencies\n\nThese entities represent the location or the place where the refugees are currently situated and where the access is desired for reconnaissance or humanitarian agencies."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. large group of refugees\n\nThis is the only clear location entity in the paragraph. The other entities, \"with reconnaissance or humanitarian agencies,\" refer to organizations rather than locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| large group of refugees |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" We hope that if the front moves forward or stabilises then we will have access ( to the large group of refugees ) with reconnaissance or humanitarian agencies .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Reconnaissance agencies\n2. Humanitarian agencies"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Reconnaissance agencies\n2. Humanitarian agencies"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Reconnaissance agencies |\n| Humanitarian agencies |"}
+  ]
+}

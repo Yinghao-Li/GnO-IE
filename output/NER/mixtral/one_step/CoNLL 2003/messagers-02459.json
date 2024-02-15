@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 6. Regina Haeusl ( Germany ) 66\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Regina Haeusl |\n\nExplanation:\nThe paragraph mentions \"Regina Haeusl\" in the context of a person, so this is the valid entity to extract. The country name \"Germany\" is not a person, so it is not included in the table. The number \"66\" is also not a person, so it is not included."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Regina Haeusl |\n\nExplanation:\nThe paragraph mentions \"Regina Haeusl\" in the context of a person, so this is the valid entity to extract. The other words in the paragraph do not clearly refer to a person, so they are not included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 6. Regina Haeusl ( Germany ) 66\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Location\n-------\n\n* Germany"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Location\n-------\n\n* Germany\n\nThe paragraph only contains one clear location entity, which is \"Germany\"."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 6. Regina Haeusl ( Germany ) 66\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Germany |\n\nNote: In the given paragraph, \"Germany\" is the only organization entity mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Germany |\n\nNote: In the given paragraph, \"Germany\" is the only organization entity mentioned."}
+  ]
+}

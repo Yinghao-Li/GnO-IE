@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Overall response rate ( ORR ) to GEM - P in the entire cohort was 80 % ( complete response ( CR ) 37 % , partial response 44 % ) with 14 / 15 CR confirmed as a metabolic CR on PET and ORR of 85 % in the 20 second - line patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |  |\n| --- | --- |\n| complete response (CR) |  |\n| partial response |  |\n| metabolic CR |  |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |  |\n| --- | --- |\n| complete response (CR) |  |\n| partial response |  |\n| metabolic CR |  |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Overall response rate ( ORR ) to GEM - P in the entire cohort was 80 % ( complete response ( CR ) 37 % , partial response 44 % ) with 14 / 15 CR confirmed as a metabolic CR on PET and ORR of 85 % in the 20 second - line patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "```\n| Chemical |\n| --- |\n| GEM |\n| P |\n| CR |\n| PET |\n```\nExplanation:\n\n* GEM and P are chemicals, specifically drugs.\n* CR is an abbreviation for \"complete response,\" which is a term used in medical contexts to describe a patient's response to treatment. It is not a chemical entity.\n* PET is an abbreviation for \"positron emission tomography,\" which is a medical imaging technique. It is not a chemical entity.\n\nTherefore, the chemical entities in the paragraph are GEM and P."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| GEM |\n| P |\n\nExplanation:\n\n* GEM and P are chemicals, specifically drugs.\n\nThe entities \"CR\" and \"PET\" do not clearly refer to chemicals, so they have been removed from the list."}
+  ]
+}

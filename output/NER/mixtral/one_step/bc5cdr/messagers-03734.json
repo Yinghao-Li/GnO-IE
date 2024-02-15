@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In the first , cobalt cardiomyopathy was induced in eight dogs ; VIP ( by radioimmunoassay ) decreased from 35 + / - 11 pg / mg protein ( mean + / - SD ) to 5 + / - 4 pg / mg protein ( P less than 0 . 05 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cobalt cardiomyopathy |\n\nExplanation:\n\nThe paragraph mentions \"cobalt cardiomyopathy\" which is a disease, so we can identify this as a disease entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cobalt cardiomyopathy |\n\nExplanation:\n\nThe paragraph mentions \"cobalt cardiomyopathy\" which is a disease, so we can identify this as a disease entity. The other terms in the paragraph, such as \"VIP\" and \"radioimmunoassay\" are not diseases, so they are not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In the first , cobalt cardiomyopathy was induced in eight dogs ; VIP ( by radioimmunoassay ) decreased from 35 + / - 11 pg / mg protein ( mean + / - SD ) to 5 + / - 4 pg / mg protein ( P less than 0 . 05 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| cobalt |\n| VIP |\n\nExplanation:\n\n1. \"cobalt\" is mentioned as a chemical element that was used to induce cardiomyopathy in dogs.\n2. \"VIP\" is mentioned as a chemical compound, which stands for Vasoactive Intestinal Peptide, and its levels were measured by radioimmunoassay."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| VIP |\n\nExplanation:\n\n1. \"cobalt\" is not included as it is not clear if it refers to a chemical compound or a chemical element used in a medical procedure.\n2. \"VIP\" is included as it is a well-known chemical compound, which stands for Vasoactive Intestinal Peptide."}
+  ]
+}

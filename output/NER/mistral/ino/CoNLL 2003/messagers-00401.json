@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: OTTAWA AT EDMONTON\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. OTTAWA\n2. EDMONTON\n3. (Implied) Let's think (implied person performing the action)\n\nThese are the identified \"Person\" entities in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. EDMONTON\n2. (Implied person performing the action)\n\nThese are the identified and relevant \"Person\" entities in the paragraph. The entity \"OTTAWA\" is not considered relevant as it is a city and not a person."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| EDMONTON |\n| (Implied person performing the action) |\n\nThese are the identified and relevant \"Person\" entities in the paragraph, presented as a Markdown table with one column \"Person\". The entity \"OTTAWA\" is not considered relevant and is not included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: OTTAWA AT EDMONTON\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Ottawa\n2. Edmonton\n\nThese are the two distinct \"Location\" entities mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Ottawa\n2. Edmonton\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ottawa |\n| Edmonton |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: OTTAWA AT EDMONTON\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. OTTAWA: The capital city of Canada. It is the political and administrative heart of the country.\n2. EDMONTON: The capital city of the Canadian province of Alberta. It is the largest city in the province and a major cultural, educational, and governmental center.\n\nIn this context, both OTTAWA and EDMONTON are organizations, specifically cities or municipalities, that serve as administrative and cultural centers for their respective regions."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. OTTAWA: The capital city of Canada, serving as the political and administrative center of the country.\n2. EDMONTON: The capital city of the Canadian province of Alberta, serving as a major cultural, educational, and governmental center in the province."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| OTTAWA: The capital city of Canada, serving as the political and administrative center of the country. |\n| EDMONTON: The capital city of the Canadian province of Alberta, serving as a major cultural, educational, and governmental center in the province. |"}
+  ]
+}

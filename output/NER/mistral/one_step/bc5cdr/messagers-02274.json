@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: On the contrary , pretreatment with L - NAME ( 500 , 700 and 900 mg / kg , i . p . ) decreased convulsion incidence and severity and prolonged latency time to convulsion following injection with a convulsive dose of lindane ( 8 mg / kg , i . p . ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| convulsion |\n| seizure (implied by \"convulsion\") |\n| lindane intoxication (implied by \"convulsive dose of lindane\") |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| convulsion |\n| lindane intoxication |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: On the contrary , pretreatment with L - NAME ( 500 , 700 and 900 mg / kg , i . p . ) decreased convulsion incidence and severity and prolonged latency time to convulsion following injection with a convulsive dose of lindane ( 8 mg / kg , i . p . ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| L-NAME |\n| Lindane |\n\nIn the given paragraph, the two distinct chemical entities mentioned are \"L-NAME\" and \"lindane\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| L-NAME |\n| Lindane |\n\nIn the given paragraph, the only entities that clearly refer to chemicals are \"L-NAME\" and \"lindane\". Other terms such as \"mg/kg\", \"i.p.\", and \"convulsive dose\" are not chemicals but units of measurement or administration routes."}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Officials said the New Mexico Activities Association decided to bar Cito from any inter-scholastic competition until next October , regardless of the school he attends .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Officials\n2. New Mexico Activities Association\n3. Cito (implied, as the person who was barred from inter-scholastic competition)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Officials\n2. Cito"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Officials |\n| Cito |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Officials said the New Mexico Activities Association decided to bar Cito from any inter-scholastic competition until next October , regardless of the school he attends .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. New Mexico\n2. New Mexico Activities Association\n\nBoth New Mexico and New Mexico Activities Association are considered locations in this context. New Mexico is a geographical location, while New Mexico Activities Association is an organization that operates within the geographical location of New Mexico."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. New Mexico\n\nNew Mexico Activities Association is not a location, but rather an organization that operates within the location of New Mexico."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| New Mexico |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Officials said the New Mexico Activities Association decided to bar Cito from any inter-scholastic competition until next October , regardless of the school he attends .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. New Mexico Activities Association (NMSAA) - This is the organization that made the decision to bar Cito from inter-scholastic competition until next October."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "New Mexico Activities Association (NMSAA)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| New Mexico Activities Association (NMSAA) |"}
+  ]
+}

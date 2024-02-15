@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A newly-married Canadian woman and a man from New Caledonia died instantly in the bomb that injured 90 others in the rush-hour train .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| A newly-married Canadian woman |\n| a man from New Caledonia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| A newly-married Canadian woman |\n| a man |\n| from New Caledonia |\n\nNote: \"a man\" is a generic term and could refer to any man, so it's not a precise enough entity to be considered valid without additional context. However, since the original paragraph mentions \"a man from New Caledonia,\" I have included it here for completeness. In practice, without more context, it may not be possible to identify a specific person entity for \"a man from New Caledonia.\""}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A newly-married Canadian woman and a man from New Caledonia died instantly in the bomb that injured 90 others in the rush-hour train .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| New Caledonia |\n| rush-hour train |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| New Caledonia |\n| rush-hour train |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A newly-married Canadian woman and a man from New Caledonia died instantly in the bomb that injured 90 others in the rush-hour train .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Canadian woman's nationality |\n| New Caledonia (implied: a country or region) |\n| Unspecified organization operating the train |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| New Caledonia (a country or region) |\n| Unspecified organization operating the train |"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Paris St Germain 1 ( Bruno N'Gotty 2 ) Nancy 2 ( Paul Fischer\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Paris St Germain: An entity representing a football club based in Paris, France.\n2. Bruno N'Gotty: A person, specifically a football player who plays for Paris St Germain.\n3. Nancy: An entity representing a football club based in Nancy, France.\n4. Paul Fischer: A person, specifically a football player who plays for Nancy."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Bruno N'Gotty: A football player.\n2. Paul Fischer: A football player."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Bruno N'Gotty |\n| Paul Fischer |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Paris St Germain 1 ( Bruno N'Gotty 2 ) Nancy 2 ( Paul Fischer\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Paris St Germain\n2. Nancy\n\nThese are the two entities that can be identified as locations in the given paragraph. Paris St Germain is a football club based in Paris, France, while Nancy is a city in France. The names of the football players (Bruno N'Gotty and Paul Fischer) do not provide any information about their locations."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Paris St Germain\n2. Nancy\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Paris St Germain |\n| Nancy |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Paris St Germain 1 ( Bruno N'Gotty 2 ) Nancy 2 ( Paul Fischer\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Paris St Germain (PSG)\n2. Nancy\n\nThese are the organizations mentioned in the paragraph. The numbers in parentheses indicate the players belonging to each organization."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Paris St Germain (PSG)\n2. Nancy\n\nThese are the organizations mentioned in the paragraph. The paragraph only contains the names of two soccer teams, so there are no irrelevant entities to remove."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Paris St Germain (PSG) |\n| Nancy |"}
+  ]
+}

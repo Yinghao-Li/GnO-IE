@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: TOKYO 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. TOKYO\n2. 1996-12-06 (This is not a person, but a date)\n3. (No clear person entities in the paragraph)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "(No clear person entities in the paragraph)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| TOKYO  |\n\n(Note: There are no clear person entities in the paragraph other than the city name \"TOKYO\".)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: TOKYO 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. TOKYO: This is an explicit location mentioned at the beginning of the paragraph.\n\nTherefore, the location entities in the paragraph are:\n\n1. TOKYO."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The only relevant entity that clearly refers to a location in the paragraph is:\n\n1. TOKYO."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| TOKYO |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: TOKYO 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. TOKYO: City\n2. 1996-12-06: Date\n\nThere are no clear \"Organization\" entities mentioned in the given paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "There are no clear Organization entities mentioned in the given paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| TOKYO |\n\nThere are no other entities in the given paragraph that can be precisely identified as organizations."}
+  ]
+}

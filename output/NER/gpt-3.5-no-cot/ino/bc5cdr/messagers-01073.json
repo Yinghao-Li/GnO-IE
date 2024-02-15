@@ -1,0 +1,20 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: In relatively healthy women , combined continuous HT significantly increased the risk of venous thromboembolism or coronary event ( after one year ' s use ) , stroke ( after 3 years ) , breast cancer ( after 5 years ) and gallbladder disease ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Disease\" entities are:\n\n1. Venous thromboembolism\n2. Coronary event\n3. Stroke\n4. Breast cancer\n5. Gallbladder disease"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Disease\" entities are:\n\n1. Venous thromboembolism\n2. Stroke\n3. Breast cancer\n4. Gallbladder disease"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease               |\n|-----------------------|\n| Venous thromboembolism|\n| Stroke                |\n| Breast cancer         |\n| Gallbladder disease   |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: In relatively healthy women , combined continuous HT significantly increased the risk of venous thromboembolism or coronary event ( after one year ' s use ) , stroke ( after 3 years ) , breast cancer ( after 5 years ) and gallbladder disease ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Chemical\" entities are as follows:\n\n| Chemical Entity |\n|-----------------|\n| HT              |\n\nPlease note that \"HT\" stands for hormone therapy."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "Apologies for the confusion. Upon reviewing the paragraph again, there are no specific chemical entities mentioned. The paragraph mainly discusses the risks associated with hormone therapy (HT) in relation to various health conditions. Therefore, there are no relevant chemical entities to include in the table."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n|----------|\n| HT       |"}
+  ]
+}

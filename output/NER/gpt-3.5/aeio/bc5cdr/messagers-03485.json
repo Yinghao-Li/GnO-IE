@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Frequency and severity of subjective adverse effects were also reduced after HDS : tremor (p less than 0 . 001) , palpitations (p less than 0 . 001) . (ABSTRACT TRUNCATED AT 250 WORDS)\n\nLet's think step by step."},
+  {"role": "assistant", "content": "In the given paragraph, the identified \"['Disease', 'Chemical']\" entities are:\n\n1. Disease: tremor, palpitations\n2. Chemical: HDS"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the identified \"['Disease', 'Chemical']\" entities are:\n\n1. Disease: tremor, palpitations\n2. Chemical: HDS"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity       | Entity Type |\n|--------------|-------------|\n| tremor       | Disease     |\n| palpitations | Disease     |\n| HDS          | Chemical    |"}
+]

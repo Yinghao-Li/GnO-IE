@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 19= Regine Cavagnoud ( France ) 23\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Regine Cavagnoud |\n| France (implicitly referring to Regine Cavagnoud being from France) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Regine Cavagnoud |\n| France (implicitly referring to Regine Cavagnoud being from France) |\n\nExplanation: The number \"19= \" and \"23\" do not refer to persons and can be removed. The word \"Let's\" is a second person imperative and does not refer to a specific person. Therefore, they are not considered entities. The country \"France\" is an entity, but it is implicitly referring to Regine Cavagnoud being from France, so it is included in the table as well."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 19= Regine Cavagnoud ( France ) 23\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| France |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| France |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 19= Regine Cavagnoud ( France ) 23\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| France |\n\nThis paragraph does not contain any specific organizations mentioned, only the country of origin for Regine Cavagnoud."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| France |\n\nThis paragraph mentions the country \"France\" in relation to Regine Cavagnoud, but it does not clearly refer to an organization. Therefore, only \"France\" is presented as a potential organization entity. However, without additional context, it is unlikely that \"France\" is an organization in this context."}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: MIAMI AT CHICAGO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MIAMI\n2. CHICAGO\n3. (Implied) The Miami team\n4. (Implied) The Chicago team\n\nThese are the entities that can be identified as \"Person\" in the given paragraph. The paragraph itself does not contain any explicit mention of people, so the teams are inferred as persons based on the context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. MIAMI (team)\n2. CHICAGO (team)\n\nThese are the entities that clearly refer to persons in the given paragraph. The paragraph is about a match between two sports teams, so \"MIAMI\" and \"CHICAGO\" are the only entities that can be definitively identified as persons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| MIAMI  |\n| CHICAGO |\n\nThese are the entities that can be identified as persons in the given paragraph, presented in a Markdown table format with a single column labeled \"Person\". The entities are presented precisely in the same words as in the original paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: MIAMI AT CHICAGO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MIAMI\n2. CHICAGO\n\nThese are the only two identifiable location entities in the given paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. MIAMI\n2. CHICAGO\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| MIAMI |\n| CHICAGO |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: MIAMI AT CHICAGO\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MIAMI\n2. CHICAGO (City)\n3. (Implicit: Miami Heat (Sports team) or Miami (Organization) if referring to a specific organization based in Miami)\n4. (Implicit: Chicago Bulls (Sports team) or Chicago (Organization) if referring to a specific organization based in Chicago)\n\nWithout more context, it's difficult to definitively identify which organizations are being referred to, as \"MIAMI at CHICAGO\" could be referring to a sports match-up, a business transaction, or some other type of interaction between the two entities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Miami Heat (Sports team) or Miami (Organization)\n2. Chicago Bulls (Sports team) or Chicago (Organization)\n\nThese are the entities that can be identified as organizations with a clear reference in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Miami Heat (Sports team) or Miami (Organization) |\n| Chicago Bulls (Sports team) or Chicago (Organization) |"}
+  ]
+}

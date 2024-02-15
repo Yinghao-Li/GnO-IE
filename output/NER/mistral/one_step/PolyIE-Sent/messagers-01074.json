@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An onset oxidation potential of 0.94 V and an onset reduction potential of -0.88 V ( vs SCE ) are observed.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| SCE (Standard Calomel Electrode) |\n\nIn this paragraph, \"vs SCE\" refers to the reference electrode used for measuring the potentials, which is the Standard Calomel Electrode."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| SCE (Standard Calomel Electrode) |\n\nIn this paragraph, \"SCE\" is the only entity that clearly refers to a material. The potentials mentioned in the paragraph are properties of this material, specifically the Standard Calomel Electrode."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An onset oxidation potential of 0.94 V and an onset reduction potential of -0.88 V ( vs SCE ) are observed.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| onset oxidation potential |\n| onset reduction potential |\n| vs SCE (vs. Standard Calomel Electrode) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| onset oxidation potential |\n| onset reduction potential |\n| vs Standard Calomel Electrode |\n\nNote: In this context, \"vs SCE\" can be considered a property description for the potential measurements, as it refers to the reference electrode used in the experiment."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: An onset oxidation potential of 0.94 V and an onset reduction potential of -0.88 V ( vs SCE ) are observed.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| onset oxidation potential of 0.94 V |\n| onset reduction potential of -0.88 V |\n| vs SCE |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| onset oxidation potential: 0.94 V |\n| onset reduction potential: -0.88 V |\n| vs SCE (Standard Calomel Electrode) |"
+    }
+  ]
+}

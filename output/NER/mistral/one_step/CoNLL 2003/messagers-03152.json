@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Merwe ( Namibia ) 67 73 72 , Hennie Swart 75 64 73 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Merwe  |\n| Hennie Swart |\n\nThese are the valid \"Person\" entities identified in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Merwe |\n| Hennie Swart |\n\nThese are the valid \"Person\" entities identified in the paragraph. The numbers do not refer to persons and were removed from the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Merwe ( Namibia ) 67 73 72 , Hennie Swart 75 64 73 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Merwe (Namibia) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Merwe (Namibia) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Merwe ( Namibia ) 67 73 72 , Hennie Swart 75 64 73 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Merwe (Namibia) |\n\nThe paragraph does not contain any other identifiable organizations. It mentions the name of a place, Namibia, but it is not an organization. It also mentions a person, Hennie Swart. People are not organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Merwe (Namibia) |\n\nThe paragraph only mentions one organization, which is \"Merwe (Namibia)\". The other mention is of a person, Hennie Swart. People are not organizations."}
+  ]
+}

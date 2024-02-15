@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Menstrual abnormalities ( 79 % ) , weight gain ( 60 % ) , muscle cramps / myalgias ( 40 % ) , and transaminase elevations ( 40 % ) were the most common adverse reactions .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Menstrual abnormalities\n2. weight gain\n3. muscle cramps / myalgias\n4. transaminase elevations\n\nThese are the \"Disease\" entities in the given paragraph. Note that some of these may be symptoms rather than diseases themselves, but they are still considered disease entities in a medical context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Menstrual abnormalities (Note: While not a specific disease, menstrual abnormalities can be a sign of an underlying medical condition)\n2. transaminase elevations (This is a sign of liver damage or disease)\n\nThese are the disease entities in the given paragraph that clearly refer to medical conditions. The other entities, such as weight gain and muscle cramps/myalgias, are more commonly considered symptoms rather than diseases themselves."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Menstrual abnormalities |\n| transaminase elevations |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Menstrual abnormalities ( 79 % ) , weight gain ( 60 % ) , muscle cramps / myalgias ( 40 % ) , and transaminase elevations ( 40 % ) were the most common adverse reactions .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Menstrual abnormalities: This is not a chemical entity. It is a medical condition.\n2. Weight gain: This is not a chemical entity. It is a physical condition.\n3. Muscle cramps / myalgias: Myalgias is a medical term for muscle pain, and is not a chemical entity.\n4. Transaminase elevations: Transaminases are a group of enzymes found in the liver, and elevations refer to an increase in the levels of these enzymes in the blood. Therefore, \"transaminase elevations\" can be considered a chemical entity.\n\nSo, the only chemical entity in the paragraph is \"transaminase elevations\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "* Transaminase elevations"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Transaminase elevations |"}
+  ]
+}

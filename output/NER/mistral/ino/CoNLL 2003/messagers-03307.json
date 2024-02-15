@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Association games on Friday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Association\n2. Let's think\n3. Friday\n4. (Home team)\n\nThe home team is the person entity in this paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. (Home team)\n\nThe home team is the only clearly identified person entity in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| (Home team) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Association games on Friday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Friday\n2. (Home team)\n\nThe paragraph does not contain any explicit \"Location\" entities. The only potential location mentioned is the implication of a sports game taking place at the home team's location. However, the paragraph does not specify where that location is."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Friday\n2. (Home team's location)\n\nSince the paragraph does not explicitly state the home team's location, it can only be inferred from the context that a game is taking place there. Therefore, it is considered an implied location and is included in the list with a qualifier."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Friday |\n| (Home team's location) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Association games on Friday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Association\n2. (Home Team)\n\nThe organization mentioned in the paragraph is \"Association.\" It is not clear from the context if it is a specific sports association or a general term for an organization. The home team is also an organization, specifically a sports team, but it is not identified as such in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Association"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Association |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The literature related to antithyroid drug side effects and the mechanisms for their occurrence are reviewed and the efficacy and complications of thyroidectomy and radioiodine compared to those of antithyroid drugs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| antithyroid drug side effects |\n\nNote: I've identified \"antithyroid drug side effects\" as the disease entity in the paragraph, as it refers to the adverse effects caused by certain medications used to treat thyroid-related conditions."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| antithyroid drug side effects |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The literature related to antithyroid drug side effects and the mechanisms for their occurrence are reviewed and the efficacy and complications of thyroidectomy and radioiodine compared to those of antithyroid drugs .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antithyroid drug |\n| thyroidectomy (this is not a chemical, but I include it for completeness) |\n| radioiodine |\n\nThe word \"thyroid\" is not a chemical, but a gland in the human body. I have not included it in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antithyroid drug |\n| radioiodine |\n\nI have removed \"thyroidectomy\" from the table as it is a medical procedure and not a chemical."}
+  ]
+}

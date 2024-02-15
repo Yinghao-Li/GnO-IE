@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" A worsening in the president 's lung functions took place yesterday , \" presidential spokesman Ladlislav Spacek said in a statement .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The president\n2. Ladislav Spacek (presidential spokesman)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. The president\n2. Ladislav Spacek"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the president |\n| Ladislav Spacek |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" A worsening in the president 's lung functions took place yesterday , \" presidential spokesman Ladlislav Spacek said in a statement .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. President's lung functions: This refers to the location or part of the body of the president that is affected.\n\nSo, the location entities in the paragraph are:\n\n1. President's lung functions."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The only entity in the paragraph that clearly refers to a location is:\n\n1. President's lung functions (location in the body)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| President's lung functions |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" A worsening in the president 's lung functions took place yesterday , \" presidential spokesman Ladlislav Spacek said in a statement .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. President\n2. Presidential spokesman\n3. Ladlislav Spacek\n4. Statement\n5. Organization of the president (implied)\n\nThe paragraph mentions the president and his spokesman, Ladlislav Spacek, who works for the president's organization. The statement is also attributed to Ladlislav Spacek, suggesting that it was issued on behalf of the president's organization."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Presidential organization\n\nThe paragraph mentions the president's organization implicitly through the context of the presidential spokesman working for the organization and issuing a statement on its behalf."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Presidential organization |\n\nThe paragraph mentions the \"presidential organization\" implicitly through the context of the presidential spokesman working for the organization and issuing a statement on its behalf."}
+  ]
+}

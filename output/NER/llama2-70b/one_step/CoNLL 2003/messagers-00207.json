@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Andrew Pitts ( U.S. ) 69 67 138 Mark Cayeux ( Zimbabwe ) 69 69 , Mark Murless 71 67 139 Hennie Swart 75 64 , Andrew Park 72 67 140 Schalk van der Merwe ( Namibia ) 67 73 , Desvonde\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Andrew Pitts |\n| Mark Cayeux |\n| Mark Murless |\n| Hennie Swart |\n| Andrew Park |\n| Schalk van der Merwe |\n\nNote: Desvonde is not a person, it's a surname, so it's not included in the list."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Andrew Pitts |\n| Mark Cayeux |\n| Mark Murless |\n| Andrew Park |\n| Schalk van der Merwe |\n\nI removed \"Desvonde\" since it's not a person, and \"Hennie Swart\" since it's not clear if it's a person or not."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Andrew Pitts ( U.S. ) 69 67 138 Mark Cayeux ( Zimbabwe ) 69 69 , Mark Murless 71 67 139 Hennie Swart 75 64 , Andrew Park 72 67 140 Schalk van der Merwe ( Namibia ) 67 73 , Desvonde\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| U.S. |\n| Zimbabwe |\n| Namibia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities that clearly refer to \"Location\":\n\n| Location |\n| --- |\n| U.S. |\n| Zimbabwe |\n| Namibia |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Andrew Pitts ( U.S. ) 69 67 138 Mark Cayeux ( Zimbabwe ) 69 69 , Mark Murless 71 67 139 Hennie Swart 75 64 , Andrew Park 72 67 140 Schalk van der Merwe ( Namibia ) 67 73 , Desvonde\n\nLet's think step by step."},
+    {"role": "assistant", "content": "+ Organization \n + U.S.\n + Zimbabwe\n + Namibia"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "+ Organization\n + U.S.\n + Zimbabwe\n + Namibia"}
+  ]
+}

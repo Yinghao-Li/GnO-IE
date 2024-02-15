@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Motherwell 2 Celtic 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Motherwell\n2. Celtic\n\nThese are the proper nouns in the paragraph that can be identified as entities representing football clubs. Therefore, they can be considered as \"Person\" entities in this context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Motherwell (football club)\n2. Celtic (football club)\n\nThese are the entities in the paragraph that clearly refer to persons, specifically football clubs."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Motherwell (football club) |\n| Celtic (football club) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Motherwell 2 Celtic 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Motherwell: This is a specific location and the name of a football club based in Lanarkshire, Scotland.\n2. Celtic: This is also a specific location and the name of a football club based in Glasgow, Scotland."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Motherwell\n2. Glasgow (implied, as the location of Celtic)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Motherwell |\n| Glasgow |\n\n(Note: Since the paragraph mentions \"Glasgow\" only in relation to \"Celtic,\" I've included \"Glasgow\" in the table to maintain the exact wording from the original paragraph. However, it's important to note that \"Glasgow\" is an implied location and not explicitly mentioned as a separate entity in the paragraph.)"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Motherwell 2 Celtic 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Motherwell: A football club based in Motherwell, North Lanarkshire, Scotland.\n2. Celtic: A professional football club based in Glasgow, Scotland.\n\nBoth Motherwell and Celtic are organizations, specifically football clubs."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Motherwell (football club)\n2. Celtic (football club)\n\nThese are the organizations mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Motherwell (football club) |\n| Celtic (football club) |"}
+  ]
+}

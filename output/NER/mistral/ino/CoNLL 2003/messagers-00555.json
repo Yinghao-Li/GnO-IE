@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: League game on Thursday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. League\n2. Thursday\n3. Home Team (The team mentioned in capital letters within the paragraph)\n\nIn this context, the \"Person\" entity is the Home Team."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Home Team\n\nIn this context, the Home Team is the only entity that clearly refers to a person or people."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Home Team |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: League game on Thursday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "There is no explicit location mentioned in the given paragraph. Therefore, no location entities can be identified."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "There is no location entity in the given paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| N/A |\n\nThere is no location entity in the given paragraph."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: League game on Thursday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. League\n2. Thursday's game\n3. Home Team (capitalized for identification as the organization or team playing at home)\n\nThese are the organization entities identified in the paragraph. The paragraph does not mention any other organizations."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. League\n2. Home Team\n\nThese are the organization entities mentioned in the paragraph that are relevant to the context of an organization. The paragraph does not mention any other organizations that are not directly related to the league or the home team."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| League |\n| Home Team |"}
+  ]
+}

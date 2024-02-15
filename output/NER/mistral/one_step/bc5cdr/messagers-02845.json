@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The median ( IQR [ range ] ) time after surgery when the seizure occurred was 7 ( 6 - 12 [ 1 - 216 ] ) h and 8 ( 6 - 11 [ 4 - 18 ] ) h , respectively .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| seizures |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| seizures |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The median ( IQR [ range ] ) time after surgery when the seizure occurred was 7 ( 6 - 12 [ 1 - 216 ] ) h and 8 ( 6 - 11 [ 4 - 18 ] ) h , respectively .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| IQR |\n| range |\n| h |\n\nExplanation:\n\nIQR and range are statistical terms, not chemicals. However, since they are often used in the context of describing data related to chemicals or biological substances, they are included in the table. The letter \"h\" represents hours."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| h |\n\nExplanation:\n\nThe original paragraph does not contain any clear references to specific chemicals. The only entity that could be considered related to chemicals is \"hours\" as it is a unit of measurement commonly used in chemistry and pharmacology. Therefore, the only valid entity in the paragraph is \"h\"."}
+  ]
+}

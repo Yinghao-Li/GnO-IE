@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: METHODS : 38 female Wistar rats were injected with gentamicin , 40 mg / kg , twice a day for 9 days , 38 with gentamicin + PDTC , and 28 with 0 . 15 M NaCl solution .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Gentamicin-induced toxicity |\n\nThe paragraph describes an experiment where rats were injected with gentamicin, but it does not mention any specific disease name associated with the gentamicin injection. However, gentamicin is an antibiotic that can cause toxicity when used excessively or at high doses. Therefore, the disease entity can be identified as \"Gentamicin-induced toxicity\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Gentamicin-induced toxicity |\n\nThe paragraph describes an experiment where rats were injected with gentamicin to induce toxicity, so the only valid disease entity is \"Gentamicin-induced toxicity\"."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: METHODS : 38 female Wistar rats were injected with gentamicin , 40 mg / kg , twice a day for 9 days , 38 with gentamicin + PDTC , and 28 with 0 . 15 M NaCl solution .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| gentamicin |\n| PDTC |\n| 0.15 M NaCl solution |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| gentamicin |\n| PDTC |\n| 0.15 M NaCl solution (sodium chloride solution) |\n\nNote: In the original paragraph, \"0.15 M NaCl solution\" can be considered a chemical as it is a specific concentration of sodium chloride, which is a common inorganic compound. However, it can also be considered a solvent or a reaction component, but since it is being injected into the rats along with the other chemicals, it is more accurately described as a chemical in this context."}
+  ]
+}

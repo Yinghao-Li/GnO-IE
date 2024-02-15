@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NEW YORK 10 6 .625 3\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| NEW |\n| YORK |\n| 10 |\n| 6 |\n| .625 |\n| 3 |\n\nNote: In this paragraph, \"Person\" entities are the names of people, organizations, or places. The entities identified are:\n\n* NEW: A person or organization known by this name.\n* YORK: A person or organization known by this name.\n* 10: A person or organization known by this name.\n* 6: A person or organization known by this name.\n* .625: A person or organization known by this name.\n* 3: A person or organization known by this name."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with only the entities that clearly refer to a person or organization:\n\n| Person |\n| --- |\n| NEW |\n| YORK |\n\nIn the original paragraph, \"10\", \".625\", and \"3\" are not clearly referring to a person or organization, so they have been removed from the list of entities."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NEW YORK 10 6 .625 3\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| NEW YORK |\n| 10 |\n| 6 |\n| .625 |\n| 3 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities that clearly refer to \"Location\" in the given paragraph:\n\n| Location |\n| --- |\n| NEW YORK |\n\nThe other entities in the paragraph, \"10\", \"6\", and \".625\", do not clearly refer to locations and are not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: NEW YORK 10 6 .625 3\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NEW |\n| YORK |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid entities that clearly refer to \"Organization\" in the given paragraph:\n\n| Organization |\n| --- |\n| YORK |\n\nThe entity \"NEW\" is not a valid organization name, so it has been removed from the list."}
+  ]
+}

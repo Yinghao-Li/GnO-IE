@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The former minister and his son had been taken from their home close to the presidential palace , which is guarded by loyalist soldiers backed by French troops based in Bangui .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the former minister |\n| his son |\n| the president |\n| loyalist soldiers |\n| French troops |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the former minister |\n| his son |\n| the president |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The former minister and his son had been taken from their home close to the presidential palace , which is guarded by loyalist soldiers backed by French troops based in Bangui .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| home close to the presidential palace |\n| presidential palace |\n| Bangui |\n\nExplanation:\n\n1. \"home close to the presidential palace\" is a compound location describing a specific residence in proximity to the presidential palace.\n2. \"presidential palace\" is the location of the palace where the president resides.\n3. \"Bangui\" is the city where the presidential palace is located."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| home close to the presidential palace |\n| presidential palace |\n| Bangui |\n\nExplanation:\n\n1. \"home close to the presidential palace\" and \"presidential palace\" both refer to locations.\n2. \"which is guarded by loyalist soldiers backed by French troops based in Bangui\" is not a location, but rather a description of the security presence around the presidential palace."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The former minister and his son had been taken from their home close to the presidential palace , which is guarded by loyalist soldiers backed by French troops based in Bangui .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| presidential palace |\n| loyalist soldiers |\n| French troops |\n| Bangui (mentioned as the location of the French troops) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| presidential palace |\n| loyalist soldiers |\n| French troops |"}
+  ]
+}

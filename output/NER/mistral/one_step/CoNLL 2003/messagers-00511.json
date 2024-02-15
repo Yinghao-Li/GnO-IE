@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SEATTLE 5 8 0 250 317\n\nLet's think step by step."},
+    {"role": "assistant", "content": "```markdown\n| Person |\n|--------|\n| Seattle |\n```\n\nThe paragraph does not contain any other identifiable persons besides Seattle, which is mentioned as the location."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "```markdown\n| Person |\n|--------|\n| Seattle |\n```\n\nThe paragraph only contains the location \"Seattle,\" which does not clearly refer to a person in the context of being a person entity."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SEATTLE 5 8 0 250 317\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| SEATTLE |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| SEATTLE |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: SEATTLE 5 8 0 250 317\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SEATTLE |\n\nThe paragraph does not contain any other identifiable organizations. The numbers in the paragraph (5, 8, 0, 250, 317) do not represent organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SEATTLE |\n\nThe paragraph does not contain any other identifiable organizations that clearly refer to an organization. The numbers in the paragraph (5, 8, 0, 250, 317) do not represent organizations."}
+  ]
+}

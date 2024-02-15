@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Very recently , 3,6-dithien-2-yl-2 , 5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione ( DTDPP ) was shown to be a promising building block for the design of photovoltaic polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------- |\n| 3,6-dithien-2-yl-2,5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione (DTDPP) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------- |\n| 3,6-dithien-2-yl-2,5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione (DTDPP) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Very recently , 3,6-dithien-2-yl-2 , 5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione ( DTDPP ) was shown to be a promising building block for the design of photovoltaic polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| ------------- |\n| 3,6-dithien-2-yl-2,5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione (DTDPP) |\n| 3,6-dithien-2-yl-2,5-dialkylpyrrolo[3,4-c]pyrrole |\n| 1,4-dione |\n| 3,4-c |\n| pyrrolo[3,4-c]pyrrole |\n| promising building block |\n| design of photovoltaic polymers |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| ------------- |\n| 3,6-dithien-2-yl-2,5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione (DTDPP) |\n| promising building block |\n| design of photovoltaic polymers |\n\nExplanation:\n\n* \"Very recently\" and \"was shown to be\" are not material properties and have been removed.\n* \"3,6-dithien-2-yl-2,5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione (DTDPP)\" is a material name and has been kept.\n* \"promising building block\" and \"design of photovoltaic polymers\" are material properties related to DTDPP and have been kept."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Very recently , 3,6-dithien-2-yl-2 , 5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione ( DTDPP ) was shown to be a promising building block for the design of photovoltaic polymers.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value            |\n|-------------------------|\n| 3,6-dithien-2-yl-2,5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione (DTDPP) |\n| building block           |\n| promising                |\n| for the design of        |\n| photovoltaic polymers   |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value            |\n|-------------------------|\n| 3,6-dithien-2-yl-2,5-dialkylpyrrolo[3,4-c]pyrrole-1,4-dione (DTDPP) |\n| promising                |\n| for the design of        |\n| photovoltaic polymers   |\n\nThe entities \"very recently\" and \"was shown to be\" do not clearly refer to material properties and can be removed."
+    }
+  ]
+}

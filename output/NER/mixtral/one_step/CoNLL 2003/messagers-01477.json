@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The bishop will jointly receive the Nobel award next Tuesday with East Timorese-born activist Jose Ramos Horta , who lives in self-exile in Australia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| The bishop |\n| Jose Ramos Horta |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| The bishop |\n| Jose Ramos Horta |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The bishop will jointly receive the Nobel award next Tuesday with East Timorese-born activist Jose Ramos Horta , who lives in self-exile in Australia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| East Timorese |\n| Australia    |\n\nExplanation:\n\n* \"East Timorese\" is a location-based identity, and it is considered a single location entity.\n* \"Australia\" is the explicitly mentioned location where the activist Jose Ramos Horta currently resides."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Australia    |\n\nExplanation:\n\n* \"East Timorese\" is not a clear location entity, so it has been removed.\n* \"Australia\" is the explicitly mentioned location where the activist Jose Ramos Horta currently resides."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The bishop will jointly receive the Nobel award next Tuesday with East Timorese-born activist Jose Ramos Horta , who lives in self-exile in Australia .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The Nobel award |\n| East Timorese |\n| Australia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The Nobel award |\n[The Nobel award is an organization that awards annual prizes in the fields of Physics, Chemistry, Physiology or Medicine, Literature, Peace, and Economic Sciences.](https://www.nobelprize.org/)"}
+  ]
+}

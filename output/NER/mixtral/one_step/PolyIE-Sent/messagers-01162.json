@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There is still a room to lower the LUMO level of PDTP - DTDPP(Bu) from 3.63 to ∼ 4.0 eV , which is ∼ 0.3 eV higher than the LUMO level of PCBM.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PDTP - DTDPP(Bu) |\n| LUMO level of PCBM |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PDTP - DTDPP(Bu) |\n| LUMO level of PCBM |\n\nNote: I have kept \"LUMO level of PCBM\" as a material name entity because it refers to the lowest unoccupied molecular orbital (LUMO) level of PCBM (a common organic solar cell material, phenyl-C61-butyric acid methyl ester), which is a well-defined property of a material."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There is still a room to lower the LUMO level of PDTP - DTDPP(Bu) from 3.63 to ∼ 4.0 eV , which is ∼ 0.3 eV higher than the LUMO level of PCBM.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| LUMO level of PDTP - DTDPP(Bu) |\n| 3.63 (for LUMO level of PDTP - DTDPP(Bu)) |\n| ∼ 4.0 eV (for target LUMO level) |\n| ∼ 0.3 eV (for energy difference) |\n| LUMO level of PCBM |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| LUMO level of PDTP - DTDPP(Bu) |\n| 3.63 (for LUMO level of PDTP - DTDPP(Bu)) |\n| ∼ 4.0 eV (for target LUMO level) |\n| LUMO level of PCBM |\n\nThe entities \"∼ 0.3 eV (for energy difference)\" were removed as they do not clearly refer to a material property."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There is still a room to lower the LUMO level of PDTP - DTDPP(Bu) from 3.63 to ∼ 4.0 eV , which is ∼ 0.3 eV higher than the LUMO level of PCBM.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 3.63 eV |\n| ∼ 4.0 eV |\n| ∼ 0.3 eV |\n| ∼ 4.0 eV |\n| 3.63 eV |\n| ∼ 0.3 eV |\n| The LUMO level of PCBM |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 3.63 eV |\n| ∼ 4.0 eV |\n| ∼ 0.3 eV |\n| The LUMO level of PCBM |\n\nNote: I have removed the first instance of \"The LUMO level of PDTP - DTDPP(Bu)\" as it is not a clear value of a material property. The LUMO level of PCBM is included as it is a specific value of a material property, even though it is not a numerical value."
+    }
+  ]
+}

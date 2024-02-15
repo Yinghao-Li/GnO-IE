@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Patients exhibiting signs of continuing cocaine toxicity were excluded from the study .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Identify the potential disease-related words or phrases in the paragraph.\n2. In this paragraph, the word \"cocaine toxicity\" is the only potential disease-related term.\n3. Determine if \"cocaine toxicity\" is a disease entity.\n4. Yes, \"cocaine toxicity\" is a disease entity, as it refers to the harmful effects on the body caused by the use of cocaine.\n\nTherefore, the \"Disease\" entity in the paragraph is \"cocaine toxicity\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Identify all entities in the paragraph.\n2. Entities: patients, signs, continuing, cocaine toxicity, study.\n3. Determine if each entity is a disease or not.\n4. Patients - Not a disease.\n5. Signs - Not a disease.\n6. Continuing - Not a disease.\n7. Cocaine toxicity - A disease.\n8. Study - Not a disease.\n\nTherefore, the only entity in the paragraph that clearly refers to a disease is \"cocaine toxicity\"."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| cocaine toxicity |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Patients exhibiting signs of continuing cocaine toxicity were excluded from the study .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Identify all the nouns in the paragraph: Patients, signs, continuing, cocaine, toxicity, study.\n2. Determine which of these nouns refer to chemicals: Cocaine is the only noun in this paragraph that refers to a chemical.\n\nTherefore, the \"chemical\" entity in the paragraph is: cocaine."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Patients (not a chemical)\n2. signs (not a chemical)\n3. continuing (not a chemical)\n4. toxicity (not a chemical, but it is related to chemicals, so we can keep it for context)\n5. study (not a chemical)\n6. cocaine (a chemical)\n\nAfter removing irrelevant entities, we only keep the entity that clearly refers to a chemical:\n\n* Cocaine"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Cocaine |"}
+  ]
+}

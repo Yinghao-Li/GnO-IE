@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report a case of a 40 - year - old female with acetaminophen - induced fulminant liver failure with associated AKI who underwent intraoperative dialytic support during liver transplantation anticoagulated with citrate dialysate during the entire procedure .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Acetaminophen-induced fulminant liver failure |\n| Associated AKI (Acute Kidney Injury) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| Acetaminophen-induced fulminant liver failure |\n| Acute Kidney Injury (AKI) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report a case of a 40 - year - old female with acetaminophen - induced fulminant liver failure with associated AKI who underwent intraoperative dialytic support during liver transplantation anticoagulated with citrate dialysate during the entire procedure .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| acetaminophen |\n| citrate |\n\nIn this paragraph, there are two identified chemical entities: acetaminophen and citrate. Acetaminophen is a drug that caused fulminant liver failure in the reported case. Citrate is used as an anticoagulant in the dialysate during the liver transplantation procedure."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| acetaminophen |\n| citrate |\n\nIn the paragraph, the only entities that clearly refer to chemicals are \"acetaminophen\" and \"citrate.\" \"Fulminant liver failure,\" \"AKI,\" \"dialytic support,\" \"during the entire procedure,\" and \"anticoagulated\" are not chemical entities. They describe the condition and actions taken during the medical procedure."}
+  ]
+}

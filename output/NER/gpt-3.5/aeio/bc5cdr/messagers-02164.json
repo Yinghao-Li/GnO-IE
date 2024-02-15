@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: As heparin remains one of the most frequently used medications today with potential for HIT with every heparin exposure , a close vigilance of platelet counts must be practiced whenever heparin is initiated .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nIn the given paragraph, the disease entity is \"HIT\" (Heparin-Induced Thrombocytopenia).\n\nStep 2: Identify the \"Chemical\" entity.\nIn the given paragraph, the chemical entity is \"heparin\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the entity \"platelet counts\" does not clearly refer to either a disease or a chemical. Therefore, it should be removed. The remaining entities are:\n\n- Disease: HIT (Heparin-Induced Thrombocytopenia)\n- Chemical: heparin"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity | Entity Type |\n|--------|-------------|\n| HIT    | Disease     |\n| heparin| Chemical    |"}
+]

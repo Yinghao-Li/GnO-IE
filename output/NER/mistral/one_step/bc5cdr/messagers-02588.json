@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: GEM - P chemotherapy is active in the treatment of relapsed Hodgkin lymphoma .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hodgkin lymphoma |\n| relapsed Hodgkin lymphoma |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hodgkin lymphoma |\n| relapsed Hodgkin lymphoma |\n\nNote: In this paragraph, \"GEM - P chemotherapy\" does not refer to a specific disease, but rather a treatment for Hodgkin lymphoma. Therefore, it was not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: GEM - P chemotherapy is active in the treatment of relapsed Hodgkin lymphoma .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| GEM (Gemcitabine or Gemzar) |\n| P (Procarbazine) |\n| Hodgkin lymphoma |\n\nNote: Gemcitabine or Gemzar is a type of chemotherapy drug named GEM, and Hodgkin lymphoma is a type of lymphoma, which is a disease. However, since the paragraph mentions \"GEM - P chemotherapy,\" it implies that Gemcitabine or Gemzar is being used in combination with another chemotherapy drug, Procarbazine (P)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Gemcitabine or Gemzar (GEM) |\n| Procarbazine (P) |\n\nNote: Hodgkin lymphoma is a disease and is not a chemical entity. Therefore, it is not included in the table."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: One of two roads leading to the University of Yangon from the institute had been closed by authorities .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| There is no \"Person\" entity in the paragraph. |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| There is no \"Person\" entity in the paragraph. |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: One of two roads leading to the University of Yangon from the institute had been closed by authorities .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| to the University of Yangon |\n| from the institute |\n\nIn the paragraph, the two locations mentioned are \"to the University of Yangon\" and \"from the institute\". These locations are significant in understanding the context of the passage."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| to the University of Yangon |\n| from the institute |\n\nIn the paragraph, the two locations mentioned are \"to the University of Yangon\" and \"from the institute\". I have removed the road since it is not a location in this context. The focus is on the starting and ending points of the two roads, which are the University of Yangon and the institute."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: One of two roads leading to the University of Yangon from the institute had been closed by authorities .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| University of Yangon |\n| the institute |\n\nNote: I have included \"the institute\" as well since it is implied that it is an organization, even though it is not explicitly mentioned as one in the paragraph. If it is confirmed that \"the institute\" is not an organization, then it should be removed from the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| University of Yangon |\n\nNote: I have removed \"the institute\" since it is not explicitly mentioned as an organization in the paragraph."}
+  ]
+}

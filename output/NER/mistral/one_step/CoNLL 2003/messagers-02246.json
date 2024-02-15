@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Langmore , 57 , announced in November that he intended to resign from parliament to take up a position as Australia 's senior representative at the United Nations headquarters in New York .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Langmore |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Langmore |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Langmore , 57 , announced in November that he intended to resign from parliament to take up a position as Australia 's senior representative at the United Nations headquarters in New York .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| United Nations headquarters in New York |\n| Parliament (implied: in Australia) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| United Nations headquarters in New York |\n| Parliament (in Australia) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Langmore , 57 , announced in November that he intended to resign from parliament to take up a position as Australia 's senior representative at the United Nations headquarters in New York .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Nations |\n| Australia |\n| Parliament |\n\nIn this paragraph, \"United Nations\" and \"Australia\" are the organizations mentioned. \"Parliament\" is also an organization, but it is already explicitly stated as \"Australia's parliament\" earlier in the context, so it is not necessary to include it as a separate entry in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United Nations |\n| Australia |\n\nIn this paragraph, \"United Nations\" and \"Australia\" are the organizations mentioned. There are no other entities in the paragraph that clearly refer to organizations."}
+  ]
+}

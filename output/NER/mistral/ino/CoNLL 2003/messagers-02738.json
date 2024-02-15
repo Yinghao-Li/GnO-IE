@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Alena Koroleva ( Russia ) 41.64 ; 9 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Alena Koroleva\n\nThis is a clear \"Person\" entity mentioned by name in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Alena Koroleva\n\nThis is the only clear \"Person\" entity mentioned in the paragraph. The numbers 41.64 and 9 do not refer to people."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Alena Koroleva |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Alena Koroleva ( Russia ) 41.64 ; 9 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Russia: This is an identified country entity.\n2. 41.64: This is a set of coordinates representing a location. In this context, it can be assumed that it represents the latitude of the location associated with Alena Koroleva.\n3. 9: This is also a set of coordinates representing a location. In this context, it can be assumed that it represents the longitude of the location associated with Alena Koroleva.\n\nSo, the identified location entities in the paragraph are \"Russia\" and the coordinates \"41.64, 9\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The identified location entity in the paragraph is \"Russia\" and the coordinates \"41.64, 9\". These entities clearly refer to a specific location. The numbers \"41.64\" and \"9\" are not irrelevant, as they are an essential part of the location information."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Russia |\n| 41.64, 9 |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Alena Koroleva ( Russia ) 41.64 ; 9 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Russia - This is an organization identified in the paragraph. It is mentioned as the nationality of Alena Koroleva."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Russia."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Russia |"}
+  ]
+}

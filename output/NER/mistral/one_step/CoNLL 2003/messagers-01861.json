@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Fini told state radio RAI he met Mussolini thanks to the good offices of Giuseppe Tatarella , AN 's leader in the Chamber of Deputies ( lower house ) , and had overcome their differences .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Fini |\n| Mussolini |\n| Giuseppe Tatarella |\n| AN (implicit, but can be included as an organization if preferred) |\n| RAI |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Fini |\n| Mussolini |\n| Giuseppe Tatarella |\n| RAI (as an organization) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Fini told state radio RAI he met Mussolini thanks to the good offices of Giuseppe Tatarella , AN 's leader in the Chamber of Deputies ( lower house ) , and had overcome their differences .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| RAI (state radio) |\n| Chamber of Deputies (lower house) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| RAI (state radio) |\n| Chamber of Deputies (lower house) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Fini told state radio RAI he met Mussolini thanks to the good offices of Giuseppe Tatarella , AN 's leader in the Chamber of Deputies ( lower house ) , and had overcome their differences .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| RAI (Radio Auditoria Italiana) |\n| AN (Azione Nazionale) |\n| Chamber of Deputies (Italian lower house) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| RAI (Radio Auditoria Italiana) |\n| AN (Azione Nazionale) |\n| Chamber of Deputies (Italian lower house) |\n\n(Note: \"RAI\" is a broadcasting organization, \"AN\" is a political party, and \"Chamber of Deputies\" is a legislative body, all of which can be considered organizations.)"}
+  ]
+}

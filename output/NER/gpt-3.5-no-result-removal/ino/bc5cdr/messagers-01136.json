@@ -1,0 +1,16 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: The patient , who had unresectable colon cancer metastases to the liver and lung , was referred to us for chemotherapy from an affiliated hospital ; he had no cardiac history .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Sure! Let's identify the \"Disease\" entities in the given paragraph.\n\n1. Unresectable colon cancer metastases to the liver and lung - This phrase mentions \"colon cancer,\" which is a disease.\n\nSo, the identified \"Disease\" entity in the paragraph is \"colon cancer.\""},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease         |\n|-----------------|\n| colon cancer    |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: The patient , who had unresectable colon cancer metastases to the liver and lung , was referred to us for chemotherapy from an affiliated hospital ; he had no cardiac history .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Sure! Let's identify the \"Chemical\" entities in the paragraph.\n\n1. The patient - Not a chemical entity.\n2. unresectable colon cancer metastases - Not a chemical entity. It refers to a medical condition.\n3. liver - Chemical entity.\n4. lung - Chemical entity.\n5. chemotherapy - Chemical entity.\n6. affiliated hospital - Not a chemical entity. It refers to a type of hospital.\n7. cardiac - Not a chemical entity. It refers to a medical condition.\n8. history - Not a chemical entity.\n\nBased on the paragraph, the identified \"Chemical\" entities are:\n- liver\n- lung\n- chemotherapy"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical       |\n|----------------|\n| liver          |\n| lung           |\n| chemotherapy  |"}
+  ]
+}

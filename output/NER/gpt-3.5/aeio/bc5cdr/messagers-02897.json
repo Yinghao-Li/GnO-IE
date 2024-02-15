@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: The mean body weight of dogs with grade 4 neutropenia (19 . 7 kg + 13 . 4 kg) was significantly less than the mean body weight of dogs that did not develop grade 4 neutropenia (31 . 7 kg + 12 . 4 kg ; P = . 005) .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nThere is no specific disease mentioned in the paragraph. Therefore, there is no \"Disease\" entity to identify.\n\nStep 2: Identify the \"Chemical\" entity.\nThere is no specific chemical mentioned in the paragraph. Therefore, there is no \"Chemical\" entity to identify."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "The mean body weight of dogs with grade 4 neutropenia was significantly less than the mean body weight of dogs that did not develop grade 4 neutropenia."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity | Entity Type |\n|--------|-------------|\n| neutropenia | Disease |"}
+]

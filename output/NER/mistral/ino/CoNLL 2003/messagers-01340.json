@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Interfax news agency quoted First Deputy Foreign Minister Igor Ivanov as saying Moscow was ready for \" most active and constructive \" work with Albright .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Igor Ivanov (First Deputy Foreign Minister)\n2. Albright (presumably Madeleine Albright, as she is mentioned as the person Igor Ivanov is ready to work with)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Igor Ivanov\n2. Albright"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Igor Ivanov |\n| Albright |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Interfax news agency quoted First Deputy Foreign Minister Igor Ivanov as saying Moscow was ready for \" most active and constructive \" work with Albright .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Interfax news agency\n2. Moscow (implied, as it is stated that Moscow is ready to work with Albright)\n\nThe paragraph does not explicitly mention any other location entities."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Moscow (Interfax news agency implied)\n\nThe paragraph only clearly refers to the location \"Moscow\". The other entities mentioned, such as Interfax news agency and First Deputy Foreign Minister Igor Ivanov, do not directly refer to a location."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Moscow |\n\nThe location mentioned in the paragraph is \"Moscow\"."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Interfax news agency quoted First Deputy Foreign Minister Igor Ivanov as saying Moscow was ready for \" most active and constructive \" work with Albright .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Interfax news agency\n2. First Deputy Foreign Minister Igor Ivanov\n3. Moscow (implied: Russian government or foreign ministry)\n4. Albright (presumably Madeleine Albright, former US Secretary of State)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Interfax news agency (news agency)\n2. Russian government or foreign ministry (Organization: Moscow)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Interfax news agency |\n| Russian government or foreign ministry |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: It was characterized by the onset of fever , diarrhea , shock , pulmonary edema , acute renal failure , metabolic acidosis , weight gain and leukocytosis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| Fever   |\n| Diarrhea |\n| Shock   |\n| Pulmonary edema |\n| Acute renal failure |\n| Metabolic acidosis |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| Fever   |\n| Diarrhea |\n| Shock   |\n| Pulmonary edema |\n| Acute renal failure |\n| Metabolic acidosis |\n\nThese entities are clearly diseases or conditions mentioned in the paragraph. Other terms like \"onset\" and \"weight gain\" do not refer to specific diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: It was characterized by the onset of fever , diarrhea , shock , pulmonary edema , acute renal failure , metabolic acidosis , weight gain and leukocytosis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| acute renal failure |\n| metabolic acidosis |\n\nNote: The other mentioned entities in the paragraph are not chemical entities. They are symptoms or conditions."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| metabolic acidosis |\n\nNote: \"fever\", \"diarrhea\", \"shock\", \"pulmonary edema\", and \"leukocytosis\" are not chemical entities. They are symptoms or conditions."}
+  ]
+}

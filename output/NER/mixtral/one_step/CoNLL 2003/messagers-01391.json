@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Yields on U.S. 30-year Treasury bonds were 6.51 percent when stock trading closed in Mexico , unchanged from Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| No \"Person\" entities found in the paragraph. |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| No \"Person\" entities found in the paragraph. |\n\nThere are no specific persons mentioned in the paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Yields on U.S. 30-year Treasury bonds were 6.51 percent when stock trading closed in Mexico , unchanged from Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| U.S.       |\n| Mexico     |\n\nExplanation:\n\n* \"U.S.\" is mentioned as the issuer of the 30-year Treasury bonds, implying a location.\n* \"Mexico\" is explicitly stated as the location where the stock trading closed."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Mexico     |\n\nExplanation:\n\n* \"U.S.\" is not a clear location reference in this context, as it is associated with bonds, not a physical location.\n* \"Mexico\" is explicitly stated as the location where the stock trading closed."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Yields on U.S. 30-year Treasury bonds were 6.51 percent when stock trading closed in Mexico , unchanged from Thursday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| U.S. |\n| Mexico |\n\nExplanation:\n\n* U.S.: Mentioned as the issuer of the 30-year Treasury bonds, which is a type of debt security.\n* Mexico: Mentioned as the location where the stock trading closed."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| U.S. |\n\nExplanation:\n\n* U.S.: Mentioned as the issuer of the 30-year Treasury bonds, which is a type of debt security.\n\nMexico is not considered an \"Organization\" entity, so it has been removed from the table."}
+  ]
+}

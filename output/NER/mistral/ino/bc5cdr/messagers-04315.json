@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: This resulted in 100 % developing seizures and death .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Seizures\n2. (Implied) Unspecified fatal condition or disease leading to seizures and death."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Seizures (this is a neurological condition)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Seizures |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: This resulted in 100 % developing seizures and death .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Developing: This term refers to the process of becoming or making something exist or come into being. In this context, it is likely referring to the development of seizures.\n2. Seizures: Seizures are a symptom of various disorders of the nervous system, characterized by abnormal electrical activity in the brain.\n\nTherefore, the chemical entities are not explicitly mentioned in the paragraph. However, it's important to note that seizures can be caused by various chemical imbalances in the brain, such as abnormal levels of neurotransmitters like glutamate or GABA."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Seizures: Seizures are a symptom of various disorders characterized by abnormal electrical activity in the brain, which can be caused by chemical imbalances in neurotransmitters like glutamate or GABA."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Seizures (symptom of disorders characterized by abnormal electrical activity in the brain, which can be caused by chemical imbalances in neurotransmitters like glutamate or GABA) |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Four groups of rats ( n = 7 ) were studied : jj and jJ rats treated either with aspirin 300 mg / kg every other day or sham - treated .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| jj |\n| jJ |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities:\n\n| Disease |\n| --- |\n| jj |\n| jJ |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Four groups of rats ( n = 7 ) were studied : jj and jJ rats treated either with aspirin 300 mg / kg every other day or sham - treated .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Aspirin |\n| 300 mg/kg |\n\nExplanation:\n\n* Aspirin is a chemical entity, specifically a drug.\n* 300 mg/kg is a quantity of the chemical entity Aspirin, and is therefore also a chemical entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Aspirin |\n\nExplanation:\n\n* \"300 mg/kg\" does not clearly refer to a chemical entity, but rather a quantity of a chemical entity. Therefore, it has been removed from the list of valid chemical entities.\n* \"jj\" and \"jJ\" are not chemical entities, but rather variables used to represent different groups of rats. Therefore, they have also been removed from the list of valid chemical entities.\n\nThe only valid chemical entity in the given paragraph is \"Aspirin\"."}
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: In relatively healthy women , combined continuous HT significantly increased the risk of venous thromboembolism or coronary event (after one year ' s use) , stroke (after 3 years) , breast cancer (after 5 years) and gallbladder disease .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entities.\n\nIn the given paragraph, the following diseases are mentioned:\n\n1. Venous thromboembolism\n2. Coronary event\n3. Stroke\n4. Breast cancer\n5. Gallbladder disease\n\nStep 2: Identify the \"Chemical\" entities.\n\nThere are no chemical entities mentioned in the given paragraph."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the following diseases are mentioned:\n\n1. Venous thromboembolism\n2. Stroke\n3. Breast cancer\n4. Gallbladder disease\n\nThere are no chemical entities mentioned in the paragraph."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity                  | Entity Type |\n|-------------------------|-------------|\n| Venous thromboembolism | Disease     |\n| Stroke                  | Disease     |\n| Breast cancer           | Disease     |\n| Gallbladder disease     | Disease     |"}
+]

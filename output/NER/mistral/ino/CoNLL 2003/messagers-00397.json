@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: PITTSBURGH AT WASHINGTON\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Pittsburgh\n2. Washington (implicitly referring to Washington D.C.)\n\nThere are no explicit \"Person\" entities mentioned in the paragraph. However, if there were names of specific people mentioned, they would be identified as entities. For example, if the paragraph read \"Let's think step by step. Pittsburgh plays Washington at Heinz Field this weekend. Pittsburgh's quarterback Ben Roethlisberger...\" then Ben Roethlisberger would be identified as a person entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Pittsburgh (if it refers to a specific person, it should be clarified)\n2. Washington (if it refers to a specific person, it should be clarified)\n\nIf there are specific people mentioned in the paragraph, their names should be identified as entities. For example, \"Let's think step by step. Pittsburgh's quarterback Ben Roethlisberger plays against Washington's quarterback Russell Wilson this weekend.\" In this case, Ben Roethlisberger and Russell Wilson would be identified as person entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Pittsburgh (if it refers to a specific person) |\n| Washington (if it refers to a specific person) |\n\nIf specific people are mentioned in the paragraph, their names should be added as new rows in the table. For example,\n\n| Person |\n|--------|\n| Pittsburgh (if it refers to a specific person) |\n| Washington (if it refers to a specific person) |\n| Ben Roethlisberger |\n| Russell Wilson |\n\nIf the paragraph reads \"Let's think step by step. Pittsburgh's quarterback Ben Roethlisberger plays against Washington's quarterback Russell Wilson this weekend.\", then Ben Roethlisberger and Russell Wilson are the person entities."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: PITTSBURGH AT WASHINGTON\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Pittsburgh\n2. Washington (assuming this refers to the city of Washington D.C.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Pittsburgh\n2. Washington D.C."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Pittsburgh |\n| Washington D.C. |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: PITTSBURGH AT WASHINGTON\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Pittsburgh\n2. Washington (implied as Washington D.C. or Washington Football Team)\n\nIn this context, both Pittsburgh and Washington can be considered organizations as they are commonly referred to as cities and teams in sports, respectively."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Washington (Washington Football Team)\n\nIn this context, \"Washington\" is the only organization explicitly mentioned in the paragraph. Pittsburgh is a city and not an organization in this context."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Washington (Washington Football Team) |"}
+  ]
+}

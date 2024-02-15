@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Czech diplomats , seeking to have their country included in the expected expansion of NATO , praised the selection of Albright , known to be a strong supporter of alliance 's integration of former Soveit-bloc countries .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Czech diplomats\n2. Albright\n3. NATO\n4. Selection committee of NATO (implied)\n5. Strong supporter of alliance's integration of former Soviet-bloc countries (this could be a group or multiple individuals, but since Albright is specifically mentioned, it's assumed that this refers to her)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Czech diplomats\n2. Albright"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Czech diplomats |\n| Albright |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Czech diplomats , seeking to have their country included in the expected expansion of NATO , praised the selection of Albright , known to be a strong supporter of alliance 's integration of former Soveit-bloc countries .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Czech diplomats\n2. Their country (implicitly identified as the Czech Republic)\n3. Expected expansion of NATO\n4. Selection of Madeleine Albright\n5. Known to be a strong supporter of alliance's integration of former Soviet-bloc countries\n6. Alliance (implicitly identified as NATO)\n7. Former Soviet-bloc countries."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Czech Republic\n2. Former Soviet-bloc countries\n3. NATO (North Atlantic Treaty Organization)\n\nThese are the entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Czech Republic |\n| Former Soviet-bloc countries |\n| NATO (North Atlantic Treaty Organization) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Czech diplomats , seeking to have their country included in the expected expansion of NATO , praised the selection of Albright , known to be a strong supporter of alliance 's integration of former Soveit-bloc countries .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Czech diplomats\n2. NATO (North Atlantic Treaty Organization)\n3. Alliance\n4. Former Soviet-bloc countries."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. NATO (North Atlantic Treaty Organization)\n2. Alliance.\n\nNote: In this context, \"Alliance\" refers to NATO as it is mentioned earlier in the paragraph that Czech diplomats are praising NATO's integration of former Soviet-bloc countries."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NATO (North Atlantic Treaty Organization) |"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Woolmer , 48 , played 19 tests for England between 1975 and 1981 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Woolmer |\n| England |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Woolmer |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Woolmer , 48 , played 19 tests for England between 1975 and 1981 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| England |\n|  |\n| 19 tests |\n\nExplanation:\n\n* \"England\" is a location entity in the sentence, as it refers to the country where Woolmer played cricket tests.\n* \"19 tests\" is not a location entity, as it refers to the number of tests played by Woolmer, not a specific location where he played."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| England |\n\nExplanation:\n\n* \"England\" is a location entity in the sentence, as it refers to the country where Woolmer played cricket tests.\n\nThe other mentioned entity, \"19 tests\", does not clearly refer to a location and therefore is not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Woolmer , 48 , played 19 tests for England between 1975 and 1981 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| England |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| England |"}
+  ]
+}

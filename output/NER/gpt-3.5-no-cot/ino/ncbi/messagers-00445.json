@@ -1,0 +1,11 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: AAPC is recognized by the occurrence of < 100 colonic adenomas and a later onset of colorectal cancer ( age > 40 years ) ."},
+    {"role": "assistant", "content": "Based on the given paragraph, there are no specific disease entities mentioned. However, there are some medical terms related to conditions that can be considered as potential diseases. These terms include \"colonic adenomas\" and \"colorectal cancer.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Based on the given paragraph, there are no specific disease entities mentioned. Therefore, there are no relevant entities to include in the table."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease           |\n|-------------------|\n| colonic adenomas  |\n| colorectal cancer |"}
+  ]
+}

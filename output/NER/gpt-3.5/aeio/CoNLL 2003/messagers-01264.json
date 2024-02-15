@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Hospital sources and witnesses said about 10 people were known to have been killed in the more than two weeks of fighting , including two rebels killed in Thursday 's clashes .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. Hospital sources - Organization\n2. witnesses - Person\n3. rebels - Organization\n\nSo, the identified entities in the paragraph are:\n\n- Organization: Hospital sources, rebels\n- Person: witnesses"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. Hospital sources - Organization\n2. witnesses - Person\n\nSo, the identified entities in the paragraph are:\n\n- Organization: Hospital sources\n- Person: witnesses"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity            | Entity Type   |\n|-------------------|---------------|\n| Hospital sources  | Organization  |\n| witnesses         | Person        |"}
+]

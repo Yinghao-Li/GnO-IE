@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A 1 - year - old female presented with neuroleptic malignant syndrome probably caused by methylphenidate .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| neuroleptic malignant syndrome |\n| methylphenidate (although this is a medication, it can cause the disease neuroleptic malignant syndrome as mentioned in the paragraph) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| neuroleptic malignant syndrome |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A 1 - year - old female presented with neuroleptic malignant syndrome probably caused by methylphenidate .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| neuroleptic malignant syndrome |\n| methylphenidate |\n\nExplanation:\n\n1. neuroleptic malignant syndrome: Although it's a condition or syndrome, I have included it as a chemical entity since it is related to the side-effect of a medication, methylphenidate in this case.\n2. methylphenidate: This is a psychostimulant drug mainly used for treating attention deficit hyperactivity disorder (ADHD)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| methylphenidate |\n\nExplanation:\n\n1. methylphenidate: This is the only clear chemical entity in the paragraph.\n\nThe other entity, neuroleptic malignant syndrome, is a condition or syndrome related to the side-effect of a medication, but it is not a chemical itself."}
+  ]
+}

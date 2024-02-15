@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: THF and toluene were distilled from sodium benzophenone under nitrogen prior to use.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| THF (Tetrahydrofuran) |\n| toluene |\n| sodium benzophenone |\n| nitrogen |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| THF (Tetrahydrofuran) |\n| toluene |\n| sodium benzophenone |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: THF and toluene were distilled from sodium benzophenone under nitrogen prior to use.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| THF (Tetrahydrofuran) |\n| toluene |\n| sodium benzophenone |\n| nitrogen |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| THF (Tetrahydrofuran) |\n| toluene |\n| sodium benzophenone |\n| nitrogen (as a gas used for purging) |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: THF and toluene were distilled from sodium benzophenone under nitrogen prior to use.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| THF and toluene |\n| were distilled |\n| from sodium benzophenone |\n| under nitrogen |\n| prior to use |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| THF and toluene were distilled |\n| from sodium benzophenone |\n| under nitrogen |\n\nNote: In this context, \"THF and toluene\" and \"were distilled\" do not clearly refer to material properties, but they are included in the table for completeness as they are the entities directly mentioned in the paragraph that could potentially be property values. However, \"from sodium benzophenone\" and \"under nitrogen\" are more likely to refer to material properties, such as the solvent used for distillation and the distillation conditions, respectively."
+    }
+  ]
+}

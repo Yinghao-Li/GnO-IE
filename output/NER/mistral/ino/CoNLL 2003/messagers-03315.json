@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Indiana 86 GOLDEN STATE 71\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indiana\n2. 86 (This is a number and not a person, but it is often associated with the Indiana team in this context as the number of points they scored.)\n3. GOLDEN STATE\n4. 71 (Again, this is a number associated with the Golden State team and the number of points they scored.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Indiana\n2. Golden State"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Indiana |\n| Golden State |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Indiana 86 GOLDEN STATE 71\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indiana: This is a state in the Midwestern and Eastern United States.\n2. Golden State: This is a common nickname for the U.S. state of California.\n\nSo, the entities mentioned in the paragraph that can be identified as locations are:\n\n1. Indiana\n2. California (implied by \"Golden State\")"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Indiana\n2. California"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Indiana |\n| California |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Indiana 86 GOLDEN STATE 71\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indiana: This is the name of a state in the United States. It can be considered an organization in the sense of a political entity.\n2. Golden State: This is a common nickname for the state of California. It can also be considered an organization in the sense of a group or community.\n\nSo, the organization entities in the paragraph are Indiana and Golden State."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The organization entities in the paragraph are:\n\n1. Indiana (as a political entity)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Indiana (as a political entity) |"}
+  ]
+}

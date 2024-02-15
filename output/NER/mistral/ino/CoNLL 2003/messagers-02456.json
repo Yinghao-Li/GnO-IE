@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 3. Carole Montillet ( France ) 86\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Carole Montillet. This is a clear \"Person\" entity mentioned by name. She is a French person and her age is given as 86."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Carole Montillet. This is a clear \"Person\" entity."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Carole Montillet |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 3. Carole Montillet ( France ) 86\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France - This is a country and can be identified as a location entity."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "France."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| France |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 3. Carole Montillet ( France ) 86\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. France (Country)\n\nIn the given paragraph, \"France\" is the only organization or entity mentioned. It is identified as a country."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Paragraph: 3. Carole Montillet (Organization: Unspecified)\n\nIn the given paragraph, no clear organization entity is mentioned. \"France\" is identified as a country."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Carole Montillet (Organization: Unspecified) |\n\nIn the given paragraph, \"Carole Montillet\" is mentioned, but it is not clear what type of organization she is associated with. Therefore, it is listed as \"Organization: Unspecified\"."}
+  ]
+}

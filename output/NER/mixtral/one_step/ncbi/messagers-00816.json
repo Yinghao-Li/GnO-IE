@@ -1,0 +1,8 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: If untreated , hemochromatosis can cause serious illness and early death , but the disease is still substantially under - diagnosed .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| hemochromatosis |\n| the disease |\n\nExplanation:\n\n1. \"hemochromatosis\" is explicitly mentioned as a disease in the text.\n2. \"the disease\" in the second sentence refers back to \"hemochromatosis\" in the first sentence, so it should also be included as a disease entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| hemochromatosis |\n\nExplanation:\n\n1. \"hemochromatosis\" is explicitly mentioned as a disease in the text.\n2. \"the disease\" is referring back to \"hemochromatosis\" in the text, so it is also a disease entity.\n3. However, \"serious illness\" and \"early death\" are not explicitly mentioned as diseases in the text, so they should not be included as disease entities."}
+  ]
+}

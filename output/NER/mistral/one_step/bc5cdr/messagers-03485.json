@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Frequency and severity of subjective adverse effects were also reduced after HDS : tremor ( p less than 0 . 001 ) , palpitations ( p less than 0 . 001 ) . ( ABSTRACT TRUNCATED AT 250 WORDS )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| tremor |\n| palpitations |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| tremor |\n| palpitations |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Frequency and severity of subjective adverse effects were also reduced after HDS : tremor ( p less than 0 . 001 ) , palpitations ( p less than 0 . 001 ) . ( ABSTRACT TRUNCATED AT 250 WORDS )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| HDS |\n| tremor |\n| palpitations |\n\nExplanation:\nThe paragraph mentions \"HDS\" which is assumed to be a drug or treatment abbreviated as High Dose Systemic Therapy. The paragraph also mentions two subjective adverse effects that were reduced after HDS: \"tremor\" and \"palpitations\". These are chemical entities as they refer to specific physiological conditions or symptoms."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| HDS |\n| tremor |\n| palpitations |\n\nExplanation:\nThe paragraph mentions \"HDS\" which is assumed to be a drug or treatment abbreviated as High Dose Systemic Therapy. The paragraph also mentions two subjective adverse effects that were reduced after HDS: \"tremor\" and \"palpitations\". These are chemical entities as they refer to specific physiological conditions or symptoms. \"p less than 0 . 001\" is a statistical value and does not refer to a chemical entity. Therefore, it was not included in the table."}
+  ]
+}

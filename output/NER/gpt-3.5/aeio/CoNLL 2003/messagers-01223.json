@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: The northeastern coast of the nearby island of Madagascar has also gone on alert .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step.\n\n1. The northeastern coast - Location\n2. island of Madagascar - Location\n3. Madagascar - Location\n4. alert - None (not a named entity)\n\nSo, the identified entities are:\n\n- Location: northeastern coast, island of Madagascar, Madagascar\n- Organization: None\n- Person: None"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\".\n\n1. The northeastern coast - Location\n2. island of Madagascar - Location\n3. Madagascar - Location\n\nSo, the identified entities are:\n\n- Location: northeastern coast, island of Madagascar, Madagascar"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity              | Entity Type |\n|---------------------|-------------|\n| northeastern coast  | location    |\n| island of Madagascar| location    |\n| Madagascar          | location    |"}
+]

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This antibiotic regimen showed both therapeutic efficacy and acceptable renal toxicity for these patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| renal toxicity |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| renal toxicity |\n\nNote: In this paragraph, \"renal toxicity\" is the only entity that can be clearly identified as a disease. While \"therapeutic efficacy\" refers to the effectiveness of a treatment, it does not refer to a specific disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This antibiotic regimen showed both therapeutic efficacy and acceptable renal toxicity for these patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antibiotic |\n| renal toxicity |\n\nNote: I've included \"antibiotic\" as a general term for a chemical substance used to treat infections, and \"renal toxicity\" as a potential side effect of a chemical agent on the kidneys."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antibiotic |\n\nNote: In the revised table, I have only included \"antibiotic\" as a clear chemical entity, since \"renal toxicity\" is a condition or adverse effect, not a chemical substance itself."}
+  ]
+}

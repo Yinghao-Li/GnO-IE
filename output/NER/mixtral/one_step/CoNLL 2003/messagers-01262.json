@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rebels accuse Patasse of tribalism and of arming his civilian supporters and hired guns from Sudan and Chad .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Rebels |\n| Patasse |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Rebels |\n| Patasse |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rebels accuse Patasse of tribalism and of arming his civilian supporters and hired guns from Sudan and Chad .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Sudan        |\n| Chad         |\n\nExplanation:\n\nThe two location entities identified in the paragraph are \"Sudan\" and \"Chad\". These are mentioned as the countries from where Patasse is accused of arming his civilian supporters and hired guns."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| Sudan        |\n| Chad         |\n\nExplanation:\n\nThe two location entities identified in the paragraph are \"Sudan\" and \"Chad\". These are the only entities that can be clearly identified as locations, as they are mentioned as countries. The term \"tribalism\" is not a location entity, but rather a social phenomenon. Therefore, it has not been included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Rebels accuse Patasse of tribalism and of arming his civilian supporters and hired guns from Sudan and Chad .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Rebels |\n| Patasse |\n| Sudan |\n| Chad |\n\nExplanation:\n\n* \"Rebels\" are mentioned as the subject making the accusation, so they are an organization.\n* \"Patasse\" is a proper name and is the object of the accusation, so it is also an organization (presumably a political or military one).\n* \"Sudan\" and \"Chad\" are mentioned as sources of armed support for Patasse, so they are organizations (countries)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Rebels |\n| Patasse |\n\nExplanation:\n\n* \"Rebels\" are mentioned as the subject making the accusation, so they are an organization.\n* \"Patasse\" is a proper name and is the object of the accusation, so it is also an organization (presumably a political or military one).\n* \"Sudan\" and \"Chad\" are not clearly organizations in this context, as they are mentioned only as sources of support, not as organizations themselves."}
+  ]
+}

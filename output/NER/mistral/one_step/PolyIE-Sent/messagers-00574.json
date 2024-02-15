@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 10 Figure 3 shows the cyclic voltammogram of PCZDTB and PQCDTB , which were measured in 0.1 M tetrabutylammoniumhexafluorophosphate acetonitrile.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PCZDTB |\n| PQCDTB |\n| tetrabutylammoniumhexafluorophosphate |\n| acetonitrile |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PCZDTB |\n| PQCDTB |\n| tetrabutylammonium hexafluorophosphate |\n| acetonitrile |\n\nExplanation:\n\n* \"Figure 3\" and \"which were measured\" are not material names.\n* \"in 0.1 M\" is a quantity and not a material name.\n* \"tetrabutylammoniumhexafluorophosphate\" is a material name.\n* \"acetonitrile\" is a material name."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 10 Figure 3 shows the cyclic voltammogram of PCZDTB and PQCDTB , which were measured in 0.1 M tetrabutylammoniumhexafluorophosphate acetonitrile.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| ------------ |\n| Figure 3 |\n| PCZDTB |\n| PQCDTB |\n| 0.1 M tetrabutylammoniumhexafluorophosphate |\n| acetonitrile |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| ------------ |\n| Figure 3 |\n| PCZDTB |\n| PQCDTB |\n| 0.1 M tetrabutylammoniumhexafluorophosphate |\n| acetonitrile (solvent) |\n\nNote: \"Figure 3\" and the named compounds (PCZDTB and PQCDTB) are considered material properties as they are the subjects of the sentence. \"Acetonitrile\" is included as a solvent used in the measurement of the material properties."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 10 Figure 3 shows the cyclic voltammogram of PCZDTB and PQCDTB , which were measured in 0.1 M tetrabutylammoniumhexafluorophosphate acetonitrile.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Figure 3 |\n| PCZDTB |\n| PQCDTB |\n| 0.1 M tetrabutylammoniumhexafluorophosphate |\n| acetonitrile |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 0.1 M tetrabutylammoniumhexafluorophosphate |\n| acetonitrile |\n| PCZDTB |\n| PQCDTB |\n\n[Explanation: \"Figure 3\" is not a material property, it is a figure or graph. \"Which were measured\" is not a material property, it is a description of an action. \"In 0.1 M tetrabutylammoniumhexafluorophosphate acetonitrile\" is describing the solution in which the measurement was taken, but \"0.1 M tetrabutylammoniumhexafluorophosphate\" and \"acetonitrile\" are the material properties being measured.]"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Repeat EEGs within 24 _ h of symptom onset showed marked improvement that was correlated with clinical improvement .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Unspecified condition causing symptom onset leading to repeat EEGs within 24 hours |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Unspecified condition causing symptom onset |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Repeat EEGs within 24 _ h of symptom onset showed marked improvement that was correlated with clinical improvement .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| _ h (hours) |\n\nExplanation:\nThe paragraph does not contain any explicit mention of specific chemical entities. The only entity mentioned is \"hours\" (denoted as \"_ h\" in the paragraph), which is a unit of time and not a chemical substance."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| hours |\n\nExplanation:\nThe paragraph only mentions \"hours\" which is a unit of time and not a chemical substance. Therefore, it is the only entity that can be considered as a potential chemical entity in this context, but with a qualification that it is not a typical chemical entity."}
+  ]
+}

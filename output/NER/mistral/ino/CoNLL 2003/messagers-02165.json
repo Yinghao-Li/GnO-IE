@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: MUNICH , Germany 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MUNICH: This is a city located in Germany. It is not a person, but rather a location.\n2. Germany: This is a country in Europe. It is not a person, but rather a location.\n3. 1996-12-06: This is a date. It does not represent a person."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "There are no entities in the paragraph that clearly refer to a person. All entities mentioned are locations or a date."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| N/A    |\n\nThere are no entities in the paragraph that refer to a person."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: MUNICH , Germany 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MUNICH: This is an explicit location mentioned in the paragraph.\n2. Germany: This is an implicit location mentioned as the country where the city Munich is located.\n\nSo, the location entities in the paragraph are:\n1. MUNICH\n2. Germany."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n1. MUNICH."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| MUNICH |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: MUNICH , Germany 1996-12-06\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MUNICH: This is a city located in Germany. While it's not technically an organization, it can be considered a political subdivision or a location.\n2. Germany: This is a country located in Europe. It is a sovereign state and can be considered an organization in the context of international relations.\n\nTherefore, the only organization mentioned in the paragraph is \"Germany.\""},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Germany."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Germany |"}
+  ]
+}

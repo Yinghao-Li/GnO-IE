@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: S - 1 may be administered safely to patients with 5 - FU - induced cardiotoxicity .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| 5-FU-induced cardiotoxicity |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| 5-FU-induced cardiotoxicity |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: S - 1 may be administered safely to patients with 5 - FU - induced cardiotoxicity .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| S |\n| 5 - FU |\n\nIn this paragraph, \"S\" and \"5 - FU\" are the chemical entities mentioned. \"S\" is not explicitly stated as a specific chemical compound, so it is left as an unknown entity. \"5 - FU\" is identified as 5-Fluorouracil."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 5 - FU |\n\nIn the paragraph, only \"5 - FU\" clearly refers to a chemical entity. \"S\" is not explicitly stated as a chemical compound, and \"patients\" and \"induced\" do not refer to chemicals. Therefore, only \"5 - FU\" is presented in the table."}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: '"},
+    {"role": "assistant", "content": "I went to the store and saw my friend Sarah. We chatted for a while and then I bumped into my neighbor John. We talked about the upcoming party and made plans to go together. After that, I ran into my coworker Lisa and we discussed the new project at work.'\n\nPerson Entities:\n- Sarah\n- John\n- Lisa"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Person Entities:\n- Sarah\n- John\n- Lisa"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Sarah  |\n| John   |\n| Lisa   |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: '"},
+    {"role": "assistant", "content": "The conference will be held in New York City, which is known for its vibrant culture and bustling streets. Attendees will have the opportunity to explore famous landmarks such as Times Square and Central Park."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Here are the relevant \"Location\" entities from the paragraph:\n\n| Entity        |\n|---------------|\n| New York City |\n| Times Square  |\n| Central Park  |"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Here is the table with the valid \"Location\" entities:\n\n| Location       |\n|----------------|\n| New York City  |\n| Times Square   |\n| Central Park   |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: '"},
+    {"role": "assistant", "content": "There are several organizations involved in the project. The main organization leading the project is XYZ Corporation. They are working in collaboration with ABC Foundation and DEF Company. Additionally, the project has received funding from the Government Agency for Research and Development.'"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Organization\n1. XYZ Corporation\n2. ABC Foundation\n3. DEF Company\n4. Government Agency for Research and Development"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization                           |\n|----------------------------------------|\n| XYZ Corporation                        |\n| ABC Foundation                         |\n| DEF Company                            |\n| Government Agency for Research and Development |"}
+  ]
+}

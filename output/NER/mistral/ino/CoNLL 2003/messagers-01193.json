@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" Tomorrow I 'm going into Rwanda and my intention is to go across into eastern Zaire and try to find out for the second time what the situation is on the ground , \" he said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Tom: He is the person speaking in the paragraph.\n2. I: Refers to Tom.\n3. Rwanda: A country. However, in this context, it is the destination for Tom.\n4. eastern Zaire: A region in Zaire (now known as the Democratic Republic of the Congo).\n5. he: Refers to Tom."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Tom."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Tom    |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" Tomorrow I 'm going into Rwanda and my intention is to go across into eastern Zaire and try to find out for the second time what the situation is on the ground , \" he said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Rwanda\n2. eastern Zaire\n\nThese are the location entities mentioned in the paragraph. The first entity is a country located in Central Africa, and the second entity is a region in the Democratic Republic of the Congo (formerly Zaire), also in Central Africa."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Rwanda\n2. eastern Zaire\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Rwanda |\n| eastern Zaire |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" Tomorrow I 'm going into Rwanda and my intention is to go across into eastern Zaire and try to find out for the second time what the situation is on the ground , \" he said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Rwanda: A country located in East Africa.\n2. Zaire: A country located in Central Africa, now known as the Democratic Republic of the Congo.\n\nNo specific organizations mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "No organizations mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Rwanda |\n| Zaire |\n\nNote: These are not organizations in the traditional sense, but rather countries. However, they are mentioned in the context of the paragraph as places the person intends to visit, so they are included for completeness."}
+  ]
+}

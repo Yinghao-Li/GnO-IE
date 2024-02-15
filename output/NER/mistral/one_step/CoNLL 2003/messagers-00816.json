@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The fans , in Austria to watch their team play Rapid Vienna last Wednesday , may have been involved in a pub brawl earlier , the spokeswoman said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| fans |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| fans |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The fans , in Austria to watch their team play Rapid Vienna last Wednesday , may have been involved in a pub brawl earlier , the spokeswoman said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Austria |\n| (a pub in) |\n\nNote: The paragraph does not provide enough context to identify the specific name of the pub. Therefore, I have left it as \"(a pub in)\". If more information about the pub becomes available, it should be added to the table accordingly."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Austria |\n\nNote: The paragraph only mentions \"Austria\" as a location, so there is no need for a second entry in the table. If more specific locations are mentioned in the paragraph, they should be added to the table accordingly."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The fans , in Austria to watch their team play Rapid Vienna last Wednesday , may have been involved in a pub brawl earlier , the spokeswoman said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| fans |\n| Rapid Vienna |\n\nIn this paragraph, \"fans\" refers to the group of people who attend sports events, specifically the fans of Rapid Vienna in this context. Therefore, \"fans\" can be identified as the organization mentioned in the paragraph. \"Rapid Vienna\" is also mentioned as the team these fans are following."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Rapid Vienna |\n\nIn the paragraph, only \"Rapid Vienna\" clearly refers to an organization. \"Fans\" is a group of people, not an organization. Therefore, \"Rapid Vienna\" is the only valid organization entity in the paragraph."}
+  ]
+}

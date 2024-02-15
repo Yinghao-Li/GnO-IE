@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The polymer has good solubility in CHCl 3 but is only partly soluble in chlorobenzene and o-dichlorobenzene.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| polymer |\n| CHCl3 |\n| chlorobenzene |\n| o-dichlorobenzene |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| polymer |\n| CHCl3 (carbon tetrachloride) |\n| chlorobenzene |\n| o-dichlorobenzene |\n\nExplanation:\nCHCl3 is a chemical compound commonly known as carbon tetrachloride, but in the original paragraph, it was referred to as CHCl3, so I kept it as is for consistency."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The polymer has good solubility in CHCl 3 but is only partly soluble in chlorobenzene and o-dichlorobenzene.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| solubility |\n| CHCl3 |\n| polymer |\n| chlorobenzene |\n| o-dichlorobenzene |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| solubility |\n| of polymer |\n| in CHCl3 |\n| in chlorobenzene |\n| in o-dichlorobenzene |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The polymer has good solubility in CHCl 3 but is only partly soluble in chlorobenzene and o-dichlorobenzene.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| The polymer has good solubility in CHCl3 |\n| is only partly soluble in chlorobenzene |\n| and o-dichlorobenzene |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| The polymer has good solubility in CHCl3 (solvent: CHCl3) |\n| is only partly soluble in chlorobenzene (solvent: chlorobenzene) |\n| and o-dichlorobenzene (solvent: o-dichlorobenzene) |"
+    }
+  ]
+}

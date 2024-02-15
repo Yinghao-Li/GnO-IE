@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: The correlation between high serum tricyclic antidepressant concentrations and central nervous system side effects has been well established .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the named entities in the paragraph.\n\nThe named entities in the paragraph are:\n\n1. Disease: central nervous system side effects\n2. Chemical: tricyclic antidepressant\n\nStep 2: Match the named entities to the given entity types.\n\n1. Disease: central nervous system side effects\n2. Chemical: tricyclic antidepressant\n\nTherefore, the identified \"['Disease', 'Chemical']\" entities in the paragraph are \"central nervous system side effects\" and \"tricyclic antidepressant\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the entity \"central nervous system side effects\" clearly refers to a disease. However, the entity \"tricyclic antidepressant\" refers to a chemical. Therefore, the identified \"['Disease', 'Chemical']\" entity in the paragraph is \"central nervous system side effects\"."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity                          | Entity Type |\n|---------------------------------|-------------|\n| central nervous system side effects | Disease     |"}
+]

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There were no drug - related deaths .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| drug-related deaths |\n\nNote: \"Drug-related deaths\" is considered a single disease entity in this paragraph, as it is used to refer to deaths that are caused by the use of drugs."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| drug-related deaths |\n\nNote: In this paragraph, \"drug-related deaths\" is the only clear reference to a disease entity."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: There were no drug - related deaths .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| drug |\n\nNote: I've only identified \"drug\" as a chemical entity because it is a broad term that can refer to a substance intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease in humans or animals. However, it is important to note that the context in which the term is used could affect whether or not it is accurately considered a chemical entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| drug |\n\nNote: In this paragraph, \"drug\" is the only term that can be accurately identified as a chemical entity."}
+  ]
+}

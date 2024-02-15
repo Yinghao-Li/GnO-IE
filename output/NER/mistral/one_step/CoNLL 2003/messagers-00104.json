@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Moin Khan c Astle b Harris 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Moin Khan |\n| Astle |\n| Harris |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Moin Khan |\n| Astle |\n| Harris |\n\n(Note: The given paragraph only contains person entities, so all entities in the paragraph are valid.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Moin Khan c Astle b Harris 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Not provided in the paragraph |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Not provided in the paragraph |\n\nThe given paragraph does not contain any clear references to locations. It appears to be a line from a cricket scorecard, with names of cricketers and their scores."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Moin Khan c Astle b Harris 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Astle |\n| Harris |\n\nNote: \"Moin Khan\" is a person and not an organization. Therefore, it is not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Harris |\n\nNote: \"Moin Khan\" is a person and \"Astle b Harris\" is a cricket scoring notation indicating that Moin Khan bowled (b) the ball to Adam Astle. Therefore, neither \"Moin Khan\" nor \"Astle\" are organizations."}
+  ]
+}

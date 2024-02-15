@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 3. Andreas Goldberger ( Austria ) 274.4 ( 144.4 / 130 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Andreas Goldberger\n\nThis is a proper noun and can be identified as a person entity. It refers to a specific individual named Andreas Goldberger."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Andreas Goldberger\n\nThis is the only entity in the paragraph that clearly refers to a person. The numbers and parentheses do not refer to people."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Andreas Goldberger |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 3. Andreas Goldberger ( Austria ) 274.4 ( 144.4 / 130 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Austria (Country) - This is mentioned as the nationality of Andreas Goldberger.\n\nTherefore, the location entities in the paragraph are:\n\n* Austria (Country)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "* Austria (Country)\n\nThis is the only location entity mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Austria (Country) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 3. Andreas Goldberger ( Austria ) 274.4 ( 144.4 / 130 )\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Austria (Country) - This is mentioned as the nationality of Andreas Goldberger.\n\nTherefore, the organization entities in the paragraph are:\n1. Austria (Country)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "There are no entities in the paragraph that clearly refer to organizations, as the paragraph only mentions a person (Andreas Goldberger) and a country (Austria)."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Austria (Country) |"}
+  ]
+}

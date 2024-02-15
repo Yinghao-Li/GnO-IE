@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: The authors conclude by affirming the undoubted efficacy of the anabolizing steroids in experimental myopathic disease , but they have reservations as to the transfer of the results into the human field , where high dosage cannot be carried out continuously because of the effects of the drug on virility ; because the tissue injury too often occurs at an irreversible stage vis - a - vis the \" regeneration \" of the muscle tissue ; and finally because the dystrophic injurious agent is certainly not the lack of vitamin E but something as yet unknown .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. \"experimental myopathic disease\"\n2. \"the muscle tissue\" (although this is not a proper disease name, it is being referred to in the context of disease)\n3. \"dystrophic injurious agent\" (this is likely referring to a specific disease-causing agent, but it's not explicitly named)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. \"experimental myopathic disease\"\n2. \"dystrophic injurious agent\"\n\nNote: \"the muscle tissue\" is not a disease, but it is mentioned in the context of disease, specifically in relation to tissue injury and regeneration."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| experimental myopathic disease |\n| dystrophic injurious agent |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: The authors conclude by affirming the undoubted efficacy of the anabolizing steroids in experimental myopathic disease , but they have reservations as to the transfer of the results into the human field , where high dosage cannot be carried out continuously because of the effects of the drug on virility ; because the tissue injury too often occurs at an irreversible stage vis - a - vis the \" regeneration \" of the muscle tissue ; and finally because the dystrophic injurious agent is certainly not the lack of vitamin E but something as yet unknown .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Anabolizing steroids: These are synthetic versions of the male hormone testosterone, which are used to promote muscle growth and are therefore classified as performance-enhancing drugs.\n2. Vitamin E: This is a fat-soluble vitamin that acts as an antioxidant in the body, protecting cells from damage.\n\nThese are the two chemical entities mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Anabolizing steroids\n2. Vitamin E\n\nThese are the two chemical entities mentioned in the paragraph. The other entities such as \"experimental myopathic disease\", \"tissue injury\", \"regeneration\", and \"dystrophic injurious agent\" are medical or biological terms, not chemical entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Anabolizing steroids |\n| Vitamin E |"}
+  ]
+}

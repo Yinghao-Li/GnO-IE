@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States on Nov. 19 vetoed his bid for re-election while the other 14 Security Council members supported him .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The United States |\n| him (referring to the bidder for re-election) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| The United States |\n| him (referring to the bidder for re-election) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States on Nov. 19 vetoed his bid for re-election while the other 14 Security Council members supported him .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| The United States |\n| The Security Council |\n\nIn this paragraph, \"The United States\" and \"The Security Council\" are the identified location entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| The Security Council (in relation to the location of the United Nations Security Council) |\n| The United States |\n\nIn this paragraph, \"The Security Council\" and \"The United States\" are the identified location entities. The first reference to \"The Security Council\" is in relation to the location of the United Nations Security Council."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The United States on Nov. 19 vetoed his bid for re-election while the other 14 Security Council members supported him .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The United States |\n| The Security Council |\n\nExplanation:\nThe paragraph mentions two organizations: \"The United States\" and \"The Security Council.\" Both are clearly identified in the text and should be included in the table as presented."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| The Security Council |\n\nExplanation:\nThe paragraph mentions only one organization, \"The Security Council,\" which is clearly identified and refers to an organization. \"The United States\" is not an organization in this context, but rather a country that took an action. Therefore, it should not be included in the table."}
+  ]
+}

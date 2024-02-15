@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Mediterranean oil products were steady to mostly lower on Friday after Elf refinery workers voted to end their nine-day strike .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Mediterranean oil products\n2. Elf (implied, as mentioned as the refinery where the workers went on strike)\n3. Elf refinery workers."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Elf refinery workers."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Elf refinery workers |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Mediterranean oil products were steady to mostly lower on Friday after Elf refinery workers voted to end their nine-day strike .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Mediterranean: This is a body of water, not an exact location but it can be considered as a broad location for the context of the paragraph.\n2. Elf refinery: This is a specific location where the strike took place. Elf is a French oil company, so the refinery could be located in any number of places, but the paragraph does not provide enough information to determine the exact location."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Mediterranean\n2. Elf refinery"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Mediterranean |\n| Elf refinery |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Mediterranean oil products were steady to mostly lower on Friday after Elf refinery workers voted to end their nine-day strike .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Mediterranean oil products: This refers to the type of oil products, not an organization.\n2. Elf: This is the organization of workers who went on strike at the refinery.\n\nSo, the organization mentioned in the paragraph is \"Elf\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The organization mentioned in the paragraph is \"Elf\"."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Elf |"}
+  ]
+}

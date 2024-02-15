@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Klaus and his coalition lost its majority in parliament in June lower house elections after the left-wing opposition consolidated , putting the centre-left Social Democrats in a strong second-place position .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Klaus |\n| the left-wing opposition |\n| the centre-left Social Democrats |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Klaus |\n| the left-wing opposition |\n| the centre-left Social Democrats |\n\n(Note: \"coalition\" and \"in a strong second-place position\" do not refer to specific persons, but rather describe the political situation.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Klaus and his coalition lost its majority in parliament in June lower house elections after the left-wing opposition consolidated , putting the centre-left Social Democrats in a strong second-place position .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| parliament (lower house) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| parliament (lower house) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Klaus and his coalition lost its majority in parliament in June lower house elections after the left-wing opposition consolidated , putting the centre-left Social Democrats in a strong second-place position .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Klaus and his coalition |\n| left-wing opposition |\n| centre-left Social Democrats |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| left-wing opposition |\n| centre-left Social Democrats |\n\n[Explanation: \"Klaus and his coalition\" can be considered as a single organization, but it's important to note that \"Klaus\" is a person and \"coalition\" is a type of organization. However, since the paragraph does not mention the name of the specific coalition, it's not possible to identify it precisely. Therefore, we can only identify \"left-wing opposition\" and \"centre-left Social Democrats\" as organizations from the given context.]"}
+  ]
+}

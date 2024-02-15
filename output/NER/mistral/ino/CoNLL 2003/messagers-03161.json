@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Albanian coach Astrit Hafizi said on Saturday it was important that his players brush aside the country 's short ban by FIFA in order to concentrate on next Saturday'sWorld Cup group nine qualifier against Northern Ireland .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Albanian coach: Astrit Hafizi\n2. FIFA: (implied, but not explicitly mentioned as a person, but it's an organization represented by persons)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Albanian coach: Astrit Hafizi"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Albanian coach: Astrit Hafizi |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Albanian coach Astrit Hafizi said on Saturday it was important that his players brush aside the country 's short ban by FIFA in order to concentrate on next Saturday'sWorld Cup group nine qualifier against Northern Ireland .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Albania (the country)\n2. FIFA (international football organization)\n3. World Cup (football tournament)\n4. Group nine (group in the World Cup qualifiers)\n5. Northern Ireland (another country)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Albania\n2. Northern Ireland"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Albania |\n| Northern Ireland |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Albanian coach Astrit Hafizi said on Saturday it was important that his players brush aside the country 's short ban by FIFA in order to concentrate on next Saturday'sWorld Cup group nine qualifier against Northern Ireland .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. FIFA\n2. Albanian coach (Astrit Hafizi)\n3. Albanian national football team (implied)\n4. World Cup (implied)\n5. World Cup group nine (implied)\n6. Northern Ireland (implied, as the opposing team in the qualifier)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. FIFA\n2. Albanian national football team\n3. World Cup\n4. Northern Ireland (as they are also a national football team)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| FIFA |\n| Albanian national football team |\n| World Cup |\n| Northern Ireland |"}
+  ]
+}

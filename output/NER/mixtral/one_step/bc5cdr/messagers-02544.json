@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Regarding HIT II , there were four ( 1 . 95 % ) patients with a background of HIT type II .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| HIT II |\n| HIT type II |\n\nExplanation:\n\n* HIT II: It is mentioned twice in the paragraph, so it is considered as two separate entities.\n* HIT type II: It is a variation of HIT II, so it is also considered as a separate entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| HIT II |\n\nExplanation:\n\n* HIT II: It is the only clear disease reference in the paragraph.\n* The other mentions, \"a background of HIT type II\" and \"1.95 %\", do not refer to diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Regarding HIT II , there were four ( 1 . 95 % ) patients with a background of HIT type II .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| HIT II |\n| HIT type II |\n\nExplanation:\n\n* \"HIT II\" is mentioned twice in the paragraph, and both instances refer to a chemical entity. HIT stands for Heparin-Induced Thrombocytopenia, which is a condition caused by the use of heparin, a type of anticoagulant.\n* \"HIT type II\" is a more specific form of HIT, which is also a chemical entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| HIT II |\n\nExplanation:\n\n* \"HIT II\" is the only chemical entity in the paragraph.\n* \"HIT type II\" is a more specific form of HIT, but it is not a separate chemical entity from HIT II. It is a subcategory of HIT II, and therefore, it is not necessary to include it as a separate entity in the table.\n* The number \"4\" and the percentage \"1.95%\" are not chemical entities, and they should not be included in the table."}
+  ]
+}

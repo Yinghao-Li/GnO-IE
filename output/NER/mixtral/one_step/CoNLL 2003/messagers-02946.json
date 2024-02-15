@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: goals for , goals against , points ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Sidney Crosby |\n| Pittsburgh Penguins |\n| Alex Ovechkin |\n| Washington Capitals |\n| Connor McDavid |\n| Edmonton Oilers |\n| Leon Draisaitl |\n| Edmonton Oilers |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Sidney Crosby |\n| Alex Ovechkin |\n| Connor McDavid |\n| Leon Draisaitl |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: goals for , goals against , points ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Madison Square Garden |\n| New York |\n| Philadelphia |\n\nExplanation: In the given paragraph, \"Madison Square Garden\" is a specific location where the games are being played. \"New York\" and \"Philadelphia\" are the cities associated with the teams, hence they are also considered as location entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Madison Square Garden |\n\nExplanation: In the given paragraph, \"Madison Square Garden\" is the only clear location entity. The other entities \"New York\" and \"Philadelphia\" are associated with teams, but they are not explicitly mentioned as locations in the paragraph."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: goals for , goals against , points ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Vancouver Canucks |\n| New York Islanders |\n| NHL |\n\nThe \"Organization\" entities in the paragraph are \"Vancouver Canucks\", \"New York Islanders\", and \"NHL\". They are identified as such because they are names of sports teams and leagues, which are types of organizations."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Vancouver Canucks |\n| New York Islanders |\n\nThe only clear \"Organization\" entities in the paragraph are \"Vancouver Canucks\" and \"New York Islanders\", which are names of sports teams. The other entities, such as \"goals for\", \"goals against\", and \"points\", do not clearly refer to organizations and are not included in the table."}
+  ]
+}

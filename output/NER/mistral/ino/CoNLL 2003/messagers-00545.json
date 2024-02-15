@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: DALLAS AT ARIZONA\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Dallas\n2. Arizona\n3. (Implied) The football teams from Dallas and Arizona, likely referring to the Dallas Cowboys and Arizona Cardinals, respectively."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Dallas\n2. Arizona\n3. (Implied) Dallas Cowboys (or another relevant Dallas sports team)\n4. Arizona Cardinals (or another relevant Arizona sports team)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Dallas |\n| Arizona |\n| Dallas Cowboys (or another relevant Dallas sports team) |\n| Arizona Cardinals (or another relevant Arizona sports team) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: DALLAS AT ARIZONA\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Dallas: This is an unambiguous location mentioned in the paragraph. It is a city located in the state of Texas, United States.\n\n2. Arizona: This is another unambiguous location mentioned in the paragraph. It is a state located in the southwestern region of the United States.\n\nTherefore, the location entities in the paragraph are \"Dallas\" and \"Arizona\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n\n1. Dallas\n2. Arizona"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Dallas |\n| Arizona |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: DALLAS AT ARIZONA\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Dallas\n2. Arizona (implicitly, Arizona Cardinals since the context is about a football game)\n\nIn this paragraph, \"Dallas\" and \"Arizona\" are the organizations being referred to."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Dallas\n2. Arizona (Arizona Cardinals)\n\nIn this paragraph, only \"Dallas\" and \"Arizona (Arizona Cardinals)\" are the entities that clearly refer to organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Dallas |\n| Arizona (Arizona Cardinals) |"}
+  ]
+}

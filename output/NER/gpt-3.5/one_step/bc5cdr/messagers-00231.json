@@ -1,0 +1,16 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities mentioned in the following paragraph and present them as a Markdown table with one column Disease.\n\nParagraph: Their combined cardiac toxicity may be due to independent effects of each drug ; however , they may also be due to cocaethylene (CE) , a cocaine metabolite formed only in the presence of ethanol .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| cardiac toxicity |\n| cocaethylene |\n| cocaine metabolite |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the remaining entities as a Markdown table with one column Disease."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| cardiac toxicity |\n| cocaethylene |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities mentioned in the following paragraph and present them as a Markdown table with one column Chemical.\n\nParagraph: Their combined cardiac toxicity may be due to independent effects of each drug ; however , they may also be due to cocaethylene (CE) , a cocaine metabolite formed only in the presence of ethanol .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Sure! Let's identify the \"Chemical\" entities mentioned in the paragraph and present them as a Markdown table.\n\n| Chemical |\n|----------|\n| cocaine  |\n| ethanol  |\n| cocaethylene |\n\nPlease note that \"CE\" is an abbreviation for cocaethylene, which is mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the remaining entities as a Markdown table with one column Chemical."},
+    {"role": "assistant", "content": "Apologies for the confusion. Here is the updated Markdown table with only the entities that clearly refer to \"Chemical\":\n\n| Chemical     |\n|--------------|\n| cocaine      |\n| ethanol      |\n| cocaethylene |"}
+  ]
+}

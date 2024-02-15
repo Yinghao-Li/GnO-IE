@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Camilla Martin ( Denmark ) beat Wang Chen ( China ) 11-0 12-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Camilla Martin\n2. Denmark (This is not a person, but I assume you meant to mention Camilla Martin is from Denmark)\n3. Wang Chen\n4. China (This is not a person, but I assume you meant to mention Wang Chen is from China)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Camilla Martin\n2. Wang Chen"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Camilla Martin |\n| Wang Chen |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Camilla Martin ( Denmark ) beat Wang Chen ( China ) 11-0 12-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Denmark - Country where Camilla Martin is from.\n2. China - Country where Wang Chen is from."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Denmark\n2. China"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Denmark |\n| China |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Camilla Martin ( Denmark ) beat Wang Chen ( China ) 11-0 12-10\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Denmark - A country, which is an organization in this context as it is identified as the nationality of Camilla Martin.\n2. China - Another country, identified as the nationality of Wang Chen.\n\nTherefore, the organization entities in the paragraph are Denmark and China."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The organization entities in the paragraph are:\n\n1. Denmark\n2. China"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Denmark |\n| China |"}
+  ]
+}

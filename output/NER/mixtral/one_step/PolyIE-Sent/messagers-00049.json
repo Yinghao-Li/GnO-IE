@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Gel permeation chromatography ( GPC ) was used to determine the molecular weight using polystyrene as the standard and 1,2,3-trichlorobenzene as the eluent ( Table 1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "Material Name\n------------\n\n* Gel permeation chromatography (GPC)\n* polystyrene\n* 1,2,3-trichlorobenzene"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "Material Name\n------------\n\n* polystyrene\n* 1,2,3-trichlorobenzene"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Gel permeation chromatography ( GPC ) was used to determine the molecular weight using polystyrene as the standard and 1,2,3-trichlorobenzene as the eluent ( Table 1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Gel permeation chromatography (GPC) |\n| molecular weight |\n| polystyrene |\n| 1,2,3-trichlorobenzene |\n\nExplanation:\n\n* \"Gel permeation chromatography (GPC)\" is mentioned as the method used to determine the molecular weight.\n* \"molecular weight\" is the property being measured.\n* \"polystyrene\" is mentioned as the standard used in the measurement.\n* \"1,2,3-trichlorobenzene\" is mentioned as the eluent used in the measurement."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| molecular weight |\n\nExplanation:\n\n* \"molecular weight\" is the only clear material property mentioned in the paragraph.\n* \"Gel permeation chromatography (GPC)\" is a method, not a material property.\n* \"polystyrene\" is a material, but it is mentioned as a standard, not a property.\n* \"1,2,3-trichlorobenzene\" is a material, but it is mentioned as an eluent, not a property."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Gel permeation chromatography ( GPC ) was used to determine the molecular weight using polystyrene as the standard and 1,2,3-trichlorobenzene as the eluent ( Table 1 ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Gel permeation chromatography (GPC) |\n| polystyrene |\n| 1,2,3-trichlorobenzene |\n| Table 1 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Gel permeation chromatography (GPC) |\n| polystyrene |\n| 1,2,3-trichlorobenzene |"
+    }
+  ]
+}

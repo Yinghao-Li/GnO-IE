@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Table 2 , the HOMO level of PQCDTB ( -5.24 eV ) was higher than that of PCZDTB by 0.2 eV because the HOMO level of the QC derivative was higher than that of carbazole.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| HOMO level of PQCDTB |\n| PQCDTB |\n| HOMO level of PCZDTB |\n| PCZDTB |\n| HOMO level of QC derivative |\n| carbazole |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| HOMO level of PQCDTB |\n| PQCDTB |\n| HOMO level of PCZDTB |\n| PCZDTB |\n\nThe term \"HOMO level\" refers to the Highest Occupied Molecular Orbital level, which is a material property related to the electronic structure of a molecule. Therefore, both the HOMO levels and the corresponding materials (PQCDTB and PCZDTB) are considered material names in this context."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Table 2 , the HOMO level of PQCDTB ( -5.24 eV ) was higher than that of PCZDTB by 0.2 eV because the HOMO level of the QC derivative was higher than that of carbazole.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO level of PQCDTB |\n| HOMO level of PCZDTB |\n| HOMO level of QC derivative |\n| HOMO level of carbazole |\n| Energy (eV) |\n| Table 2 |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO level of PQCDTB |\n| HOMO level of PCZDTB |\n| HOMO level of QC derivative |\n| HOMO level of carbazole |\n| Energy (eV) |\n\nNote: In this context, \"Table 2\" is not a material property and was excluded from the table."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: As shown in Table 2 , the HOMO level of PQCDTB ( -5.24 eV ) was higher than that of PCZDTB by 0.2 eV because the HOMO level of the QC derivative was higher than that of carbazole.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| HOMO level of PQCDTB | -5.24 eV |\n| HOMO level of PCZDTB | (not explicitly stated in the paragraph) |\n| HOMO level of carbazole | (implied to be lower than PQCDTB's HOMO level) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| HOMO level of PQCDTB | -5.24 eV |\n| HOMO level of carbazole | (implied to be lower than PQCDTB's HOMO level) |\n\nNote: The HOMO level of PCZDTB is not explicitly stated in the paragraph, but it can be inferred to be lower than PQCDTB's HOMO level based on the information given."
+    }
+  ]
+}

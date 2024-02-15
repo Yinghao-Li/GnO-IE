@@ -1,0 +1,16 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities mentioned in the following paragraph and present them as a Markdown table with one column Disease.\n\nParagraph: RESEARCH DESIGN AND METHODS : EndoMT was induced in a mouse pancreatic microvascular endothelial cell line (MMEC) in the presence of advanced glycation end products (AGEs) and in the endothelial lineage - traceble mouse line Tie2 - Cre ; Loxp - EGFP by administration of AGEs , with nonglycated mouse albumin serving as a control .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| EndoMT  |\n| AGEs    |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the remaining entities as a Markdown table with one column Disease."},
+    {"role": "assistant", "content": "| Disease |\n|---------|\n| EndoMT  |\n| AGEs    |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities mentioned in the following paragraph and present them as a Markdown table with one column Chemical.\n\nParagraph: RESEARCH DESIGN AND METHODS : EndoMT was induced in a mouse pancreatic microvascular endothelial cell line (MMEC) in the presence of advanced glycation end products (AGEs) and in the endothelial lineage - traceble mouse line Tie2 - Cre ; Loxp - EGFP by administration of AGEs , with nonglycated mouse albumin serving as a control .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Sure! Let's identify the chemical entities mentioned in the paragraph:\n\n| Chemical |\n|----------|\n| EndoMT |\n| advanced glycation end products (AGEs) |\n| mouse albumin |\n\nPlease note that \"MMEC\" is not a chemical entity, but a cell line. Similarly, \"Tie2-Cre; Loxp-EGFP\" is not a chemical entity, but a mouse line."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the remaining entities as a Markdown table with one column Chemical."},
+    {"role": "assistant", "content": "Apologies for the confusion. Here is the updated table with only the chemical entities mentioned in the paragraph:\n\n| Chemical |\n|----------|\n| EndoMT |\n| advanced glycation end products (AGEs) |\n| mouse albumin |"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: GFC produced an increased latency to first seizure , at doses 25mg / kg ( 20 . 12 + 2 . 20 min ) , 50mg / kg ( 20 . 95 + 2 . 21 min ) or 75 mg / kg ( 23 . 43 + 1 . 99 min ) when compared with seized mice .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Seizures |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Seizures |\n\nIn the original paragraph, \"seizures\" is the only entity that clearly refers to a disease. The other entities, such as \"GFC\" and the doses (25mg/kg, 50mg/kg, 75mg/kg), do not refer to diseases but rather to a potential treatment or intervention and the dosages of that treatment, respectively."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: GFC produced an increased latency to first seizure , at doses 25mg / kg ( 20 . 12 + 2 . 20 min ) , 50mg / kg ( 20 . 95 + 2 . 21 min ) or 75 mg / kg ( 23 . 43 + 1 . 99 min ) when compared with seized mice .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| GFC (Gabazine, a selective antagonist of the GABA_A receptor) |\n| Seized mice (assumed to be mice that have been seized or taken, not related to any specific chemical) |\n| GABA_A receptor antagonist (implied by \"GFC\", but included for clarity) |\n| GABA (implied by \"GABA_A receptor\") |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| GFC (Gabazine, a select specific antagonist of the GABA_A receptor) |\n\n(Note: \"GABA_A receptor\" is not a chemical, but a protein, and \"receptor\" is not necessary to include in the table since it is implied by \"GABA_A antagonist\" or \"GFC\")"}
+  ]
+}

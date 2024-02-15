@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Italy said on Friday it had evacuated 17 Roman Catholic nuns and priests from Zaire where they had been at risk from fighting between government troops and ethnic Tutsi rebels .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Italy  |\n| Roman Catholic nuns and priests |\n| Government troops |\n| Ethnic Tutsi rebels |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Italy  |\n| Roman Catholic nuns and priests |\n\nThe other entities in the paragraph, \"government troops\" and \"ethnic Tutsi rebels,\" do not clearly refer to specific individuals and therefore do not qualify as \"Person\" entities."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Italy said on Friday it had evacuated 17 Roman Catholic nuns and priests from Zaire where they had been at risk from fighting between government troops and ethnic Tutsi rebels .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Zaire |\n| Italy |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Zaire |\n| Italy |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Italy said on Friday it had evacuated 17 Roman Catholic nuns and priests from Zaire where they had been at risk from fighting between government troops and ethnic Tutsi rebels .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Italy |\n| Roman Catholic |\n| Zaire (now known as Democratic Republic of Congo) |\n| Government troops |\n| Ethnic Tutsi rebels |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Italy |\n| Roman Catholic |\n| Zaire (Democratic Republic of Congo) |\n| Government |\n| Ethnic Tutsi rebels |\n\nExplanation: \"Italy\" and \"Roman Catholic\" are organizations, \"Zaire\" is a country but it is referred to as a organization in the context of the paragraph as the government of Zaire is mentioned. \"Government troops\" and \"ethnic Tutsi rebels\" are organizations as they represent distinct groups with a defined structure and hierarchy."}
+  ]
+}

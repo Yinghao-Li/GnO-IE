@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Hypertension is a well - known finding in some patients with neuroblastoma .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hypertension |\n| Neuroblastoma |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hypertension (a well-known finding in some patients) |\n| Neuroblastoma (a disease) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Hypertension is a well - known finding in some patients with neuroblastoma .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Hypertension |\n| Neuroblastoma |\n\nNote: In this paragraph, \"Hypertension\" is identified as a medical condition, but since it is often associated with an increase in certain chemicals in the body (such as angiotensin II or sodium chloride), it can also be considered a chemical entity in a biological context. \"Neuroblastoma\" is a specific type of cancer."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Hypertension (a condition associated with an increase in certain chemicals in the body) |\n| Neuroblastoma |\n\nNote: In this paragraph, \"Hypertension\" is identified as a medical condition that is often associated with an increase in certain chemicals in the body, making it a valid chemical entity in a biological context. \"Neuroblastoma\" is a specific type of cancer."}
+  ]
+}

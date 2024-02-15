@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Lidocaine , given in a 300 mg dose intramuscularly followed by 100 mg intravenously , did not prevent sustained ventricular tachycardia , although there was a significant reduction in the number of patients with warning arrhythmias between 15 and 45 minutes after the administration of lidocaine ( p less than 0 . 05 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| sustained ventricular tachycardia |\n| warning arrhythmias |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| sustained ventricular tachycardia |\n| warning arrhythmias |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Lidocaine , given in a 300 mg dose intramuscularly followed by 100 mg intravenously , did not prevent sustained ventricular tachycardia , although there was a significant reduction in the number of patients with warning arrhythmias between 15 and 45 minutes after the administration of lidocaine ( p less than 0 . 05 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Lidocaine |\n\nIn this paragraph, the only chemical entity mentioned is \"Lidocaine\". The doses mentioned (300 mg intramuscularly and 100 mg intravenously) are not considered separate chemical entities, but rather different ways of administering the same chemical substance (Lidocaine)."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Lidocaine |\n\nIn this paragraph, only \"Lidocaine\" clearly refers to a chemical entity. The doses mentioned (300 mg intramuscularly and 100 mg intravenously) do not refer to separate chemical entities, but rather different ways of administering the same chemical substance (Lidocaine). Therefore, only \"Lidocaine\" should be included in the table."}
+  ]
+}

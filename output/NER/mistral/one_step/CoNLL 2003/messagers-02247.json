@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He played an active role at the U.N. social development conference in Copenhagen last year and has co-authored articles with U.N. development programme officer Inge Kaul .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| He    |\n| U.N. social development conference participant |\n| Inge Kaul |\n| U.N. development programme officer"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| He    |\n| Inge Kaul |\n| U.N. development programme officer |\n\nNote: \"He\" is a pronoun that refers to a person, but it is not explicitly stated who \"He\" is in the paragraph. However, since the paragraph mentions that \"He\" played an active role at the U.N. social development conference and co-authored articles with Inge Kaul, it can be inferred that \"He\" is a person. Therefore, \"He\" is included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He played an active role at the U.N. social development conference in Copenhagen last year and has co-authored articles with U.N. development programme officer Inge Kaul .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Copenhagen (at the U.N. social development conference) |\n| (at the U.N. - assumed to be New York for the U.N. development programme) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Copenhagen (at the U.N. social development conference) |\n| (Assumed: New York for the U.N. development programme) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: He played an active role at the U.N. social development conference in Copenhagen last year and has co-authored articles with U.N. development programme officer Inge Kaul .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| U.N. (United Nations) |\n| U.N. social development conference (in Copenhagen) |\n| U.N. development programme |\n| U.N. development programme officer (Inge Kaul) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| U.N. (United Nations) |\n| U.N. social development conference in Copenhagen |\n| U.N. development programme |\n\nNote: \"U.N. development programme officer\" is not an organization, but rather an individual associated with the U.N. development programme."}
+  ]
+}

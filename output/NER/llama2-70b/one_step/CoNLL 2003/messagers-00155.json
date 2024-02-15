@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowyer , who moved to the Yorkshire club in August for 3.5 million pounds ( $ 5.8 million ) , was expected to play against Middlesbrough on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Bowyer |\n| Middlesbrough |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Bowyer |\n\nThe entity \"Middlesbrough\" does not clearly refer to a person, it's a location, so it's been removed from the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowyer , who moved to the Yorkshire club in August for 3.5 million pounds ( $ 5.8 million ) , was expected to play against Middlesbrough on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Yorkshire |\n| Middlesbrough |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Yorkshire |\n\nThe entity \"Middlesbrough\" is not clearly referring to a location, but rather to a football club, so it should be excluded from the list of locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowyer , who moved to the Yorkshire club in August for 3.5 million pounds ( $ 5.8 million ) , was expected to play against Middlesbrough on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Yorkshire club |\n| Middlesbrough |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Yorkshire club |\n\nThe paragraph only mentions two entities that clearly refer to organizations:\n\n* Yorkshire club\n\nThe mention of \"Middlesbrough\" is not clear enough to be considered an organization, as it could refer to a place, a team, or a club, but without further context, it's not possible to determine which one is intended. Therefore, the table above only includes \"Yorkshire club\" as a valid organization entity."}
+  ]
+}

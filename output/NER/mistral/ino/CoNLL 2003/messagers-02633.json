@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: United States I ( Jim Herberich , Garrett\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Jim Herberich\n2. Garrett (Assuming Garrett is a person)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Jim Herberich\n2. Garrett (Assuming Garrett is a person)\n\n(Note: The paragraph mentions \"United States I\", but it does not refer to a specific person, so it is not considered a Person entity.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Jim Herberich |\n| Garrett |\n\n(Assuming Garrett is a person)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: United States I ( Jim Herberich , Garrett\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. United States\n\nThis is an unambiguous location entity, referring to the country."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. United States"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| United States |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: United States I ( Jim Herberich , Garrett\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. United States\n\nThe term \"United States\" is an organization, specifically a country, which is the context of the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. United States"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| United States |"}
+  ]
+}

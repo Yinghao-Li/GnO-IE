@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Her medications included desvenlafaxine , and symptoms included nausea , anxiety and confusion .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| nausea |\n| anxiety |\n| confusion |\n\nIn this paragraph, the diseases are referred to as \"nausea\", \"anxiety\", and \"confusion\". These are the symptoms or conditions that the person is experiencing, and they are mentioned as part of the list of symptoms in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| nausea |\n| anxiety |\n| confusion |\n\nIn this paragraph, the diseases are referred to as \"nausea\", \"anxiety\", and \"confusion\". These are the symptoms or conditions that the person is experiencing, and they are mentioned as part of the list of symptoms in the paragraph. The other term in the paragraph, \"desvenlafaxine\", is a medication and not a disease. Therefore, it should not be included in the list of diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Her medications included desvenlafaxine , and symptoms included nausea , anxiety and confusion .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| desvenlafaxine |\n\nIn the given paragraph, the only chemical entity mentioned is 'desvenlafaxine'. It is a medication, and it is mentioned exactly as it is in the original paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| desvenlafaxine |\n\nIn the paragraph, 'desvenlafaxine' is the only entity that clearly refers to a chemical. The other terms mentioned, 'nausea', 'anxiety', and 'confusion', are symptoms and do not refer to any specific chemical entities."}
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The TGA revealed that the decomposition temperatures ( T d ) of P1-P7 ( 5% weight loss ) are 405 , 407 , 413 , 417 , 433 , 433 , and 444 °C , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n|--------------|\n| P1           |\n| P2           |\n| P3           |\n| P4           |\n| P5           |\n| P6           |\n| P7           |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n|--------------|\n| P1           |\n| P2           |\n| P3           |\n| P4           |\n| P5           |\n| P6           |\n| P7           |\n\nThese entities (P1-P7) are clearly referred to as materials in the paragraph."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The TGA revealed that the decomposition temperatures ( T d ) of P1-P7 ( 5% weight loss ) are 405 , 407 , 413 , 417 , 433 , 433 , and 444 °C , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Decomposition temperatures (T d) |\n| Of P1, P2, P3, P4, P5, P6, and P7 |\n| For 5% weight loss |\n| For P1: 405 °C |\n| For P2: 407 °C |\n| For P3: 413 °C |\n| For P4: 417 °C |\n| For P5: 433 °C |\n| For P6: 433 °C |\n| For P7: 444 °C |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Decomposition temperatures (T d) |\n| For P1, P2, P3, P4, P5, P6, and P7 |\n| For the specified weight loss percentage |\n| For P1: 405 °C |\n| For P2: 407 °C |\n| For P3: 413 °C |\n| For P4: 417 °C |\n| For P5: 433 °C |\n| For P6: 433 °C |\n| For P7: 444 °C |\n\nNote: The \"of\" in \"of P1, P2, P3, P4, P5, P6, and P7\" is removed as it does not clearly refer to a material property. The \"specified weight loss percentage\" is kept as it refers to the condition under which the decomposition temperatures were measured."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The TGA revealed that the decomposition temperatures ( T d ) of P1-P7 ( 5% weight loss ) are 405 , 407 , 413 , 417 , 433 , 433 , and 444 °C , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Td of P1: 405 °C |\n| Td of P2: 407 °C |\n| Td of P3: 413 °C |\n| Td of P4: 417 °C |\n| Td of P5: 433 °C |\n| Td of P6: 433 °C |\n| Td of P7: 444 °C |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Td of P1: 405 °C (decomposition temperature of P1) |\n| Td of P2: 407 °C (decomposition temperature of P2) |\n| Td of P3: 413 °C (decomposition temperature of P3) |\n| Td of P4: 417 °C (decomposition temperature of P4) |\n| Td of P5: 433 °C (decomposition temperature of P5) |\n| Td of P6: 433 °C (decomposition temperature of P6) |\n| Td of P7: 444 °C (decomposition temperature of P7) |\n\nNote: In this case, all identified entities refer to material properties (decomposition temperatures), so all are valid. However, including the explicit reference to \"material property\" or \"property value\" in the table is a good practice to ensure clarity."
+    }
+  ]
+}

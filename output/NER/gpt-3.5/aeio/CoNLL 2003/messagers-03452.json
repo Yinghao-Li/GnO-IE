@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: The lanky former Leeds United defender did not make his England debut until the age of 30 but eventually won 35 caps and was a key member of the 1966 World Cup winning team with his younger brother , Bobby .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the entities step by step:\n\n1. Location: None in this paragraph.\n2. Organization: Leeds United, England, World Cup.\n3. Person: Bobby (as a younger brother).\n\nSo, the identified entities are:\n\n- Organization: Leeds United, England, World Cup.\n- Person: Bobby."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "Sure! Let's remove the entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\":\n\n1. Location: None in this paragraph.\n2. Organization: Leeds United, England, World Cup.\n3. Person: Bobby.\n\nSo, the identified entities that clearly refer to \"['Location', 'Organization', 'Person']\" are:\n\n- Organization: Leeds United, England, World Cup.\n- Person: Bobby."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity          | Entity Type   |\n|-----------------|---------------|\n| Leeds United    | organization  |\n| England         | location      |\n| World Cup       | organization  |\n| Bobby           | person        |"}
+]

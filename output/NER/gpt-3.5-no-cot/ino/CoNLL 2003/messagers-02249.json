@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: He was senior private secretary to the employment and industrial relations minister from 1983 to 1984 and was economic advisor to then treasurer Paul Keating in 1983 ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Person\" entities are:\n\n| Person |\n|--------|\n| Paul Keating |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Person\" entity is:\n\n| Person |\n|--------|\n| Paul Keating |"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person          |\n|-----------------|\n| Paul Keating |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: He was senior private secretary to the employment and industrial relations minister from 1983 to 1984 and was economic advisor to then treasurer Paul Keating in 1983 ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entities are as follows:\n\n| Entity |\n|--------|\n| minister |\n| treasurer |\n| Paul Keating |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Apologies for the confusion. After reviewing the paragraph again, it appears that there are no specific \"Location\" entities mentioned. The paragraph mainly refers to positions and roles held by individuals, such as the employment and industrial relations minister and treasurer Paul Keating."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location       |\n|----------------|\n| minister       |\n| treasurer      |\n| Paul Keating   |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: He was senior private secretary to the employment and industrial relations minister from 1983 to 1984 and was economic advisor to then treasurer Paul Keating in 1983 ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Organization\" entities are:\n\n1. Employment and Industrial Relations Minister\n2. Treasurer"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Organization\" entities in the given paragraph are:\n\n1. Employment and Industrial Relations Minister"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization                           |\n|----------------------------------------|\n| Employment and Industrial Relations Minister |"}
+  ]
+}

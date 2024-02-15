@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: League games on Friday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. League\n2. Home team (The team mentioned in capital letters within the paragraph)\n\nThese are the identified \"Person\" entities in the paragraph. However, please note that \"League\" is typically considered as an organization rather than a person, but I included it here as it is the context of the discussion."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "The identified \"Person\" entities in the paragraph are:\n\n1. Home team (The team mentioned in capital letters within the paragraph)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Home team (The team mentioned in capital letters within the paragraph) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: League games on Friday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. League games: This is a type of event or activity, and it does not directly refer to a specific location.\n2. Friday: This is a day of the week and does not directly refer to a specific location.\n3. ( home team in CAPS ): This refers to the team that plays at home during the league games. The location for this team would be their home stadium or arena. For example, if the home team is \"Manchester United\", then the location would be \"Old Trafford\" (Manchester United's stadium)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Old Trafford (Manchester United's stadium)\n\n(Note: The paragraph does not contain any other clear location entities besides the home stadium of the home team mentioned in the example.)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Old Trafford (Manchester United's stadium) |\n\n(Note: The paragraph only contains the location entity \"Old Trafford\" in the example provided, but it could contain other location entities depending on the specific home teams mentioned in the paragraph.)"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: League games on Friday ( home team in CAPS ) :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. League\n\nAn organization that oversees the regulation and governance of sports competitions.\n\n2. (Home Team)\n\nAn organization or group of individuals representing a specific geographic location or institution, often associated with a particular sport. In this context, it refers to the team playing at home during the league games mentioned."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. League"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| League |"}
+  ]
+}

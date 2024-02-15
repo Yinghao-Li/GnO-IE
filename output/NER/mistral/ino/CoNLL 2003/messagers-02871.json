@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Chelsea 2 ( Zola 12 , Vialli 55 ) Everton 2 ( Branch 17 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Chelsea: Football club\n2. Zola: Person (Player)\n3. Vialli: Person (Player)\n4. Everton: Football club\n5. Branch: Person (Player)\n\nSo, the identified \"Person\" entities in the paragraph are Zola, Vialli, and Branch."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Zola\n2. Vialli\n3. Branch\n\nThese are the entities in the paragraph that clearly refer to persons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Zola  |\n| Vialli |\n| Branch |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Chelsea 2 ( Zola 12 , Vialli 55 ) Everton 2 ( Branch 17 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Chelsea: A football club located in London, England.\n2. Everton: A football club located in Liverpool, England.\n\nThe paragraph mentions the names of two football clubs, Chelsea and Everton, which are the locations in this context."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Chelsea\n2. Everton\n\nThese are the only entities in the paragraph that clearly refer to locations. The names of the football players mentioned in the paragraph are not considered locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Chelsea |\n| Everton |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Chelsea 2 ( Zola 12 , Vialli 55 ) Everton 2 ( Branch 17 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Chelsea\n2. Everton\n\nThese are the organizations mentioned in the paragraph. The numbers in parentheses indicate the number of goals scored by the respective players for their respective teams."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Chelsea\n2. Everton\n\nThese are the organizations mentioned in the paragraph that are relevant to the context of an organization being an entity. The numbers in parentheses do not refer to organizations and can be ignored."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Chelsea |\n| Everton |"}
+  ]
+}

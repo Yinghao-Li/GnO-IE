@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Results in last of the group matches at the World Grand Prix badminton finals on Friday :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. World Grand Prix\n2. group matches (no specific persons mentioned)\n3. (Results) - This is not a person entity.\n4. last of the group matches\n5. at the World Grand Prix finals\n6. on Friday.\n\nNo specific person entities are mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. (Results) - This is not a person entity and can be removed.\n\nNo specific person entities are mentioned in the paragraph after removing irrelevant entities."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| - |\n\nNo specific person entities are mentioned in the paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Results in last of the group matches at the World Grand Prix badminton finals on Friday :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. World Grand Prix finals\n\nThis is the location where the badminton matches took place. It is a specific event, and the World Grand Prix finals is the location for that event."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. World Grand Prix finals"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| World Grand Prix finals |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Results in last of the group matches at the World Grand Prix badminton finals on Friday :\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. World Grand Prix: This is the name of the badminton tournament. It is an organization that conducts the badminton finals.\n2. Group matches: These are the preliminary matches played in smaller groups during the tournament. The organization responsible for the group matches is likely the World Grand Prix or the badminton governing body overseeing the event.\n3. The World Grand Prix finals: This refers to the final stage of the tournament where the winners of each group advance to compete for the championship title. The World Grand Prix is the organization responsible for this stage as well."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. World Grand Prix: This is the organization responsible for conducting the badminton finals."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| World Grand Prix |"}
+  ]
+}

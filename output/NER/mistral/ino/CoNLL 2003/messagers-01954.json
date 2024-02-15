@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Snow said the plane last reported to air traffic control at about 3 A.M. local time / 1:30 A.M. EST ( 0630 GMT ) when it began its final approach about 10 miles ( 16 km ) from the airport in this east coast Canadian province .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Snow\n2. Plane\n\nIn this paragraph, \"Snow\" is identified as the person who made the statement about the plane. \"Plane\" is the entity that is being discussed in the context of Snow's statement."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Snow\n\nIn this paragraph, only \"Snow\" is identified as a person. The \"plane\" is not a person, it is an object."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Snow   |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Snow said the plane last reported to air traffic control at about 3 A.M. local time / 1:30 A.M. EST ( 0630 GMT ) when it began its final approach about 10 miles ( 16 km ) from the airport in this east coast Canadian province .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. this east coast Canadian province: The location is an east coast province in Canada.\n2. about 10 miles ( 16 km ) from the airport: The location is 10 miles or 16 km from an airport.\n3. in this east coast Canadian province: The location is an east coast province in Canada.\n4. about 1 A.M. local time: The location is specified as local time in an east coast Canadian province.\n5. 1:30 A.M. EST ( 0630 GMT ): The location is 1:30 A.M. Eastern Standard Time (0630 Greenwich Mean Time).\n6. final approach: The location is the final approach to an airport.\n7. about 10 miles ( 16 km ) from the airport: The location is again 10 miles or 16 km from an airport."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. this east coast Canadian province: The location is an east coast province in Canada.\n2. about 10 miles ( 16 km ) from the airport: The location is 10 miles or 16 km from an airport."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| this east coast Canadian province |\n| about 10 miles ( 16 km ) from the airport |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Snow said the plane last reported to air traffic control at about 3 A.M. local time / 1:30 A.M. EST ( 0630 GMT ) when it began its final approach about 10 miles ( 16 km ) from the airport in this east coast Canadian province .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Air traffic control\n2. Local time (implicit: local organization responsible for timekeeping in the east coast Canadian province)\n3. EST (Eastern Standard Time, implicit: organization responsible for time standard in the United States)\n4. GMT (Greenwich Mean Time, implicit: international organization responsible for time standard)\n5. Airport (implicit: aviation organization or government agency responsible for the operation of the airport in the east coast Canadian province)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Air traffic control\n2. Airport (implicit: aviation organization or government agency responsible for the operation of the airport)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Air traffic control |\n| Airport (aviation organization or government agency responsible for the operation of the airport) |"}
+  ]
+}

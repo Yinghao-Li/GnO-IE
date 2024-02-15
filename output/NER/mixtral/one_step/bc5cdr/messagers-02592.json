@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Gemcitabine and cisplatin have activity in HL , non - overlapping toxicity with first - line chemotherapeutics , and may be delivered in an outpatient setting .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| HL |\n\nExplanation:\n\n* \"HL\" is an abbreviation for Hodgkin Lymphoma, a type of disease. It is identified as a disease entity in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| HL (Hodgkin Lymphoma) |\n\nExplanation:\n\n* \"HL\" is an abbreviation for Hodgkin Lymphoma, a type of disease. It is identified as a disease entity in the paragraph.\n* Other terms in the paragraph, such as \"non-overlapping toxicity\" and \"first-line chemotherapeutics,\" do not refer to diseases and are not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Gemcitabine and cisplatin have activity in HL , non - overlapping toxicity with first - line chemotherapeutics , and may be delivered in an outpatient setting .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Gemcitabine |\n| cisplatin |\n\nIn the given paragraph, the two chemical entities are \"Gemcitabine\" and \"cisplatin\". These are the only words in the paragraph that can be identified as chemical entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Gemcitabine |\n| cisplatin |\n\nIn the paragraph, the words \"first-line chemotherapeutics\" could be interpreted as referring to a class of chemotherapy drugs, but they are not the names of specific chemicals. Therefore, they are not included in the table. The other two entities, \"Gemcitabine\" and \"cisplatin\", are the names of specific chemicals and are included in the table."}
+  ]
+}

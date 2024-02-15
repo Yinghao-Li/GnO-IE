@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: A total of 350 patients (215 [61 . 4 %] < 5 years of age and 135 [38 . 6 %] > 5 years of age) were followed - up after treatment with injectable artesunate for severe malaria in hospitals and health centers of the Democratic Republic of the Congo .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nIn the given paragraph, there is a mention of \"severe malaria\". Therefore, \"severe malaria\" is the identified \"Disease\" entity.\n\nStep 2: Identify the \"Chemical\" entity.\nIn the given paragraph, there is a mention of \"injectable artesunate\". Therefore, \"injectable artesunate\" is the identified \"Chemical\" entity."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, there are no entities that clearly refer to either \"Disease\" or \"Chemical\"."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity              | Entity Type |\n|---------------------|-------------|\n| severe malaria      | Disease     |\n| injectable artesunate | Chemical    |"}
+]

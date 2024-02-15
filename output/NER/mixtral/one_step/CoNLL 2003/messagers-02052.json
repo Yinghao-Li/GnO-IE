@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" All of us who have been victimised by terrorists ... need to stand together against terrorists .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| all of us |\n| terrorists |\n| we |\n| terrorists |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| terrorists |\n| we |\n| terrorists |\n\nNote: I've kept \"we\" as a person entity, assuming it refers to a group of people. If \"we\" is used in a different context, it might not refer to a person entity."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" All of us who have been victimised by terrorists ... need to stand together against terrorists .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| None |\n\nThe paragraph does not contain any explicit \"Location\" entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| None |\n\nThe paragraph does not contain any explicit \"Location\" entities. There are no entities to remove as the original paragraph did not have any clear location references."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" All of us who have been victimised by terrorists ... need to stand together against terrorists .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| terrorists |\n| terrorists |\n\nNote: I have assumed that the word \"terrorists\" is being used as a group or organization in the context of this paragraph. If it is not the case, then there are no \"Organization\" entities present in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| terrorists |\n| terrorists |\n\nNote: I have assumed that the word \"terrorists\" is being used as a group or organization in the context of this paragraph. If it is not the case, then there are no \"Organization\" entities present in the paragraph."}
+  ]
+}

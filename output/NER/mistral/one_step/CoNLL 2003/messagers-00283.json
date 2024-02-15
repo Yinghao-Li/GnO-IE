@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowling : Ambrose 10-3-19-0 ( 2nb 1w ) , Walsh 9-0-34-0 ( 4nb ) ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Ambrose |\n| Walsh  |\n\nThese are the valid \"Person\" entities identified from the given paragraph. The entities are presented precisely in the same words as in the original paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Ambrose |\n| Walsh  |\n\nThese are the valid \"Person\" entities identified from the paragraph. The entities are presented precisely in the same words as in the original paragraph. The numbers and abbreviations (10-3-19-0, 9-0-34-0, 2nb, 1w, 4nb) do not clearly refer to persons and were excluded from the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowling : Ambrose 10-3-19-0 ( 2nb 1w ) , Walsh 9-0-34-0 ( 4nb ) ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ambrose 10-3-19-0 ( 2nb 1w ) |\n| Walsh 9-0-33-0 ( 4nb ) |\n\nNote: The location here refers to the names of the bowlers mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ambrose 10-3-19-0 ( 2nb 1w ) - This could be interpreted as a bowling score of Ambrose with figures 10-3-19-0 and 2nb and 1w meaning 2 no balls and 1 wide respectively. However, without additional context, it is not clear where this bowling performance took place. |\n| Walsh 9-0-33-0 ( 4nb ) - Similarly, this could be interpreted as a bowling score of Walsh with figures 9-0-33-0 and 4nb meaning 4 no balls. Without additional context, it is not clear where this bowling performance took place. |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Bowling : Ambrose 10-3-19-0 ( 2nb 1w ) , Walsh 9-0-34-0 ( 4nb ) ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Ambrose |\n| Walsh |\n\nThese are the two individuals mentioned in the paragraph, but there are no organizations named in the text."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| N/A |\n\nThere are no organizations mentioned in the paragraph. The text only refers to the names of two individuals, Ambrose and Walsh."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Frenchman Patrick Vieira blasted a last-minute goal to salvage a 2-2 draw for English premier league leaders Arsenal at home to Derby on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Frenchman Patrick Vieira |\n| English premier league leaders Arsenal |\n| Derby |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Frenchman Patrick Vieira |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Frenchman Patrick Vieira blasted a last-minute goal to salvage a 2-2 draw for English premier league leaders Arsenal at home to Derby on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Location\n---\nArsenal's home stadium (referred to implicitly)"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Location\n---\nArsenal's home stadium (referred to implicitly)"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Frenchman Patrick Vieira blasted a last-minute goal to salvage a 2-2 draw for English premier league leaders Arsenal at home to Derby on Saturday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| English premier league |\n| Arsenal |\n| Derby |\n\nExplanation:\n\n* \"English premier league\" is mentioned as a division of football where Arsenal and Derby are competing.\n* \"Arsenal\" and \"Derby\" are two football clubs participating in the match."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| English premier league |\n\nExplanation:\n\n* \"English premier league\" is the only organization mentioned in the paragraph.\n* \"Arsenal\" and \"Derby\" are teams, not organizations.\n* \"Frenchman Patrick Vieira\" is a person, not an organization."}
+  ]
+}

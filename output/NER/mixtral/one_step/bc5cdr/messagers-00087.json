@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After exercise , ejection fraction was reduced at 15 and 30 minutes compared with baseline ( mean ( SEM ) , - 5 . 6 ( 1 . 5 ) % , p < 0 . 05 ; and - 6 . 1 ( 2 . 2 ) % , p < 0 . 01 ) , and at 30 and 45 minutes after dobutamine ( - 10 . 8 ( 1 . 8 ) % and - 5 . 5 ( 1 . 8 ) % , both p < 0 . 01 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| After exercise |\n| dobutamine |\n\nNote: Although \"After exercise\" and \"dobutamine\" are not diseases in the medical sense, they are included as they are the conditions being tested in the given paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| dobutamine |\n\nNote: \"After exercise\" is not a disease, it is a condition being tested. Therefore, it is not included in the table."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After exercise , ejection fraction was reduced at 15 and 30 minutes compared with baseline ( mean ( SEM ) , - 5 . 6 ( 1 . 5 ) % , p < 0 . 05 ; and - 6 . 1 ( 2 . 2 ) % , p < 0 . 01 ) , and at 30 and 45 minutes after dobutamine ( - 10 . 8 ( 1 . 8 ) % and - 5 . 5 ( 1 . 8 ) % , both p < 0 . 01 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| dobutamine |\n\nExplanation:\n\nIn this paragraph, the only chemical entity mentioned is \"dobutamine\". It is a synthetic catecholamine used as a positive inotropic agent to treat heart failure or cardiogenic shock."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| dobutamine |\n\nExplanation:\n\nIn this paragraph, the only chemical entity mentioned is \"dobutamine\". All other terms, such as \"exercise\", \"ejection fraction\", \"percent\", and \"minutes\" are not chemical entities. Therefore, the table only includes \"dobutamine\" as the valid chemical entity."}
+  ]
+}

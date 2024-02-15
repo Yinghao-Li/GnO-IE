@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Two ship loaded in Thunder Bay , one waited and seven were due .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Two |\n| one |\n| seven |\n\nNote: In this paragraph, \"Two\", \"one\", and \"seven\" are mentioned as the number of ships, so they are considered as \"Person\" entities in this context."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Two |\n| one |\n\nNote: In this paragraph, \"Two\" and \"one\" are mentioned as the number of ships, so they are considered as \"Person\" entities in this context. \"Seven\" is not mentioned in the paragraph, so it is not included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Two ship loaded in Thunder Bay , one waited and seven were due .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Thunder Bay|\n\nExplanation:\n\nThe paragraph mentions \"Thunder Bay\" as the location where two ships were loaded. Therefore, \"Thunder Bay\" is the valid location entity in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Thunder Bay|\n\nExplanation:\n\nThe paragraph mentions \"Thunder Bay\" as the location where two ships were loaded. Therefore, \"Thunder Bay\" is the valid location entity in the paragraph. The other phrases in the paragraph, such as \"one waited\" and \"seven were due\" do not clearly refer to a location and are not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Two ship loaded in Thunder Bay , one waited and seven were due .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Two |\n| Thunder Bay |\n| one |\n| seven |\n\nNote: In this paragraph, \"Two,\" \"one,\" and \"seven\" are likely being used as general quantities rather than specific organization names. However, since the prompt asks for all entities to be identified as Organization entities, they have been included in the table. The only proper noun in the paragraph that can be classified as an Organization entity is \"Thunder Bay,\" which is a city in Canada and could be considered an organization in a broad sense."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Thunder Bay |"}
+  ]
+}

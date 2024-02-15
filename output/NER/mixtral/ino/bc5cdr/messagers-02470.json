@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: An unexpected diagnosis in a renal - transplant patient with proteinuria treated with everolimus : AL amyloidosis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Renal transplant patient: While \"renal transplant\" is not a disease itself, it refers to a medical procedure performed on a patient with a previous renal disease. Therefore, we can consider \"renal disease\" to be the first implied disease entity in the paragraph.\n2. Proteinuria: This is a condition characterized by an abnormal amount of protein in the urine, which can be a symptom or complication of various kidney diseases.\n3. AL amyloidosis: This is the primary disease entity explicitly mentioned in the paragraph. It is a rare and serious condition caused by the buildup of an abnormal protein called amyloid in organs and tissues throughout the body.\n\nIn summary, the disease entities in the paragraph are:\n\n1. Renal disease (implied)\n2. Proteinuria\n3. AL amyloidosis"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Proteinuria\n2. AL amyloidosis\n\nThese are the two entities that unambiguously refer to diseases in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease       |\n|---------------|\n| Proteinuria   |\n| AL amyloidosis |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: An unexpected diagnosis in a renal - transplant patient with proteinuria treated with everolimus : AL amyloidosis .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Renal: While \"renal\" generally refers to the kidney, it is not a chemical entity.\n2. Proteinuria: This is a medical condition and not a chemical entity.\n3. Everolimus: This is a chemical entity. It is an immunosuppressant medication used to prevent the rejection of transplanted organs.\n4. AL amyloidosis: This is a chemical entity. It is a type of amyloidosis, a condition where an abnormal protein called amyloid builds up in your organs and interferes with their normal function.\n\nTherefore, the chemical entities in the paragraph are \"everolimus\" and \"AL amyloidosis\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Everolimus: This is a chemical entity. It is an immunosuppressant medication used to prevent the rejection of transplanted organs.\n2. AL amyloidosis: This is a chemical entity. It is a type of amyloidosis, a condition where an abnormal protein called amyloid builds up in your organs and interferes with their normal function.\n\nTherefore, the chemical entities in the paragraph are \"everolimus\" and \"AL amyloidosis\"."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| everolimus |\n| AL amyloidosis |"}
+  ]
+}

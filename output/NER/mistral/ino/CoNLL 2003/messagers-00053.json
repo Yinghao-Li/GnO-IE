@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: 1. Jesper Ronnback ( Sweden ) 25.76 points\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Jesper Ronnback. This is a clear \"Person\" entity, as it is the name of an individual.\n2. Sweden. While not a person, it is often referred to as a country or geographical entity, so it can be considered a \"Location\" entity, but for the purpose of this question, it can also be considered a \"Person\" entity since it is identified by a proper noun."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Jesper Ronnback.\n\nJesper Ronnback is the only clear \"Person\" entity in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Jesper Ronnback |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: 1. Jesper Ronnback ( Sweden ) 25.76 points\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Sweden (Country) - Jesper Ronnback is from this location."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Sweden (Country)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Sweden (Country) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: 1. Jesper Ronnback ( Sweden ) 25.76 points\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Jesper Ronnback: This is an individual name, not an organization.\n\nTherefore, there is no organization entity identified in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "There is no organization entity in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| N/A |\n\nThere is no organization entity in the paragraph."}
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: These side effects are relatively rare in a given individual , but given the extremely widespread use of heparin , some are quite common , particularly HITT and osteoporosis .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the \"['Disease', 'Chemical']\" entities in the paragraph:\n\n1. Disease: HITT (Heparin-induced thrombocytopenia)\n2. Chemical: Heparin\n\nSo, the identified entities are:\n- Disease: HITT\n- Chemical: Heparin"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to \"['Disease', 'Chemical']\" from the paragraph:\n\nParagraph: These side effects are relatively rare in a given individual, but given the extremely widespread use of heparin, some are quite common, particularly HITT and osteoporosis.\n\nThe entities that clearly refer to \"['Disease', 'Chemical']\" are:\n\n- Disease: HITT\n- Chemical: Heparin\n\nSo, the identified entities are:\n- Disease: HITT\n- Chemical: Heparin"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity   | Entity Type |\n|----------|-------------|\n| HITT     | Disease     |\n| Heparin  | Chemical    |"}
+]

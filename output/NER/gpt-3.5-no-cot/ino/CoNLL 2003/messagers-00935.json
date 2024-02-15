@@ -1,0 +1,29 @@
+{
+  "person": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Switzerland stands accused by Senator Alfonse D'Amato , chairman of the powerful U.S. Senate Banking Committee , of agreeing to give money to Poland from unclaimed bank accounts of Polish citizens , as part of an accord on compensating Swiss nationals whose assets had been seized in communist Poland ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Person\" entities are:\n\n1. Senator Alfonse D'Amato - He is the senator who accuses Switzerland.\n2. Polish citizens - They are the individuals whose unclaimed bank accounts are mentioned.\n3. Swiss nationals - They are the individuals whose assets had been seized in communist Poland."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Person\" entities are:\n\n1. Senator Alfonse D'Amato - He is the senator who accuses Switzerland."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person                |\n|-----------------------|\n| Senator Alfonse D'Amato |"}
+  ],
+  "location": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Switzerland stands accused by Senator Alfonse D'Amato , chairman of the powerful U.S. Senate Banking Committee , of agreeing to give money to Poland from unclaimed bank accounts of Polish citizens , as part of an accord on compensating Swiss nationals whose assets had been seized in communist Poland ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Location\" entities are:\n\n1. Switzerland\n2. Poland\n3. communist Poland"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Location\" entities in the paragraph are:\n\n1. Switzerland\n2. Poland"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| Switzerland |\n| Poland      |"}
+  ],
+  "organization": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Switzerland stands accused by Senator Alfonse D'Amato , chairman of the powerful U.S. Senate Banking Committee , of agreeing to give money to Poland from unclaimed bank accounts of Polish citizens , as part of an accord on compensating Swiss nationals whose assets had been seized in communist Poland ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Organization\" entities are:\n\n1. U.S. Senate Banking Committee"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Organization\" entity in the given paragraph is:\n\n1. U.S. Senate Banking Committee"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization                |\n|-----------------------------|\n| U.S. Senate Banking Committee |"}
+  ]
+}

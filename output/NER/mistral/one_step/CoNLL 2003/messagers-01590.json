@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Lahd , a 69-year-old former Lebanese army major-general , heads the 3,000-strong SLA militia which helps Israel hold a border zone in south Lebanon to ward off cross-frontier guerrilla raids on northern Israel .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Lahd |\n| a 69-year-old former Lebanese army major-general |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Lahd |\n| a 69-year-old former Lebanese army major-general |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Lahd , a 69-year-old former Lebanese army major-general , heads the 3,000-strong SLA militia which helps Israel hold a border zone in south Lebanon to ward off cross-frontier guerrilla raids on northern Israel .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| south Lebanon |\n| northern Israel |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| south Lebanon |\n| northern Israel |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Lahd , a 69-year-old former Lebanese army major-general , heads the 3,000-strong SLA militia which helps Israel hold a border zone in south Lebanon to ward off cross-frontier guerrilla raids on northern Israel .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Lebanese army |\n| SLA militia |\n| Israel |\n\nExplanation:\n\n1. \"Lebanese army\" is the organization of the person mentioned in the paragraph, Lahd, who was a major-general in this organization.\n2. \"SLA militia\" is the organization that Lahd heads.\n3. \"Israel\" is the country mentioned in the paragraph that the SLA militia helps hold a border zone to protect against guerrilla raids."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Lebanese army |\n| SLA militia |\n\nExplanation:\n\nThe only entities in the paragraph that clearly refer to organizations are \"Lebanese army\" and \"SLA militia\". \"Israel\" is a country, not an organization. Therefore, it should not be included in the table."}
+  ]
+}

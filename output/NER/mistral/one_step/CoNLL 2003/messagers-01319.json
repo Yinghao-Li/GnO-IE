@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The procedure of bankruptcy will be applied , \" Tass quoted Livshits as telling Duma deputies about Norilsk .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Tass   |\n| Livshits |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Livshits |\n\n[Note: Tass is an organization and cannot be considered a person in this context.]"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The procedure of bankruptcy will be applied , \" Tass quoted Livshits as telling Duma deputies about Norilsk .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Norilsk |\n\nThe paragraph does not contain any other identifiable location entities. The focus is on the application of the bankruptcy procedure to Norilsk."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Norilsk |\n\nThe paragraph primarily refers to Norilsk as the location where the bankruptcy procedure is to be applied. Other entities such as \"Tass\", \"quoted\", \"Duma deputies\" do not clearly refer to locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The procedure of bankruptcy will be applied , \" Tass quoted Livshits as telling Duma deputies about Norilsk .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Norilsk |\n| Tass |\n| Duma |\n\nExplanation:\nThe paragraph mentions three organizations: Norilsk, Tass, and Duma. Norilsk is a company or organization, Tass is a news agency, and Duma is a Russian legislative body."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Norilsk |\n| Tass |\n\nExplanation:\nThe paragraph mentions two organizations: Norilsk and Tass. Norilsk is a company or organization, and Tass is a news agency. \"Duma deputies\" refers to individuals, not an organization."}
+  ]
+}

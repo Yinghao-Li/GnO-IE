@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The four Britons were shot at from a Mercedes car at around 1 a.m. , \" a spokeswoman told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| a spokeswoman |\n\nIn this paragraph, there is only one identified person mentioned, which is \"a spokeswoman\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| a spokeswoman |\n\nIn this paragraph, the only identified person mentioned is \"a spokeswoman\". The other entities mentioned, \"The four Britons\" and \"a Mercedes car\", do not clearly refer to persons."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The four Britons were shot at from a Mercedes car at around 1 a.m. , \" a spokeswoman told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| around 1 a.m. |\n\nNote: In this paragraph, there is no explicit mention of a specific location where the incident happened. The only location mentioned is the time \"around 1 a.m.\" when the incident occurred."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| around 1 a.m. |\n\nNote: In this paragraph, the only entity that clearly refers to a location is the time \"around 1 a.m.\" when the incident occurred. Other entities such as \"The four Britons\" and \"a Mercedes car\" do not clearly refer to specific locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The four Britons were shot at from a Mercedes car at around 1 a.m. , \" a spokeswoman told Reuters .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Reuters |\n| (none mentioned in the paragraph regarding the Mercedes car) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Reuters |\n| (none mentioned in the paragraph regarding the Mercedes car that clearly refers to an organization) |"}
+  ]
+}

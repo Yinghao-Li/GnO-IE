@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: With 65 minutes gone Indonesia 's Widodo Putra , who scored a spectacular goal against Kuwait on Wednesday , was again on target , breaking through the Korean defence to beat the keeper with a low shot .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indonesia's Widodo Putra. (This is the person entity mentioned in the paragraph.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Widodo Putra."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Widodo Putra |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: With 65 minutes gone Indonesia 's Widodo Putra , who scored a spectacular goal against Kuwait on Wednesday , was again on target , breaking through the Korean defence to beat the keeper with a low shot .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indonesia\n2. Wednesday (implicit location for the events described in the paragraph to have taken place)\n\nThe paragraph does not explicitly mention any specific location within Indonesia or Korea, so we cannot identify more precise entities than the countries themselves."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Indonesia\n2. Wednesday (implicit location for the events described in the paragraph to have taken place)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Indonesia |\n| Wednesday |\n\n(implicit location for the events described in the paragraph to have taken place)"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: With 65 minutes gone Indonesia 's Widodo Putra , who scored a spectacular goal against Kuwait on Wednesday , was again on target , breaking through the Korean defence to beat the keeper with a low shot .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Indonesia\n2. Widodo Putra (can be considered as a person, but for the purpose of this question, we can also consider him as a part of the Indonesian football team, \"Indonesia's Widodo Putra\")\n\nSo, the organization entities in the paragraph are:\n\n1. Indonesia (Indonesian football team)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The only clearly identified organization entity in the paragraph is:\n\n1. Indonesia (Indonesian football team)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Indonesia (Indonesian football team) |"}
+  ]
+}

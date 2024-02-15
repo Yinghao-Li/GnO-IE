@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Klaus and his coalition lost its majority in parliament in June lower house elections after the left-wing opposition consolidated , putting the centre-left Social Democrats in a strong second-place position .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Klaus\n2. his coalition\n3. left-wing opposition\n4. Social Democrats."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Klaus\n2. Social Democrats.\n\nThe coalition and the left-wing opposition are not specific persons but rather groups or organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Klaus |\n| Social Democrats |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Klaus and his coalition lost its majority in parliament in June lower house elections after the left-wing opposition consolidated , putting the centre-left Social Democrats in a strong second-place position .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. June: This is a specific month and can be considered a location in time, but not a physical location.\n2. lower house elections: This refers to a specific chamber of the parliament, which is a location.\n3. parliament: This is a location where legislative bodies meet and make laws.\n\nSo, the location entities in the paragraph are:\n- June\n- lower house elections\n- parliament."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entities in the paragraph are:\n- lower house elections\n- parliament."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| lower house elections |\n| parliament |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Klaus and his coalition lost its majority in parliament in June lower house elections after the left-wing opposition consolidated , putting the centre-left Social Democrats in a strong second-place position .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Coalition: A group of political parties or organizations that collaborate for common purposes, in this context, Klaus and his group of political parties or organizations.\n2. Parliament: An institution where representatives of a country's population are elected to make and pass laws.\n3. Lower house: One of the two houses of a bicameral legislative body, in this context, the first chamber of the Czech Parliament.\n4. Left-wing opposition: A group of political parties or organizations that hold left-leaning political ideologies and are in opposition to the current government.\n5. Social Democrats: A specific political party, in this context, the center-left political party in the Czech Republic."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Coalition: A group of political parties or organizations.\n2. Social Democrats: A political party.\n3. Left-wing opposition: A group of political parties or organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Coalition: A group of political parties or organizations |\n| Social Democrats: A political party |\n| Left-wing opposition: A group of political parties or organizations |"}
+  ]
+}

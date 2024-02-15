@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Selectivity for the cerebrovascular bed makes nimodipine potentially useful in the treatment of subarachnoid hemorrhage , migraine headache , dementia , and stroke .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's identify the \"['Disease', 'Chemical']\" entities in the paragraph.\n\nThe identified entities are:\n\n1. Disease: subarachnoid hemorrhage, migraine headache, dementia, stroke\n2. Chemical: nimodipine"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to \"['Disease', 'Chemical']\" from the paragraph.\n\nThe remaining identified entities are:\n\n1. Disease: subarachnoid hemorrhage, migraine headache, dementia, stroke\n2. Chemical: nimodipine"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity                  | Entity Type |\n|-------------------------|-------------|\n| subarachnoid hemorrhage | Disease     |\n| migraine headache       | Disease     |\n| dementia                | Disease     |\n| stroke                  | Disease     |\n| nimodipine              | Chemical    |"}
+]

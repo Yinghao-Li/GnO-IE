@@ -1,0 +1,42 @@
+{
+  "relations": [
+    "Organization based in",
+    "Located in",
+    "Live in",
+    "Work for",
+    "Kill"
+  ],
+  "relation2prompt": {
+    "Organization based in": "Please analyze the given text to identify relationships where an organization is headquartered or primarily operates in a specific location. Look for patterns that indicate this type of relationship.",
+    "Located in": "Please analyze the paragraph provided to identify any \"Location A is located in Location B\" relationships. Focus on recognizing and extracting instances where one location is mentioned as being situated within another.",
+    "Live in": "Please analyze the given paragraph to identify any instances where it implies or states that a person resides or has resided in a specific location.",
+    "Work for": "Please analyze the given paragraph to identify any relationships where an individual is employed by or associated with a specific organization. Look for clues that indicate a \"person working for an organization\" in this context.",
+    "Kill": "Please identify the \"Killer kills the Victim\" relationship in the paragraph."
+  },
+  "relation2columns": {
+    "Organization based in": ["Organization", "Location", "Whether the Organization is based in the Location"],
+    "Located in": ["Specific Location", "Broader Location", "Whether the Specific Location is located in the Broader Location"],
+    "Live in": ["Person", "Location", "Whether the Person has lived in the Location"],
+    "Work for": ["Person", "Organization", "Whether the Person works for the Organization"],
+    "Kill": ["Killer", "Victim", "Whether the Killer kills the Victim"]
+  },
+  "relation_subject_object": {
+    "Kill": ["People", "People"],
+    "Located in": ["Location", "Location"],
+    "Work for": ["People", "Organization"],
+    "Organization based in": ["Organization", "Location"],
+    "Live in": ["People", "Location"]
+  },
+  "relation_maps": {
+    "Live in": "lives in",
+    "Located in": "is located in",
+    "Organization based in": "is based in",
+    "Work for": "works for",
+    "Kill": "kills"
+  },
+  "entity_maps": {
+    "People": "Person",
+    "Location": "Location",
+    "Organization": "Organization"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report the case of a female patient with rheumatoid arthritis who developed acute cytolytic hepatitis due to meloxicam .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Rheumatoid arthritis |\n| Acute cytolytic hepatitis |\n| Due to meloxicam |\n\nExplanation:\nThe paragraph mentions two diseases: Rheumatoid arthritis and Acute cytolytic hepatitis. The third item, \"due to meloxicam,\" is not a disease but an explanation for how the second disease occurred. Therefore, only the two diseases should be included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Rheumatoid arthritis |\n| Acute cytolytic hepatitis |\n\nExplanation:\nThe paragraph mentions two diseases: Rheumatoid arthritis and Acute cytolytic hepatitis. Therefore, only these two entities should be included in the table. The phrase \"due to meloxicam\" is not a disease and is an explanation for how the second disease occurred."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report the case of a female patient with rheumatoid arthritis who developed acute cytolytic hepatitis due to meloxicam .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| meloxicam |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| meloxicam |"}
+  ]
+}

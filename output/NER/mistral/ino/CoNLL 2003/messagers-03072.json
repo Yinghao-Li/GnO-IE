@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Alloa 3 Hawick 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Alloa: A football club based in Alloa, Scotland.\n2. Hawick: A town in the Scottish Borders area of Scotland.\n3. Alloa (implicit): The team or person representing Alloa in the football match.\n4. Hawick (implicit): The team or person representing Hawick in the football match.\n\nSo, the identified \"Person\" entities in the paragraph are:\n\n1. Alloa\n2. Hawick\n3. Alloa (implicit, representing the football team)\n4. Hawick (implicit, representing the football team)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Alloa (football team)\n2. Hawick (football team)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Alloa (football team) |\n| Hawick (football team) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Alloa 3 Hawick 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Alloa: This is a town in Clackmannanshire, Scotland. It is the location of the first mentioned team in the paragraph.\n2. Hawick: This is a burgh town in the Scottish Borders area of Scotland. It is the location of the second mentioned team in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Alloa\n2. Hawick"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Alloa |\n| Hawick |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Alloa 3 Hawick 1\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Alloa: A football club based in Alloa, Scotland.\n2. Hawick: A town in the Scottish Borders area of Scotland.\n3. (Implied) Scottish Football League or Scottish Cup: The organization that likely oversees or sanctions the football match mentioned.\n\nSo, the organization entities in the paragraph are:\n\n1. Alloa (football club)\n2. Hawick (town, but could also be a rugby club or another organization depending on the context)\n3. Scottish Football League or Scottish Cup (implied)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Alloa (football club)\n2. Scottish Football League or Scottish Cup (organizing body for the football match)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Alloa (football club) |\n| Scottish Football League or Scottish Cup |"}
+  ]
+}

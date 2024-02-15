@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Franziska Schenk ( Germany ) 41.13 ; 4 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Franziska Schenk\n\nThis is the only clear \"Person\" entity mentioned in the paragraph. The rest of the text \"Germany 41.13 ; 4\" does not refer to a person. Instead, it appears to be a list of items that do not fit the description of a person. The first item, \"Germany,\" is a country, and the remaining items, \"41.13\" and \"4,\" are numbers."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "The only clear \"Person\" entity mentioned in the paragraph is:\n\n1. Franziska Schenk"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Franziska Schenk |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Franziska Schenk ( Germany ) 41.13 ; 4 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Germany: This is an unambiguous country entity mentioned in the text.\n\nTherefore, the location entities in the paragraph are:\n\n1. Germany"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The location entity in the paragraph is:\n\n1. Germany."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Germany |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Franziska Schenk ( Germany ) 41.13 ; 4 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Germany: This is an organization identified as a country.\n\nTherefore, the organization entity in the paragraph is \"Germany\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "The organization entity in the paragraph is:\n\n* Germany"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Germany |"}
+  ]
+}

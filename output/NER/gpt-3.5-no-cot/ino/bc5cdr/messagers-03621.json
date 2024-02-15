@@ -1,0 +1,20 @@
+{
+  "Disease": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Selectivity for the cerebrovascular bed makes nimodipine potentially useful in the treatment of subarachnoid hemorrhage , migraine headache , dementia , and stroke ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Disease\" entities are:\n\n1. Subarachnoid hemorrhage\n2. Migraine headache\n3. Dementia\n4. Stroke"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "Based on the revised criteria, the relevant \"Disease\" entities in the paragraph are:\n\n1. Subarachnoid hemorrhage\n2. Migraine headache\n3. Stroke"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease                |\n|------------------------|\n| Subarachnoid hemorrhage |\n| Migraine headache       |\n| Stroke                 |"}
+  ],
+  "Chemical": [
+    {"role": "system", "content": "You are a knowledgeable assistant specialized in recognizing and understanding named entities and their interrelations. If requested to organize information in tabular format, you are adept at filtering and presenting only the relevant and valid results. You will exclude any results that are not pertinent or are inaccurate from the table according to the discussion history."},
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Selectivity for the cerebrovascular bed makes nimodipine potentially useful in the treatment of subarachnoid hemorrhage , migraine headache , dementia , and stroke ."},
+    {"role": "assistant", "content": "Based on the given paragraph, the identified \"Chemical\" entities are as follows:\n\n| Chemical Entity |\n|-----------------|\n| nimodipine      |"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "Based on the given paragraph, the relevant \"Chemical\" entity is:\n\n| Chemical Entity |\n|-----------------|\n| nimodipine      |"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical      |\n|---------------|\n| nimodipine    |"}
+  ]
+}

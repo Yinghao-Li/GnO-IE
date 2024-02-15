@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After dipyridamole , ischemic ST - segment depression ( 0 . 05 mV or more ) was observed in 84 % of the non - MI group , 29 % of the ANT - MI group , 63 % of the INF - MI group and 61 % of the total population .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| ischemic ST-segment depression (0.05 mV or more) |\n| MI (Myocardial Infarction) |\n| ANT-MI (ANT-Myocardial Infarction) |\n| INF-MI (INF-Myocardial Infarction) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| ischemic ST-segment depression (0.05 mV or more) |\n| MI (Myocardial Infarction) |\n| ANT-MI (Antiplatelet therapy-related Myocardial Infarction) |\n| INF-MI (Infarction-Myocardial Infarction) |\n\nNote: I assumed that \"ANT\" refers to antiplatelet therapy, and \"INF\" is short for infarction."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: After dipyridamole , ischemic ST - segment depression ( 0 . 05 mV or more ) was observed in 84 % of the non - MI group , 29 % of the ANT - MI group , 63 % of the INF - MI group and 61 % of the total population .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| dipyridamole |\n\nIn the given paragraph, \"dipyridamole\" is the only chemical entity mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| dipyridamole |\n\nIn the given paragraph, only \"dipyridamole\" clearly refers to a chemical entity. The other entities mentioned, \"ischemic ST - segment depression\", \"0.05 mV\", \"non-MI group\", \"ANT-MI group\", \"INF-MI group\", and \"total population\", do not refer to chemicals but rather describe the conditions or groups in the study."}
+  ]
+}

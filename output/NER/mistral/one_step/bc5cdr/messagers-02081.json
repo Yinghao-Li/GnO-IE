@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In conclusion , MT induction halts BCNU - induced hippocampal toxicity as it prevented GR inhibition and GSH depletion and counteracted the increased levels of TNFalpha , MDA and caspase - 3 activity with subsequent preservation of cognition .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| BCNU-induced hippocampal toxicity |\n| GR inhibition |\n| GSH depletion |\n| Increased levels of TNFalpha |\n| Increased levels of MDA |\n| Increased activity of caspase-3 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| BCNU-induced hippocampal toxicity |\n| GSH depletion |\n| Increased levels of TNFalpha |\n| Increased levels of MDA |\n| Increased activity of caspase-3 |\n\nNote: BCNU is an anticancer drug, but it is mentioned as causing a toxicity (hippocampal toxicity) in this context, so it is included as a disease entity. GR refers to the glucocorticoid receptor, but inhibition of GR can lead to various diseases, including neurodegenerative disorders, so it is also included as a disease entity."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In conclusion , MT induction halts BCNU - induced hippocampal toxicity as it prevented GR inhibition and GSH depletion and counteracted the increased levels of TNFalpha , MDA and caspase - 3 activity with subsequent preservation of cognition .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BCNU (Nitrosourea) |\n| GR (Glucocorticoid Receptor) |\n| GSH (Glutathione) |\n| TNFalpha (Tumor Necrosis Factor alpha) |\n| MDA (Malondialdehyde) |\n| Caspase-3 |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BCNU (Nitrosourea) |\n| Glutathione (GSH) |\n| Tumor Necrosis Factor alpha (TNFalpha) |\n| Malondialdehyde (MDA) |\n| Caspase-3 |"}
+  ]
+}

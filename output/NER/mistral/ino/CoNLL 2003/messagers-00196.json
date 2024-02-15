@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The Wallabies currently have no plans to make any special presentation to the 34-year-old winger but a full house of 75,000 spectators will still gather in the hope of witnessing one last moment of magic .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The Wallabies\n2. 34-year-old winger (This refers to a specific person, but we don't have a name, so it's a named entity of type PERSON, but with incomplete information.)\n\nThe rest of the paragraph does not contain any other clear mentions of persons. It's mostly about the Wallabies and the spectators, but it doesn't specify who the spectators are, beyond being a large group."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. 34-year-old winger (named entity of type PERSON, with incomplete information)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| 34-year-old winger |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The Wallabies currently have no plans to make any special presentation to the 34-year-old winger but a full house of 75,000 spectators will still gather in the hope of witnessing one last moment of magic .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The Wallabies: This is a rugby union team representing Australia. It is not a specific location, but rather a sports team.\n2. currently: This is a temporal expression indicating the present situation.\n3. have no plans: This is a verb phrase indicating the absence of intentions or preparations.\n4. to make any special presentation: This is an infinitive phrase indicating an intended action.\n5. to the 34-year-old winger: This is a prepositional phrase indicating the recipient of the intended action.\n6. but: This is a coordinating conjunction.\n7. a full house of 75,000 spectators: This is a noun phrase indicating a large crowd.\n8. will still gather: This is a modal verb phrase indicating a future action.\n9. in the hope of: This is a preposition indicating the reason or motivation for an action.\n10. witnessing one last moment of magic: This is an infinitive phrase indicating the desired outcome of the action.\n\nTherefore, there are no specific location entities in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. a full house of 75,000 spectators: This is a location where the event is taking place and a large number of people will be present."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| a full house of 75,000 spectators |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The Wallabies currently have no plans to make any special presentation to the 34-year-old winger but a full house of 75,000 spectators will still gather in the hope of witnessing one last moment of magic .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Wallabies: The national rugby union team of Australia.\n2. (Implied) Rugby Union: The specific sport or organization governing the sport of rugby union.\n\nNo other clear organization entities are mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Wallabies: The national rugby union team of Australia.\n2. Rugby Union: The specific sport or organization governing the sport of rugby union."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Wallabies: The national rugby union team of Australia. |\n| Rugby Union: The specific sport or organization governing the sport of rugby union. |"}
+  ]
+}

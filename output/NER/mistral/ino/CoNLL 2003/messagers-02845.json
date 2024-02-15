@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Kilmarnock 0 Dundee United 2 ( Olafsson 22 , 51 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Kilmarnock\n2. Dundee United\n3. Olafsson (assuming Olafsson is a person and the scorer of the goals for Dundee United)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Olafsson (assuming Olafsson is a person and the scorer of the goals)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Olafsson |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Kilmarnock 0 Dundee United 2 ( Olafsson 22 , 51 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Kilmarnock\n2. Dundee United\n\nThese are the two locations mentioned in the paragraph, specifically identified as football clubs."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Kilmarnock\n2. Dundee United\n\nThese are the only entities in the paragraph that can be clearly identified as locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Kilmarnock |\n| Dundee United |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Kilmarnock 0 Dundee United 2 ( Olafsson 22 , 51 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Kilmarnock\n2. Dundee United.\n\nThese are the two organizations mentioned in the paragraph. The paragraph is describing a soccer (or football) match between these two teams, with the scores indicated."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Kilmarnock\n2. Dundee United.\n\nThese are the only organizations mentioned in the paragraph. The paragraph is describing a soccer (or football) match between these two teams, with the scores indicated. Other entities such as \"0\" and \"2\" are not organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Kilmarnock |\n| Dundee United |\n\nThese are the organizations mentioned in the paragraph. The paragraph is describing a soccer (or football) match between these two teams, with the scores indicated: \"Kilmarnock 0 Dundee United 2\"."}
+  ]
+}

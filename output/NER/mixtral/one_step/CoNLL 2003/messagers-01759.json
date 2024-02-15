@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: -- H McCulloch , New York Power Desk +212-859-1628\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| H McCulloch |\n| New York Power Desk |\n\nNote: I have included \"New York Power Desk\" as a \"Person\" entity because the context suggests that it might be a person's name, although it could also be a department or a role. Without further context, it is difficult to determine the exact nature of this entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| H McCulloch |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: -- H McCulloch , New York Power Desk +212-859-1628\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| New York |\n\nExplanation:\n\nThe paragraph mentions \"New York\" in the context of a location, specifically as the location of H McCulloch's Power Desk. Therefore, \"New York\" is the valid location entity in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| New York |\n\nExplanation:\n\nThe paragraph only mentions \"New York\" in the context of a location, specifically as the location of H McCulloch's Power Desk. Therefore, \"New York\" is the only valid location entity in the paragraph. The other entities mentioned in the paragraph, such as \"H McCulloch\" and \"+212-859-1628\", do not clearly refer to a location and are not included in the table."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: -- H McCulloch , New York Power Desk +212-859-1628\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| New York Power Desk |\n\nNote: I'm assuming \"New York Power Desk\" is an organization based on the context provided. If it's not the case, there are no organization entities present in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| New York Power Desk |\n\nNote: In the given paragraph, \"New York Power Desk\" is the only entity that can be considered as an organization based on the context provided."}
+  ]
+}

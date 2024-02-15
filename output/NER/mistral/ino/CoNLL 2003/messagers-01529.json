@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: The students appealed to the government not to close the institute because of their latest demonstration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Students: The group of people who are appealing to the government."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Students."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Students |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: The students appealed to the government not to close the institute because of their latest demonstration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. The students: This is a group of people, not a location.\n2. The government: This is an organization, not a location.\n3. Not to close the institute: This is an action, not a location.\n4. Because of their latest demonstration: This is a reason for the action, not a location.\n\nTherefore, there are no clear \"Location\" entities in the given paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "There are no clear \"Location\" entities in the given paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| institute |\n\nThis is the only potential location entity in the paragraph, but it is not explicitly stated as a location, it is mentioned as \"the institute\" which could refer to a specific institution or educational center. However, without more context, it is not possible to determine the exact location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: The students appealed to the government not to close the institute because of their latest demonstration .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Students: A group of individuals organized around a common goal or purpose. In this context, they are the entities taking action and appealing to the government.\n2. Government: An organized body or institution that exercises power over a particular territory. In this context, it is the entity being appealed to by the students to not close the institute."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Government: An organized body or institution that exercises power over a particular territory. In this context, it is the entity being appealed to by the students to not close the institute."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Government |"}
+  ]
+}

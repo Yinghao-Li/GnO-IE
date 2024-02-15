@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Wales grappled with its own cluster of meningitis cases on a university campus in Cardiff .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Wales\n2. Its (implied: the people or authorities of Wales)\n3. A university campus (specific location in Wales)\n4. Cardiff (specific city in Wales)\n5. Men (implied: a group of men)\n6. Cases (implied: individuals who have contracted meningitis)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Men (implied: individuals who have contracted meningitis)\n2. (implied: individuals who are part of the authorities or population of Wales)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Men (individuals who have contracted meningitis) |\n| (implied: individuals who are part of the authorities or population of Wales) |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Wales grappled with its own cluster of meningitis cases on a university campus in Cardiff .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Wales: Country\n2. university campus: Location within a larger area, specific to Cardiff.\n3. Cardiff: City within Wales.\n\nSo, the entities identified in the paragraph are:\n\n1. Wales (Country)\n2. university campus (Location within a city)\n3. Cardiff (City)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Cardiff (City)\n2. university campus (Location within a city)\n\nSo, the relevant entities identified in the paragraph are:\n\n1. Cardiff (City)\n2. university campus (Location)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Cardiff (City) |\n| university campus |\n\nSo, the valid entities identified in the paragraph, presented as a Markdown table with one column \"Location\" and the entities precisely in the same words as in the original paragraph are:\n\n| Location |\n| --- |\n| Cardiff (City) |\n| university campus |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Wales grappled with its own cluster of meningitis cases on a university campus in Cardiff .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Wales: A country in the United Kingdom and Europe. It is not an organization but a geographical entity.\n2. University campus in Cardiff: This can be considered an organization, specifically an educational institution, with its administrative bodies and student population."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. University in Cardiff: This can be considered an organization, specifically an educational institution, with its administrative bodies."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| University in Cardiff |"}
+  ]
+}

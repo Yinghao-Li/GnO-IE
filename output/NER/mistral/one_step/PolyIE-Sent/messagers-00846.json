@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The V oc , J sc , fill factor ( FF ) , PCE , and hole mobility of the PSCs are summarized in Table 3.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n|--------------|\n| Voc (Voltage Occupied) |\n| Jsc (Short-circuit Current) |\n| Fill factor (FF) |\n| PCE (Power Conversion Efficiency) |\n| PSCs (Perovskite Solar Cells) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n|--------------|\n| PSCs (Perovskite Solar Cells) |\n\nThe other entities in the paragraph (Voc, Jsc, fill factor, PCE) are not material names, but rather properties or characteristics of the Perovskite Solar Cells."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The V oc , J sc , fill factor ( FF ) , PCE , and hole mobility of the PSCs are summarized in Table 3.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n|--------------|\n| Voc          |\n| Jsc          |\n| Fill factor (FF) |\n| PCE          |\n\nThese are the valid entities identified from the paragraph. They are presented in the same words as in the original paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n|--------------|\n| Voc (Voltage  open circuit) |\n| Jsc (Short circuit current density) |\n| Fill factor (FF) |\n| PCE (Power conversion efficiency) |\n\nThese are the valid entities identified from the paragraph that clearly refer to material properties. They are presented in the same words as in the original paragraph."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The V oc , J sc , fill factor ( FF ) , PCE , and hole mobility of the PSCs are summarized in Table 3.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Voc (Voltage at Open Circuit) |\n| Jsc (Short Circuit Current Density) |\n| Fill factor (FF) |\n| PCE (Power Conversion Efficiency) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| Fill factor (FF) |\n| Power Conversion Efficiency (PCE) |\n\nThe other entities in the original paragraph do not clearly refer to material properties as they are not values, but rather acronyms for different terms:\n\n* Voc: Voltage at Open Circuit\n* Jsc: Short Circuit Current Density\n\nThese are not material properties, but rather properties of the electrical characteristics of a device, such as a solar cell."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The absorption onset corresponding to the photon - to - current conversion efficiency was about 750 nm for these devices , and the absorption onset values corresponding to the maximum conversion efficiency values were 427 and 560 nm.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| photon - to - current conversion efficiency |\n| these devices |\n| the maximum conversion efficiency values |\n\nExplanation:\n\n* \"photon - to - current conversion efficiency\" is mentioned as the entity for the absorption onset of around 750 nm.\n* \"these devices\" is mentioned as a general entity for the absorption onset and maximum conversion efficiency values.\n* \"the maximum conversion efficiency values\" is mentioned as the entity for the absorption onset values of 427 and 560 nm."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| photon - to - current conversion efficiency |\n| the maximum conversion efficiency values |\n\nExplanation:\n\n* \"photon - to - current conversion efficiency\" is mentioned as the entity for the absorption onset of around 750 nm.\n* \"the maximum conversion efficiency values\" is mentioned as the entity for the absorption onset values of 427 and 560 nm.\n\nNote: \"these devices\" is not included as it is not a clear reference to a material name."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The absorption onset corresponding to the photon - to - current conversion efficiency was about 750 nm for these devices , and the absorption onset values corresponding to the maximum conversion efficiency values were 427 and 560 nm.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| absorption onset |\n| photon - to - current conversion efficiency |\n| absorption onset values |\n| maximum conversion efficiency values |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| absorption onset |\n| photon - to - current conversion efficiency |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The absorption onset corresponding to the photon - to - current conversion efficiency was about 750 nm for these devices , and the absorption onset values corresponding to the maximum conversion efficiency values were 427 and 560 nm.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| about 750 nm |\n| 427 nm |\n| 560 nm |\n\nIn the paragraph, the \"Property Value\" entities refer to the specific wavelength values related to the absorption onset and photon-to-current conversion efficiency. These values are presented as \"about 750 nm,\" \"427 nm,\" and \"560 nm.\""
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| about 750 nm |\n\nThe other values, \"427 nm\" and \"560 nm,\" are not clearly related to a specific material property, as the context only mentions them as absorption onset values without specifying a specific property associated with them. Therefore, only \"about 750 nm\" is considered a valid \"Property Value\" entity."
+    }
+  ]
+}

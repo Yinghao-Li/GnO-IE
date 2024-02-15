@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Doctors after the operation said that they had caught the cancer early , and that Havel could fully recover from the surgery within six weeks .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Doctors\n\nThese are a group of medical professionals who have performed the operation on Havel."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Doctors\n2. Havel"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Doctors |\n| Havel  |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Doctors after the operation said that they had caught the cancer early , and that Havel could fully recover from the surgery within six weeks .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Doctors (group of people)\n2. After the operation (event, no specific location mentioned)\n3. They had caught the cancer early (abstract concept, no specific location)\n4. Havel (person)\n5. Within six weeks (time period)\n\nNo specific location entity is mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. After the operation (event, no specific location mentioned)\n\nNo specific location entity is mentioned in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| After the operation |\n\nNote:\nThere is no specific location mentioned in the paragraph. The term \"After the operation\" refers to a point in time or an event, not a physical location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Doctors after the operation said that they had caught the cancer early , and that Havel could fully recover from the surgery within six weeks .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Doctors: A group of medical professionals organized to provide healthcare services.\n\nSo, the organization entities in the paragraph are \"Doctors\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "Doctors.\n\nSo, the only organization entity in the paragraph is \"Doctors\"."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Doctors |\n\nSo, the only organization entity in the paragraph is \"Doctors\"."}
+  ]
+}

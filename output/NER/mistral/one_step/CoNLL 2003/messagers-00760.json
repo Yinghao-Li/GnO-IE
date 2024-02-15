@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Spanish police will breathalyse fans at the gates of the Santiago Bernabeu stadium and ban drunk supporters from Saturday 's big Real Madrid-Barcelona game , the Madrid daily El Mundo said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Spanish police |\n| fans |\n| Real Madrid-Barcelona game attendees |\n| El Mundo (mentioned as the source of the information) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Spanish police |\n| fans |\n| Real Madrid-Barcelona game attendees |\n| El Mundo |\n\n(Note: \"the Madrid daily El Mundo\" is considered as a single entity in this context.)"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Spanish police will breathalyse fans at the gates of the Santiago Bernabeu stadium and ban drunk supporters from Saturday 's big Real Madrid-Barcelona game , the Madrid daily El Mundo said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Santiago Bernabeu stadium |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Santiago Bernabeu stadium |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Spanish police will breathalyse fans at the gates of the Santiago Bernabeu stadium and ban drunk supporters from Saturday 's big Real Madrid-Barcelona game , the Madrid daily El Mundo said on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Spanish police |\n| Madrid daily El Mundo |\n| Santiago Bernabeu stadium |\n| Real Madrid |\n| Barcelona |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Spanish police |\n| Madrid daily El Mundo |\n| Santiago Bernabeu stadium |\n| Real Madrid |\n| Barcelona |\n\nExplanation:\n\n* \"Spanish police\" is a clear organization.\n* \"Madrid daily El Mundo\" is a clear organization.\n* \"Santiago Bernabeu stadium\" is a clear organization (specifically, a sports stadium).\n* \"Real Madrid\" and \"Barcelona\" are sports clubs, and are therefore organizations."}
+  ]
+}

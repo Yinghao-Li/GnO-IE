@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 1 Polymer solar cells ( PSCs ) with power conversion efficiency ( PCE ) exceeding 10% have been realized during the last decade , which was benefited from tremendous efforts on the development of advanced donor and / or acceptor materials , device engineering and optimized fabrication processes.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| Polymer solar cells (PSCs) |\n| Advanced donor materials |\n| Advanced acceptor materials |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| ------------ |\n| Polymer solar cells (PSCs) |\n| Advanced donor materials |\n| Advanced acceptor materials |\n\nThese are the entities in the paragraph that can be identified as material names: \"Polymer solar cells (PSCs)\", \"advanced donor materials\", and \"advanced acceptor materials\". The other entities in the paragraph, such as \"during the last decade\", \"tremendous efforts\", \"development\", \"device engineering\", \"optimized fabrication processes\", do not refer to specific material names."
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 1 Polymer solar cells ( PSCs ) with power conversion efficiency ( PCE ) exceeding 10% have been realized during the last decade , which was benefited from tremendous efforts on the development of advanced donor and / or acceptor materials , device engineering and optimized fabrication processes.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Polymer solar cells (PSCs) |\n| Power conversion efficiency (PCE) |\n| Power conversion efficiency exceeding 10% |\n| Last decade |\n| Advanced donor and/or acceptor materials |\n| Device engineering |\n| Optimized fabrication processes. |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Power conversion efficiency (PCE) |\n| Power conversion efficiency exceeding 10% |\n| Device engineering |\n| Optimized fabrication processes (for PSCs) |\n\nNote: \"Polymer solar cells (PSCs)\" is not considered a material property, but rather a type of solar cells. Therefore, it is not included in the table."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: 1 Polymer solar cells ( PSCs ) with power conversion efficiency ( PCE ) exceeding 10% have been realized during the last decade , which was benefited from tremendous efforts on the development of advanced donor and / or acceptor materials , device engineering and optimized fabrication processes.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| Power conversion efficiency (PCE) of Polymer solar cells (PSCs) exceeding 10% |\n| Last decade             |\n| Advanced donor and / or acceptor materials |\n| Device engineering      |\n| Optimized fabrication processes |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value          |\n|-----------------------|\n| Power conversion efficiency (PCE) of Polymer solar cells (PSCs) exceeding 10% |\n| Last decade             |\n| Advanced donor and acceptor materials |\n\nNote: \"advanced\" is a qualifier for the donor and acceptor materials and does not directly refer to a material property value. Therefore, it is not included in the table."
+    }
+  ]
+}

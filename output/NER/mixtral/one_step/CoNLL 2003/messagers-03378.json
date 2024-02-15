@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: St Louis 4 COLORADO 3\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|---|\n\nThere are no \"Person\" entities in the provided paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|---|\n\nThere are no \"Person\" entities in the provided paragraph. The paragraph only contains location names (St. Louis and Colorado) and a score of a game."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: St Louis 4 COLORADO 3\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| St Louis   |\n| COLORADO   |\n\nNote: In the given paragraph, \"St Louis\" and \"COLORADO\" are the two location entities. However, it is unclear whether \"COLORADO\" is referring to the state of Colorado or a specific location within Colorado, as it is capitalized but not explicitly stated."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| St Louis   |\n\nNote: In the given paragraph, only \"St Louis\" is a clear location entity, while \"COLORADO\" is not a clear location reference without additional context."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: St Louis 4 COLORADO 3\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| St Louis |\n| COLORADO |\n\nNote: I am not sure about the capitalization of \"COLORADO\" in the original paragraph. I have assumed it to be an organization (could be a sports team) and presented it as is. If it is not an organization, then there are no \"Organization\" entities in the given paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| St Louis |\n| COLORADO |\n\nNote: The given paragraph only contains two words, both of which could potentially refer to organizations, such as sports teams. However, without additional context, it is not possible to definitively determine if these words indeed refer to organizations."}
+  ]
+}

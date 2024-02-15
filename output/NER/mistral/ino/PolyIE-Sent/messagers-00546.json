@@ -1,0 +1,80 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph.\n\nParagraph: As shown in this table , when the GPC was measured using polystyrene as the standard , the number - average molecular weights ( M n ) of PQCDTB and PCZDTB were 49.8 and 15.2 kg / mol , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Polystyrene: This is the material used as the standard for measuring the number-average molecular weights (Mn) of PQCDTB and PCZDTB.\n2. PQCDTB: This is the first material whose number-average molecular weight (Mn) is mentioned in the paragraph.\n3. PCZDTB: This is the second material whose number-average molecular weight (Mn) is mentioned in the paragraph."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Name."
+    },
+    {
+      "role": "assistant",
+      "content": "1. PQCDTB\n2. PCZDTB\n3. Polystyrene (as it is the material used as a standard, but not a material of interest in this context)"
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PQCDTB |\n| PCZDTB |\n| Polystyrene (standard) |\n\nHowever, since the instruction was to remove irrelevant entities, the final table should only include:\n\n| Material Name |\n| --- |\n| PQCDTB |\n| PCZDTB |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph.\n\nParagraph: As shown in this table , when the GPC was measured using polystyrene as the standard , the number - average molecular weights ( M n ) of PQCDTB and PCZDTB were 49.8 and 15.2 kg / mol , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. GPC: Gel Permeation Chromatography\n2. Molar masses: number-average molecular weights\n3. PQCDTB: a specific type of polymer (name may vary)\n4. PCZDTB: another specific type of polymer (name may vary)\n5. kg/mol: kilograms per mole\n\nSo, the \"Property Name\" entities in the paragraph are:\n\n1. Gel Permeation Chromatography (GPC)\n2. Molar masses (specifically number-average molecular weights)\n3. PQCDTB\n4. PCZDTB\n5. kilograms per mole (kg/mol)"
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. Molar masses (specifically number-average molecular weights)\n2. PQCDTB\n3. PCZDTB\n\nSo, the relevant \"Material Property\" entities in the paragraph are:\n\n1. Number-average molecular weights of PQCDTB and PCZDTB."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| Number-average molecular weights of PQCDTB and PCZDTB |"
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph.\n\nParagraph: As shown in this table , when the GPC was measured using polystyrene as the standard , the number - average molecular weights ( M n ) of PQCDTB and PCZDTB were 49.8 and 15.2 kg / mol , respectively.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"49.8 kg / mol\" and \"15.2 kg / mol\" are the property values for the molecular weights (Mn) of PQCDTB and PCZDTB respectively."
+    },
+    {
+      "role": "user",
+      "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Value of Material Property."
+    },
+    {
+      "role": "assistant",
+      "content": "1. \"49.8 kg / mol\" and \"15.2 kg / mol\" are the property values for molecular weights of PQCDTB and PCZDTB respectively."
+    },
+    {
+      "role": "user",
+      "content": "Please present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| 49.8 kg / mol (molecular weight of PQCDTB) |\n| 15.2 kg / mol (molecular weight of PCZDTB) |"
+    }
+  ]
+}

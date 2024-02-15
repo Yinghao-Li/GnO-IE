@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ( Corrects headline from NBA to NHL and corrects team name in second result from La Clippers to Ny Islanders .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| NBA |\n| NHL |\n| La Clippers |\n| Ny Islanders |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Ny Islanders |\n\nIn the original paragraph, \"Ny Islanders\" is the only entity that clearly refers to a person or group of people. \"NBA\" and \"NHL\" are acronyms for sports leagues and do not refer to specific individuals or groups of people. \"La Clippers\" is a team name, but it does not clearly refer to a specific person or group of people. Therefore, the only valid entity that can be extracted from the paragraph as a person is \"Ny Islanders\"."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ( Corrects headline from NBA to NHL and corrects team name in second result from La Clippers to Ny Islanders .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| NHL |\n| Ny Islanders |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| NHL |\n\nThe following entities do not clearly refer to \"Location\":\n\n* \"La Clippers\" (should be \"Los Angeles Clippers\")\n* \"Ny Islanders\" (should be \"New York Islanders\")"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ( Corrects headline from NBA to NHL and corrects team name in second result from La Clippers to Ny Islanders .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NBA |\n| NHL |\n| La Clippers |\n| Ny Islanders |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NBA |\n| NHL |"}
+  ]
+}

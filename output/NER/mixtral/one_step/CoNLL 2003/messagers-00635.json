@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: RKC Waalwijk 1 ( Starbuck 76 ) Willem II Tilburg 2 ( Konterman 45 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| RKC Waalwijk 1 |\n| Starbuck |\n| Willem II Tilburg |\n| Konterman |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Starbuck |\n| Konterman |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: RKC Waalwijk 1 ( Starbuck 76 ) Willem II Tilburg 2 ( Konterman 45 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| RKC Waalwijk |\n| Starbuck 76 (assumed to be a location within RKC Waalwijk) |\n| Willem II Tilburg |\n| Konterman 4"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| RKC Waalwijk |\n| Willem II Tilburg |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: RKC Waalwijk 1 ( Starbuck 76 ) Willem II Tilburg 2 ( Konterman 45 ,\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| RKC Waalwijk |\n| Starbuck |\n| Willem II Tilburg |\n| Konterman |\n\nNote: I'm assuming \"Starbuck\" and \"Konterman\" are players from RKC Waalwijk and Willem II Tilburg, respectively, but since they are not explicitly mentioned as organizations, I included them in the table. If they are not relevant to your context, you can disregard them."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| RKC Waalwijk |\n| Willem II Tilburg |"}
+  ]
+}

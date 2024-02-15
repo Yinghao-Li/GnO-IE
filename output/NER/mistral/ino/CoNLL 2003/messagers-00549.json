@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: MINNESOTA AT DETROIT\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MINNESOTA\n2. DETROIT\n\nThese are the proper nouns in the paragraph that can be identified as entities representing places or organizations. In this context, they are the names of two National Football League (NFL) teams."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "There are no clear references to persons in the given paragraph. The entities identified earlier, MINNESOTA and DETROIT, are places or organizations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| - |\n\nThere are no entities in the paragraph that can be identified as referring to a person. The entities identified earlier, MINNESOTA and DETROIT, are places or organizations."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: MINNESOTA AT DETROIT\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MINNESOTA: This is a state in the Midwestern region of the United States.\n2. DETROIT: This is a city located in the state of Michigan, United States.\n\nSo, the \"Location\" entities in the paragraph are MINNESOTA and DETROIT."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. MINNESOTA\n2. DETROIT\n\nThese are the only entities in the paragraph that clearly refer to locations."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| MINNESOTA |\n| DETROIT |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: MINNESOTA AT DETROIT\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. MINNESOTA\n2. DETROIT (implicit organization, as it is the location mentioned in the paragraph)\n3. (Implicitly, the Minnesota team in this context is likely the Minnesota Vikings, so another possible organization entity could be the \"Minnesota Vikings\" football team.)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Minnesota Vikings (if relevant to the context)\n2. Detroit (as a location, it is not an organization but can be considered an implicit organization if the context is about a specific organization based in Detroit)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Minnesota Vikings (if relevant to the context) |\n| Detroit |"}
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Antibodies suggested to be of the IgM class were detected in all 3 patients with hematological disorders .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's break down the paragraph and identify the \"['Disease', 'Chemical']\" entities:\n\n1. Antibodies - This is a \"Chemical\" entity.\n\n2. IgM class - This is a \"Chemical\" entity.\n\n3. hematological disorders - This is a \"Disease\" entity.\n\nSo, the identified \"['Disease', 'Chemical']\" entities in the paragraph are:\n\n- Disease: hematological disorders\n- Chemical: Antibodies, IgM class"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Sure! Let's remove entities that do not clearly refer to \"['Disease', 'Chemical']\" from the paragraph:\n\n1. Antibodies - This is a \"Chemical\" entity.\n\n2. IgM class - This is a \"Chemical\" entity.\n\n3. hematological disorders - This is a \"Disease\" entity.\n\nSo, the identified \"['Disease', 'Chemical']\" entities in the paragraph are:\n\n- Disease: hematological disorders\n- Chemical: Antibodies, IgM class"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Certainly! Here are the valid entities presented as a Markdown table:\n\n| Entity                | Entity Type |\n|-----------------------|-------------|\n| hematological disorders | Disease     |\n| Antibodies            | Chemical    |\n| IgM class             | Chemical    |"}
+]

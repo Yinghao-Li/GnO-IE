@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thai Resource 264 31/12 Ras Tanura / Red Sea W46.50 Mobil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Thai |\n| Ras Tanura |\n| Red Sea |\n| Mobil |\n\nNote:\n\n* \"Thai\" is a person because it refers to a person from Thailand.\n* \"Ras Tanura\" is a person because it is a name, possibly of a person.\n* \"Red Sea\" is not a person, it's a geographical location.\n* \"Mobil\" is not a person, it's a company or brand name."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Thai |\n| Ras Tanura |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thai Resource 264 31/12 Ras Tanura / Red Sea W46.50 Mobil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ras Tanura |\n| Red Sea |\n| W46.50 |\n\nExplanation:\n\n* \"Ras Tanura\" is a location, specifically a city or town.\n* \"Red Sea\" is a location, specifically a body of water.\n* \"W46.50\" is not a location, but rather a set of coordinates (latitude and longitude) that can be used to identify a specific point on the Earth's surface. It is not a valid location entity in this context."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Ras Tanura |\n| Red Sea |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Thai Resource 264 31/12 Ras Tanura / Red Sea W46.50 Mobil .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Thai Resource |\n| Mobil |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Thai Resource |\n\nThe following entities do not clearly refer to an organization:\n\n* Ras Tanura\n* Red Sea\n* W46.50"}
+  ]
+}

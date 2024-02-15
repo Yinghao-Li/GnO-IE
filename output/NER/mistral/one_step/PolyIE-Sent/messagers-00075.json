@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The sharp peaks at around 5 ° correspond to the in-plane spacing ( d 1spacing ) between the polymer backbones , whereas the broad peaks lying above 20 ° ( d 2 -spacing ) is characterized as a π-π stacking distance.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| in-plane spacing (d 1-spacing) between the polymer backbones |\n| π-π stacking distance (d 2-spacing) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| in-plane spacing (d 1-spacing) between polymer backbones |\n| π-π stacking distance (d 2-spacing) |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The sharp peaks at around 5 ° correspond to the in-plane spacing ( d 1spacing ) between the polymer backbones , whereas the broad peaks lying above 20 ° ( d 2 -spacing ) is characterized as a π-π stacking distance.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| in-plane spacing (d 1-spacing) |\n| out-of-plane spacing (d 2-spacing) |\n| π-π stacking distance |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| in-plane spacing (d 1-spacing) |\n| out-of-plane spacing (d 2-spacing) |\n| π-π stacking distance |\n\nNote: The paragraph does not contain any entities that do not refer to material properties. The entities identified in the previous answer are still valid."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The sharp peaks at around 5 ° correspond to the in-plane spacing ( d 1spacing ) between the polymer backbones , whereas the broad peaks lying above 20 ° ( d 2 -spacing ) is characterized as a π-π stacking distance.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| in-plane spacing (d 1-spacing) |\n| between the polymer backbones |\n| around 5 ° |\n| π-π stacking distance |\n| broad peaks lying above 20 ° (d 2-spacing) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| in-plane spacing (d 1-spacing) between polymer backbones |\n| around 5 ° |\n| π-π stacking distance |\n| broad peaks lying above 20 ° (d 2-spacing) |\n\nThe entities \"correspond to\" and \"characterized as\" indicate a relationship or description, rather than a material property value. Therefore, they are not valid entities for this table."
+    }
+  ]
+}

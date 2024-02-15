@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mexican daily port , shipping update for Dec 6 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| No \"Person\" entities were mentioned in the paragraph. |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| No valid \"Person\" entities were mentioned in the paragraph. |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mexican daily port , shipping update for Dec 6 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Mexican daily port |\n\nIn this paragraph, the \"Location\" entity is \"Mexican daily port\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Mexican daily port |\n\nIn this paragraph, the only clear \"Location\" entity is \"Mexican daily port\". The term \"Dec 6\" refers to a date, not a location."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Mexican daily port , shipping update for Dec 6 .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Mexican daily port |\n| Shipping lines |\n\nExplanation:\n\nThe \"Organization\" entities in the paragraph are \"Mexican daily port\" and \"Shipping lines\". \"Mexican daily port\" is mentioned as the source of the update, and \"Shipping lines\" are mentioned as the entities affected by the update."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Mexican daily port |\n\nExplanation:\n\nThe only clear \"Organization\" entity in the paragraph is \"Mexican daily port\". The other entity mentioned, \"Shipping lines\", is not explicitly referred to as an organization, so it is not included in the table."}
+  ]
+}

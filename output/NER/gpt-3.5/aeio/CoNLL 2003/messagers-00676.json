@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Location', 'Organization', 'Person']\" entities in the following paragraph.\n\nParagraph: Werder Bremen 1 (Bode 85th) 1860 Munich 1 (Bormirow 8th) .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "In the given paragraph, the identified entities are:\n\n- Location: Werder Bremen, 1860 Munich\n- Organization: None\n- Person: Bode, Bormirow"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Location', 'Organization', 'Person']\""},
+  {"role": "assistant", "content": "In the given paragraph, the identified entities that clearly refer to either \"Location\", \"Organization\", or \"Person\" are:\n\n- Location: Werder Bremen, 1860 Munich\n- Person: Bode, Bormirow"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['location', 'organization', 'person']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity          | Entity Type   |\n|-----------------|---------------|\n| Werder Bremen   | Location      |\n| 1860 Munich     | Location      |\n| Bode            | Person        |\n| Bormirow        | Person        |"}
+]

@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: These symptoms may be due to ' sensitisation ' following repeated levodopa treatment or a direct effect of dopamine on the disease state .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| the disease state |\n\nIn the given paragraph, the phrase \"the disease state\" is the only expression that can be identified as a disease. The term \"sensitisation\" is not a disease but a process, and \"levodopa treatment\" is a medical treatment, not a disease."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| the disease state |\n\nIn the given paragraph, the phrase \"the disease state\" is the only expression that can be identified as a disease. All other terms, such as \"sensitisation\" and \"levodopa treatment,\" do not clearly refer to a disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: These symptoms may be due to ' sensitisation ' following repeated levodopa treatment or a direct effect of dopamine on the disease state .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| levodopa |\n| dopamine |\n\nExplanation:\n\n* 'sensitisation' is not a chemical entity, so it is not included in the table.\n* 'levodopa' and 'dopamine' are both chemicals, so they are included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| levodopa |\n| dopamine |\n\nExplanation:\n\n* 'sensitisation' is not a chemical entity, so it is not included in the table.\n* 'levodopa' and 'dopamine' are both chemicals, so they are included in the table.\n* The term 'the disease state' is not a chemical entity, but it is unclear from the context whether it refers to a specific chemical or not. Since it is not explicitly stated, I have not included it in the table."}
+  ]
+}

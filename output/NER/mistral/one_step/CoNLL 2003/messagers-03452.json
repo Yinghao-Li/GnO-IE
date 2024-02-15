@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The lanky former Leeds United defender did not make his England debut until the age of 30 but eventually won 35 caps and was a key member of the 1966 World Cup winning team with his younger brother , Bobby .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the lanky former Leeds United defender |\n| Bobby (younger brother of the lanky former Leeds United defender) |\n\nThe paragraph mentions two people: the lanky former Leeds United defender and his younger brother Bobby."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the lanky former Leeds United defender |\n| Bobby (younger brother) |\n\nThe paragraph mentions two people: the lanky former Leeds United defender and his younger brother Bobby. The words \"former\" and \"Leeds United defender\" describe the first person, but they do not change the fact that it is a person. The phrase \"younger brother\" clearly refers to a person as well."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The lanky former Leeds United defender did not make his England debut until the age of 30 but eventually won 35 caps and was a key member of the 1966 World Cup winning team with his younger brother , Bobby .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Leeds United |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Leeds United |\n| England |\n| (implicit: the age of 30 could refer to a specific location, but it's not clear enough to include it in the table) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The lanky former Leeds United defender did not make his England debut until the age of 30 but eventually won 35 caps and was a key member of the 1966 World Cup winning team with his younger brother , Bobby .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Leeds United |\n| England |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Leeds United |\n| England |"}
+  ]
+}

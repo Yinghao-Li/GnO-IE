@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PATIENTS AND METHODS : One hundred eighty - four chemotherapy - naive patients receiving high - dose cisplatin ( 81 to 120 mg / m2 ) were randomized to receive one of four granisetron doses ( 5 , 10 , 20 , or 40 micrograms / kg ) administered before chemotherapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| chemotherapy-naive patients |\n| high-dose cisplatin disease (81 to 120 mg / m2) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| high-dose cisplatin disease (81 to 120 mg / m2) |\n| (chemotherapy-naive is a description of the patients and not a disease) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: PATIENTS AND METHODS : One hundred eighty - four chemotherapy - naive patients receiving high - dose cisplatin ( 81 to 120 mg / m2 ) were randomized to receive one of four granisetron doses ( 5 , 10 , 20 , or 40 micrograms / kg ) administered before chemotherapy .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| cisplatin |\n| granisetron |\n\nIn the given paragraph, there are two chemical entities mentioned: \"cisplatin\" and \"granisetron\". Both entities are presented precisely as they appear in the original paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| cisplatin |\n| granisetron |\n\nIn the given paragraph, only \"cisplatin\" and \"granisetron\" clearly refer to chemical entities. Therefore, these are the only entities to be included in the table."}
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: STZ causes increased expression of GFAP , CD11b and TNF - a indicating glial activation and neuroinflammation .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Sure! Let's break down the paragraph and identify the \"Disease\" and \"Chemical\" entities.\n\n1. STZ: This is a chemical entity.\n\n2. GFAP: This is not a \"Disease\" or \"Chemical\" entity. It is a protein marker used to identify astrocytes, a type of glial cell.\n\n3. CD11b: This is not a \"Disease\" or \"Chemical\" entity. It is a protein marker used to identify microglia, another type of glial cell.\n\n4. TNF-a: This is not a \"Disease\" or \"Chemical\" entity. It is a cytokine involved in inflammation.\n\nBased on the given paragraph, the identified \"Disease\" and \"Chemical\" entities are:\n\n- Disease: None mentioned.\n- Chemical: STZ."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Sure! Based on the given paragraph, the identified \"Disease\" and \"Chemical\" entities are:\n\n- Chemical: STZ."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "Here are the valid entities presented as a Markdown table:\n\n| Entity | Entity Type |\n|--------|-------------|\n| STZ    | Chemical    |"}
+]

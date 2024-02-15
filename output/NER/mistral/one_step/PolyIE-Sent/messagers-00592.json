@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This type of result was obtained because PQCDTB ( -5.53 eV ) has a lower HOMO level than P3HT ( -4.9 eV ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PQCDTB |\n| P3HT |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| PQCDTB |\n| P3HT |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This type of result was obtained because PQCDTB ( -5.53 eV ) has a lower HOMO level than P3HT ( -4.9 eV ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO level of PQCDTB |\n| Energy level of PQCDTB (value: -5.53 eV) |\n| HOMO level of P3HT |\n| Energy level of P3HT (value: -4.9 eV) |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| HOMO level of PQCDTB |\n| HOMO level of P3HT |\n\nThese are the only entities in the paragraph that clearly refer to material properties (specifically, the energy levels of the HOMO orbitals for two different materials)."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: This type of result was obtained because PQCDTB ( -5.53 eV ) has a lower HOMO level than P3HT ( -4.9 eV ).\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| HOMO level of PQCDTB: -5.53 eV |\n| HOMO level of P3HT: -4.9 eV |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| HOMO level of PQCDTB: -5.53 eV |\n| HOMO level of P3HT: -4.9 eV |\n\nThese are the only entities in the paragraph that clearly refer to the value of a material property (the HOMO energy level)."
+    }
+  ]
+}

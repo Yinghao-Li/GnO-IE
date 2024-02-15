@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The cure rate of infections in cancer patients is adversely affected by neutropenia ( less than 1 , 000 / mm3 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| cancer          |\n| infections       |\n| neutropenia      |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease          |\n|------------------|\n| cancer          |\n| neutropenia      |\n\n(Note: \"infections\" is considered a disease in this context as it is mentioned in relation to \"cancer patients\")"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The cure rate of infections in cancer patients is adversely affected by neutropenia ( less than 1 , 000 / mm3 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| neutropenia |\n\nExplanation:\nNeutropenia is a condition characterized by a decrease in the number of neutrophils in the blood, specifically less than 1,000 neutrophils per microliter (mm3). It is not a chemical substance itself, but it is an important clinical condition that can affect the cure rate of infections in cancer patients."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| neutropenia |\n\nExplanation:\nThe original paragraph mentions \"neutropenia,\" which refers to a condition characterized by a decrease in the number of neutrophils in the blood. Neutropenia is not a chemical substance itself, but it is a clinical condition that can affect the cure rate of infections in cancer patients. Therefore, it is the only valid chemical entity in the paragraph."}
+  ]
+}

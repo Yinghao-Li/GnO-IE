@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Third group received BCNU ( 20 mg / kg , i . v , once ) 24 h after injection with normal saline ( i . c . v ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| BCNU |\n\nIn the given paragraph, the only possible disease entity is \"BCNU\" which stands for Carmustine, a chemotherapy medication used to treat brain tumors and Hodgkin's lymphoma."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| BCNU |\n\nThe only possible disease entity in the paragraph is \"BCNU\" which stands for Carmustine, a chemotherapy medication used to treat brain tumors and Hodgkin's lymphoma. The other entities like \"i. v.\" (intravenous), \"24 h\", and \"i. c. v.\" (intracerebroventricular) are medical procedures or time intervals, not diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Third group received BCNU ( 20 mg / kg , i . v , once ) 24 h after injection with normal saline ( i . c . v ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BCNU |\n| normal saline |\n\nExplanation:\n\n* BCNU: It is mentioned as it is in the paragraph. It is a type of chemotherapeutic agent.\n* normal saline: It is also mentioned as it is in the paragraph. It is a solution of sodium chloride in water, used to replace lost fluids, clean wounds, and deliver medications."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| BCNU |\n\nExplanation:\n\n* BCNU: It is the only chemical entity mentioned in the paragraph.\n* normal saline: It is not a chemical, but a solution used to replace lost fluids, clean wounds, and deliver medications. Therefore, it is not included in the table."}
+  ]
+}

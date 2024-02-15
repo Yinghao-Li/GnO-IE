@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Forty - eight hours after the final exercise period , S - I and E - I animals received a single subcutaneous injection of isoproterenol ( 250 mg / kg body weight ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| There are no diseases mentioned in the paragraph. |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| There are no diseases mentioned in the paragraph. |\n\nThere are no diseases mentioned in the paragraph. The only entities mentioned are related to animals (S-I and E-I) and a chemical compound (isoproterenol), but neither of them are diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Forty - eight hours after the final exercise period , S - I and E - I animals received a single subcutaneous injection of isoproterenol ( 250 mg / kg body weight ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| isoproterenol |\n| S - I |\n| E - I |\n\nExplanation:\n\n* \"isoproterenol\" is a chemical (a medication to be precise) and is explicitly mentioned in the text.\n* \"S - I\" and \"E - I\" are also mentioned as animals who received the injection, but since the question asks for chemical entities, I've included them in the table for completeness, but they are not chemicals."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| isoproterenol |\n\nExplanation:\n\n* \"isoproterenol\" is the only chemical entity in the text, as it is a medication.\n* \"S - I\" and \"E - I\" are not chemical entities, they are most likely abbreviations for animal groups, such as \"Saline-Injected\" and \"Exercise-Injected\" animals."}
+  ]
+}

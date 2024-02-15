@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ORR was 4 . 7 % ( 7 . 1 % stratum 1 ; 2 . 3 % stratum 2 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| ORR |\n| stratum 1 |\n| stratum 2 |\n\nNote: I'm assuming that \"ORR\" stands for \"Objective Response Rate,\" which is a measure used in clinical trials to describe the proportion of patients who have a certain level of response to a treatment. \"Stratum 1\" and \"Stratum 2\" are likely predefined subgroups in the study, which could be based on factors such as the severity of the disease or the presence of certain risk factors. However, without more context, it's difficult to say for sure what these terms refer to."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| ORR |\n\nNote: After reviewing the paragraph again, I realized that \"ORR\" is not a disease entity but a measure of response rate to a treatment. Therefore, there are no clear disease entities in the paragraph."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: ORR was 4 . 7 % ( 7 . 1 % stratum 1 ; 2 . 3 % stratum 2 ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| ORR |\n| 4.7% |\n| 7.1% |\n| 2.3% |\n\nIn this paragraph, the only chemical entity mentioned is \"ORR\", which stands for Oxygen Reduction Reaction. The other entities are percentages, which are not chemical entities."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| ORR |\n\nIn this paragraph, the only chemical entity mentioned is \"ORR\", which stands for Oxygen Reduction Reaction. The other entities are percentages, which are not chemical entities."}
+  ]
+}

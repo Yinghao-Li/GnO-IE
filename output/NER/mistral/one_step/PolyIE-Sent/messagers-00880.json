@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: With film annealing treatments , the films form larger crystal grains and better film interconnectivity , which are favorable for the charge transport and lead to an increase of the mobility .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| films |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| films |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: With film annealing treatments , the films form larger crystal grains and better film interconnectivity , which are favorable for the charge transport and lead to an increase of the mobility .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| film annealing treatments |\n| crystal grains |\n| film interconnectivity |\n| charge transport |\n| mobility |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| film annealing treatments |\n| crystal grains |\n| film interconnectivity |\n| charge transport mobility |\n\nNote: I assumed that \"charge transport\" and \"mobility\" are related to material properties since they are mentioned in the context of being favorable for the charge transport and leading to an increase of the mobility. If this assumption is incorrect, please let me know."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: With film annealing treatments , the films form larger crystal grains and better film interconnectivity , which are favorable for the charge transport and lead to an increase of the mobility .\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| film annealing treatments |\n| larger crystal grains |\n| better film interconnectivity |\n| charge transport |\n| mobility |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Value |\n| --- |\n| larger crystal grains |\n| better film interconnectivity |\n| charge transport mobility |\n\nNote: \"film annealing treatments\" is not a material property, it is a process that leads to the desired material properties. Therefore, it was removed from the table."
+    }
+  ]
+}

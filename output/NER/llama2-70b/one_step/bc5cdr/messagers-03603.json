@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In all patients , computerized tomographic ( CT ) brain scans demonstrated stability in tumor size and peritumor edema when compared with pretransplant scans .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| tumor |\n| peritumor edema |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here's the updated table with the valid entities:\n\n| Disease |\n| --- |\n| tumor |\n| peritumor edema |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: In all patients , computerized tomographic ( CT ) brain scans demonstrated stability in tumor size and peritumor edema when compared with pretransplant scans .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Here are the chemical entities mentioned in the paragraph:\n\n| Chemical |\n| --- |\n| Computerized tomographic (CT) |\n| Brain scans |\n| Tumor |\n| Peritumor edema |\n\nNote: \"Computerized tomographic\" is a single entity, and \"peritumor edema\" is a single entity, even though they are both composed of multiple words."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "Sure, here are the valid chemical entities mentioned in the paragraph:\n\n| Chemical |\n| --- |\n| Computerized tomographic (CT) |\n| Tumor |\n\nThe following entities are not chemical entities:\n\n* \"brain scans\" (a medical imaging technique)\n* \"peritumor edema\" (a medical condition)\n\nTherefore, the table above only includes the chemical entities mentioned in the paragraph."}
+  ]
+}

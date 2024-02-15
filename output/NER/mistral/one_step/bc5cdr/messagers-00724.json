@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The hypotensive effect appears to be related to the higher baseline blood pressure we observed in fluctuating patients relative to stable patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hypotension (implied, as the paragraph discusses a \"hypotensive effect\") |\n| Fluctuating blood pressure |\n| Baseline blood pressure (higher in fluctuating patients) |\n| Stable blood pressure |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Hypotension (implied) |\n| Fluctuating blood pressure |\n\n(Note: \"Baseline\" and \"relatively higher\" do not refer to diseases, but rather descriptive terms for the patients' blood pressure status.)"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The hypotensive effect appears to be related to the higher baseline blood pressure we observed in fluctuating patients relative to stable patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| blood pressure |\n\nThe paragraph does not contain any specific chemical entities, it only mentions the biological concept of \"blood pressure\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| blood pressure |\n\nThe paragraph primarily discusses the concept of blood pressure, which is a physical property of the circulatory system and not a specific chemical entity."}
+  ]
+}

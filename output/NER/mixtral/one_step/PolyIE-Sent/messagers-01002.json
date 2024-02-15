@@ -1,0 +1,56 @@
+{
+  "CN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Material Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Material Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The energy levels of the copolymers are lower than those of other heteroarene - based DPP copolymers reported previously , [21][22][23][24][25][26] and their low - lying HOMO energy levels are expected to afford high V OC s of the polymer solar cells.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| copolymers |\n| other heteroarene - based DPP copolymers |\n| the polymer solar cells |"
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material name\" and present the valid entities as a Markdown table with one column \"Material Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Material Name |\n| --- |\n| copolymers |\n| other heteroarene - based DPP copolymers |"
+    }
+  ],
+  "PN": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Name\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Name\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The energy levels of the copolymers are lower than those of other heteroarene - based DPP copolymers reported previously , [21][22][23][24][25][26] and their low - lying HOMO energy levels are expected to afford high V OC s of the polymer solar cells.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| energy levels |\n| low - lying HOMO energy levels |\n| V OC s |\n\nExplanation:\n\n* \"energy levels\" is mentioned twice in the paragraph, and it refers to the energy level property of copolymers and other heteroarene-based DPP copolymers.\n* \"low - lying HOMO energy levels\" is a specific type of energy level property of the copolymers.\n* \"V OCs\" is an abbreviation for \"open-circuit voltage,\" which is a property of polymer solar cells."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Material property\" and present the valid entities as a Markdown table with one column \"Property Name\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "| Property Name |\n| --- |\n| low - lying HOMO energy levels |\n\nExplanation:\n\n* \"energy levels\" is mentioned twice in the paragraph, but it is not clear whether it refers to a material property or a more general concept.\n* \"low - lying HOMO energy levels\" is a specific type of energy level property of the copolymers.\n* \"V OCs\" is an abbreviation for \"open-circuit voltage,\" which is a property of polymer solar cells, but it is not mentioned in the paragraph."
+    }
+  ],
+  "PV": [
+    {
+      "role": "user",
+      "content": "Please identify the \"Property Value\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Property Value\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The energy levels of the copolymers are lower than those of other heteroarene - based DPP copolymers reported previously , [21][22][23][24][25][26] and their low - lying HOMO energy levels are expected to afford high V OC s of the polymer solar cells.\n\nLet's think step by step."
+    },
+    {
+      "role": "assistant",
+      "content": "```diff\n| Property Value |\n| --- |\n| lower |\n| those of other heteroarene - based DPP copolymers reported previously |\n| low - lying HOMO energy levels |\n| high V OC s |\n```\nExplanation:\n\n* \"lower\" is a property value compared to the energy levels of other heteroarene-based DPP copolymers.\n* \"those of other heteroarene - based DPP copolymers reported previously\" is a property value representing the energy levels of other copolymers mentioned in references 21 to 26.\n* \"low - lying HOMO energy levels\" is a property value indicating the position of the highest occupied molecular orbital (HOMO) energy levels.\n* \"high V OC s\" is a property value representing the open-circuit voltage (Voc) of the polymer solar cells."
+    },
+    {
+      "role": "user",
+      "content": "Please remove entities that do not clearly refer to \"Value of material property\" and present the valid entities as a Markdown table with one column \"Property Value\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."
+    },
+    {
+      "role": "assistant",
+      "content": "```diff\n| Property Value |\n| --- |\n| lower |\n| low - lying HOMO energy levels |\n| high V OC s |\n```\nExplanation:\n\n* \"lower\" is a property value compared to the energy levels of other heteroarene-based DPP copolymers.\n* \"low - lying HOMO energy levels\" is a property value indicating the position of the highest occupied molecular orbital (HOMO) energy levels.\n* \"high V OC s\" is a property value representing the open-circuit voltage (Voc) of the polymer solar cells.\n\nThe other entity \"those of other heteroarene - based DPP copolymers reported previously\" was not included as it does not clearly refer to a value of a material property. It is a comparison to other copolymers, but it does not specify a particular value."
+    }
+  ]
+}

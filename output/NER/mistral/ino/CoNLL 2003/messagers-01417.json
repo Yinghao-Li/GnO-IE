@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: There are 6,000 plastic surgeons there , of which 4,500 have qualified to be members of the SBCP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. There (implicit): The location where the 6,000 plastic surgeons are present.\n2. 6,000 plastic surgeons: A group of 6,000 individuals who are plastic surgeons.\n3. Of which: A connector indicating that the following information relates to the previous group (6,000 plastic surgeons).\n4. 4,500: A number representing the quantity of plastic surgeons.\n5. have qualified: A past tense verb indicating an action performed by the subject (4,500 plastic surgeons).\n6. to be members: Infinitive phrase indicating the goal or purpose of the action (qualifying).\n7. of the SBCP: The name of the organization (SBCP) that these qualified plastic surgeons belong to."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. 4,500 plastic surgeons: A group of 4,500 individuals who are plastic surgeons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| 4,500 plastic surgeons |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: There are 6,000 plastic surgeons there , of which 4,500 have qualified to be members of the SBCP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. There: This is a vague location indicator, it could refer to a specific place, but without more context, it's impossible to determine an exact location.\n\nTherefore, no specific \"Location\" entities could be identified from the given paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "There is no specific location entity mentioned in the paragraph. The paragraph only talks about the number of plastic surgeons in a vague location referred to as \"there,\" but it does not provide enough context to determine the exact location."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| There |\n\nNote: Since the location mentioned in the paragraph is vague and does not provide enough context to determine an exact location, the information presented above is the most precise representation of the location entity in the paragraph."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: There are 6,000 plastic surgeons there , of which 4,500 have qualified to be members of the SBCP .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Plastic surgeons: This is a group of professionals in the medical field specializing in the repair, reconstruction, or alteration of the human body.\n2. SBCP (Society of Plastic and Cosmetic Surgeons): This is an organization that likely serves as a professional association for plastic surgeons, providing membership, certification, and other resources."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. SBCP (Society of Plastic and Cosmetic Surgeons)\n\nThe term \"plastic surgeons\" is not considered an organization in this context, but rather a group of professionals."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SBCP (Society of Plastic and Cosmetic Surgeons) |"}
+  ]
+}

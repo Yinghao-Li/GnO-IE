@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Adverse effects included a mildly dry mouth and a sore throat in 2 patients ( 2 % glycopyrrolate ) , a light headache in 1 patient ( 1 . 5 % glycopyrrolate ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| mildly dry mouth |\n| sore throat |\n| light headache |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| sore throat |\n| light headache |\n| mildly dry mouth (can be considered a symptom of a disease) |\n\nNote: \"mildly dry mouth\" can be considered a symptom of various diseases, so it is included as a potential disease entity. However, it is important to note that the original context suggests it is an adverse effect of the medication, rather than a specific disease."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Adverse effects included a mildly dry mouth and a sore throat in 2 patients ( 2 % glycopyrrolate ) , a light headache in 1 patient ( 1 . 5 % glycopyrrolate ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 2 % glycopyrrolate |\n| 1.5 % glycopyrrolate |\n\nIn this paragraph, the chemicals are specified as concentrations of glycopyrrolate. Therefore, the chemical entities are accurately represented as \"2 % glycopyrrolate\" and \"1.5 % glycopyrrolate\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 2 % glycopyrrolate |\n| 1.5 % glycopyrrolate |\n\nIn the original paragraph, the entities are clearly identified as glycopyrrolate with specified concentrations. Therefore, these are the only valid chemical entities in the paragraph."}
+  ]
+}

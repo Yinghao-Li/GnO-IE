@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Hospital sources and witnesses said about 10 people were known to have been killed in the more than two weeks of fighting , including two rebels killed in Thursday 's clashes .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hospital sources\n2. Witnesses\n3. About 10 people (this is a group entity, but it includes the individual persons who were killed)\n4. Two rebels."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Two rebels."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Two rebels. |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Hospital sources and witnesses said about 10 people were known to have been killed in the more than two weeks of fighting , including two rebels killed in Thursday 's clashes .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hospital sources: This can be considered as a type of location, specifically a medical facility where people go for healthcare.\n2. More than two weeks of fighting: This refers to a period of time during which an event or conflict took place, but it does not directly identify a specific location.\n3. Thursday's clashes: This refers to a specific incident or location where fighting occurred on a Thursday. However, the exact location is not mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Hospital sources\n2. Thursday's clashes (specific location of the conflict on Thursday)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Hospital sources |\n| Thursday's clashes |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Hospital sources and witnesses said about 10 people were known to have been killed in the more than two weeks of fighting , including two rebels killed in Thursday 's clashes .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Hospital sources\n\nThese are individuals or departments working in hospitals who provided information about the number of people killed in the fighting. They represent the hospital organization."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Hospitals\n\nThis is the overarching organization that employs the hospital sources. It is implied, but not explicitly stated in the paragraph."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Hospitals |"}
+  ]
+}

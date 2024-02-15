@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Isoproterenol ( 100mg / kg ) was injected subcutaneously on the 13th and 14th days to induce acute myocardial infarction .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| acute myocardial infarction |\n\nExplanation:\nThe term \"acute myocardial infarction\" in the paragraph refers to a serious medical condition, which is commonly known as a heart attack. It occurs when the blood supply to a part of the heart is interrupted, often by a blood clot, leading to damage or death of the heart muscle."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| acute myocardial infarction |\n\nExplanation:\nThe term \"acute myocardial infarction\" in the paragraph is the only clear reference to a disease. The other term \"Isoproterenol\" is a medication used to treat bradycardia (a condition characterized by a slow heart rate), and it is not a disease itself. Therefore, it should not be included in the list of disease entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Isoproterenol ( 100mg / kg ) was injected subcutaneously on the 13th and 14th days to induce acute myocardial infarction .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Isoproterenol |\n| 100mg / kg |\n\nNote: I included \"100mg / kg\" as a chemical entity because it is a quantity of Isoproterenol being administered, but it's worth noting that this is not a chemical itself."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Isoproterenol |\n\nNote: In the original paragraph, \"100mg / kg\" is not a chemical entity, it's a quantity of Isoproterenol being administered. Therefore, I have removed it from the list."}
+  ]
+}

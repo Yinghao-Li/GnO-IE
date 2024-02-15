@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Japan 's Economic Planning Agency has not changed its view that the economy is gradually recovering , despite relatively weak gross domestic product figures released on Tuesday , EPA Vice Minister Shimpei Nukaya told reporters on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Japan's Economic Planning Agency\n2. EPA (abbreviation for Economic Planning Agency)\n3. Vice Minister Shimpei Nukaya"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. EPA Vice Minister Shimpei Nukaya"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| EPA Vice Minister Shimpei Nukaya |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Japan 's Economic Planning Agency has not changed its view that the economy is gradually recovering , despite relatively weak gross domestic product figures released on Tuesday , EPA Vice Minister Shimpei Nukaya told reporters on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Japan\n2. Economic Planning Agency (implicit location)\n\nIn this paragraph, the location entities are Japan (where the Economic Planning Agency is located) and the Economic Planning Agency (the specific organization making the statement)."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Japan"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Japan |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Japan 's Economic Planning Agency has not changed its view that the economy is gradually recovering , despite relatively weak gross domestic product figures released on Tuesday , EPA Vice Minister Shimpei Nukaya told reporters on Friday .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Japan's Economic Planning Agency\n2. EPA (abbreviation for Economic Planning Agency)\n3. Vice Ministry of the Economic Planning Agency (implied by \"EPA Vice Minister\")"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Japan's Economic Planning Agency\n2. EPA (abbreviation for Economic Planning Agency)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Japan's Economic Planning Agency |\n| EPA (abbreviation for Economic Planning Agency) |"}
+  ]
+}

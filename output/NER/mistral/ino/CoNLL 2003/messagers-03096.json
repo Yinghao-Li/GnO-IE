@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Manchester City 3 Bradford 2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Manchester City\n2. Bradford\n\nThese are the only clear \"Person\" entities mentioned in the paragraph. Manchester City and Bradford are both football clubs."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Manchester City\n2. Bradford\n\nThese are the only entities mentioned in the paragraph that clearly refer to persons (football clubs). All other entities, such as numbers (3, 2) and the verb phrases (Manchester City 3 Bradford 2) are irrelevant to identifying persons."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Manchester City |\n| Bradford |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Manchester City 3 Bradford 2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Manchester City: This is a specific location and a football club based in Manchester, England.\n2. Bradford: This is a specific location and a city in England, known for Bradford City Football Club."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Manchester\n2. England (implied, as both Manchester City and Bradford are located in England)\n3. Bradford"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Manchester |\n| England |\n| Bradford |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Manchester City 3 Bradford 2\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Manchester City: A professional football club based in Manchester, England.\n2. Bradford: A city in West Yorkshire, England, and also a name of a professional football club based in Bradford. In this context, it refers to the football club."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Manchester City: A professional football club based in Manchester, England.\n2. Bradford: A professional football club based in Bradford."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Manchester City: A professional football club based in Manchester, England. |\n| Bradford: A professional football club based in Bradford. |"}
+  ]
+}

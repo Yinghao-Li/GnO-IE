@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: we are not selling furniture , and Bre-X has 13,000 shareholders to answer to , \" the source said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the source |\n| Bre-X |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Bre-X |\n| the source |\n\n[Explanation: \"Bre-X\" is a company, but it is being referred to as having \"13,000 shareholders to answer to,\" which implies that there are people who are shareholders of Bre-X and therefore, \"Bre-X\" is a valid \"Person\" entity in this context. \"The source\" is also a valid \"Person\" entity as they are quoted as speaking in the paragraph. Other entities such as \"we\" and \"to answer to\" do not clearly refer to specific persons and have been removed.]"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: we are not selling furniture , and Bre-X has 13,000 shareholders to answer to , \" the source said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Bre-X |\n\nThe paragraph does not contain any explicit mention of a location or place. The only entity mentioned is Bre-X, which is a company."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Bre-X |\n\nThe paragraph does not contain any other entities that clearly refer to a location or place. The only entity mentioned is Bre-X, which is a company."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: we are not selling furniture , and Bre-X has 13,000 shareholders to answer to , \" the source said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Bre-X |\n\nIn the given paragraph, \"Bre-X\" is the only organization mentioned."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Bre-X |\n\nIn the given paragraph, \"Bre-X\" is the only organization mentioned that can be clearly identified."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Multinational commander going back to east Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Multinational commander |\n\nNote: The term \"east Zaire\" is a location and not a person. Therefore, it is not included in the table."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Multinational commander |\n\nNote: In this case, \"Multinational commander\" is the only clear reference to a person in the original paragraph."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Multinational commander going back to east Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| east Zaire |\n\nExplanation:\n\nThe paragraph mentions \"east Zaire\" as a location. Zaire is a former name of the Democratic Republic of the Congo, a country in Central Africa. \"East Zaire\" is a specific region within that country. Therefore, it is identified as a location entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| east Zaire |\n\nExplanation:\n\nThe paragraph mentions \"east Zaire\" as a location. While \"multinational commander\" is a proper noun, it does not clearly refer to a location in the context of the paragraph. Therefore, only \"east Zaire\" is identified as a location entity."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Multinational commander going back to east Zaire .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Multinational |\n| east Zaire |\n\nNote: I'm not sure if \"east Zaire\" is intended to be an organization. If not, then there are no organization entities in the paragraph."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Multinational |\n\nNote: There is no clear organization entity in the paragraph \"Multinational commander going back to east Zaire\"."}
+  ]
+}

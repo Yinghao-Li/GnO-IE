@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Both medications caused substantial rapid weight gain , but weight gain was greater with olanzapine .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Substantial rapid weight gain |\n| (Weight gain with olanzapine was greater than with the other medication) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Substantial rapid weight gain |\n| (Weight gain with olanzapine was greater) |\n\nNote: In this context, \"weight gain\" can be considered a disease or a symptom of a disease, depending on the context in which it is used. Since the paragraph is discussing the side effect of medications, it can be considered a disease for the purpose of this exercise."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Both medications caused substantial rapid weight gain , but weight gain was greater with olanzapine .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| olanzapine |\n\nIn this paragraph, the only chemical entity mentioned is the medication \"olanzapine\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| olanzapine |\n\nThe paragraph only mentions the medication \"olanzapine\" as a chemical entity. The words \"substantial\", \"rapid\", \"weight gain\", and \"but weight gain was greater with\" do not refer to specific chemicals and are not included in the table."}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The women who want to reduce their breasts here would probably want to increase them in the United States , \" SBCP Vice-President Oswaldo Saldanha said . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| \"SBCP Vice-President Oswaldo Saldanha\" |\n| \"women\" (Note: Although \"women\" is a general group and not a specific person, it is still considered a person entity in this context) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| \"SBCP Vice-President Oswaldo Saldanha\" |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The women who want to reduce their breasts here would probably want to increase them in the United States , \" SBCP Vice-President Oswaldo Saldanha said . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| here       |\n| The United States |\n\nExplanation:\n\n* \"here\" is a location entity in the context of the paragraph, as it refers to a location where women are considering reducing their breasts.\n* \"The United States\" is also a location entity, as it is mentioned as a place where women might want to increase their breasts."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location   |\n|------------|\n| The United States |\n\nExplanation:\n\n* \"here\" is not a clear location entity, as it is a relative term and does not specify a particular location.\n* \"The United States\" is a clear location entity, as it is a specific country."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: \" The women who want to reduce their breasts here would probably want to increase them in the United States , \" SBCP Vice-President Oswaldo Saldanha said . \"\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SBCP |\n| United States |\n\nExplanation:\n\n* SBCP: It is mentioned as \"SBCP Vice-President\" which implies that SBCP is an organization.\n* United States: It is a country but it is also an organization in the context of international relations and governance."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| SBCP |\n\nExplanation:\n\n* SBCP: It is the only organization mentioned in the paragraph.\n* United States: Although it is an organization in the context of international relations and governance, it is not clearly referred to as an organization in the given paragraph."}
+  ]
+}

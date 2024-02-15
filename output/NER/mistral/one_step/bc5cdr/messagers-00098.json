@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A history of drug exposure also was taken with special attention on the use of antidepressants , anorexigens , and amphetamines .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Antidepressants |\n| Anorexigens |\n| Amphetamines |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Anorexigens |\n| Antidepressants |\n| Amphetamines (amphetamines are typically considered drugs, but they can also be classified as stimulant drugs, and in this context, they are causing a change in health status, so they can be considered a disease or disorder when misused or abused) |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A history of drug exposure also was taken with special attention on the use of antidepressants , anorexigens , and amphetamines .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antidepressants |\n| anorexigens |\n| amphetamines |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| antidepressants |\n| anorexigans |\n| amphetamines |\n\nNote: I assumed that \"anorexigens\" refers to anorectic drugs, which are indeed chemicals. However, it's worth noting that the term \"anorexigen\" is not commonly used in modern scientific literature, and \"anorectic\" is the more widely accepted term. So, it might be more precise to use \"anorectic drugs\" instead of \"anorexigens\" in the original paragraph."}
+  ]
+}

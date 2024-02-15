@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: A New Mexico high school football player who used razor-sharp helmet buckles to slash opponents and a referee was expelled from high school banned Thursday from competition for one year .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. A New Mexico high school football player\n2. The player who used razor-sharp helmet buckles\n3. Opponents\n4. A referee."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. A New Mexico high school football player\n2. The player\n3. Opponents\n4. A referee."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| A New Mexico high school football player |\n| The player |\n| Opponents |\n| A referee |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: A New Mexico high school football player who used razor-sharp helmet buckles to slash opponents and a referee was expelled from high school banned Thursday from competition for one year .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. New Mexico\n2. high school (in New Mexico)\n3. football (played in the high school)\n4. high school football player (plays football in the high school)\n5. opponents (players from other teams)\n6. referee (works at the high school football games)\n7. competition (football games)\n\nSo, the \"Location\" entities in the paragraph are New Mexico and high school."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "The only Location entity in the paragraph is \"New Mexico\". The other entities mentioned in the paragraph (high school, football, high school football player, opponents, referee, competition) do not refer to specific locations but rather to the context or type of event."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| New Mexico |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: A New Mexico high school football player who used razor-sharp helmet buckles to slash opponents and a referee was expelled from high school banned Thursday from competition for one year .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. New Mexico (geographical location)\n2. High school (educational institution)\n3. Football player (individual, but could be considered part of the high school football team, which is an organization)\n4. Referee (organization, specifically the refereeing body or association)\n5. High school (again, educational institution, but mentioned as the entity that expelled the player)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Referee (organization, specifically the refereeing body or association)\n2. High school (educational institution, but only relevant as the entity that expelled the player)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Referee (refereeing body or association) |\n| High school (the specific high school involved) |"}
+  ]
+}

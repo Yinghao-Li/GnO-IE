@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: \" The further procedure is now in the hands of the local police investigator , \" the spokesman said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. the spokesman.\n\nThis is the only identifiable \"Person\" entity in the given paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "The spokesman."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| the spokesman |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: \" The further procedure is now in the hands of the local police investigator , \" the spokesman said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. local police investigator\n\nThis entity refers to a specific location where the police investigation is being conducted."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. local police investigator (location of the police investigation)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| local police investigator |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: \" The further procedure is now in the hands of the local police investigator , \" the spokesman said .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Local police\n2. Police investigator\n3. Spokesman (could be an organization if we consider the entity that employs or manages him, such as a law enforcement agency or a public relations firm)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Local police\n2. (If the spokesman is an employee of an organization, then that organization)"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Local police |\n| (If the spokesman is an employee of an organization, then that organization) |"}
+  ]
+}

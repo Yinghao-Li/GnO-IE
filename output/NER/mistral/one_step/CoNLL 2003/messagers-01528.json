@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The students also demanded the government announce punishments meted out to policemen who they said had manhandled students involved in a brawl with some restaurant owners near the Yangon institute in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| students |\n| government |\n| policemen |\n\nThe students and the government are identified as persons in the paragraph. The paragraph mentions \"the students\" who demanded an announcement from the government, and \"the government\" is the entity being addressed by the students. The paragraph also mentions \"policemen\" who were allegedly involved in manhandling students."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| students |\n| policemen |\n\nThe paragraph mentions \"students\" and \"policemen\" as clear references to persons. Other entities such as \"government\" do not directly refer to specific individuals and are not included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The students also demanded the government announce punishments meted out to policemen who they said had manhandled students involved in a brawl with some restaurant owners near the Yangon institute in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Yangon institute |\n| October (implicitly near Yangon institute) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Yangon institute |\n| October (near Yangon institute) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The students also demanded the government announce punishments meted out to policemen who they said had manhandled students involved in a brawl with some restaurant owners near the Yangon institute in October .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| government |\n| policemen |\n| students |\n| Yangon institute |\n\nThe students demanded that the government announce punishments for the policemen who had manhandled students involved in a brawl near the Yangon institute in October."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| government |\n| Yangon institute |\n\nThe students demanded that the government announce punishments for the policemen who had manhandled students involved in a brawl near the Yangon institute in October.\n\nNote: \"students\" is not an organization in this context."}
+  ]
+}

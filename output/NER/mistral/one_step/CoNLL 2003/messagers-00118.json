@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A. Parore c Ijaz Ahmad b Saqlain 37\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| A. Parore |\n| Ijaz Ahmad |\n| Saqlain |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Ijaz Ahmad |\n| Saqlain |\n\n[A. Parore is not a clear reference to a person as it is likely just a label or an abbreviation. It is important to have enough context to determine if it refers to a person or not.]"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A. Parore c Ijaz Ahmad b Saqlain 37\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| A. Parore |\n| c Ijaz Ahmad |\n| 37 (assumed to be a street number or a building number) |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| A. Parore |\n| 37 (assumed to be a street number or a building number) |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A. Parore c Ijaz Ahmad b Saqlain 37\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| A. Parore |\n| c Ijaz Ahmad |\n\nNote: Based on the context of the paragraph, it is unclear if \"c Ijaz Ahmad\" is an organization. However, since the paragraph mentions \"A. Parore c Ijaz Ahmad,\" it is assumed that \"c Ijaz Ahmad\" is a part of \"A. Parore\" and therefore included in the table as a sub-entity. If \"c Ijaz Ahmad\" is an individual or something else, please provide more context for an accurate identification."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| A. Parore |\n\nNote: Based on the context of the paragraph, \"c Ijaz Ahmad\" does not clearly refer to an organization and should be removed from the table."}
+  ]
+}

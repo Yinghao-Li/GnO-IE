@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Patients in group A had significant mortality at 2 - year follow - up ( 28 % ) , in contrast to zero mortality in the other three groups .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Mortality |\n| Follow-up |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Mortality |\n\nThe following entities do not clearly refer to \"Disease\":\n\n* Follow-up (it refers to a period of time after a medical treatment or study)\n\nTherefore, the valid entities that refer to \"Disease\" in the given paragraph are:\n\n| Disease |\n| --- |\n| Mortality |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Patients in group A had significant mortality at 2 - year follow - up ( 28 % ) , in contrast to zero mortality in the other three groups .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 28 % |\n\nThe percentage symbol (%) is not a chemical entity. It is a mathematical symbol used to represent a proportion or a fraction of 100.\n\nThe paragraph does not mention any specific chemicals or drugs, so there are no chemical entities in the given paragraph. The only numerical value mentioned is 28%, which is a percentage and not a chemical entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n\nThe paragraph does not mention any specific chemicals or drugs, so there are no valid chemical entities in the given paragraph. The only numerical value mentioned is 28%, which is a percentage and not a chemical entity.\n\nTherefore, the table above contains no chemical entities."}
+  ]
+}

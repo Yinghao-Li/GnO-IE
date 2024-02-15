@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Treatment of WT mice with topical ocular 0 . 1 % dexamethasone led to elevation of intraocular pressure ( IOP ) , functional and structural loss of retinal ganglion cells , and axonal degeneration , resembling glucocorticoid - induced glaucoma in human patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| glucocorticoid-induced glaucoma |\n\nIn the given paragraph, the \"Disease\" entity is \"glucocorticoid-induced glaucoma\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| glucocorticoid-induced glaucoma |\n\nIn this paragraph, \"intraocular pressure (IOP)\" is a medical condition but it is not a disease itself. The valid disease entity is \"glucocorticoid-induced glaucoma\"."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Treatment of WT mice with topical ocular 0 . 1 % dexamethasone led to elevation of intraocular pressure ( IOP ) , functional and structural loss of retinal ganglion cells , and axonal degeneration , resembling glucocorticoid - induced glaucoma in human patients .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| 0 . 1 % dexamethasone |\n| glucocorticoid |\n\nIn the given paragraph, the two chemical entities are \"0 . 1 % dexamethasone\" and \"glucocorticoid\". I have presented them as a Markdown table with one column \"Chemical\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| dexamethasone |\n\nIn the paragraph, \"0 . 1 % dexamethasone\" is the only clear chemical entity. \"Glucocorticoid\" is a class of steroid hormones, and not a specific chemical. Therefore, I have only included \"dexamethasone\" in the Markdown table."}
+  ]
+}

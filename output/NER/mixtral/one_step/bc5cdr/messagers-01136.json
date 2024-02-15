@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The patient , who had unresectable colon cancer metastases to the liver and lung , was referred to us for chemotherapy from an affiliated hospital ; he had no cardiac history .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| unresectable colon cancer |\n| metastases to the liver |\n| metastases to the lung |\n\nExplanation:\n\n* \"unresectable colon cancer\" is a disease\n* \"metastases to the liver\" is a disease\n* \"metastases to the lung\" is a disease"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| unresectable colon cancer |\n\nExplanation:\n\n* \"unresectable colon cancer\" is the only clear reference to a disease in the paragraph.\n* \"metastases to the liver\" and \"metastases to the lung\" are not diseases themselves, but rather they describe the spread of the colon cancer to other organs. They are not mentioned as separate diseases, so they should not be included as distinct entities."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: The patient , who had unresectable colon cancer metastases to the liver and lung , was referred to us for chemotherapy from an affiliated hospital ; he had no cardiac history .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "Since there are no chemical substances mentioned in the given paragraph, the table is empty:\n\n| Chemical |\n| --- |\n| None |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "As there are no chemical entities mentioned in the paragraph, the table remains empty:\n\n| Chemical |\n| --- |\n| None |"}
+  ]
+}

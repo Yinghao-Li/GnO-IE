@@ -1,0 +1,26 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph.\n\nParagraph: Foreign Minister Dariusz Rosati , unveiling first findings of a special government commission , said that in 1970s the then communist Poland received 460,000 Swiss francs from the accounts .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Foreign Minister Dariusz Rosati\n\nThis is a named person who is performing the action in the paragraph. He is the speaker and the one unveiling the first findings of the special government commission."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Person."},
+    {"role": "assistant", "content": "1. Foreign Minister Dariusz Rosati"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n|--------|\n| Foreign Minister Dariusz Rosati |"}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph.\n\nParagraph: Foreign Minister Dariusz Rosati , unveiling first findings of a special government commission , said that in 1970s the then communist Poland received 460,000 Swiss francs from the accounts .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Then communist Poland\n2. Accounts (implied location of the funds)\n3. Switzerland (implied location of the Swiss francs)\n\nSo, the identified Location entities in the paragraph are \"Then communist Poland\" and \"Switzerland\"."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Location."},
+    {"role": "assistant", "content": "1. Poland\n2. Switzerland\n\nSo, the relevant Location entities in the paragraph are \"Poland\" and \"Switzerland\"."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location |\n| --- |\n| Poland |\n| Switzerland |"}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph.\n\nParagraph: Foreign Minister Dariusz Rosati , unveiling first findings of a special government commission , said that in 1970s the then communist Poland received 460,000 Swiss francs from the accounts .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Government\n2. Special government commission\n3. Foreign Minister Dariusz Rosati\n4. Then communist Poland\n5. Accounts (implied: Swiss accounts)"},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Organization."},
+    {"role": "assistant", "content": "1. Special government commission\n2. Government\n3. Then communist Poland"},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| Special government commission |\n| Government |\n| Then communist Poland |"}
+  ]
+}

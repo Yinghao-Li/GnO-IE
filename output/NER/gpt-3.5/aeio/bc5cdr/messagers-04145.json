@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Side effects of hysterosalpingography with Dimer - X , Hexabrix , Vasurix polyvidone and Endografine in 142 consecutive patients , receiving one of the four tested media were evaluated from replies to postal questionnaires .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nThere is no specific disease mentioned in the paragraph.\n\nStep 2: Identify the \"Chemical\" entity.\nThe following chemicals are mentioned in the paragraph:\n- Dimer-X\n- Hexabrix\n- Vasurix polyvidone\n- Endografine\n\nTherefore, the identified \"Chemical\" entities in the paragraph are:\n- Dimer-X\n- Hexabrix\n- Vasurix polyvidone\n- Endografine"},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "The identified \"Chemical\" entities in the paragraph are:\n- Dimer-X\n- Hexabrix\n- Vasurix polyvidone\n- Endografine"},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity              | Entity Type |\n|---------------------|-------------|\n| Dimer-X             | Chemical    |\n| Hexabrix            | Chemical    |\n| Vasurix polyvidone  | Chemical    |\n| Endografine         | Chemical    |"}
+]

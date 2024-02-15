@@ -1,0 +1,18 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph.\n\nParagraph: Indications for transplantation were idiopathic cardiomyopathy ( 52 % ) , congenital heart disease ( 35 % ) with and without prior repair ( 71 % and 29 % , respectively ) , hypertrophic cardiomyopathy ( 5 % ) , valvular heart disease ( 3 % ) , and doxorubicin cardiomyopathy ( 5 % ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Idiopathic cardiomyopathy\n2. Congenital heart disease\n3. Hypertrophic cardiomyopathy\n4. Doxorubicin cardiomyopathy\n5. Valvular heart disease\n\nThese are the disease entities mentioned in the paragraph."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Disease."},
+    {"role": "assistant", "content": "1. Idiopathic cardiomyopathy\n2. Congenital heart disease\n3. Hypertrophic cardiomyopathy\n4. Doxorubicin cardiomyopathy\n\nThese are the disease entities that are clearly referred to in the paragraph. The term \"valvular heart disease\" is a condition or abnormality related to the heart, but it is not a specific disease. Therefore, I have removed it from the list."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Idiopathic cardiomyopathy |\n| Congenital heart disease |\n| Hypertrophic cardiomyopathy |\n| Doxorubicin cardiomyopathy |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph.\n\nParagraph: Indications for transplantation were idiopathic cardiomyopathy ( 52 % ) , congenital heart disease ( 35 % ) with and without prior repair ( 71 % and 29 % , respectively ) , hypertrophic cardiomyopathy ( 5 % ) , valvular heart disease ( 3 % ) , and doxorubicin cardiomyopathy ( 5 % ) .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "1. Idiopathic cardiomyopathy: This is a type of heart disease, but it is not a chemical entity.\n2. Congenital heart disease: This is a general term for heart diseases that are present at birth, but it is not a specific chemical.\n3. Doxorubicin cardiomyopathy: Doxorubicin is a type of chemotherapy drug, and cardiomyopathy is a disease of the heart muscle. Therefore, \"doxorubicin cardiomyopathy\" can be considered a chemical entity.\n\nSo, there is only one chemical entity in the paragraph: doxorubicin cardiomyopathy."},
+    {"role": "user", "content": "Please remove irrelevant entities and only keep the entities that clearly refer to Chemical."},
+    {"role": "assistant", "content": "1. Idiopathic cardiomyopathy: Not a chemical entity.\n2. Congenital heart disease: Not a chemical entity.\n3. Doxorubicin cardiomyopathy: This is the only chemical entity in the paragraph. It is a disease of the heart muscle caused by the chemotherapy drug doxorubicin."},
+    {"role": "user", "content": "Please present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| Doxorubicin cardiomyopathy |"}
+  ]
+}

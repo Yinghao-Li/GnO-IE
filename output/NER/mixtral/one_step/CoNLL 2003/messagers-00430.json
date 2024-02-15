@@ -1,0 +1,20 @@
+{
+  "person": [
+    {"role": "user", "content": "Please identify the \"Person\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Person\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Ricky Watters , who leads the NFC in rushing , left the game after getting kneed to the helmet after gaining 33 yards on seven carries .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Ricky Watters |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Person\" and present the valid entities as a Markdown table with one column \"Person\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Person |\n| --- |\n| Ricky Watters |\n\nThe other phrases in the paragraph, \"NFC\" and \"seven carries,\" do not refer to a person and are not included in the table."}
+  ],
+  "location": [
+    {"role": "user", "content": "Please identify the \"Location\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Location\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Ricky Watters , who leads the NFC in rushing , left the game after getting kneed to the helmet after gaining 33 yards on seven carries .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| NFC          |\n\nExplanation:\n\n* NFC (National Football Conference) is mentioned as the conference that Ricky Watters leads in rushing. Therefore, it is identified as a \"Location\" entity."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Location\" and present the valid entities as a Markdown table with one column \"Location\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Location     |\n|--------------|\n| NFC          |\n\nExplanation:\n\n* NFC (National Football Conference) is the only location entity mentioned in the paragraph. The other mentions, such as \"the game\" and \"helmet,\" do not refer to specific locations."}
+  ],
+  "organization": [
+    {"role": "user", "content": "Please identify the \"Organization\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Organization\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: Ricky Watters , who leads the NFC in rushing , left the game after getting kneed to the helmet after gaining 33 yards on seven carries .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NFC |\n\nExplanation:\n\nIn the given paragraph, the \"Organization\" entity is \"NFC\" which stands for the National Football Conference."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Organization\" and present the valid entities as a Markdown table with one column \"Organization\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Organization |\n| --- |\n| NFC |\n\nExplanation:\n\nIn the given paragraph, the only organization mentioned is the \"NFC\" which stands for the National Football Conference. The other entities mentioned in the paragraph, such as \"Ricky Watters,\" do not clearly refer to an organization."}
+  ]
+}

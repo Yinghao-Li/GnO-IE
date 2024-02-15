@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Observation by electronic microscope revealed structural damage of podocytes ; the reduced expression level of podocyte marker genes , nephrin and podocin , was also detected by q - PCR .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nThere is no mention of any specific disease in the given paragraph. Therefore, there is no \"Disease\" entity to identify.\n\nStep 2: Identify the \"Chemical\" entity.\nThere is no mention of any specific chemical in the given paragraph. Therefore, there is no \"Chemical\" entity to identify."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "Observation by electronic microscope revealed structural damage of podocytes; the reduced expression level of podocyte marker genes, nephrin and podocin, was also detected by q-PCR."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity   | Entity Type |\n|----------|-------------|\n| podocytes | Chemical    |\n| nephrin  | Chemical    |\n| podocin  | Chemical    |"}
+]

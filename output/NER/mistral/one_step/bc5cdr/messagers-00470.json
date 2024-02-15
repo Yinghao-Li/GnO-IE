@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A higher cumulative incidence of persistent leukocyturia was found in children with an area under the curve > 19 mg / L x h or a peak serum level of indinavir > 12 mg / L .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Persistent leukocyturia |"},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| Persistent leukocyturia |"}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: A higher cumulative incidence of persistent leukocyturia was found in children with an area under the curve > 19 mg / L x h or a peak serum level of indinavir > 12 mg / L .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| indinavir |\n\nIn this paragraph, the only chemical entity mentioned is the antiretroviral drug \"indinavir\"."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| indinavir |\n\nThe paragraph mentions \"mg / L\" which is a unit of measurement, but since it is directly associated with the chemical entity \"indinavir\", it is included in the definition of the chemical entity in the paragraph and does not need to be listed separately. The words \"persistent leukocyturia\", \"cumulative incidence\", and \"peak serum level\" do not refer to chemical entities and can be disregarded."}
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {"role": "system", "content": "You are a helpful assistant who is good at identifying named entities and their relations."},
+  {"role": "user", "content": "Please identify the \"['Disease', 'Chemical']\" entities in the following paragraph.\n\nParagraph: Improved familiarity of healthcare professionals with argatroban therapy in HIT , including in special populations and during PCI , may facilitate reduction of harm associated with HIT (e . g . fewer thromboses) or its treatment (e . g . fewer argatroban medication errors) .\n\nLet's think step by step."},
+  {"role": "assistant", "content": "Step 1: Identify the \"Disease\" entity.\nIn the given paragraph, the disease entity mentioned is \"HIT\" which stands for Heparin-induced thrombocytopenia.\n\nStep 2: Identify the \"Chemical\" entity.\nIn the given paragraph, the chemical entity mentioned is \"argatroban\" which is a medication used for the treatment of HIT.\n\nSo, the identified \"['Disease', 'Chemical']\" entities in the paragraph are \"HIT\" and \"argatroban\"."},
+  {"role": "user", "content": "Please remove entities that do not clearly refer to any of \"['Disease', 'Chemical']\""},
+  {"role": "assistant", "content": "In the given paragraph, the entities that clearly refer to \"['Disease', 'Chemical']\" are:\n\n- Disease: HIT (Heparin-induced thrombocytopenia)\n- Chemical: argatroban\n\nSo, the identified \"['Disease', 'Chemical']\" entities in the paragraph are \"HIT\" and \"argatroban\"."},
+  {"role": "user", "content": "Please present the valid entities as a Markdown table with columns [\"Entity\", \"Entity Type\"]. Make sure the Entity Types are in ['Disease', 'Chemical']."},
+  {"role": "assistant", "content": "| Entity    | Entity Type |\n|-----------|-------------|\n| HIT       | Disease     |\n| argatroban | Chemical    |"}
+]

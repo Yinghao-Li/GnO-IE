@@ -1,0 +1,14 @@
+{
+  "Disease": [
+    {"role": "user", "content": "Please identify the \"Disease\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Disease\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report on the development of 8 serious cases of ischemic colitis in patients with migraine treated with sumatriptan .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| ischemic colitis |\n| migraine |\n\nIn this paragraph, \"ischemic colitis\" and \"migraine\" are the identified diseases."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Disease\" and present the valid entities as a Markdown table with one column \"Disease\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Disease |\n| --- |\n| ischemic colitis |\n| migraine |\n\nIn the paragraph, \"ischemic colitis\" and \"migraine\" are the identified diseases. The word \"serious cases\" and \"patients with\" do not clearly refer to diseases."}
+  ],
+  "Chemical": [
+    {"role": "user", "content": "Please identify the \"Chemical\" entities in the following paragraph. Please present the valid entities as a Markdown table with one column \"Chemical\". Make sure to present the entities precisely in the same words as in the original paragraph.\n\nParagraph: We report on the development of 8 serious cases of ischemic colitis in patients with migraine treated with sumatriptan .\n\nLet's think step by step."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| sumatriptan |\n| ischemic colitis |\n\nExplanation:\n\n1. Sumatriptan is a medication used to treat migraines. It is a serotonin receptor agonist. In the given context, it is the chemical entity causing the reported cases of ischemic colitis.\n2. Ischemic colitis is a medical condition, not a chemical entity. However, since the paragraph mentions it in relation to sumatriptan, it is included for completeness."},
+    {"role": "user", "content": "Please remove entities that do not clearly refer to \"Chemical\" and present the valid entities as a Markdown table with one column \"Chemical\".\n\nMake sure to present the entities precisely in the same words as in the original paragraph."},
+    {"role": "assistant", "content": "| Chemical |\n| --- |\n| sumatriptan |\n\nExplanation:\n\nIschemic colitis is a medical condition and not a chemical entity. Therefore, it should not be included in the table. The paragraph only mentions sumatriptan as the chemical entity related to the reported cases of ischemic colitis."}
+  ]
+}
