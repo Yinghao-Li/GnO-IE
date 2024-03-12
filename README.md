@@ -1,5 +1,10 @@
 # GnO-IE
 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg?color=purple)](https://www.python.org/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Yinghao-Li/GnO-IE)
+![GitHub stars](https://img.shields.io/github/stars/Yinghao-Li/GnO-IE.svg?color=gold)
+![GitHub forks](https://img.shields.io/github/forks/Yinghao-Li/GnO-IE?color=9cf)
+
 This repository provides the code, data, and results for the paper: [A Simple but Effective Approach to Improve Structured Language Model Output for Information Extraction](https://arxiv.org/abs/2402.13364).
 
 The code is in `./src/`, data in `./data/`, and results in `./output/` and `./report/`, where `./output/` stores the conversation between the user and LLMs, and `./report/` stores the metrics and case studies.
