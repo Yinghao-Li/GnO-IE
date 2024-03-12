@@ -16,7 +16,7 @@ do
   fi
 
   PYTHONPATH="." \
-  python ner_gpt.py \
+  python ./tasks/ner_gpt.py \
     --dataset "$DATASET" \
     --data_dir "./data/NER/" \
     --result_dir "./output/NER/gpt-3.5" \

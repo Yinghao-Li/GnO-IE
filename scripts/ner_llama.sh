@@ -19,7 +19,7 @@ do
 
   CUDA_VISIBLE_DEVICES=$cuda_device \
   PYTHONPATH="." \
-  python ner_llama.py \
+  python ./tasks/ner_llama.py \
     --dataset "$DATASET" \
     --model_dir "$MODEL" \
     --data_dir "./data/NER/" \

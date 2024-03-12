@@ -11,7 +11,7 @@ for DATASET in "conll04" "NYT" "PolyIE"
 do
   CUDA_VISIBLE_DEVICES=$cuda_device \
   PYTHONPATH="." \
-  python re_llama.py \
+  python ./tasks/re_llama.py \
     --dataset "$DATASET" \
     --model_dir "$MODEL" \
     --data_dir "./data/IE-Datasets/RE/" \
