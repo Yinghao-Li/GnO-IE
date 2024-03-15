@@ -1,9 +1,8 @@
 # GnO-IE
 
+[![arXiv](https://img.shields.io/badge/arXiv-2402.13364-b31b1b.svg)](https://arxiv.org/abs/2402.13364)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg?color=purple)](https://www.python.org/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Yinghao-Li/GnO-IE)
-![GitHub stars](https://img.shields.io/github/stars/Yinghao-Li/GnO-IE.svg?color=gold)
-![GitHub forks](https://img.shields.io/github/forks/Yinghao-Li/GnO-IE?color=9cf)
 
 This repository provides the code, data, and results for the paper: [A Simple but Effective Approach to Improve Structured Language Model Output for Information Extraction](https://arxiv.org/abs/2402.13364).
 
